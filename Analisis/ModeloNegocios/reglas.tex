@@ -1,0 +1,105 @@
+% !TEX root = ../analisis.tex
+ % El tipo de regla de negocio (tercer parámetro del entorno 'BusinessRule') se describe en la siguiente tabla:
+%---------------------------------------------------------------------------------------------------------------,
+% TIPOS			|		DEFINICION						|	EJEMPLO												|
+%---------------|---------------------------------------|-------------------------------------------------------|
+% Habilitador   | La sentencia habilita o restringe 	| * Se pueden recibir solicitudes del tipo A, B y C.	|
+%				| hacer algo o  una funcionalidad.		| * Se permite hacer algo si se tiene el estado X.		|
+%---------------|---------------------------------------|-------------------------------------------------------|
+% Cronometrado	| Se permite de manera controlada 		| * Se permiten hasta dos solicitudes del tipo D		| 
+%				| por un contador.						|   por persona.										|
+% 				|										| * El acceso al sistema se permite si no se tiene 		|
+%  				|										|   más de X número de intentos fallidos.				|
+%---------------|---------------------------------------|-------------------------------------------------------|
+% Ejecutivo		| Autorizado por un superior, un perfil | * Se permite registrar extemporaneamente si lo 		|
+%				| particular debe autorizar.			|   autoriza X.											|
+%---------------|---------------------------------------|-------------------------------------------------------|
+% Derivación	| Son de cálculo e inferencia, 			| * Un alumno irregular es aquel que tiene las 			|
+%				| es un cálculo o conclusión derivados 	|   siguientes cacteristicas: A, B, C. 					|
+%				| de un conjunto de datos. Puede ser una| * El formato de un correo o CURP.						|
+%				| fórmula que dice cómo calcular algo 	|														|
+%				| o el formato de un dato.				|														|
+%---------------|---------------------------------------|-------------------------------------------------------|
+% Restricción	| Restringe una funcionalidad o relación| * Traslape de fechas o periodos empalmados.			|
+% 				| entre dos o mas objetos.				|														|
+%  				|										|														|
+%---------------------------------------------------------------------------------------------------------------'
+
+% No editar las reglas cuyo estatus es APROBADO.
+\newpage
+\section{Reglas de negocio}
+\subsection{Reglas derivadas del sistema}
+%------------------------------------------------------------------------------------------------------------------
+\begin{BusinessRule}{RN-S1}{Información correcta}
+	{Restricción}
+	{Controla la operación}
+	\BRitem{Versión}{1.0}
+	\BRitem{Autor}{Adrian Flores Torres}
+	\BRitem{Estatus}{Terminado}
+	\BRitem{Descripción}{Todos los datos proporcionados al sistema deben pertenecer al \cdtRef{gls:tipoDato}{tipo de dato} especificado en el modelo de información y respetar el formato con base en lo definido en la entidad del diccionario de datos}
+	\BRitem{Referenciado por}{ 
+	}	
+\end{BusinessRule}
+
+\begin{BusinessRule}{RN-S2}{Formato de correo electrónico}
+	{Restricción}
+	{Controla la operación}
+	\BRitem{Versión}{1.0}
+	\BRitem{Autor}{Fabiola Jaramillo Loredo}
+	\BRitem{Estatus}{Terminado}
+	\item[Descripción:] El correo electrónico debe ser una cadena de caracteres con una estructura que cumpla la siguiente expresión regular:
+	\begin{verbatim}
+	\\b^['_a-z0-9-\\+](\\.['_a-z0-9-\\+])@[a-z0-9-](\\.[a-z0-9-])\\.([a-z]{2,6})\\b
+	\end{verbatim}
+	
+	\BRitem{Referenciado por}{
+		\cdtIdRef{CUPA1.3-2}{Crear cuenta}, 
+		\cdtIdRef{CUPA1.4-5}{Registrar medios de contacto}
+	}
+\end{BusinessRule}
+
+\begin{BusinessRule}{RN-S3}{Datos requeridos}
+	{Restricción}
+	{Controla la operación}
+	\BRitem{Versión}{1.0}
+	\BRitem{Autor}{Fabiola Jaramillo Loredo}
+	\BRitem{Estatus}{Terminado}
+	\BRitem{Descripción}{Los datos proporcionados al sistema que son marcados como 'requeridos' no se deben omitir}
+	\BRitem{Referenciado por}{
+		\cdtIdRef{CUPA1.1-3}{Editar ciclo escolar}, 
+		\cdtIdRef{CUPA1.1-4}{Registrar ciclo escolar}
+	}
+\end{BusinessRule}
+
+\subsection{Reglas derivadas del negocio}
+
+%------------------------------------------------------------------------------------------------------------------
+
+\begin{BusinessRule}{RN-N1}{Selección de Grupo}
+	{Derivación}
+	{Controla la operación}
+	\BRitem{Versión}{1.0}
+	\BRitem{Autor}{Eduardo Espino Maldonado}
+	\BRitem{Estatus}{Edición}
+	\item[Descripción:] 
+	
+	Para la conformación de un grupo de una Unidad de Aprendizaje se conformara por:
+	
+	$$ <NIVEL> C <TURNO> <GRUPO> $$
+	
+	en donde: \\
+	
+	\begin{UClist}
+    
+    	\UCli {\bf NIVEL:} El \cdtRef{unidadaprendizaje:nivel}{Nivel} seleccionado.
+	
+    	\UCli {\bf TURNO:} El \textbf{Turno} seleccionado.
+	
+	\UCli {\bf GRUPO:} El \textbf{Grupo} seleccionado.
+	    	    
+  	\end{UClist}
+
+	\BRitem{Referenciado por}{
+		\cdtIdRef{CUH1.1}{Registrar Materia}
+		}
+\end{BusinessRule}

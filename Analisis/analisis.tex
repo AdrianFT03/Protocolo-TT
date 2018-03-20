@@ -1,0 +1,76 @@
+\documentclass[10pt]{book}
+\usepackage{cdt/cdtBusiness}
+\usepackage{eld}
+\usepackage{subfigure}
+\usepackage{cite}
+\usepackage{verbatim} 
+
+%====================POR SI LA CAGO====================
+\organizacion[ELD]{\eld}
+\autor[CDT--ESCOM--IPN]{\cdt}
+\sistema[SAE]{\sae}
+\proyecto[SAE]{\sae}
+\documento{C2--DA}{C2--DA Documento de Análisis}{\RELEASE{1.0}}%{\DRAFT{\today}} 
+\entregable{}{\Large{Sistema de Administración Escolar Versión 2.0}}
+%\entregable{}{ }
+%\fecha{12 de Abril de 2013}
+
+%%====================DATOS DEL PROYECTO====================
+%%\organizacion[ELD]{\eld}
+%\autor[Apple Geek]{Apple Geek}
+%%\sistema[SAE]{\sae}
+%\proyecto[Apple Geek]{Apple Geek}
+%\documento{C2--DA}{C2--DA Documento de Análisis}{\RELEASE{1.0}}%{\DRAFT{\today}} 
+%\entregable{}{\Large{Sistema de Administración Escolar Versión 2.0}}
+%%\entregable{}{ }
+%%\fecha{12 de Abril de 2013}
+
+%========================================
+\begin{document}
+
+%====================PORTADA====================
+%\ThisLRCornerWallPaper{1}{cdt/theme/agua}
+\thispagestyle{empty}
+\maketitle
+
+%====================INDICES DEL DOCUMENTO====================
+\frontmatter
+%\LRCornerWallPaper{1}{cdt/theme/pleca}
+\tableofcontents
+\listoffigures
+\mainmatter
+
+\hideControlVersion
+
+%=====================INTRODUCCION=====================
+\chapter{Introducción}\label{chp:introduccion}
+\cfinput{introduccion}
+
+%=====================GLOSARIO DE TÉRMINOS=====================
+\chapter{Glosario de términos}\label{chp:glosarioTerminos}
+\cfinput{glosario}
+
+%=====================MODELO DE NEGOCIO=====================
+\chapter{Modelo de negocio}\label{chp:modeloNegocios} 
+\cfinput{ModeloNegocios/modelo}
+\cfinput{ModeloNegocios/estructura}
+\cfinput{ModeloNegocios/informacion-consultaDeProfesores}
+\cfinput{ModeloNegocios/reglas}
+
+%==================MODELO DE COMPORTAMIENTO=============
+\chapter{Modelo de comportamiento}\label{chp:modeloComportamiento}
+\cfinput{ModeloComportamiento/comportamiento}
+\cfinput{ModeloComportamiento/modulo-consultaDeProfesores/modelo-comportamiento}\label{chp:CProfesores}
+\cfinput{ModeloComportamiento/modulo-horarios/modelo-comportamiento}\label{horariosAmigo}
+
+
+%==================MODELO DE INTERACCIÓN================
+\chapter{Modelo de interacción con el usuario}\label{chp:modeloInteraccionUsuario}
+\cfinput{ModeloInteraccion/interaccion}
+\cfinput{ModeloInteraccion/consultaDeProfesores/consultaDeProfesores} 
+\cfinput{ModeloInteraccion/horarios/horarios} 
+\cfinput{ModeloInteraccion/mensajes}
+
+\clossing
+
+\end{document}

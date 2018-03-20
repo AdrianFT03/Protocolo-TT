@@ -1,0 +1,442 @@
+%!TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Componente: cdtBusiness.sty
+%  Autor: Ulises Vélez Saldaña
+%  Fecha: 20 de Junio, 2013
+%  Versión: 1.0
+%  Biblioteca: cdt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cdtBusiness}[2013/06/20, v1.0 CDT-ESCOM-IPN Paquete para escribir Modelos de procesos con base en Business Motivation Model de la OMG.]
+\RequirePackage{cdt/cdtAnalisis}
+
+
+
+%=====================================================================
+% REGLAS DE NEGOCIO
+% Es una sentencia que define o restringe algun aspecto del negocio. Puede ser un
+% a definicion de ESTRUCTURA: un TÉRMINO o HECHO, una DERIVACIÓN o una REGLA DE OPERACIÓN.
+%
+% POLÍTICAS
+% . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+% Una política es una sentencia general de dirección para una empresa/organización.
+% (a general statement of direction for an enterprise.)
+% Representación: Descripción textual.
+%
+% CONTEXTO
+% . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+% Define  un ambiente en el que se usan TERMINOS DEL NEGOCIO con un
+% significado acordado
+% (an environment where shared BUSINESS TERMs are used with an agreed-to
+% meaning.)
+% Representación: Descripción textual.
+%
+% TERMINO (Glosario)
+% . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+% Una frase o término que tiene un significado específico para el negocio en un
+% CONTEXTO determinado. Este puede definir una LITERAL, un TIPO o un SENSOR.
+% (a word or phrase that has a specific meaning for a business in some designated
+% CONTEXT.)
+% Representación: Termino, significado (solo para los del negocio).
+%
+% TERMINO -> LITERAL
+% Refleja un valor o instáncia específico de un TIPO.
+% (reflects a specific value or instance of a TYPE.)
+% Representación: Término, significado, tipo (solo para los del negocio).
+%
+% RELACION_DE_ORDEN
+% Define una forma de determinar el orden de dos LITERALES que tienen un "orden"
+% determinado dentro del contexto.
+% Ejemplos: <, >, =, !=, etc.
+%
+% TERMINO -> TIPO
+% Una abstracción nombrada de un conjunto de instancias o valores.
+% (a named abstraction of a set of instances or values.)
+% Representación: Término, significado, nombre del conjunto, instancias de
+% ejemplo (solo para los del negocio).
+%
+% TERMINO -> TIPO -> SENSOR
+% Es un TIPO especial cuyos valores son determinados por algún mecanismo o
+% dispositivocuyo trabajo interno es desconocido, de poco interes o de alcance
+% identificable.Su valor no puede ser alterado directamente. Un SENSOR detecta
+% y reporta constantemente los valores cambiantes del mucdo externo. Por ejemplo,
+% cambios de temperatura, el paso del tiempo, etc.
+% (a special kind of TYPE whose value is asserted by some mechanism or device
+% whose inner workings are unknown (or uninteresting to the identified scope).
+% Its value cannot be altered directly. A SENSOR detects and reports constantly
+% changing values from the outside world, such as the passage of time, a
+% temperature reading, or some other value.)
+% Representación: Término(nombre del sensor), descripción(lo que reporta y
+% la frecuencia),
+%
+% HECHO (Modelo del Dominio del Problema)
+% . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+% Una asociación de dos o mas TÉRMINOS. Expresa un potencial de asociación
+% ("puede ser" o "podría ser") en lugar de expresar una asociación "debe de".
+% HECHO -> BASE: Una situación observada en un momento dado.
+% HECHO -> DERIVADO: Lo que se puede inferir de esa observación, es una
+% observación, cálculo, etc.
+% Los HECHOS pueden definir que un TÉRMINO es: un ATRIBUTO de otro, una
+% GENERALIZACIÓN (super tipo o subtipo) de otro o que existe una
+% PARTICIPACIÓN (relación, agregación o composición) entre TÉRMINOS.
+% (an associating of two or more TERMS. It expresses a potential for association
+% (‘can be’ or ‘may be’) rather than expressing a ‘must be’ association.)
+% Representación: Diagrama de Clases que contenga: Nombre de los Términos,
+% Atributos (Marcando los atributos derivados como Métodos getter's), nombres de las
+% relaciones en ambas direcciones, tipo de agregación y cardinalidad.
+%
+% REGLA DE OPERACIÓN
+% . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+% Es una propiedad de otra REGLA DE NEGOCIO.
+% Es una sentencia que concierne algun aspecto dinámico del negocio. Especifica
+% restriciones en los resultados que producen las acciones.
+% (a statement that concerns some dynamic aspect of the business. It specifies
+% constraints on the results that actions can produce.)
+%
+% Una regla de operación establece una coorespondencia entre una REGLA DE
+% NEGOCIO (objeto base) con otros OBJEOS.
+% REGLA DE OPERACIÓN ::=
+%	MODIF( OBJETO_BASE). >=(correspondencia)=> otros OBJETO_CORRESP
+% OBJETO_BASE ::= REGLA_DE_NEGOCIO.
+% OBJETO_CORRESP ::= conjunto de REGLAS_DE_NEGOCIO o ACCIONES.
+%
+% Clases: CONDICIÓN, RESTRICCIÓN DE INTEGRIDAD, AUTORIZACIÓN.
+% Tipos: HABILITADOR, CRONOMETRO, EJECUTIVO.
+% Pensado para: INFLUIR (guia) O CONTROLAR (restringe) la acción.
+%
+% Representación: id, Nombre, Clase, Tipo, Propósito, Descripción (sentencia),
+% Sentencia(Expresión formal), [ejemplo correcto], [ejemplo incorrecto].
+%
+% ACCION
+% something that executes and may change the state of one or more instances of
+% one or more TYPEs. An ACTION has a protocol and one or more methods that
+% implement it.
+% An ACTION cannot be constrained; only TYPEs (things which have persistent
+% instances) can be constrained. The enabling and execution of an ACTION can
+% be controlled through rules . The ACTION is permitted to proceed once/if
+% conditions are satisfied.
+% Redacción: Verbo + especificación.
+%
+% CONDICION
+% an assertion that if something is true, another business rule will apply. A
+% CONDITION can be thought of as a ‘test’ ~ if true, it may be the basis for
+% enforcing or testing other ACTION ASSERTIONs.
+% Redacción: "Si" MODIF(OBJETO_BASE) "entonces" REGLA_DE_OPERACIÓN
+%
+% CONDICION de tipo HABILITADOR
+% if true, permits or leads to the existence of the correspondent object
+% Redacción: "si" MODIF(OBJETO_BASE) "entonces" permite/habilita la
+% 	existencia de una instancia o la ejecución de una ACCIÓN o de lo
+% 	especificado por el OBJETO_RELACIONADO.
+%
+% CONDICION de tipo CRONOMETRO
+% Habilita o crea una instancia del OBJETO_CORRESPONDIENTE cuando se
+% sobrepas cierto LIMITE (TERMINO -> LITERAL) establecído
+% if true, enables (or disables), or creates (or deletes) if a specified threshold has
+% been satisfied. A TIMER can be thought of as a ‘countdown timer’ ~ its effect
+% occurs after the ‘ticking’ stops ~ or as an ‘alarm clock.’ In the latter case, its
+% effect occurs when the alarm clock ‘rings.’
+% Redacción: "si" MODIF(OBJETO_BASE) RELACION_DE_ORDEN LIMITE
+%	"entonces" habilita o permite la creación de una instancia del
+% 	OBJETO_CORRESPONDIENTE.
+%
+% CONDICION DE ACCIÓN
+% Ejecuta accion, aplica regla o crea instancia cuando se cumple la CONDICIÓN.
+% Redacción:
+% "si" MODIF(OBJETO_BASE) "entonces" ejecuta la ACCION.
+% "si" MODIF(OBJETO_BASE) "entonces" aplica la REGLA.
+% "si" MODIF(OBJETO_BASE) "entonces" instancía la ESTRUCTURA.
+%
+% RESTRICCION DE INTEGRIDAD
+% an assertion that must always be true. It is considered to have immediate
+% enforcement power because it prohibits any actions which would result in a
+% false truth value.
+% Redacción: MODIF(OBJETO_BASE) "debe de" OBJETO_COREESPONDIENTE
+%
+% RESTRICCION DE INTEGRIDAD de tipo HABILITADOR
+% permits or leads to the existence of the correspondent object
+% Redacción:
+% MODIF(OBJETO_BASE) "debe de" permitir la creación de instancias
+% de ESTRUCTURA.
+% MODIF(OBJETO_BASE) "debe de" permitir la aplicación de la otra
+% REGLA_DE_OPERACION.
+% MODIF(OBJETO_BASE) "debe de" permitir la ejecución de la ACCION.
+%
+% RESTRICCION DE INTEGRIDAD de tipo CRONOMETRO
+% permits or leads by a specified threashold the existence of the correspondent
+% object.
+% Redacción:
+% MODIF(OBJETO_BASE) "debe de" permitir o causar la creación de instancias
+% de ESTRUCTURA con un LIMITE.
+% MODIF(OBJETO_BASE) "debe de" permitir o causar la aplicación de la otra
+% REGLA_DE_OPERACION con un LIMITE.
+% MODIF(OBJETO_BASE) "debe de" permitir o causar la ejecución de la ACCION
+% bajo un LIMITE.
+%
+% RESTRICCION de tipo EJECUTIVO
+% Redacción:
+% MODIF(OBJETO_BASE) "debe de" causar la creación de instancias
+% de ESTRUCTURA.
+% MODIF(OBJETO_BASE) "debe de" causar la aplicación de la otra
+% REGLA_DE_OPERACION.
+% MODIF(OBJETO_BASE) "debe de" causar la ejecución de la ACCION.
+%
+% AUTORIZACIÓN
+% an assertion that a specific prerogative or privilege has been defined with
+% respect to one or more CONSTRUCTS. An AUTHORIZATION is an
+% assertion represented the predicate: “(Only) x may do y,” where x typically
+% is a user and y is an action that may be executed.
+% Redacción: CUANTIFICADOR OBJETO_BASE "puede hacer/ser"
+% OBJETO_RELACIONADO(S)
+%
+% AUTORIZACIÓN de tipo HABILITADOR
+% Redacción:
+% MODIF(OBJETO_BASE) "está autorizado a" crear instancias de ESTRUCTURA
+% MODIF(OBJETO_BASE) "está autorizado a" realizar la ACCIÓN
+%
+% AUTORIZACIÓN de tipo CRONOMETRO
+% Redacción:
+% MODIF(OBJETO_BASE) "está autorizado a" instanciar ESTRUCTURA con un LIMITE.
+% MODIF(OBJETO_BASE) "está autorizado a" realizar la ACCIÓN con un LIMITE.
+%
+% AUTORIZACIÓN de tipo EJECUTIVO
+% Redacción:
+% No definido?
+%
+% Control/Influencia
+% Debe ser, hacer, instanciar. / Puede ser, hacer, instanciar.
+%
+% DERIVACIÓN
+% . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+% DERIVACIÓN ::= CALCULO o INFERENCIA
+%
+% CALCULO
+% a DERIVATION that produces a DERIVED FACT according to a specified
+%  mathematical algorithm.
+% Redacción:
+% TERMINO "se calcula de" | "::=" EXPRESION(REGLAS DE NEGOCIO)
+%
+% INFERENCIA
+% a DERIVATION that produces a DERIVED FACT using logical induction (from
+% particulars) or deduction (from general principles).
+% Redacción:
+% TERMINO "se infiere de" EXPRESION(REGLAS DE NEGOCIO)
+%	"mediante una relacion" ("muchos a muchos" | "uno a muchos" | etc.)
+%
+%=====================================================================
+
+
+
+%----------------------------------------------------------------------
+% Definir un Termino del Negocio.
+% Existen 3 tipos de Términos del negocio:
+% - Literal: Instancia específica, por ejemplo: El ``Plan de desarrollo'' es una instancia de ``Instrumento de planeación''.
+% - Tipo: Define o hace referencia a un concepto, conjunto o grupo de cosas. Por ejemplo:  Alumno, Proyecto, etc.
+% - Sensor: Determina un instrumento o medio que permite capturar el valor de una propiedad de algún elemento del mundo real. Por ejemplo: Termómetro, reloj, odometro, etc.
+%
+% \BRterm{gls:Id}{Literal} Escriba una descripción e indique el tipo al que pertenece.
+% \BRterm{gls:Id}{Tipo} Escriba una descripción, sinónimos y si es posible liste instancias de ejemplo.
+% \BRterm{gls:Id}{Sensor} Escriba una descripción, especificando además: lo que reporta, el tipo del valor sensado y la frecuencia, evento oporcedimiento mediante el cual se reporta el valor.
+\newcommand{\BRterm}[2]{\item[{\bf\cdtLabel{#1}{#2}}] }
+
+\def \varBusinessEntityId {}
+%----------------------------------------------------------------------
+% Definir una entidad con sus atributos
+% Use:
+%
+% \begin{BusinessEntity}{cicloEscolar}{Ciclo Escolar}
+% 	 \Battr{nombre}{Nombre}{Frase}
+%		{Es el nombre que identifica al Ciclo Escolar}
+%		{\obligatorio}
+%	 \Battr{activo}{Activo}{Booleano}
+%		{Es el estado en el que se encuentra el Ciclo Escolar}
+%		{\obligatorio}
+% \end{BusinessEntity}
+\newenvironment{BusinessEntity}[2]
+{%
+	\def \varBusinessEntityId{#1}
+	\hypertarget{#1}{\vspace{1pt}}
+	\subsection{#2}%
+	\vspace{-6mm}%
+	\noindent{\includegraphics[width=\textwidth]{cdt/uc/rules/classRule}}%
+	\vspace{-6mm}%
+	\subsubsection{Atributos}%
+	\begin{description}%
+}%
+{%
+	\end{description}%
+}
+
+%----------------------------------------------------------------------
+% Definir un atributo de una Entidad de Negocio.
+% Use:
+%     \Battr{id}{nombre}{tipo}{Descripción}{obligatorio/opcional}
+\newcommand{\Battr}[5]{%
+	\item[\hypertarget{\varBusinessEntityId:#1}{#2}] #4. #3 y este dato es #5. %
+}
+
+%=====================================================================
+% Comandos: \tdXXXX
+% Propósito: Estandarizar la redacción referente al tipo de dato al
+%            que pertenecen los atributos. 
+%=====================================================================
+\newcommand{\tdPalabra}{Es una \cdtRef{gls:palabra}{palabra} corta}
+\newcommand{\tdFrase}{Es una \cdtRef{gls:frase}{frase} o enunciado}
+\newcommand{\tdParrafo}{Descrita en uno o más \cdtRef{gls:parrafo}{párrafos}}
+\newcommand{\tdNumerico}[1][]{Es un valor \cdtRef{gls:numerico}{numérico} #1}
+\newcommand{\tdDecimal}{Es un valor \cdtRef{gls:decimal}{decimal}}
+\newcommand{\tdBooleano}{Indica ``sí'' o ``no''}
+\newcommand{\tdFecha}{Especifica una \cdtRef{gls:fecha}{fecha}}
+\newcommand{\tdFechaCorta}{Especifica una \cdtRef{gls:fechacorta}{Fecha Corta}} 
+\newcommand{\tdNull}{}
+\newcommand{\tdCatalogo}{Es un \cdtRef{gls:catalogo}{catálogo}}
+\newcommand{\tdArchivo}{Es un \cdtRef{gls:archivoDigital}{Archivo digital}}
+\newcommand{\tdHora}{Especifica una \cdtRef{gls:hora}{hora}}
+\newcommand{\tdCorreo}{Es una cadena de caracteres con formato xxx@yyy.com o xxx@yyy.com.mx}
+%=====================================================================
+% Comandos: \requerido, \opcional, \na
+% Propósito: simplificar la especificación de
+%=====================================================================
+\newcommand{\requerido}{\hyperlink{gls:requerido}{requerido} ({\em no se puede omitir})}
+\newcommand{\opcional}{\hyperlink{gls:opcional}{opcional} ({\em se puede omitir})}
+\newcommand{\na}{\hyperlink{gls:NA}{no aplica}}
+
+
+%=====================================================================
+% Comandos: \longitudExacta{longitud}{unidad}, \longitudMinMax{minima}{unidad}{maxima}{unidad}, \longitudMax{maxima}{unidad}
+% Propósito: simplificar la especificación de la longitud
+%=====================================================================
+\newcommand{\longitudExacta}[2]{Este atributo debe contener exactamente {#1} {#2}.}
+\newcommand{\longitudMinMax}[4]{Este atributo debe contener al menos {#1} {#2} y a lo más #3 #4.}
+\newcommand{\longitudMax}[2]{Este atributo debe contener a lo más {#1} {#2}.}
+
+
+%----------------------------------------------------------------------
+% Definir un Hecho del negocio (relación entre términos).
+% use:
+%	\begin{BussinesFact}{Aulas de un Centro de Trabajo}
+%	  \BRitem{Descripción}{Las \hyperlink{aula}{Aulas} pertenecen a un \hyperlink{centroDeTrabajo}{Centro De Trabajo}.}
+%	  \BRitem{Tipo}{\relComposicion, \relHerencia, \relAgregacion, \relAsociacion}
+%	  \BRitem{Cardinalidad}{muchos a uno}
+%	\end{BussinesFact}
+\newenvironment{BusinessFact}[2]%
+{%
+	\hypertarget{#1}{}%
+	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%
+	\BRitem{Asociación} {#2}%
+}%
+{%
+	\end{description}%
+}
+
+
+
+%=====================================================================
+% Comandos: \relComposicion, \relHerencia, \relAgregacion, \relAsociacion
+% Propósito: Simplificar la redacción de las relaciones entre clases.
+%=====================================================================
+\newcommand{\relComposicion}{Asociación de Composición}
+\newcommand{\relHerencia}{Relación de Herencia}
+\newcommand{\relAgregacion}{Asociación de Agregación}
+\newcommand{\relAsociacion}{Asociación genérica}
+
+
+%----------------------------------------------------------------------
+% Comando para colocar una descripción de una regla de negocio
+% use:
+% \begin{BusinessRule}{id}{nombre}{clase y/o tipo}{fortaleza}
+%	\BRitem{Descripción}{Descripcion textual de la regla.}
+%	\BRitem{Caso correcto}{Un ejemplo en el que se cumple la regla.}
+%	\BRitem{Caso incorecto}{Un ejemplo en el que se cumple la regla.}
+%	\BRitem{Sentencia}{Expresion formal de la regla.}
+% \end{BusinessRule}
+% Clase: Condición, Restricción, Autorización, Inferencia.
+% Tipo(solo para las tres primeras clases): Habilitador, Cronometrado,  Ejecutivo
+% Fortaleza: Controla / Influye el comportamiento.
+% Como describir una regla:
+% CONDICION:
+% Regla Condicion-Habilitador: si M(OBJ) entonces Habilita/permite RN
+% Regla Condicion-Cronómetro: si M(OBJ) REL LIMITE entonces Habilita/Ejecuta RN
+% Regla Condicion-Ejecución:  si M(OBJ) entonces Ejecuta/Crea RN
+% RESTRICCION DE INTEGRIDAD
+% Regla Restriccion de Integridad-Habilitador:
+%	M(OBJ) Debe/Puede RN
+% Regla Restriccion de Integridad-Cronómetro:
+%	M(OBJ) Debe/Puede REL LIMITE RN
+% Regla Restriccion de Integridad-Ejecución:
+% 	M(OBJ) Debe Ejecuta/Crea RN
+%
+%Ejemplos:
+%----------------------------------------------------------------------
+%\begin{BussinesRule}{BR7}{Edad actual}
+%	{Cálculo}
+%	{Controla.}
+%	\BRccitem{Versión}{0.1}
+%	\BRccitem{Autor}{Jessica Ramos.}
+%	\BRccitem{Evaluador}{Ulises Vélez Saldaña.}
+%	\BRccitem{Estado}{Terminada: 20 de Junio, 2012, Aprobada: 23 de Junio del 2012.}
+%	\BRitem{Descripción}{La ``Edad actual'' de una personal se presenta como números de años y meses, contando los años y meses completos transcurridos desde la Fecha de Nacimeinto de la persona hasta la Fecha Actual.}
+%	\BRitem{Sentencia}{$\forall p \in Persona \Rightarrow p.edadActual = fechaActual - p.fechaDeNacimiento$}
+%	\BRitem{Ejemplo}{Para la persona: Juan Pérez García, nacida en el Distrito Federal el 12 de Mayo del 2001 la ``Edad Actual'' al 15 de Abril del 2012 sería: {\bf 10 años y 11 meses}.}
+%	\BRitem{Referenciado por}{\refUC{CUCE3.1}, \refUC{CUCE3.2}, \refUC{CUCE3.4}, \refUC{CUCE5.1}, \refBR{BR9}{Edad al 31 de Diciembre}, \refUC{CUCE5}}
+%\end{BussinesRule}
+%
+%\begin{BussinesRule}{BR8}{Fecha de Nacimiento correcta}
+%	{Restricción de operación}
+%	{Obligatorio}
+%	\BRccitem{Versión}{0.1}
+%	\BRccitem{Estado}{Aprobada, 29 de Junio del 2012}
+%	\BRitem{Descripción}{
+%	Las Fechas de Nacimiento que se registrarn en el SINACEM para cualquier Persona debe ser mayores al día Primero de Enero del año 1900 y menor a la Fecha Actual.}
+%	\BRitem{Sentencia}{$\forall p \in Persona \Rightarrow 01-Enero-1900~<~p.fechaDeNacimiento~<~fechaActual$}
+%	\BRitem{Referenciado por}{\refUC{CUCE3.2}, \refUC{CUCE3.3}, \refUC{CUCE3.4}, \refUC{CUCE5.1}}
+%\end{BussinesRule}
+\newenvironment{BusinessRule}[4]
+{%
+	\hypertarget{#1}{}%
+	\subsubsection{#1 #2}
+	\vspace{-6mm}%
+	\noindent{\includegraphics[width=\textwidth]{cdt/uc/rules/BRRule}}
+	\vspace{-6mm}%
+	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%
+    %\BRitem{Id}{#1}%
+	%\BRitem{Regla}{{#1} {#2}}%
+    %\BRitem{Regla}{{#2}}%
+	\BRitem{Tipo}{#3}%
+	\BRitem{Nivel}{#4}%
+}%
+{%
+	\end{description}%
+}
+
+
+%----------------------------------------------------------------------
+% Para colocar un elemento dentro de una regla de negocio.
+% use: \BRitem{Elemento}{Descripción}
+\newcommand{\BRitem}[2]{%
+	\item[{#1}:]  {#2}%
+}
+
+%----------------------------------------------------------------------
+% Para colocar un elemento de Administración de Reglas de negocio, como: autor, versión, fechas, estado, control de cambios, etc.
+% use: \BRccitem{Versión}{2.0}
+\newcommand{\BRccitem}[2]{%
+	\item[{\color{colorGris}#1:}]  {\color{colorGris}#2}.%
+}
+
+%-------------------------------------------------------------------------
+% Utilice \hideControlVersion para eliminar de la salida toda la información de control de cambios.
+\renewcommand{\hideControlVersion}{%
+	\renewcommand{\RCitem}[3]{}
+	\renewcommand{\BRccitem}[2]{}
+	\renewcommand{\UCccitem}[2]{}
+	\renewcommand{\UCccsection}[1]{}
+}
+
+
+% \noAplica{valor(es)}{condición}
+\newcommand{\noAplica}[2]{~(o #1 #2)}
+% Utilice:
+% \cdtColumna[\noAplica{indefinido}]{Cierre}{Es la \cdtRef{Tarea:fechaTerminoReal}{fecha} de cierre de la tarea}{12 cm} .
+\newcommand{\cdtColumna}[4][]{\item[#2:] {#3}#1, ancho a\-pro\-xi\-ma\-do de la columna: {#4}.}
+

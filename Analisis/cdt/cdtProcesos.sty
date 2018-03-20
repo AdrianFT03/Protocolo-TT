@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Componente: cdtProcesos.sty
+%  Autor: Ulises Vélez Saldaña, Jose Jaime López Rabadán
+%  Fecha: 4 de Diciembre, 2012
+%  Versión: 1.0
+%  Biblioteca: cdt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cdtProcesos}[2012/07/28, v2.2 CDT-ESCOM-IPN Paquete para describir Procesos]
+\RequirePackage{cdt/cdtAnalisis}
+
+\newcommand \PSubProceso{\raisebox{-1mm}{\includegraphics[height=11pt]{cdt/procesos/isubproceso}}}
+\newcommand \itarea{\raisebox{-1mm}{\includegraphics[height=11pt]{cdt/procesos/itarea}}}
+\newcommand \iMessageEvent{\raisebox{-1mm}{\includegraphics[height=11pt]{cdt/procesos/iMessageEvent}}}
+\newcommand \iMultipleEvent{\raisebox{-1mm}{\includegraphics[height=11pt]{cdt/procesos/iMultipleEvent}}}
+\newcommand \iConditionalEvent{\raisebox{-1mm}{\includegraphics[height=11pt]{cdt/procesos/iConditionalEvent}}}
+
+%----------------PROCESO------------------------------------------------------
+\newenvironment{Proceso}[5][procesoRule]
+{\newpage%
+
+\ThisCenterWallPaper{0.81}{cdt/procesos/rules/#1}%
+%\ThisLLCornerWallPaper{0.85}{images/procesos/#1}%
+%\ThisCenterWallPaper{0.7}{images/procesos/#1}%
+\addtocounter{counterUC}{1}%
+\subsection{#2 #3}%
+\hypertarget{#5}{\vspace{1pt}}
+%\noindent\hypertarget{#2}{}%
+\subsubsection{Resumen}%
+#4
+\subsubsection{Elementos del proceso}%
+\arrayrulecolor{gray}%
+\par\begin{longtable}{| p{.17\textwidth} | p{.75\textwidth} |}%
+	\arrayrulecolor{gray}%
+	\rowcolor{gray}%
+	\UCitem{\color{white}Elemento}{\color{white}#2 #3}%
+	\endhead%
+	\arrayrulecolor{gray}%
+}
+{\end{longtable}%
+}
+
+
+
+
+
+% Descripción de los pasos del Proceso
+%----------------------------------------------------
+\newenvironment{PDescripcion}
+{%
+	\subsubsection{Descripción del proceso}
+	\renewcommand{\labelenumi}{\textcolor{black}{\bf \theenumi}}%
+	\begin{enumerate}\addtolength{\itemsep}{-0.5\baselineskip}%
+}%
+{%
+	\item[- -] - - {\em Fin del proceso}. \end{enumerate}%
+	\renewcommand{\labelenumi}{\theenumi}%
+}
+
+\newcommand{\Ppaso}[1][]{\item {#1} }
+
+
+% Descripción de los factores críticos
+%----------------------------------------------------
+\newenvironment{FCDescripcion}
+{%
+	\subsubsection{Factores críticos}
+	\renewcommand{\labelenumi}{\textcolor{black}{\bf \theenumi}}%
+	\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}%
+}%
+{%
+	\end{itemize}%
+	\renewcommand{\labelenumi}{\theenumi}%
+}
+
+\newcommand{\FCpaso}[1][]{\item {#1} }
+
+
+%------------------------------------------------------------------------
+% Referencia a un Proceso
+% use: \refPR{Id}
+\newcommand{\refPR}[1]{%
+	\hyperlink{#1}{#1}%
+}

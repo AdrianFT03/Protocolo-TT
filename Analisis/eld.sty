@@ -1,0 +1,43 @@
+% comandos propios para este proyecto
+
+\newcommand{\eld}{Escuela Libre de Derecho}
+\newcommand{\cdt}{Coordinación de Desarrollo Tecnológico, ESCOM-IPN }
+\newcommand{\sae}{Sistema de Administración Escolar Versión 2.0}
+%\newcommand{\paear}{Programa de Acreditación de Escuelas Ambientalmente Responsables}
+
+\newcommand{\btnBorrar}{\imgInline{Iconos/borrar.png}}
+\newcommand{\btnAgregar}{\imgInline{Iconos/mas.png}}
+\newcommand{\btnArrowLeft}{\imgInline{Iconos/izq.png}}
+\newcommand{\btnArrowRigth}{\imgInline{Iconos/der.png}}
+\newcommand{\btnEditar}{\imgInline{Iconos/editar.png}}
+%%==========================================================================
+% Para definir un indicador.
+% Use:
+%
+%\begin{indicador}{IDA1}{Nombre del indicador}
+%	\item[Descripción:] Descripción del indicador.
+%	\item[Fórmula:] A = B + C
+%\end{indicador}
+%==========================================================================
+\newenvironment{indicador}[4]{%
+	\hypertarget{#1}{{\hspace{1pt}}}%
+	\subsection{{#1} {#2}} %ID y nombre del mensaje
+	\vspace{-6mm}%
+	%\noindent{\includegraphics[width=\textwidth]{images/pantallas/iconos/indicador}}%
+	\vspace{-6mm}%
+	\subsubsection{Variables}
+	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%%
+		\item [Descripción:] #4
+		\item [Fórmula:] #3
+	\end{description}
+
+		\begin{center}
+		\begin{longtable}{ | p{.20\textwidth} | c | p{.60\textwidth} |} \hline
+			\rowcolor{black} \color{white} Variable & \color{white} Unidad & \color{white} Descripción \\ \hline
+}{%
+		\end{longtable}
+	\end{center}
+}
+
+\newcommand{\INitem}[3]{{#1} & {#2} & {#3} \\ \hline}%
+\newcommand{\ioCalcularIndicador}{Lo calcula el sistema mediante el indicador }

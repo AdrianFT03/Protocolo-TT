@@ -1,0 +1,142 @@
+
+\begin{UseCase}{CUCP1}{Buscar profesor}
+    {
+    	Para que un \cdtRef{Actor:alumno}{Alumno}, \cdtRef{Actor:profesor}{Profesor} o  \cdtRef{Actor:invitado}{Invitado} pueda conocer la ubicación de un profesor es necesario que realice la búsqueda correspondiente en la aplicación. Para que esta búsqueda pueda llevarse a cabo es necesario que el actor conozca el nombre del profesor.
+}
+    
+
+    \UCitem{Versión}{1.0}
+    \UCccsection{Administración de Requerimientos}
+    \UCitem{Autor}{Adrian Flores Torres}
+    \UCccitem{Evaluador}{}
+    \UCitem{Operación}{Busqueda}
+    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Complejidad}{Baja}
+    \UCccitem{Volatilidad}{Baja} %Que tanto es el proceso susceptible a cambios
+    \UCccitem{Madurez}{Alta}
+    \UCitem{Estatus}{En revisión}
+    \UCitem{Fecha del último estatus}{9 Dic 2017}
+    
+%% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+%% Esta sección la debe llenar solo el Revisor
+% %--------------------------------------------------------
+ 	\UCccsection{Revisión Versión 1.0} % Anote la versión que se revisó.
+% 	% FECHA: Anote la fecha en que se terminó la revisión.
+ 	\UCccitem{Fecha}{} 
+% 	% EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
+ 	\UCccitem{Evaluador}{Fabiola Jaramillo Loredo}
+% 	% RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
+ 	\UCccitem{Resultado}{Corregir}
+% 	% OBSERVACIONES: Liste los cambios que debe realizar el Analista.
+
+% %--------------------------------------------------------
+
+	%qué: enviar la información de los aspirantes que realizaron el pago correspondiente para presentar el examen CENEVAL
+    	%quién: coordinacionControlEscolar
+    	%para qué: para que CENEVAL asigne los folios a los aspirantes y puedan presentar el examen 
+    	%por qué: porque desea realizar el prerregistro de aspirantes
+		\UCccitem{Observaciones}{
+%		\begin{UClist}
+%			% 			% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
+%			\RCitem{PC1}{\TOCHK{Paso 1: Este caso de uso viene de un botón que aparece en la pantalla de Evaluaciones del aspirante}}{18 de Octubre del 2017}
+%			\RCitem{PC2}{\TOCHK{No entiendo la trayectoria A}}{18 de Octubre del 2017}
+%			\RCitem{PC3}{\TOCHK{Paso 2: qué pasa si el estado del aspirante es registrado?}}{18 de Octubre del 2017}
+%			\RCitem{PC4}{v{Paso 7: Referenciar máquina de estados}}{18 de Octubre del 2017}
+%			\RCitem{PC5}{\TOCHK{Entre paso 8 y 9: Escribir que el aspirante responde la encuesta de ceneval}}{18 de Octubre del 2017}
+%			\RCitem{PC6}{\TOCHK{Paso 9: Link de trayectoria B roto}}{18 de Octubre del 2017}
+%			\RCitem{PC7}{\TOCHK{Paso 12: No muestra esa pantalla}}{18 de Octubre del 2017}
+%			
+%		\end{UClist}		
+	}
+    \UCsection{Atributos}
+    \UCitem{Actor(es)}{
+    	\cdtRef{Actor:alumno}{Alumno}, \cdtRef{Actor:profesor}{Profesor},  \cdtRef{Actor:invitado}{Invitado}.
+    }
+    \UCitem{Propósito}{Encontrar a un profesor.}
+    \UCitem{Entradas}{
+	\begin{UClist}
+		\UCli  \cdtRef{persona:nombre}{Nombre}, \cdtRef{persona:primerApellido}{Primer apellido}, \cdtRef{persona:segundoApellido}{Segundo apellido}. \ioObtener. Esta información se registro en la base de datos.
+		\UCli \cdtRef{persona:nombre}{Nombre}. \ioEscribir.
+		
+	\end{UClist}
+	}
+    \UCitem{Salidas}{
+    \begin{UClist}
+    	
+    	\UCli Lista que muestra \cdtRef{persona:nombre}{Profesor}: Lista que muestra \cdtRef{persona:nombre}{Nombre}, \cdtRef{persona:primerApellido}{Primer apellido}, \cdtRef{persona:segundoApellido}{Segundo apellido}. Esta información se registro en la base de datos.
+    	\UCli \cdtIdRef{MSG4}{Elemento no encontrado}: Se muestra en la pantalla \cdtIdRef{IUCP1}{Realizar Busqueda} indicando al actor que no existen elementos con el nombre ingresado.
+    	
+    \end{UClist}
+}
+    \UCitem{Precondiciones}{
+	\begin{UClist}
+		\UCli {\bf Externa:} Que el actor conozca el nombre del profesor. 
+	    \UCli {\bf Interna:} Que existan profesores registrados.
+	\end{UClist}
+    }
+    
+    \UCitem{Postcondiciones}{
+	\begin{UClist}
+	    \UCli {\bf Interna:} La aplicación mostrara el profesor de la búsqueda.
+	\end{UClist}
+    }
+
+    %Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+    \UCitem{Reglas de negocio}{
+    Ninguno.
+}
+    \UCitem{Errores}{
+    	
+    \begin{UClist}
+    	\UCli \cdtIdRef{MSG5}{No existen elementos registrados}: Se muestra en la pantalla \cdtIdRef{IUCP1}{Realizar Busqueda}, indicando al actor que no existen profesores registrados.
+    	\UCli \cdtIdRef{MSG4}{Elemento no encontrado}:  Se muestra en la pantalla \cdtIdRef{IUCP1}{Realizar Busqueda}, indicando al actor que no existen profesores registrados con el nombre que realizo la búsqueda.
+    \end{UClist}
+   
+    }
+    \UCitem{Tipo}{Primario}
+\end{UseCase}
+
+ \begin{UCtrayectoria}
+
+    \UCpaso[\UCactor] Solicita realizar una búsqueda de profesor presionando el botón \cdtButton{Buscar Profesor} del menú.
+    \UCpaso[\UCsist] Obtiene la lista de profesores registrados en la aplicación.
+    \UCpaso[\UCsist] Obtiene la información de los profesores. \refTray{A}
+    \UCpaso[\UCsist] Construye la pantalla \cdtIdRef{IUCP1}{Realizar Busqueda}.
+    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUCP1}{Realizar Busqueda}.
+    \UCpaso[\UCactor] Ingresa el nombre del profesor en el campo de busqueda.
+    \UCpaso[\UCactor] Presiona el botón \cdtButton{buscar}, del teclado del celular.
+    \UCpaso[\UCsist] Realiza la búsqueda del profesor.
+    \UCpaso[\UCsist] Muestra el resultado de la búsqueda. \refTray{B}
+    \UCpaso[\UCactor] Visualiza  la información mostrada.
+    \UCpaso[\UCactor] Presiona el nombre del profesor.\label{CUCP1:busqueda}
+    
+    
+
+\end{UCtrayectoria}
+
+%-------------------------Trayectoria A------------------------------
+\begin{UCtrayectoriaA}[Fin del caso de uso]{B}{No existen profesores registrados}
+	
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{No existen elementos registrados}, en la pantalla \cdtIdRef{IUCP1}{Realizar Busqueda}.
+	\UCpaso[\UCactor] Presiona el botón \cdtButton{Ok}.
+	\UCpaso[\UCsist] Muestra la pantalla principal del actor.
+	
+\end{UCtrayectoriaA}
+%-------------------------Trayectoria B------------------------------
+\begin{UCtrayectoriaA}[Fin del caso de uso]{B}{No existe algún registro con ese nombre}
+	
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG4}{Elemento no encontrado}, en la pantalla \cdtIdRef{IUCP1}{Realizar Busqueda} .
+	\UCpaso[\UCactor] Presiona el botón \cdtButton{Ok}.
+	\UCpaso[\UCsist] Muestra la pantalla principal del actor.
+
+\end{UCtrayectoriaA}
+
+\subsection{Puntos de extensión}
+
+\UCExtensionPoint
+{El Usuario desea visualizar la información a detalle del profesor.}
+{ Paso \ref{CUCP1:busqueda} de la Trayectoria Principal}
+{\cdtIdRef{CUCP1.1}{Visualizar información}}
+
+
+

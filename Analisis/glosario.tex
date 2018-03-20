@@ -1,0 +1,128 @@
+% !TEX root = analisis.tex
+Este capítulo describe los términos usados a lo largo del documento que tienen un significado singular en la ESCOM o en el Sistema y que se consideran necesario definirlos para evitar ambigüedades o malos entendidos.\\
+
+La lista de términos se encuentra agrupada por áreas de conocimiento:
+
+\begin{Citemize}
+	
+	\item \textbf{Términos técnicos}: Agrupa los términos que tienen que ver con el sistema.
+	
+	\item \textbf{Términos del negocio}: Agrupa los términos que tienen significado dentro de la ESCOM.
+	
+\end{Citemize}
+
+Para fines de este documento la siguiente lista de términos se debe interpretar como se describen en este capítulo.
+
+%====================================================================
+\section{Términos técnicos}\label{sec:terminosTecnicos}
+
+En esta sección se definen los términos técnicos que se utilizan para describir el comportamiento del sistema.
+
+\begin{description}
+
+	\BRterm{gls:alfanumerico}{Alfanumérico:} Es un \cdtRef{gls:tipoDato}{tipo de dato} definido por el conjunto de caracteres numéricos y alfabéticos.
+	
+	%\BRterm{gls:archivoDigital}{Archivo digital:} Equivalente digital de los archivos escritos en libros, tarjetas, libretas, papel o microfichas del entorno de oficina tradicional.
+	
+	\BRterm{gls:atributo}{Atributo:} Son las características que definen o identifican a una entidad en un conjunto de entidades.
+	
+	\BRterm{gls:booleano}{Booleano:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que puede tomar los siguientes valores: verdadero ó falso (1 ó 0).
+	
+	\BRterm{gls:cadena}{Cadena:} Es el \cdtRef{gls:tipoDato}{tipo de dato} definido por cualquier valor que se compone de una secuencia de caracteres, con o sin acentos, espacios, dígitos y signos de puntuación. Existen tres tipos de cadenas: palabra, frase y párrafo.
+	
+	\BRterm{gls:catalogo}{Catálogo:} Es una lista ordenada o clasificada de elementos relacionados.
+	
+	\BRterm{gls:decimal}{Decimal:} Es un \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:numerico}{numérico}. Los números decimales son valores que denotan números racionales y la aproximación a números irracionales.
+	
+	\BRterm{gls:entero}{Entero:} Es el \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:numerico}{numérico} definido por todos los valores numéricos enteros, tanto positivos como negativos.
+	
+	\BRterm{gls:entidad}{Entidad:} Término genérico que se utiliza para determinar un ente el cual puede ser concreto, abstracto o conceptual por ejemplo: Unidad administrativa, entregable, persona, etc. La entidades se caracterizan a través de atributos que personalizan a la entidad.		
+	
+	\BRterm{gls:fecha}{Fecha:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que indica un día único en referencia al calendario gregoriano. La fecha tiene el formato DD/MMM/YYYY, por ejemplo: 24/Mar/2013.
+	
+	%\BRterm{gls:fechacorta}{Fecha Corta:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que indica el mes y año calendario gregoriano. La fecha tiene el formato MM/AA, por ejemplo: 02/17.
+	
+	\BRterm{gls:frase}{Frase:} Es un \cdtRef{gls:tipoDato}{tipo de dato}  conformado por \cdtRef{gls:palabra}{palabras} y espacios.
+	
+	\BRterm{gls:hora}{Hora:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que determina la hora de alguna actividad. Se compone de horas, minutos y segundos, tiene un formato de 24 hrs. en  HH:MM:SS 
+	
+	\BRterm{gls:numerico}{Numérico:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que se compone de la combinación de los símbolos \textit{0,1,2,3,4,5,6,7,8,9,. y -.}  que expresan una cantidad en relación a su unidad.
+	
+	\BRterm{gls:opcional}{Opcional:} Es un elemento que el actor puede o no proporcionar en el formulario o la pantalla, su decisión no afectará la ejecución de la operación solicitada.
+	
+	\BRterm{gls:palabra}{Palabra:} Es un \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:cadena}{cadena} conformado por el alfabeto y símbolos especiales como son \textit{\#,-,\$,\%,\&,(,),etc} y se caracteriza por no tener espacios.
+	
+	\BRterm{gls:parrafo}{Párrafo:} Es un \cdtRef{gls:tipoDato}{tipo de dato} conformado por \cdtRef{gls:frase}{frases}.
+	
+	\BRterm{gls:requerido}{Requerido:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que debe proporcionarse de manera obligatoria. La ejecución de la operación solicitada dependerá de que se proporcione este dato.
+	
+	%\BRterm{gls:contrasena}{Contraseña:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que se compone de 8 a 20 caracteres, al menos un carácter especial y una letra mayúscula; los caracteres especiales que pueden ser utilizados son \textit{\,?,!,\%,\&}.
+	
+	\BRterm{gls:tipoDato}{Tipo de dato:} Es el dominio o conjunto de valores que puede tomar un atributo de una \cdtRef{gls:entidad}{entidad} en el modelo de información. Los tipos de datos utilizados son: \cdtRef{gls:palabra}{palabra}, \cdtRef{gls:frase}{frase}, \cdtRef{gls:parrafo}{párrafo}, \cdtRef{gls:numerico}{numérico}, \cdtRef{gls:fecha}{fecha} y \cdtRef{gls:booleano}{booleano}.
+	
+	\BRterm{gls:na}{NA} Abreviación del término ``No Aplica'', se utiliza para indicar que algún elemento en la estructura del documento o en el sistema no aplica.
+
+\end{description}
+
+%====================================================================
+\section{Términos del negocio}\label{sec:terminosNegocio}
+
+En esta sección se definen los términos del negocio que se utilizan para comprender el comportamiento del sistema.
+
+\begin{description}
+	
+	\BRterm{gls:unidadDeAprendizaje}{Unidad de Aprendizaje:} A la estructura didáctica que integra los contenidos formativos de un curso, materia, módulo, asignatura o sus equivalentes. Se utiliza como \cdtRef{gls:frase}{frase} para nombrar las materias, puede tomar alguno de los siguientes valores: Ingeniería de Software, Algoritmia y Programación Estructurada, etc.
+	
+	\BRterm{gls:cicloEscolar}{Ciclo escolar:} Al lapso anual que define el Calendario Académico del Instituto Politécnico Nacional.
+
+%	\BRterm{gls:estadoConvocatoria}{Estado de convocatoria de ingreso:} Es la situación actual de una convocatoria de ingreso. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Edición, Revisión, Publicada o Cerrada.
+%	
+%	\BRterm{gls:estadoCalendario}{Estado de calendario escolar:} Es la situación actual de un calendario escolar. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Creado, Edición, Revisión, Aprobado, Publicado o Finalizado.
+%	
+%	\BRterm{gls:fuenteCriterio}{Fuente del criterio:} Indica la persona que proporciona un criterio. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ELD o Aspirante.
+%	
+%	\BRterm{gls:medioContacto}{Medio de contacto:} Tipo de un medio de contacto. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Teléfono fijo, Teléfono celular o Correo electrónico.
+%	
+%	\BRterm{gls:tipoMateria}{Tipo de materia:} Es el tipo que se le puede dar a una materia. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Obligatoria u Optativa.
+%	
+%	\BRterm{gls:tipoEscuela}{Tipo de escuela:} Tipo de administración que lleva una escuela. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Pública o Particular.
+%	
+%	\BRterm{gls:tipoEtapa}{Tipo de etapa:} Es el tipo que se le puede dar a una etapa. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Admisión, Inscripción, Reinscripción, Evaluaciones, Inhábiles o PENDIENTES.
+%	
+%	\BRterm{gls:tipoRequisito}{Tipo de requisito:} Es el tipo que se le puede dar a un requisito. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Datos personales, Domicilio, Información escolar o Medios de contacto.
+%	
+%	\BRterm{gls:rubroEntrevista}{Rubro de entrevista:} Tipo de rubro de la entrevista. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Vocación, Carácter, Interés por la ELD o Aptitudes Verbales.
+%	
+%	\BRterm{gls:rubroEntrevista}{Rubro:} Tipo de rubro de la entrevista. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Vocación, Carácter, Interés por la ELD o Aptitudes Verbales.
+%	
+%	\BRterm{gls:resultadoEntrevista}{Resultado de entrevista:} Resultado de la evaluación de una entrevista. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Aceptado, Aceptado con reservas o No aceptado.
+%	
+%	\BRterm{gls:dia}{Días de la semana:} Cada uno de los siete lapsos en los que se divide una semana. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Lunes, Martes, Miércoles, Jueves, Viernes, Sábado o Domingo.
+%	
+%	\BRterm{gls:edificio}{Edificio:} Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema que establece la ubicación de los salones, puede tomar alguno de los siguientes valores: Licenciatura, Posgrado, Biblioteca o Centro de Investigaciones Jurídica.
+%	
+%	\BRterm{gls:nivel}{Nivel:} Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} que establece la posición de los salones dependiendo del edificio en el que se encuentren, puede tomar alguno de los siguientes valores: PB, 1 o 2.
+%	
+%	\BRterm{gls:motivoAusenciaTemporal}{Motivo de ausencia temporal:} Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} que indica el tipo de ausencia temporal que se presenta, puede tomar alguno de los siguientes valores: Licencia.
+%	
+%	\BRterm{gls:motivoAusenciaDefinitiva}{Motivo de ausencia definitiva:}  Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} que determina el motivo por la cual se tiene ausencia definitiva registrada, puede tomar alguno de los siguientes valores: Finado, Renuncia o Remoción por la Junta General de ProfesoresDire	\BRterm{gls:tipoDomicilio}{Tipo de domicilio:}Es el tipo que se le puede asignar a un domicilio. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Trabajo o Personal.
+%	
+%	\BRterm{gls:grado}{Grado}: Se refiere a cada una de las etapas en que se divide el plan de estudios. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato}.
+%	
+%	\BRterm{gls:tituloTratamiento}{Título de Tratamiento}Especifica el modo protocolario de dirigirse a una persona en atención al respeto que se le debe. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Sr., Srita., Sra.
+%	
+%	\BRterm{gls:nombramientoProfesor}{Nombramiento del profesor} Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Adjunto, Titular, Suplente, Interino, Provisional o Emérito.
+%	
+%	\BRterm{gls:salon}{Salón:}Espacio físico donde se imparten clases. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato}.	
+%	
+%	\BRterm{gls:gradoAcademico}{Grado Académico:} Acreditación otorgada por alguna institución educativa, después de la terminación exitosa de algún programa de estudios. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato}, puede tomar alguno de los siguientes valores: Licenciatura, Maestría, Especialista o Doctorado.
+%	
+%	\BRterm{gls:tipoInconsistencia}{Estado de inconsistencia:} Tipo de inconsistencia en un archivo. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: No encontrado o No pertenece.
+%	
+%	\BRterm{gls:tipoEstadoEncuesnta}{Estado de encuesta:} Especifica si el aspirante ha contestado o no la encuesta de CENEVAL. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: Registrado o No registrado.
+%	
+%	\BRterm{gls:resultadoPsicometrico}{Resultado final del examen psicométrico:} Indica si un aspirante es candidato para ingresar a la Escuela Libre de Derecho. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato}, puede tomar alguno de los siguientes valores: Recomendable, Recomendable con reservas y No recomendable.
+%	
+%	\BRterm{gls:formasPago}{Formas de pago:}Especifica el atributo que precisa la forma en la que se realizará el pago de una operación. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato}, puede tomar alguno de los siguientes valores: Tarjeta de crédito o débito, Transferencia bancaria, Pago en efectivo.
+
+\end{description}

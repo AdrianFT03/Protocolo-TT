@@ -1,0 +1,87 @@
+% !TEX root = ../../../analisis.tex
+
+\begin{UseCase}{CUH1.2}{Eliminar Materia}{
+
+	Permite eliminar una Unidad de Aprendizaje que fue registrada por error o ya no será requerida
+		
+}
+
+    \UCitem{Versión}{1.0}
+    \UCccsection{Administración de Requerimientos}
+    \UCitem{Autor}{Eduardo Espino Maldonado}
+    \UCccitem{Evaluador}{}
+    \UCitem{Operación}{Eliminar}
+    \UCccitem{Prioridad}{Media}
+    \UCccitem{Complejidad}{Baja}
+    \UCccitem{Volatilidad}{Baja}
+    \UCccitem{Madurez}{Alta}
+    \UCitem{Estatus}{En Desarrollo}
+    \UCitem{Fecha del último estatus}{10 de Diciembre del 2017}
+    
+    % 	\UCccsection{Revisión Versión 1.0} 
+    % 	\UCccitem{Fecha}{} 
+    % 	\UCccitem{Evaluador}{}
+    % 	\UCccitem{Resultado}{}
+    %	\UCccitem{Observaciones}{\begin{UClist}
+    %		\RCitem{PC1}{\TODO{}}{fecha}
+    %	\end{UClist}}
+    
+    \UCsection{Atributos}
+    
+    \UCitem{Actor(es)}{\cdtRef{Actor:Alumno}{Alumno} y \cdtRef{Actor:Profesor}{Profesor}}
+    
+    \UCitem{Propósito}{Proporcionar una herramienta que permita eliminar una unidad de aprendizaje del horario del actor.}
+    
+    \UCitem{Entradas}{Ninguna}
+    
+    \UCitem{Salidas}{\begin{UClist}
+
+        \UCli Se muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUH1.1}{Agregar UA}.
+            
+    \end{UClist}}
+    
+    \UCitem{Precondiciones}{Ninguna}
+    
+    \UCitem{Postcondiciones}{El registro de la unidad de Aprendizaje será eliminado}
+    
+    \UCitem{Reglas de negocio}{Ninguna}
+    
+    \UCitem{Errores}{Se muestra el mensaje \cdtIdRef{MSG3}{Operación Fallida}.}
+    
+    \UCitem{Tipo}{Secundario, extiende de \cdtIdRef{CUH1}{Gestionar Horario}.}
+    
+\end{UseCase}
+    
+\begin{UCtrayectoria}
+
+    \UCpaso[\UCactor] Solicita eliminar una unidad de aprendizaje de su horario presionando el botón \btnEditar en la pantalla \cdtIdRef{IUH1}{Horario}.
+    
+    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUH1-2}{Horario}.
+    
+    \UCpaso[\UCactor] \label{CUH1.2:Eliminar} Selecciona la unidad de aprendizaje que desea eliminar presionando en botón \btnBorrar. \refTray{A}
+        
+    \UCpaso[\UCsist] Eliminar la información de la unidad de aprendizaje seleccionada. \refTray{B}
+    
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUH1}{Horario}.
+        
+\end{UCtrayectoria}
+
+% Trayectorias Alternas
+
+%-------------------------Trayectoria A------------------------------
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación}
+	
+	\UCpaso[\UCactor] Presiona el botón \btnEditar.
+	
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUH1}{Horario}.
+		
+\end{UCtrayectoriaA}
+
+%-------------------------Trayectoria B------------------------------
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{B}{La operación no se pudo completar.}
+		
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Operación Fallida}
+		
+	\UCpaso Continua en el paso \ref{CUH1.2:Eliminar} de la trayectoria principal.
+		
+\end{UCtrayectoriaA}

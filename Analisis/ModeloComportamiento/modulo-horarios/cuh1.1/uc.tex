@@ -1,0 +1,139 @@
+% !TEX root = ../../../analisis.tex
+
+\begin{UseCase}{CUH1.1}{Registrar Materia}{
+		
+		Permite registrar una \cdtRef{gls:unidadDeAprendizaje}{Unidades de Aprendizaje} al horario del actor para poder tener refistro de la hora, y grupo en el que ésta se imparte.\\
+		
+		El actor introducirá el nivel al cual pertenece la \textbf{Unidad de Aprendizaje} y después seleccionará el horario en el que ésta se impartirá, también se le permite ingresar el número de grupo en el que ésta asociada.
+	
+}
+
+    \UCitem{Versión}{1.0}
+    \UCccsection{Administración de Requerimientos}
+    \UCitem{Autor}{Eduardo Espino Maldonado}
+    \UCccitem{Evaluador}{}
+    \UCitem{Operación}{Registrar}
+    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Complejidad}{Baja}
+    \UCccitem{Volatilidad}{Baja}
+    \UCccitem{Madurez}{Alta}
+    \UCitem{Estatus}{En Desarrollo}
+    \UCitem{Fecha del último estatus}{9 de Diciembre del 2017}
+    
+    % 	\UCccsection{Revisión Versión 1.0} 
+    % 	\UCccitem{Fecha}{} 
+    % 	\UCccitem{Evaluador}{}
+    % 	\UCccitem{Resultado}{}
+    %	\UCccitem{Observaciones}{\begin{UClist}
+    %		\RCitem{PC1}{\TODO{}}{fecha}
+    %	\end{UClist}}
+    
+    \UCsection{Atributos}
+    
+    \UCitem{Actor(es)}{\cdtRef{Actor:Alumno}{Alumno} y \cdtRef{Actor:Profesor}{Profesor}}
+    
+    \UCitem{Propósito}{Proporcionar una herramienta que permita registrar una unidad de aprendizaje en el horario del actor.}
+    
+    \UCitem{Entradas}{\begin{UClist}
+    		
+    		\UCli \cdtRef{unidadaprendizaje:nivel}{Nivel al cual pertenece la Unidad de Aprendizaje}: \ioSeleccionar
+    		
+    		\UCli \cdtRef{unidadaprendizaje:nombre}{Nombre de la Unidad de Aprendizaje}: \ioSeleccionar
+    		
+    		\UCli \cdtRef{horario:hora}{Hora a la cual será impartida la Unidad de Aprendizaje}: \ioSeleccionar
+    		
+		\UCli \textbf{Turno en el que se imparte la Unidad de Aprendizaje} \ioSeleccionar
+    		
+    		\UCli \cdtRef{horario:grupo}{Grupo en el cual se imparte la Unidad de Aprendizaje}: \ioSeleccionar
+    		
+    	\end{UClist}}
+    
+    \UCitem{Salidas}{\begin{UClist}
+
+        \UCli Se muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUH1.1}{Agregar UA}.
+            
+    \end{UClist}}
+    
+    \UCitem{Precondiciones}{\begin{UClist}
+    
+    	\UCli {\bf Interna:} Que exista al menos un \cdtRef{unidadaprendizaje:nivel}{Nivel} registrado en el sistema.
+	
+    	\UCli {\bf Interna:} Que exista al menos un \cdtRef{unidadaprendizaje:nombre}{Nombre} registrado en el sistema.
+
+	\UCli {\bf Interna:} Que exista al menos un \textbf{Turno} registrado en el sistema.
+
+	\UCli {\bf Interna:} Que exista al menos un \textbf{Horario} registrado en el sistema.
+    	    
+    \end{UClist}}
+    
+    \UCitem{Postcondiciones}{{\bf Interna:} Se registrará la Unidad de Aprendizaje al Horario del actor.}
+    
+    \UCitem{Reglas de negocio}{\cdtIdRef{RN-N1}{Selección de Grupo}}
+    
+    \UCitem{Errores}{Se muestra el mensaje \cdtIdRef{MSG3}{Operación Fallida}.}
+    
+    \UCitem{Tipo}{Secundario, extiende de \cdtIdRef{CUH1}{Gestionar Horario}.}
+    
+\end{UseCase}
+    
+\begin{UCtrayectoria}
+
+    \UCpaso[\UCactor] Solicita agregar una unidad de aprendizaje a su horario presionando el botón \btnEditar en la pantalla \cdtIdRef{IUH1}{Horario}.
+    
+    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUH1-2}{Horario}.
+    
+    \UCpaso[\UCactor] Selecciona un día de la semana para agrega la unidad de aprendizaje presionando en botón \btnAgregar. \refTray{A}
+    
+    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUH1.1}{Agregar UA}.
+    
+    \UCpaso[\UCactor] \label{CUH1.1:Registrar} Ingresa los datos solicitados. \refTray{B}
+    
+    \UCpaso[\UCactor] Solicita finalizar el registro de la unidad de aprendizaje presionando el botón \cdtButton{Agregar}.
+    
+    \UCpaso[\UCsist] Verifica que todos los datos hayan sido ingresados con base en la regla de negocio \cdtIdRef{RN-S3}{Datos requeridos}. \refTray{C}
+    
+    \UCpaso[\UCsist] Crea el grupo con base en la regla de negocio \cdtIdRef{RN-N1}{Selección de Grupo}.
+    
+    \UCpaso[\UCsist] Persiste la información de la unidad de aprendizaje registrada. \refTray{D}
+    
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación Exitosa} en la pantalla \cdtIdRef{IUH1}{Horario}.
+        
+\end{UCtrayectoria}
+
+% Trayectorias Alternas
+
+%-------------------------Trayectoria A------------------------------
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor desea cancelar la operación}
+	
+	\UCpaso[\UCactor] Presiona el botón \btnEditar.
+	
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUH1}{Horario}.
+		
+\end{UCtrayectoriaA}
+
+%-------------------------Trayectoria B------------------------------
+\begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El actor desea cancelar la operación}
+	
+	\UCpaso[\UCactor] Presiona el botón \cdtButton{Atrás}.
+	
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUH1}{Horario}.
+		
+\end{UCtrayectoriaA}
+
+%-------------------------Trayectoria C------------------------------
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{C}{El actor no ingreso un dato obligatorio.}
+		
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Faltan datos obligatorios}
+	
+	\UCpaso Continua en el paso \ref{CUH1.1:Registrar} de la trayectoria principal.
+		
+\end{UCtrayectoriaA}
+
+%-------------------------Trayectoria D------------------------------
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{C}{La operación no se pudo completar.}
+		
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Operación Fallida}
+		
+	\UCpaso Continua en el paso \ref{CUH1.1:Registrar} de la trayectoria principal.
+		
+\end{UCtrayectoriaA}

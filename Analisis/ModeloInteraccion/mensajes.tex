@@ -1,0 +1,83 @@
+% !TEX root = ../analisis.tex
+\newpage
+\section{Diseño de mensajes}
+
+	En esta sección se describen los mensajes utilizados en el prototipo actual del sistema. Los mensajes se refieren a todos
+	aquellos avisos que el sistema muestra al actor a través de la pantalla debido a diversas
+	razones, por ejemplo: informar acerca de algún fallo en el sistema o para notificar acerca de alguna operación importante sobre
+	la información.
+
+\section{Mensajes a través de la pantalla}
+
+%===========================  MSG1 ==================================
+\begin{mensaje}{MSG1}{Operación exitosa}{Notificación}
+	\item[Ubicación:] \msjEmergente
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que la acción solicitada fue realizada exitosamente.
+	\item[Redacción:] DETERMINADO ENTIDAD VALOR se OPERACIÓN exitosamente.
+	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+	\begin{Citemize} 
+		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+		\item OPERACIÓN: Es la acción que el actor solicitó realizar redactada en pasado.
+	\end{Citemize}
+	\item[Ejemplo:] El aspirante Adriana Suárez Cruz se registró exitosamente.
+
+	\item[Referenciado por:] 
+\end{mensaje}
+
+%============================== MSG2 =================================
+\begin{mensaje}{MSG2}{Cancelar operación}{Notificación}
+	\item[Ubicación:] \msjEmergente
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Preguntar al actor si desea cancelar esta operación.
+	\item[Redacción:] ¿Está seguro que desea cancelar la operación?
+	\item[Referenciado por:] 
+\end{mensaje}
+
+%============================== MSG3 =================================
+\begin{mensaje}{MSG3}{Operación fallida}{Notificación}
+	\item[Ubicación:] \msjEmergente
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que una operación no se pudo llevar a cabo.
+	\item[Redacción:] A continuación se listan las posibles redacciones que este mensaje puede tener dependiendo de lo especificado en el diccionario de datos:
+	\begin{enumerate}
+		\item No se ha podido realizar DETERMINADO OPERACIÓN. Vuelva a intentarlo.
+		\item No se puede realizar esta acción.
+	\end{enumerate}
+
+	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+	\begin{itemize}
+		\item DETERMINADO OPERACIÓN: Es al artículo determinado más el nombre de la operación que no se pudo llevar a cabo.
+	\end{itemize}
+	\item[Ejemplo:] No se ha podido realizar el registro. Vuelva a intentarlo.
+	\item[Referenciado por:] 
+\end{mensaje}
+
+
+%============================== MSG4 =================================
+\begin{mensaje}{MSG4}{Elemento no encontrado}{Notificación}
+	\item[Ubicación:] \msjEmergente
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no existen elementos.
+	\item[Redacción:] No existen profesores con ese nombre, intente nuevamente.
+	\item[Referenciado por:] \cdtIdRef{CUCP1}{Buscar profesor}
+\end{mensaje}
+
+%============================== MSG4 =================================
+\begin{mensaje}{MSG5}{No existen elementos registrados}{Notificación}
+	\item[Ubicación:] \msjEmergente
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que no existen elementos.
+	\item[Redacción:] No existen profesores registrados, ponerse en contacto con soporte.
+	\item[Referenciado por:] \cdtIdRef{CUCP1}{Buscar profesor}
+\end{mensaje}
+
+%============================== MSG6 =================================
+\begin{mensaje}{MSG6}{Faltan datos obligatorios}{Notificación}
+	\item[Ubicación:] \msjEmergente
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que faltan datos por introducir.
+	\item[Redacción:] Falta ingresar un dato obligatorio.
+	\item[Referenciado por:] \cdtIdRef{CUH1.1}{Registrar Materia}
+\end{mensaje}

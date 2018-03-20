@@ -1,0 +1,71 @@
+% !TEX root = analisis.tex
+\section{Objetivo del documento}\label{sec:objetivo}
+
+El proyecto tiene como propósito desarrollar una aplicación donde los alumnos de la \textbf{Escuela Superior de Cómputo}\footnote{En adelante ESCOM} puedan visualizar la información personal de los docentes, así como los horarios y cubículos asignados a ellos en el transcurso del semestre.\\
+
+El presente documento tiene como objetivo mostrar en detalle los términos, reglas de negocio, casos de uso, interfaces y mensajes correspondientes a cada uno de los módulos propuestos para el sistema.
+
+\section{Alcance}\label{sec:alcance}
+
+El presente documento está conformado por los diferentes casos de uso de los diferentes módulos con los que cuenta el sistema, los cuales se describen en el capitulo \ref{chp:modeloComportamiento}. También se incluye el glosario de términos, reglas de negocio, modelo comportamiento y de interacción que complementan la especificación de los casos de uso del sistema.
+
+\section{Estructura del documento}\label{sec:estructuraDocumento}
+
+El contenido del documento se encuentra estructurado de la siguiente forma:\\
+
+\begin{Citemize}
+	
+	\item El capítulo \ref{chp:introduccion} describe la introducción del documento de casos de uso.
+	
+	\item El capítulo \ref{chp:glosarioTerminos} describe el glosario de términos técnicos del negocio.
+	
+	\item El capítulo \ref{chp:modeloNegocios}  muestra el modelo de negocio, el cual esta conformado por el modelo de información y reglas de negocio.
+	
+	\item El capítulo \ref{chp:modeloComportamiento} describe los módulos que conforman el sistema y se detallan los perfiles de usuario participantes.
+	
+	\item El capítulo \ref{chp:CProfesores} describe los casos de uso que conforman el módulo: Consulta de Profesores.
+	
+	\item El capítulo \ref{horariosAmigo} describe los casos de uso que conforman el módulo: Horarios.
+	
+	\item El capítulo \ref{chp:modeloInteraccionUsuario} describe el modelo de interacción con el usuario.
+	
+\end{Citemize}
+
+\section{Notación utilizada en el documento}\label{sec:notacion}
+
+A continuación se presentan las abreviaciones utilizadas a lo largo del presente documento y su significado.
+
+\subsection{Abreviaciones}\label{ssec:abreviaciones}
+
+\begin{description}
+
+	\BRterm{nom:bpmn}{BPMN:} Notación para el Modelado del Proceso de Negocio, BPMN por sus siglas en inglés.
+	
+	\BRterm{nom:escom}{ESCOM:} Escuela Superior de Cómputo. 
+	
+	\BRterm{nom:ipn}{IPN:} Instituto Politécnico Nacional.
+
+\end{description}
+
+\subsection{Nomenclatura para identificadores}\label{ssec:nomenclatura}
+
+Otras abreviaciones y claves que se usan en el presente documento tienen la finalidad de identificar los elementos presentados. Las claves utilizadas son generalmente seguidas de un número. Las X’s que se muestran en la presente lista se usan para indicar que la abreviación es acompañada por un número.
+
+\begin{description}
+	
+	%%%% Casos de uso %%%%
+	\BRterm{nom:cuaX}{CU:} Caso de uso. Se utiliza para nombrar los casos de uso que pertenecen a este subsistema, así cada caso de uso se identifica por las letras ``CU'' más una cadena que hace referencia al subsistema al que pertenece, por ejemplo \textbf{CU-CP} refiere a un caso de uso de ``Consulta de Profesores'', \textbf{CU-H} refiere a uno de ``Horarios''.
+	
+	%%%% Pantalla %%%%
+	\BRterm{nom:iurX}{IUX.Y-Z:} Se utiliza para describir las pantallas que acompañan los casos de uso correspondientes al proceso, se identifica por las letras ``IU'' más el número del proceso``X'', después se coloca el número del subproceso ``Y'' y finalmente se escribe el número del caso de uso ``Z'' . Por ejemplo: IU1.1-1.
+
+	%%%% Mensajes %%%%
+	\BRterm{nom:msgx}{MSGX:} Mensaje. Se utiliza para nombrar los mensajes utilizados en el sistema para informar errores o notificar operaciones, identificados por las letras ``MSG'' seguido por el número de mensaje ``X''. Por ejemplo: MSG1.
+	
+	%%%% Reglas de Negocio %%%%
+	\BRterm{nom:rnNx}{RN-NX:} Regla de Negocio. Se utiliza para nombrar a las reglas de negocio identificadas, así cada regla de negocio se identifica con las letras ``RN-N'' seguida del número de regla de negocio ``X''. Por ejemplo: RN-N1.
+	
+	%%%% Reglas de Negocio del Sistema %%%%
+	\BRterm{nom:rnSx}{RN-SX:} Regla de Negocio del sistema. Se utiliza para nombrar a las reglas de negocio identificadas, así cada regla de negocio se identifica con las letras ``RN-S'' seguida del número de regla de negocio ``X''. Por ejemplo: RN-S1.	
+		
+\end{description}

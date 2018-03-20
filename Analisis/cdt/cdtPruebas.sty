@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Componente: cdtBook.sty                               
+%  Autor: Ulises Vélez Saldaña
+%  Fecha: 29 de Julio, 2012
+%  Versión: 1.0
+%  Biblioteca: cdt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cdtPruebas}[2012/07/29, v2.0 CDT-ESCOM-IPN Plantilla para construcción de guiones de Pruebas de la Coordinación de Desarrollo Tecnológico]
+\RequirePackage{cdt/cdtAnalisis}
+%=====================================================
+
+\newcounter{contPregunta}  % Contador para el número de preguntas.
+\newcounter{contPaso}      % Contador para el número de pasos de una prueba.
+
+%=====================================================
+% Section row
+\newcolumntype{s}{>{\columncolor{colorPrincipal}}p{\textwidth}}
+\newcolumntype{t}{>{\columncolor{white}}p{\textwidth}}
+
+%=====================================================
+% \alert{Texto}
+% Resalta el texto marcado desplegándolo en el color principal del tema.
+\newcommand{\alert}[1]{{\color{colorPrincipal}#1}}
+
+%=====================================================
+% Agrega un paso a una prueba
+% \Pitem{De click en ...}
+\newcommand{\Pitem}[1]%
+{%
+	\multicolumn{4}{|p{\textwidth}|}{%
+		\setcounter{contPregunta}{0}%
+		\addtocounter{contPaso}{1}%
+		\textbf{\arabic{contPaso}. #1}%
+	}\\%
+	\hline%
+}
+
+%=====================================================
+% Ambiente para crear una prueba:
+% \begin{prueba}[Header]{Id Prueba}{Nombre de la Prueba}
+% ejemplo:
+% \begin{prueba}
+%		[Módulo de Catálogos]
+%		{SSD-MC-CU17-P1}{Consultar, registrar, modificar y eliminar Tipos de Vehículos con validación de datos y Reglas de negocio asociadas.}
+\newenvironment{prueba}[3][Guión de prueba]
+{
+	\newpage
+	\subsection{Prueba #2: #3}
+	\noindent\begin{longtable}{|p{.5\textwidth}|p{.03\textwidth}|p{.03\textwidth}|p{.356\textwidth}|}
+		\hline 
+		\multicolumn{4}{|t|}{\color{colorPrincipal}\small{#1}}\\
+		\arrayrulecolor{white}
+		\hline 
+		\arrayrulecolor{black}
+		\multicolumn{4}{|s|}{\color{white}\centering{#2 #3}}\\
+		\arrayrulecolor{white}
+		\hline
+ 		\arrayrulecolor{black}
+		\rowcolor{colorAgua}
+		\color{colorPrincipal}Pregunta & \color{colorPrincipal}Si & \color{colorPrincipal}No & \color{colorPrincipal}Observaciones\\
+		\hline		
+		\arrayrulecolor{black}
+		\endhead
+}%
+{%
+		\Pitem{Fin de la Prueba.}
+	\end{longtable} 
+
+	\makeObservaciones
+	\setcounter{contPregunta}{0}
+	\setcounter{contPaso}{0}
+}
+
+% Ambiente para crear una prueba de Caso de Uso:
+% \begin{pruebaCU}{Subsistema}{Módulo}{Nombre del CU}{Id prueba}{Nombre de la Prueba}
+% ejemplo:
+% \begin{pruebaCU}
+%		{Delegaciones}
+%		{Catálogos}
+%		{CU 17 Administración de Tipos de Vehículos}
+%		{SSD-MC-CU17-P1}{Consultar, registrar, modificar y eliminar Tipos de Vehículos con validación de datos y Reglas de negocio asociadas.}
+\newenvironment{pruebaCU}[5]
+{
+	\begin{prueba}[{\bf Subsistema:} #1, {\bf Módulo:} #2, {\bf Caso de uso:} #3]{#4}{#5}\\
+}%
+{%
+	\end{prueba} 
+}
+
+
+% Crea una pregunta dentro de una prueba
+% \pregunta{Texto de la pregunta}
+\newcommand{\pregunta}[1]%
+{%
+	{\arabic{contPaso}.\addtocounter{contPregunta}{1}\arabic{contPregunta}. #1} &&&\\ \hline%
+}
+
+% Crea una entrada que indica que se deben verificar los elementos de la interfaz.
+% \verifIU{Nombre de la interfaz}
+\newcommand{\verifIU}[1]%
+{%
+	\multicolumn{4}{|p{\textwidth}|}{%
+		\addtocounter{contPregunta}{1}%
+		Evalúe la Interfaz {\bf #1} $\Box$~CSS, $\Box$~Ortografía, $\Box$~Alineación, $\Box$~Espacios, $\Box$~Iconografía. %
+	}\\ \hline%
+}
+
+\newcommand{\Ditem}[1]{#1 &&&&&\\\hline}
+
+\newenvironment{defectos}
+{
+	\noindent\begin{longtable}
+		{|p{.4\textwidth}|p{.1\textwidth}|p{.1\textwidth}|p{.1\textwidth}|p{.1\textwidth}|p{.1\textwidth}|}
+		\hline 
+		\arrayrulecolor{black}
+		\multicolumn{6}{|h|}{\centering{Defectos encontrados}}\\
+		\arrayrulecolor{white}
+		\hline
+ 		\arrayrulecolor{black}
+		\rowcolor{testColor}
+		\color{white}Caso de uso & \color{white}Menores & \color{white}Medios & \color{white}Serios & \color{white}Severos & \color{white} Total\\
+		\hline		
+		\arrayrulecolor{black}
+		\endhead
+}{
+		\arrayrulecolor{black}
+		\multicolumn{1}{|h|}{\centering{Total:}}&&&&&\\\hline
+	\end{longtable}
+	\observaciones[Comentarios adicionales:]
+}
+
+%=====================================================
+

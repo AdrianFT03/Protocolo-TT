@@ -1,0 +1,148 @@
+
+\begin{UseCase}{CUPA1.6-1}{Pre-registrar aspirantes}
+    {
+    	Para que un \cdtRef{Actor:Aspirante}{Aspirante} cuente con un registro en el CENEVAL, es necesario realizar un pre-registro con su información personal, esto implica, proporcionar al CENEVAL la información solicitada. Esta tarea se logra gracias a la interoperabilidad del SAEV2.0 y el sistema CENEVAL.\\
+    	\\
+    	Es importante resaltar que el pre-registro lo realizará cada aspirante desde su cuenta personal en el sistema y será su responsabilidad continuar con el proceso. Para que el aspirante pueda realizar su pre-registro, deberá tener acreditado el pago por los derechos correspondientes.\\
+    	\\
+    	Cuando el aspirante cuente con los permisos para realizar el pre-registro, lo solicitará como se describe en el presente caso de uso.
+    
+}
+    
+
+    \UCitem{Versión}{1.0}
+    \UCccsection{Administración de Requerimientos}
+    \UCitem{Autor}{Adrian Flores Torres}
+    \UCccitem{Evaluador}{}
+    \UCitem{Operación}{Registrar}
+    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Complejidad}{Baja}
+    \UCccitem{Volatilidad}{Baja} %Que tanto es el proceso susceptible a cambios
+    \UCccitem{Madurez}{Alta}
+    \UCitem{Estatus}{En revisión}
+    \UCitem{Fecha del último estatus}{28 Septiembre 2017}
+    
+%% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+%% Esta sección la debe llenar solo el Revisor
+% %--------------------------------------------------------
+ 	\UCccsection{Revisión Versión 1.0} % Anote la versión que se revisó.
+% 	% FECHA: Anote la fecha en que se terminó la revisión.
+ 	\UCccitem{Fecha}{} 
+% 	% EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
+ 	\UCccitem{Evaluador}{Fabiola Jaramillo Loredo}
+% 	% RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
+ 	\UCccitem{Resultado}{Corregir}
+% 	% OBSERVACIONES: Liste los cambios que debe realizar el Analista.
+
+% %--------------------------------------------------------
+
+	%qué: enviar la información de los aspirantes que realizaron el pago correspondiente para presentar el examen CENEVAL
+    	%quién: coordinacionControlEscolar
+    	%para qué: para que CENEVAL asigne los folios a los aspirantes y puedan presentar el examen 
+    	%por qué: porque desea realizar el prerregistro de aspirantes
+		\UCccitem{Observaciones}{
+		\begin{UClist}
+			% 			% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
+			\RCitem{PC1}{\TOCHK{Paso 1: Este caso de uso viene de un botón que aparece en la pantalla de Evaluaciones del aspirante}}{18 de Octubre del 2017}
+			\RCitem{PC2}{\TOCHK{No entiendo la trayectoria A}}{18 de Octubre del 2017}
+			\RCitem{PC3}{\TOCHK{Paso 2: qué pasa si el estado del aspirante es registrado?}}{18 de Octubre del 2017}
+			\RCitem{PC4}{v{Paso 7: Referenciar máquina de estados}}{18 de Octubre del 2017}
+			\RCitem{PC5}{\TOCHK{Entre paso 8 y 9: Escribir que el aspirante responde la encuesta de ceneval}}{18 de Octubre del 2017}
+			\RCitem{PC6}{\TOCHK{Paso 9: Link de trayectoria B roto}}{18 de Octubre del 2017}
+			\RCitem{PC7}{\TOCHK{Paso 12: No muestra esa pantalla}}{18 de Octubre del 2017}
+			
+		\end{UClist}		
+	}
+    \UCsection{Atributos}
+    \UCitem{Actor(es)}{
+    	\cdtRef{Actor:Aspirante}{Aspirante}
+    }
+    \UCitem{Propósito}{Pre-registrar un aspirante en el CENEVAL.}
+    \UCitem{Entradas}{
+	\begin{UClist}
+		\UCli He leído y entendido el procedimiento que debo seguir. \ioCheckBox
+	\end{UClist}
+	}
+    \UCitem{Salidas}{
+    \begin{UClist}
+    	\UCli Petición \textbf{POST} que contiene la siguiente información del aspirante:
+    	\UCli \cdtRef{Persona:folioELD}{Matrícula}: \ioObtener
+    	\UCli \cdtRef{Persona:nombre}{Nombre}: \ioObtener
+    	\UCli \cdtRef{Persona:primerApellido}{Primer Apellido}: \ioObtener
+    	\UCli \cdtRef{Persona:segundoApellido}{Segundo Apellido}: \ioObtener
+    	\UCli Fecha de nacimiento: \ioCalcular
+    	\UCli Código: \ioCalcular
+    \end{UClist}
+}
+    \UCitem{Precondiciones}{
+	\begin{UClist}
+	    \UCli {\bf Interna:} Que el aspirante se encuentre en estado \textbf{Evaluaciones} como lo indica la regla de negocio \cdtIdRef{RN-N12}{Ciclo de vida del aspirante}.
+	     \UCli {\bf Interna:} Que el criterio evaluación de conocimientos se encuentre en estado \textbf{Notificación} como lo indica la regla de negocio 
+	    \UCli {\bf Interna:} Que el Id de sede haya sido registrado previamente.
+	\end{UClist}
+    }
+    
+    \UCitem{Postcondiciones}{
+	\begin{UClist}
+	    \UCli {\bf Interna:} El estado del aspirante cambiara a \textbf{Pre-registrado} como lo indica la regla de negocio \cdtIdRef{RN-N50}{Ciclo de vida de registro con el CENEVAL}.
+	    \UCli {\bf Interna:} El sistema enviará la información del aspirante al CENEVAL como lo indica la regla de negocio \cdtIdRef{RN-N57}{Información enviada al CENEVAL}.
+	    
+	\end{UClist}
+    }
+
+    %Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+    \UCitem{Reglas de negocio}{
+    	\begin{UClist}
+    		\UCli \cdtIdRef{RN-N12}{Ciclo de vida del aspirante}: Verifica que el aspirante se encuentre en estado \textbf{Evaluaciones}.
+    		\UCli \cdtIdRef{RN-N50}{Ciclo de vida de registro con el CENEVAL}: Verifica que el estado del aspirante sea diferente a \textbf{Registrado}.
+%    		\UCli \cdtIdRef{RN-N57}{Información enviada al CENEVAL}: Describe la información del aspirante que se enviará al CENEVAL.
+%    		\UCli \cdtIdRef{RN-N68}{Ciclo de vida de CENEVAL}: Verifica que el estado de la evaluación de conocimientos sea \textbf{Notificació}.
+    	\end{UClist}
+    }
+    \UCitem{Errores}{
+    Ninguno.
+    
+  
+    }
+    \UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{IU1.5-1C}{Evaluaciones}}
+\end{UseCase}
+
+ \begin{UCtrayectoria}
+%    \UCpaso[\UCactor] Ingresa al sistema después de realizar el pago de derechos para evaluaciones.
+%    \UCpaso[\UCsist] Verifica que el aspirante no se encuentre en estado \textbf{Registrado} como lo indica la regla de negocio \cdtIdRef{RN-N50}{Ciclo de vida de registro con el CENEVAL}. \refTray{A}
+ % \UCpaso[\UCsist] Muestra la pantalla  \cdtIdRef{IU1.6-1}{IU1.6-1 Manual de Registro en CENEVAL}.
+    \UCpaso[\UCactor] Oprime el botón \cdtButton{CENEVAL} en la pantalla \cdtIdRef{IU1.5-1C}{Evaluaciones}.
+    
+    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IU1.6-1}{Manual de Registro en CENEVAL}.
+    \UCpaso[\UCactor] Selecciona la casilla He leído y entiendo el procedimiento que debo seguir.
+   
+    \UCpaso[\UCsist] Cambia el estado del aspirante a \textbf{Notificado} como lo indica la regla de negocio \cdtIdRef{RN-N50}{Ciclo de vida de registro con el CENEVAL}.
+    \UCpaso[\UCactor] Oprime el botón \cdtButton{Ir al registro}. 
+	
+	\UCpaso[\UCsist] Obtiene la información del aspirante solicitada por el CENEVAL como lo indica la regla de negocio \cdtIdRef{RN-N57}{Información enviada al CENEVAL}.
+	\UCpaso[\UCsist] Obtiene la información de la ELD como lo indica la regla de negocio \cdtIdRef{RN-N57}{Información enviada al CENEVAL}.
+	
+    \UCpaso[\UCsist] Calcula la fecha de nacimiento del aspirante con base en su \cdtRef{Persona:curp}{CURP}.
+    \UCpaso[\UCsist] Calcula el código del aspirante con la información obtenida como lo indica la regla de negocio \cdtIdRef{RN-N57}{Información enviada al CENEVAL}.
+    
+    \UCpaso[\UCsist] Genera la petición POST con la información obtenida del aspirante y de la ELD.
+    \UCpaso[\UCsist] Envía la petición POST al CENEVAL mediante el método \textbf{POST} como lo indica la regla de negocio \cdtIdRef{RN-N57}{Información enviada al CENEVAL}.
+    \UCpaso[\UCsist] Dirige al aspirante al sitio web de CENEVAL.
+    \UCpaso[\UCactor] Proporciona la información solicitada por el CENEVAL en su sitio web.
+    \UCpaso[\UCsist] Recibe la petición POST del sistema CENEVAL con la información del aspirante. \refTray{A} 
+    \UCpaso[\UCsist] Almacena la información recibida del aspirante.
+    \UCpaso[\UCsist] Cambia el estado del aspirante a \textbf{Registrado} como o indica la regla de negocio \cdtIdRef{RN-N50}{Ciclo de vida de registro con el CENEVAL}.
+    
+    
+
+\end{UCtrayectoria}
+
+
+
+
+%-------------------------Trayectoria A------------------------------
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El aspirante no ha concluido la encuesta en el sitio web del CENEVAL.}
+
+\end{UCtrayectoriaA}
+
+

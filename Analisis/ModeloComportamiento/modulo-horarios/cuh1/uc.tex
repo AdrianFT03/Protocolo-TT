@@ -1,0 +1,95 @@
+% !TEX root = ../../../analisis.tex
+
+\begin{UseCase}{CUH1}{Gestionar Horario}{
+
+	Permite realizar las operaciones necesarias para mantener el horario del actualizado conforme a su inscripción actual.\\
+
+	El actor podrá tener la gestión de sus \cdtRef{gls:unidadDeAprendizaje}{Unidades de Aprendizaje} conforme a su inscripción a un \cdtRef{gls:cicloEscolar}{Ciclo escolar}.
+	
+}
+
+    \UCitem{Versión}{1.0}
+    \UCccsection{Administración de Requerimientos}
+    \UCitem{Autor}{Eduardo Espino Maldonado}
+    \UCccitem{Evaluador}{}
+    \UCitem{Operación}{Administrar}
+    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Complejidad}{Baja}
+    \UCccitem{Volatilidad}{Baja}
+    \UCccitem{Madurez}{Alta}
+    \UCitem{Estatus}{En Desarrollo}
+    \UCitem{Fecha del último estatus}{9 de Diciembre del 2017}
+    
+    % 	\UCccsection{Revisión Versión 1.0} 
+    % 	\UCccitem{Fecha}{} 
+    % 	\UCccitem{Evaluador}{}
+    % 	\UCccitem{Resultado}{}
+    %	\UCccitem{Observaciones}{\begin{UClist}
+    %		\RCitem{PC1}{\TODO{}}{fecha}
+    %	\end{UClist}}
+    
+    \UCsection{Atributos}
+    
+    \UCitem{Actor(es)}{\cdtRef{Actor:Alumno}{Alumno} y \cdtRef{Actor:Profesor}{Profesor}}
+    
+    \UCitem{Propósito}{Proporcionar una herramienta que permita gestionar el horario del actor.}
+    
+    \UCitem{Entradas}{Ninguna.}
+    
+    \UCitem{Salidas}{\begin{UClist}
+
+        \UCli \cdtRef{horario:dia}{Día de Horario}: \ioObtener
+    
+        \UCli \cdtRef{unidadaprendizaje:nombre}{Nombre de la Unidad de Aprendizaje}: \ioObtener
+    
+        \UCli \cdtRef{horario:hora}{Hora a la cual será impartida la Unidad de Aprendizaje}: \ioObtener
+    
+        \UCli \cdtRef{horario:grupo}{Grupo en el cual se imparte la Unidad de Aprendizaje}: \ioObtener
+            
+    \end{UClist}}
+    
+    \UCitem{Precondiciones}{\begin{UClist}
+    
+    	\UCli {\bf Interna:} Que el actor tenga registrado su horario
+    
+    \end{UClist}}
+    
+    \UCitem{Postcondiciones}{Ninguna}
+    
+    \UCitem{Reglas de negocio}{Ninguna}
+    
+    \UCitem{Errores}{Ninguno}
+    
+    \UCitem{Tipo}{Primario}
+    
+\end{UseCase}
+    
+\begin{UCtrayectoria}
+
+    \UCpaso[\UCactor] Solicita gestionar su horario presionando la opción \cdtButton{Horarios} del menú.
+    
+    \UCpaso[\UCsist] Obtiene el nombre, día, horario y grupo de las Unidades de Aprendizaje registradas.
+        
+    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUH1}{Horarios} con la información obtenida.
+        
+    \UCpaso[\UCactor] \label{CUH1:Gestiona} Gestiona su horario con el botón \btnEditar.
+        
+\end{UCtrayectoria}
+
+\subsection{Puntos de Extensión}
+
+\UCExtensionPoint{Se desea registrar una Unidad de Aprendizaje}
+{Paso \ref{CUH1:Gestiona} de la trayectoria principal}
+{\cdtIdRef{CUH1.1}{Registrar Materia}}
+
+\UCExtensionPoint{Se desea eliminar una Unidad de Aprendizaje}
+{Paso \ref{CUH1:Gestiona} de la trayectoria principal}
+{\cdtIdRef{CUH1.2}{Eliminar Materia}}
+
+\UCExtensionPoint{Se desea modificar una Unidad de Aprendizaje}
+{Paso \ref{CUH1:Gestiona} de la trayectoria principal}
+{\cdtIdRef{CUH1.3}{Modificar Materia}}
+
+\UCExtensionPoint{Se desea registrar una Unidad de Aprendizaje}
+{Paso \ref{CUH1:Gestiona} de la trayectoria principal}
+{\cdtIdRef{CUH1.4}{Visualizar Horario}}

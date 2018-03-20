@@ -1,0 +1,422 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Componente: cdtBook.sty                               
+%  Autor: Ulises Vélez Saldaña
+%  Fecha: 6 de Abril, 2013
+%  Versión: 1.1
+%  Biblioteca: cdt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cdtBook}[2013/04/06, v1.1 CDT-ESCOM-IPN Plantilla para reportes de la Coordinación]
+\RequirePackage{cdt/cdtTheme}
+\RequirePackage{longtable}
+\RequirePackage{colortbl}
+\RequirePackage{multirow}
+
+%=====================================================
+% Definición de columnas para datos tabulares
+%=====================================================
+
+% Renglón con fondo color agua y texto centrado
+\newcolumntype{h}{>{\columncolor{colorAgua}}c}
+
+%=====================================================
+%=====================================================
+%=====================================================
+
+%=====================================================
+% Comando: \organizacion[cve]{Nombre de la contraparte}
+% Propósito: Definir los datos de la contraparte
+% Ejemplo: \organizacion[DGEI--SEP]{Dirección General de Educación Indígena, SEP}
+%=====================================================
+\newcommand{\varOrganizacion}{Defina el nombre de la Contraparte}
+\newcommand{\varCveOrganizacion}{?}
+\newcommand{\organizacion}[2][]{%
+	\renewcommand{\varCveOrganizacion}{{#1}}%
+	\renewcommand{\varOrganizacion}{{#2}}%
+}
+
+%=====================================================
+% Comando: \author{Nombre del autor}
+% Propósito: Definir el nombre del autor.
+%=====================================================
+\newcommand{\varAuthor}[1]{Escuela Superior de Cómputo, IPN}
+\newcommand{\varCveAutor}{}
+\newcommand{\varAutor}{}
+\let\varAuthor=\author
+\renewcommand{\author}[1]{%
+	\renewcommand{\varAutor}{{#1}}
+	\varAuthor{\color{colorSecundario}{{#1}}\\ {\color{colorGris}{\varOrganizacion}}}%
+}
+\newcommand{\autor}[2][IPN]{%
+	\renewcommand{\varAutor}{{#2}}
+	\renewcommand{\varCveAutor}{{#1}}
+	\varAuthor{\color{colorSecundario}{{#2}}\\ {\color{colorGris}{\varOrganizacion}}}%
+}
+%\newcommand{\varAuthor}[1]{Escuela Superior de Cómputo, IPN}
+%	\let\varAuthor=\author
+%	\renewcommand{\author}[1]{%
+%		\varAuthor{\color{colorSecundario}{{#1}}\\ {\color{colorGris}{\varOrganizacion}}}%
+%	}
+
+%=====================================================
+% Comando: \Sistema[cve]{Nombre del sistema}
+% Propósito: Definir clave y nombre del sistema.
+% Ejemplo: \Sistema[SINACEM2]{Sistema Nacional de ...}
+%=====================================================
+\newcommand{\varSistema}{}
+\newcommand{\varCveSistema}{}
+\newcommand{\sistema}[2][1]{%
+	\renewcommand{\varCveSistema}{{#1}}%
+	\renewcommand{\varSistema}{{#2}}%
+}
+
+%=====================================================
+% Comando: \proyecto[CVE]{Nombre del proyecto}
+% Propósito: Definir el nombre y clave del proyecto, generalmente es el mismo que el de el sistema.
+%=====================================================
+\newcommand{\varProyecto}{Defina el Nombre del Proyecto}
+\newcommand{\varCveProyecto}{Sin Clave}
+\newcommand{\proyecto}[2][]{\renewcommand{\varCveProyecto}{{#1}}\renewcommand{\varProyecto}{{#2}}}
+
+%=====================================================
+% Comando: \documento{cve}{Nombre del documento}{Versión}
+% Propósito: Definir Clave, nombre y versión del documento, generalmente corresponde con el nombre de un componente. La versión debe especificarse con \DRAFT o \RELEASE.
+% Ejemplos:
+%    \documento{C1--DT}{Componente 1: Documentación Técnica}{\DRAFT{\today}}
+%    \documento{C3--EP}{Componente 3: Especificacion de Plataforma}{\RELEASE{1.0}}
+%=====================================================
+\newcommand{\varCveDocumento}{}
+\newcommand{\varDocumento}{}
+\newcommand{\varDocVersion}{}
+\newcommand{\documento}[3]{%
+	\renewcommand{\varCveDocumento}{{#1}}%
+	\renewcommand{\varDocumento}{{#2}}%
+	\renewcommand{\varDocVersion}{{#3}}
+}
+
+%=====================================================
+% Comando: \DRAFT{fecha}
+% Propósito: Indicar que el documento es una versión en borrador
+%=====================================================
+\newcommand{\DRAFT}[1]{ {\small\color{red}Borrador {\em #1}}}%
+
+%=====================================================
+% Comando: \RELEASE{numero}
+% Propósito: Indicar que el documento ha sido liberado y el número de la versión.
+%=====================================================
+\newcommand{\RELEASE}[1]{ {\small Versión #1}}%
+
+
+%=====================================================
+% Comando: \entregable{cve}{Nombre del entregable}
+% Propósito: Indicar el número de entregable del componente o documento (si aplica). El nombre del entregable depende de la forma en que se haya dividido el sistema.
+% Ejemplos: 
+%    \entregable{E1}{Entregable 1}
+%    \entregable{P1}{Prototipo 1}
+%    \entregable{M1}{Módulo 1}
+%=====================================================
+\newcommand{\varEntregable}{}
+\newcommand{\varCveEntregable}{}
+\newcommand{\entregable}[2]{%
+	\renewcommand{\varCveEntregable}{{--#1}}%
+	\renewcommand{\varEntregable}{{#2}}%
+}
+
+%=====================================================
+% Comando: \title{Titulo del documento}
+% Propósito: Especificar el texto del título del documento (este comando puede no usarse.
+%=====================================================
+\newcommand{\varTitle}[1]{}
+\let\varTitle=\title
+\newcommand{\varSubTitle}{}
+\renewcommand{\title}[1]{%	
+	\varTitle{%
+		{\Huge\color{colorPrincipal}{#1}}%
+		\\\bigskip {\LARGE \color{colorSecundario}\varSubTitle~{}%
+			\bigskip\\%
+			%
+		}
+		%\rule{\textwidth}{1mm}%
+		\color{colorSecundario}\fbox{\color{colorPrincipal}%
+		\small \varCveProyecto--\varCveSistema--\varCveDocumento\varCveEntregable \varDocVersion
+		}
+	}%
+}
+
+% Valor por defecto para el documento.
+\title{\varDocumento\\\bigskip \varEntregable}
+
+%=====================================================
+% Comando: \subtitle{Subtitulo del documento}
+% Propósito: Especificar el texto del subtitulo del documento, este comando puede no usarse
+%=====================================================
+\newcommand{\subtitle}[1]{\renewcommand{\varSubTitle}{{#1}}}
+
+% Valor por defecto para el subtitulo del documento.
+\subtitle{\varProyecto}
+
+%=====================================================
+% Comando: \docFecha{Fecha del documento}
+% Propósito: Especificar la fecha del documento. Generalmente no se especifica a menos que se haga un freeze o un tag para marcar un hito o entregable.
+%=====================================================
+\newcommand{\varFecha}{\today}
+\newcommand{\fecha}[1]{\renewcommand{\varFecha}{{#1}}\date{{#1}}}
+
+%=====================================================
+% Comando: \makeDocInfo
+% Propósito: Generar la ficha de información del documento
+% Ejemplo: Generalmente se usan combinaciones de la siguiente secuencia
+%	\makeDocInfo
+%	\makeElemRefs
+%	\makeDocRefs
+%	\makeObservaciones[3cm]
+%	\makeFirmas
+%=====================================================
+\newcommand{\makeDocInfo}{%
+	\cleardoublepage%
+	\noindent\begin{tabular}{| p{.17\textwidth} | p{.2\textwidth} | p{.55\textwidth}|}%
+	 	\hline	%
+		\multicolumn{3}{|h|}{\bf Datos del proyecto}\\%
+	 	\hline%
+		{\bf Organización:} & \varCveOrganizacion & \varOrganizacion \\%
+		\hline	%
+		{\bf Proyecto:} & \varCveProyecto & \varProyecto \\%
+		\hline	%
+		{\bf Sistema:} & \varCveSistema & \varSistema \\%
+		\hline	%
+	\end{tabular}%
+	\bigskip\\%
+	%
+	\noindent\begin{tabular}{| p{.12\textwidth} | p{.5\textwidth} | p{.3\textwidth} |}%
+	 	\hline%
+		\multicolumn{3}{|h|}{\bf Documento}\\%
+	 	\hline%
+		{\bf Clave} & {\bf Nombre} & {\bf Versión} \\%
+		\hline%
+		\varCveDocumento\varCveEntregable & \varDocumento & \varDocVersion \\%
+		\hline%
+	\end{tabular}%
+	\renewcommand{\tablename}{Tabla}%
+	\renewcommand{\listtablename}{Índice de tablas}%
+}
+
+%=====================================================
+% Comando: \elemRefs{
+%               \elemItem{cveDoc}{verDoc}{Nombre del Documento}
+%               \elemItem{cveDoc}{verDoc}{Nombre del Documento}
+%               \elemItem{cveDoc}{verDoc}{Nombre del Documento}
+%               ...
+%           }
+% Propósito: Se usa para definir la lista de los elementos contenidos en el documento. En caso de usar dos veces el comando se borrarán los elementos definidos con anterioridad.
+%=====================================================
+\newcommand{\varElemRefs}{}
+\newcommand{\elemRefs}[1]{\renewcommand{\varElemRefs}{#1}
+}
+
+%=====================================================
+% Comando: \elemItem{id}{ver}{nombre}
+% Propósito: Especificar un elemento contenido en el documento Casos de uso, Reglas de negocio, interfaces, etc. 
+% Ejemplo: \elemItem{CU3}{1.0}{Registrar alumno}
+%=====================================================
+\newcommand{\elemItem}[3]{{#1} & {#2} & {#3} & \\\hline}
+
+%=====================================================
+% Comando: \makeElemRefs
+% Propósito: Expande la definición de los documentos definidos previamente.
+%=====================================================
+\newcommand{\makeElemRefs}{
+	\noindent\begin{longtable}{| p{.15\textwidth} | p{.1\textwidth} | p{.5\textwidth} |p{.15\textwidth}|}%
+	 	\hline%
+		\multicolumn{4}{|h|}{\bf Elementos entregados}\\%
+	 	\hline%
+		{\bf Clave} & {\bf Ver.} & {\bf Nombre} & {\bf Aprobado}\\%5
+		\hline\endhead%
+		\varElemRefs%
+	\end{longtable}%
+	%
+}
+
+%=====================================================
+% Comando: \docRefs{
+%               \docItem{cveDoc}{verDoc}{Nombre del Documento}
+%               \docItem{cveDoc}{verDoc}{Nombre del Documento}
+%               \docItem{cveDoc}{verDoc}{Nombre del Documento}
+%               ...
+%           }
+% Propósito: Se usa para definir una lista de los documentos referenciados por el documento.
+%=====================================================
+\newcommand{\varDocRefs}{}
+\newcommand{\docRefs}[1]{\renewcommand{\varDocRefs}{#1}
+}
+
+%=====================================================
+% Comando: \docItem{id}{ver}{nombre}
+% Propósito: Definir los datos de un documento referenciado.
+%=====================================================
+\newcommand{\docItem}[3]{{#1} & {#2} & {#3}\\\hline}
+
+%=====================================================
+% Comando: \makeDocRefs
+% Propósito: Expande la lista de documentos referenciados.
+%=====================================================
+\newcommand{\makeDocRefs}{
+	\noindent\begin{longtable}{| p{.23\textwidth} | p{.1\textwidth} | p{.6\textwidth} |}%
+	 	\hline%
+		\multicolumn{3}{|h|}{\bf Documentos Relacionados}\\%
+	 	\hline%
+		{\bf Clave} & {\bf Versión} & {\bf Nombre}\\%5
+		\hline%
+		\varDocRefs%
+	\end{longtable}%
+	%
+}
+
+
+%=====================================================
+% Comando: \elaboro[Cargo]{Nombre}
+% Propósito: Especificar los datos del responsable del documento
+%=====================================================
+\newcommand{\varElaboro}{}
+\newcommand{\varElaboroCar}{}
+\newcommand{\elaboro}[2][]{\renewcommand{\varElaboroCar}{#1}\renewcommand{\varElaboro}{#2}}
+
+%=====================================================
+% Comando: \superviso[Cargo]{Nombre}
+% Propósito: Especificar los datos del responsable de revisar el documento.
+%=====================================================
+\newcommand{\varSuperviso}{}
+\newcommand{\varSupervisoCar}{}
+\newcommand{\superviso}[2][]{\renewcommand{\varSupervisoCar}{#1}\renewcommand{\varSuperviso}{#2}}
+
+%=====================================================
+% Comando: \aprobo[Cargo]{Nombre}
+% Propósito: Especificar los datos del responsable de aprobar el documento.
+%=====================================================
+\newcommand{\varAprobo}{}
+\newcommand{\varAproboCar}{}
+\newcommand{\aprobo}[2][]{\renewcommand{\varAproboCar}{#1}\renewcommand{\varAprobo}{#2}}
+
+%=====================================================
+% Comando: \makeObservaciones[altura del espacio a generar]
+% Propósito: Crear un espacio para que a mano se detallen observaciones sobre el documento.
+%=====================================================
+\newcommand{\makeObservaciones}[1][10cm]{
+	\noindent\begin{longtable}{| p{.98\textwidth}|}%
+	 	\hline%
+		\multicolumn{1}{|h|}{\bf Observaciones}\\%
+	 	\hline%
+		\vspace{#1}\\%5
+		\hline\endhead%
+	\end{longtable}%
+	%
+}
+
+
+%=====================================================
+% Comando: \makeFirmas
+% Propósito: Expande los datos de las personas que elaboraron, revisaron y aprobaron el documento con espacio para firma.
+%=====================================================
+\newcommand{\makeFirmas}{
+	\noindent\begin{tabular}{|c p{.255\textwidth} c|c p{.255\textwidth} c | c p{.255\textwidth} c|}%
+	 	\hline%
+		\multicolumn{9}{|h|}{\bf Firmas}\\%
+		\hline%
+		& \begin{center}\bf Responsable\end{center} & & & \begin{center}\bf Revisó\end{center} & & & \begin{center}\bf Aprobó\end{center} & \\%
+		&&&&&&&& \\%
+		&&&&&&&& \\%
+		&&&&&&&& \\%
+		\cline{2-2} \cline{5-5} \cline{8-8}	%
+		& \centering \varElaboro & & & \centering \varSuperviso & & & \centering \varAprobo & \\%
+		& \centering \varElaboroCar & & & \centering \varSupervisoCar & & & \centering \varAproboCar & \\%
+		\hline%
+	\end{tabular}%
+}
+
+%=====================================================
+%% Ambiente: 
+%   \begin{objetivos}[Primer enunciado del comando]
+%       \item Objetivo 1
+%       \item Objetivo 2
+%       \item Objetivo 3
+%       \item ...
+%   \end{objetivo}
+% Propósito: Abrir un espacio de objetivos al inicio de cada capítulo. La leyenda que precede la lisa de objetivos se puede cambiar mediante el primer argumento opcional.
+%=====================================================
+\newenvironment{objetivos}[1][El presente capítulo tiene los siguientes objetivos:]{%
+	\arrayrulecolor{colorPrincipal}%
+	\indent\begin{tabular}{|p{.9\textwidth}|}%
+	\hline\rowcolor{colorAgua}%
+	{\bf\large\color{colorPrincipal} {#1}}\begin{itemize}}%
+{%
+	%
+	\end{itemize}\\\hline%
+	\end{tabular}%
+}
+
+%=====================================================
+% Comando: \instrucciones{Escriba las instrucciones sobre el llenado de alguna sección, campo o contenido.}
+% Propósito: Especiicar instrucciones de llenado para una plantila.
+%=====================================================
+\newcommand{\instrucciones}[1]{}
+\newcommand{\varInstrucciones}[1]{{\small\em\color{colorGris}#1}}
+
+%=====================================================
+% Comando: \showInstrucciones
+% Propósito: Controlar la generación de las instrucciones en el PDF.
+%=====================================================
+\newcommand{\showInstrucciones}{%
+	\let\instrucciones=\varInstrucciones%
+}
+
+%=====================================================
+% Ambiente: Citemize
+% Propósito: Crear una lista de viñetas con poco espacio de separación entre elementos. No se recomienda anidarlos.
+%=====================================================
+\newenvironment{Citemize}%
+{%
+	\begin{itemize}\addtolength{\itemsep}{-0.3\baselineskip}%
+}{%
+	\end{itemize}%
+}%
+
+%=====================================================
+% Ambiente: Cdescription
+% Propósito: Crear una lista de descripción con poco espacio de separación entre elementos. No se recomienda anidarlos.
+%=====================================================
+\newenvironment{Cdescription}%
+{%
+	\begin{description}\addtolength{\itemsep}{-0.3\baselineskip}%
+}{%
+	\end{description}%
+}%
+
+%=====================================================
+% Ambiente: Cenumerate
+% Propósito: Crear una lista enumerada con poco espacio de separación entre elementos. No se recomienda anidarlos.
+%=====================================================
+\newenvironment{Cenumerate}%
+{%
+	\begin{enumerate}\addtolength{\itemsep}{-0.3\baselineskip}%
+}{%
+	\end{enumerate}%
+}%
+
+
+%=====================================================
+% Comando: clossing
+% Propósito: Generar una hoja de cierre de cada documento
+%=====================================================
+\newcommand{\clossing}{
+	\chapter*{{\huge Instituto Politécnico Nacional}\bigskip\\{\Large\color{colorSecundario}Escuela Superior de Cómputo}\bigskip\\{\large\color{colorPrincipal}Coordinación de Desarrollo Tecnológico}}
+	
+	\noindent{\bf Coordinador de Desarrollo Tecnológico}
+	\begin{itemize}
+		\item[{\color{colorPrincipal}\Gentsroom}] José Jaime López Rabadán.
+		\item[{\color{colorPrincipal}\Mobilefone}] (044)--55--3227-9975.
+		\item[{\color{colorPrincipal}\Telefon}] 57296000 Ext. 5004.
+		\item[{\color{colorPrincipal}\Letter}] \url{rabadanlorj@gmail.com}.
+	\end{itemize}
+	\bigskip
+}
+
+
