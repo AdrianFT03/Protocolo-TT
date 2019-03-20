@@ -7,61 +7,61 @@
 \contentsline {section}{\numberline {1.5}Objetivos}{2}{section.1.5}% 
 \contentsline {subsection}{\numberline {1.5.1}Objetivo general}{2}{subsection.1.5.1}% 
 \contentsline {subsection}{\numberline {1.5.2}Objetivos espec\IeC {\'\i }ficos}{2}{subsection.1.5.2}% 
-\contentsline {section}{\numberline {1.6}Estado del arte}{2}{section.1.6}% 
-\contentsline {chapter}{\numberline {2}Marco Te\IeC {\'o}rico}{3}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Sensores}{3}{section.2.1}% 
-\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{5}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Requerimientos del sistema}{5}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis de componentes del sistema}{5}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Sensor de temperatura}{5}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Sensor de pulso}{5}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}M\IeC {\'o}dulo de comunicaci\IeC {\'o}n GSM}{5}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Microcontrolador}{5}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}Sistema operativo m\IeC {\'o}vil}{6}{subsection.3.2.5}% 
-\contentsline {part}{I\hspace {1em}Dise\IeC {\~n}o de la Estructura del Sistema}{7}{part.1}% 
-\contentsline {chapter}{\numberline {4}Metodolog\IeC {\'\i }a}{9}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}An\IeC {\'a}lisis de Factibilidad}{11}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}An\IeC {\'a}lisis de Factibilidad}{11}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Factibilidad T\IeC {\'e}cnica}{11}{subsection.5.1.1}% 
-\contentsline {subsubsection}{Software}{11}{section*.4}% 
-\contentsline {paragraph}{2. Sistema Operativo}{11}{section*.5}% 
-\contentsline {paragraph}{3. Lenguaje de Programaci\IeC {\'o}n}{11}{section*.6}% 
-\contentsline {subsubsection}{Hardware}{11}{section*.7}% 
-\contentsline {subsection}{\numberline {5.1.2}Factibilidad Econ\IeC {\'o}mica}{11}{subsection.5.1.2}% 
-\contentsline {paragraph}{1. Gastos tecnol\IeC {\'o}gicos}{11}{section*.8}% 
-\contentsline {paragraph}{2. Gastos por servicios}{11}{section*.9}% 
-\contentsline {paragraph}{Gastos totales}{12}{section*.10}% 
-\contentsline {chapter}{\numberline {6}Arquitectura del Sistema}{13}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Arquitectura f\IeC {\'\i }sica del sistema}{13}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Arquitectura l\IeC {\'o}gica del sistema}{13}{section.6.2}% 
-\contentsline {chapter}{\numberline {7}Modelo de Negocio}{15}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}Reglas de negocio}{15}{section.7.1}% 
-\contentsline {subsubsection}{RN1 Campos obligatorios}{15}{section*.11}% 
-\contentsline {section}{\numberline {7.2}Actores del sistema}{15}{section.7.2}% 
-\contentsline {subsection}{\numberline {7.2.1}Paciente}{16}{subsection.7.2.1}% 
-\contentsline {chapter}{\numberline {8}Modelo de Comportamiento}{17}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}M\IeC {\'o}dulos del sistema}{17}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}Modelo de comportamiento del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{18}{section.8.2}% 
-\contentsline {section}{\numberline {8.3}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Externo}{19}{section.8.3}% 
-\contentsline {section}{\numberline {8.4}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Interno}{20}{section.8.4}% 
-\contentsline {section}{\numberline {8.5}Casos de uso del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{21}{section.8.5}% 
-\contentsline {section}{\numberline {8.6}CU1 Consultar pacientes}{22}{section.8.6}% 
-\contentsline {subsection}{\numberline {8.6.1}Resumen}{22}{subsection.8.6.1}% 
-\contentsline {subsection}{\numberline {8.6.2}Descripci\IeC {\'o}n}{22}{subsection.8.6.2}% 
-\contentsline {subsection}{\numberline {8.6.3}Trayectorias del caso de uso}{23}{subsection.8.6.3}% 
-\contentsline {subsection}{\numberline {8.6.4}Puntos de extensi\IeC {\'o}n}{23}{subsection.8.6.4}% 
-\contentsline {chapter}{\numberline {9}Modelo de Interacci\IeC {\'o}n con el Usuario}{25}{chapter.9}% 
-\contentsline {section}{\numberline {9.1}Entorno de trabajo}{25}{section.9.1}% 
-\contentsline {section}{\numberline {9.2}Interfaces de usuario}{26}{section.9.2}% 
-\contentsline {subsection}{\numberline {9.2.1}IU1 Consultar pacientes}{26}{subsection.9.2.1}% 
-\contentsline {subsubsection}{Objetivo}{26}{section*.12}% 
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{26}{section*.13}% 
-\contentsline {subsubsection}{Comandos}{26}{section*.14}% 
-\contentsline {section}{\numberline {9.3}Dise\IeC {\~n}o de mensajes}{28}{section.9.3}% 
-\contentsline {subsection}{\numberline {9.3.1}Par\IeC {\'a}metros comunes}{28}{subsection.9.3.1}% 
-\contentsline {subsection}{\numberline {9.3.2}Mensajes a trav\IeC {\'e}s de la pantalla}{29}{subsection.9.3.2}% 
-\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n realizada exitosamente}}{29}{section*.15}% 
-\contentsline {part}{II\hspace {1em}Implementaci\IeC {\'o}n}{31}{part.2}% 
-\contentsline {chapter}{\numberline {10}Avances y pruebas}{33}{chapter.10}% 
-\contentsline {section}{\numberline {10.1}Sensores de pulso}{33}{section.10.1}% 
-\contentsline {chapter}{Referencias}{35}{chapter*.16}% 
+\contentsline {section}{\numberline {1.6}Estado del arte}{3}{section.1.6}% 
+\contentsline {chapter}{\numberline {2}Marco Te\IeC {\'o}rico}{5}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Sensores}{5}{section.2.1}% 
+\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{7}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Requerimientos del sistema}{7}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis de componentes del sistema}{7}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Sensor de temperatura}{7}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Sensor de pulso}{7}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}M\IeC {\'o}dulo de comunicaci\IeC {\'o}n GSM}{7}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}Microcontrolador}{7}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.5}Sistema operativo m\IeC {\'o}vil}{8}{subsection.3.2.5}% 
+\contentsline {part}{I\hspace {1em}Dise\IeC {\~n}o de la Estructura del Sistema}{9}{part.1}% 
+\contentsline {chapter}{\numberline {4}Metodolog\IeC {\'\i }a}{11}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}An\IeC {\'a}lisis de Factibilidad}{13}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}An\IeC {\'a}lisis de Factibilidad}{13}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Factibilidad T\IeC {\'e}cnica}{13}{subsection.5.1.1}% 
+\contentsline {subsubsection}{Software}{13}{section*.4}% 
+\contentsline {paragraph}{2. Sistema Operativo}{13}{section*.5}% 
+\contentsline {paragraph}{3. Lenguaje de Programaci\IeC {\'o}n}{13}{section*.6}% 
+\contentsline {subsubsection}{Hardware}{13}{section*.7}% 
+\contentsline {subsection}{\numberline {5.1.2}Factibilidad Econ\IeC {\'o}mica}{13}{subsection.5.1.2}% 
+\contentsline {paragraph}{1. Gastos tecnol\IeC {\'o}gicos}{13}{section*.8}% 
+\contentsline {paragraph}{2. Gastos por servicios}{13}{section*.9}% 
+\contentsline {paragraph}{Gastos totales}{14}{section*.10}% 
+\contentsline {chapter}{\numberline {6}Arquitectura del Sistema}{15}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Arquitectura f\IeC {\'\i }sica del sistema}{15}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Arquitectura l\IeC {\'o}gica del sistema}{15}{section.6.2}% 
+\contentsline {chapter}{\numberline {7}Modelo de Negocio}{17}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Reglas de negocio}{17}{section.7.1}% 
+\contentsline {subsubsection}{RN1 Campos obligatorios}{17}{section*.11}% 
+\contentsline {section}{\numberline {7.2}Actores del sistema}{17}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}Paciente}{18}{subsection.7.2.1}% 
+\contentsline {chapter}{\numberline {8}Modelo de Comportamiento}{19}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}M\IeC {\'o}dulos del sistema}{19}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Modelo de comportamiento del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{20}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Externo}{21}{section.8.3}% 
+\contentsline {section}{\numberline {8.4}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Interno}{22}{section.8.4}% 
+\contentsline {section}{\numberline {8.5}Casos de uso del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{23}{section.8.5}% 
+\contentsline {section}{\numberline {8.6}CU1 Consultar pacientes}{24}{section.8.6}% 
+\contentsline {subsection}{\numberline {8.6.1}Resumen}{24}{subsection.8.6.1}% 
+\contentsline {subsection}{\numberline {8.6.2}Descripci\IeC {\'o}n}{24}{subsection.8.6.2}% 
+\contentsline {subsection}{\numberline {8.6.3}Trayectorias del caso de uso}{25}{subsection.8.6.3}% 
+\contentsline {subsection}{\numberline {8.6.4}Puntos de extensi\IeC {\'o}n}{25}{subsection.8.6.4}% 
+\contentsline {chapter}{\numberline {9}Modelo de Interacci\IeC {\'o}n con el Usuario}{27}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Entorno de trabajo}{27}{section.9.1}% 
+\contentsline {section}{\numberline {9.2}Interfaces de usuario}{28}{section.9.2}% 
+\contentsline {subsection}{\numberline {9.2.1}IU1 Consultar pacientes}{28}{subsection.9.2.1}% 
+\contentsline {subsubsection}{Objetivo}{28}{section*.12}% 
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{28}{section*.13}% 
+\contentsline {subsubsection}{Comandos}{28}{section*.14}% 
+\contentsline {section}{\numberline {9.3}Dise\IeC {\~n}o de mensajes}{30}{section.9.3}% 
+\contentsline {subsection}{\numberline {9.3.1}Par\IeC {\'a}metros comunes}{30}{subsection.9.3.1}% 
+\contentsline {subsection}{\numberline {9.3.2}Mensajes a trav\IeC {\'e}s de la pantalla}{31}{subsection.9.3.2}% 
+\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n realizada exitosamente}}{31}{section*.15}% 
+\contentsline {part}{II\hspace {1em}Implementaci\IeC {\'o}n}{33}{part.2}% 
+\contentsline {chapter}{\numberline {10}Avances y pruebas}{35}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}Sensores de pulso}{35}{section.10.1}% 
+\contentsline {chapter}{Referencias}{37}{chapter*.16}% 
