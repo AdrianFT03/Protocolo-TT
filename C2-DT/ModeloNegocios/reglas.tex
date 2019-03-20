@@ -43,91 +43,91 @@
 \end{BusinessRule}
 %------------------------------------------------------------------------------------------------------------------
 
-%============================== RN2 =================================
-\begin{BusinessRule}{RN2}{Información correcta}
-	{Restricción}
-	{Controla la operación}
-	\BRitem{Versión}{1.0}
-	\BRitem{Estatus}{Revisión}
-	\BRitem{Descripción}{Todos los datos proporcionados al sistema deben pertenecer al tipo de dato especificado y respetar el formato con base en lo definido en la entidad del diccionario de datos.}
-	\BRitem{Referenciado por}{ 
-		\cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-	}
-\end{BusinessRule}
-
-%------------------------------------------------------------------------------------------------------------------
-
-%============================== RN3 =================================
-\begin{BusinessRule}{RN3}{Fecha de nacimiento válida}
-	{Restricción}
-	{Controla la operación}
-	\BRitem{Versión}{1.0}
-	\BRitem{Estatus}{Revisión}
-	\BRitem{Descripción}{Para que una fecha de nacimiento registrada en la aplicación móvil se considere válida, se debe cumplir que.
-		
-	\begin{center}
-		$F_{nac} \geq (F_{act}-150$ años) 
-	\end{center}	
-		
-	}
-	\BRitem{Referenciado por}{ 
-		\cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-	}
-\end{BusinessRule}
-
-
-%============================== RN4 =================================
-\begin{BusinessRule}{RN4}{Cálculo del promedio de mediciones de temperatura corporal}
-	{Derivación}
-	{Controla la operación}
-	\BRitem{Versión}{0.1}
-	\BRitem{Estatus}{Revisión}
-	\BRitem{Descripción}{
-		El cálculo del promedio de temperatura corporal de un paciente se realizará tomando todas las mediciones de temperatura registradas y dividiéndolo entre el número total de ellas.
-	}
-	
-	\BRitem{Sentencia}{El cálculo del promedio de la temperatura corporal de un paciente se realiza de la siguiente forma:\\
-
-		\begin{center}
-			$P_{temp} = \frac{T_{1}\ +\ T_{2}\ +\ T_{3}\ +\ ...\ +\ T_{n}}{N}$	
-		\end{center}
-	
-		
-		Donde: 
-		
-		$P_{temp} =$ Promedio de la temperatura corporal del paciente. \\
-		$T_{n} =$ Medición n de temperatura corporal del paciente. \\
-		$N =$ Total de mediciones de temperatura registradas para el paciente. \\
-	}
-	
-	\BRitem{Referenciado por}{\cdtIdRef{CU3}{Consultar información del paciente}}
-	
-\end{BusinessRule}
-
-%============================== RN5 =================================
-\begin{BusinessRule}{RN5}{Cálculo del promedio de mediciones de frecuencia cardíaca}
-	{Derivación}
-	{Controla la operación}
-	\BRitem{Versión}{0.1}
-	\BRitem{Estatus}{Revisión}
-	\BRitem{Descripción}{
-		El cálculo del promedio de frecuencia cardíaca de un paciente se realizará tomando todas las mediciones de frecuencia cardíaca registradas y dividiéndolo entre el número total de ellas.
-	}
-	
-	\BRitem{Sentencia}{El cálculo del promedio de la frecuencia cardíaca de un paciente se realiza de la siguiente forma:\\
-		
-		\begin{center}
-			$P_{fc} = \frac{FC_{1}\ +\ FC_{2}\ +\ FC_{3}\ +\ ...\ +\ FC_{n}}{N}$	
-		\end{center}
-		
-		
-		Donde: 
-		
-		$P_{fc} =$ Promedio de la frecuencia cardíaca del paciente. \\
-		$FC_{n} =$ Medición n de frecuencia cardíaca del paciente. \\
-		$N =$ Total de mediciones de frecuencia cardíaca registradas para el paciente. \\
-	}
-	
-	\BRitem{Referenciado por}{\cdtIdRef{CU3}{Consultar información del paciente}}
-	
-\end{BusinessRule}
+%%============================== RN2 =================================
+%\begin{BusinessRule}{RN2}{Información correcta}
+%	{Restricción}
+%	{Controla la operación}
+%	\BRitem{Versión}{1.0}
+%	\BRitem{Estatus}{Revisión}
+%	\BRitem{Descripción}{Todos los datos proporcionados al sistema deben pertenecer al tipo de dato especificado y respetar el formato con base en lo definido en la entidad del diccionario de datos.}
+%	\BRitem{Referenciado por}{ 
+%		\cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
+%	}
+%\end{BusinessRule}
+%
+%%------------------------------------------------------------------------------------------------------------------
+%
+%%============================== RN3 =================================
+%\begin{BusinessRule}{RN3}{Fecha de nacimiento válida}
+%	{Restricción}
+%	{Controla la operación}
+%	\BRitem{Versión}{1.0}
+%	\BRitem{Estatus}{Revisión}
+%	\BRitem{Descripción}{Para que una fecha de nacimiento registrada en la aplicación móvil se considere válida, se debe cumplir que.
+%		
+%	\begin{center}
+%		$F_{nac} \geq (F_{act}-150$ años) 
+%	\end{center}	
+%		
+%	}
+%	\BRitem{Referenciado por}{ 
+%		\cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
+%	}
+%\end{BusinessRule}
+%
+%
+%%============================== RN4 =================================
+%\begin{BusinessRule}{RN4}{Cálculo del promedio de mediciones de temperatura corporal}
+%	{Derivación}
+%	{Controla la operación}
+%	\BRitem{Versión}{0.1}
+%	\BRitem{Estatus}{Revisión}
+%	\BRitem{Descripción}{
+%		El cálculo del promedio de temperatura corporal de un paciente se realizará tomando todas las mediciones de temperatura registradas y dividiéndolo entre el número total de ellas.
+%	}
+%	
+%	\BRitem{Sentencia}{El cálculo del promedio de la temperatura corporal de un paciente se realiza de la siguiente forma:\\
+%
+%		\begin{center}
+%			$P_{temp} = \frac{T_{1}\ +\ T_{2}\ +\ T_{3}\ +\ ...\ +\ T_{n}}{N}$	
+%		\end{center}
+%	
+%		
+%		Donde: 
+%		
+%		$P_{temp} =$ Promedio de la temperatura corporal del paciente. \\
+%		$T_{n} =$ Medición n de temperatura corporal del paciente. \\
+%		$N =$ Total de mediciones de temperatura registradas para el paciente. \\
+%	}
+%	
+%	\BRitem{Referenciado por}{\cdtIdRef{CU3}{Consultar información del paciente}}
+%	
+%\end{BusinessRule}
+%
+%%============================== RN5 =================================
+%\begin{BusinessRule}{RN5}{Cálculo del promedio de mediciones de frecuencia cardíaca}
+%	{Derivación}
+%	{Controla la operación}
+%	\BRitem{Versión}{0.1}
+%	\BRitem{Estatus}{Revisión}
+%	\BRitem{Descripción}{
+%		El cálculo del promedio de frecuencia cardíaca de un paciente se realizará tomando todas las mediciones de frecuencia cardíaca registradas y dividiéndolo entre el número total de ellas.
+%	}
+%	
+%	\BRitem{Sentencia}{El cálculo del promedio de la frecuencia cardíaca de un paciente se realiza de la siguiente forma:\\
+%		
+%		\begin{center}
+%			$P_{fc} = \frac{FC_{1}\ +\ FC_{2}\ +\ FC_{3}\ +\ ...\ +\ FC_{n}}{N}$	
+%		\end{center}
+%		
+%		
+%		Donde: 
+%		
+%		$P_{fc} =$ Promedio de la frecuencia cardíaca del paciente. \\
+%		$FC_{n} =$ Medición n de frecuencia cardíaca del paciente. \\
+%		$N =$ Total de mediciones de frecuencia cardíaca registradas para el paciente. \\
+%	}
+%	
+%	\BRitem{Referenciado por}{\cdtIdRef{CU3}{Consultar información del paciente}}
+%	
+%\end{BusinessRule}

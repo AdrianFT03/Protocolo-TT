@@ -59,60 +59,60 @@
     \item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
 \end{mensaje}
 
-%===========================  MSG2 ==================================
-\begin{mensaje}{MSG2}{Falta dato obligatorio}{Error}
-	\item[Ubicación:] \msjCampo
-%	\item[Estatus:] %Terminado
-	\item[Objetivo:] Notificar al actor la omisión de algún dato obligatorio por ingresar.
-	\item[Redacción:] Campo obligatorio.
-	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-\end{mensaje}
-
-%===========================  MSG3 ==================================
-\begin{mensaje}{MSG3}{Formato de campo incorrecto}{Error}
-	\item[Ubicación:] \msjCampo.
-%	\item[Estatus:] %Terminado
-	\item[Objetivo:] Indicar al actor que el dato ingresado en alguno de los campos del formulario no cumple con el tipo de dato definido en el diccionario de datos.
-	\item[Redacción:] El dato ingresado es incorrecto, favor de ingresar un dato válido.
-	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-\end{mensaje}
-
-%===========================  MSG4 ==================================
-\begin{mensaje}{MSG4}{Número telefónico previamente registrado}{Error}
-	\item[Ubicación:] \msjCampo.
-	%	\item[Estatus:] %Terminado
-	\item[Objetivo:] Indicar al actor que el número telefónico ingresado ya ha sido registrado previamente.
-	\item[Redacción:] Número telefónico previamente registrado.
-	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-\end{mensaje}
-
-
-%===========================  MSG5 ==================================
-\begin{mensaje}{MSG5}{Fecha de nacimiento inválida}{Error}
-	\item[Ubicación:] \msjCampo
-
-	\item[Objetivo:] Notificar al actor que la fecha que intenta registrar está fuera del rango considerado válido en el sistema.	
-	
-	\item[Redacción:] La fecha de nacimiento ingresada debe ser menor o igual a 150 años.
-	
-	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-\end{mensaje}
-
-
-%===========================  MSG6 ==================================
-\begin{mensaje}{MSG6}{Eliminar Elemento}{Confirmación}
-	\item[Ubicación:] \msjEmergente.
-	\item[Objetivo:] Notificar al actor que está a punto de eliminar un elemento y que se necesita su aprobación para ello.
-	\item[Redacción:] ¿Desea eliminar DETERMINADO ELEMENTO VALOR?
-	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
-	\begin{Citemize} 
-		\item DETERMINADO ELEMENTO: Es el elemento que se requiere eliminar.
-		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es la clave o el nombre.
-		%\item SELECCIÓN: Dependiendo del género en la oración se ocupa, seleccionado(masculino) ó seleccionada(femenino).
-	\end{Citemize}
-	\item[Ejemplo:] ¿Desea eliminar {\em al paciente Carlos Granados}?
-	\item[Referenciado por:] \cdtIdRef{CU5}{Eliminar paciente}
-
-\end{mensaje}
-
-%===========================  MSG ==================================
+%%===========================  MSG2 ==================================
+%\begin{mensaje}{MSG2}{Falta dato obligatorio}{Error}
+%	\item[Ubicación:] \msjCampo
+%%	\item[Estatus:] %Terminado
+%	\item[Objetivo:] Notificar al actor la omisión de algún dato obligatorio por ingresar.
+%	\item[Redacción:] Campo obligatorio.
+%	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
+%\end{mensaje}
+%
+%%===========================  MSG3 ==================================
+%\begin{mensaje}{MSG3}{Formato de campo incorrecto}{Error}
+%	\item[Ubicación:] \msjCampo.
+%%	\item[Estatus:] %Terminado
+%	\item[Objetivo:] Indicar al actor que el dato ingresado en alguno de los campos del formulario no cumple con el tipo de dato definido en el diccionario de datos.
+%	\item[Redacción:] El dato ingresado es incorrecto, favor de ingresar un dato válido.
+%	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
+%\end{mensaje}
+%
+%%===========================  MSG4 ==================================
+%\begin{mensaje}{MSG4}{Número telefónico previamente registrado}{Error}
+%	\item[Ubicación:] \msjCampo.
+%	%	\item[Estatus:] %Terminado
+%	\item[Objetivo:] Indicar al actor que el número telefónico ingresado ya ha sido registrado previamente.
+%	\item[Redacción:] Número telefónico previamente registrado.
+%	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
+%\end{mensaje}
+%
+%
+%%===========================  MSG5 ==================================
+%\begin{mensaje}{MSG5}{Fecha de nacimiento inválida}{Error}
+%	\item[Ubicación:] \msjCampo
+%
+%	\item[Objetivo:] Notificar al actor que la fecha que intenta registrar está fuera del rango considerado válido en el sistema.	
+%	
+%	\item[Redacción:] La fecha de nacimiento ingresada debe ser menor o igual a 150 años.
+%	
+%	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
+%\end{mensaje}
+%
+%
+%%===========================  MSG6 ==================================
+%\begin{mensaje}{MSG6}{Eliminar Elemento}{Confirmación}
+%	\item[Ubicación:] \msjEmergente.
+%	\item[Objetivo:] Notificar al actor que está a punto de eliminar un elemento y que se necesita su aprobación para ello.
+%	\item[Redacción:] ¿Desea eliminar DETERMINADO ELEMENTO VALOR?
+%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+%	\begin{Citemize} 
+%		\item DETERMINADO ELEMENTO: Es el elemento que se requiere eliminar.
+%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es la clave o el nombre.
+%		%\item SELECCIÓN: Dependiendo del género en la oración se ocupa, seleccionado(masculino) ó seleccionada(femenino).
+%	\end{Citemize}
+%	\item[Ejemplo:] ¿Desea eliminar {\em al paciente Carlos Granados}?
+%	\item[Referenciado por:] \cdtIdRef{CU5}{Eliminar paciente}
+%
+%\end{mensaje}
+%
+%%===========================  MSG ==================================

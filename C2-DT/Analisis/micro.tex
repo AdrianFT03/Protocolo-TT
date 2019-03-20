@@ -1,33 +1,33 @@
 \subsection{Microcontrolador}
-El microcontrolador será encargado de obtener procesar todos los datos para generar los resultados esperados. Ya que el microcontrolador tendrá la principal función en el sistema, es de suma importancia elegir el indicado para realizar esta tarea.\\
-
-Se realizó una tabla comparativa entre diferentes microcontroladores que corresponden con los requerimientos buscados. Las principales características consideradas para la elección fueron la resolución del convertidor analógico digital y las interfaces de comunicación que ofrece, tomando en cuenta que las que serán usadas con base en las elecciones realizadas para sensor de temperatura, sensor de pulso y módulo GSM son I2C y UART.\\
-
-En la tabla \ref{analisis:micro} se muestran los microcontroladores y las características evaluadas para cada uno de ellos.\\
-
-
-\begin{table}[htbp]
-	\begin{center}
-		\scalebox{1}[1]{
-			\begin{tabular}{|c|c|c|c|c|}
-				\hline
-				%			\rowcolor{colorSecundario}
-				%			\color{green}
-				\thead{Modelo}&\thead{Fabricante}&\thead{ADC\\(bits)}&\thead{Interfaces}&\thead{Precio\\(USD)}\\
-				\hline
-				\hline
-				\thead{dsPIC30F4013}&\thead{Microchip}&\thead{12}&\thead{2 - UART\\1 - I2C\\1 - SPI}&\thead{5.41}\\
-				\hline
-				\thead{PIC24HJ128GP506A}&\thead{Microchip}&\thead{10/12}&\thead{2 - UART\\2 - I2C\\2 - SPI\\1-CAN}&\thead{5.3}\\
-				\hline
-				\thead{PIC24HJ128GP310A}&\thead{Microchip}&\thead{10/12}&\thead{2 - UART\\2 - I2C\\2 - SPI}&\thead{5.86}\\
-				\hline
-				\thead{MSP430F449}&\thead{Texas Instruments}&\thead{12}&\thead{UART/\\I2C/\\SPI}&\thead{4.97}\\
-				\hline
-			\end{tabular}}
-			\caption{Comparativa de microcontroladores.}
-			\label{analisis:micro}
-		\end{center}
-	\end{table}
-	
-Aunque cada una de las opciones puedo haber sido seleccionada por cumplir con las características de mayor importancia, se decidió usar el modelo \textbf{dsPIC30F4014} de Microchip pues con los componentes integrados se hará uso de la mayor parte de las interfaces que ofrece, junto con el ADC que será implementado para realizar la digitalización de las señales analógicas que serán obtenidas.
+%El microcontrolador será encargado de obtener procesar todos los datos para generar los resultados esperados. Ya que el microcontrolador tendrá la principal función en el sistema, es de suma importancia elegir el indicado para realizar esta tarea.\\
+%
+%Se realizó una tabla comparativa entre diferentes microcontroladores que corresponden con los requerimientos buscados. Las principales características consideradas para la elección fueron la resolución del convertidor analógico digital y las interfaces de comunicación que ofrece, tomando en cuenta que las que serán usadas con base en las elecciones realizadas para sensor de temperatura, sensor de pulso y módulo GSM son I2C y UART.\\
+%
+%En la tabla \ref{analisis:micro} se muestran los microcontroladores y las características evaluadas para cada uno de ellos.\\
+%
+%
+%\begin{table}[htbp]
+%	\begin{center}
+%		\scalebox{1}[1]{
+%			\begin{tabular}{|c|c|c|c|c|}
+%				\hline
+%				%			\rowcolor{colorSecundario}
+%				%			\color{green}
+%				\thead{Modelo}&\thead{Fabricante}&\thead{ADC\\(bits)}&\thead{Interfaces}&\thead{Precio\\(USD)}\\
+%				\hline
+%				\hline
+%				\thead{dsPIC30F4013}&\thead{Microchip}&\thead{12}&\thead{2 - UART\\1 - I2C\\1 - SPI}&\thead{5.41}\\
+%				\hline
+%				\thead{PIC24HJ128GP506A}&\thead{Microchip}&\thead{10/12}&\thead{2 - UART\\2 - I2C\\2 - SPI\\1-CAN}&\thead{5.3}\\
+%				\hline
+%				\thead{PIC24HJ128GP310A}&\thead{Microchip}&\thead{10/12}&\thead{2 - UART\\2 - I2C\\2 - SPI}&\thead{5.86}\\
+%				\hline
+%				\thead{MSP430F449}&\thead{Texas Instruments}&\thead{12}&\thead{UART/\\I2C/\\SPI}&\thead{4.97}\\
+%				\hline
+%			\end{tabular}}
+%			\caption{Comparativa de microcontroladores.}
+%			\label{analisis:micro}
+%		\end{center}
+%	\end{table}
+%	
+%Aunque cada una de las opciones puedo haber sido seleccionada por cumplir con las características de mayor importancia, se decidió usar el modelo \textbf{dsPIC30F4014} de Microchip pues con los componentes integrados se hará uso de la mayor parte de las interfaces que ofrece, junto con el ADC que será implementado para realizar la digitalización de las señales analógicas que serán obtenidas.
