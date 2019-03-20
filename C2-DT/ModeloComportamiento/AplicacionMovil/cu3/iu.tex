@@ -1,0 +1,31 @@
+\subsection{IU3 Consultar información del paciente}
+
+\subsubsection{Objetivo}
+	
+Esta pantalla permite al \hyperlink{actor:usuario}{Usuario} consultar la información general del paciente seleccionado.
+
+\subsubsection{Diseño}
+En la figura \ref{IU3} se muestra la pantalla ''Consultar información del paciente'', por medio de la cual el usuario podrá
+visualizar, editar o eliminar la información de un paciente.\\
+
+La pantalla se divide en tres secciones, las cuales se describen a continuación:
+
+\begin{enumerate}
+	\item \textbf{Información general:} Muestra la información general de un paciente, contiene algunos de los datos ingresados en el momento de su registro como el sexo y la edad que es calculada con base en la fecha de nacimiento del paciente.
+	
+	\item \textbf{Últimas mediciones registradas:} Muestra las últimas mediciones de temperatura corporal y frecuencia cardíaca que fueron medidas y enviadas a través de un mensaje SMS.
+	
+	\item \textbf{Promedio de mediciones:} Indica el promedio de temperatura corporal y frecuencia cardíaca de un paciente con base en todas las mediciones registradas para un paciente, como lo indican las reglas de negocio \cdtIdRef{RN4}{Cálculo del promedio de mediciones de temperatura corporal} y \cdtIdRef{RN5}{Cálculo del promedio de mediciones de frecuencia cardíaca}.
+\end{enumerate}
+    
+ En la parte inferior de la pantalla, se muestra la opción \btnMonitoreo{}, la cual es el acceso a la pantalla en donde el usuario podrá visualizar el historial de registro de mediciones de un paciente.
+ 
+ \IUfig[.6]{../ModeloComportamiento/AplicacionMovil/cu3/iu3.png}{IU3}{Consultar información del paciente}
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \btnEditar{} [Editar información del paciente]: Permite al actor actualizar los datos registrado para un paciente. Dirige a la pantalla \cdtIdRef{IU4}{Editar Información del paciente}.
+		\item \btnEliminar{} [Eliminar paciente]: Permite al actor eliminar los registros e información de un paciente en específico. Muestra el mensaje emergente \cdtIdRef{MSG6}{Eliminar elemento}.
+		\item \btnMonitoreo [Consultar registros]: Permite al actor visualizar el registro de los signos vitales del paciente. Dirige a la pantalla \cdtIdRef{IU6}{Consultar registros de signos vitales}.
+	\end{itemize}
+\clearpage

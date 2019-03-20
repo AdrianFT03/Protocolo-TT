@@ -1,0 +1,54 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura general de un sistema embebido.}}{10}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Tipos y alcance de redes inal\IeC {\'a}mbricas.}}{11}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces El complejo QRS. Cada letra muestra una ubicaci\IeC {\'o}n diferente de la se\IeC {\~n}al y, por lo tanto, una acci\IeC {\'o}n diferente del coraz\IeC {\'o}n. El pico R es la mayor cantidad de actividad el\IeC {\'e}ctrica producida por el coraz\IeC {\'o}n, y se usa com\IeC {\'u}nmente en las mediciones de la frecuencia card\IeC {\'\i }aca. IMOTIONS (2017).}}{19}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Un ejemplo de una se\IeC {\~n}al PPG t\IeC {\'\i }pica, que muestra la diferencia en el tama\IeC {\~n}o del flujo sangu\IeC {\'\i }neo. IMOTIONS (2017).}}{21}{figure.2.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces MAX30205}}{25}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Pulse Sensor.}}{26}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces AD8232}}{27}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces GSM Click}}{28}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Sistemas operativos m\IeC {\'o}viles en el mercado global. Statista (2018).}}{30}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Mapa de popularidad de sistemas operativos Android e iOS. DeviceAtlas (2018).}}{32}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Sistemas operativos m\IeC {\'o}viles en M\IeC {\'e}xico. Statcounter (2018).}}{32}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Versiones de Android utilizadas en M\IeC {\'e}xico. Statcounter (2018).}}{33}{figure.3.8}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Fases del Modelo en V.}}{38}{figure.4.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Arquitectura f\IeC {\'\i }sica del sistema}}{50}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Arquitectura l\IeC {\'o}gica del sistema}}{51}{figure.6.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Perfiles identificados.}}{56}{figure.7.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces M\IeC {\'o}dulos del sistema.}}{57}{figure.8.1}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil. }}{58}{figure.8.2}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Sistema Embebido. }}{59}{figure.8.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces IU1 Consultar pacientes}}{79}{figure.9.1}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces IU2 Registrar paciente}}{81}{figure.9.2}
+\contentsline {figure}{\numberline {9.3}{\ignorespaces IU3 Consultar informaci\IeC {\'o}n del paciente}}{83}{figure.9.3}
+\contentsline {figure}{\numberline {9.4}{\ignorespaces IU4 Editar informaci\IeC {\'o}n del paciente}}{85}{figure.9.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Sensor de pulso AD8232.}}{94}{figure.10.1}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Electrodos conectados el sensor de pulso AD8232.}}{95}{figure.10.2}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Se\IeC {\~n}al anal\IeC {\'o}gica del sensor de pulso AD8232.}}{95}{figure.10.3}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Sensor de pulso Pulse Sensor.}}{96}{figure.10.4}
+\contentsline {figure}{\numberline {10.5}{\ignorespaces Prueba del sensor Pulse Sensor.}}{97}{figure.10.5}
+\contentsline {figure}{\numberline {10.6}{\ignorespaces Se\IeC {\~n}al anal\IeC {\'o}gica del sensor Pulse Sensor.}}{97}{figure.10.6}
+\contentsline {figure}{\numberline {10.7}{\ignorespaces Diagrama de flujo del programa de configuraci\IeC {\'o}n del dsPIC40F4013.}}{100}{figure.10.7}
+\contentsline {figure}{\numberline {10.8}{\ignorespaces Diagrama de flujo de la obtenci\IeC {\'o}n de se\IeC {\~n}al digitalizada.}}{103}{figure.10.8}
+\contentsline {figure}{\numberline {10.9}{\ignorespaces Conexi\IeC {\'o}n de AD8232 con dsPIC30F4013.}}{104}{figure.10.9}
+\contentsline {figure}{\numberline {10.10}{\ignorespaces Resultado de ejecuci\IeC {\'o}n para sensor AD8232.}}{105}{figure.10.10}
+\contentsline {figure}{\numberline {10.11}{\ignorespaces Gr\IeC {\'a}fica de se\IeC {\~n}al del sensor AD8232.}}{105}{figure.10.11}
+\contentsline {figure}{\numberline {10.12}{\ignorespaces Conexi\IeC {\'o}n de PulseSensor con dsPIC30F4013.}}{106}{figure.10.12}
+\contentsline {figure}{\numberline {10.13}{\ignorespaces Resultado de ejecuci\IeC {\'o}n para sensor Pulse Sensor.}}{106}{figure.10.13}
+\contentsline {figure}{\numberline {10.14}{\ignorespaces Gr\IeC {\'a}fica de se\IeC {\~n}al del sensor Pulse Sensor.}}{107}{figure.10.14}
+\contentsline {figure}{\numberline {10.15}{\ignorespaces Conexi\IeC {\'o}n UART de m\IeC {\'o}dulo GSM y FT232}}{108}{figure.10.15}
+\contentsline {figure}{\numberline {10.16}{\ignorespaces Configuraci\IeC {\'o}n de terminal en PuTTY}}{109}{figure.10.16}
+\contentsline {figure}{\numberline {10.17}{\ignorespaces Comandos AT en terminal de PuTTY}}{109}{figure.10.17}
+\contentsline {figure}{\numberline {10.18}{\ignorespaces Conexi\IeC {\'o}n del m\IeC {\'o}dulo GSM con microcontrolador}}{111}{figure.10.18}
+\contentsline {figure}{\numberline {10.19}{\ignorespaces Conexi\IeC {\'o}n f\IeC {\'\i }sica del m\IeC {\'o}dulo GSM con microcontrolador mediante Mikrobus2}}{112}{figure.10.19}
+\contentsline {figure}{\numberline {10.20}{\ignorespaces Recepci\IeC {\'o}n de mensaje enviado por m\IeC {\'o}dulo GSM}}{112}{figure.10.20}

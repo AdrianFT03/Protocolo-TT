@@ -1,0 +1,32 @@
+\subsection{IUX Nombre de la Interfaz}
+
+\subsubsection{Objetivo}
+
+% Explicar el objetivo para el que se construyo la interfaz, generalmente es la descripción de la actividad a desarrollar, como Seleccionar grupos para inscribir materias de un alumno, controlar el acceso al sistema mediante la solicitud de un login y password de los usuarios, etc.
+	
+    Esta pantalla permite al usuario \cdtRef{ControlEscolar}{Control Escolar} registrar un alumno de nuevo ingreso en el sistema y generarle un número de boleta.
+
+\subsubsection{Diseño}
+
+% Presente la figura de la interfaz y explique paso a paso ``a manera de manual de usuario'' como se debe utilizar la interfaz. No olvide detallar en la redacción los datos de entradas y salidas. Explique como utilizar cada botón y control de la pantalla, para que sirven y lo que hacen. Si el Botón lleva a otra pantalla, solo indique la pantalla y explique lo que pasará cuando se cierre dicha pantalla (la explicación sobre el funcionamiento de la otra pantalla estará en su archivo correspondiente).
+
+    En la figura~\ref{IUT 1} se muestra la pantalla ``Registrar alumno'', en la cual se solicitan los datos del alumno a registrar. Inicie escribiendo la CURP del Alumno y oprima el botón \cdtButton{Buscar}. El sistema utilizará el servicio de RENAPO para obtener los datos personales del alumno. En caso de que no sea posible obtener los datos personales desde el sistema de RENAPO el sistema le abrirá los campos como se muestra en la figura~\ref{IU84:datosPersonales} para que los proporcione manualmente. En caso de que la CURP proporcionada no exista el sistema le mostrará el mensaje de error \cdtIdRef{MSG3}{Falta un dato requerido para efectuar la operación solicitada}.
+    
+    A continuación ...
+
+    \IUfig[.9]{pantallas/tareas/IU8registrarUsuario.png}{IUT 1}{Consultar Usuarios}
+
+
+\subsubsection{Comandos}
+    \begin{itemize}
+	\item \botCurp: Se utiliza para conectarse a los servicios de RENAPO. Al oprimir este botón el sistema muestra una animación indicando el procesamiento que se está realizando. Al terminar cargará los datos obtenidos y los mostrará en pantalla.
+	\item \cdtButton{Agregar}: Permite al Administrador registrar en el sistema un Usuario con el perfil de Gestor de Catálogos, dirige a la pantalla \cdtIdRef{IU8}{Registrar Usuario}.
+    \end{itemize}
+
+\subsubsection{Mensajes}
+
+    \begin{description}
+	\item[\cdtIdRef{MSG4}{Datos inválidos}] Se muestra este mensaje de error cuando alguno de los datos marcados como requeridos (con asteriscos rojos) no es proporcionado por el usuario, señalando el dato que hizo falta.
+	\item[\cdtIdRef{MSG7}{Registro completado}] Se muestra este mensaje de confirmación cuando el alumno ha sido registrado correctamente.
+	\item[\cdtIdRef{MSG20}{Conectando al Servidor}] Se muestra tras oprimir el botón \botCurp 
+    \end{description}

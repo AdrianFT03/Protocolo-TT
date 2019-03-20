@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Componente: cdtTheme.sty                                               
+%  Autor: Ulises Vélez Saldaña
+%  Fecha: 27 de Julio, 2012
+%  Versión: 1.0
+%  Biblioteca: cdt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cdtTheme}[2012/07/27, v1.0 CDT-ESCOM-IPN Plantilla para definir el estilo de la documentación de CDT]
+
+%=====================================================
+\RequirePackage[utf8]{inputenc}                      % Codificación de caracteres en UTF-8.
+\RequirePackage[spanish]{babel}                      % Cambia las variables del documento a español.
+\RequirePackage{wasysym}
+\RequirePackage{marvosym}                            % Algunos símbolos.
+\RequirePackage{cmbright}                            % Fuente de letras, otras opciones: arev,
+% cmbright, pxfonts.
+\RequirePackage{graphicx}	                            % Manejo de imágenes.
+\RequirePackage[usenames,dvipsnames]{xcolor}          % Para usar y definir colores.
+\RequirePackage{wallpaper}                           % Colocar imágenes en el fondo del documento.
+\RequirePackage{fancyhdr}                            % Manejo de encabezados.
+\RequirePackage[hmargin=3cm,vmargin=3.5cm]{geometry} % Manejo de márgenes del documento.
+\RequirePackage[Sonny]{fncychap}                     % Manejo de capítulos: Sonny, Lenny, Glenn, Conny, Rejne and Bjarne.
+\RequirePackage{url}
+\usepackage[pdftex, bookmarks, colorlinks]{hyperref}
+
+%=====================================================
+% Definición de colores.
+\definecolor{colorPrincipal}{RGB}{0, 51, 102}
+ %\definecolor{colorSecundario}{rgb}{0.38, 0.57, 0.17}
+ %\definecolor{colorSecundario}{rgb}{0.89, 0.69, 0.16}
+\definecolor{colorSecundario}{RGB}{0, 128, 255}
+\definecolor{colorGris}{rgb}{0.4, 0.4, 0.4}
+ %\definecolor{colorAgua}{rgb}{0.95, 1, 0.9}
+\definecolor{colorAgua}{rgb}{0.97, 0.96, 0.61}
+%\definecolor{colorPrincipal}{rgb}{0.07, 0.04, 0.56}
+%\definecolor{colorSecundario}{rgb}{0.07, 0.04, 0.56}
+%\definecolor{colorGris}{rgb}{0.4, 0.4, 0.4}
+%\definecolor{colorAgua}{rgb}{0.95, 1, 0.9}
+
+%%=====================================================
+%% Colores para las referencias del documento.
+\hypersetup{linkcolor=colorPrincipal}
+\hypersetup{urlcolor=colorSecundario}
+\hypersetup{filecolor=colorSecundario}
+\hypersetup{citecolor=colorGris}
+%%=====================================================
+%% Encabezados y pie de página.
+\pagestyle{fancy}
+\fancyhead[LE]{\includegraphics[height=35pt]{cdt/theme/headerIpn}} 
+\fancyhead[RO]{\includegraphics[height=35pt]{cdt/theme/headerEscom}} 
+\fancyhead[RE]{\includegraphics[height=35pt]{cdt/theme/logoEscom}} 
+\fancyhead[LO]{\includegraphics[height=35pt]{cdt/theme/logoIpn}} 
+
+\setlength{\headheight}{39pt}
+\fancyfoot{}
+
+\newcommand{\smagemDireccion}{\color{white}\textbf{Trabajo Terminal 2018-A038 - Sistema de Monitoreo de Signos Vitales Utilizando IoT}}
+
+%\newcommand{\cdtDireccion}{\color{colorPrincipal} }
+%
+%\newcommand{\cdtTelefono}{5543612094 - 5564211272 }
+%
+%\newcommand{\cdtCorreo}{ elsibill@gmail.com - c.granados.puerto@gmail.com }
+
+%\fancyfoot[CO,CE]{{\tiny\color{colorPrincipal}\em \smagemDireccion \\ \cdtDireccion {\color{white}\Telefon} \cdtTelefono {\color{white}\Letter} \cdtCorreo}}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\tiny Trabajo Terminal 2018-A038 - Sistema de Monitoreo de Signos Vitales Utilizando IoT \\}
+\fancyfoot[RO,LE]{\hspace{.5cm}\color{black}{\thepage}}
+
+%%=====================================================
+%% Estilo para los Capítulos y secciones
+\ChTitleVar{\Large\sf\color{colorPrincipal}}
+\ChNameVar{\Large\sf\color{colorGris}}
+
+\let\LaTeX@startsection\@startsection
+\renewcommand{\@startsection}[6]{\LaTeX@startsection%
+{#1}{#2}{#3}{#4}{#5}{\color{colorPrincipal}\raggedright #6}} 
+
+
+%%=====================================================
+%% Estilo para Parte
+\newcommand{\varPart}[1]{}
+\let\varPart=\part
+\renewcommand{\part}[1]{{\color{colorPrincipal}\varPart{#1}}}
+
+%=====================================================
+% Estilo para las viñetas
+\renewcommand{\labelitemi}{\color{colorPrincipal}\textbullet}
+\renewcommand{\labelitemii}{\color{colorSecundario}\textbullet}
+\renewcommand{\labelitemiii}{\color{colorSecundario}$\circ$}
+\renewcommand{\labelitemiv}{\color{colorSecundario}\textbullet}
+
+
+%=====================================================
+% Texto para el índice y los pies de las tablas.
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\listtablename}{Índice de tablas}

@@ -1,0 +1,147 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Planteamiento del problema}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Soluci\IeC {\'o}n propuesta}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Justificaci\IeC {\'o}n}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Objetivos}{3}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Objetivo general}{3}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Objetivos espec\IeC {\'\i }ficos}{3}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Estado del arte}{3}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Tesis}{3}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Art\IeC {\'\i }culos}{4}{subsection.1.5.2}
+\contentsline {chapter}{\numberline {2}Marco Te\IeC {\'o}rico}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Signos vitales}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Frecuencia card\IeC {\'\i }aca}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Frecuencia respiratoria}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Presi\IeC {\'o}n arterial}{6}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Temperatura}{7}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Sistemas embebidos}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Arquitectura de los sistemas embebidos}{8}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Internet de las cosas (IoT)}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}Redes inal\IeC {\'a}mbricas}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Redes inal\IeC {\'a}mbricas de \IeC {\'a}rea personal (Wireless Personal-Area Networks - WPAN)}{11}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Redes inal\IeC {\'a}mbricas de \IeC {\'a}rea local (Wireless Local-Area Networks - WLAN)}{11}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Redes inal\IeC {\'a}mbricas de \IeC {\'a}rea metropolitana (Wireless Metropolitan-Area Networks - WMAN)}{12}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Redes inal\IeC {\'a}mbricas de \IeC {\'a}rea amplia (Wireless Wide-Area Networks - WWAN)}{12}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}Tecnolog\IeC {\'\i }as inal\IeC {\'a}mbricas}{12}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Bluetooth}{12}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Zigbee}{13}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Familia IEEE 802.11 (WI-FI)}{13}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}WiMAX}{13}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}GSM (Global System for Mobile Comunications)}{14}{subsection.2.5.5}
+\contentsline {section}{\numberline {2.6}Sensores de temperatura}{14}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Termopares}{15}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Sensor de temperatura resistivo (RTD)}{15}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Termistores}{16}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}Semiconductores}{16}{subsection.2.6.4}
+\contentsline {subsection}{\numberline {2.6.5}Circuitos integrados}{16}{subsection.2.6.5}
+\contentsline {subsubsection}{Sensor de temperatura anal\IeC {\'o}gico}{17}{section*.4}
+\contentsline {subsubsection}{Sensor de temperatura digital}{17}{section*.5}
+\contentsline {section}{\numberline {2.7}Sensores de pulso}{18}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Electrocardiograf\IeC {\'\i }a}{18}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Fotopletismograf\IeC {\'\i }a}{20}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Microcontroladores}{20}{section.2.8}
+\contentsline {section}{\numberline {2.9}Aplicaci\IeC {\'o}n m\IeC {\'o}vil}{21}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Tipos de aplicaciones m\IeC {\'o}viles}{22}{subsection.2.9.1}
+\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Requerimientos del sistema}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis de componentes del sistema}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Sensor de temperatura}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Sensor de pulso}{26}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}M\IeC {\'o}dulo de comunicaci\IeC {\'o}n GSM}{27}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Microcontrolador}{29}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Sistema operativo m\IeC {\'o}vil}{30}{subsection.3.2.5}
+\contentsline {part}{I\hspace {1em}Dise\IeC {\~n}o de la Estructura del Sistema}{35}{part.1}
+\contentsline {chapter}{\numberline {4}Metodolog\IeC {\'\i }a}{37}{chapter.4}
+\contentsline {chapter}{\numberline {5}An\IeC {\'a}lisis de Factibilidad}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}An\IeC {\'a}lisis de Factibilidad}{39}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Factibilidad T\IeC {\'e}cnica}{39}{subsection.5.1.1}
+\contentsline {subsubsection}{Software}{39}{section*.6}
+\contentsline {paragraph}{1. Entorno de Desarrollo Integrado.}{40}{section*.7}
+\contentsline {paragraph}{2. Sistema Operativo}{40}{section*.8}
+\contentsline {paragraph}{3. Lenguaje de Programaci\IeC {\'o}n}{40}{section*.9}
+\contentsline {subsubsection}{Hardware}{43}{section*.10}
+\contentsline {subsection}{\numberline {5.1.2}Factibilidad Econ\IeC {\'o}mica}{45}{subsection.5.1.2}
+\contentsline {paragraph}{1. Gastos tecnol\IeC {\'o}gicos}{45}{section*.11}
+\contentsline {paragraph}{2. Gastos por servicios}{45}{section*.12}
+\contentsline {paragraph}{Gastos totales}{45}{section*.13}
+\contentsline {chapter}{\numberline {6}Arquitectura del Sistema}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}Arquitectura f\IeC {\'\i }sica del sistema}{49}{section.6.1}
+\contentsline {section}{\numberline {6.2}Arquitectura l\IeC {\'o}gica del sistema}{51}{section.6.2}
+\contentsline {chapter}{\numberline {7}Modelo de Negocio}{53}{chapter.7}
+\contentsline {section}{\numberline {7.1}Reglas de negocio}{53}{section.7.1}
+\contentsline {subsubsection}{RN1 Campos obligatorios}{53}{section*.14}
+\contentsline {subsubsection}{RN2 Informaci\IeC {\'o}n correcta}{53}{section*.15}
+\contentsline {subsubsection}{RN3 Fecha de nacimiento v\IeC {\'a}lida}{54}{section*.16}
+\contentsline {subsubsection}{RN4 C\IeC {\'a}lculo del promedio de mediciones de temperatura corporal}{54}{section*.17}
+\contentsline {subsubsection}{RN5 C\IeC {\'a}lculo del promedio de mediciones de frecuencia card\IeC {\'\i }aca}{55}{section*.18}
+\contentsline {section}{\numberline {7.2}Actores del sistema}{55}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Paciente}{55}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Usuario}{56}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Sistema}{56}{subsection.7.2.3}
+\contentsline {chapter}{\numberline {8}Modelo de Comportamiento}{57}{chapter.8}
+\contentsline {section}{\numberline {8.1}M\IeC {\'o}dulos del sistema}{57}{section.8.1}
+\contentsline {section}{\numberline {8.2}Modelo de comportamiento del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{58}{section.8.2}
+\contentsline {section}{\numberline {8.3}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Embebido}{59}{section.8.3}
+\contentsline {section}{\numberline {8.4}Casos de uso del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{60}{section.8.4}
+\contentsline {section}{\numberline {8.5}CU1 Consultar pacientes}{61}{section.8.5}
+\contentsline {subsection}{\numberline {8.5.1}Resumen}{61}{subsection.8.5.1}
+\contentsline {subsection}{\numberline {8.5.2}Descripci\IeC {\'o}n}{61}{subsection.8.5.2}
+\contentsline {subsection}{\numberline {8.5.3}Trayectorias del caso de uso}{62}{subsection.8.5.3}
+\contentsline {subsection}{\numberline {8.5.4}Puntos de extensi\IeC {\'o}n}{62}{subsection.8.5.4}
+\contentsline {section}{\numberline {8.6}CU2 Registrar paciente}{63}{section.8.6}
+\contentsline {subsection}{\numberline {8.6.1}Resumen}{63}{subsection.8.6.1}
+\contentsline {subsection}{\numberline {8.6.2}Descripci\IeC {\'o}n}{63}{subsection.8.6.2}
+\contentsline {subsection}{\numberline {8.6.3}Trayectorias del caso de uso}{64}{subsection.8.6.3}
+\contentsline {section}{\numberline {8.7}CU3 Consultar informaci\IeC {\'o}n del paciente}{67}{section.8.7}
+\contentsline {subsection}{\numberline {8.7.1}Resumen}{67}{subsection.8.7.1}
+\contentsline {subsection}{\numberline {8.7.2}Descripci\IeC {\'o}n}{67}{subsection.8.7.2}
+\contentsline {subsection}{\numberline {8.7.3}Trayectorias del caso de uso}{68}{subsection.8.7.3}
+\contentsline {subsection}{\numberline {8.7.4}Puntos de extensi\IeC {\'o}n}{69}{subsection.8.7.4}
+\contentsline {section}{\numberline {8.8}CU4 Editar informaci\IeC {\'o}n del paciente}{70}{section.8.8}
+\contentsline {subsection}{\numberline {8.8.1}Resumen}{70}{subsection.8.8.1}
+\contentsline {subsection}{\numberline {8.8.2}Descripci\IeC {\'o}n}{70}{subsection.8.8.2}
+\contentsline {subsection}{\numberline {8.8.3}Trayectorias del caso de uso}{71}{subsection.8.8.3}
+\contentsline {section}{\numberline {8.9}CU5 Eliminar paciente}{74}{section.8.9}
+\contentsline {subsection}{\numberline {8.9.1}Resumen}{74}{subsection.8.9.1}
+\contentsline {subsection}{\numberline {8.9.2}Descripci\IeC {\'o}n}{74}{subsection.8.9.2}
+\contentsline {subsection}{\numberline {8.9.3}Trayectorias del caso de uso}{75}{subsection.8.9.3}
+\contentsline {chapter}{\numberline {9}Modelo de Interacci\IeC {\'o}n con el Usuario}{77}{chapter.9}
+\contentsline {section}{\numberline {9.1}Entorno de trabajo}{77}{section.9.1}
+\contentsline {section}{\numberline {9.2}Interfaces de usuario}{78}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}IU1 Consultar pacientes}{78}{subsection.9.2.1}
+\contentsline {subsubsection}{Objetivo}{78}{section*.19}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{78}{section*.20}
+\contentsline {subsubsection}{Comandos}{78}{section*.21}
+\contentsline {subsection}{\numberline {9.2.2}IU2 Registrar paciente}{80}{subsection.9.2.2}
+\contentsline {subsubsection}{Objetivo}{80}{section*.22}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{80}{section*.23}
+\contentsline {subsubsection}{Comandos}{80}{section*.24}
+\contentsline {subsection}{\numberline {9.2.3}IU3 Consultar informaci\IeC {\'o}n del paciente}{82}{subsection.9.2.3}
+\contentsline {subsubsection}{Objetivo}{82}{section*.25}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{82}{section*.26}
+\contentsline {subsubsection}{Comandos}{82}{section*.27}
+\contentsline {subsection}{\numberline {9.2.4}IU4 Editar informaci\IeC {\'o}n del paciente}{84}{subsection.9.2.4}
+\contentsline {subsubsection}{Objetivo}{84}{section*.28}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{84}{section*.29}
+\contentsline {subsubsection}{Comandos}{84}{section*.30}
+\contentsline {section}{\numberline {9.3}Dise\IeC {\~n}o de mensajes}{86}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Par\IeC {\'a}metros comunes}{86}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Mensajes a trav\IeC {\'e}s de la pantalla}{87}{subsection.9.3.2}
+\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n realizada exitosamente}}{87}{section*.31}
+\contentsline {subsubsection}{{MSG2} {Falta dato obligatorio}}{88}{section*.32}
+\contentsline {subsubsection}{{MSG3} {Formato de campo incorrecto}}{88}{section*.33}
+\contentsline {subsubsection}{{MSG4} {N\IeC {\'u}mero telef\IeC {\'o}nico previamente registrado}}{88}{section*.34}
+\contentsline {subsubsection}{{MSG5} {Fecha de nacimiento inv\IeC {\'a}lida}}{89}{section*.35}
+\contentsline {subsubsection}{{MSG6} {Eliminar Elemento}}{89}{section*.36}
+\contentsline {part}{II\hspace {1em}Implementaci\IeC {\'o}n}{91}{part.2}
+\contentsline {chapter}{\numberline {10}Avances y pruebas}{93}{chapter.10}
+\contentsline {section}{\numberline {10.1}Sensores de pulso}{93}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}AD8232}{94}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Pulse sensor}{96}{subsection.10.1.2}
+\contentsline {section}{\numberline {10.2}Digitalizaci\IeC {\'o}n de se\IeC {\~n}al anal\IeC {\'o}gica}{98}{section.10.2}
+\contentsline {section}{\numberline {10.3}M\IeC {\'o}dulo Telit GL865-QUAD}{108}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Prueba unitaria}{108}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Conexi\IeC {\'o}n con microcontrolador}{110}{subsection.10.3.2}
+\contentsline {section}{\numberline {10.4}Trabajo para TT2}{113}{section.10.4}
+\contentsline {chapter}{Referencias}{119}{chapter*.37}

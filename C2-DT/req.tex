@@ -1,0 +1,23 @@
+
+\subsection{Módulo de Rastreo}
+
+\begin{ReqUser}
+	\reqUserItem{RU-MR1}{Rastrear Dispositivo}{La \refStake{Víctima} requiere de un mecanismo que le permita rastrear los puntos de la ciudad por los que su dispositivo ha pasado.}{\media}{\begin{Titemize}
+	\Titem \refSistReq{RS-MR1}
+    \Titem \refSistReq{RS-MR2}
+    \Titem \refSistReq{RS-MR3}
+	\end{Titemize}}{\corregir}
+    
+    \reqUserItem{RU-MR2}{Bloquear Dispositivo}{La \refStake{Víctima} requiere de un mecanismo que evite que el asaltante pueda desbloquear su teléfono.}{\alta}{\refSistReq{RS-MR4}}{\corregir}
+\end{ReqUser}
+
+\begin{ReqSist}
+	\reqSistItem{RS-MR1}{Activar Dispositivo}{La aplicación debe activarse con la configuración propuesta del usuario si existe, deberá utilizar una configuración por defecto si nunca se ha configurado.}{\alta}{\refUserReq{RU-MR1}}{Funcional}
+    
+    \reqSistItem{RS-MR2}{Ubicar Dispositivo}{La aplicación deberá conectarse con el servidor de \textbf{Coffee Software} para actualizar su ubicación cada cierto tiempo definido por la \refStake{Víctima} o por la configuración por defecto.}{\media}{\refUserReq{RU-MR1}}{}
+    
+    \reqSistItem{RS-MR3}{Mostrar la ubicación del dispositivo}{La aplicación web deberá mostrar la ruta que el dispositivo tuvo hasta su última conexión.}{\media}{\refUserReq{RU-MR1}}{}
+    
+    \reqSistItem{RS-MR4}{Bloquear Dispositivo}{La aplicación móvil deberá bloquear el acceso al dispositivo una vez esta ha sido activada, haciendo parecer que se encuentra apagado.}{\alta}{\refUserReq{RU-MR2}}{}
+    
+\end{ReqSist}

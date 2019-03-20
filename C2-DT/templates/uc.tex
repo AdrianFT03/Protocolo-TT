@@ -1,0 +1,204 @@
+%!TEX encoding = UTF-8 Unicode
+
+% ESTA SECCION LA DEBE LLENAR SOLO EL ANALISTA.
+% ID: Asegurese de que el ID del Caso de uso sea único.
+% Nombre: Aseurese de que esté escrito de la forma: VERBO + SUSTANTIVO + ALGO
+\begin{UseCase}{CU-X}{NOMBRE-DEL-CU}
+    {
+	% RESUMEN: Asegurese de que el resumen describa : Situación inicial, proceso a grandes rasgos y la condición de término. Por ejemplo: ``Cuando se tenga un alumno nuevo o se detecte que no tiene registro se da de alta mediante este CU proporcionando sus datos: personales, padres o tutores, situación académica actual y de salud. El sistema registra los datos cuando sean válidos y se pueda determinar su situación académica. Al finalizar el alumno podrá ser inscrito a los grupos disponibles''.
+	Resumen del CU
+    }
+    % VERSION: Inicie con la versión 0.1 y contiúe 0.2, 0.3, hasta que sea aceptada por el evaluador será la versión 1.0. si surgen mas cambios continúe con 1.1, etc.
+    \UCitem{Versión}{Versión del CU}
+    \UCccsection{Administración de Requerimientos}
+    % AUTOR: Escriba su nombre completo, sin cargo ni puesto.
+    \UCitem{Autor}{Angelina Reyes Medina}
+    % EVALUADOR: Escriba el nombre completo de quien revisará, sin cargo ni puesto.
+    \UCccitem{Evaluador}{Ulises Vélez Saldaña}
+    % OPERACION: Describa el tipo de operación al que responde este Caso de Uso:
+    % 	- Registro: Registra información, como dar de alta algo en el sistema
+    % 	- Consulta: Consulta uno o varios registros del sistema.
+    % 	- Eliminar: Elimina uno o mas registros del sistema 
+    % 	- Modificar: Modifica o actualiza un registro en el sistema.
+    % 	- Procesamiento en batch: Proceso que puede durar varios minutos sin que el usuario intervena demasiado.
+    % 	- Negocio: Operación difícil de describir en una de las categorías anteriores por que es propia del ``negocio''.
+    % 	- Reporte: Genera un reporte.
+    \UCitem{Operación}{Consulta, Altas Bajas y Cambios, Negocio, Reporte, Selección/Asignación de datos, Calculo masivo, etc..}
+    % PRIORIDAD: Con base en su conocimiento del negocio indique el nivel de importancia y urgencia que tiene este caso de uso como: Alta/Media/Baja.
+    \UCccitem{Prioridad}{Importancia de este CU con respecto a los demás: Alta/Media/Baja}
+    % COMPLEJIDAD: Indique el grado de complejidad del Caso de uso en función de: el número de operaciones que realiza, el tamaño y numero de sus trayectorias, presentación de infomración y procesamiento. Califique con Alta/Media/Baja
+    \UCccitem{Complejidad}{Alta/Media/Baja}
+    % VOLAILIDAD: Califique la volatilidad considerando el nivel de aceptación del presente caso de uso por parte del usuario y el historial de cambios a lo largo de su existencia. Califíquela como: Muy alta/Alta/Media/Baja/Muy baja
+    \UCccitem{Volatilidad}{Muy alta/Alta/Media/Baja/Muy baja}
+    % MADUREZ: Estime el grado en el que tanto el analista como el usuario comprenden y están deacuerdo en que el CU deba implementarse tal y como está descrito actualmente. Valores: Muy alta/Alta/Media/Baja/Muy baja
+    \UCccitem{Madurez}{Nivel de comprensión y confianza en que el CU está completo y es corecto: Muy alta/Alta/Media/Baja/ Muy baja}
+    % STATUS: Coloque el status del CU para asegurarse de que sea tratado adecuadamente por los revisores y analistas:
+    %	- Edición: El analista lo está describiendo o corrigiendo.
+    %	- Terminado: El caso de uso esta completamente descrito o corregido, el Evaluador puede revisarlo y registrar comentarios.
+    %	- Revisado: El Revisor terminó de revisarlo y considera que está listo para entregarse al usuario. El usuario lee el CU y emite su opinión por escrito.
+    %	- Aprobado: El usuario lo ha aprobado para su desarrollo. Los desarrolladores se están basando en esta versión para trabajar.
+    \UCitem{Estatus}{Edición/Terminado/Evaluado/Aprobado.}
+    \UCitem{Fecha del último estatus}{15 de Julio del 2014}
+
+    
+%% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+%% Esta sección la debe llenar solo el Revisor
+% %--------------------------------------------------------
+% 	\UCccsection{Revisión Versión XX} % Anote la versión que se revisó.
+% 	% FECHA: Anote la fecha en que se terminó la revisión.
+% 	\UCccitem{Fecha}{Fecha en que se termino la revisión} 
+% 	% EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
+% 	\UCccitem{Evaluador}{Nombre de quien revisó}
+% 	% RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
+% 	\UCccitem{Resultado}{Corregir, Desechar, Rehacer todo, terminar.}
+% 	% OBSERVACIONES: Liste los cambios que debe realizar el Analista.
+% 	\UCccitem{Observaciones}{
+% 		\begin{UClist}
+% 			% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
+% 			\RCitem{PC1}{\TODO{Descripción del pendiente}}{Fecha de entrega}
+% 			\RCitem{PC2}{\TODO{Descripción del pendiente}}{Fecha de entrega}
+% 			\RCitem{PC3}{\TODO{Descripción del pendiente}}{Fecha de entrega}
+% 		\end{UClist}		
+% 	}
+% %--------------------------------------------------------
+
+    \UCsection{Atributos}
+    % HEREDA DE: Indique el Caso de Uso del cual hereda el actual, en caso de que no herede de ningún CU, elimine esta línea.
+    \UCitem{Hereda de}{Use Case del que hereda, por ejemplo: \cdtIdRef{CUT 3}{Editar tarea}}
+    % ACTOR(ES): Liste los nombres de los actores separados por comas y correctamente referenciados, cambie la etiqueta a Actor o Actores, según sea el caso.
+    \UCitem{Actor(es)}{\cdtRef{Nombre}{Nombre} Nombres de los actores que ejecutan el CU}
+    % PROPOSITO: Escriba una sentencia que defina una situación deseable por el Actor. Este mismo enunciado debe describir el ``Valor Agregado'' que se lleva el actor al ejecutar el Caso de Uso y describe también la ``Condición de Término''.
+    \UCitem{Propósito}{Razón o motivación del actor para realziar el Use Case}
+    % ENTRADAS: Liste y referencíe los datos de entrada al sistema durante el CU: Nombre y forma en que se debe proporcionar el dato al Caso de uso: teclado, raton, camara, lector de barras, algun sensor, etc.
+    \UCitem{Entradas}{
+	\begin{UClist}
+	    \UCli \cdtRef{Entidad:atributo}{Nombre del campo}: \ioSeleccionar.
+	    \UCli \cdtRef{Entidad:atributo}{Nombre del campo}: \ioEscribir.
+	    \UCli \cdtRef{Entidad:atributo}{Nombre del campo}: \ioObtener.
+	    \UCli \cdtRef{Entidad:atributo}{Nombre del campo}: \ioEscanear.
+	\end{UClist}
+    }
+    % SALIDAS: Liste y referencíe los datos de salida o resultados del sistema, Especifíque el dispositivo en donde se presentarán las salidas: pantalla, impresora, otro sistema, brazo mecánico, etc. 
+    \UCitem{Salidas}{
+	\begin{UClist} 
+	    \UCli \cdtRef{Entidad:atributo}{Id}: \ioGenerar.
+	    \UCli \cdtRef{Entidad:atributo}{Nombre del campo}: \ioCalcular{\cdtIdRef{RN5}{Salario base}}.
+	    \UCli \cdtRef{Entidad}{Alumnos}: \ioListado.
+	    \UCli \cdtRef{Entidad}{Profesores}: \ioListado[Activos].
+	    \UCli \cdtRef{Entidad}{Productos}: \ioTabla{\cdtRef{Entidad:atributo}{nombre}, \cdtRef{Entidad:atributo}{descripción} y \cdtRef{Entidad:atributo}{precio}}{que estén activos}.%Tabla que muestra nombre, descripcion y precio de todos los registros que estén activos
+	    \UCli \cdtRef{Entidad}{Beneficios}: \ioTabla{los datos}{}
+	    \UCli \cdtIdRef{MSGXX}{AABBCCDD}: Se muestra en la pantalla cdtIdRef{IUX}{AABBCCDD} cuando el registro se realizó correctamente.
+	\end{UClist}
+    }
+    % PRECONDICIÓN: Son sentencias intemporales y afirmativas que declaran lo que DEBE ser siempre verdadero antes de iniciar el escenario en el caso de uso. Las precondiciones no son probadas dentro del caso de uso, son condiciones que se asumen verdaderas. Una precondición puede implicar un escenario de otro Caso de Uso que se ha completado satisfactoriamente, como por ejemplo la ``autenticación'', o más general el ``cajero se identifica y se autentica''. Craig Larman ``Use Case Model: Writing Requirements in Context''. También pueden ser escenarios ajenos al sistema que el Actor debe contemplar durante la operación pero de las que el sistema no es consciente, por ejemplo: ``El alumno debe presentar su credencial vigente'', o ``contar con el expediente físico'' ``El vehículo a asegurar debe estar en buen estado''.
+    % Especifique las precondiciones indicando si son internas (escenarios provenientes de otro caso de uso) o externas, referenciando para las internas el CU correspondiente y, en caso de que aplique, la Regla de negocio que se está Reforzando con esta precondición.
+    \UCitem{Precondiciones}{
+	\begin{UClist}
+	    \UCli {\bf Interna:} Que exista al menos un proyecto para revisión \cdtIdRef{CUT 5}{Enviar Proyecto}
+	    \UCli {\bf Interna:} Que la duración total del proyecto sea inferior a un año cuando esté asociado a una Acción de Gobierno, con base en lo especificado por la \cdtIdRef{RN45}{Duración máxima de una Acción de Gobierno}.
+	    \UCli {\bf Externa:} Que el paciente se encuentre en las instalaciones  
+	\end{UClist}
+    }
+    
+    % POSTCONDICIONES: Son sentencias expresadas de manera intemporal y afirmativamente que exponen las garantías de exito o lo que DEBE ser verdadero cuando se completa exitosamente el caso de uso, sea a través de su escenario principal o a través de un flujo alternativo. La garantía debe cumplir las necesidades de todos los stakeholders.
+    % Las postcondiciones en conjunto deben reflejar la condición de término del Caso de Uso y alcanzar el propósito planteado por el actor. También describe los cambios en la información y comportamiento del sistema. Indique los cambios que ocurrirán tanto dentro (Internas) como fuera (Externas) del sistema, referenciando los CU afectados por las Internas.
+    \UCitem{Postcondiciones}{
+	\begin{UClist}
+	    \UCli {\bf Interna:} El proyecto pasa a estado de ``revisado'' y podrá ser aprobado (\cdtIdRef{CU7}{Aprobar Proyecto}) o revocado (\cdtIdRef{CU8}{Revocar Proyecto})
+	    \UCli {\bf Externa:} El cliente tendrá acceso a las instalaciones correspondientes mostrando su credencial.
+	\end{UClist}
+    }
+    %Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+    \UCitem{Reglas de negocio}{
+    	\begin{UClist}
+	    \UCli \cdtIdRef{RN-S1}{Información correcta}: Verifica que la información introducida sea correcta.
+	    \UCli \cdtIdRef{RN-S4}{Unicidad de identificadores}: Verifica que no exista un predio con la misma clave en el sistema.``disponibles''}.
+	\end{UClist}
+    }
+    % ERRORES: Especifique los casos en los que no se podrá terminar satisfactoriamente el Caso de Uso. Contemple todos los catálogos o listas que deben tener almenos un dato para que se puedan seleccionar dentro de las pantallas asociadas al Caso de Uso.
+    % Especifique: La descripción del error (condición), el comportamiento del sistema, y la forma en que el usuario se dará cuenta del error.
+    \UCitem{Errores}{
+	\begin{UClist}
+	    \UCli No hay vehículos disponibles: El sistema mostrará el mensaje \cdtIdRef{MSG14}{Falta de ``Vehículos'' ``disponibles''}.
+	    \UCli Las tareas son incompatibles de acuerdo a lo especificado en la \cdtIdRef{RN34}{Compatibilidad entre tareas de un mismo proyecto}: El sistema mostrará el mensaje \cdtIdRef{MSG20}{Tareas incompatibles}.
+	\end{UClist}
+    }
+
+    % TIPO: Indique si el Caso de Uso es primario o secundario. Los casos de uso son primarios cuando el Actor los puede ejecutar directamente, y secundario cuando este se ejecuta a travéz de una extensión o inclusión de otro caso de uso, en cuyo caso se debe especificar el Caso de Uso relacionado y la trayectoria debe iniciar a partir del paso en el que se extendió o Incluyo el Caso de Uso.
+    \UCitem{Tipo}{Primario o secundario (viene de un PE o una Inclusión). En caso de ser secundario especifíque el CU del cual Extiende o se Incluye, por ejemplo: Secudario, extiende/incluye del caso de uso \cdtIdRef{IdCU}{CU}.}
+
+    %FUENTE: Especifique la fuente de información principal para la especificación del Caso de Uso: un documento, sistema existente, persona, minuta. Referencie dicho documento, sistema o persona.
+    \UCitem{Fuente}{
+	\begin{UClist}
+	    \UCli Minuta de la reunión \cdtIdRef{M-17RT}{Reunión de trabajo}.
+	\end{UClist}
+    }
+\end{UseCase}
+
+ % La trayectoria principal debe describir los pasos del caso correcto simple completo. Esto es:
+ % Correcto: Describe el caso mas común de la ejecución correcta del Caso de uso.
+ % Simple: No repite pasos ni especifica iteraciones, no abunda en errores.
+ % Completo: Anque no abunda en errores especifica todas las validaciones, verificaciones, comparaciones y cálculos que debe realizar el sistema durante la trayectoria.
+ % FACTORES CRITICOS:
+ %-------------------
+ % 1.- Cada paso del actor debe estar redactado ``en lo posible'' con dos partes:
+ %   - La primera parte especifica ``lo que el Actor cree que está haciendo'' por ejemplo: ``Solicita su registro''.
+ %   - La segunda especifica ``la acción exacta que realiza en el sistema''. por ejemplo ``oprime el botón \IUButton{Registrar} de la \cdtIdRef{IU4}{Datos personales}''.
+ % En conjunto la redacción de los pasos se debe ver de la siguiente forma: 
+ %
+ %``El actor solicita su registro oprimiendo el botón \cdtButton{Registrar} de la \cdtIdRef{IU4}{Datos personales}.''
+ %
+ % Para los pasos del sistema aplica lo mismo solo para los pasos asociados con una Regla de Negocio o un cambio en la Interfaz de Usuario. Por ejemplo:
+ % ``El sistema busca los vehículos disponibles.''
+ % ``El sistema verifica que las tareas correspondan, de acuerdo a lo especificado en la \cdtIdRef{RN34}{Compatibilidad entre tareas de un mismo proyecto}''
+ % ``El sistema muestra los datos personales del Alumno mediante la \cdtIdRef{IU23}{Datos del Alumno}''
+ %
+ % 2.- Cada paso debe comenzar con un verbo, jamás con un si, mientras, cuando, entonces, etc. utilice: Escribe, registra, calcula, verifica, muestra, lista, selecciona, asocia, filtra, busca, etc.
+ %
+ % 3.- Ponga especial atención en las verificaciones y detección de errores
+ %
+ % 4.- Describa con un paso que diga ``el sistema busca ...'' antes de mostrar una pantalla que tiene listas que se llenan desde un catálogo.
+ %
+ % 5.- Referencie las reglas de negocio en las validaciones que correspondan.
+ %
+ % 6.- Referencie la Interfaz de Usuario correspondiente cuando el sistema muestre un dato o mensaje.
+ % 7.- El Caso de Uso debe iniciar con el actor justo después del paso en el que se marque el Punto de Extensión o Inclusión del caso de uso proveniente. Considere que al inicio del Caso de Uso cuando es secundario se debe especificar la(s) interfaz(es) con la que se está trabajando y debe coincidir con la Interfaz activa al momento de la Extensión o Inclusión.
+ \begin{UCtrayectoria}
+    \UCpaso[\UCactor] Oprime el botón \cdtButton{Buscar} de la \cdtIdRef{IU45}{Consultar proyecto} o de la \cdtIdRef{IU32}{Evaluar proyecto}.
+    \label{cux:oprimeBuscar}
+    \UCpaso[\UCsist] Verifica que el proyecto seleccionado tenga los indicadores requeridos con base en la \cdtIdRef{RN3}{Indicadores mínimos requeridos} \refTray{ID}.
+    \UCpaso Muestra  ...
+    \UCpaso Calcula ...
+    \UCpaso Registra ...
+    ...
+ \end{UCtrayectoria}
+ 
+ \begin{UCtrayectoriaA}{Id}{Condicion}
+    \UCpaso[\UCactor] Oprime el botón buscar
+    \UCpaso Verifica que  ...
+    ...
+ \end{UCtrayectoriaA}
+ 
+ \begin{UCtrayectoriaA}{A}{Hay indicadores por definir}
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG43}{Hace falta definir ``Indicadores'' al ``Proyecto'' seleccionado} 
+    \UCpaso[\UCactor] Confirma el mensaje oprimiendo el botón ``Ok'' de la ventana emergente...
+    \UCpaso[] El Caso de Uso continúa en el paso \ref{cux:oprimeBuscar}...
+ \end{UCtrayectoriaA}
+
+
+\subsection{Puntos de extensión}
+
+\UCExtensionPoint
+{El Usuario desea agregar una  nueva Participación en un Congreso}
+{ Paso \ref{cupc6:AgregarDatos} de la Trayectoria Principal}
+{\cdtRef{CUPC6.1}{Nombre}}
+
+\UCExtensionPoint
+{El Usuario desea editar la información de una Participación en un Congreso asociado}
+{ Paso \ref{cupc6:EditaDatos} de la Trayectoria Principal}
+{\cdtRef{CUPC6.2}{Nombre}}
+
+\UCExtensionPoint
+{El Usuario desea eliminar una Participación en un Congreso asociado}
+{ Paso \ref{cupc6:EliminaDatos} de la Trayectoria Principal}
+{\cdtRef{CUPC6.3}{Nombre}}

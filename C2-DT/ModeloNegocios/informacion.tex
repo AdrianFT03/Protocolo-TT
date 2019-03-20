@@ -1,0 +1,43 @@
+
+\section{Modelo de información de periodos de consumo de energía y agua}
+
+\subsection{Descripción general}
+ En la figura~\ref{fig:registroInfoBasePeriodo} se muestra la estructura de información que manejará el sistema para registrar la información de los periodos de consumo de agua y energía.
+ 
+%\begin{figure}[htbp!]
+%	\begin{center}
+%		\fbox{\includegraphics[width=.6\textwidth]{images/clases/periodo}}
+%		\caption{Modelo de información del registro de periodos de consumo de agua y energía.}
+%		\label{fig:registroInfoBasePeriodo}
+%	\end{center}
+%\end{figure}
+
+\begin{BusinessEntity}{periodo-consumo}{Periodo de consumo}
+      \Battr{Anio}{Año}{\tdNumerico}{Año al que corresponde el periodo de consumo}{\requerido}
+      \Battr{consumo}{Consumo}{\tdNumerico{decimal}}{Cantidad de agua o energía expresada en metros cúbicos, o kilowatts-hora, consumida en el periodo}{\requerido}
+      \Battr{importe}{Importe}{\tdNumerico{decimal}}{Valor en pesos mexicanos del consumo de agua o energía en el periodo}{\requerido}
+\end{BusinessEntity}
+
+
+%%================================================================================================
+\section{Modelo de información del registro de información base para indicadores de agua}
+
+\subsection{Descripción general}
+ En la figura~\ref{fig:registroInfoBaseAgua} se muestra la estructura de información que manejará el sistema para registrar la información base para indicadores de agua.
+ 
+%\begin{figure}[htbp!]
+%	\begin{center}
+%		\fbox{\includegraphics[width=1\textwidth]{images/clases/agua}}
+%		\caption{Modelo de información del registro de información base para indicadores de agua.}
+%		\label{fig:registroInfoBaseAgua}
+%	\end{center}
+%\end{figure}
+
+\begin{BusinessEntity}{consumo-agua}{Consumo de agua}
+      \Battr{recibos}{Cuenta con recibos}{\tdBooleano}{Indica si la escuela cuenta con recibos del consumo de agua}{\requerido}
+      %\Battr{consumoAnual}{Consumo anual promedio}{\tdNumerico{decimal}}{Cantidad promedio de agua consumida anualmente expresada en metros cúbicos}{\requerido}
+      %\Battr{importeAnual}{Importe anual promedio}{\tdNumerico{decimal}}{Valor anual en pesos mexicanos del consumo anual de agua}{\requerido}
+      \Battr{tipoAbastecimiento}{Tipo de abastecimiento}{\tdCatalogo}{Método empleado para transportar y suministrar el agua a la escuela, definido por el catálogo \cdtRef{gls:tipoAbastecimiento}{Tipo de abastecimiento}}{\requerido}
+      \Battr{tipoDePeriodo}{Tipo de periodo}{\tdCatalogo}{Especifica el periodo utilizado para reportar el consumo de agua, definido por el catálogo \cdtRef{gls:tipoDePeriodo}{Tipo de periodo}}{\requerido}
+\end{BusinessEntity}
+

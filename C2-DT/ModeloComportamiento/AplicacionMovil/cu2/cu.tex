@@ -1,0 +1,122 @@
+\begin{UseCase}{CU2}{Registrar paciente}
+	{	
+		Permite al \hyperlink{actor:usuario}{Usuario} de la aplicación móvil, registrar un nuevo paciente del cual requiere monitorear los signos vitales de temperatura y frecuencia cardíaca.\\
+		
+		Para registrar un nuevo paciente, el usuario debe ingresar los datos personales del mismo, así como en número telefónico asignado al módulo GSM del sistema que utilizará el paciente.
+		 
+		 
+	}
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{María Elsi Bernabé Aparicio}
+%\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Registro}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Media}
+\UCccitem{Volatilidad}{Baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{18 de octubre de 2018}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+%\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+%\UCccitem{Fecha}{}
+%\UCccitem{Evaluador}{Elsi Bernabé Aparicio}
+%\UCccitem{Resultado}{}
+%\UCccitem{Observaciones}{}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{\hyperlink{actor:usuario}{Usuario}.}
+	\UCitem{Propósito}{Proporcionar un mecanismo que le permita al \hyperlink{actor:usuario}{Usuario} registrar un paciente.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Nombre completo del paciente que usará el sistema. \ioEscribir
+			\UCli Número telefónico de la tarjeta SIM insertada en el módulo GSM del sistema. \ioEscribir
+			\UCli Fecha de nacimiento del paciente. \ioCalendario
+			\UCli Sexo del paciente. \ioSeleccionar
+		\end{UClist}	
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli \cdtIdRef{MSG1}{Operación exitosa}: Se muestra en la pantalla \cdtIdRef{IU1}{Consultar pacientes} indicando al actor que el registro del paciente se realizó exitosamente.
+		\end{UClist}
+		
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Ninguna.
+		\end{UClist}
+	}
+	
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli Se registrarán los datos del paciente en la aplicación móvil.
+			\UCli El usuario podrá consultar los datos del paciente.
+			\UCli El usuario podrá editar los datos registrados del paciente.
+			\UCli El usuario podrá eliminar al paciente registrado.
+			\UCli El usuario podrá solicitar la medición de los signos vitales del paciente.
+		\end{UClist}
+	}
+
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli \cdtIdRef{RN1}{Campos obligatorios}: Verifica que todos los campos obligatorios hayan sido ingresados.
+			\UCli \cdtIdRef{RN2}{Información correcta} Verifica que el formato de los campos ingresados cumpla con el tipo de dato definido.
+			\UCli \cdtIdRef{RN3}{Fecha de nacimiento válida}: Verifica que la fecha de nacimiento registrada se encuentre dentro dentro del rango considerado válido.
+		\end{UClist}
+	}
+	
+	\UCitem{Errores}{
+		\begin{UClist}
+			\UCli \cdtIdRef{MSG2}{Falta dato obligatorio}: Se muestra en la pantalla \cdtIdRef{IU2}{Registrar paciente} indicando al actor que omitió alguno de los campos obligatorios.
+			\UCli \cdtIdRef{MSG3}{Formato de campo incorrecto}: Se muestra en la pantalla \cdtIdRef{IU2}{Registrar paciente} indicando al actor que alguno de los campos ingresados no cumple con el formato definido.
+			\UCli \cdtIdRef{MSG4}{Número telefónico previamente registrado}: Se muestra en la pantalla \cdtIdRef{IU2}{Registrar paciente} indicando al actor que el número telefónico registrado ya se encuentra asociado a otro paciente.
+			\UCli \cdtIdRef{MSG5}{Fecha de nacimiento inválida}: Se muestra en la pantalla \cdtIdRef{IU2}{Registrar paciente} indicando al actor que la fecha de nacimiento ingresada se encuentra fuera del rango válido.
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Primario}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso[\UCactor] Selecciona la opción \btnRegistro{} de la pantalla \cdtIdRef{IU1}{Consultar pacientes}.
+	\UCpaso[\UCsist] Obtiene los datos del catálogo sexo.
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IU2}{Registrar paciente}.
+	\UCpaso[\UCactor] \label{cuir2:ingresaNombre}Ingresa el nombre del paciente.
+	\UCpaso[\UCactor] Ingresa el número telefónico del paciente.
+	\UCpaso[\UCactor] Selecciona la fecha de nacimiento del paciente.
+	\UCpaso[\UCactor] Selecciona el sexo del paciente.
+	\UCpaso[\UCactor] Da clic en el icono \btnRegistrar{} de la pantalla \cdtIdRef{IU2}{Registrar paciente}.
+	\UCpaso[\UCsist] Verifica que no se omitan los datos requeridos con base en la regla de negocio \cdtIdRef{RN1}{Campos obligatorios}. \refTray{A}
+	\UCpaso[\UCsist] Verifica que el formato de los datos ingresados sea válido con base en la regla de negocio \cdtIdRef{RN2}{Información correcta}. \refTray{B}
+	\UCpaso[\UCsist] Verifica que no exista un paciente registrado con el mismo número de teléfono. \refTray{C}
+	\UCpaso[\UCsist] Verifica que la fecha de nacimiento del paciente sea válida como lo especifica la regla de negocio \cdtIdRef{RN3}{Fecha de nacimiento válida}. \refTray{D}
+	\UCpaso[\UCsist] Registra la información ingresada del paciente.
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación exitosa} en la pantalla \cdtIdRef{IU1}{Consultar pacientes} indicando al actor que el registro se realizó correctamente.
+\end{UCtrayectoria}
+
+
+%-----------------------------------------------------------
+\begin{UCtrayectoriaA}{A}{El actor omitió alguno de los campos obligatorios.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio} en la pantalla \cdtIdRef{IU2}{Registrar paciente}.
+	\UCpaso[] Regresa al paso \ref{cuir2:ingresaNombre} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+%-----------------------------------------------------------
+\begin{UCtrayectoriaA}{B}{El actor ingresó algún dato que no cumple con el tipo de dato definido.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto} en la pantalla \cdtIdRef{IU2}{Registrar paciente}.
+	\UCpaso[] Regresa al paso \ref{cuir2:ingresaNombre} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+%-----------------------------------------------------------
+\begin{UCtrayectoriaA}{C}{El actor ingresó el número telefónico de un paciente que ya existe.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG4}{Número telefónico previamente registrado} en la pantalla \cdtIdRef{IU2}{Registrar paciente}.
+	\UCpaso[] Regresa al paso \ref{cuir2:ingresaNombre} de la trayectoria principal.
+\end{UCtrayectoriaA}
+
+%-----------------------------------------------------------
+\begin{UCtrayectoriaA}{D}{El actor ingresó una fecha de nacimiento fuera del rango considerado válido.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{Fecha de nacimiento inválida} en la pantalla \cdtIdRef{IU2}{Registrar paciente}.
+	\UCpaso[] Regresa al paso \ref{cuir2:ingresaNombre} de la trayectoria principal.
+\end{UCtrayectoriaA}

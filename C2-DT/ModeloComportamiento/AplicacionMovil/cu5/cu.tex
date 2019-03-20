@@ -1,0 +1,81 @@
+\begin{UseCase}{CU5}{Eliminar paciente}
+	{	
+		Este caso de uso permite al \hyperlink{actor:usuario}{Usuario} eliminar la información registrada de un paciente. 		 
+	}
+\UCccitem{Versión}{0.1}
+\UCccsection{Administración de Requerimientos}
+\UCccitem{Autor}{María Elsi Bernabé Aparicio}
+%\UCccitem{Evaluador}{}
+\UCccitem{Operación}{Editar}
+\UCccitem{Prioridad}{Alta}
+\UCccitem{Complejidad}{Media}
+\UCccitem{Volatilidad}{Baja}
+\UCccitem{Madurez}{Alta}
+\UCccitem{Estatus}{Edición}
+\UCccitem{Fecha del último estatus}{18 de octubre de 2018}
+
+% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+% Esta sección la debe llenar solo el Revisor
+%--------------------------------------------------------
+%\UCccsection{Revisión Versión 0.1} % Anote la versión que se revisó.
+%\UCccitem{Fecha}{}
+%\UCccitem{Evaluador}{Elsi Bernabé Aparicio}
+%\UCccitem{Resultado}{}
+%\UCccitem{Observaciones}{}
+%-------------------------------------------------------------------
+	\UCsection{Atributos}
+	\UCitem{Actor(es)}{\hyperlink{actor:usuario}{Usuario}.}
+		\UCitem{Propósito}{Proporcionar un mecanismo que le permita al \hyperlink{actor:usuario}{Usuario} eliminar un paciente previamente registrado.}
+	\UCitem{Entradas}{
+		\begin{UClist}
+			\UCli Ninguna.
+		\end{UClist}	
+	}
+	\UCitem{Salidas}{
+		\begin{UClist}
+			\UCli \cdtIdRef{MSG1}{Operación exitosa}: Se muestra en la pantalla \cdtIdRef{IU1}{Consultar pacientes} indicando al actor que la información del paciente se eliminó exitosamente.
+		\end{UClist}
+		
+	}
+	\UCitem{Precondiciones}{
+		\begin{UClist}
+			\UCli Ninguna.
+		\end{UClist}
+	}
+	
+	\UCitem{Postcondiciones}{
+		\begin{UClist}
+			\UCli La información del paciente seleccionado será eliminada.
+			\UCli El actor no podrá solicitar más mediciones de signos vitales para el paciente eliminado.
+		\end{UClist}
+	}
+
+	\UCitem{Reglas de negocio}{
+		\begin{UClist}
+			\UCli Ninguna.
+		\end{UClist}
+	}
+	
+	\UCitem{Errores}{
+		\begin{UClist}
+			\UCli Ninguno.
+		\end{UClist}
+	}
+	\UCitem{Tipo}{Terciario, extiende del caso de uso \cdtIdRef{CU3}{Consultar información del paciente}.}
+\end{UseCase}
+
+\begin{UCtrayectoria}
+	\UCpaso[\UCactor] Da clic en el icono \btnEliminar{} de la pantalla \cdtIdRef{IU3}{Consultar información del paciente}.
+	\UCpaso[\UCsist] \label{cu5:obtieneNombre}Obtiene el nombre del paciente que se requiere eliminar.
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Eliminar elemento} en la pantalla \cdtIdRef{CU3}{Consultar información del paciente} con los siguientes parámetros: DETERMINADO ELEMENTO: {\em al paciente} y VALOR: nombre del paciente obtenido en el paso \ref{cu5:obtieneNombre} (¿Desea eliminar al paciente Carlos Granados?)
+	\UCpaso[\UCactor] Selecciona la opción \cdtButton{Sí} del mensaje. \refTray{A}
+	\UCpaso[\UCsist] Elimina la información registrada del paciente.
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación exitosa} en la pantalla \cdtIdRef{IU1}{Consultar pacientes} indicando al actor que la eliminación se realizó correctamente.
+\end{UCtrayectoria}
+
+
+%-----------------------------------------------------------
+\begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El actor no confirma la eliminación del paciente.}
+	\UCpaso[\UCactor] Selecciona la opción \cdtButton{No} del mensaje.
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{CU3}{Consultar información del paciente}.
+\end{UCtrayectoriaA}

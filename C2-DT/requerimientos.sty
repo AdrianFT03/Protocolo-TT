@@ -1,0 +1,89 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{requerimientos}[2017/06/24 Paquete para la incorporación de entornos de trabajo para la toma de requerimientos]
+
+\RequirePackage{cdt/cdtTheme}
+
+
+
+%----------------------------------------------------
+%Comandos para poner el estado de un requerimiento:
+%Aprobado
+%Por Corregir
+%No aprobado
+%----------------------------------------------------
+\newcommand{\aprobado}{\textit{Aprobado}}
+\newcommand{\rechazado}{\textit{Rechazado}}
+\newcommand{\corregir}{\textit{Corregir}}
+%----------------------------------------------------
+%Comandos para asignarle prioridad a los Requerimientos
+%----------------------------------------------------
+\newcommand{\alta}{\textit{Alta}}
+\newcommand{\media}{\textit{Media}}
+\newcommand{\baja}{\textit{Baja}}
+%----------------------------------------------------
+%Entorno para escribir los requerimientos del usuario
+%----------------------------------------------------
+\newenvironment{ReqUser}{%
+    \begin{longtable}{| p{0.09\textwidth}| p{0.2\textwidth}| p{0.35\textwidth}| p{0.079\textwidth}| p{0.1\textwidth}| p{0.12\textwidth}|}
+    \hline
+    \rowcolor{colorPrincipal}
+    \multicolumn{6}{|c|}{\bf\color{white}{Requerimientos del Usuario}}\\\hline
+    \endhead
+    \rowcolor{colorGris}
+    \color{white}
+    Id & \color{white}Nombre&\color{white}Descripción & \color{white}Prioridad & \color{white}Req. del Sistema & \color{white}Estado \\ \hline
+}{\end{longtable}}
+%----------------------------------------------------
+%Comando para agregar una linea a la tabla de usuario
+%----------------------------------------------------
+\newcommand{\reqUserItem}[6]{\hypertarget{ReqUser:#1}{#1} & #2 & #3 & #4 & #5 & #6 \\\hline}
+%----------------------------------------------------
+%Comando para referenciar a un requerimiento de usuario
+%----------------------------------------------------
+\newcommand{\refUserReq}[1]{\hyperlink{ReqUser:#1}{#1}}
+%----------------------------------------------------
+%Entorno para escribir los requerimientos del sistema
+%----------------------------------------------------
+\newenvironment{ReqSist}{%
+    \begin{longtable}{| p{0.09\textwidth}| p{0.45\textwidth}| p{0.079\textwidth}| p{0.12\textwidth}|}
+    \hline
+    \rowcolor{colorPrincipal}
+    \multicolumn{4}{|c|}{\bf\color{white}{Requerimientos del Sistema}}\\\hline
+    \endhead
+    \rowcolor{colorGris}
+    \color{white}
+    Id & \color{white}Descripción & \color{white}Prioridad & \color{white}Tipo\\ \hline
+}{\end{longtable}}
+
+%----------------------------------------------------
+%Comando para agregar un renglón a la tabla de requerimientos del sistema
+%----------------------------------------------------
+\newcommand{\reqSistItem}[5]{\hypertarget{ReqSist:#1}{#1} & #2 & #3 & #4 \\\hline}
+%----------------------------------------------------
+%Comando para referenciar al requerimiento del sistema
+%----------------------------------------------------
+\newcommand{\refSistReq}[1]{\hyperlink{ReqSist:#1}{#1}}
+
+%Actores / Stakeholders
+%----------------------------------------------------
+%Entorno para agregar un stakeholder o actor al documento
+%----------------------------------------------------
+%Procurar que el ID sea el mismo
+\newenvironment{Stakeholder}[1]{
+	\subsection{Stakeholder #1}
+    \hypertarget{Actor:#1}{}
+    {\includegraphics[width=\textwidth]{Plantilla/iconos/ActorRule}}
+	\begin{description}
+}{\end{description}}
+%----------------------------------------------------
+%Comando para referenciar a un stakeholder en cualquier parte del documento
+%----------------------------------------------------
+\newcommand{\refStake}[1]{\hyperlink{Actor:#1}{#1}}
+
+
+
+\newenvironment{Titemize}{\vspace{0.5em}}{\vspace{0em}}
+\newcommand{\Titem}[1][\textbullet]{
+	\par{\color{colorPrincipal}{#1}}
+}
+

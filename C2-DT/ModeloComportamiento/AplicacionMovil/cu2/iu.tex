@@ -1,0 +1,27 @@
+\subsection{IU2 Registrar paciente}
+
+\subsubsection{Objetivo}
+	
+Esta pantalla permite al \hyperlink{actor:usuario}{Usuario} registrar un nuevo paciente del cual requiere monitorear los signos vitales de temperatura y frecuencia cardíaca.
+
+\subsubsection{Diseño}
+En la figura \ref{IU2} se muestra la pantalla ''Registrar paciente'', por medio de la cual el usuario podrá ingresar los datos personales y número de teléfono de un paciente que requiera registrar para el monitoreo de sus signos vitales.\\
+
+Los datos necesarios para el registro de un paciente son:
+\begin{enumerate}
+	\item Nombre del paciente que será monitoreado.
+	\item Número telefónico de la tarjeta SIM que tendrá integrada el módulo de comunicación GSM para en envío de mensajes.
+	\item Fecha de nacimiento del paciente, la cual debe encontrarse dentro del rango establecido con base en la regla de negocio \cdtIdRef{RN3}{Fecha de nacimiento válida}.
+	\item Sexo del paciente.
+\end{enumerate}
+
+Una vez validados todos los datos del paciente, éste será registrado y podrá ser visualizado en la lista de pacientes registrados de la pantalla \cdtIdRef{IU1}{Consultar pacientes}.
+
+    
+ \IUfig[.6]{../ModeloComportamiento/AplicacionMovil/cu2/iu2.png}{IU2}{Registrar paciente}
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \btnRegistrar{} [Registrar paciente]: Permite al actor confirmar los datos ingresados del paciente para finalizar su registro. Dirige a la pantalla \cdtIdRef{IU1}{Consultar pacientes}.
+	\end{itemize}
+\clearpage

@@ -1,0 +1,222 @@
+\label{sec:glosario}
+    Este capítulo describe los términos usados a lo largo del documento que tienen un significado singular en la SMAGEM o el Sistema y que se consideran necesario definirlos para evitar ambigüedades o malos entendidos.
+    La lista de términos se encuentra agrupada por áreas de conocimiento:
+\begin{Citemize}
+    \item Términos técnicos: Agrupa los términos que tienen que ver con el sistema.
+    \item Términos del negocio: Agrupa los términos que tienen significado dentro de la SMAGEM.
+\end{Citemize}
+
+    Para fines de este documento la siguiente lista de términos se debe interpretar como se describen en este capítulo.
+
+%  \RCitem{ARM-01}{\TOCHK{En todos los términos, cuando menciones ``tipo de dato'' que sea una referencia al término.}}{31 de julio de 2014}
+%  \RCitem{ARM-02}{\TOCHK{Agrega el término ``Georreferenciación'' en el documento de ANPs ya está la definición :)}}{31 de julio de 2014}
+%  \RCitem{ARM-03}{\TOCHK{El término ``Tipo de documento legal'' ampliar su definición}}{31 de julio de 2014}
+   
+%====================================================================
+\section{Términos técnicos}
+\label{gls:terminosTecnicos}
+
+  En esta sección se definen los términos técnicos que se utilizan para describir el comportamiento del sistema.
+  
+  \begin{description}
+  
+    \BRterm{gls:alfanumerico}{Alfanumérico:} Es un \cdtRef{gls:tipoDato}{tipo de dato} definido por el conjunto de caracteres numéricos y alfabéticos.
+    
+    \BRterm{gls:archivoDigital}{Archivo digital:} Equivalente digital de los archivos escritos en libros, tarjetas, libretas, papel o microfichas del entorno de oficina tradicional.
+    
+    \BRterm{gls:atributo}{Atributo:} Son las características que definen o identifican a una entidad en un conjunto de entidades.
+
+    \BRterm{gls:booleano}{Booleano:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que puede tomar los siguientes valores: verdadero ó falso (1 ó 0).
+    
+    \BRterm{gls:cadena}{Cadena:} Es el \cdtRef{gls:tipoDato}{tipo de dato} definido por cualquier valor que se compone de una secuencia de caracteres, con o sin acentos, espacios, dígitos y signos de puntuación. Existen tres tipos de cadenas: palabra, frase y párrafo.
+    
+    \BRterm{gls:catalogo}{Catálogo:} Es una lista ordenada o clasificada de elementos relacionados.
+    
+    \BRterm{gls:decimal}{Decimal:} Es un \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:numerico}{numérico}. Los números decimales son valores que denotan números racionales y la aproximación a números irracionales.
+    
+    \BRterm{gls:entero}{Entero:} Es el \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:numerico}{numérico} definido por todos los valores numéricos enteros, tanto positivos como negativos.
+
+    \BRterm{gls:entidad}{Entidad:} Término genérico que se utiliza para determinar un ente el cual puede ser concreto, abstracto o conceptual por ejemplo: Unidad administrativa, entregable, persona, etc. La entidades se caracterizan a través de atributos que personalizan a la entidad.		
+    %Se usa para hacer referencia a un objeto con existencia física (entidad concreta) como: Una persona, un animal, una casa, etc.; o un objeto con existencia conceptual (entidad abstracta) como: Un puesto de trabajo, una asignatura de clases, un nombre, etc. Una \cdtRef{gls:entidad}{entidad} se representa por sus características o atributos, por ejemplo: La entidad persona tiene características como: Nombre, apellido, género, estatura, peso, fecha de nacimiento, etc.
+
+    \BRterm{gls:fecha}{Fecha:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que indica un día único en referencia al calendario gregoriano. Los tipos de fecha utilizados son: \cdtRef{gls:fechaCorta}{fecha corta} y \cdtRef{gls:fechaLarga}{fecha larga}. %con formato DD/MM/YYYY, por ejemplo: 24/02/2013.
+
+    \BRterm{gls:fechaCorta}{Fecha corta:} Es la representación del \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:fecha}{fecha} en la forma DD/MM/YYYY, por ejemplo: 24/02/2013.
+
+    \BRterm{gls:fechaLarga}{Fecha larga:} Es la representación del \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:fecha}{fecha} en la forma DD de MM del YYYY, por ejemplo: 24 de febrero del 2013.
+
+    \BRterm{gls:frase}{Frase:} Es un \cdtRef{gls:tipoDato}{tipo de dato}  conformado por \cdtRef{gls:palabra}{palabras} y espacios.
+    
+    \BRterm{gls:numerico}{Numérico:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que se compone de la combinación de los símbolos \textit{0,1,2,3,4,5,6,7,8,9,. y -.}  que expresan una cantidad en relación a su unidad.
+    
+    \BRterm{gls:opcional}{Opcional:} Es un elemento que el actor puede o no proporcionar en el formulario o la pantalla, su decisión no afectará la ejecución de la operación solicitada.
+
+    \BRterm{gls:palabra}{Palabra:} Es un \cdtRef{gls:tipoDato}{tipo de dato} \cdtRef{gls:cadena}{cadena} conformado por el alfabeto y símbolos especiales como son \textit{\#,-,\$,\%,\&,(,),etc} y se caracteriza por no tener espacios.
+
+    \BRterm{gls:parrafo}{Párrafo:} Es un \cdtRef{gls:tipoDato}{tipo de dato}  conformado por \cdtRef{gls:frase}{frases}.
+    %\BRterm{gls:sn}{S/N} Abreviación del término ``Sin número'' utilizado para indicar cuando una Dirección Geográfica no tiene numeración.
+
+    \BRterm{gls:requerido}{Requerido:} Es un \cdtRef{gls:tipoDato}{tipo de dato} que debe proporcionarse de manera obligatoria. La ejecución de la operación solicitada dependerá de que se proporcione este dato.
+    
+    %Es un atributo de una \cdtRef{gls:entidad}{entidad} que por definición no puede quedar indeterminado. Lo cual implica para el sistema, que, si se solicita mediante una pantalla, base de datos o servicio externo, el dato debe proporcionarse de manera obligatoria para el registro adecuado en el sistema.
+
+    \BRterm{gls:tipoDato}{Tipo de dato:} Es el dominio o conjunto de valores que puede tomar un atributo de una \cdtRef{gls:entidad}{entidad} en el modelo de información. Los tipos de datos utilizados son: \cdtRef{gls:palabra}{palabra}, \cdtRef{gls:frase}{frase}, \cdtRef{gls:parrafo}{párrafo}, \cdtRef{gls:numerico}{numérico}, \cdtRef{gls:fecha}{fecha} y \cdtRef{gls:booleano}{booleano}.
+
+    %\BRterm{gls:na}{NA} Abreviación del término ``No Aplica'', se utiliza para indicar que algún elemento en la estructura del documento o en el sistema no aplica.
+\end{description}
+
+
+%====================================================================
+\section{Términos del negocio}
+\label{gls:terminosNegocio}
+En esta sección se definen los términos del negocio que se utilizan para comprender el comportamiento del sistema.
+
+\begin{description}
+    \BRterm{gls:accion}{Acción:} Es un paso necesario que se requiere completar para alcanzar una meta.
+    
+    \BRterm{gls:ahorroEnergia}{Ahorro en el gasto por consumo de energía:} Reducción del costo económico por la disminución del consumo de energía.
+
+    \BRterm{gls:alumno}{Alumno:} Persona inscrita y que estudia en una escuela.
+
+    \BRterm{gls:ambito}{Ámbito:} Característica de una escuela que depende de la ubicación geográfica. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Rural'' o ``Urbano''.
+    
+    \BRterm{gls:arbolesPlantados}{Árboles plantados:} Total de árboles plantados duante un año en la escuela.
+
+    \BRterm{gls:avanceAccion}{Avance de la acción:} Es el valor que será sumado al avance acumulado de la acción y que servirá para alcanzar el valor planeado.
+    
+    \BRterm{gls:avanceMeta}{Avance de la meta:} Es el valor que será sumado al avance acumulado de la meta y que servirá para alcanzar el valor planeado.
+    
+    \BRterm{gls:bimestre}{Bimestre:} Tiempo de dos meses, se considera que un año tiene seis bimestres, utilizado como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, y puede tomar los valores: ``enero-febrero'', ``marzo-abril'', ``mayo-junio'', ``julio-agosto'', ``septiembre-octubre'' y ``noviembre-diciembre''.
+    
+    \BRterm{gls:campanasLM}{Campañas de limpieza y mantenimiento:} Total de jornadas organizadas para realizar actividades de limpieza o mantenimiento.
+
+    \BRterm{gls:categoriaFauna}{Categoría de fauna:} Clase a la que pertenece la especie animal. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Aves'', ``Mamíferos'', ``Reptiles'', ``Anfibios'', ``Arácnidos o insectos'' o ``Peces''.
+
+    \BRterm{gls:categoriaFlora}{Categoría de flora:} Clase a la que pertenece la especie de planta. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Plantas con flores'', ``Cactáceas'', ``Helechos'', ``Arbustos'' o ``Árboles''.
+
+    \BRterm{gls:clasificador}{Clasificador:} Define a la escuela de acuerdo con la naturaleza del servicio que presta del sector. %Definición del manual de procedimientos
+    
+    \BRterm{gls:comprasVerdes}{Compras verdes:} Adquisiciones de bienes o servicios que generan menor impacto ambiental que otros con la misma función.
+    
+    \BRterm{gls:consumoAnual}{Consumo anual:} Cantidad de $m^3$ o kWh utilizados en la escuela durante un año.
+    
+    \BRterm{gls:consumoAnualSuperficie}{Consumo anual de energía por unidad de superficie:} Cantidad de energía utilizada por unidad de superficie de la escuela.
+    
+    \BRterm{gls:consumoAnualPersona}{Consumo anual por persona:} Cantidad de $m^3$ o $kWh$ utilizados por una persona en la escuela durante un año.
+
+    \BRterm{gls:control}{Control:} Tipo de administración que lleva una escuela. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Pública'' o ``Privada''.
+    
+    %\BRterm{gls:cuestionario}{Cuestionario:} Conjunto de preguntas referentes al estado actual de la escuela.
+    
+    \BRterm{gls:disminucionAnual}{Disminución anual:} Disminución de $m^3$ o kWh utilizados en la escuela durante un año.
+    
+    \BRterm{gls:disminucionEmisiones}{Disminución de emisiones de $CO_2$:} Cantidad de emisiones de dióxido de carbono reducidas gracias al Programa de Escuelas Ambientalmente Responsables.
+    
+    \BRterm{gls:disminucionRSAnoPersona}{Disminución de residuos sólidos generados al año por persona:} Cantidad de kilogramos de residuos reducidos por persona en un año.
+    
+    \BRterm{gls:elementoVerificador}{Elemento verificador:} Este elemento de la \cdtRef{escuela:cct}{clave de centro de trabajo} se asigna computacionalmente en el momento de dar de alta un centro de trabajo y se obtiene mediante un algoritmo aplicado a los primeros nueve caracteres de la clave.
+
+    \BRterm{gls:endemico}{Endémico:} Indica que la distribución de una especie está limitada a un ámbito geográfico reducido y que no se encuentra de forma natural en ninguna otra parte del mundo. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Si'', ``No'' o ``Se desconoce''.
+
+    \BRterm{gls:enfoqueMeta}{Enfoque de la meta:} Cada uno de los enfoques que definen la finalidad a la que se dirige el planteamiento de una meta. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Capacitación y/o sensibilización'', ``Capacitación y/o sensibilización del concepto de biodiversidad'', ``Plantación de árboles'', ``Mejora de espacio'', ``Incremento de áreas verdes'', ``Reducción de la generación o reciclaje de residuos'', ``Aumento en el consumo de alimentos frescos'' o ``Aumento de compras verdes''.
+    
+    \BRterm{gls:espaciosMejorados}{Espacios mejorados:} Áreas de la escuela que se construyen o reciben limpieza, remodelación o manteniemiento.
+    
+    \BRterm{gls:estado}{Estado:} Es la situación actual de la escuela dentro del programa. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Preinscripción'', ``Por aprobar'', ``Inscrita'', ``Información base en edición'', ``Información base por aprobar'', ``Plan de acción en edición'', ``Plan de acción por aprobar'', ``Avance en edición'', ``Revisión de informe intermedio de avance'', ``Por acreditar'' y ``Acreditada''.
+
+    \BRterm{gls:estadoUnidad}{Estado de la unidad:} Es la situación actual de la unidad de medida. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Por aprobar'' o ``Aprobado''.
+    
+    \BRterm{gls:feee}{Factor de emisión de energía eléctrica:} Valores estándar a utilizar en el cálculo de las emisiones de energía eléctrica. 
+    
+    %\BRterm{gls:formato}{Formato:} Estructura que contiene preguntas referentes a cada línea de acción.
+
+    \BRterm{gls:grado}{Grado:} Nivel que cursa un \cdtRef{gls:alumno}{alumno}. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Primero'', ``Segundo'', ``Tercero'', ``Cuarto'', ``Quinto'' o ``Sexto''.
+    
+%     \BRterm{gls:guiaDiagnostico}{Guía para el diagnóstico:} Instrumento que permite obtener el diagnóstico de alguna \cdtRef{gls:lineaAccion}{línea de acción} en particular. Está compuesta
+%     por \cdtRef{gls:formato}{formatos} y \cdtRef{gls:cuestionario}{cuestionarios}.
+    
+    \BRterm{gls:identificadorCCT}{Identificador:} Campo que identifica los diferentes tipos, niveles y modalidades, y diversos servicios de apoyo que integran el Sistema Educativo Nacional. %Definición del manual de procedimientos
+    
+    \BRterm{gls:ice}{Índice de consumo energético:} Unidad en que se expresa el consumo de energía eléctrica.
+
+    \BRterm{gls:lineaAccion}{Línea de acción:} Estrategia de orientación y organización de las diferentes actividades que se llevan a cabo en las escuelas y que están 
+    relacionadas con el medio ambiente. Las líneas de acción para el sistema son las siguientes: ``Agua'', ``Residuos sólidos'', 
+    ``Energía'', ``Biodiversidad'', ``Ambiente escolar'' y ``Consumo responsable''.
+%     Las acciones que se pueden realizar en el medio urbano y en el medio rural forman parte de las líneas de acción: 
+%     ``Uso y cuidado del agua'', ``Manejo de residuos sólidos'', ``Uso de la energía'', ``Biodiversidad'', ``Ambiente escolar'' y ``Consumo responsable''.
+
+    \BRterm{gls:mes}{Mes:} Cada uno de los doce periodos de tiempo en los que se divide un año,  utilizado como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, y puede tomar los valores: ``enero'', ``febrero'', ``marzo'', ``abril'', ``mayo'', ``junio'', ``julio'', ``agosto'', ``septiembre'', ``octubre'', ``noviembre'' y ``diciembre''.
+
+    \BRterm{gls:meta}{Meta:} Es el resultado de las \cdtRef{gls:accion}{acciones} planeadas, expresado como un valor numérico que se pretende alcanzar.
+    
+    \BRterm{gls:nivelEscolar}{Nivel escolar:} Se refiere al grado académico de estudios. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores:
+    ``Preescolar'', ``Primaria'' o ``Secundaria''.
+    
+    \BRterm{gls:numeroEco}{Número de ecosistemas identificados:} Total de ecosistemas que se encuentran en las enmediaciones de la escuela.
+    
+    \BRterm{gls:numeroProgresivo}{Número progresivo:} Número que sirve para enumerar a los centros de trabajo por cada entidad, clasificador e identificador. %Definición del manual de procedimientos
+    
+    \BRterm{gls:totalEspecies}{Número total de especies:} Es el total de especies de flora y fauna con que cuenta la escuela.
+    
+    \BRterm{gls:objetivo}{Objetivo:} Es el propósito general al que apunta el programa en cada cdtRef{gls:lineaAccion}{línea de acción} y siempre es el mismo para cada una de ellas.
+    
+    \BRterm{gls:periodoPlanAccion}{Periodo para ejecutar el plan de acción:} Es el lapso de tiempo donde el Coordinador del programa puede registrar objetivos, metas y acciones del plan de acción.
+    
+    \BRterm{gls:personasPart}{Personas que participan:} Número de personas que participan en alguna de las jornadas que lleva a cabo la escuela.
+
+    \BRterm{gls:planAccion}{Plan de acción:} Es el conjunto de objetivos, metas y acciones planeadas para lograr que la escuela sea ambientalmente responsable.
+    
+    \BRterm{gls:porcentajeAV}{Porcentaje de áreas verdes:} Superficie de áreas verdes en relación a la superficie total de la escuela.
+    
+    \BRterm{gls:porcentajeEspeciesEndemicas}{Porcentaje de especies endémicas:} Cantidad de especies únicas o propias de la región en relación al total de especies de la escuela.
+    
+    \BRterm{gls:personasBio}{Porcentaje de personas que conocen el concepto de biodiversidad:} Número de personas que afirman conocer el concepto de biodiversidad, en relación al total de personas de la escuela.
+    
+    \BRterm{gls:porcentajeAF}{Porcentaje de personas que declararon consumir alimentos frescos:} Número de personas que declararon consumir alimentos frescos en las encuestas realizadas por la escuela.
+    
+    \BRterm{gls:puesto}{Puesto:} Es el cargo del un empleado dentro de una escuela. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Docente'' o ``Administrativo''.
+    
+    \BRterm{gls:reduccionReciclaje}{Reducción de la generación o reciclaje de residuos:} Se refiere a la operación que se llevará a cabo con los residuos sólidos.
+
+    \BRterm{gls:region}{Región:} Área territorial con características específicas y homogéneas. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Región I, Amecameca'', ``Región II, Atlacomulco'', ``Región III, Chimalhuacan'', ``Región IV, Cuautitlán'', ``Región V, Ecatepec'', entre otros.
+
+    \BRterm{gls:residuo}{Residuo:} Cada uno de los residuos clasificados de acuerdo al \cdtRef{gls:tipoDeResiduo}{tipo de residuo}. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Residuos de café'', ``Latas de aluminio'', ``Hule'', ``Fomy'', ``Bolígrafos'', entre otros.
+    
+    \BRterm{gls:residuosReciclaje}{Residuos enviados a reciclaje por año:} Cantidad de kilogramos que la escuela envía a reciclaje en un año.
+    
+    \BRterm{gls:residuosAno}{Residuos sólidos generados al año por persona:} Kilogramos de \cdtRef{gls:residuo}{residuos} generados al año por la escuela.
+
+    \BRterm{gls:riesgo}{Riesgo de desaparecer:} Indica si la especie de flora o fauna se encuentra en riesgo de desaparecer de la región. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``Si'', ``No'' o ``Se desconoce''.
+	
+    \BRterm{gls:rol}{Rol:} Es el papel que puede desempeñar un integrante de la línea de acción. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: 
+    ``Docente'', ``Alumno'', ``Padre de familia'', ``Administrativo'' o ``Mantenimiento''.
+
+    \BRterm{gls:semestre}{Semestre:} Periodo de tiempo comprendido por seis meses consecutivos. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``enero-junio'' o ``julio-diciembre''.
+
+    \BRterm{gls:servicio}{Servicio:} Es el servicio que presta una escuela. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: ``General'' o ``Indígena''.
+    
+    \BRterm{gls:sexo}{Sexo:} Condición orgánica que distingue al macho de la hembra en los seres humanos, los animales y las plantas. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores: 
+    ``Masculino'' o ``Femenino''.
+    
+    \BRterm{gls:aVPersona}{Superficie de áreas verdes por persona:} Superficie de áreas verdes que corresponde a cada persona de la escuela.
+    
+    \BRterm{gls:tasaSupervivencia}{Tasa de supervivencia de árboles plantados:} Porcentaje de árboles que todavía están vivos durante un año.
+    
+    \BRterm{gls:tipoAbastecimiento}{Tipo de abastecimiento:} Método empleado para transportar y suministrar el agua. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema y puede tomar alguno de los valores: ``Entubado'', ``Pozo'', ``Pipas'', ``Cuerpo de agua'' o ``Sin acceso al agua''.
+
+    \BRterm{gls:tipoEspacio}{Tipo de espacio:} Cada una de las diferentes áreas comunes con las que cuenta la escuela. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema y puede tomar alguno de los valores: ``Jardín y áreas verdes'', ``Biblioteca'', ``Patio'', ``Área para periódico mural'', ``Comedor'', ``Salones de música'', ``Salones de cómputo'', ``Salones de audiovisual'', ``Instalaciones deportivas'', ``Sala de juntas'', ``Aulas'', ``Administrativa'' o ``Sanitarios''.
+ 
+    \BRterm{gls:tipoAreaVerde}{Tipo de área verde:} Tipos de espacios urbanos predominantemente ocupados con árboles, arbustos o plantas, se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema y puede tomar alguno de los valores: ``Jardín'', ``Huerto'', ``Vivero'', ``Invernadero'', ``Parcela'', ``Terreno cubierto con pasto'' o ``Canchas deportivas''.
+
+    \BRterm{gls:tipoDeEcosistema}{Tipo de ecosistema:} Tipos de ecosistemas con los que cuenta la escuela. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema y puede tomar alguno de los valores: ``Bosque'', ``Selva'', ``Matorral'', ``Río'' o ``Estanque/lago''.
+
+    \BRterm{gls:tipoMejora}{Tipo de mejora:} Actividad que se va a realizar en el área común de la escuela, para su mejora en el desarrollo de la meta. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema y puede tomar alguno de los valores: ``Construcción'', ``Limpieza'', ``Remodelación'' o ``Manteniemiento''.
+
+    \BRterm{gls:tipoDePeriodo}{Tipo de periodo:} Especifica el periodo utilizado para reportar un consumo de energía. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema y puede tomar alguno de los valores: ``Mensual'', ``Bimestral'', ``Semestral'' o ``Anual''.
+
+    \BRterm{gls:tipoDeResiduo}{Tipo de residuo:} Clasificación que se da a los residuos sólidos de acuerdo a su composición, uso o características especiales. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema y puede tomar alguno de los valores: ``Orgánico'', ``Reciclable'', ``No reciclable (otros)'', ``Sanitarios y biológico-infecciosos'' o ``Manejo especial''.
+
+    \BRterm{gls:turno}{Turno:} Se define según el horario en que se asiste y se imparten clases en una escuela. Se utiliza como \cdtRef{gls:tipoDato}{tipo de dato} para el sistema, puede tomar alguno de los siguientes valores:
+    ``Matutino'', ``Vespertino'' o ``Tiempo completo''.
+
+\end{description}

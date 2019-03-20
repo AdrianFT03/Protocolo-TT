@@ -1,0 +1,21 @@
+\subsection{IU1 Consultar pacientes}
+
+\subsubsection{Objetivo}
+	
+Esta pantalla permite al \hyperlink{actor:usuario}{Usuario} visualizar a todos los pacientes registrados en la aplicación móvil con el fin de controlar las distintas acciones que se puedan aplicar a un paciente.
+
+\subsubsection{Diseño}
+En la figura \ref{IU1} se muestra la pantalla ''Consultar pacientes'', por medio de la cual el usuario podrá ingresar a las distintas funcionalidades del sistema. En la parte superior se muestra el componente que le permite buscar a los pacientes registrados, con el cual se filtrarán y se mostrarán las coincidencias de búsqueda dependiendo de la entrada que ingrese el usuario.\\
+
+En la pantalla se muestra también la lista de todos los pacientes registrados, dicha lista se ordena alfabéticamente por nombre y al seleccionar uno de ellos, el actor podrá ingresar a las funciones específicas de un paciente.\\
+
+Por medio de esta pantalla el actor podrá también registra un nuevo paciente mediante el icono \btnRegistro{}.
+
+    
+ \IUfig[.6]{../ModeloComportamiento/AplicacionMovil/cu1/iu1.png}{IU1}{Consultar pacientes}
+
+\subsubsection{Comandos}
+	\begin{itemize}
+		\item \btnRegistro{} [Registrar paciente]: Permite al actor registrar los datos de un nuevo paciente. Dirige a la pantalla \cdtIdRef{IU2}{Registrar paciente}.
+	\end{itemize}
+\clearpage

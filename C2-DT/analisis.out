@@ -1,0 +1,113 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Planteamiento del problema}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Soluci\363n propuesta}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Justificaci\363n}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Objetivos}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.4.1}{Objetivo general}{section.1.4}% 6
+\BOOKMARK [2][-]{subsection.1.4.2}{Objetivos espec\355ficos}{section.1.4}% 7
+\BOOKMARK [1][-]{section.1.5}{Estado del arte}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.5.1}{Tesis}{section.1.5}% 9
+\BOOKMARK [2][-]{subsection.1.5.2}{Art\355culos}{section.1.5}% 10
+\BOOKMARK [0][-]{chapter.2}{Marco Te\363rico}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Signos vitales}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.1.1}{Frecuencia card\355aca}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.2}{Frecuencia respiratoria}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.3}{Presi\363n arterial}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.4}{Temperatura}{section.2.1}% 16
+\BOOKMARK [1][-]{section.2.2}{Sistemas embebidos}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.1}{Arquitectura de los sistemas embebidos}{section.2.2}% 18
+\BOOKMARK [1][-]{section.2.3}{Internet de las cosas \(IoT\)}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.4}{Redes inal\341mbricas}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.4.1}{Redes inal\341mbricas de \341rea personal \(Wireless Personal-Area Networks - WPAN\)}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.2}{Redes inal\341mbricas de \341rea local \(Wireless Local-Area Networks - WLAN\)}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.3}{Redes inal\341mbricas de \341rea metropolitana \(Wireless Metropolitan-Area Networks - WMAN\)}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.4}{Redes inal\341mbricas de \341rea amplia \(Wireless Wide-Area Networks - WWAN\)}{section.2.4}% 24
+\BOOKMARK [1][-]{section.2.5}{Tecnolog\355as inal\341mbricas}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.5.1}{Bluetooth}{section.2.5}% 26
+\BOOKMARK [2][-]{subsection.2.5.2}{Zigbee}{section.2.5}% 27
+\BOOKMARK [2][-]{subsection.2.5.3}{Familia IEEE 802.11 \(WI-FI\)}{section.2.5}% 28
+\BOOKMARK [2][-]{subsection.2.5.4}{WiMAX}{section.2.5}% 29
+\BOOKMARK [2][-]{subsection.2.5.5}{GSM \(Global System for Mobile Comunications\)}{section.2.5}% 30
+\BOOKMARK [1][-]{section.2.6}{Sensores de temperatura}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.6.1}{Termopares}{section.2.6}% 32
+\BOOKMARK [2][-]{subsection.2.6.2}{Sensor de temperatura resistivo \(RTD\)}{section.2.6}% 33
+\BOOKMARK [2][-]{subsection.2.6.3}{Termistores}{section.2.6}% 34
+\BOOKMARK [2][-]{subsection.2.6.4}{Semiconductores}{section.2.6}% 35
+\BOOKMARK [2][-]{subsection.2.6.5}{Circuitos integrados}{section.2.6}% 36
+\BOOKMARK [1][-]{section.2.7}{Sensores de pulso}{chapter.2}% 37
+\BOOKMARK [2][-]{subsection.2.7.1}{Electrocardiograf\355a}{section.2.7}% 38
+\BOOKMARK [2][-]{subsection.2.7.2}{Fotopletismograf\355a}{section.2.7}% 39
+\BOOKMARK [1][-]{section.2.8}{Microcontroladores}{chapter.2}% 40
+\BOOKMARK [1][-]{section.2.9}{Aplicaci\363n m\363vil}{chapter.2}% 41
+\BOOKMARK [2][-]{subsection.2.9.1}{Tipos de aplicaciones m\363viles}{section.2.9}% 42
+\BOOKMARK [0][-]{chapter.3}{An\341lisis}{}% 43
+\BOOKMARK [1][-]{section.3.1}{Requerimientos del sistema}{chapter.3}% 44
+\BOOKMARK [1][-]{section.3.2}{An\341lisis de componentes del sistema}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.2.1}{Sensor de temperatura}{section.3.2}% 46
+\BOOKMARK [2][-]{subsection.3.2.2}{Sensor de pulso}{section.3.2}% 47
+\BOOKMARK [2][-]{subsection.3.2.3}{M\363dulo de comunicaci\363n GSM}{section.3.2}% 48
+\BOOKMARK [2][-]{subsection.3.2.4}{Microcontrolador}{section.3.2}% 49
+\BOOKMARK [2][-]{subsection.3.2.5}{Sistema operativo m\363vil}{section.3.2}% 50
+\BOOKMARK [-1][-]{part.1}{I Dise\361o de la Estructura del Sistema}{}% 51
+\BOOKMARK [0][-]{chapter.4}{Metodolog\355a}{part.1}% 52
+\BOOKMARK [0][-]{chapter.5}{An\341lisis de Factibilidad}{part.1}% 53
+\BOOKMARK [1][-]{section.5.1}{An\341lisis de Factibilidad}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.1.1}{Factibilidad T\351cnica}{section.5.1}% 55
+\BOOKMARK [2][-]{subsection.5.1.2}{Factibilidad Econ\363mica}{section.5.1}% 56
+\BOOKMARK [0][-]{chapter.6}{Arquitectura del Sistema}{part.1}% 57
+\BOOKMARK [1][-]{section.6.1}{Arquitectura f\355sica del sistema}{chapter.6}% 58
+\BOOKMARK [1][-]{section.6.2}{Arquitectura l\363gica del sistema}{chapter.6}% 59
+\BOOKMARK [0][-]{chapter.7}{Modelo de Negocio}{part.1}% 60
+\BOOKMARK [1][-]{section.7.1}{Reglas de negocio}{chapter.7}% 61
+\BOOKMARK [1][-]{section.7.2}{Actores del sistema}{chapter.7}% 62
+\BOOKMARK [2][-]{subsection.7.2.1}{Paciente}{section.7.2}% 63
+\BOOKMARK [2][-]{subsection.7.2.2}{Usuario}{section.7.2}% 64
+\BOOKMARK [2][-]{subsection.7.2.3}{Sistema}{section.7.2}% 65
+\BOOKMARK [0][-]{chapter.8}{Modelo de Comportamiento}{part.1}% 66
+\BOOKMARK [1][-]{section.8.1}{M\363dulos del sistema}{chapter.8}% 67
+\BOOKMARK [1][-]{section.8.2}{Modelo de comportamiento del m\363dulo Aplicaci\363n M\363vil}{chapter.8}% 68
+\BOOKMARK [1][-]{section.8.3}{Modelo de comportamiento del m\363dulo Sistema Embebido}{chapter.8}% 69
+\BOOKMARK [1][-]{section.8.4}{Casos de uso del m\363dulo Aplicaci\363n M\363vil}{chapter.8}% 70
+\BOOKMARK [1][-]{section.8.5}{CU1 Consultar pacientes}{chapter.8}% 71
+\BOOKMARK [2][-]{subsection.8.5.1}{Resumen}{section.8.5}% 72
+\BOOKMARK [2][-]{subsection.8.5.2}{Descripci\363n}{section.8.5}% 73
+\BOOKMARK [2][-]{subsection.8.5.3}{Trayectorias del caso de uso}{section.8.5}% 74
+\BOOKMARK [2][-]{subsection.8.5.4}{Puntos de extensi\363n}{section.8.5}% 75
+\BOOKMARK [1][-]{section.8.6}{CU2 Registrar paciente}{chapter.8}% 76
+\BOOKMARK [2][-]{subsection.8.6.1}{Resumen}{section.8.6}% 77
+\BOOKMARK [2][-]{subsection.8.6.2}{Descripci\363n}{section.8.6}% 78
+\BOOKMARK [2][-]{subsection.8.6.3}{Trayectorias del caso de uso}{section.8.6}% 79
+\BOOKMARK [1][-]{section.8.7}{CU3 Consultar informaci\363n del paciente}{chapter.8}% 80
+\BOOKMARK [2][-]{subsection.8.7.1}{Resumen}{section.8.7}% 81
+\BOOKMARK [2][-]{subsection.8.7.2}{Descripci\363n}{section.8.7}% 82
+\BOOKMARK [2][-]{subsection.8.7.3}{Trayectorias del caso de uso}{section.8.7}% 83
+\BOOKMARK [2][-]{subsection.8.7.4}{Puntos de extensi\363n}{section.8.7}% 84
+\BOOKMARK [1][-]{section.8.8}{CU4 Editar informaci\363n del paciente}{chapter.8}% 85
+\BOOKMARK [2][-]{subsection.8.8.1}{Resumen}{section.8.8}% 86
+\BOOKMARK [2][-]{subsection.8.8.2}{Descripci\363n}{section.8.8}% 87
+\BOOKMARK [2][-]{subsection.8.8.3}{Trayectorias del caso de uso}{section.8.8}% 88
+\BOOKMARK [1][-]{section.8.9}{CU5 Eliminar paciente}{chapter.8}% 89
+\BOOKMARK [2][-]{subsection.8.9.1}{Resumen}{section.8.9}% 90
+\BOOKMARK [2][-]{subsection.8.9.2}{Descripci\363n}{section.8.9}% 91
+\BOOKMARK [2][-]{subsection.8.9.3}{Trayectorias del caso de uso}{section.8.9}% 92
+\BOOKMARK [0][-]{chapter.9}{Modelo de Interacci\363n con el Usuario}{part.1}% 93
+\BOOKMARK [1][-]{section.9.1}{Entorno de trabajo}{chapter.9}% 94
+\BOOKMARK [1][-]{section.9.2}{Interfaces de usuario}{chapter.9}% 95
+\BOOKMARK [2][-]{subsection.9.2.1}{IU1 Consultar pacientes}{section.9.2}% 96
+\BOOKMARK [2][-]{subsection.9.2.2}{IU2 Registrar paciente}{section.9.2}% 97
+\BOOKMARK [2][-]{subsection.9.2.3}{IU3 Consultar informaci\363n del paciente}{section.9.2}% 98
+\BOOKMARK [2][-]{subsection.9.2.4}{IU4 Editar informaci\363n del paciente}{section.9.2}% 99
+\BOOKMARK [1][-]{section.9.3}{Dise\361o de mensajes}{chapter.9}% 100
+\BOOKMARK [2][-]{subsection.9.3.1}{Par\341metros comunes}{section.9.3}% 101
+\BOOKMARK [2][-]{subsection.9.3.2}{Mensajes a trav\351s de la pantalla}{section.9.3}% 102
+\BOOKMARK [-1][-]{part.2}{II Implementaci\363n}{}% 103
+\BOOKMARK [0][-]{chapter.10}{Avances y pruebas}{part.2}% 104
+\BOOKMARK [1][-]{section.10.1}{Sensores de pulso}{chapter.10}% 105
+\BOOKMARK [2][-]{subsection.10.1.1}{AD8232}{section.10.1}% 106
+\BOOKMARK [2][-]{subsection.10.1.2}{Pulse sensor}{section.10.1}% 107
+\BOOKMARK [1][-]{section.10.2}{Digitalizaci\363n de se\361al anal\363gica}{chapter.10}% 108
+\BOOKMARK [1][-]{section.10.3}{M\363dulo Telit GL865-QUAD}{chapter.10}% 109
+\BOOKMARK [2][-]{subsection.10.3.1}{Prueba unitaria}{section.10.3}% 110
+\BOOKMARK [2][-]{subsection.10.3.2}{Conexi\363n con microcontrolador}{section.10.3}% 111
+\BOOKMARK [1][-]{section.10.4}{Trabajo para TT2}{chapter.10}% 112
+\BOOKMARK [0][-]{chapter*.37}{Referencias}{part.2}% 113

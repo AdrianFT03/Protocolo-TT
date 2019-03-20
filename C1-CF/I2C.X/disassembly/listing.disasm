@@ -1,0 +1,342 @@
+Disassembly Listing for I2C
+Generated From:
+/home/victor/micros/I2C.X/dist/default/debug/I2C.X.debug.elf
+16/04/2018 02:23:21 PM
+
+---  /home/victor/micros/I2C.X/principal.c  -------------------------------------------------------------
+1:                 /**@brief: Este programa muestra los bloques de un 
+2:                  * programa en C embebido para el DSPIC, los bloques son:
+3:                  * BLOQUE 1. OPCIONES DE CONFIGURACION DEL DSC: OSCILADOR, WATCHDOG,
+4:                  * BROWN OUT RESET, POWER ON RESET Y CODIGO DE PROTECCION
+5:                  * BLOQUE 2. EQUIVALENCIAS Y DECLARACIONES GLOBALES
+6:                  * BLOQUE 3. ESPACIOS DE MEMORIA: PROGRAMA, DATOS X, DATOS Y, DATOS NEAR
+7:                  * BLOQUE 4. CÓDIGO DE APLICACIÓN
+8:                  * @device: DSPIC30F4013
+9:                  * @oscillator: FRC, 7.3728MHz
+10:                 */
+11:                #include "p30F4013.h"
+12:                /********************************************************************************/
+13:                /* 						BITS DE CONFIGURACIÓN									*/	
+14:                /********************************************************************************/
+15:                /* SE DESACTIVA EL CLOCK SWITCHING Y EL FAIL-SAFE CLOCK MONITOR (FSCM) Y SE 	*/
+16:                /* ACTIVA EL OSCILADOR INTERNO (FAST RC) PARA TRABAJAR							*/
+17:                /* FSCM: PERMITE AL DISPOSITIVO CONTINUAR OPERANDO AUN CUANDO OCURRA UNA FALLA 	*/
+18:                /* EN EL OSCILADOR. CUANDO OCURRE UNA FALLA EN EL OSCILADOR SE GENERA UNA 		*/
+19:                /* TRAMPA Y SE CAMBIA EL RELOJ AL OSCILADOR FRC  								*/
+20:                /********************************************************************************/
+21:                //_FOSC(CSW_FSCM_OFF & FRC); 
+22:                #pragma config FOSFPR = FRC             // Oscillator (Internal Fast RC (No change to Primary Osc Mode bits))
+23:                #pragma config FCKSMEN = CSW_FSCM_OFF   // Clock Switching and Monitor (Sw Disabled, Mon Disabled)/********************************************************************************/
+24:                /* SE DESACTIVA EL WATCHDOG														*/
+25:                /********************************************************************************/
+26:                //_FWDT(WDT_OFF); 
+27:                #pragma config WDT = WDT_OFF            // Watchdog Timer (Disabled)
+28:                /********************************************************************************/
+29:                /* SE ACTIVA EL POWER ON RESET (POR), BROWN OUT RESET (BOR), 					*/	
+30:                /* POWER UP TIMER (PWRT) Y EL MASTER CLEAR (MCLR)								*/
+31:                /* POR: AL MOMENTO DE ALIMENTAR EL DSPIC OCURRE UN RESET CUANDO EL VOLTAJE DE 	*/	
+32:                /* ALIMENTACIÓN ALCANZA UN VOLTAJE DE UMBRAL (VPOR), EL CUAL ES 1.85V			*/
+33:                /* BOR: ESTE MODULO GENERA UN RESET CUANDO EL VOLTAJE DE ALIMENTACIÓN DECAE		*/
+34:                /* POR DEBAJO DE UN CIERTO UMBRAL ESTABLECIDO (2.7V) 							*/
+35:                /* PWRT: MANTIENE AL DSPIC EN RESET POR UN CIERTO TIEMPO ESTABLECIDO, ESTO 		*/
+36:                /* AYUDA A ASEGURAR QUE EL VOLTAJE DE ALIMENTACIÓN SE HA ESTABILIZADO (16ms) 	*/
+37:                /********************************************************************************/
+38:                //_FBORPOR( PBOR_ON & BORV27 & PWRT_16 & MCLR_EN ); 
+39:                // FBORPOR
+40:                #pragma config FPWRT  = PWRT_16          // POR Timer Value (16ms)
+41:                #pragma config BODENV = BORV20           // Brown Out Voltage (2.7V)
+42:                #pragma config BOREN  = PBOR_ON          // PBOR Enable (Enabled)
+43:                #pragma config MCLRE  = MCLR_EN          // Master Clear Enable (Enabled)
+44:                /********************************************************************************/
+45:                /*SE DESACTIVA EL CÓDIGO DE PROTECCIÓN											*/
+46:                /********************************************************************************/
+47:                //_FGS(CODE_PROT_OFF);      
+48:                // FGS
+49:                #pragma config GWRP = GWRP_OFF          // General Code Segment Write Protect (Disabled)
+50:                #pragma config GCP = CODE_PROT_OFF      // General Segment Code Protection (Disabled)
+51:                
+52:                /********************************************************************************/
+53:                /* SECCIÓN DE DECLARACIÓN DE CONSTANTES CON DEFINE								*/
+54:                /********************************************************************************/
+55:                #define EVER 1
+56:                #define NANCK 0
+57:                #define EXITO 1
+58:                #define MUESTRAS 10
+59:                
+60:                /********************************************************************************/
+61:                /* DECLARACIONES GLOBALES														*/
+62:                /********************************************************************************/
+63:                /*DECLARACIÓN DE LA ISR DEL TIMER 1 USANDO __attribute__						*/
+64:                /********************************************************************************/
+65:                void __attribute__((__interrupt__)) _T1Interrupt( void );
+66:                
+67:                /********************************************************************************/
+68:                /* CONSTANTES ALMACENADAS EN EL ESPACIO DE LA MEMORIA DE PROGRAMA				*/
+69:                /********************************************************************************/
+70:                int ps_coeff __attribute__ ((aligned (2), space(prog)));
+71:                /********************************************************************************/
+72:                /* VARIABLES NO INICIALIZADAS EN EL ESPACIO X DE LA MEMORIA DE DATOS			*/
+73:                /********************************************************************************/
+74:                int x_input[MUESTRAS] __attribute__ ((space(xmemory)));
+75:                /********************************************************************************/
+76:                /* VARIABLES NO INICIALIZADAS EN EL ESPACIO Y DE LA MEMORIA DE DATOS			*/
+77:                /********************************************************************************/
+78:                int y_input[MUESTRAS] __attribute__ ((space(ymemory)));
+79:                /********************************************************************************/
+80:                /* VARIABLES NO INICIALIZADAS LA MEMORIA DE DATOS CERCANA (NEAR), LOCALIZADA	*/
+81:                /* EN LOS PRIMEROS 8KB DE RAM													*/
+82:                /********************************************************************************/
+83:                int var1 __attribute__ ((near));
+84:                
+85:                void iniPerifericos( void );
+86:                void iniInterrupciones( void );
+87:                unsigned char configuraSensor( unsigned char config );
+88:                void START_I2C( void );
+89:                void ENVIA_DATO_I2C( unsigned char dato );
+90:                int main (void)
+91:                {
+0001AC  FA0002     LNK #0x2
+92:                    unsigned char estado;
+93:                    
+94:                    iniPerifericos();
+0001AE  07001A     RCALL iniPerifericos
+95:                    iniInterrupciones();
+0001B0  070016     RCALL iniInterrupciones
+96:                    estado = configuraSensor( 0x03 );  
+0001B2  B3C030     MOV.B #0x3, W0
+0001B4  070003     RCALL configuraSensor
+0001B6  784F00     MOV.B W0, [W14]
+97:                    for(;EVER;)
+98:                    {
+99:                       
+100:                       Nop();  
+0001B8  000000     NOP
+101:                   }
+0001BA  37FFFE     BRA 0x1B8
+102:                   
+103:                   return 0;
+104:               }
+105:               /**@brief: Esta funcion manda el valor de configuacion
+106:                * al sensor
+107:                * @param: config, Byte de configuracion
+108:                */
+109:               unsigned char configuraSensor( unsigned char config )
+110:               {
+0001BC  FA0002     LNK #0x2
+0001BE  784F00     MOV.B W0, [W14]
+111:                   START_I2C();
+0001C0  070028     RCALL 0x212
+112:                   
+113:                   ENVIA_DATO_I2C(0X90);   //direcccion del sensor
+0001C2  B3C900     MOV.B #0x90, W0
+0001C4  07002C     RCALL 0x21E
+114:                   if( I2CSTATbits.ACKSTAT == 1 ) //ACK del sensor
+0001C6  801041     MOV I2CSTAT, W1
+0001C8  280000     MOV #0x8000, W0
+0001CA  608000     AND W1, W0, W0
+0001CC  E00000     CP0 W0
+0001CE  320002     BRA Z, 0x1D4
+115:                       return NANCK;
+0001D0  EB4000     CLR.B W0
+0001D2  370003     BRA 0x1DA
+116:                   ENVIA_DATO_I2C(0X01);   //seleccion del registro
+0001D4  B3C010     MOV.B #0x1, W0
+0001D6  070023     RCALL 0x21E
+117:                                           //de configuracion
+118:                   //Continuara....
+119:                   return EXITO;
+0001D8  B3C010     MOV.B #0x1, W0
+120:               }
+0001DA  FA8000     ULNK
+0001DC  060000     RETURN
+121:               /****************************************************************************/
+122:               /* DESCRICION:	ESTA RUTINA INICIALIZA LAS INTERRPCIONES    				*/
+123:               /* PARAMETROS: NINGUNO                                                      */
+124:               /* RETORNO: NINGUNO															*/
+125:               /****************************************************************************/
+126:               void iniInterrupciones( void )
+127:               {
+0001DE  FA0000     LNK #0x0
+128:                   //Habilitacion de interrupcion del periférico 1
+129:                   //Habilitacion de interrupcion del periférico 2
+130:                   //Habilitacion de interrupcion del periférico 3
+131:               }
+0001E0  FA8000     ULNK
+0001E2  060000     RETURN
+132:               /****************************************************************************/
+133:               /* DESCRICION:	ESTA RUTINA INICIALIZA LOS PERIFERICOS						*/
+134:               /* PARAMETROS: NINGUNO                                                      */
+135:               /* RETORNO: NINGUNO															*/
+136:               /****************************************************************************/
+137:               void iniPerifericos( void )
+138:               {
+0001E4  FA0000     LNK #0x0
+139:                   PORTD = 0;
+0001E6  EF22D4     CLR PORTD
+140:                   Nop();
+0001E8  000000     NOP
+141:                   LATD = 0;
+0001EA  EF22D6     CLR LATD
+142:                   Nop();
+0001EC  000000     NOP
+143:                   TRISD = 0;
+0001EE  EF22D2     CLR TRISD
+144:                   Nop();
+0001F0  000000     NOP
+145:                   TRISDbits.TRISD8 = 1;
+0001F2  A802D3     BSET 0x2D3, #0
+146:                   Nop();
+0001F4  000000     NOP
+147:                      
+148:                   PORTF = 0;
+0001F6  EF22E0     CLR PORTF
+149:                   Nop();
+0001F8  000000     NOP
+150:                   LATF = 0;
+0001FA  EF22E2     CLR LATF
+151:                   Nop();
+0001FC  000000     NOP
+152:                   TRISF = 0;
+0001FE  EF22DE     CLR TRISF
+153:                   Nop();
+000200  000000     NOP
+154:                   
+155:                   I2CBRG = 2;//VELOCIDAD DE 400KHZ
+000202  200020     MOV #0x2, W0
+000204  881020     MOV W0, I2CBRG
+156:               }
+000206  FA8000     ULNK
+000208  060000     RETURN
+157:               
+158:               /********************************************************************************/
+159:               /* DESCRICION:	ISR (INTERRUPT SERVICE ROUTINE) DEL TIMER 1						*/
+160:               /* LA RUTINA TIENE QUE SER GLOBAL PARA SER UNA ISR								*/	
+161:               /* SE USA PUSH.S PARA GUARDAR LOS REGISTROS W0, W1, W2, W3, C, Z, N Y DC EN LOS */
+162:               /* REGISTROS SOMBRA																*/
+163:               /********************************************************************************/
+164:               void __attribute__((__interrupt__, no_auto_psv)) _T1Interrupt( void )
+165:               {
+00020A  FA0000     LNK #0x0
+166:                       IFS0bits.T1IF = 0;    //SE LIMPIA LA BANDERA DE INTERRUPCION DEL TIMER 1                      
+00020C  A96084     BCLR IFS0, #3
+167:               }
+00020E  FA8000     ULNK
+000210  064000     RETFIE
+---  /home/victor/micros/I2C.X/I2C.S  -------------------------------------------------------------------
+                                                  1:             .include "p30F4013.inc"
+                                                  2:     
+                                                  3:     		.GLOBAL	_START_I2C
+                                                  4:     		.GLOBAL	_ENVIA_DATO_I2C
+                                                  5:     		.GLOBAL	_RECIBE_DATO_I2C
+                                                  6:     		.GLOBAL	_ACK_I2C
+                                                  7:     		.GLOBAL	_STOP_I2C
+                                                  8:     		.GLOBAL	_RESTART_I2C
+                                                  9:     ;******************************************************************************
+                                                  10:    ;DESCRIPCION:	ESTA RUTINA GENERA LA CONDICION DE START AL BUS I2C, SE 
+                                                  11:    ;				RECOMIENDA VERIFICAR EL BIT P DE I2CSTAT ANTES DE LLAMAR A 
+                                                  12:    ;				ESTA FUNCION, PARA SABER SI EL BUS ESTA LIBRE. 
+                                                  13:    ;				SI P = 1, ENTONCES EL BUS ESTA LIBRE
+                                                  14:    ;PARAMETROS: 	NINGUNO
+                                                  15:    ;RETORNO: 		NINGUNO
+                                                  16:    ;******************************************************************************
+                                                  17:    _START_I2C:
+000212  A9C085     BCLR 0x85, #6                  18:    	BCLR		IFS0,			#MI2CIF
+000214  A80206     BSET I2CCON, #0                19:    	BSET		I2CCON,			#SEN
+                                                  20:    ESPERA_START:
+000216  AEC085     BTSS 0x85, #6                  21:    	BTSS		IFS0,			#MI2CIF
+000218  040216     GOTO 0x216                     22:    	GOTO		ESPERA_START
+                                                  23:    
+00021C  060000     RETURN                         24:    	RETURN
+                                                  25:    ;******************************************************************************
+                                                  26:    ;DESCRIPCION:	ESTA RUTINA MANDA UN DATO DE 8 BITS A UN DISPOSITIVO ESCLAVO,
+                                                  27:    ;				EL MODULO 12C GENERA EL 9o CICLO DE RELOJ PARA RECIBIR EL BIT
+                                                  28:    ;				ACK DEL ESCLAVO EN EL BIT ACKSTAT DEL REGISTRO I2CSTAT
+                                                  29:    ;PARAMETROS: 	W0,	DATO O DIRECCION A ENVIAR
+                                                  30:    ;RETORNO: 		NINGUNO
+                                                  31:    ;******************************************************************************
+                                                  32:    _ENVIA_DATO_I2C:
+00021E  A9C085     BCLR 0x85, #6                  33:    	BCLR		IFS0,			#MI2CIF
+000220  B7E202     MOV.B WREG, I2CTRN             34:    	MOV.B		WREG,			I2CTRN
+                                                  35:    ESPERA_ENVIA_DATO_I2C:
+000222  AEC085     BTSS 0x85, #6                  36:    	BTSS		IFS0,			#MI2CIF
+000224  040222     GOTO 0x222                     37:    	GOTO		ESPERA_ENVIA_DATO_I2C
+                                                  38:    	
+000228  060000     RETURN                         39:    	RETURN
+                                                  40:    ;******************************************************************************
+                                                  41:    ;DESCRIPCION:	ESTA RUTINA RECIBE UN DATO DE 8 BITS DE UN DISPOSITIVO ESCLAVO
+                                                  42:    ;PARAMETROS: 	NINGUNO
+                                                  43:    ;RETORNO: 		I2CRCV,	DATO LEIDO
+                                                  44:    ;******************************************************************************
+                                                  45:    _RECIBE_DATO_I2C:
+00022A  A9C085     BCLR 0x85, #6                  46:    	BCLR		IFS0,			#MI2CIF
+00022C  A86206     BSET I2CCON, #3                47:    	BSET		I2CCON,			#RCEN
+                                                  48:    
+                                                  49:    ESPERA_RECIBE_DATO_I2C:
+00022E  AEC085     BTSS 0x85, #6                  50:    	BTSS		IFS0,			#MI2CIF
+000230  04022E     GOTO 0x22E                     51:    	GOTO		ESPERA_RECIBE_DATO_I2C
+                                                  52:    
+000234  801000     MOV I2CRCV, W0                 53:    	MOV			I2CRCV,			W0	
+000236  060000     RETURN                         54:    	RETURN
+                                                  55:    ;******************************************************************************
+                                                  56:    ;DESCRIPCION:	ESTA RUTINA GENERA LA CONDICION ACK DEL MAESTRO HACIA EL ESCLAVO 
+                                                  57:    ;				DESPUES DE UNA RECEPCION
+                                                  58:    ;PARAMETROS: 	ACKDT,	BIT DE I2CCON QUE ESPECIFICA VALOR DEL BIT ACK
+                                                  59:    ;				ACKDT = 1, NACK
+                                                  60:    ;				ACKDT = 0, ACK
+                                                  61:    ;RETORNO: 		NINGUNO
+                                                  62:    ;******************************************************************************
+                                                  63:    _ACK_I2C:
+000238  A9C085     BCLR 0x85, #6                  64:    	BCLR		IFS0,			#MI2CIF
+00023A  A9A206     BCLR I2CCON, #5                65:    	BCLR		I2CCON,			#ACKDT
+00023C  A88206     BSET I2CCON, #4                66:    	BSET		I2CCON,			#ACKEN
+                                                  67:    ESPERA_ACK_I2C:
+00023E  AEC085     BTSS 0x85, #6                  68:    	BTSS		IFS0,			#MI2CIF
+000240  04023E     GOTO 0x23E                     69:    	GOTO		ESPERA_ACK_I2C
+                                                  70:    	
+000244  060000     RETURN                         71:    	RETURN
+                                                  72:    ;******************************************************************************
+                                                  73:    ;DESCRIPCION:	ESTA RUTINA GENERA LA CONDICION ACK DEL MAESTRO HACIA EL ESCLAVO 
+                                                  74:    ;				DESPUES DE UNA RECEPCION
+                                                  75:    ;PARAMETROS: 	ACKDT,	BIT DE I2CCON QUE ESPECIFICA VALOR DEL BIT ACK
+                                                  76:    ;				ACKDT = 1, NACK
+                                                  77:    ;				ACKDT = 0, ACK
+                                                  78:    ;RETORNO: 		NINGUNO
+                                                  79:    ;******************************************************************************
+                                                  80:    _NACK_I2C:
+000246  A9C085     BCLR 0x85, #6                  81:    	BCLR		IFS0,			#MI2CIF
+000248  A8A206     BSET I2CCON, #5                82:    	BSET		I2CCON,			#ACKDT
+00024A  A88206     BSET I2CCON, #4                83:    	BSET		I2CCON,			#ACKEN
+                                                  84:    ESPERA_NACK_I2C:
+00024C  AEC085     BTSS 0x85, #6                  85:    	BTSS		IFS0,			#MI2CIF
+00024E  04024C     GOTO 0x24C                     86:    	GOTO		ESPERA_NACK_I2C
+                                                  87:    	
+000252  060000     RETURN                         88:    	RETURN
+                                                  89:    
+                                                  90:    ;******************************************************************************
+                                                  91:    ;DESCRIPCION:	ESTA RUTINA GENERA LA CONDICION DE STOP DEL BUS I2C 
+                                                  92:    ;PARAMETROS: 	NINGUNO
+                                                  93:    ;RETORNO: 		NINGUNO
+                                                  94:    ;******************************************************************************
+                                                  95:    _STOP_I2C:
+000254  A9C085     BCLR 0x85, #6                  96:    	BCLR		IFS0,			#MI2CIF
+000256  A84206     BSET I2CCON, #2                97:    	BSET		I2CCON,			#PEN
+                                                  98:    ESPERA_STOP_I2C:
+000258  AEC085     BTSS 0x85, #6                  99:    	BTSS		IFS0,			#MI2CIF
+00025A  040258     GOTO 0x258                     100:   	GOTO		ESPERA_STOP_I2C
+                                                  101:   	
+00025E  060000     RETURN                         102:   	RETURN
+                                                  103:   ;******************************************************************************
+                                                  104:   ;DESCRIPCION:	ESTA RUTINA GENERA LA CONDICION DE RESTART DEL BUS I2C 
+                                                  105:   ;PARAMETROS: 	NINGUNO
+                                                  106:   ;RETORNO: 		NINGUNO
+                                                  107:   ;******************************************************************************
+                                                  108:   _RESTART_I2C:
+000260  A9C085     BCLR 0x85, #6                  109:   	BCLR		IFS0,			#MI2CIF
+000262  A82206     BSET I2CCON, #1                110:   	BSET		I2CCON,			#RSEN
+                                                  111:   ESPERA_RESTART_I2C:
+000264  AEC085     BTSS 0x85, #6                  112:   	BTSS		IFS0,			#MI2CIF
+000266  040264     GOTO 0x264                     113:   	GOTO		ESPERA_RESTART_I2C
+                                                  114:   	
+00026A  060000     RETURN                         115:   	RETURN
+                                                  116:   
+                                                  117:   

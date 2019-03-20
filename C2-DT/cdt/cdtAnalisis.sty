@@ -1,0 +1,501 @@
+%!TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Componente: cdtAnalisis.sty
+%  Autor: Ulises Vélez Saldaña
+%  Fecha: 6 de Abril, 2013
+%  Versión: 2.3
+%  Biblioteca: cdt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cdtAnalisis}[2013/04/06, v2.3 CDT-ESCOM-IPN Paquete para escribir documentos de Análisis de Requerimeintos]
+\RequirePackage{cdt/cdtBook}
+\RequirePackage{chapterfolder}
+\RequirePackage{keystroke}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cambios con respecto a la version anterior:
+% - Deprecated: 
+%      - Ambiente problemas. --> ver cdtProlemas.sty
+%      - \refEnt --> usar \cdtRef
+%      - \refReq --> usar \cdtIdRef
+%      - \obligatorio, \na, \opcional --> ver cdtBusiness.sty
+%      - \refActor
+%      - \refUC
+% - Nuevos comandos:
+%      - cdtEmpty
+%      - cdtLabel
+%      - cdtRef
+%      - cdtIdRef
+%      - \redefUCactor
+%      - \redefUCsist
+% - Se mantienen sin cambios:
+%      - Ambiente requerimientos
+%      - \RFitem
+%      - Ambiente atributoDeSotware
+%      - Ambiente Actor (se cambió por 'actor')
+%      - Ambiente useCase
+%      - \UCitem
+%      - \UCccitem
+%      - \UCsection
+%      - \UCccsection
+%      - Ambiente UClist
+%      - \UCli
+%      - \refUC
+%      - Ambiente UCtrayectoria
+%      - \UCpaso
+%      - Ambiente UCtrayectoriaA
+%      - \refTray
+%      - \includeUC
+%      - \UCExtensionPoint
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%=====================================================================
+% DEFINICION DE COLORES PARA EL CONTROL DE VERSIONES
+%=====================================================================
+
+\definecolor{cdtTODOColor}{rgb}{1.0, 0.0, 0.0}	
+\definecolor{cdtTOCHKColor}{rgb}{0.8, 0.5, 0.0}	
+\definecolor{cdtDONEColor}{rgb}{0.0, 0.5, 0.0}	
+
+%=====================================================================
+% Comando: \cdtEmpty
+% Propósito: Produce un espacio vacío de 10pt. Este se puede usar cuando es requerido hacer una linea en banco o etiquetar un lugar que no produce contenido.
+% Ejemplo: En el siguiente ejemplo se utiliza para que las viñetas aparezcan por debajo del texto ``Entradas:''. es requerido ya que sin él LaTeX generaría un error.
+%\begin{description}
+%	\item[id:] 5
+%	\item[Entradas:] \cdtEmpty\\
+%		\begin{itemize}
+% 			\item ...
+%		\end{itemize}
+%\end{description}
+%=====================================================================
+\newcommand{\cdtEmpty}{{\vspace{10pt}\hspace{10pt}~}}
+
+%=====================================================================
+% Comando: \cdtLabel{id}{Texto}
+% Propósito: Producir una etiqueta en el documento. Para generar una etiqueta vacía utilice \cdtLabel{id}{\cdtEmpty}
+%=====================================================================
+\newcommand{\cdtLabel}[2]{\hypertarget{#1}{#2}}
+
+%=====================================================================
+% Comando: \cdtRef{id}{Nombre}
+% Propósito: Producir un texto que referencía aigun elemento del documento, por ejemplo: Casos de Uso, Reglas de Negocio, Entidad, Actor, Interfaz, Mensaje, etc. Este comando genera como salida el ``nombre'' que referencía al elemento identificado por ``id''
+% Ejemplo: ...la \cdtLabel{coordinacion}{Coordinación} esta en ...
+%          se puede ver en la \cdtRef
+
+%=====================================================================
+\newcommand{\cdtRef}[2]{%
+	\hyperlink{#1}{{#2}}%
+}
+
+%=====================================================================
+% Comando: \cdtIdRef{id}{Nombre}
+% Propósito: Funciona igual que cdtRef, solo que en la salida aparece también el ID referenciado, ideal para Casos de uso, reglas de negocio, mensajes e Interfaces.
+% Ejemplo: mediante la pantalla \cdtIdRef{IU5}{Registrar alumno}
+%=====================================================================
+\newcommand{\cdtIdRef}[2]{%
+	\hyperlink{#1}{{#1}\ {#2}}%
+}
+
+%=====================================================================
+% Ambiente: requerimientos 
+% Propósito: Definir requerimientos iniciales.
+% Ejemplo:
+%	 \begin{requerimientos}[color]
+%		\RFitem{id}{Nombre del Req}{Descripción}
+%		\RFitem{id}{Nombre del Req}{Descripción}
+%		\RFitem{id}{Nombre del Req}{Descripción}
+%	 \end{requerimientos}
+%=====================================================================
+\newenvironment{requerimientos}[1][Requerimientos iniciales para el sistema]
+{%
+	\arrayrulecolor{colorPrincipal}%
+	\par\begin{longtable}{| p{.05\textwidth} | p{.2\textwidth} | p{.67\textwidth} |}%
+		\arrayrulecolor{colorPrincipal}%
+		\hline%
+		\rowcolor{colorPrincipal}%
+		\multicolumn{3}{|c|}{\bf\color{colorPrincipal}#1}\\%
+		\arrayrulecolor{white}%
+		\rowcolor{colorPrincipal}%
+		\RFitem{\color{white}\bf Id}{\color{white}\bf Nombre}{\color{white}\bf Descripción}\endhead%
+		\arrayrulecolor{colorPrincipal}%
+}{%
+	\end{longtable} %
+	\arrayrulecolor{black} %
+}
+
+%=====================================================================
+% Deprecated: usar \cdtRef \cdtIdRef
+%=====================================================================
+%------------------------------------------------------------------------
+% Referencia a un Requerimiento, puede ser: un Problema, Funcional, No funcional, Regma de negocio, Caso de uso, Interfaz, Mensaje
+% use: \refReq{id}{Nombre}
+%\newcommand{\refReq}[2]{%
+%	\hyperlink{#1}{#1 #2}%
+%}
+
+%=====================================================================
+% Comando: \RFitem{id}{Nombre del Req}{Descripción}
+% Propósito: Definir un requerimiento.
+%=====================================================================
+\newcommand{\RFitem}[3]{\par{\bf\hypertarget{#1}{#1}} & {#2} & {#3} \\ \hline}%
+
+%=====================================================================
+% Ambiente: atributoDeSoftware
+% Propósito: Definir atributos de software: usabilidad, funcionalidad, etc.
+% Parametros:
+%     - Tipo: Propiedad, Restricción, Negocio
+% Ejemplo:
+%	 \begin{atributoDeSoftware}{id}{Tipo}{Nombre}
+%	  \item[Objetivo:] Objetivo que explica el comportamiento esperado del sistema en relación a este atributo.}
+%		\item[Definición:] Descripción acordada sobre la forma de interpretar al atributo de forma concreta.
+%		\item[Métrica:] Descripción objetiva, reproducible y cuantificable de la medición de la propiedad.
+%		\item[Unidad de medida:] Descripción de la unidad de medida utilizada para presentar el resultado de la medición.
+%		\item[Medición:] Descripción del procedimiento y ambiente en necesarios para obtener evidencia objetiva sobre la propiedad que se pueda presentar en la Unidad de medida descrita. Esta descripción debe garantizar su reprodución: la repeticion del procedimiento, bajo las mismas condiciones descritas,  de los mismos artefactos de software,  deben producir los mismos resultados.
+%		\item[Meta:] Descripción del rango de valores de la Unidad de medida que determina si la propiedad de software se cumple o no.
+%	 \end{atributoDeSoftware}
+%=====================================================================
+\newenvironment{atributoDeSoftware}[3]%
+{%
+	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%
+		\item[\color{colorPrincipal}\hypertarget{rnf:#1}{#1}:]  {\bf#2}
+		\item[Tipo:] {#3}%
+}%
+{%
+	\end{description}%
+}
+
+%=====================================================================
+% USE CASES
+%=====================================================================
+
+%=====================================================================
+% Comandos: \UCactor, \UCsist
+% Propósito: especificar que es el actor o el sistema el que ejecuta los pasos de las trayectorias de los casos de uso.
+% Ejemplo: ver el ejemplo de trayectoria.
+%=====================================================================
+\newcommand\UCactor{\raisebox{-1mm}{\includegraphics[height=11pt]{cdt/uc/actor}}}
+\newcommand\UCsist{\raisebox{-1mm}{\includegraphics[height=11pt]{cdt/uc/usecase}}}
+
+%=====================================================================
+% Comandos: \redefUCactor, \redefUCsist
+% Propósito: Cambiar la imágen o el texto que se debe producir cuando se expande un paso de una trayectoria.
+% Ejemplo: \redefUCactor{El actor }
+%=====================================================================
+\newcommand{\redefUCactor}[1]{\renewcommand{\UCactor}{#1}}
+\newcommand{\redefUCsist}[1]{\renewcommand{\UCsist}{#1}}
+
+%=====================================================================
+% Ambiente: Actor
+% Definir los atributos de los actores que participan en el sistema.
+% \begin{Actor}[icono]{Nombre del actor}
+% 	\item[Descripción:] Descripcion del usuario.
+% 	\item[Área:] Área(s) dentro de la organización a la(s) que pertenece el actor
+%	\item[Responsabilidades:]  Liste las responsabilidades que desempeña el actor dentro de la organización.
+% 	\item[Perfil:] Especifique el nivel académico, área de conocimeinto, capacidades y/o habilidades que debe contar el personal que participa en el sistema con este rol.
+% 	\item[Cantidad:] Especifíque la cantidad estimada (orden de magnitud: decentas, centenas, millares, etc.) de personas con este perfil que usarán el sistema.
+% \end{Actor}
+\newenvironment{actor}[4][cdt/uc/rules/ActorRule]
+{%
+    \subsection{#2}%
+	\hypertarget{actor:#3}{}%
+	\noindent{\includegraphics[width=\textwidth]{#1}}\\
+	{\bf Nombre:} #2%
+	\begin{description}%
+	\item[Descripción:] #4%
+}{%
+	\end{description}%
+}
+
+%-----------------------------------------------------------------------
+% DEPRECATED: usar \cdtRef{actor:id}{Nombre}
+% Referencia a un Actor
+% use: \refActor{Id}
+%\newcommand{\refActor}[1]{%
+%	\hyperlink{actor:#1}{#1}%
+%}
+
+
+%-----------------------------------------------------------------------
+\newcounter{counterUC}
+\newcommand{\varIdUseCase}{}
+%-----------------------------------------------------------------------
+% Comando para describir un Use Cases
+% use:
+% \begin{UseCase}[fileImagenUC]{idUC}{nomUC}{descripcion completa}
+%   \UCitem{Actor} {Vendedor}
+%   ...
+% \end{UseCase}
+%
+% Ejemplo:
+% \begin{UseCase}[UCXimage]{idUC}{nomUC}
+%	{
+%		Resúmen del CU
+%	}
+%	\UCitem{Versión}{Versión del CU}
+%	\UCsection{Administración de Requerimientos}
+%	\UCitem{Autor}{Nombre del responsable de la especificación del Use Case o de las modificaciones de la versión}
+%	\UCitem{Evaluador}{Nombre del responsable de la Evaluación y aprobación del CU.}
+%	\UCitem{Operación}{Consulta, Altas Bajas y Cambios, Negocio, Reporte, Selección/Asignación de datos, Calculo masivo, etc..}
+%	\UCitem{Prioridad}{Importancia de este CU con respecto a los demás: Alta/Media/Baja}
+%	\UCitem{Terminado}{Fecha de el último cambio al Use Case}
+%	\UCitem{Evaluado}{Fecha de el último cambio al Use Case}
+%	\UCitem{Complejidad}{Complejidad del CU: Muy alta/Alta/Media/Baja/ Muy baja}
+%	\UCitem{Volatilidad}{Frecuencia y magniud de los cambios que ha sufrido: Muy alta/Alta/Media/Baja/ Muy baja}
+%	\UCitem{Madurez}{Nivel de comprención y confianza en que el CU está completo y es corecto: Muy alta/Alta/Media/Baja/ Muy baja}
+%	\UCitem{Status}{Edición/Terminado/Evaluado/Aprobado.}
+%	\UCsection{Atributos}
+%	\UCitem{Hereda de}{Use Case del que hereda}
+%	\UCitem{Actor(es)}{\refActor{Nombre} Nombres de los actores que ejecutan el CU}
+%	\UCitem{Propósito}{Razón o motivación del actor para realziar el Use Case}
+%	\UCitem{Entradas}{Liste o referencíe los datos de entrada al sistema durante el CU: Nombre, tipo y descripción, etc. Especifíque el metodo de introducción de los mismos: teclado, raton, camara, lector de barras, algun sensor, etc.}
+%	\UCitem{Salidas}{Liste o referencíe los datos de salida o resultados del sistema, Especifíque el dispositivo en donde se presentarán las salidas: pantalla, impresora, otro sistema, brazo mecánico, etc. }
+%	\UCitem{Precondiciones}{Estado inicial necesario para ejecutar el Use Case (especifique el }
+%	\UCitem{Postcondiciones}{Estado final del sistema después de ejecutar el Use Case. Efectos colaterales}
+%	\UCitem{Errores}{Especifíque los posibles errores (casos excepcionales: falla de algun sistema, del la BD; etc.): \refError{id}{Nombre}}
+%	\UCitem{Tipo}{Primario o secundario (viene de un PE o una Inclusión). En caso de ser secundario especifíque el CU del cual Extiende o se Incluye: Secudario, extiende/incluye de \refUC{IdCU}.}
+%	\UCitem{Fuente}{Documentos, personas o especificaciones que proporcionaron información para la especificación de este UseCase}
+%	\UCitem{Observaciones}{Especifique cualquier aspecto que considere relevante a considerar para la interpretación e implementación del CU.}
+% \end{UseCase}
+\newenvironment{UseCase}[4][cdt/uc/rules/UCRule]
+{\newpage%
+\renewcommand{\varIdUseCase}{#2}%
+\addtocounter{counterUC}{1}%
+\ThisCenterWallPaper{0.85}{#1}%
+\section{#2 #3}%
+\noindent\hypertarget{#2}{}%
+\subsection{Resumen}%
+#4%
+\subsection{Descripción}%
+\arrayrulecolor{black}%
+\par\begin{longtable}{| p{.17\textwidth} | p{.75\textwidth} |}%
+	\arrayrulecolor{black}%
+	\rowcolor{black}%
+	\UCitem{\color{white}Caso de Uso}{\color{white}#2 #3}%
+	\endhead%
+	\arrayrulecolor{black}%
+}
+{\end{longtable}%
+\subsection{Trayectorias del caso de uso}}
+
+%----------------------------------------------------------------------
+% Agregar un elemento a la descripción del CU
+% use \UCitem{item}{descripción}
+% use \UCccitem{item}{descripción} para Gestión.
+\newcommand{\UCitem}[2]{{\bf {#1:}} & {#2} \\ \hline}%
+\newcommand{\UCccitem}[2]{{\bf {\color{colorGris}#1:}} & {\color{colorGris}#2} \\ \hline}%
+
+%----------------------------------------------------------------------
+% Agregar una sección en la descripción del CU
+% use \UCseccion[color]{descripción}
+% use \UCccseccion[color]{descripción} para gestión
+\newcommand{\UCsection}[1]{\multicolumn{2}{|c|}{{\bf \color{colorPrincipal}#1}}\\ \hline}
+\newcommand{\UCccsection}[1]{\multicolumn{2}{|c|}{{\bf \color{colorGris}#1}}\\ \hline}
+
+
+%------------------------------------------------------------------------
+% Agregar una lista de datos en la tabla de descripción de Casos de Uso
+% use:
+% \begin{UClist}
+% 		\UCli Bla bla bla
+% 		\UCli[o] Bla bla bla
+% \end{UClist}	
+\newenvironment{UClist}{\vspace{-1em}}{\vspace{0em}}
+
+%------------------------------------------------------------------------
+% use \UCli Bla bla bla
+\newcommand{\UCli}[1][\textbullet]{%
+	\par{ \color{colorPrincipal}{#1} }%
+}
+
+%------------------------------------------------------------------------
+% DEPRECATED: usar : \cdtIdRef{id}{Nombre} o \cdtRef{id}{Nombre}
+% Referencia a un Caso de Uso
+% use: \refUC{Id} 
+%\newcommand{\refUC}[1]{%
+%	\hyperlink{#1}{#1}%
+%}
+
+\newcommand{\ioEscribir}{Se escribe desde el teclado}
+\newcommand{\ioSeleccionar}{Se selecciona de una lista}
+\newcommand{\ioEscanear}[1][Código de Barras]{Se lee con un escáner de #1} %\ioEscanear{8086}
+\newcommand{\ioObtener}{Lo obtiene el sistema}
+\newcommand{\ioCalendario}{Se selecciona de un calendario}
+\newcommand{\ioRadioBoton}{Se selecciona una opción de las disponibles}
+\newcommand{\ioCheckBox}{Puede o no seleccionar esta opción}
+
+\newcommand{\ioGenerar}{Lo genera el sistema}
+\newcommand{\ioCalcular}[1]{Lo calcula el sistema mediante la regla #1}
+\newcommand{\ioListado}[1][]{Lista de todos los registros #1}
+\newcommand{\ioTabla}[2]{Tabla que muestra #1 de todos los registros #2} %\ioTabla{campos de la tabla}{estado}
+\newcommand{\ioPestana}{Se selecciona de una pestaña}%PROPUESTA
+%------------------------------------------------------------------------
+% Comando para escribir una trayectoria principal
+% use:
+% \begin{UCtrayectoria}
+%    \UCpaso[\UCActor] Oprime el boton buscar
+%    \UCpaso[\UCsist] Verifica que el usuario tenga permisos \refTray{IDTrayectoria}
+%    \UCpaso[\UCsist] El sistema ...
+%    \UCpaso[\UCsist] El sistema ...
+%    \UCpaso[\UCsist] El sistema ...
+%    ...
+% \end{UCtrayectoria}
+\newenvironment{UCtrayectoria}
+{%
+	\bigskip\noindent {\large {\bf Trayectoria principal}\\}%
+	\renewcommand{\labelenumi}{\textcolor{black}{\bf \theenumi}}%
+	\begin{enumerate}\addtolength{\itemsep}{-0.5\baselineskip}%
+}%
+{%
+	\item[- -] - - {\em Fin del caso de uso}. \end{enumerate}%
+	\renewcommand{\labelenumi}{\theenumi}%
+}
+
+\newcommand{\varCurrentIdTray}{}
+\newcommand{\varCurrentFinTray}{}
+%------------------------------------------------------------------------
+% Comando para describir trayectorias Alternativas
+% use:
+% \begin{UCtrayectoriaA}{Id}{Condicion}
+%    \UCpaso[\UCActor] El actor oprime el boton buscar
+%    \UCpaso[\UCsist] El sistema ...
+%    ...
+% \end{UCtrayectoria}
+\newenvironment{UCtrayectoriaA}[3][Fin de trayectoria]
+{%
+	\renewcommand{\varCurrentFinTray}{#1}%
+	\renewcommand{\varCurrentIdTray}{#2}%
+	\bigskip\noindent \hypertarget{tray:\arabic{counterUC}#2}{\large {\bf Trayectoria alternativa #2:}}%
+	\\{\small{\em\bf Condición:} {\em {#3}}}%
+	\renewcommand{\labelenumi}{\textcolor{black}{\bf {#2}-\theenumi}}%
+	\normalsize\begin{enumerate}\addtolength{\itemsep}{-0.5\baselineskip}%
+}%
+{%
+	\item[- -] - - {\em \varCurrentFinTray}. \end{enumerate}%
+	\renewcommand{\labelenumi}{\theenumi}%
+}
+
+%------------------------------------------------------------------------
+% Comando para agregar un paso a una trayectoria, el paso puede ser
+% dado por el actor \UCactor o por el sistema \UCsist, por defecto el
+% paso es dado por el sistema.
+% use:
+%	\UCpaso[\UCactor] Descripcion del paso.
+% 	\UCpaso[\UCsist] Descripcion del paso.
+% 	\UCpaso Descripcion del paso (tiene el mismo efecto que el anterior).
+\newcommand{\UCpaso}[1][\UCsist]{\item {#1} }
+
+
+
+%-------------------------------------------------------------------------
+% Referencia a una Trayectoria Alternativa.
+% use: \refTray{Id}
+\newcommand{\refTray}[1]{%
+	%
+	\hyperlink{tray:\arabic{counterUC}#1}{ $[$Trayectoria  #1$]$}%
+}
+
+%-------------------------------------------------------------------------
+% Referencia a un caso de uso incluido
+% use: \includeUC{Id}
+\newcommand{\includeUC}[2]{\UCpaso[] {\bf Incluye el caso de uso } \cdtIdRef{#1}{#2}}
+
+
+%-------------------------------------------------------------------------
+% Referencia a un Punto de Extensión
+%use: \UCExtensionPoint{Situación que genera la extensión.}{región(seccion de la trayectoria en la que se puede dar la extensión)}{CU al que extienda}
+% Ejemplo:
+%	\UCExtensionPoint{Agregar artículo}{El actor quiere agregar un artículo a su carrito de compras.}{del paso 2 al paso 7}{\refUC{CU7.1}}
+\newcommand{\UCExtensionPoint}[3]{%
+\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%
+	\item[Causa de la extensión:] #1.%
+	\item[Región de la trayectoria:] #2.%
+	\item[Extiende a:] #3.%
+\end{description}%
+}%
+
+%=====================================================================
+% COMANDOS PARA INTERFAZ DE USUARIO
+%=====================================================================
+
+%-------------------------------------------------------------------------
+% Insertar una Interfaz de Usuario
+% use: \IUfig[width]{imagefile}{id}{Nombre de la pantalla}
+\newcommand{\IUfig}[4][0.7]{%
+	\begin{figure}[htpb!]%
+		\begin{center}%
+			\hypertarget{#3}{\includegraphics[width=#1\textwidth]{images/#2}}%
+			\caption{%
+#3 #4}%
+			\label{#3}%
+		\end{center}%
+	\end{figure}%
+}
+
+\newcommand{\cdtButton}[1]{\keystroke{#1}}
+
+
+%%==========================================================================
+% Para definir un mensaje.
+% Use:
+%
+%\begin{mensaje}{MSGX}{Nombre del mensaje}{Operación/Notificación/Alerta/Error}
+%	\item[Redacción:] Redacción del mensaje.
+%	\item[Parámetros:] El mesaje se instancía con base en los siguientes parámetros:
+%		\begin{Citemize}
+% 			\item Nombre del parametro: Descripción del Parametro.
+%		\end{Citemize}
+%	\item[Ejemplo:] Uno o varios ejemplo del mensaje.
+%\end{mensaje}
+%==========================================================================
+\newenvironment{mensaje}[3]{%
+	\hypertarget{#1}{{\hspace{1pt}}}%
+	\subsubsection{{#1} {#2}} %ID y nombre del mensaje
+	\vspace{-7mm}%
+	\noindent{\includegraphics[width=\textwidth]{cdt/uc/rules/MsgRule}}%
+	\vspace{-7mm}%
+	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%%
+		\item[Tipo:] {#3} %Operación Realizada/Notificación/Alerta/Error
+}{%
+	\end{description}%
+}
+
+%==========================================================================
+% \imgInline[hwight]{src}
+%==========================================================================
+\newcommand{\imgInline}[2][10pt]{~\raisebox{-1mm}{\includegraphics[height=#1]{images/#2}}~}
+
+
+\newcommand{\TODO}[1][]{ {\color{cdtTODOColor}TODO:{\em\ #1}}}%
+\newcommand{\TOCHK}[1][]{ {\color{cdtTOCHKColor}TOCHK:{\em\ #1}}}%
+\newcommand{\DONE}[1][]{ {\color{cdtDONEColor}DONE:{\em\ #1}}}%
+
+%==========================================================================
+% MANEJO DE PETICIONES DE CAMBIOS
+%==========================================================================
+
+%-------------------------------------------------------------------------
+% Agregar una petición de cambio
+% use \RCitem{id}{descripción}{status: \DONE, \TODO o \TOCHK}
+\newcommand{\RCitem}[3]{%
+	\UCli {\color{gray}{\bf \varIdUseCase #1} #2 {\em #3}}%
+}
+
+%-------------------------------------------------------------------------
+% Utilice \hideControlVersion para eliminar de la salida toda la información de control de cambios.
+\newcommand{\hideControlVersion}{%
+	\renewcommand{\RCitem}[3]{}
+	\renewcommand{\UCccitem}[2]{}
+	\renewcommand{\UCccsection}[1]{}
+}
+
+
+% Comandos para mensajes
+\newcommand{\msjSuperior}{En la parte superior de la pantalla}
+\newcommand{\msjCentro}{Centrado en la pantalla}
+\newcommand{\msjEmergente}{Ventana emergente}
+\newcommand{\msjCorreo}{Correo electrónico}
+\newcommand{\msjCampo}{Debajo del campo donde ocurrió el error}
+\newcommand{\msjIcono}{Ícono de ayuda}
+\newcommand{\msjPantalla}{Se muestra en la pantalla}
+\newcommand{\msjPDF}{PDF}
+\newcommand{\msjPop}{Pop bloqueante}
