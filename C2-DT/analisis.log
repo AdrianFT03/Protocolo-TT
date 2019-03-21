@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.20)  20 MAR 2019 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.20)  21 MAR 2019 15:21
 entering extended mode
 **./analisis.tex
 (analisis.tex
@@ -904,14 +904,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-
-Underfull \vbox (badness 2111) has occurred while \output is active []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 
+l.14 
       [1
 
 ]
@@ -924,21 +921,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-(Introduccion/estadoArte.tex))
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 104.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 41.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 104.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 41.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.104 \chapter
-              {Marco Teórico}\label{chp:marcoTeorico} [2]
+l.41 \subsection
+                {Objetivos específicos} [2]
+LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 43.
+
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/cmbright\omscmbr.fd"
+File: omscmbr.fd 2005/04/13 v8.1 (WaS)
+)
+LaTeX Font Info:    Font shape `OMS/cmbr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 43.
+
+(Introduccion/estadoArte.tex))
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
 Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 104.
@@ -1065,20 +1071,20 @@ Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 115.
 ]
 Cap\'{\i }tulo 7.
 (ModeloNegocios/modelo.tex (ModeloNegocios/reglas.tex
-<cdt/uc/rules/BRRule.png, id=446, 890.32625pt x 55.20625pt>
+<cdt/uc/rules/BRRule.png, id=447, 890.32625pt x 55.20625pt>
 File: cdt/uc/rules/BRRule.png Graphic file (type png)
 <use cdt/uc/rules/BRRule.png>
 Package pdftex.def Info: cdt/uc/rules/BRRule.png  used on input line 34.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
 )
 (ModeloNegocios/actores.tex
-<ModeloComportamiento/imagenes/Actores.png, id=451, 504.88625pt x 243.91125pt>
+<ModeloComportamiento/imagenes/Actores.png, id=452, 504.88625pt x 243.91125pt>
 File: ModeloComportamiento/imagenes/Actores.png Graphic file (type png)
 <use ModeloComportamiento/imagenes/Actores.png>
 Package pdftex.def Info: ModeloComportamiento/imagenes/Actores.png  used on inp
 ut line 12.
 (pdftex.def)             Requested size: 266.14978pt x 128.57637pt.
-<cdt/uc/rules/ActorRule.png, id=452, 890.32625pt x 55.20625pt>
+<cdt/uc/rules/ActorRule.png, id=453, 890.32625pt x 55.20625pt>
 File: cdt/uc/rules/ActorRule.png Graphic file (type png)
 <use cdt/uc/rules/ActorRule.png>
 Package pdftex.def Info: cdt/uc/rules/ActorRule.png  used on input line 19.
@@ -1097,7 +1103,7 @@ g>]
 Cap\'{\i }tulo 8.
 (ModeloComportamiento/comportamiento.tex
 (ModeloComportamiento/modulosSistema.tex
-<ModeloComportamiento/imagenes/modulosSistema.png, id=470, 725.71124pt x 421.57
+<ModeloComportamiento/imagenes/modulosSistema.png, id=471, 725.71124pt x 421.57
 5pt>
 File: ModeloComportamiento/imagenes/modulosSistema.png Graphic file (type png)
 <use ModeloComportamiento/imagenes/modulosSistema.png>
@@ -1108,7 +1114,7 @@ Package pdftex.def Info: ModeloComportamiento/imagenes/modulosSistema.png  used
 (ModeloComportamiento/comportamientoModulos.tex [19
 
  <./ModeloComportamiento/imagenes/modulosSistema.png>]
-<ModeloComportamiento/imagenes/CasosUso_Usuario.png, id=477, 1041.8925pt x 394.
+<ModeloComportamiento/imagenes/CasosUso_Usuario.png, id=478, 1041.8925pt x 394.
 47375pt>
 File: ModeloComportamiento/imagenes/CasosUso_Usuario.png Graphic file (type png
 )
@@ -1125,7 +1131,7 @@ File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 11.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
  [20 <./ModeloComportamiento/imagenes/CasosUso_Usuario.png>]
-<ModeloComportamiento/imagenes/CUSistema.png, id=484, 803.0pt x 580.1675pt>
+<ModeloComportamiento/imagenes/CUSistema.png, id=485, 803.0pt x 580.1675pt>
 File: ModeloComportamiento/imagenes/CUSistema.png Graphic file (type png)
 <use ModeloComportamiento/imagenes/CUSistema.png>
 Package pdftex.def Info: ModeloComportamiento/imagenes/CUSistema.png  used on i
@@ -1159,14 +1165,6 @@ Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 38.
 
 ])
 (ModeloComportamiento/AplicacionMovil/comportamiento.tex
-LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 6.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/cmbright\omscmbr.fd"
-File: omscmbr.fd 2005/04/13 v8.1 (WaS)
-)
-LaTeX Font Info:    Font shape `OMS/cmbr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 6.
-
 (ModeloComportamiento/AplicacionMovil/cu1/cu.tex
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
@@ -1448,7 +1446,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
 Here is how much of TeX's memory you used:
  11206 strings out of 492946
  162937 string characters out of 3135524
- 294311 words of memory out of 3000000
+ 294312 words of memory out of 3000000
  14617 multiletter control sequences out of 15000+200000
  10888 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1473,9 +1471,9 @@ ed by a fixed one
 cmbright/dpi657\cmbrsl10.pk> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk
 /ljfour/public/cmbright/dpi657\cmbrbx10.pk> <C:\Users\Adrian\AppData\Local\MiKT
 eX\2.9\fonts/pk/ljfour/public/cmbright/dpi720\cmbrsl10.pk> <C:\Users\Adrian\App
-Data\Local\MiKTeX\2.9\fonts/pk/ljfour/public/cmbright/dpi720\cmbrsy10.pk> <C:\U
-sers\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/cmbright/dpi1493\cm
-brbx10.pk> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/cmb
+Data\Local\MiKTeX\2.9\fonts/pk/ljfour/public/cmbright/dpi1493\cmbrbx10.pk> <C:\
+Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/cmbright/dpi720\cm
+brsy10.pk> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/cmb
 right/dpi1037\cmbrbx10.pk> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/l
 jfour/public/cmbright/dpi864\cmbr17.pk> <C:\Users\Adrian\AppData\Local\MiKTeX\2
 .9\fonts/pk/ljfour/public/cmbright/dpi864\cmbrbx10.pk> <C:\Users\Adrian\AppData
@@ -1485,7 +1483,7 @@ k> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/cmbright/dp
 i600\cmbr17.pk> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/publi
 c/cmbright/dpi450\cmbr8.pk> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/
 ljfour/public/cmbright/dpi720\cmbr10.pk>
-Output written on analisis.pdf (47 pages, 996762 bytes).
+Output written on analisis.pdf (47 pages, 997734 bytes).
 PDF statistics:
  1099 PDF objects out of 1200 (max. 8388607)
  143 named destinations out of 1000 (max. 500000)
