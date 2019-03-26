@@ -1,4 +1,73 @@
-\section{Sensores}
+\section{Sensores Internos}
+
+
+\subsection{CAN - BUS (Controller Area network)}
+Es definido como protocolo de comunicaciones  que esta basado en una topología BUS	 para la transmisión de mensajes en entornos distribuidos.
+Beneficios del protocolo CAN:
+\begin{itemize}
+
+
+\item	Alta inmunidad a las interferencias , habilidad para el autodiagnóstico y reparación de errores 
+\item	Protocolo de comunicaciones normalizado que  simplifica la comunicación entre subsistemas de diferentes fabricantes sobre una red o BUS.
+\item	Es multiplexado por lo tanto disminuye el cableado eliminando conexiones punto a punto.
+Este protocolo fue inicialmente diseñado para aplicaciones en los automóviles y por lo tanto la plataforma del protocolo satisface las necesidades en el área de automoción.
+Para ello la ISO define dos tipos de redes CAN
+\item	Red de alta velocidad hasta (1 Mbit/s): Destinada a controlar el motor e interconectar las unidades de control electrónico
+\item	Red de baja velocidad tolerante a fallos menor o igual a (125 Kbit/s) : Destinada a la comunicación de los dispositivos electrónicos  internos de un automóvil.
+
+\end{itemize}
+
+\subsection{SISTEMA AIRBAG SRS}
+Funcionamiento del sistema “Airbag”
+La unidad de control es el núcleo del sistema airbag y se ubica en el centro del vehículo. Normalmente se encuentra en la zona del tablero de instrumentos, en la zona llamada túnel central.
+Dentro de las funciones que mas destacan al “túnel central” son:
+\begin{itemize}
+\item	Detección de accidentes
+\item	Union de las unidades codependientes por medio de CAN-BUS
+\end{itemize}
+
+En los sistemas mas sofisticados de automóviles se han realizado test los cuales han contribuido a clasificar la gravedad de los accidentes como se muestra en la siguiente relación:
+\begin{itemize}
+
+
+\item	Gravedad 0 = accidente leve; no se ha accionado ningún airbag.
+\item	Gravedad 1 = accidente de gravedad media; es posible que se hayan activado los airbags en una primera fase.
+\item	Gravedad 2 = accidente grave; se han accionado los airbags en la primera fase.
+\item	Gravedad 3 = accidente muy grave; se han accionado los airbags en la primera y en la segunda fase.
+\end{itemize}
+Cabe destacar que la unidad de control mencionada anteriormente se ve afectada también por otros factores que pueden activar o privar la activación de el sistema airbag, los factores son los siguientes:
+\begin{itemize}
+
+
+\item	Sentido de la marcha (Impacto de la potencia)
+\item	Tipo de accidente (Gravedad)
+\item	Cinturón de seguridad
+\end{itemize}
+\subsection{Sensor de accidente}
+
+Los sensores frontales siempre se montan de dos en dos. Por regla general se trata de sensores que trabajan según el sistema masa-resorte. Dentro del sensor se encuentra una polea que se ha llenado con un peso enorme. Esta polea de peso está rodeada por una abrazadera de bronce, cuyo extremo va fijado a la polea de peso y a la carcasa del sensor. Esta circunstancia permite a la polea de peso un único movimiento cuando la fuerza aplicada procede de una dirección determinada. Si se aplica la fuerza, la polea de peso gira contra la abrazadera de bronce y cierra por medio de un contacto el circuito de corriente hacia la unidad de control. Para la autodiagnosis, el sensor lleva una resistencia con una impedancia muy elevada.
+
+Otro tipo de sensor de movimiento es aquel en el que se ha empleado masa de silicio. Si se aplica la fuerza, se moverá la masa de silicio del sensor. Dependiendo de la suspensión de la masa del sensor se produce una modificación en su capacidad eléctrica, que sirve de información a la unidad de control.
+
+Debido a su rápida posibilidad de registro se emplean los sensores para poder transmitir información a la unidad de control lo más rápidamente posible en caso de accidentes laterales.
+
+\subsection{Sensores de Presión}
+
+
+Estos sensores se montan en las puertas y reaccionan, en caso de accidente, ante un cambio de presión dentro de las puertas. En vehículos que lleven este tipo de sensores de presión es muy importante que las láminas de aislamiento de las puertas vuelvan a montarse correctamente si ha habido que desmontarlas. Si las láminas de aislamiento de las puertas no se montan correctamente y se produce una pérdida de presión en un accidente, podría verse afectado el funcionamiento de los sensores de presión.
+\subsection{Sensor de seguridad safing}
+
+
+El sensor Safing tiene la función de evitar que el airbag se active involuntariamente.
+
+Está conectado en línea con los sensores frontales. El sensor Safing va integrado en la unidad de control del airbag. Está compuesto por un contacto Reed, dentro de un tubo lleno de resina, y de un imán con forma de anillo. El contacto Reed abierto se encuentra dentro de un tubo lleno de resina sobre el que se encuentra el imán con forma de anillo. El imán va sujeto al extremo de la carcasa por medio de un muelle. Si se aplica fuerza, el imán se desliza contra la potencia del muelle a través del tubo lleno de resina y cierra el contacto Reed. Con ello, el contacto para activar el airbag está cerrado.
+
+
+
+
+
+
+
 %	Los signos vitales son indicadores que reflejan el estado fisiológico de los órganos vitales (cerebro, corazón, pulmones). Sus variaciones expresan cambios que ocurren en el organismo, algunos de índole fisiológico y otros de tipo patológico. Los valores considerados normales se ubican dentro de rangos y estos rangos varían según la edad y en algunos casos también con el sexo. \cite{aguayoChile} \cite{cobo2011} Los cuatros principales signos vitales son: 
 %	\begin{enumerate}
 %		\item Frecuencia cardíaca.
