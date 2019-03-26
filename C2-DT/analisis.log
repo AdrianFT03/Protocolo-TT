@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 MAR 2019 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  25 MAR 2019 23:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3672,15 +3672,9 @@ LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
+Package rerunfilecheck Info: File `analisis.out' has not changed.
+(rerunfilecheck)             Checksum: 67824E2C800E3AE8D435D1A4107C4DAB;3822.
 
-
-Package rerunfilecheck Warning: File `analisis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `analisis.out':
-(rerunfilecheck)             Before: 50B032544BA8A05319EB5C9E67F43A03;3822
-(rerunfilecheck)             After:  67824E2C800E3AE8D435D1A4107C4DAB;3822.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3719,7 +3713,7 @@ exlive/2017/texmf-dist/fonts/type1/public/hfbright/hfbrbx10.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/hfbright/hfbrsl10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/hfbright/hftl10.pfb>
-Output written on analisis.pdf (45 pages, 878593 bytes).
+Output written on analisis.pdf (45 pages, 878590 bytes).
 PDF statistics:
  656 PDF objects out of 1000 (max. 8388607)
  555 compressed objects within 6 object streams
