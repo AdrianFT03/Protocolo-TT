@@ -4,34 +4,49 @@
 %    El presente documento \varCveDocumento\ tiene como objetivo mostrar en detalle los requerimientos funcionales y no funcionales, modelos de información, reglas de negocio, modelos de comportamiento, casos de uso e interfaces correspondientes a cada uno de los módulos propuestos para esta etapa.
 
 \section{Planteamiento del problema}
-
-
-%De acuerdo con la Organización para la Cooperación y el Desarrollo Económicos (OCDE), México tiene 2.2 médicos practicantes y 2.6 enfermeras practicantes por cada 1,000 habitantes, mucho menos que los promedios de la OCDE de 3.3 y 9.1 respectivamente. El número de camas hospitalarias también es considerablemente bajo, con 1.6 camas por cada 1,000 habitantes, comparado con 4.8 camas por cada 1,000 de la OCDE; siendo de los promedios más bajos dentro de los países que conforman la OCDE \cite{ocde2016}. Aunado a esto, existe una gran demanda de atención médica y con los pocos espacios disponibles el servicio ofrecido se vuelve lento e ineficiente. \\
+De acuerdo con datos del Instituto Nacional de Estadística y Geografía (INEGI), tan solo en México en el 2017 se registraron 241,285 colisiones con vehículos automotores y 34,910 colisiones con motocicletas, de las cuales 258,168 fueron causadas por el conductor.\\ 
 %
-%En consecuencia, existe una necesidad urgente de utilizar la tecnología para monitorear, informar y analizar de manera remota los signos vitales del paciente sin la necesidad de acudir con el personal médico. Esta forma de monitoreo beneficia tanto al paciente como a los hospitales pues se podrán tener registros de las mediciones de los signos en cualquier momento sin interrumpir la vida cotidiana del paciente y se tendrá la seguridad de que en una emergencia se podrá contactar a los familiares del paciente o a un médico para tratar la condición a tiempo.\\
+De acuerdo con cifras de 2017 de la Organización Mundial de la Salud (OMS), cada año mueren en el mundo cerca de 1,3 millones de personas en accidentes de tránsito, y entre 20 y 50 millones padecen traumatismos no mortales causantes de discapacidad. Los accidentes viales, además, constituyen una de las principales causas de mortalidad en todos los grupos etarios, principalmente entre personas de entre 15 y 19 años.\\
+
+De acuerdo con datos del Instituto Nacional de Salud Pública (INSP), nuestro país ocupa el séptimo lugar a nivel mundial y el tercero en la región de Latinoamérica en muertes por siniestros viales, con 22 decesos de jóvenes de entre 15 y 29 años al día, y 24 mil decesos en promedio al año. Los siniestros viales constituyen la primera causa de muerte en jóvenes entre 5 y 29 años de edad y la quinta entre la población general.\\
+
+En México opera un número único de emergencias 911; en él se homologan todos los números de atención de emergencias médicas, de seguridad y de protección civil a nivel federal, estatal y municipal. En consecuencia, existe una necesidad de utilizar la tecnología para la comunicación directa con servicios de emergencia específicos, así como con contactos de confianza y/o aseguradoras de la persona afectada, esto sin la necesidad de que el afectado lo solicite. Asimismo cuando una persona no esta en sus facultades para poder dar información sobre el suceso, entorpece la logística para poder ser auxiliado. 
+
+
 
 \section{Solución propuesta}
-%Por lo anterior, hemos decidido crear un sistema que facilite el monitoreo remoto de la frecuencia cardíaca y de la temperatura corporal, que permita realizar las mediciones en cualquier momento utilizando un sensor específico para cada uno de los signos vitales mencionados anteriormente y con los datos medidos informar a personas interesadas, como familiares o médicos, del estado fisiológico del paciente que use el sistema y en caso de obtenerse valores anormales, tratar la emergencia lo más rápido posible.
+
+Por lo anterior, hemos decidido crear un sistema que facilite el monitoreo del posible estado de un automóvil haciendo uso de los sensores con los que cuenta y los de un dispositivo móvil (smartphone) para que con los datos medidos e interpretados se pueda informar en caso de un posible percance automovilístico a las personas interesadas, como familiares, aseguradoras o cuerpos de emergencia, y en el caso de que el usuario afectado necesite auxilio, tratar la emergencia lo más pronto posible.
 
 
 
 \section{Justificación}
-%La tecnología se ha visto incorporada en prácticamente todas nuestras actividades cotidianas, como en el área de la salud o e-Salud, donde el uso de las tecnologías de información y comunicación (TIC) ha permitido la integración de los dispositivos para la medición remota y el registro preciso de los signos vitales, los cuales proporcionan una indicación del estado fisiológico de un paciente.\\
-%
-%Una de las enfermedades a las que se les puede dar seguimiento mediante el monitoreo remoto son las enfermedades cardíacas y vasculares, o cardiovasculares, que son un grupo de desórdenes del corazón y de los vasos sanguíneos que incluyen afecciones tales como arritmias, enfermedad coronaria, ataque cardíaco, presión arterial alta, defectos cardíacos congénitos, demencia vascular y accidente cerebrovascular. Dichas enfermedades son la principal causa de muerte en todo el mundo \cite{who2017}.  Tan solo en México, en el año 2016, se registraron 136,342 defunciones a causa de enfermedades del corazón, siendo también la primer causa de muerte en México \cite{inegiMortalidad}.\\
-%
-%La temperatura corporal también es un factor importante que se debe considerar con las personas que sufren algún trastorno de la regulación de la temperatura y al no requerir algún equipo de medición especializado, es también factible que se realice un monitoreo remoto de la misma, para detectar ciertas patologías por incremento o decremento de la temperatura corporal, que pueden provocar síndromes denominados menores o leves y cuadros clínicos mayores que pueden comprometer la vida del paciente \cite{lizarralde2000}.\\
-%
-%Lo que se busca con este Trabajo Terminal es crear un sistema que permita capturar y enviar mediciones de la frecuencia cardíaca y la temperatura corporal de los pacientes que padezcan enfermedades a las que se les pueda dar seguimiento mediante el monitoreo remoto de estos signos vitales.\\
-%
-%La propuesta comprenderá un dispositivo electrónico inalámbrico con un sensor para detectar el pulso cardíaco y uno para medir la temperatura corporal que permitirá el monitoreo continua mediante la recopilación y procesamiento de la frecuencia cardíaca y la temperatura de la piel, que serán enviados al dispositivo móvil de las personas interesadas, como médicos y familiares.
+Hoy la tecnología se ha visto integrada en casi todas las actividades cotidianas, con la implemetación de la Internet de las cosas, donde el uso de las tecnologías de información y comunicación (TIC) ha permitido la integración de los dispositivos para la medición y manipulación de los dispositivos de forma remota.\\
+
+
+
+Lo que se busca con este Trabajo Terminal es crear un sistema que permita almacenar e interpretar la información del posible estado de un automóvil para poder notificar de forma automática y manual un posible percance automovilístico, esto en el caso de que los tripulantes no tengan la capacidad físicas para hacerlo.\\
+
+
+La propuesta comprenderá un dispositivo electrónico comunicado con uno o varios sensores para el monitoreo del posible estado de un automóvil que con ayuda de los sensores integrados en el dispositivo móvil (smartphone) permitir la recopilación y procesamiento de la información obtenida, la cual será almacenada y en caso de que la interpretación de dichos datos aparenté ser un un percance automovilístico, notificar a los contactos como cuerpos de emergencia, familiares, aseguradoras etc.
+
+
 
 \section{Alcance}
 
 \section{Objetivos}
 \subsection{Objetivo general}
+Analizar y desarrollar una aplicación móvil que alerte de manera automática y/o manual, durante un percance automovilístico a servicios de emergencia , familiares directos y/o contactos registrados por el usuario.
 %Implementar un sistema embebido que permita el monitoreo remoto de signos vitales de frecuencia cardíaca y temperatura corporal usando IoT.
 \subsection{Objetivos específicos}
+\begin{itemize}
+	\item Disminuir el tiempo de notificación a hospitales y/o autoridades por percances automovilísticos
+	\item Temporizador de alerta SOS para percances automovilísticos de bajo grado
+	\item Gestionar contactos de emergencia que recibirán el llamado SOS
+	\item Ubicar el servicio de emergencia mas cercano a la colisión automovilística
+	\item Confirmar la lectura correspondiente a la alerta SOS enviada a los familiares y/o servicios de emergencia.
+	\item Notificar en tiempo real la ubicación donde ocurrió la colisión automovilística.
+\end{itemize}
 %	\begin{itemize}
 %%		\item Realizar la configuración del sensor de pulso y la adquisición de la señal.
 %%		\item Realizar la configuración del sensor de temperatura y la adquisición de la señal.
