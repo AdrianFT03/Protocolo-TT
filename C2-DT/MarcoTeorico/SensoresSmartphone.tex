@@ -85,8 +85,26 @@ En muchos casos, el hardware GPS de un dispositivo funciona bien, pero su softwa
 	\item Direcciones incorrectamente estimadas
 \end{itemize}
 
+\subsection{A-GPS (GPS Asistido)}
 
-\subsection{A-GPS}
+¿Qué es AGPS? \\
+GPS asistido describe un sistema en el que las fuentes externas, como un servidor de asistencia y una red de referencia, ayudan a un receptor GPS a realizar las tareas necesarias para realizar mediciones de rango y posicionar soluciones.\\
+El servidor de asistencia tiene la capacidad de acceder a la información de la red de referencia y también tiene una potencia de computación muy superior a la del receptor GPS. El servidor de asistencia se comunica con el receptor GPS a través de un enlace inalámbrico. Con la asistencia de la red, el receptor puede operar más rápida y eficientemente de lo que lo haría sin ayuda, ya que un conjunto de tareas que normalmente manejaría se comparte con el servidor de asistencia. El sistema AGPS resultante, compuesto por el receptor GPS integrado y los componentes de red, aumenta el rendimiento más allá del mismo receptor en un modo independiente.\\
+
+¿Por qué AGPS? \\
+Las arquitecturas AGPS aumentan la capacidad de un receptor independiente para conservar la energía de la batería, adquirir y rastrear más satélites, lo que mejora la geometría de observación y aumenta la sensibilidad sobre una arquitectura GPS convencional. Estas capacidades mejoradas provienen del conocimiento de la posición y velocidad del satélite, la posición inicial del receptor y el tiempo proporcionado por el servidor de asistencia. \\
+
+Las señales GPS recibidas se desplazan en la frecuencia debido al movimiento relativo del receptor-satélite. Este es el llamado cambio de frecuencia Doppler. El receptor debe encontrar la frecuencia de la señal antes de poder bloquearla. El conocimiento de la posición del satélite y los datos de velocidad y la posición inicial del receptor reducen el número de intervalos de frecuencia que se deben buscar porque el receptor calcula directamente el cambio de frecuencia Doppler en lugar de buscar en todo el rango de frecuencias posible. Los datos de posición y velocidad del satélite se calculan a partir de los datos de órbita y reloj proporcionados por el servidor de asistencia. La posición inicial del receptor puede provenir de las técnicas de identificación celular o de cualquier otra fuente de información disponible. La reducción del número de intervalos de frecuencia que deben buscarse para adquirir la señal reduce el tiempo hasta la primera corrección (TTFF).
+
+\begin{figure}[htbp!]
+	\begin{center}
+		%\fbox{\includegraphics[width=0.7\textwidth]{ModeloComportamiento/imagenes/Actores.png}}
+		\includegraphics[width=0.6\textwidth]{MarcoTeorico/imagenes/AGPS}
+		\caption{Posición A-GPS}
+		\label{MT/SS/AGPS}
+	\end{center}
+\end{figure}
+
 
 
 
