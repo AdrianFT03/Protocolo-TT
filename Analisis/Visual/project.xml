@@ -10595,10 +10595,10 @@
 				<IntegerProperty displayName="Actor Display Option" name="_actorDisplayOption" value="0"/>
 			</DiagramProperties>
 			<Shapes>
-				<Shape height="370" id="4Mqmq5aGAqACTgfh" model="4Mqmq5aGAqACTgfi" name="Aplicación móvil" shapeType="Package" width="640" x="2" y="2" zorder="12">
+				<Shape height="370" id="4Mqmq5aGAqACTgfh" model="Z_9xa5aGAqACTlD." name="In-Help" shapeType="Package" width="640" x="2" y="2" zorder="12">
 					<DiagramElementProperties>
 						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
-							<ModelRef id="4Mqmq5aGAqACTgfi"/>
+							<ModelRef id="Z_9xa5aGAqACTlD."/>
 						</ModelRefProperty>
 						<IntegerProperty displayName="X" name="x" value="200"/>
 						<IntegerProperty displayName="Y" name="y" value="40"/>
