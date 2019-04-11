@@ -5386,6 +5386,126 @@
 				<IntegerProperty displayName="Quantity" name="quantity" value="1"/>
 			</ModelProperties>
 		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Sequence Flow" id="eUV8cFaGAqFSra8w" modelType="BPSequenceFlow">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPSequenceFlow"/>
+				<ModelRefProperty displayName="From" name="from">
+					<ModelRef id="Dep8cFaGAqFSra4x"/>
+				</ModelRefProperty>
+				<ModelRefProperty displayName="To" name="to">
+					<ModelRef id="hEV8cFaGAqFSra7l"/>
+				</ModelRefProperty>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="8"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<StringProperty displayName="Condition Expression" name="conditionExpression"/>
+				<StringProperty displayName="Condition Type" name="conditionType" value="None"/>
+				<IntegerProperty displayName="Quantity" name="quantity" value="1"/>
+			</ModelProperties>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Sequence Flow" id="0J.CcFaGAqFSrbnT" modelType="BPSequenceFlow">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPSequenceFlow"/>
+				<ModelRefProperty displayName="From" name="from">
+					<ModelRef id="hEV8cFaGAqFSra7l"/>
+				</ModelRefProperty>
+				<ModelRefProperty displayName="To" name="to">
+					<ModelRef id="uG.CcFaGAqFSrbma"/>
+				</ModelRefProperty>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="12"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<StringProperty displayName="Condition Expression" name="conditionExpression"/>
+				<StringProperty displayName="Condition Type" name="conditionType" value="None"/>
+				<IntegerProperty displayName="Quantity" name="quantity" value="1"/>
+			</ModelProperties>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Sequence Flow" id="aspCcFaGAqFSrbvt" modelType="BPSequenceFlow" name="">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name" value=""/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPSequenceFlow"/>
+				<ModelRefProperty displayName="From" name="from">
+					<ModelRef id="uG.CcFaGAqFSrbma"/>
+				</ModelRefProperty>
+				<ModelRefProperty displayName="To" name="to">
+					<ModelRef id="riJCcFaGAqFSrbte"/>
+				</ModelRefProperty>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="14"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<StringProperty displayName="Condition Expression" name="conditionExpression"/>
+				<StringProperty displayName="Condition Type" name="conditionType" value="None"/>
+				<IntegerProperty displayName="Quantity" name="quantity" value="1"/>
+			</ModelProperties>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Sequence Flow" id="AvhicFaGAqFSrb_e" modelType="BPSequenceFlow">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPSequenceFlow"/>
+				<ModelRefProperty displayName="From" name="from">
+					<ModelRef id="uG.CcFaGAqFSrbma"/>
+				</ModelRefProperty>
+				<ModelRefProperty displayName="To" name="to">
+					<ModelRef id="y3hicFaGAqFSrb.x"/>
+				</ModelRefProperty>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="16"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<StringProperty displayName="Condition Expression" name="conditionExpression"/>
+				<StringProperty displayName="Condition Type" name="conditionType" value="None"/>
+				<IntegerProperty displayName="Quantity" name="quantity" value="1"/>
+			</ModelProperties>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Sequence Flow" id="VZUScFaGAqFSrclt" modelType="BPSequenceFlow">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPSequenceFlow"/>
+				<ModelRefProperty displayName="From" name="from">
+					<ModelRef id="y3hicFaGAqFSrb.x"/>
+				</ModelRefProperty>
+				<ModelRefProperty displayName="To" name="to">
+					<ModelRef id="uxwScFaGAqFSrcdp"/>
+				</ModelRefProperty>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="18"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<StringProperty displayName="Condition Expression" name="conditionExpression"/>
+				<StringProperty displayName="Condition Type" name="conditionType" value="None"/>
+				<IntegerProperty displayName="Quantity" name="quantity" value="1"/>
+			</ModelProperties>
+		</Model>
 		<Model composite="false" considerDefaultProperties="false" displayModelType="Package" id="4Mqmq5aGAqACTgfi" modelType="Package" name="Aplicación móvil">
 			<ModelProperties>
 				<StringProperty displayName="Name" name="name" value="Aplicación móvil"/>
@@ -6267,9 +6387,30 @@
 				</Model>
 			</ChildModels>
 		</Model>
-		<Model composite="false" considerDefaultProperties="false" displayModelType="Pool" id="tXsea5aGAqACTkb9" modelType="BPPool" name="Conductor">
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Pool" id="mIS8cFaGAqFSrava" modelType="BPPool" name="Aseguradoras">
 			<ModelProperties>
-				<StringProperty displayName="Name" name="name" value="Conductor"/>
+				<StringProperty displayName="Name" name="name" value="Aseguradoras"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPPool"/>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="5"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<BooleanProperty displayName="Black Box" name="blackBox" value="false"/>
+				<ModelRefProperty displayName="Participant" name="participant"/>
+				<ModelRefProperty displayName="Partner Link" name="partnerLink"/>
+				<ModelRefsProperty displayName="Variables" name="variables"/>
+				<ModelRefsProperty displayName="Correlation Sets" name="correlationSets"/>
+				<ModelProperty displayName="Process" name="process"/>
+			</ModelProperties>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Pool" id="6lBccFaGAqFSraO." modelType="BPPool" name="Conductor / Acompañante">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name" value="Conductor / Acompañante"/>
 				<StringProperty displayName="Model Type" name="modelType" value="BPPool"/>
 				<ModelsProperty displayName="Categories" name="categories"/>
 				<StringProperty displayName="Id" name="bpmnId" value="2"/>
@@ -6288,13 +6429,13 @@
 				<ModelProperty displayName="Process" name="process"/>
 			</ModelProperties>
 			<ChildModels>
-				<Model composite="false" considerDefaultProperties="false" displayModelType="Start Event" id="G9Yha5aGAqACTkq0" modelType="BPStartEvent" name="">
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Gateway" id="uG.CcFaGAqFSrbma" modelType="BPGateway" name="">
 					<ModelProperties>
 						<StringProperty displayName="Name" name="name" value=""/>
-						<StringProperty displayName="Model Type" name="modelType" value="BPStartEvent"/>
+						<StringProperty displayName="Model Type" name="modelType" value="BPGateway"/>
 						<ModelsProperty displayName="Assignments" name="assignments"/>
 						<ModelsProperty displayName="Categories" name="categories"/>
-						<StringProperty displayName="Id" name="bpmnId" value="4"/>
+						<StringProperty displayName="Id" name="bpmnId" value="11"/>
 						<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
 						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
 						<ModelsProperty displayName="Comments" name="comments"/>
@@ -6302,15 +6443,54 @@
 						<ModelsProperty displayName="References" name="references"/>
 						<StringProperty displayName="Transit From" name="transitFrom"/>
 						<StringProperty displayName="Transit To" name="transitTo"/>
-						<ModelProperty displayName="Trigger" name="trigger"/>
+						<ModelProperty displayName="Gateway Type" name="gatewayType">
+							<Model composite="true" considerDefaultProperties="false" displayModelType="Data-Based Exclusive Decision/Merge (XOR)" id="fh.CcFaGAqFSrbmf" modelType="BPGatewayDataBasedXOR" name="XOR">
+								<ModelProperties>
+									<StringProperty displayName="Name" name="name" value="XOR"/>
+									<StringProperty displayName="Model Type" name="modelType" value="BPGatewayDataBasedXOR"/>
+									<ModelsProperty displayName="Comments" name="comments"/>
+									<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+									<ModelsProperty displayName="References" name="references"/>
+									<StringProperty displayName="Transit From" name="transitFrom"/>
+									<StringProperty displayName="Transit To" name="transitTo"/>
+									<BooleanProperty displayName="While" name="while" value="false"/>
+									<ModelsProperty displayName="Gates" name="gates"/>
+									<ModelProperty displayName="Default Gate" name="defaultGate"/>
+								</ModelProperties>
+							</Model>
+						</ModelProperty>
 					</ModelProperties>
 					<FromSimpleRelationships>
-						<RelationshipRef from="G9Yha5aGAqACTkq0" id="itSha5aGAqACTk8F" to="FNSha5aGAqACTk66"/>
+						<RelationshipRef from="uG.CcFaGAqFSrbma" id="aspCcFaGAqFSrbvt" to="riJCcFaGAqFSrbte"/>
+						<RelationshipRef from="uG.CcFaGAqFSrbma" id="AvhicFaGAqFSrb_e" to="y3hicFaGAqFSrb.x"/>
 					</FromSimpleRelationships>
+					<ToSimpleRelationships>
+						<RelationshipRef from="hEV8cFaGAqFSra7l" id="0J.CcFaGAqFSrbnT" to="uG.CcFaGAqFSrbma"/>
+					</ToSimpleRelationships>
 				</Model>
-				<Model composite="false" considerDefaultProperties="false" displayModelType="Task" id="FNSha5aGAqACTk66" modelType="BPTask" name="">
+				<Model composite="false" considerDefaultProperties="false" displayModelType="End Event" id="riJCcFaGAqFSrbte" modelType="BPEndEvent" name="Llega a su&#10;destino">
 					<ModelProperties>
-						<StringProperty displayName="Name" name="name" value=""/>
+						<StringProperty displayName="Name" name="name" value="Llega a su&#10;destino"/>
+						<StringProperty displayName="Model Type" name="modelType" value="BPEndEvent"/>
+						<ModelsProperty displayName="Assignments" name="assignments"/>
+						<ModelsProperty displayName="Categories" name="categories"/>
+						<StringProperty displayName="Id" name="bpmnId" value="13"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+						<ModelsProperty displayName="References" name="references"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelProperty displayName="Result" name="result"/>
+					</ModelProperties>
+					<ToSimpleRelationships>
+						<RelationshipRef from="uG.CcFaGAqFSrbma" id="aspCcFaGAqFSrbvt" to="riJCcFaGAqFSrbte"/>
+					</ToSimpleRelationships>
+				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Task" id="hEV8cFaGAqFSra7l" modelType="BPTask" name="Maneja">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value="Maneja"/>
 						<StringProperty displayName="Model Type" name="modelType" value="BPTask"/>
 						<ModelProperty displayName="Loop Type" name="loopType"/>
 						<IntegerProperty displayName="Start Quantity" name="startQuantity" value="1"/>
@@ -6335,11 +6515,169 @@
 						<ModelProperty displayName="Task Type" name="taskType"/>
 						<BooleanProperty displayName="Compensation" name="compensation" value="false"/>
 					</ModelProperties>
+					<FromSimpleRelationships>
+						<RelationshipRef from="hEV8cFaGAqFSra7l" id="0J.CcFaGAqFSrbnT" to="uG.CcFaGAqFSrbma"/>
+					</FromSimpleRelationships>
 					<ToSimpleRelationships>
-						<RelationshipRef from="G9Yha5aGAqACTkq0" id="itSha5aGAqACTk8F" to="FNSha5aGAqACTk66"/>
+						<RelationshipRef from="Dep8cFaGAqFSra4x" id="eUV8cFaGAqFSra8w" to="hEV8cFaGAqFSra7l"/>
+					</ToSimpleRelationships>
+				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Task" id="7cqScFaGAqFSrcze" modelType="BPTask" name="Notifica percanse">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value="Notifica percanse"/>
+						<StringProperty displayName="Model Type" name="modelType" value="BPTask"/>
+						<ModelProperty displayName="Loop Type" name="loopType"/>
+						<IntegerProperty displayName="Start Quantity" name="startQuantity" value="1"/>
+						<ModelsProperty displayName="Io Rules" name="ioRules"/>
+						<BooleanProperty displayName="Suppress Join Failure" name="suppressJoinFailure" value="false"/>
+						<BooleanProperty displayName="Enable Instance Compensation" name="enableInstanceCompensation" value="false"/>
+						<ModelsProperty displayName="Input Sets" name="inputSets"/>
+						<ModelsProperty displayName="Output Sets" name="outputSets"/>
+						<ModelsProperty displayName="Properties" name="properties"/>
+						<StringProperty displayName="Process Type" name="processType" value="None"/>
+						<StringProperty displayName="Status" name="status" value="None"/>
+						<ModelsProperty displayName="Assignments" name="assignments"/>
+						<ModelsProperty displayName="Categories" name="categories"/>
+						<StringProperty displayName="Id" name="bpmnId" value="21"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+						<ModelsProperty displayName="References" name="references"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelProperty displayName="Task Type" name="taskType"/>
+						<BooleanProperty displayName="Compensation" name="compensation" value="false"/>
+					</ModelProperties>
+					<ToSimpleRelationships>
+						<RelationshipRef from="uxwScFaGAqFSrcdp" id="wiqScFaGAqFSrc0r" to="7cqScFaGAqFSrcze"/>
+					</ToSimpleRelationships>
+				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Intermediate Event" id="y3hicFaGAqFSrb.x" modelType="BPIntermediateEvent" name="Ocurre un &#10;percanse">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value="Ocurre un &#10;percanse"/>
+						<StringProperty displayName="Model Type" name="modelType" value="BPIntermediateEvent"/>
+						<ModelsProperty displayName="Assignments" name="assignments"/>
+						<ModelsProperty displayName="Categories" name="categories"/>
+						<StringProperty displayName="Id" name="bpmnId" value="15"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+						<ModelsProperty displayName="References" name="references"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelRefProperty displayName="Target" name="target"/>
+						<ModelProperty displayName="Trigger" name="trigger"/>
+					</ModelProperties>
+					<FromSimpleRelationships>
+						<RelationshipRef from="y3hicFaGAqFSrb.x" id="VZUScFaGAqFSrclt" to="uxwScFaGAqFSrcdp"/>
+					</FromSimpleRelationships>
+					<ToSimpleRelationships>
+						<RelationshipRef from="uG.CcFaGAqFSrbma" id="AvhicFaGAqFSrb_e" to="y3hicFaGAqFSrb.x"/>
+					</ToSimpleRelationships>
+				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Start Event" id="Dep8cFaGAqFSra4x" modelType="BPStartEvent" name="Tiene la &#10;necesidad &#10;de usar el vehículo">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value="Tiene la &#10;necesidad &#10;de usar el vehículo"/>
+						<StringProperty displayName="Model Type" name="modelType" value="BPStartEvent"/>
+						<ModelsProperty displayName="Assignments" name="assignments"/>
+						<ModelsProperty displayName="Categories" name="categories"/>
+						<StringProperty displayName="Id" name="bpmnId" value="6"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+						<ModelsProperty displayName="References" name="references"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelProperty displayName="Trigger" name="trigger"/>
+					</ModelProperties>
+					<FromSimpleRelationships>
+						<RelationshipRef from="Dep8cFaGAqFSra4x" id="eUV8cFaGAqFSra8w" to="hEV8cFaGAqFSra7l"/>
+					</FromSimpleRelationships>
+				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Gateway" id="uxwScFaGAqFSrcdp" modelType="BPGateway" name="¿Puede notificar?">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value="¿Puede notificar?"/>
+						<StringProperty displayName="Model Type" name="modelType" value="BPGateway"/>
+						<ModelsProperty displayName="Assignments" name="assignments"/>
+						<ModelsProperty displayName="Categories" name="categories"/>
+						<StringProperty displayName="Id" name="bpmnId" value="17"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+						<ModelsProperty displayName="References" name="references"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelProperty displayName="Gateway Type" name="gatewayType">
+							<Model composite="true" considerDefaultProperties="false" displayModelType="Data-Based Exclusive Decision/Merge (XOR)" id="uxwScFaGAqFSrcdt" modelType="BPGatewayDataBasedXOR" name="XOR">
+								<ModelProperties>
+									<StringProperty displayName="Name" name="name" value="XOR"/>
+									<StringProperty displayName="Model Type" name="modelType" value="BPGatewayDataBasedXOR"/>
+									<ModelsProperty displayName="Comments" name="comments"/>
+									<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+									<ModelsProperty displayName="References" name="references"/>
+									<StringProperty displayName="Transit From" name="transitFrom"/>
+									<StringProperty displayName="Transit To" name="transitTo"/>
+									<BooleanProperty displayName="While" name="while" value="false"/>
+									<ModelsProperty displayName="Gates" name="gates"/>
+									<ModelProperty displayName="Default Gate" name="defaultGate"/>
+								</ModelProperties>
+							</Model>
+						</ModelProperty>
+					</ModelProperties>
+					<FromSimpleRelationships>
+						<RelationshipRef from="uxwScFaGAqFSrcdp" id="wiqScFaGAqFSrc0r" to="7cqScFaGAqFSrcze"/>
+					</FromSimpleRelationships>
+					<ToSimpleRelationships>
+						<RelationshipRef from="y3hicFaGAqFSrb.x" id="VZUScFaGAqFSrclt" to="uxwScFaGAqFSrcdp"/>
 					</ToSimpleRelationships>
 				</Model>
 			</ChildModels>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Pool" id="CUxea5aGAqACTkkv" modelType="BPPool" name="Dispositivo">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name" value="Dispositivo"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPPool"/>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="3"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<BooleanProperty displayName="Black Box" name="blackBox" value="false"/>
+				<ModelRefProperty displayName="Participant" name="participant"/>
+				<ModelRefProperty displayName="Partner Link" name="partnerLink"/>
+				<ModelRefsProperty displayName="Variables" name="variables"/>
+				<ModelRefsProperty displayName="Correlation Sets" name="correlationSets"/>
+				<ModelProperty displayName="Process" name="process"/>
+			</ModelProperties>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Pool" id="EtjccFaGAqFSraV9" modelType="BPPool" name="Emergecias">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name" value="Emergecias"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPPool"/>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="4"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<BooleanProperty displayName="Black Box" name="blackBox" value="false"/>
+				<ModelRefProperty displayName="Participant" name="participant"/>
+				<ModelRefProperty displayName="Partner Link" name="partnerLink"/>
+				<ModelRefsProperty displayName="Variables" name="variables"/>
+				<ModelRefsProperty displayName="Correlation Sets" name="correlationSets"/>
+				<ModelProperty displayName="Process" name="process"/>
+			</ModelProperties>
 		</Model>
 		<Model composite="false" considerDefaultProperties="false" displayModelType="Stereotype" id="2ljGsFaGAqFSrW23" modelType="Stereotype" name="Extend">
 			<ModelProperties>
@@ -6358,6 +6696,27 @@
 				<ModelProperty displayName="Tagged Value Definitions" name="taggedValueDefinitions"/>
 				<StringProperty displayName="Base Type" name="baseType" value="Extend"/>
 				<StringProperty displayName="Icon Path" name="iconPath"/>
+			</ModelProperties>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Pool" id="oR1ccFaGAqFSraTW" modelType="BPPool" name="Familiares">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name" value="Familiares"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPPool"/>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="3"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<BooleanProperty displayName="Black Box" name="blackBox" value="false"/>
+				<ModelRefProperty displayName="Participant" name="participant"/>
+				<ModelRefProperty displayName="Partner Link" name="partnerLink"/>
+				<ModelRefsProperty displayName="Variables" name="variables"/>
+				<ModelRefsProperty displayName="Correlation Sets" name="correlationSets"/>
+				<ModelProperty displayName="Process" name="process"/>
 			</ModelProperties>
 		</Model>
 		<Model composite="false" considerDefaultProperties="false" displayModelType="Package" id="EtmwcFaGAqFSrU.G" modelType="Package" name="Gestión de Vehículos">
@@ -9055,27 +9414,6 @@
 				</Model>
 			</ChildModels>
 		</Model>
-		<Model composite="false" considerDefaultProperties="false" displayModelType="Pool" id="CUxea5aGAqACTkkv" modelType="BPPool" name="In-Help">
-			<ModelProperties>
-				<StringProperty displayName="Name" name="name" value="In-Help"/>
-				<StringProperty displayName="Model Type" name="modelType" value="BPPool"/>
-				<ModelsProperty displayName="Categories" name="categories"/>
-				<StringProperty displayName="Id" name="bpmnId" value="3"/>
-				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
-				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
-				<ModelsProperty displayName="Comments" name="comments"/>
-				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
-				<ModelsProperty displayName="References" name="references"/>
-				<StringProperty displayName="Transit From" name="transitFrom"/>
-				<StringProperty displayName="Transit To" name="transitTo"/>
-				<BooleanProperty displayName="Black Box" name="blackBox" value="false"/>
-				<ModelRefProperty displayName="Participant" name="participant"/>
-				<ModelRefProperty displayName="Partner Link" name="partnerLink"/>
-				<ModelRefsProperty displayName="Variables" name="variables"/>
-				<ModelRefsProperty displayName="Correlation Sets" name="correlationSets"/>
-				<ModelProperty displayName="Process" name="process"/>
-			</ModelProperties>
-		</Model>
 		<Model composite="false" considerDefaultProperties="false" displayModelType="Stereotype" id="_bLmsFaGAqFSrXHl" modelType="Stereotype" name="Include">
 			<ModelProperties>
 				<StringProperty displayName="Name" name="name" value="Include"/>
@@ -9225,6 +9563,104 @@
 					</ModelProperties>
 					<ToSimpleRelationships>
 						<RelationshipRef from="G0e4cFaGAqFSrQOI" id="1_GkcFaGAqFSrQ6a" to="fvGkcFaGAqFSrQ55"/>
+					</ToSimpleRelationships>
+				</Model>
+			</ChildModels>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Sequence Flow" id="wiqScFaGAqFSrc0r" modelType="BPSequenceFlow" name="Sí">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name" value="Sí"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPSequenceFlow"/>
+				<ModelRefProperty displayName="From" name="from">
+					<ModelRef id="uxwScFaGAqFSrcdp"/>
+				</ModelRefProperty>
+				<ModelRefProperty displayName="To" name="to">
+					<ModelRef id="7cqScFaGAqFSrcze"/>
+				</ModelRefProperty>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="22"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<StringProperty displayName="Condition Expression" name="conditionExpression"/>
+				<StringProperty displayName="Condition Type" name="conditionType" value="None"/>
+				<IntegerProperty displayName="Quantity" name="quantity" value="1"/>
+			</ModelProperties>
+		</Model>
+		<Model composite="false" considerDefaultProperties="false" displayModelType="Pool" id="tXsea5aGAqACTkb9" modelType="BPPool" name="Usuario">
+			<ModelProperties>
+				<StringProperty displayName="Name" name="name" value="Usuario"/>
+				<StringProperty displayName="Model Type" name="modelType" value="BPPool"/>
+				<ModelsProperty displayName="Categories" name="categories"/>
+				<StringProperty displayName="Id" name="bpmnId" value="2"/>
+				<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+				<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+				<ModelsProperty displayName="Comments" name="comments"/>
+				<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+				<ModelsProperty displayName="References" name="references"/>
+				<StringProperty displayName="Transit From" name="transitFrom"/>
+				<StringProperty displayName="Transit To" name="transitTo"/>
+				<BooleanProperty displayName="Black Box" name="blackBox" value="false"/>
+				<ModelRefProperty displayName="Participant" name="participant"/>
+				<ModelRefProperty displayName="Partner Link" name="partnerLink"/>
+				<ModelRefsProperty displayName="Variables" name="variables"/>
+				<ModelRefsProperty displayName="Correlation Sets" name="correlationSets"/>
+				<ModelProperty displayName="Process" name="process"/>
+			</ModelProperties>
+			<ChildModels>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Start Event" id="G9Yha5aGAqACTkq0" modelType="BPStartEvent" name="">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value=""/>
+						<StringProperty displayName="Model Type" name="modelType" value="BPStartEvent"/>
+						<ModelsProperty displayName="Assignments" name="assignments"/>
+						<ModelsProperty displayName="Categories" name="categories"/>
+						<StringProperty displayName="Id" name="bpmnId" value="4"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+						<ModelsProperty displayName="References" name="references"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelProperty displayName="Trigger" name="trigger"/>
+					</ModelProperties>
+					<FromSimpleRelationships>
+						<RelationshipRef from="G9Yha5aGAqACTkq0" id="itSha5aGAqACTk8F" to="FNSha5aGAqACTk66"/>
+					</FromSimpleRelationships>
+				</Model>
+				<Model composite="false" considerDefaultProperties="false" displayModelType="Task" id="FNSha5aGAqACTk66" modelType="BPTask" name="">
+					<ModelProperties>
+						<StringProperty displayName="Name" name="name" value=""/>
+						<StringProperty displayName="Model Type" name="modelType" value="BPTask"/>
+						<ModelProperty displayName="Loop Type" name="loopType"/>
+						<IntegerProperty displayName="Start Quantity" name="startQuantity" value="1"/>
+						<ModelsProperty displayName="Io Rules" name="ioRules"/>
+						<BooleanProperty displayName="Suppress Join Failure" name="suppressJoinFailure" value="false"/>
+						<BooleanProperty displayName="Enable Instance Compensation" name="enableInstanceCompensation" value="false"/>
+						<ModelsProperty displayName="Input Sets" name="inputSets"/>
+						<ModelsProperty displayName="Output Sets" name="outputSets"/>
+						<ModelsProperty displayName="Properties" name="properties"/>
+						<StringProperty displayName="Process Type" name="processType" value="None"/>
+						<StringProperty displayName="Status" name="status" value="None"/>
+						<ModelsProperty displayName="Assignments" name="assignments"/>
+						<ModelsProperty displayName="Categories" name="categories"/>
+						<StringProperty displayName="Id" name="bpmnId" value="7"/>
+						<ModelRefsProperty displayName="Stereotypes" name="stereotypes"/>
+						<ModelProperty displayName="Tagged Values" name="taggedValues"/>
+						<ModelsProperty displayName="Comments" name="comments"/>
+						<HTMLProperty displayName="Documentation" name="documentation" plainTextValue="" value="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;"/>
+						<ModelsProperty displayName="References" name="references"/>
+						<StringProperty displayName="Transit From" name="transitFrom"/>
+						<StringProperty displayName="Transit To" name="transitTo"/>
+						<ModelProperty displayName="Task Type" name="taskType"/>
+						<BooleanProperty displayName="Compensation" name="compensation" value="false"/>
+					</ModelProperties>
+					<ToSimpleRelationships>
+						<RelationshipRef from="G9Yha5aGAqACTkq0" id="itSha5aGAqACTk8F" to="FNSha5aGAqACTk66"/>
 					</ToSimpleRelationships>
 				</Model>
 			</ChildModels>
@@ -16868,7 +17304,7 @@
 				</Connector>
 			</Connectors>
 		</Diagram>
-		<Diagram connectorStyle="Round Rectlinear" diagramType="BusinessProcessDiagram" displayDiagramType="Business Process Diagram" documentation="" id="flfua5aGAqACTkXq" imageFileName="MP_InHelp.png" imageHeight="326" imageScale="1.0" imageWidth="1121" name="MP_InHelp" rtfDocumentation="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;" trimmedHeight="38" trimmedWidth="28">
+		<Diagram connectorStyle="Round Rectlinear" diagramType="BusinessProcessDiagram" displayDiagramType="Business Process Diagram" documentation="" id="flfua5aGAqACTkXq" imageFileName="PPInHelp.png" imageHeight="326" imageScale="1.0" imageWidth="907" name="PP-In-Help" rtfDocumentation="&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;" trimmedHeight="38" trimmedWidth="28">
 			<DiagramProperties>
 				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
 				<IntegerProperty displayName="Show Activity State Node Caption" name="showActivityStateNodeCaption" value="0"/>
@@ -16888,8 +17324,8 @@
 				<DoubleProperty displayName="Zoom Ratio" name="zoomRatio" value="1.0"/>
 				<IntegerProperty displayName="X" name="x" value="0"/>
 				<IntegerProperty displayName="Y" name="y" value="0"/>
-				<IntegerProperty displayName="Width" name="width" value="1375"/>
-				<IntegerProperty displayName="Height" name="height" value="852"/>
+				<IntegerProperty displayName="Width" name="width" value="1126"/>
+				<IntegerProperty displayName="Height" name="height" value="490"/>
 				<ModelRefProperty displayName="Parent Model" name="parentModel"/>
 				<BooleanProperty displayName="Global Palette Option" name="_globalPaletteOption" value="true"/>
 				<BooleanProperty displayName="Always Show Reference And Subdiagram Resource" name="_alwaysShowReferenceAndSubdiagramResource" value="false"/>
@@ -16909,14 +17345,14 @@
 				<ModelRefProperty displayName="Parent Process Model" name="_parentProcessModel"/>
 			</DiagramProperties>
 			<Shapes>
-				<Shape height="150" id="tXsea5aGAqACTkb8" model="tXsea5aGAqACTkb9" name="Conductor" shapeType="BPPool" width="1115" x="2" y="2" zorder="6">
+				<Shape height="150" id="tXsea5aGAqACTkb8" model="tXsea5aGAqACTkb9" name="Usuario" shapeType="BPPool" width="901" x="2" y="2" zorder="6">
 					<DiagramElementProperties>
 						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
 							<ModelRef id="tXsea5aGAqACTkb9"/>
 						</ModelRefProperty>
 						<IntegerProperty displayName="X" name="x" value="30"/>
 						<IntegerProperty displayName="Y" name="y" value="40"/>
-						<IntegerProperty displayName="Width" name="width" value="1115"/>
+						<IntegerProperty displayName="Width" name="width" value="901"/>
 						<IntegerProperty displayName="Height" name="height" value="150"/>
 						<ColorProperty displayName="Background" name="background" value="Cr:135,220,245,0"/>
 						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
@@ -16944,7 +17380,7 @@
 					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
 						<Stroke/>
 					</Line>
-					<Caption height="150" side="InsideNorth" visible="true" width="15" x="-28" y="-38"/>
+					<Caption height="150" side="InsideNorth" visible="true" width="16" x="-28" y="-38"/>
 					<ChildShapes>
 						<Shape height="20" id="G9Yha5aGAqACTkqz" model="G9Yha5aGAqACTkq0" name="" shapeType="BPStartEvent" width="20" x="62" y="72" zorder="2">
 							<DiagramElementProperties>
@@ -17020,14 +17456,14 @@
 					</ChildShapes>
 					<FillColor color="Cr:135,220,245,0" style="1" transparency="100" type="1"/>
 				</Shape>
-				<Shape height="150" id="CUxea5aGAqACTkku" model="CUxea5aGAqACTkkv" name="In-Help" shapeType="BPPool" width="1115" x="2" y="172" zorder="4">
+				<Shape height="150" id="CUxea5aGAqACTkku" model="CUxea5aGAqACTkkv" name="Dispositivo" shapeType="BPPool" width="901" x="2" y="172" zorder="4">
 					<DiagramElementProperties>
 						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
 							<ModelRef id="CUxea5aGAqACTkkv"/>
 						</ModelRefProperty>
 						<IntegerProperty displayName="X" name="x" value="30"/>
 						<IntegerProperty displayName="Y" name="y" value="210"/>
-						<IntegerProperty displayName="Width" name="width" value="1115"/>
+						<IntegerProperty displayName="Width" name="width" value="901"/>
 						<IntegerProperty displayName="Height" name="height" value="150"/>
 						<ColorProperty displayName="Background" name="background" value="Cr:135,220,245,0"/>
 						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
@@ -17055,7 +17491,7 @@
 					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
 						<Stroke/>
 					</Line>
-					<Caption height="150" side="InsideNorth" visible="true" width="15" x="-28" y="-38"/>
+					<Caption height="150" side="InsideNorth" visible="true" width="16" x="-28" y="-38"/>
 					<FillColor color="Cr:135,220,245,0" style="1" transparency="100" type="1"/>
 				</Shape>
 			</Shapes>
@@ -17098,6 +17534,696 @@
 					<Points>
 						<Point x="82" y="82"/>
 						<Point x="131" y="82"/>
+					</Points>
+				</Connector>
+			</Connectors>
+		</Diagram>
+		<Diagram connectorStyle="Round Rectlinear" diagramType="BusinessProcessDiagram" displayDiagramType="Business Process Diagram" documentation="" id="s8EccFaGAqFSraO1" imageFileName="PAPercanse_automovilistico.png" imageHeight="536" imageScale="1.0" imageWidth="1003" name="PA-Percanse automovilistico" rtfDocumentation="&lt;html&gt;&#10;  &lt;head&gt;&#10;    &#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;/body&gt;&#10;&lt;/html&gt;&#10;" trimmedHeight="-2" trimmedWidth="28">
+			<DiagramProperties>
+				<IntegerProperty displayName="Show Package Name Style" name="showPackageNameStyle" value="0"/>
+				<IntegerProperty displayName="Show Activity State Node Caption" name="showActivityStateNodeCaption" value="0"/>
+				<StringProperty displayName="Documentation" name="documentation"/>
+				<BooleanProperty displayName="Editable" name="editable" value="true"/>
+				<BooleanProperty displayName="Follow Diagram Parent Element" name="followDiagramParentElement" value="true"/>
+				<BooleanProperty displayName="Auto Fit Shapes Size" name="autoFitShapesSize" value="false"/>
+				<BooleanProperty displayName="Show Tagged Values" name="showTaggedValues" value="false"/>
+				<BooleanProperty displayName="Show Stereotypes" name="showStereotypes" value="true"/>
+				<BooleanProperty displayName="Align To Grid" name="alignToGrid" value="true"/>
+				<IntegerProperty displayName="Grid Width" name="gridWidth" value="10"/>
+				<IntegerProperty displayName="Grid Height" name="gridHeight" value="10"/>
+				<ColorProperty displayName="Grid Color" name="gridColor" value="Cr:192,192,192,255"/>
+				<ColorProperty displayName="Diagram Background" name="diagramBackground" value="Cr:255,255,255,255"/>
+				<IntegerProperty displayName="Connector Style" name="connectorStyle" value="5"/>
+				<IntegerProperty displayName="Connection Point Style" name="connectionPointStyle" value="1"/>
+				<DoubleProperty displayName="Zoom Ratio" name="zoomRatio" value="0.9"/>
+				<IntegerProperty displayName="X" name="x" value="0"/>
+				<IntegerProperty displayName="Y" name="y" value="0"/>
+				<IntegerProperty displayName="Width" name="width" value="1126"/>
+				<IntegerProperty displayName="Height" name="height" value="490"/>
+				<ModelRefProperty displayName="Parent Model" name="parentModel"/>
+				<BooleanProperty displayName="Global Palette Option" name="_globalPaletteOption" value="true"/>
+				<BooleanProperty displayName="Always Show Reference And Subdiagram Resource" name="_alwaysShowReferenceAndSubdiagramResource" value="false"/>
+				<BooleanProperty displayName="Initialize Diagram For Create" name="initializeDiagramForCreate" value="true"/>
+				<BooleanProperty displayName="Show Default Parent Model" name="showDefaultParentModel" value="true"/>
+				<StringProperty displayName="Default Parent Model" name="defaultParentModel"/>
+				<StringProperty displayName="Author" name="author"/>
+				<StringProperty displayName="Id" name="bpmnId" value="1"/>
+				<StringProperty displayName="Version" name="version"/>
+				<StringProperty displayName="Language" name="language" value="English"/>
+				<StringProperty displayName="Expression Language" name="expressionLanguage"/>
+				<StringProperty displayName="Query Language" name="queryLanguage"/>
+				<BooleanProperty displayName="Data Based XORGateway Markers Visible" name="dataBasedXORGatewayMarkersVisible" value="false"/>
+				<IntegerProperty displayName="Show Id Option" name="_showIdOption" value="0"/>
+				<IntegerProperty displayName="Show Lane Header" name="showLaneHeader" value="0"/>
+				<IntegerProperty displayName="Auto Stretch Pools" name="autoStretchPools" value="1"/>
+				<ModelRefProperty displayName="Parent Process Model" name="_parentProcessModel"/>
+			</DiagramProperties>
+			<Shapes>
+				<Shape height="220" id="6lBccFaGAqFSraO9" model="6lBccFaGAqFSraO." name="Conductor / Acompañante" shapeType="BPPool" width="997" x="2" y="2" zorder="20">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="6lBccFaGAqFSraO."/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="30"/>
+						<IntegerProperty displayName="Y" name="y" value="0"/>
+						<IntegerProperty displayName="Width" name="width" value="997"/>
+						<IntegerProperty displayName="Height" name="height" value="220"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:135,220,245,0"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="20"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+						<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+						<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+						<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+						<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+						<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+						<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+						<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+						<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+						<IntegerProperty displayName="Orientation" name="orientation" value="0"/>
+						<IntegerProperty displayName="Auto Stretch" name="autoStretch" value="1"/>
+						<BooleanProperty displayName="Validate Pool For Import" name="validatePoolForImport" value="false"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="220" side="InsideNorth" visible="true" width="16" x="-28" y="2"/>
+					<ChildShapes>
+						<Shape height="20" id="Dep8cFaGAqFSra4w" model="Dep8cFaGAqFSra4x" name="Tiene la &#10;necesidad &#10;de usar el vehículo" shapeType="BPStartEvent" width="20" x="82" y="142" zorder="12">
+							<DiagramElementProperties>
+								<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+									<ModelRef id="Dep8cFaGAqFSra4x"/>
+								</ModelRefProperty>
+								<IntegerProperty displayName="X" name="x" value="110"/>
+								<IntegerProperty displayName="Y" name="y" value="140"/>
+								<IntegerProperty displayName="Width" name="width" value="20"/>
+								<IntegerProperty displayName="Height" name="height" value="20"/>
+								<ColorProperty displayName="Background" name="background" value="Cr:195,245,122,0"/>
+								<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+								<IntegerProperty displayName="ZOrder" name="zOrder" value="12"/>
+								<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+								<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+								<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+								<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+								<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+								<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+								<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+								<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+								<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+								<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+								<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+								<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+								<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+								<IntegerProperty displayName="0cp Plct" name="0cpPlct" value="10"/>
+							</DiagramElementProperties>
+							<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="1"/>
+							<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption height="42" side="None" visible="true" width="122" x="24" y="162"/>
+							<FillColor color="Cr:195,245,122,0" style="1" transparency="100" type="1"/>
+						</Shape>
+						<Shape height="40" id="hEV8cFaGAqFSra7k" model="hEV8cFaGAqFSra7l" name="Maneja" shapeType="BPTask" width="60" x="132" y="132" zorder="10">
+							<DiagramElementProperties>
+								<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+									<ModelRef id="hEV8cFaGAqFSra7l"/>
+								</ModelRefProperty>
+								<IntegerProperty displayName="X" name="x" value="160"/>
+								<IntegerProperty displayName="Y" name="y" value="130"/>
+								<IntegerProperty displayName="Width" name="width" value="60"/>
+								<IntegerProperty displayName="Height" name="height" value="40"/>
+								<ColorProperty displayName="Background" name="background" value="Cr:238,245,122,0"/>
+								<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+								<IntegerProperty displayName="ZOrder" name="zOrder" value="10"/>
+								<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+								<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+								<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+								<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+								<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+								<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+								<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+								<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+								<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+								<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+								<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+								<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+								<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+							</DiagramElementProperties>
+							<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="1"/>
+							<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption height="40" side="FreeMove" visible="true" width="60" x="-28" y="2"/>
+							<FillColor color="Cr:238,245,122,0" style="1" transparency="100" type="1"/>
+						</Shape>
+						<Shape height="40" id="uG.CcFaGAqFSrbmZ" model="uG.CcFaGAqFSrbma" name="" shapeType="BPGateway" width="40" x="212" y="132" zorder="8">
+							<DiagramElementProperties>
+								<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+									<ModelRef id="uG.CcFaGAqFSrbma"/>
+								</ModelRefProperty>
+								<IntegerProperty displayName="X" name="x" value="240"/>
+								<IntegerProperty displayName="Y" name="y" value="130"/>
+								<IntegerProperty displayName="Width" name="width" value="40"/>
+								<IntegerProperty displayName="Height" name="height" value="40"/>
+								<ColorProperty displayName="Background" name="background" value="Cr:255,153,46,0"/>
+								<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+								<IntegerProperty displayName="ZOrder" name="zOrder" value="8"/>
+								<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+								<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+								<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+								<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+								<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+								<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+								<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+								<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+								<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+								<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+								<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+								<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+								<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+								<IntegerProperty displayName="0cp Plct" name="0cpPlct" value="10"/>
+							</DiagramElementProperties>
+							<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+							<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption height="0" side="None" visible="true" width="20" x="222" y="172"/>
+							<FillColor color="Cr:255,153,46,0" style="1" transparency="100" type="1"/>
+						</Shape>
+						<Shape height="20" id="riJCcFaGAqFSrbtd" model="riJCcFaGAqFSrbte" name="Llega a su&#10;destino" shapeType="BPEndEvent" width="20" x="272" y="52" zorder="6">
+							<DiagramElementProperties>
+								<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+									<ModelRef id="riJCcFaGAqFSrbte"/>
+								</ModelRefProperty>
+								<IntegerProperty displayName="X" name="x" value="300"/>
+								<IntegerProperty displayName="Y" name="y" value="50"/>
+								<IntegerProperty displayName="Width" name="width" value="20"/>
+								<IntegerProperty displayName="Height" name="height" value="20"/>
+								<ColorProperty displayName="Background" name="background" value="Cr:245,122,122,0"/>
+								<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+								<IntegerProperty displayName="ZOrder" name="zOrder" value="6"/>
+								<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+								<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+								<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+								<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+								<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+								<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+								<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+								<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+								<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+								<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+								<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+								<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+								<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+								<IntegerProperty displayName="0cp Plct" name="0cpPlct" value="10"/>
+							</DiagramElementProperties>
+							<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="1"/>
+							<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="2.5">
+								<Stroke/>
+							</Line>
+							<Caption height="30" side="None" visible="true" width="78" x="239" y="12"/>
+							<FillColor color="Cr:245,122,122,0" style="1" transparency="100" type="1"/>
+						</Shape>
+						<Shape height="20" id="y3hicFaGAqFSrb.w" model="y3hicFaGAqFSrb.x" name="Ocurre un &#10;percanse" shapeType="BPIntermediateEvent" width="20" x="282" y="142" zorder="4">
+							<DiagramElementProperties>
+								<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+									<ModelRef id="y3hicFaGAqFSrb.x"/>
+								</ModelRefProperty>
+								<IntegerProperty displayName="X" name="x" value="310"/>
+								<IntegerProperty displayName="Y" name="y" value="140"/>
+								<IntegerProperty displayName="Width" name="width" value="20"/>
+								<IntegerProperty displayName="Height" name="height" value="20"/>
+								<ColorProperty displayName="Background" name="background" value="Cr:245,196,122,0"/>
+								<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+								<IntegerProperty displayName="ZOrder" name="zOrder" value="4"/>
+								<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+								<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+								<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+								<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+								<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+								<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+								<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+								<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+								<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+								<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+								<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+								<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+								<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+								<IntegerProperty displayName="0cp Plct" name="0cpPlct" value="10"/>
+							</DiagramElementProperties>
+							<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="1"/>
+							<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption height="30" side="None" visible="true" width="78" x="247" y="112"/>
+							<FillColor color="Cr:245,196,122,0" style="1" transparency="100" type="1"/>
+						</Shape>
+						<Shape height="40" id="uxwScFaGAqFSrcdo" model="uxwScFaGAqFSrcdp" name="¿Puede notificar?" shapeType="BPGateway" width="40" x="352" y="132" zorder="2">
+							<DiagramElementProperties>
+								<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+									<ModelRef id="uxwScFaGAqFSrcdp"/>
+								</ModelRefProperty>
+								<IntegerProperty displayName="X" name="x" value="380"/>
+								<IntegerProperty displayName="Y" name="y" value="130"/>
+								<IntegerProperty displayName="Width" name="width" value="40"/>
+								<IntegerProperty displayName="Height" name="height" value="40"/>
+								<ColorProperty displayName="Background" name="background" value="Cr:255,153,46,0"/>
+								<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+								<IntegerProperty displayName="ZOrder" name="zOrder" value="2"/>
+								<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+								<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+								<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+								<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+								<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+								<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+								<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+								<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+								<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+								<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+								<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+								<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+								<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+								<IntegerProperty displayName="0cp Plct" name="0cpPlct" value="10"/>
+							</DiagramElementProperties>
+							<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="1"/>
+							<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption height="16" side="None" visible="true" width="117" x="309" y="172"/>
+							<FillColor color="Cr:255,153,46,0" style="1" transparency="100" type="1"/>
+						</Shape>
+						<Shape height="40" id="7cqScFaGAqFSrczd" model="7cqScFaGAqFSrcze" name="Notifica percanse" shapeType="BPTask" width="110" x="422" y="132" zorder="0">
+							<DiagramElementProperties>
+								<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+									<ModelRef id="7cqScFaGAqFSrcze"/>
+								</ModelRefProperty>
+								<IntegerProperty displayName="X" name="x" value="450"/>
+								<IntegerProperty displayName="Y" name="y" value="130"/>
+								<IntegerProperty displayName="Width" name="width" value="110"/>
+								<IntegerProperty displayName="Height" name="height" value="40"/>
+								<ColorProperty displayName="Background" name="background" value="Cr:238,245,122,0"/>
+								<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+								<IntegerProperty displayName="ZOrder" name="zOrder" value="0"/>
+								<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+								<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+								<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+								<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+								<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+								<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+								<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+								<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+								<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+								<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+								<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+								<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+								<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+								<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+							</DiagramElementProperties>
+							<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="1"/>
+							<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+								<Stroke/>
+							</Line>
+							<Caption height="40" side="FreeMove" visible="true" width="110" x="-28" y="2"/>
+							<FillColor color="Cr:238,245,122,0" style="1" transparency="100" type="1"/>
+						</Shape>
+					</ChildShapes>
+					<FillColor color="Cr:135,220,245,0" style="1" transparency="100" type="1"/>
+				</Shape>
+				<Shape height="80" id="oR1ccFaGAqFSraTV" model="oR1ccFaGAqFSraTW" name="Familiares" shapeType="BPPool" width="997" x="2" y="252" zorder="18">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="oR1ccFaGAqFSraTW"/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="30"/>
+						<IntegerProperty displayName="Y" name="y" value="250"/>
+						<IntegerProperty displayName="Width" name="width" value="997"/>
+						<IntegerProperty displayName="Height" name="height" value="80"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:135,220,245,0"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="18"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+						<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+						<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+						<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+						<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+						<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+						<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+						<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+						<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+						<IntegerProperty displayName="Orientation" name="orientation" value="0"/>
+						<IntegerProperty displayName="Auto Stretch" name="autoStretch" value="1"/>
+						<BooleanProperty displayName="Validate Pool For Import" name="validatePoolForImport" value="false"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="80" side="InsideNorth" visible="true" width="16" x="-28" y="2"/>
+					<FillColor color="Cr:135,220,245,0" style="1" transparency="100" type="1"/>
+				</Shape>
+				<Shape height="90" id="EtjccFaGAqFSraV8" model="EtjccFaGAqFSraV9" name="Emergecias" shapeType="BPPool" width="997" x="2" y="342" zorder="16">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="EtjccFaGAqFSraV9"/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="30"/>
+						<IntegerProperty displayName="Y" name="y" value="340"/>
+						<IntegerProperty displayName="Width" name="width" value="997"/>
+						<IntegerProperty displayName="Height" name="height" value="90"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:135,220,245,0"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="16"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+						<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+						<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+						<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+						<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+						<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+						<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+						<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+						<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+						<IntegerProperty displayName="Orientation" name="orientation" value="0"/>
+						<IntegerProperty displayName="Auto Stretch" name="autoStretch" value="0"/>
+						<BooleanProperty displayName="Validate Pool For Import" name="validatePoolForImport" value="false"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="90" side="InsideNorth" visible="true" width="16" x="-28" y="2"/>
+					<FillColor color="Cr:135,220,245,0" style="1" transparency="100" type="1"/>
+				</Shape>
+				<Shape height="90" id="mIS8cFaGAqFSravZ" model="mIS8cFaGAqFSrava" name="Aseguradoras" shapeType="BPPool" width="997" x="2" y="442" zorder="14">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="mIS8cFaGAqFSrava"/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="30"/>
+						<IntegerProperty displayName="Y" name="y" value="440"/>
+						<IntegerProperty displayName="Width" name="width" value="997"/>
+						<IntegerProperty displayName="Height" name="height" value="90"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:135,220,245,0"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="14"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<StringProperty displayName="Display Image Path" name="displayImagePath"/>
+						<BooleanProperty displayName="Display Stereotype Icon" name="displayStereotypeIcon" value="false"/>
+						<BooleanProperty displayName="Override Appearance With Stereotype Icon" name="overrideAppearanceWithStereotypeIcon" value="true"/>
+						<IntegerProperty displayName="Parent Connector Header Length" name="parentConnectorHeaderLength" value="36"/>
+						<IntegerProperty displayName="Parent Connector Line Length" name="parentConnectorLineLength" value="9"/>
+						<BooleanProperty displayName="Connect To Point" name="connectToPoint" value="true"/>
+						<DoubleProperty displayName="Parent Connector DTheta" name="parentConnectorDTheta" value="0.0"/>
+						<IntegerProperty displayName="Connection Point Type" name="connectionPointType" value="2"/>
+						<BooleanProperty displayName="Request Default Size" name="requestDefaultSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size" name="requestFitSize" value="false"/>
+						<BooleanProperty displayName="Request Fit Size From Center" name="requestFitSizeFromCenter" value="false"/>
+						<IntegerProperty displayName="Orientation" name="orientation" value="0"/>
+						<IntegerProperty displayName="Auto Stretch" name="autoStretch" value="0"/>
+						<BooleanProperty displayName="Validate Pool For Import" name="validatePoolForImport" value="false"/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="90" side="InsideNorth" visible="true" width="16" x="-28" y="2"/>
+					<FillColor color="Cr:135,220,245,0" style="1" transparency="100" type="1"/>
+				</Shape>
+			</Shapes>
+			<Connectors>
+				<Connector connectorStyle="Follow Diagram" from="Dep8cFaGAqFSra4w" height="111" id="eUV8cFaGAqFSra8x" model="eUV8cFaGAqFSra8w" shapeType="BPSequenceFlow" to="hEV8cFaGAqFSra7k" width="140" x="46" y="96" zorder="-1">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="eUV8cFaGAqFSra8w"/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="74"/>
+						<IntegerProperty displayName="Y" name="y" value="94"/>
+						<IntegerProperty displayName="Width" name="width" value="140"/>
+						<IntegerProperty displayName="Height" name="height" value="111"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:0,0,0,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="-1"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<IntegerProperty displayName="Connector Style" name="connectorStyle" value="3"/>
+						<IntegerProperty displayName="From Shape XDiff" name="fromShapeXDiff" value="0"/>
+						<IntegerProperty displayName="From Shape YDiff" name="fromShapeYDiff" value="0"/>
+						<IntegerProperty displayName="To Shape XDiff" name="toShapeXDiff" value="0"/>
+						<IntegerProperty displayName="To Shape YDiff" name="toShapeYDiff" value="0"/>
+						<IntegerProperty displayName="From Connect Type" name="fromConnectType" value="0"/>
+						<IntegerProperty displayName="To Connect Type" name="toConnectType" value="0"/>
+						<BooleanProperty displayName="Use From Shape Center" name="useFromShapeCenter" value="true"/>
+						<BooleanProperty displayName="Use To Shape Center" name="useToShapeCenter" value="true"/>
+						<IntegerProperty displayName="From Pin Type" name="fromPinType" value="1"/>
+						<IntegerProperty displayName="To Pin Type" name="toPinType" value="1"/>
+						<PointProperty displayName="From Pin Ratio" name="fromPinRatio" value=""/>
+						<PointProperty displayName="To Pin Ratio" name="toPinRatio" value=""/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="0" side="None" visible="true" width="20" x="103" y="146"/>
+					<Points>
+						<Point x="102" y="152"/>
+						<Point x="130" y="152"/>
+					</Points>
+				</Connector>
+				<Connector connectorStyle="Follow Diagram" from="hEV8cFaGAqFSra7k" height="111" id="0J.CcFaGAqFSrbnU" model="0J.CcFaGAqFSrbnT" shapeType="BPSequenceFlow" to="uG.CcFaGAqFSrbmZ" width="130" x="136" y="96" zorder="-1">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="0J.CcFaGAqFSrbnT"/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="164"/>
+						<IntegerProperty displayName="Y" name="y" value="94"/>
+						<IntegerProperty displayName="Width" name="width" value="130"/>
+						<IntegerProperty displayName="Height" name="height" value="111"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:0,0,0,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="-1"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<IntegerProperty displayName="Connector Style" name="connectorStyle" value="3"/>
+						<IntegerProperty displayName="From Shape XDiff" name="fromShapeXDiff" value="0"/>
+						<IntegerProperty displayName="From Shape YDiff" name="fromShapeYDiff" value="0"/>
+						<IntegerProperty displayName="To Shape XDiff" name="toShapeXDiff" value="0"/>
+						<IntegerProperty displayName="To Shape YDiff" name="toShapeYDiff" value="0"/>
+						<IntegerProperty displayName="From Connect Type" name="fromConnectType" value="0"/>
+						<IntegerProperty displayName="To Connect Type" name="toConnectType" value="0"/>
+						<BooleanProperty displayName="Use From Shape Center" name="useFromShapeCenter" value="true"/>
+						<BooleanProperty displayName="Use To Shape Center" name="useToShapeCenter" value="true"/>
+						<IntegerProperty displayName="From Pin Type" name="fromPinType" value="1"/>
+						<IntegerProperty displayName="To Pin Type" name="toPinType" value="1"/>
+						<PointProperty displayName="From Pin Ratio" name="fromPinRatio" value=""/>
+						<PointProperty displayName="To Pin Ratio" name="toPinRatio" value=""/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="0" side="None" visible="true" width="20" x="183" y="146"/>
+					<Points>
+						<Point x="192" y="152"/>
+						<Point x="210" y="152"/>
+					</Points>
+				</Connector>
+				<Connector connectorStyle="Follow Diagram" from="uG.CcFaGAqFSrbmZ" height="181" id="aspCcFaGAqFSrbvu" model="aspCcFaGAqFSrbvt" name="" shapeType="BPSequenceFlow" to="riJCcFaGAqFSrbtd" width="151" x="176" y="6" zorder="-1">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="aspCcFaGAqFSrbvt"/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="204"/>
+						<IntegerProperty displayName="Y" name="y" value="4"/>
+						<IntegerProperty displayName="Width" name="width" value="151"/>
+						<IntegerProperty displayName="Height" name="height" value="181"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:0,0,0,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="-1"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<IntegerProperty displayName="Connector Style" name="connectorStyle" value="3"/>
+						<IntegerProperty displayName="From Shape XDiff" name="fromShapeXDiff" value="0"/>
+						<IntegerProperty displayName="From Shape YDiff" name="fromShapeYDiff" value="0"/>
+						<IntegerProperty displayName="To Shape XDiff" name="toShapeXDiff" value="0"/>
+						<IntegerProperty displayName="To Shape YDiff" name="toShapeYDiff" value="0"/>
+						<IntegerProperty displayName="From Connect Type" name="fromConnectType" value="0"/>
+						<IntegerProperty displayName="To Connect Type" name="toConnectType" value="0"/>
+						<BooleanProperty displayName="Use From Shape Center" name="useFromShapeCenter" value="true"/>
+						<BooleanProperty displayName="Use To Shape Center" name="useToShapeCenter" value="true"/>
+						<IntegerProperty displayName="From Pin Type" name="fromPinType" value="1"/>
+						<IntegerProperty displayName="To Pin Type" name="toPinType" value="1"/>
+						<PointProperty displayName="From Pin Ratio" name="fromPinRatio" value=""/>
+						<PointProperty displayName="To Pin Ratio" name="toPinRatio" value=""/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="0" side="None" visible="true" width="20" x="244" y="83"/>
+					<Points>
+						<Point x="232" y="132"/>
+						<Point x="232" y="62"/>
+						<Point x="272" y="62"/>
+					</Points>
+				</Connector>
+				<Connector connectorStyle="Follow Diagram" from="uG.CcFaGAqFSrbmZ" height="111" id="AvhicFaGAqFSrb_f" model="AvhicFaGAqFSrb_e" shapeType="BPSequenceFlow" to="y3hicFaGAqFSrb.w" width="141" x="196" y="96" zorder="-1">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="AvhicFaGAqFSrb_e"/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="224"/>
+						<IntegerProperty displayName="Y" name="y" value="94"/>
+						<IntegerProperty displayName="Width" name="width" value="141"/>
+						<IntegerProperty displayName="Height" name="height" value="111"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:0,0,0,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="-1"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<IntegerProperty displayName="Connector Style" name="connectorStyle" value="3"/>
+						<IntegerProperty displayName="From Shape XDiff" name="fromShapeXDiff" value="0"/>
+						<IntegerProperty displayName="From Shape YDiff" name="fromShapeYDiff" value="0"/>
+						<IntegerProperty displayName="To Shape XDiff" name="toShapeXDiff" value="0"/>
+						<IntegerProperty displayName="To Shape YDiff" name="toShapeYDiff" value="0"/>
+						<IntegerProperty displayName="From Connect Type" name="fromConnectType" value="0"/>
+						<IntegerProperty displayName="To Connect Type" name="toConnectType" value="0"/>
+						<BooleanProperty displayName="Use From Shape Center" name="useFromShapeCenter" value="true"/>
+						<BooleanProperty displayName="Use To Shape Center" name="useToShapeCenter" value="true"/>
+						<IntegerProperty displayName="From Pin Type" name="fromPinType" value="1"/>
+						<IntegerProperty displayName="To Pin Type" name="toPinType" value="1"/>
+						<PointProperty displayName="From Pin Ratio" name="fromPinRatio" value=""/>
+						<PointProperty displayName="To Pin Ratio" name="toPinRatio" value=""/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="0" side="None" visible="true" width="20" x="256" y="146"/>
+					<Points>
+						<Point x="252" y="152"/>
+						<Point x="282" y="152"/>
+					</Points>
+				</Connector>
+				<Connector connectorStyle="Follow Diagram" from="y3hicFaGAqFSrb.w" height="111" id="VZUScFaGAqFSrclu" model="VZUScFaGAqFSrclt" shapeType="BPSequenceFlow" to="uxwScFaGAqFSrcdo" width="160" x="246" y="96" zorder="-1">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="VZUScFaGAqFSrclt"/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="274"/>
+						<IntegerProperty displayName="Y" name="y" value="94"/>
+						<IntegerProperty displayName="Width" name="width" value="160"/>
+						<IntegerProperty displayName="Height" name="height" value="111"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:0,0,0,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="-1"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<IntegerProperty displayName="Connector Style" name="connectorStyle" value="3"/>
+						<IntegerProperty displayName="From Shape XDiff" name="fromShapeXDiff" value="0"/>
+						<IntegerProperty displayName="From Shape YDiff" name="fromShapeYDiff" value="0"/>
+						<IntegerProperty displayName="To Shape XDiff" name="toShapeXDiff" value="0"/>
+						<IntegerProperty displayName="To Shape YDiff" name="toShapeYDiff" value="0"/>
+						<IntegerProperty displayName="From Connect Type" name="fromConnectType" value="0"/>
+						<IntegerProperty displayName="To Connect Type" name="toConnectType" value="0"/>
+						<BooleanProperty displayName="Use From Shape Center" name="useFromShapeCenter" value="true"/>
+						<BooleanProperty displayName="Use To Shape Center" name="useToShapeCenter" value="true"/>
+						<IntegerProperty displayName="From Pin Type" name="fromPinType" value="1"/>
+						<IntegerProperty displayName="To Pin Type" name="toPinType" value="1"/>
+						<PointProperty displayName="From Pin Ratio" name="fromPinRatio" value=""/>
+						<PointProperty displayName="To Pin Ratio" name="toPinRatio" value=""/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="0"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="0" side="None" visible="true" width="20" x="310" y="146"/>
+					<Points>
+						<Point x="302" y="152"/>
+						<Point x="350" y="152"/>
+					</Points>
+				</Connector>
+				<Connector connectorStyle="Follow Diagram" from="uxwScFaGAqFSrcdo" height="111" id="wiqScFaGAqFSrc0s" model="wiqScFaGAqFSrc0r" name="Sí" shapeType="BPSequenceFlow" to="7cqScFaGAqFSrczd" width="140" x="336" y="96" zorder="-1">
+					<DiagramElementProperties>
+						<ModelRefProperty displayName="Meta Model Element" name="metaModelElement">
+							<ModelRef id="wiqScFaGAqFSrc0r"/>
+						</ModelRefProperty>
+						<IntegerProperty displayName="X" name="x" value="364"/>
+						<IntegerProperty displayName="Y" name="y" value="94"/>
+						<IntegerProperty displayName="Width" name="width" value="140"/>
+						<IntegerProperty displayName="Height" name="height" value="111"/>
+						<ColorProperty displayName="Background" name="background" value="Cr:0,0,0,255"/>
+						<ColorProperty displayName="Foreground" name="foreground" value="Cr:0,0,0,255"/>
+						<IntegerProperty displayName="ZOrder" name="zOrder" value="-1"/>
+						<StringProperty displayName="Creator Diagram Type" name="creatorDiagramType"/>
+						<BooleanProperty displayName="Selectable" name="selectable" value="true"/>
+						<BooleanProperty displayName="Request Reset Caption" name="requestResetCaption" value="false"/>
+						<BooleanProperty displayName="Request Reset Caption Size" name="requestResetCaptionSize" value="false"/>
+						<IntegerProperty displayName="Connector Style" name="connectorStyle" value="3"/>
+						<IntegerProperty displayName="From Shape XDiff" name="fromShapeXDiff" value="0"/>
+						<IntegerProperty displayName="From Shape YDiff" name="fromShapeYDiff" value="0"/>
+						<IntegerProperty displayName="To Shape XDiff" name="toShapeXDiff" value="0"/>
+						<IntegerProperty displayName="To Shape YDiff" name="toShapeYDiff" value="0"/>
+						<IntegerProperty displayName="From Connect Type" name="fromConnectType" value="0"/>
+						<IntegerProperty displayName="To Connect Type" name="toConnectType" value="0"/>
+						<BooleanProperty displayName="Use From Shape Center" name="useFromShapeCenter" value="true"/>
+						<BooleanProperty displayName="Use To Shape Center" name="useToShapeCenter" value="true"/>
+						<IntegerProperty displayName="From Pin Type" name="fromPinType" value="1"/>
+						<IntegerProperty displayName="To Pin Type" name="toPinType" value="1"/>
+						<PointProperty displayName="From Pin Ratio" name="fromPinRatio" value=""/>
+						<PointProperty displayName="To Pin Ratio" name="toPinRatio" value=""/>
+					</DiagramElementProperties>
+					<ElementFont color="Cr:0,0,0,255" name="Dialog" size="11" style="1"/>
+					<Line cap="0" color="Cr:0,0,0,255" transparency="0" weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption height="15" side="None" visible="true" width="30" x="382" y="132"/>
+					<Points>
+						<Point x="392" y="152"/>
+						<Point x="420" y="152"/>
 					</Points>
 				</Connector>
 			</Connectors>
