@@ -1,43 +1,31 @@
 
-\section{Modelo de información de periodos de consumo de energía y agua}
+\section{Modelo de información de In-Help}
 
 \subsection{Descripción general}
- En la figura~\ref{fig:registroInfoBasePeriodo} se muestra la estructura de información que manejará el sistema para registrar la información de los periodos de consumo de agua y energía.
+ En la figura~\ref{fig:Modelo_Info_In-Help} se muestra la estructura de información que manejará para la implementación del sistema y aplicación In-Help
  
-%\begin{figure}[htbp!]
-%	\begin{center}
-%		\fbox{\includegraphics[width=.6\textwidth]{images/clases/periodo}}
-%		\caption{Modelo de información del registro de periodos de consumo de agua y energía.}
-%		\label{fig:registroInfoBasePeriodo}
-%	\end{center}
-%\end{figure}
+\begin{figure}[htbp!]
+	\begin{center}
+		\fbox{\includegraphics[width=1.1\textwidth]{ModeloNegocios/images/Informacion/DG_Informacion}}
+		\caption{Modelo de información In-Help}
+		\label{fig:Modelo_Info_In-Help}
+	\end{center}
+\end{figure}
 
-\begin{BusinessEntity}{periodo-consumo}{Periodo de consumo}
-      \Battr{Anio}{Año}{\tdNumerico}{Año al que corresponde el periodo de consumo}{\requerido}
-      \Battr{consumo}{Consumo}{\tdNumerico{decimal}}{Cantidad de agua o energía expresada en metros cúbicos, o kilowatts-hora, consumida en el periodo}{\requerido}
-      \Battr{importe}{Importe}{\tdNumerico{decimal}}{Valor en pesos mexicanos del consumo de agua o energía en el periodo}{\requerido}
+\begin{BusinessEntity}{Usuario}{Usuario} 
+    \Battr{usuario}{Usuario}{\tdCadena}{Es el identificador único para el usuario}{\requerido}{\longitudMinMax{5}{}{30}{}}
+    \Battr{password}{Password}{\tdCadena}{Es la clave de acceso del usuario para la aplicación}{\requerido}{\longitudMinMax{8}{}{20}{}}
+	\Battr{telefono}{Teléfono}{\tdNumerico}{Es el número de teléfono celular del usuario}{\requerido}{\longitudExacta{10}{}}
 \end{BusinessEntity}
 
+\begin{BusinessEntity}{Cuenta}{Cuenta} 
+	\Battr{fh_inicio}{Fecha inicio}{\tdFecha}{Es la fecha en la que el usuario creo su cuenta}{\requerido}
+	\Battr{fh_fin}{Fecha fin}{\tdFecha}{Es la fecha en la que el usuario elimino su cuenta}{\opcional}
+\end{BusinessEntity}
 
-%%================================================================================================
-\section{Modelo de información del registro de información base para indicadores de agua}
+\begin{BusinessEntity}{Perfil}{Perfil} 
+	\Battr{nb_perfil}{Nombre de perfil}{\tdPalabra}{Es el nombre que identifica al perfil}{\requerido}{\longitudMinMax{2}{}{30}{}}
+	\Battr{ds_perfil}{Es la descripción de perfil}{\tdFrase}{Es la descripción de las actividades del perfil}{\requerido}{\longitudMinMax{10}{}{100}{}}
 
-\subsection{Descripción general}
- En la figura~\ref{fig:registroInfoBaseAgua} se muestra la estructura de información que manejará el sistema para registrar la información base para indicadores de agua.
- 
-%\begin{figure}[htbp!]
-%	\begin{center}
-%		\fbox{\includegraphics[width=1\textwidth]{images/clases/agua}}
-%		\caption{Modelo de información del registro de información base para indicadores de agua.}
-%		\label{fig:registroInfoBaseAgua}
-%	\end{center}
-%\end{figure}
-
-\begin{BusinessEntity}{consumo-agua}{Consumo de agua}
-      \Battr{recibos}{Cuenta con recibos}{\tdBooleano}{Indica si la escuela cuenta con recibos del consumo de agua}{\requerido}
-      %\Battr{consumoAnual}{Consumo anual promedio}{\tdNumerico{decimal}}{Cantidad promedio de agua consumida anualmente expresada en metros cúbicos}{\requerido}
-      %\Battr{importeAnual}{Importe anual promedio}{\tdNumerico{decimal}}{Valor anual en pesos mexicanos del consumo anual de agua}{\requerido}
-      \Battr{tipoAbastecimiento}{Tipo de abastecimiento}{\tdCatalogo}{Método empleado para transportar y suministrar el agua a la escuela, definido por el catálogo \cdtRef{gls:tipoAbastecimiento}{Tipo de abastecimiento}}{\requerido}
-      \Battr{tipoDePeriodo}{Tipo de periodo}{\tdCatalogo}{Especifica el periodo utilizado para reportar el consumo de agua, definido por el catálogo \cdtRef{gls:tipoDePeriodo}{Tipo de periodo}}{\requerido}
 \end{BusinessEntity}
 
