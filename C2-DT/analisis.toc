@@ -47,29 +47,39 @@
 \contentsline {subsubsection}{RN1 Campos obligatorios}{27}{section*.11}% 
 \contentsline {section}{\numberline {7.2}Actores del sistema}{27}{section.7.2}% 
 \contentsline {subsection}{\numberline {7.2.1}Paciente}{28}{subsection.7.2.1}% 
-\contentsline {chapter}{\numberline {8}Modelo de Comportamiento}{29}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}M\IeC {\'o}dulos del sistema}{29}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}Modelo de comportamiento del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{30}{section.8.2}% 
-\contentsline {section}{\numberline {8.3}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Externo}{31}{section.8.3}% 
-\contentsline {section}{\numberline {8.4}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Interno}{32}{section.8.4}% 
-\contentsline {section}{\numberline {8.5}Casos de uso del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{33}{section.8.5}% 
-\contentsline {section}{\numberline {8.6}CU1 Consultar pacientes}{34}{section.8.6}% 
-\contentsline {subsection}{\numberline {8.6.1}Resumen}{34}{subsection.8.6.1}% 
-\contentsline {subsection}{\numberline {8.6.2}Descripci\IeC {\'o}n}{34}{subsection.8.6.2}% 
-\contentsline {subsection}{\numberline {8.6.3}Trayectorias del caso de uso}{35}{subsection.8.6.3}% 
-\contentsline {subsection}{\numberline {8.6.4}Puntos de extensi\IeC {\'o}n}{35}{subsection.8.6.4}% 
-\contentsline {chapter}{\numberline {9}Modelo de Interacci\IeC {\'o}n con el Usuario}{37}{chapter.9}% 
-\contentsline {section}{\numberline {9.1}Entorno de trabajo}{37}{section.9.1}% 
-\contentsline {section}{\numberline {9.2}Interfaces de usuario}{38}{section.9.2}% 
-\contentsline {subsection}{\numberline {9.2.1}IU1 Consultar pacientes}{38}{subsection.9.2.1}% 
-\contentsline {subsubsection}{Objetivo}{38}{section*.12}% 
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{38}{section*.13}% 
-\contentsline {subsubsection}{Comandos}{38}{section*.14}% 
-\contentsline {section}{\numberline {9.3}Dise\IeC {\~n}o de mensajes}{40}{section.9.3}% 
-\contentsline {subsection}{\numberline {9.3.1}Par\IeC {\'a}metros comunes}{40}{subsection.9.3.1}% 
-\contentsline {subsection}{\numberline {9.3.2}Mensajes a trav\IeC {\'e}s de la pantalla}{41}{subsection.9.3.2}% 
-\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n realizada exitosamente}}{41}{section*.15}% 
-\contentsline {part}{II\hspace {1em}Implementaci\IeC {\'o}n}{43}{part.2}% 
-\contentsline {chapter}{\numberline {10}Avances y pruebas}{45}{chapter.10}% 
-\contentsline {section}{\numberline {10.1}Sensores de pulso}{45}{section.10.1}% 
-\contentsline {chapter}{Referencias}{47}{chapter*.16}% 
+\contentsline {section}{\numberline {7.3}T\IeC {\'e}rminos t\IeC {\'e}cnicos}{28}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}T\IeC {\'e}rminos del negocio}{30}{section.7.4}% 
+\contentsline {section}{\numberline {7.5}Modelo de informaci\IeC {\'o}n de In-Help}{35}{section.7.5}% 
+\contentsline {subsection}{\numberline {7.5.1}Descripci\IeC {\'o}n general}{35}{subsection.7.5.1}% 
+\contentsline {subsection}{\numberline {7.5.2}Usuario}{37}{subsection.7.5.2}% 
+\contentsline {subsubsection}{Atributos}{37}{section*.12}% 
+\contentsline {subsection}{\numberline {7.5.3}Cuenta}{37}{subsection.7.5.3}% 
+\contentsline {subsubsection}{Atributos}{37}{section*.13}% 
+\contentsline {subsection}{\numberline {7.5.4}Perfil}{37}{subsection.7.5.4}% 
+\contentsline {subsubsection}{Atributos}{37}{section*.14}% 
+\contentsline {chapter}{\numberline {8}Modelo de Comportamiento}{39}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}M\IeC {\'o}dulos del sistema}{39}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Modelo de comportamiento del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{40}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Externo}{41}{section.8.3}% 
+\contentsline {section}{\numberline {8.4}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Interno}{42}{section.8.4}% 
+\contentsline {section}{\numberline {8.5}Casos de uso del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{43}{section.8.5}% 
+\contentsline {section}{\numberline {8.6}CU1 Consultar pacientes}{44}{section.8.6}% 
+\contentsline {subsection}{\numberline {8.6.1}Resumen}{44}{subsection.8.6.1}% 
+\contentsline {subsection}{\numberline {8.6.2}Descripci\IeC {\'o}n}{44}{subsection.8.6.2}% 
+\contentsline {subsection}{\numberline {8.6.3}Trayectorias del caso de uso}{45}{subsection.8.6.3}% 
+\contentsline {subsection}{\numberline {8.6.4}Puntos de extensi\IeC {\'o}n}{45}{subsection.8.6.4}% 
+\contentsline {chapter}{\numberline {9}Modelo de Interacci\IeC {\'o}n con el Usuario}{47}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Entorno de trabajo}{47}{section.9.1}% 
+\contentsline {section}{\numberline {9.2}Interfaces de usuario}{48}{section.9.2}% 
+\contentsline {subsection}{\numberline {9.2.1}IU1 Consultar pacientes}{48}{subsection.9.2.1}% 
+\contentsline {subsubsection}{Objetivo}{48}{section*.15}% 
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{48}{section*.16}% 
+\contentsline {subsubsection}{Comandos}{48}{section*.17}% 
+\contentsline {section}{\numberline {9.3}Dise\IeC {\~n}o de mensajes}{50}{section.9.3}% 
+\contentsline {subsection}{\numberline {9.3.1}Par\IeC {\'a}metros comunes}{50}{subsection.9.3.1}% 
+\contentsline {subsection}{\numberline {9.3.2}Mensajes a trav\IeC {\'e}s de la pantalla}{51}{subsection.9.3.2}% 
+\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n realizada exitosamente}}{51}{section*.18}% 
+\contentsline {part}{II\hspace {1em}Implementaci\IeC {\'o}n}{53}{part.2}% 
+\contentsline {chapter}{\numberline {10}Avances y pruebas}{55}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}Sensores de pulso}{55}{section.10.1}% 
+\contentsline {chapter}{Referencias}{57}{chapter*.19}% 

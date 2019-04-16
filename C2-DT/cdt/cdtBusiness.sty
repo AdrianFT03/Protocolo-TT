@@ -279,6 +279,7 @@
 % Propósito: Estandarizar la redacción referente al tipo de dato al
 %            que pertenecen los atributos. 
 %=====================================================================
+\newcommand{\tdCadena}{Es una \cdtRef{gls:cadena}{cadena} de caracteres}
 \newcommand{\tdPalabra}{Es una \cdtRef{gls:palabra}{palabra} corta}
 \newcommand{\tdFrase}{Es una \cdtRef{gls:frase}{frase} o enunciado}
 \newcommand{\tdParrafo}{Descrita en uno o más \cdtRef{gls:parrafo}{párrafos}}
@@ -305,8 +306,8 @@
 % Comandos: \longitudExacta{longitud}{unidad}, \longitudMinMax{minima}{unidad}{maxima}{unidad}, \longitudMax{maxima}{unidad}
 % Propósito: simplificar la especificación de la longitud
 %=====================================================================
-\newcommand{\longitudExacta}[2]{Este atributo debe contener exactamente {#1} {#2}.}
-\newcommand{\longitudMinMax}[4]{Este atributo debe contener al menos {#1} {#2} y a lo más #3 #4.}
+\newcommand{\longitudExacta}[2]{Este atributo debe contener exactamente {#1} {#2} digitos.}
+\newcommand{\longitudMinMax}[4]{Este atributo debe contener al menos {#1} {#2} y a lo más #3 #4 caracteres.}
 \newcommand{\longitudMax}[2]{Este atributo debe contener a lo más {#1} {#2}.}
 
 

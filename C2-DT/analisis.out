@@ -38,25 +38,32 @@
 \BOOKMARK [1][-]{section.7.1}{Reglas de negocio}{chapter.7}% 38
 \BOOKMARK [1][-]{section.7.2}{Actores del sistema}{chapter.7}% 39
 \BOOKMARK [2][-]{subsection.7.2.1}{Paciente}{section.7.2}% 40
-\BOOKMARK [0][-]{chapter.8}{Modelo de Comportamiento}{part.1}% 41
-\BOOKMARK [1][-]{section.8.1}{M\363dulos del sistema}{chapter.8}% 42
-\BOOKMARK [1][-]{section.8.2}{Modelo de comportamiento del m\363dulo Aplicaci\363n M\363vil}{chapter.8}% 43
-\BOOKMARK [1][-]{section.8.3}{Modelo de comportamiento del m\363dulo Sistema Externo}{chapter.8}% 44
-\BOOKMARK [1][-]{section.8.4}{Modelo de comportamiento del m\363dulo Sistema Interno}{chapter.8}% 45
-\BOOKMARK [1][-]{section.8.5}{Casos de uso del m\363dulo Aplicaci\363n M\363vil}{chapter.8}% 46
-\BOOKMARK [1][-]{section.8.6}{CU1 Consultar pacientes}{chapter.8}% 47
-\BOOKMARK [2][-]{subsection.8.6.1}{Resumen}{section.8.6}% 48
-\BOOKMARK [2][-]{subsection.8.6.2}{Descripci\363n}{section.8.6}% 49
-\BOOKMARK [2][-]{subsection.8.6.3}{Trayectorias del caso de uso}{section.8.6}% 50
-\BOOKMARK [2][-]{subsection.8.6.4}{Puntos de extensi\363n}{section.8.6}% 51
-\BOOKMARK [0][-]{chapter.9}{Modelo de Interacci\363n con el Usuario}{part.1}% 52
-\BOOKMARK [1][-]{section.9.1}{Entorno de trabajo}{chapter.9}% 53
-\BOOKMARK [1][-]{section.9.2}{Interfaces de usuario}{chapter.9}% 54
-\BOOKMARK [2][-]{subsection.9.2.1}{IU1 Consultar pacientes}{section.9.2}% 55
-\BOOKMARK [1][-]{section.9.3}{Dise\361o de mensajes}{chapter.9}% 56
-\BOOKMARK [2][-]{subsection.9.3.1}{Par\341metros comunes}{section.9.3}% 57
-\BOOKMARK [2][-]{subsection.9.3.2}{Mensajes a trav\351s de la pantalla}{section.9.3}% 58
-\BOOKMARK [-1][-]{part.2}{II Implementaci\363n}{}% 59
-\BOOKMARK [0][-]{chapter.10}{Avances y pruebas}{part.2}% 60
-\BOOKMARK [1][-]{section.10.1}{Sensores de pulso}{chapter.10}% 61
-\BOOKMARK [0][-]{chapter*.16}{Referencias}{part.2}% 62
+\BOOKMARK [1][-]{section.7.3}{T\351rminos t\351cnicos}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.4}{T\351rminos del negocio}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.5}{Modelo de informaci\363n de In-Help}{chapter.7}% 43
+\BOOKMARK [2][-]{subsection.7.5.1}{Descripci\363n general}{section.7.5}% 44
+\BOOKMARK [2][-]{subsection.7.5.2}{Usuario}{section.7.5}% 45
+\BOOKMARK [2][-]{subsection.7.5.3}{Cuenta}{section.7.5}% 46
+\BOOKMARK [2][-]{subsection.7.5.4}{Perfil}{section.7.5}% 47
+\BOOKMARK [0][-]{chapter.8}{Modelo de Comportamiento}{part.1}% 48
+\BOOKMARK [1][-]{section.8.1}{M\363dulos del sistema}{chapter.8}% 49
+\BOOKMARK [1][-]{section.8.2}{Modelo de comportamiento del m\363dulo Aplicaci\363n M\363vil}{chapter.8}% 50
+\BOOKMARK [1][-]{section.8.3}{Modelo de comportamiento del m\363dulo Sistema Externo}{chapter.8}% 51
+\BOOKMARK [1][-]{section.8.4}{Modelo de comportamiento del m\363dulo Sistema Interno}{chapter.8}% 52
+\BOOKMARK [1][-]{section.8.5}{Casos de uso del m\363dulo Aplicaci\363n M\363vil}{chapter.8}% 53
+\BOOKMARK [1][-]{section.8.6}{CU1 Consultar pacientes}{chapter.8}% 54
+\BOOKMARK [2][-]{subsection.8.6.1}{Resumen}{section.8.6}% 55
+\BOOKMARK [2][-]{subsection.8.6.2}{Descripci\363n}{section.8.6}% 56
+\BOOKMARK [2][-]{subsection.8.6.3}{Trayectorias del caso de uso}{section.8.6}% 57
+\BOOKMARK [2][-]{subsection.8.6.4}{Puntos de extensi\363n}{section.8.6}% 58
+\BOOKMARK [0][-]{chapter.9}{Modelo de Interacci\363n con el Usuario}{part.1}% 59
+\BOOKMARK [1][-]{section.9.1}{Entorno de trabajo}{chapter.9}% 60
+\BOOKMARK [1][-]{section.9.2}{Interfaces de usuario}{chapter.9}% 61
+\BOOKMARK [2][-]{subsection.9.2.1}{IU1 Consultar pacientes}{section.9.2}% 62
+\BOOKMARK [1][-]{section.9.3}{Dise\361o de mensajes}{chapter.9}% 63
+\BOOKMARK [2][-]{subsection.9.3.1}{Par\341metros comunes}{section.9.3}% 64
+\BOOKMARK [2][-]{subsection.9.3.2}{Mensajes a trav\351s de la pantalla}{section.9.3}% 65
+\BOOKMARK [-1][-]{part.2}{II Implementaci\363n}{}% 66
+\BOOKMARK [0][-]{chapter.10}{Avances y pruebas}{part.2}% 67
+\BOOKMARK [1][-]{section.10.1}{Sensores de pulso}{chapter.10}% 68
+\BOOKMARK [0][-]{chapter*.19}{Referencias}{part.2}% 69
