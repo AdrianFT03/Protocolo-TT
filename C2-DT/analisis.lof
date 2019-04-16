@@ -11,12 +11,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Perfiles identificados.}}{28}{figure.7.1}% 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Modelo de informaci\IeC {\'o}n In-Help}}{31}{figure.7.2}% 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Modelo de informaci\IeC {\'o}n In-Help}}{33}{figure.7.2}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces M\IeC {\'o}dulos del sistema.}}{39}{figure.8.1}% 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil. }}{40}{figure.8.2}% 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Sistema Embebido. }}{41}{figure.8.3}% 
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Sistema Embebido. }}{42}{figure.8.4}% 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces M\IeC {\'o}dulos del sistema.}}{41}{figure.8.1}% 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Autenticaci\IeC {\'o}n. }}{43}{figure.8.2}% 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Contactor. }}{44}{figure.8.3}% 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Notificaciones. }}{45}{figure.8.4}% 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Datos Personales. }}{46}{figure.8.5}% 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Datos M\IeC {\'e}dicos. }}{47}{figure.8.6}% 
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Veh\IeC {\'\i }culos. }}{48}{figure.8.7}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces IU1 Consultar pacientes}}{49}{figure.9.1}% 
+\contentsline {figure}{\numberline {9.1}{\ignorespaces IU1 Consultar pacientes}}{55}{figure.9.1}% 
 \addvspace {10\p@ }

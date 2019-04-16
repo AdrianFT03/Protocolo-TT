@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.20)  16 APR 2019 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.20)  16 APR 2019 12:24
 entering extended mode
 **./analisis.tex
 (analisis.tex
@@ -571,10 +571,6 @@ File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 ) (analisis.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
-
-
-LaTeX Warning: Label `fig:casosUso:sistema' multiply defined.
-
 )
 \openout1 = `analisis.aux'.
 
@@ -594,7 +590,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Info: Redefining \. on input line 62.
 LaTeX Info: Redefining \% on input line 62.
- ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count132
 \scratchdimen=\dimen137
@@ -683,7 +679,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-<portada_TT1.pdf, id=358, 614.295pt x 794.97pt>
+<portada_TT1.pdf, id=366, 614.295pt x 794.97pt>
 File: portada_TT1.pdf Graphic file (type pdf)
 <use portada_TT1.pdf>
 Package pdftex.def Info: portada_TT1.pdf  used on input line 71.
@@ -692,7 +688,7 @@ File: portada_TT1.pdf Graphic file (type pdf)
 <use portada_TT1.pdf>
 Package pdftex.def Info: portada_TT1.pdf  used on input line 71.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<portada_TT1.pdf, id=361, page=1, 614.295pt x 794.97pt>
+<portada_TT1.pdf, id=369, page=1, 614.295pt x 794.97pt>
 File: portada_TT1.pdf Graphic file (type pdf)
 <use portada_TT1.pdf, page 1>
 Package pdftex.def Info: portada_TT1.pdf , page1 used on input line 71.
@@ -716,12 +712,12 @@ Package pdftex.def Info: portada_TT1.pdf , page1 used on input line 71.
  [1
 
  <./portada_TT1.pdf>]
-<cdt/theme/headerIpn.jpg, id=393, 426.59375pt x 632.3625pt>
+<cdt/theme/headerIpn.jpg, id=401, 426.59375pt x 632.3625pt>
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
 Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 87.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-<cdt/theme/logoEscom.jpg, id=394, 131.03902pt x 89.34479pt>
+<cdt/theme/logoEscom.jpg, id=402, 131.03902pt x 89.34479pt>
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 87.
@@ -764,38 +760,38 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `OT1/cmbr/m/sc' undefined
-(Font)              using `OT1/cmbr/m/n' instead on input line 25.
+(Font)              using `OT1/cmbr/m/n' instead on input line 26.
 
 
 Package spanish Warning: Replacing `OT1/cmbr/m/sc' by 
-(spanish)                faked small caps on input line 25.
+(spanish)                faked small caps on input line 26.
 
 [1
 
 ]
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 82.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 76.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 82.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 76.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 
 
 Package spanish Warning: Replacing `OT1/cmbr/m/sc' by 
-(spanish)                faked small caps on input line 82.
+(spanish)                faked small caps on input line 76.
 
 [2])
 \tf@toc=\write4
 \openout4 = `analisis.toc'.
 
-<cdt/theme/logoIpn.jpg, id=502, 426.59375pt x 632.3625pt>
+<cdt/theme/logoIpn.jpg, id=512, 426.59375pt x 632.3625pt>
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
 Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 90.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-<cdt/theme/headerEscom.jpg, id=503, 131.03902pt x 89.34479pt>
+<cdt/theme/headerEscom.jpg, id=513, 131.03902pt x 89.34479pt>
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
 Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 90.
@@ -911,107 +907,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd"
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 41.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 39.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 41.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 39.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 
+l.39 
       [2]
-LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 49.
+LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 47.
 
  ("C:\Program Files\MiKTeX 2.9\tex/latex/cmbright\omscmbr.fd"
 File: omscmbr.fd 2005/04/13 v8.1 (WaS)
 )
 LaTeX Font Info:    Font shape `OMS/cmbr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 49.
+(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 47.
 
 (Introduccion/estadoArte.tex
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 11.
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 9.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 11.
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 9.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
 
-Overfull \hbox (5.44734pt too wide) in paragraph at lines 15--17
+Overfull \hbox (5.44734pt too wide) in paragraph at lines 14--16
 \OT1/cmbr/m/sc/12 SOmart de-tec-ta el ac-ci-den-te au-tomati-ca-men-te uti-li-
 zan-do los sen-so-res in-ter-nos del smartp-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--29
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 32.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 35.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 32.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 35.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
@@ -1024,12 +1021,7 @@ File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 53.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
@@ -1062,7 +1054,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-<MarcoTeorico/imagenes/Acelerometro.png, id=585, 441.90094pt x 288.3272pt>
+<MarcoTeorico/imagenes/Acelerometro.png, id=599, 441.90094pt x 288.3272pt>
 File: MarcoTeorico/imagenes/Acelerometro.png Graphic file (type png)
 <use MarcoTeorico/imagenes/Acelerometro.png>
 Package pdftex.def Info: MarcoTeorico/imagenes/Acelerometro.png  used on input 
@@ -1096,7 +1088,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-<MarcoTeorico/imagenes/GPS.jpg, id=592, 301.125pt x 200.75pt>
+<MarcoTeorico/imagenes/GPS.jpg, id=606, 301.125pt x 200.75pt>
 File: MarcoTeorico/imagenes/GPS.jpg Graphic file (type jpg)
 <use MarcoTeorico/imagenes/GPS.jpg>
 Package pdftex.def Info: MarcoTeorico/imagenes/GPS.jpg  used on input line 38.
@@ -1129,7 +1121,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-<MarcoTeorico/imagenes/GPS1.jpg, id=599, 301.125pt x 276.03125pt>
+<MarcoTeorico/imagenes/GPS1.jpg, id=613, 301.125pt x 276.03125pt>
 File: MarcoTeorico/imagenes/GPS1.jpg Graphic file (type jpg)
 <use MarcoTeorico/imagenes/GPS1.jpg>
 Package pdftex.def Info: MarcoTeorico/imagenes/GPS1.jpg  used on input line 65.
@@ -1162,7 +1154,7 @@ File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 98.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
 [11]
-<MarcoTeorico/imagenes/AGPS.png, id=608, 321.2pt x 214.8025pt>
+<MarcoTeorico/imagenes/AGPS.png, id=622, 321.2pt x 214.8025pt>
 File: MarcoTeorico/imagenes/AGPS.png Graphic file (type png)
 <use MarcoTeorico/imagenes/AGPS.png>
 Package pdftex.def Info: MarcoTeorico/imagenes/AGPS.png  used on input line 102
@@ -1309,48 +1301,74 @@ Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 115.
 ]
 Cap\'{\i }tulo 7.
 (ModeloNegocios/modelo.tex (ModeloNegocios/reglas.tex
-<cdt/uc/rules/BRRule.png, id=688, 890.32625pt x 55.20625pt>
+<cdt/uc/rules/BRRule.png, id=702, 890.32625pt x 55.20625pt>
 File: cdt/uc/rules/BRRule.png Graphic file (type png)
 <use cdt/uc/rules/BRRule.png>
 Package pdftex.def Info: cdt/uc/rules/BRRule.png  used on input line 34.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
 )
 (ModeloNegocios/actores.tex
-<ModeloComportamiento/imagenes/Actores.png, id=692, 504.88625pt x 243.91125pt>
+<ModeloComportamiento/imagenes/Actores.png, id=706, 337.26pt x 256.96pt>
 File: ModeloComportamiento/imagenes/Actores.png Graphic file (type png)
 <use ModeloComportamiento/imagenes/Actores.png>
 Package pdftex.def Info: ModeloComportamiento/imagenes/Actores.png  used on inp
-ut line 12.
-(pdftex.def)             Requested size: 266.14978pt x 128.57637pt.
-<cdt/uc/rules/ActorRule.png, id=693, 890.32625pt x 55.20625pt>
+ut line 9.
+(pdftex.def)             Requested size: 266.14978pt x 202.78444pt.
+<cdt/uc/rules/ActorRule.png, id=707, 890.32625pt x 55.20625pt>
 File: cdt/uc/rules/ActorRule.png Graphic file (type png)
 <use cdt/uc/rules/ActorRule.png>
-Package pdftex.def Info: cdt/uc/rules/ActorRule.png  used on input line 19.
+Package pdftex.def Info: cdt/uc/rules/ActorRule.png  used on input line 15.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
- [27 <./cdt/uc/rules/BRRule.png>]))
-(ModeloNegocios/glosario.tex
+ [27 <./cdt/uc/rules/BRRule.png>]
+File: cdt/uc/rules/ActorRule.png Graphic file (type png)
+<use cdt/uc/rules/ActorRule.png>
+Package pdftex.def Info: cdt/uc/rules/ActorRule.png  used on input line 22.
+(pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
+File: cdt/uc/rules/ActorRule.png Graphic file (type png)
+<use cdt/uc/rules/ActorRule.png>
+Package pdftex.def Info: cdt/uc/rules/ActorRule.png  used on input line 28.
+(pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 27.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 28.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 27.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 28.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [28 <./ModeloComportamiento/imagenes/Actores.png> <./cdt/uc/rules/ActorRule.pn
-g>]
-LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 49.
+ [28 <./ModeloComportamiento/imagenes/Actores.png (PNG copy)> <./cdt/uc/rules/A
+ctorRule.png>]))
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 62.
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 117.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 62.
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 117.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [29]) (ModeloNegocios/informacion.tex
-<ModeloNegocios/images/Informacion/DG_Informacion.png, id=769, 1049.9225pt x 81
+
+[29] (ModeloNegocios/glosario.tex
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+<use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 43.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 43.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [30]
+LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <12> not available
+(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 50.
+File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
+<use cdt/theme/logoIpn.jpg>
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 80.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
+<use cdt/theme/headerEscom.jpg>
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 80.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [31]) (ModeloNegocios/informacion.tex
+<ModeloNegocios/images/Informacion/DG_Informacion.png, id=797, 1049.9225pt x 81
 9.06pt>
 File: ModeloNegocios/images/Informacion/DG_Informacion.png Graphic file (type p
 ng)
@@ -1363,33 +1381,33 @@ Overfull \hbox (51.16054pt too wide) in paragraph at lines 9--10
  [] 
  []
 
-<cdt/uc/rules/classRule.png, id=770, 890.32625pt x 55.20625pt>
+<cdt/uc/rules/classRule.png, id=798, 890.32625pt x 55.20625pt>
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 15.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
-File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
-<use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 15.
-(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
-<use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 15.
-(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
-[30]
-File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
-<use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 15.
-(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
-<use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 15.
-(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [31 <./ModeloNegocios/images/Informacion/DG_Informacion.png (PNG copy)>]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 21.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+<use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 23.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 23.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+[32 <./cdt/uc/rules/classRule.png>]
+File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
+<use cdt/theme/logoIpn.jpg>
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 23.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
+<use cdt/theme/headerEscom.jpg>
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 23.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [33 <./ModeloNegocios/images/Informacion/DG_Informacion.png (PNG copy)>]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 26.
@@ -1398,20 +1416,25 @@ File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 32.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
-File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
-<use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 32.
-(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
-<use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 32.
-(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
-
-[32 <./cdt/uc/rules/classRule.png>]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 37.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+<use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 42.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 42.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [34pdfTeX warning (ext4): destination with the same identifier (name{Auto:no_p
+lacas}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.42 \end{BusinessEntity}
+                         ]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 44.
@@ -1422,36 +1445,30 @@ Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 51.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 53.
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 58.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 53.
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 58.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [33pdfTeX warning (ext4): destination with the same identifier (name{Auto:no_p
-lacas}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.53 ...primer apellido de la persona}{\requerido}
-                                                  {\longitudMinMax{5}{}{30}{}}]
+ [35]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 60.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
-File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
-<use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 68.
-(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
-<use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 68.
-(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
-[34]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 68.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+<use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 72.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 72.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [36]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 76.
@@ -1460,19 +1477,19 @@ File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 83.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
-File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
-<use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 87.
-(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
-<use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 87.
-(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [35]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 89.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
+File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
+<use cdt/theme/logoIpn.jpg>
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 94.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
+<use cdt/theme/headerEscom.jpg>
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 94.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [37]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 96.
@@ -1481,15 +1498,6 @@ File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 100.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
-File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
-<use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 105.
-(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
-<use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 105.
-(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [36]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 105.
@@ -1498,6 +1506,15 @@ File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 109.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+<use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 113.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 113.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [38]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 117.
@@ -1514,19 +1531,19 @@ File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 132.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
-File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
-<use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 132.
-(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
-File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
-<use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 132.
-(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [37]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 137.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
+File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
+<use cdt/theme/logoIpn.jpg>
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 140.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
+<use cdt/theme/headerEscom.jpg>
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 140.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [39]
 File: cdt/uc/rules/classRule.png Graphic file (type png)
 <use cdt/uc/rules/classRule.png>
 Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 142.
@@ -1534,77 +1551,151 @@ Package pdftex.def Info: cdt/uc/rules/classRule.png  used on input line 142.
 )
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 120.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 121.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 120.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 121.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [38]
+ [40]
 Cap\'{\i }tulo 8.
 (ModeloComportamiento/comportamiento.tex
 (ModeloComportamiento/modulosSistema.tex
-<ModeloComportamiento/imagenes/modulosSistema.png, id=1009, 725.71124pt x 421.5
-75pt>
+<ModeloComportamiento/imagenes/modulosSistema.png, id=1033, 648.4225pt x 377.41
+pt>
 File: ModeloComportamiento/imagenes/modulosSistema.png Graphic file (type png)
 <use ModeloComportamiento/imagenes/modulosSistema.png>
 Package pdftex.def Info: ModeloComportamiento/imagenes/modulosSistema.png  used
  on input line 9.
-(pdftex.def)             Requested size: 290.27936pt x 168.627pt.
-)
-(ModeloComportamiento/comportamientoModulos.tex [39
+(pdftex.def)             Requested size: 259.3644pt x 150.96132pt.
+ [41
 
- <./ModeloComportamiento/imagenes/modulosSistema.png>]
-<ModeloComportamiento/imagenes/CasosUso_Usuario.png, id=1017, 1041.8925pt x 394
-.47375pt>
-File: ModeloComportamiento/imagenes/CasosUso_Usuario.png Graphic file (type png
-)
-<use ModeloComportamiento/imagenes/CasosUso_Usuario.png>
-Package pdftex.def Info: ModeloComportamiento/imagenes/CasosUso_Usuario.png  us
-ed on input line 7.
-(pdftex.def)             Requested size: 399.21791pt x 151.14754pt.
+ <./ModeloComportamiento/imagenes/modulosSistema.png (PNG copy)>]) (ModeloCompo
+rtamiento/comportamientoModulos.tex
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 11.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 1.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 11.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 1.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [40 <./ModeloComportamiento/imagenes/CasosUso_Usuario.png>]
-<ModeloComportamiento/imagenes/CUSistema.png, id=1024, 803.0pt x 580.1675pt>
-File: ModeloComportamiento/imagenes/CUSistema.png Graphic file (type png)
-<use ModeloComportamiento/imagenes/CUSistema.png>
-Package pdftex.def Info: ModeloComportamiento/imagenes/CUSistema.png  used on i
-nput line 19.
-(pdftex.def)             Requested size: 177.42868pt x 128.1861pt.
+[42]
+<ModeloComportamiento/imagenes/Autenticacin.png, id=1043, 741.77126pt x 377.41p
+t>
+File: ModeloComportamiento/imagenes/Autenticacin.png Graphic file (type png)
+<use ModeloComportamiento/imagenes/Autenticacin.png>
+Package pdftex.def Info: ModeloComportamiento/imagenes/Autenticacin.png  used o
+n input line 8.
+(pdftex.def)             Requested size: 399.21791pt x 203.12457pt.
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 24.
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 12.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 24.
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 12.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [41
-
- <./ModeloComportamiento/imagenes/CUSistema.png>]
-File: ModeloComportamiento/imagenes/CUSistema.png Graphic file (type png)
-<use ModeloComportamiento/imagenes/CUSistema.png>
-Package pdftex.def Info: ModeloComportamiento/imagenes/CUSistema.png  used on i
-nput line 33.
-(pdftex.def)             Requested size: 177.42868pt x 128.1861pt.
+ [43 <./ModeloComportamiento/imagenes/Autenticacin.png (PNG copy)>]
+<ModeloComportamiento/imagenes/Gestin_de_Contactos.png, id=1049, 741.77126pt x 
+497.86pt>
+File: ModeloComportamiento/imagenes/Gestin_de_Contactos.png Graphic file (type 
+png)
+<use ModeloComportamiento/imagenes/Gestin_de_Contactos.png>
+Package pdftex.def Info: ModeloComportamiento/imagenes/Gestin_de_Contactos.png 
+ used on input line 20.
+(pdftex.def)             Requested size: 399.21791pt x 267.95157pt.
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 38.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 24.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 38.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 24.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [42
 
-])
+[44
+
+ <./ModeloComportamiento/imagenes/Gestin_de_Contactos.png (PNG copy)>]
+<ModeloComportamiento/imagenes/Gestin_de_Notificaciones.png, id=1055, 921.4425p
+t x 427.5975pt>
+File: ModeloComportamiento/imagenes/Gestin_de_Notificaciones.png Graphic file (
+type png)
+<use ModeloComportamiento/imagenes/Gestin_de_Notificaciones.png>
+Package pdftex.def Info: ModeloComportamiento/imagenes/Gestin_de_Notificaciones
+.png  used on input line 31.
+(pdftex.def)             Requested size: 399.21791pt x 185.25308pt.
+File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
+<use cdt/theme/logoIpn.jpg>
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 35.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
+<use cdt/theme/headerEscom.jpg>
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 35.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+
+[45
+
+ <./ModeloComportamiento/imagenes/Gestin_de_Notificaciones.png (PNG copy)>]
+<ModeloComportamiento/imagenes/Gestin_de_Datos_Personales.png, id=1062, 480.796
+25pt x 327.2225pt>
+File: ModeloComportamiento/imagenes/Gestin_de_Datos_Personales.png Graphic file
+ (type png)
+<use ModeloComportamiento/imagenes/Gestin_de_Datos_Personales.png>
+Package pdftex.def Info: ModeloComportamiento/imagenes/Gestin_de_Datos_Personal
+es.png  used on input line 42.
+(pdftex.def)             Requested size: 399.21791pt x 271.70444pt.
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+<use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 46.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 46.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+
+[46
+
+ <./ModeloComportamiento/imagenes/Gestin_de_Datos_Personales.png (PNG copy)>]
+<ModeloComportamiento/imagenes/Gestin_de_Datos_Mdicos.png, id=1068, 500.87125pt
+ x 287.0725pt>
+File: ModeloComportamiento/imagenes/Gestin_de_Datos_Mdicos.png Graphic file (ty
+pe png)
+<use ModeloComportamiento/imagenes/Gestin_de_Datos_Mdicos.png>
+Package pdftex.def Info: ModeloComportamiento/imagenes/Gestin_de_Datos_Mdicos.p
+ng  used on input line 52.
+(pdftex.def)             Requested size: 399.21791pt x 228.82166pt.
+File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
+<use cdt/theme/logoIpn.jpg>
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 56.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
+<use cdt/theme/headerEscom.jpg>
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 56.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [47
+
+ <./ModeloComportamiento/imagenes/Gestin_de_Datos_Mdicos.png (PNG copy)>]
+<ModeloComportamiento/imagenes/Gestionar_Vehculos.png, id=1074, 530.98375pt x 3
+77.41pt>
+File: ModeloComportamiento/imagenes/Gestionar_Vehculos.png Graphic file (type p
+ng)
+<use ModeloComportamiento/imagenes/Gestionar_Vehculos.png>
+Package pdftex.def Info: ModeloComportamiento/imagenes/Gestionar_Vehculos.png  
+used on input line 61.
+(pdftex.def)             Requested size: 399.21791pt x 283.75937pt.
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+<use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 65.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 65.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+
+[48
+
+ <./ModeloComportamiento/imagenes/Gestionar_Vehculos.png (PNG copy)>])
 (ModeloComportamiento/AplicacionMovil/comportamiento.tex
 (ModeloComportamiento/AplicacionMovil/cu1/cu.tex
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
@@ -1615,7 +1706,7 @@ File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
 Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 4.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [43
+ [49
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 15--15
@@ -1645,22 +1736,22 @@ File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 64.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
-<cdt/uc/rules/UCRule.png, id=1042, 931.48pt x 973.6375pt>
+<cdt/uc/rules/UCRule.png, id=1086, 931.48pt x 973.6375pt>
 File: cdt/uc/rules/UCRule.png Graphic file (type png)
 <use cdt/uc/rules/UCRule.png>
 Package pdftex.def Info: cdt/uc/rules/UCRule.png  used on input line 64.
 (pdftex.def)             Requested size: 522.16534pt x 545.79782pt.
-[44 <./cdt/uc/rules/UCRule.png>]
+[50 <./cdt/uc/rules/UCRule.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 66--66
 
  []
 
-<cdt/uc/actor.png, id=1051, 96.36pt x 74.2775pt>
+<cdt/uc/actor.png, id=1095, 96.36pt x 74.2775pt>
 File: cdt/uc/actor.png Graphic file (type png)
 <use cdt/uc/actor.png>
 Package pdftex.def Info: cdt/uc/actor.png  used on input line 67.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-<cdt/uc/usecase.png, id=1052, 91.34125pt x 61.22874pt>
+<cdt/uc/usecase.png, id=1096, 91.34125pt x 61.22874pt>
 File: cdt/uc/usecase.png Graphic file (type png)
 <use cdt/uc/usecase.png>
 Package pdftex.def Info: cdt/uc/usecase.png  used on input line 68.
@@ -1690,22 +1781,22 @@ Package pdftex.def Info: cdt/uc/usecase.png  used on input line 78.
 )))
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
-Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 123.
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 124.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
-Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 123.
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 124.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [45 <./cdt/uc/actor.png> <./cdt/uc/usecase.png>]
+ [51 <./cdt/uc/actor.png> <./cdt/uc/usecase.png>]
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 123.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 124.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 123.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 124.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [46
+ [52
 
 ]
 Cap\'{\i }tulo 9.
@@ -1749,7 +1840,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--17
 
  []
 
-[47] (ModeloInteraccion/interfaces.tex
+[53] (ModeloInteraccion/interfaces.tex
 (ModeloComportamiento/AplicacionMovil/cu1/iu.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
@@ -1760,12 +1851,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-<images/iconos/registrar.png, id=1086, 96.36pt x 96.36pt>
+<images/iconos/registrar.png, id=1130, 96.36pt x 96.36pt>
 File: images/iconos/registrar.png Graphic file (type png)
 <use images/iconos/registrar.png>
 Package pdftex.def Info: images/iconos/registrar.png  used on input line 12.
 (pdftex.def)             Requested size: 9.99973pt x 10.0pt.
-<images/../ModeloComportamiento/AplicacionMovil/cu1/iu1.png, id=1087, 378.41376
+<images/../ModeloComportamiento/AplicacionMovil/cu1/iu1.png, id=1131, 378.41376
 pt x 667.49374pt>
 File: images/../ModeloComportamiento/AplicacionMovil/cu1/iu1.png Graphic file (
 type png)
@@ -1785,7 +1876,7 @@ File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 21.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
-[48 <./images/iconos/registrar.png>]
+[54 <./images/iconos/registrar.png>]
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
 Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 21.
@@ -1794,7 +1885,7 @@ File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
 Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 21.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [49 <./images/../ModeloComportamiento/AplicacionMovil/cu1/iu1.png>])) (ModeloI
+ [55 <./images/../ModeloComportamiento/AplicacionMovil/cu1/iu1.png>])) (ModeloI
 nteraccion/mensajes.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
@@ -1808,10 +1899,10 @@ File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 34.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
-[50
+[56
 
 ]
-<cdt/uc/rules/MsgRule.png, id=1107, 853.1875pt x 86.3225pt>
+<cdt/uc/rules/MsgRule.png, id=1151, 853.1875pt x 86.3225pt>
 File: cdt/uc/rules/MsgRule.png Graphic file (type png)
 <use cdt/uc/rules/MsgRule.png>
 Package pdftex.def Info: cdt/uc/rules/MsgRule.png  used on input line 47.
@@ -1824,78 +1915,69 @@ File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
 Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 59.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [51 <./cdt/uc/rules/MsgRule.png>]))
+ [57 <./cdt/uc/rules/MsgRule.png>]))
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 128.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 129.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 128.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 129.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [52] [53
+ [58] [59
 
-] [54]
+] [60]
 Cap\'{\i }tulo 10.
 (AvancesPruebas/pruebas.tex (AvancesPruebas/pruebaSensorPulso.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[55
+[61
 
 ]))
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
-Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 178.
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 179.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
-Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 178.
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 179.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
- [56] (referencias.tex
+ [62] (referencias.tex
 LaTeX Font Info:    Try loading font information for OT1+cmtl on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/cmbright\ot1cmtl.fd"
 File: ot1cmtl.fd 2005/04/13 v8.1 (WaS)
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
- [57
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
+ [63
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
 
 (analisis.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
+Package rerunfilecheck Info: File `analisis.out' has not changed.
+(rerunfilecheck)             Checksum: 9670B6E2AA14DF297D3F59E8E38A8DE5;6236.
 
-
-Package rerunfilecheck Warning: File `analisis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `analisis.out':
-(rerunfilecheck)             Before: B8D866144DC668E274B68A2004BAB0A4;6198
-(rerunfilecheck)             After:  783B12C465C005CA563A76657D6D6927;6268.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
  ) 
 Here is how much of TeX's memory you used:
- 11490 strings out of 492946
- 167855 string characters out of 3135524
- 295794 words of memory out of 3000000
- 14708 multiletter control sequences out of 15000+200000
- 11100 words of font info for 41 fonts, out of 3000000 for 9000
+ 11508 strings out of 492946
+ 168817 string characters out of 3135524
+ 296111 words of memory out of 3000000
+ 14714 multiletter control sequences out of 15000+200000
+ 10888 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,18n,51p,1347b,682s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,18n,51p,1347b,680s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{IU2} has been referenced but does not exist, repl
 aced by a fixed one
 
@@ -1931,11 +2013,10 @@ k> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/cmbright/dp
 i720\cmbrbx10.pk> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/pub
 lic/cmbright/dpi600\cmbr17.pk> <C:\Users\Adrian\AppData\Local\MiKTeX\2.9\fonts/
 pk/ljfour/public/cmbright/dpi450\cmbr8.pk> <C:\Users\Adrian\AppData\Local\MiKTe
-X\2.9\fonts/pk/ljfour/public/cmbright/dpi720\cmbr10.pk><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on analisis.pdf (67 pages, 1497698 bytes).
+X\2.9\fonts/pk/ljfour/public/cmbright/dpi720\cmbr10.pk>
+Output written on analisis.pdf (73 pages, 1525540 bytes).
 PDF statistics:
- 1735 PDF objects out of 2073 (max. 8388607)
- 324 named destinations out of 1000 (max. 500000)
- 850 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1773 PDF objects out of 2073 (max. 8388607)
+ 336 named destinations out of 1000 (max. 500000)
+ 886 words of extra memory for PDF output out of 10000 (max. 10000000)
 

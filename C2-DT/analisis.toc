@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.5.1}Objetivo general}{3}{subsection.1.5.1}% 
 \contentsline {subsection}{\numberline {1.5.2}Objetivos espec\IeC {\'\i }ficos}{3}{subsection.1.5.2}% 
 \contentsline {section}{\numberline {1.6}Estado del arte}{3}{section.1.6}% 
-\contentsline {subsection}{\numberline {1.6.1}introducci\IeC {\'o}n}{4}{subsection.1.6.1}% 
+\contentsline {subsection}{\numberline {1.6.1}introducci\IeC {\'o}n}{3}{subsection.1.6.1}% 
 \contentsline {subsection}{\numberline {1.6.2}SOSmart}{4}{subsection.1.6.2}% 
 \contentsline {subsection}{\numberline {1.6.3}GAT}{5}{subsection.1.6.3}% 
 \contentsline {chapter}{\numberline {2}Marco Te\IeC {\'o}rico}{7}{chapter.2}% 
@@ -46,79 +46,80 @@
 \contentsline {chapter}{\numberline {7}Modelo de Negocio}{27}{chapter.7}% 
 \contentsline {section}{\numberline {7.1}Reglas de negocio}{27}{section.7.1}% 
 \contentsline {subsubsection}{RN1 Campos obligatorios}{27}{section*.11}% 
-\contentsline {section}{\numberline {7.2}Actores del sistema}{27}{section.7.2}% 
-\contentsline {subsection}{\numberline {7.2.1}Paciente}{28}{subsection.7.2.1}% 
-\contentsline {section}{\numberline {7.3}T\IeC {\'e}rminos t\IeC {\'e}cnicos}{28}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}T\IeC {\'e}rminos del negocio}{30}{section.7.4}% 
-\contentsline {section}{\numberline {7.5}Modelo de informaci\IeC {\'o}n de In-Help}{30}{section.7.5}% 
-\contentsline {subsection}{\numberline {7.5.1}Descripci\IeC {\'o}n general}{30}{subsection.7.5.1}% 
-\contentsline {subsection}{\numberline {7.5.2}Usuario}{32}{subsection.7.5.2}% 
+\contentsline {section}{\numberline {7.2}Actores}{27}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}Usuario}{28}{subsection.7.2.1}% 
+\contentsline {subsection}{\numberline {7.2.2}Movil}{28}{subsection.7.2.2}% 
+\contentsline {subsection}{\numberline {7.2.3}Administrador}{29}{subsection.7.2.3}% 
+\contentsline {section}{\numberline {7.3}Glosario}{30}{section.7.3}% 
+\contentsline {subsection}{\numberline {7.3.1}T\IeC {\'e}rminos t\IeC {\'e}cnicos}{30}{subsection.7.3.1}% 
+\contentsline {subsection}{\numberline {7.3.2}T\IeC {\'e}rminos del negocio}{31}{subsection.7.3.2}% 
+\contentsline {section}{\numberline {7.4}Modelo de informaci\IeC {\'o}n de In-Help}{32}{section.7.4}% 
+\contentsline {subsection}{\numberline {7.4.1}Descripci\IeC {\'o}n general}{32}{subsection.7.4.1}% 
+\contentsline {subsection}{\numberline {7.4.2}Usuario}{32}{subsection.7.4.2}% 
 \contentsline {subsubsection}{Atributos}{32}{section*.12}% 
-\contentsline {subsection}{\numberline {7.5.3}Cuenta}{32}{subsection.7.5.3}% 
-\contentsline {subsubsection}{Atributos}{32}{section*.13}% 
-\contentsline {subsection}{\numberline {7.5.4}Perfil}{32}{subsection.7.5.4}% 
-\contentsline {subsubsection}{Atributos}{32}{section*.14}% 
-\contentsline {subsection}{\numberline {7.5.5}Auto}{33}{subsection.7.5.5}% 
-\contentsline {subsubsection}{Atributos}{33}{section*.15}% 
-\contentsline {subsection}{\numberline {7.5.6}Tipo de Auto}{33}{subsection.7.5.6}% 
-\contentsline {subsubsection}{Atributos}{33}{section*.16}% 
-\contentsline {subsection}{\numberline {7.5.7}Aseguradora}{33}{subsection.7.5.7}% 
-\contentsline {subsubsection}{Atributos}{33}{section*.17}% 
-\contentsline {subsection}{\numberline {7.5.8}Persona}{33}{subsection.7.5.8}% 
-\contentsline {subsubsection}{Atributos}{34}{section*.18}% 
-\contentsline {subsection}{\numberline {7.5.9}Direcci\IeC {\'o}n}{34}{subsection.7.5.9}% 
-\contentsline {subsubsection}{Atributos}{34}{section*.19}% 
-\contentsline {subsection}{\numberline {7.5.10}Contacto}{35}{subsection.7.5.10}% 
-\contentsline {subsubsection}{Atributos}{35}{section*.20}% 
-\contentsline {subsection}{\numberline {7.5.11}Tipo de Contacto}{35}{subsection.7.5.11}% 
-\contentsline {subsubsection}{Atributos}{35}{section*.21}% 
-\contentsline {subsection}{\numberline {7.5.12}Notificaci\IeC {\'o}n}{35}{subsection.7.5.12}% 
-\contentsline {subsubsection}{Atributos}{36}{section*.22}% 
-\contentsline {subsection}{\numberline {7.5.13}Tipo de Notificaci\IeC {\'o}n}{36}{subsection.7.5.13}% 
-\contentsline {subsubsection}{Atributos}{36}{section*.23}% 
-\contentsline {subsection}{\numberline {7.5.14}Eventos}{36}{subsection.7.5.14}% 
-\contentsline {subsubsection}{Atributos}{36}{section*.24}% 
-\contentsline {subsection}{\numberline {7.5.15}Seguridad Social}{36}{subsection.7.5.15}% 
-\contentsline {subsubsection}{Atributos}{36}{section*.25}% 
-\contentsline {subsection}{\numberline {7.5.16}Informaci\IeC {\'o}n m\IeC {\'e}dica}{37}{subsection.7.5.16}% 
-\contentsline {subsubsection}{Atributos}{37}{section*.26}% 
-\contentsline {subsection}{\numberline {7.5.17}Tipo de Enfermedad}{37}{subsection.7.5.17}% 
-\contentsline {subsubsection}{Atributos}{37}{section*.27}% 
-\contentsline {subsection}{\numberline {7.5.18}Ubicacion}{37}{subsection.7.5.18}% 
-\contentsline {subsubsection}{Atributos}{37}{section*.28}% 
-\contentsline {subsection}{\numberline {7.5.19}Velocidad}{37}{subsection.7.5.19}% 
-\contentsline {subsubsection}{Atributos}{37}{section*.29}% 
-\contentsline {subsection}{\numberline {7.5.20}Giroscopio}{37}{subsection.7.5.20}% 
-\contentsline {subsubsection}{Atributos}{37}{section*.30}% 
-\contentsline {subsection}{\numberline {7.5.21}Micr\IeC {\'o}fono}{38}{subsection.7.5.21}% 
-\contentsline {subsubsection}{Atributos}{38}{section*.31}% 
-\contentsline {subsection}{\numberline {7.5.22}Temperatura}{38}{subsection.7.5.22}% 
-\contentsline {subsubsection}{Atributos}{38}{section*.32}% 
-\contentsline {subsection}{\numberline {7.5.23}Camara}{38}{subsection.7.5.23}% 
-\contentsline {subsubsection}{Atributos}{38}{section*.33}% 
-\contentsline {chapter}{\numberline {8}Modelo de Comportamiento}{39}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}M\IeC {\'o}dulos del sistema}{39}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}Modelo de comportamiento del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{40}{section.8.2}% 
-\contentsline {section}{\numberline {8.3}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Externo}{41}{section.8.3}% 
-\contentsline {section}{\numberline {8.4}Modelo de comportamiento del m\IeC {\'o}dulo Sistema Interno}{42}{section.8.4}% 
-\contentsline {section}{\numberline {8.5}Casos de uso del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{43}{section.8.5}% 
-\contentsline {section}{\numberline {8.6}CU1 Consultar pacientes}{44}{section.8.6}% 
-\contentsline {subsection}{\numberline {8.6.1}Resumen}{44}{subsection.8.6.1}% 
-\contentsline {subsection}{\numberline {8.6.2}Descripci\IeC {\'o}n}{44}{subsection.8.6.2}% 
-\contentsline {subsection}{\numberline {8.6.3}Trayectorias del caso de uso}{45}{subsection.8.6.3}% 
-\contentsline {subsection}{\numberline {8.6.4}Puntos de extensi\IeC {\'o}n}{45}{subsection.8.6.4}% 
-\contentsline {chapter}{\numberline {9}Modelo de Interacci\IeC {\'o}n con el Usuario}{47}{chapter.9}% 
-\contentsline {section}{\numberline {9.1}Entorno de trabajo}{47}{section.9.1}% 
-\contentsline {section}{\numberline {9.2}Interfaces de usuario}{48}{section.9.2}% 
-\contentsline {subsection}{\numberline {9.2.1}IU1 Consultar pacientes}{48}{subsection.9.2.1}% 
-\contentsline {subsubsection}{Objetivo}{48}{section*.34}% 
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{48}{section*.35}% 
-\contentsline {subsubsection}{Comandos}{48}{section*.36}% 
-\contentsline {section}{\numberline {9.3}Dise\IeC {\~n}o de mensajes}{50}{section.9.3}% 
-\contentsline {subsection}{\numberline {9.3.1}Par\IeC {\'a}metros comunes}{50}{subsection.9.3.1}% 
-\contentsline {subsection}{\numberline {9.3.2}Mensajes a trav\IeC {\'e}s de la pantalla}{51}{subsection.9.3.2}% 
-\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n realizada exitosamente}}{51}{section*.37}% 
-\contentsline {part}{II\hspace {1em}Implementaci\IeC {\'o}n}{53}{part.2}% 
-\contentsline {chapter}{\numberline {10}Avances y pruebas}{55}{chapter.10}% 
-\contentsline {section}{\numberline {10.1}Sensores de pulso}{55}{section.10.1}% 
-\contentsline {chapter}{Referencias}{57}{chapter*.38}% 
+\contentsline {subsection}{\numberline {7.4.3}Cuenta}{32}{subsection.7.4.3}% 
+\contentsline {subsubsection}{Atributos}{34}{section*.13}% 
+\contentsline {subsection}{\numberline {7.4.4}Perfil}{34}{subsection.7.4.4}% 
+\contentsline {subsubsection}{Atributos}{34}{section*.14}% 
+\contentsline {subsection}{\numberline {7.4.5}Auto}{34}{subsection.7.4.5}% 
+\contentsline {subsubsection}{Atributos}{34}{section*.15}% 
+\contentsline {subsection}{\numberline {7.4.6}Tipo de Auto}{34}{subsection.7.4.6}% 
+\contentsline {subsubsection}{Atributos}{35}{section*.16}% 
+\contentsline {subsection}{\numberline {7.4.7}Aseguradora}{35}{subsection.7.4.7}% 
+\contentsline {subsubsection}{Atributos}{35}{section*.17}% 
+\contentsline {subsection}{\numberline {7.4.8}Persona}{35}{subsection.7.4.8}% 
+\contentsline {subsubsection}{Atributos}{35}{section*.18}% 
+\contentsline {subsection}{\numberline {7.4.9}Direcci\IeC {\'o}n}{36}{subsection.7.4.9}% 
+\contentsline {subsubsection}{Atributos}{36}{section*.19}% 
+\contentsline {subsection}{\numberline {7.4.10}Contacto}{36}{subsection.7.4.10}% 
+\contentsline {subsubsection}{Atributos}{36}{section*.20}% 
+\contentsline {subsection}{\numberline {7.4.11}Tipo de Contacto}{37}{subsection.7.4.11}% 
+\contentsline {subsubsection}{Atributos}{37}{section*.21}% 
+\contentsline {subsection}{\numberline {7.4.12}Notificaci\IeC {\'o}n}{37}{subsection.7.4.12}% 
+\contentsline {subsubsection}{Atributos}{37}{section*.22}% 
+\contentsline {subsection}{\numberline {7.4.13}Tipo de Notificaci\IeC {\'o}n}{37}{subsection.7.4.13}% 
+\contentsline {subsubsection}{Atributos}{38}{section*.23}% 
+\contentsline {subsection}{\numberline {7.4.14}Eventos}{38}{subsection.7.4.14}% 
+\contentsline {subsubsection}{Atributos}{38}{section*.24}% 
+\contentsline {subsection}{\numberline {7.4.15}Seguridad Social}{38}{subsection.7.4.15}% 
+\contentsline {subsubsection}{Atributos}{38}{section*.25}% 
+\contentsline {subsection}{\numberline {7.4.16}Informaci\IeC {\'o}n m\IeC {\'e}dica}{38}{subsection.7.4.16}% 
+\contentsline {subsubsection}{Atributos}{38}{section*.26}% 
+\contentsline {subsection}{\numberline {7.4.17}Tipo de Enfermedad}{38}{subsection.7.4.17}% 
+\contentsline {subsubsection}{Atributos}{39}{section*.27}% 
+\contentsline {subsection}{\numberline {7.4.18}Ubicacion}{39}{subsection.7.4.18}% 
+\contentsline {subsubsection}{Atributos}{39}{section*.28}% 
+\contentsline {subsection}{\numberline {7.4.19}Velocidad}{39}{subsection.7.4.19}% 
+\contentsline {subsubsection}{Atributos}{39}{section*.29}% 
+\contentsline {subsection}{\numberline {7.4.20}Giroscopio}{39}{subsection.7.4.20}% 
+\contentsline {subsubsection}{Atributos}{39}{section*.30}% 
+\contentsline {subsection}{\numberline {7.4.21}Micr\IeC {\'o}fono}{39}{subsection.7.4.21}% 
+\contentsline {subsubsection}{Atributos}{39}{section*.31}% 
+\contentsline {subsection}{\numberline {7.4.22}Temperatura}{39}{subsection.7.4.22}% 
+\contentsline {subsubsection}{Atributos}{40}{section*.32}% 
+\contentsline {subsection}{\numberline {7.4.23}Camara}{40}{subsection.7.4.23}% 
+\contentsline {subsubsection}{Atributos}{40}{section*.33}% 
+\contentsline {chapter}{\numberline {8}Modelo de Comportamiento}{41}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}M\IeC {\'o}dulos del sistema}{41}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Modelo de comportamiento del la Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{43}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}Casos de uso del m\IeC {\'o}dulo Autenticaci\IeC {\'o}n}{49}{section.8.3}% 
+\contentsline {section}{\numberline {8.4}CU1 Consultar pacientes}{50}{section.8.4}% 
+\contentsline {subsection}{\numberline {8.4.1}Resumen}{50}{subsection.8.4.1}% 
+\contentsline {subsection}{\numberline {8.4.2}Descripci\IeC {\'o}n}{50}{subsection.8.4.2}% 
+\contentsline {subsection}{\numberline {8.4.3}Trayectorias del caso de uso}{51}{subsection.8.4.3}% 
+\contentsline {subsection}{\numberline {8.4.4}Puntos de extensi\IeC {\'o}n}{51}{subsection.8.4.4}% 
+\contentsline {chapter}{\numberline {9}Modelo de Interacci\IeC {\'o}n con el Usuario}{53}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Entorno de trabajo}{53}{section.9.1}% 
+\contentsline {section}{\numberline {9.2}Interfaces de usuario}{54}{section.9.2}% 
+\contentsline {subsection}{\numberline {9.2.1}IU1 Consultar pacientes}{54}{subsection.9.2.1}% 
+\contentsline {subsubsection}{Objetivo}{54}{section*.34}% 
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{54}{section*.35}% 
+\contentsline {subsubsection}{Comandos}{54}{section*.36}% 
+\contentsline {section}{\numberline {9.3}Dise\IeC {\~n}o de mensajes}{56}{section.9.3}% 
+\contentsline {subsection}{\numberline {9.3.1}Par\IeC {\'a}metros comunes}{56}{subsection.9.3.1}% 
+\contentsline {subsection}{\numberline {9.3.2}Mensajes a trav\IeC {\'e}s de la pantalla}{57}{subsection.9.3.2}% 
+\contentsline {subsubsection}{{MSG1} {Operaci\IeC {\'o}n realizada exitosamente}}{57}{section*.37}% 
+\contentsline {part}{II\hspace {1em}Implementaci\IeC {\'o}n}{59}{part.2}% 
+\contentsline {chapter}{\numberline {10}Avances y pruebas}{61}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}Sensores de pulso}{61}{section.10.1}% 
+\contentsline {chapter}{Referencias}{63}{chapter*.38}% 
