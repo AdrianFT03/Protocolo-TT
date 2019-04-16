@@ -226,6 +226,7 @@
 \contentsline {section}{\numberline {8.1}M\IeC {\'o}dulos del sistema}{41}{section.8.1}% 
 \contentsline {section}{\numberline {8.2}Modelo de comportamiento del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{43}{section.8.2}% 
 <<<<<<< HEAD
+<<<<<<< HEAD
 \contentsline {section}{\numberline {8.3}Casos de uso del m\IeC {\'o}dulo Autenticaci\IeC {\'o}n}{48}{section.8.3}% 
 \contentsline {chapter}{\numberline {9}Modelo de Interacci\IeC {\'o}n con el Usuario}{49}{chapter.9}% 
 \contentsline {section}{\numberline {9.1}Entorno de trabajo}{49}{section.9.1}% 
@@ -244,6 +245,8 @@
 \contentsline {chapter}{Referencias}{59}{chapter*.38}% 
 >>>>>>> 79de65464d972b3140f0440c1dfa05be7d1e6435
 =======
+=======
+>>>>>>> parent of 79de654... Cu
 \contentsline {section}{\numberline {8.3}Casos de uso del m\IeC {\'o}dulo Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{46}{section.8.3}% 
 \contentsline {section}{\numberline {8.4}CU1 Consultar pacientes}{49}{section.8.4}% 
 \contentsline {subsection}{\numberline {8.4.1}Resumen}{49}{subsection.8.4.1}% 
@@ -265,4 +268,7 @@
 \contentsline {chapter}{\numberline {10}Avances y pruebas}{59}{chapter.10}% 
 \contentsline {section}{\numberline {10.1}Sensores de pulso}{59}{section.10.1}% 
 \contentsline {chapter}{Referencias}{61}{chapter*.38}% 
+<<<<<<< HEAD
+>>>>>>> parent of 79de654... Cu
+=======
 >>>>>>> parent of 79de654... Cu

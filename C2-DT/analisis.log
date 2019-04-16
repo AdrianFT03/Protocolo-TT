@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2019.3.25)  15 APR 2019 23:43
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.20)  16 APR 2019 10:25
+>>>>>>> parent of 79de654... Cu
 =======
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.20)  16 APR 2019 10:25
 >>>>>>> parent of 79de654... Cu
@@ -1209,7 +1213,11 @@ Package babel Info: Redefining spanish shorthand "?
 \openout4 = `analisis.toc'.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <cdt/theme/logoIpn.jpg, id=500, 426.59375pt x 632.3625pt>
+=======
+<cdt/theme/logoIpn.jpg, id=502, 426.59375pt x 632.3625pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <cdt/theme/logoIpn.jpg, id=502, 426.59375pt x 632.3625pt>
 >>>>>>> parent of 79de654... Cu
@@ -1218,7 +1226,11 @@ File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 90.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <cdt/theme/headerEscom.jpg, id=501, 131.03902pt x 89.34479pt>
+=======
+<cdt/theme/headerEscom.jpg, id=503, 131.03902pt x 89.34479pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <cdt/theme/headerEscom.jpg, id=503, 131.03902pt x 89.34479pt>
 >>>>>>> parent of 79de654... Cu
@@ -2040,7 +2052,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <MarcoTeorico/imagenes/Acelerometro.png, id=579, 441.90094pt x 288.3272pt>
+=======
+<MarcoTeorico/imagenes/Acelerometro.png, id=589, 441.90094pt x 288.3272pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <MarcoTeorico/imagenes/Acelerometro.png, id=589, 441.90094pt x 288.3272pt>
 >>>>>>> parent of 79de654... Cu
@@ -2120,7 +2136,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <MarcoTeorico/imagenes/GPS.jpg, id=586, 301.125pt x 200.75pt>
+=======
+<MarcoTeorico/imagenes/GPS.jpg, id=596, 301.125pt x 200.75pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <MarcoTeorico/imagenes/GPS.jpg, id=596, 301.125pt x 200.75pt>
 >>>>>>> parent of 79de654... Cu
@@ -2187,7 +2207,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <MarcoTeorico/imagenes/GPS1.jpg, id=593, 301.125pt x 276.03125pt>
+=======
+<MarcoTeorico/imagenes/GPS1.jpg, id=603, 301.125pt x 276.03125pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <MarcoTeorico/imagenes/GPS1.jpg, id=603, 301.125pt x 276.03125pt>
 >>>>>>> parent of 79de654... Cu
@@ -2297,7 +2321,11 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 98.
 [11]
 <<<<<<< HEAD
+<<<<<<< HEAD
 <MarcoTeorico/imagenes/AGPS.png, id=602, 321.2pt x 214.8025pt>
+=======
+<MarcoTeorico/imagenes/AGPS.png, id=612, 321.2pt x 214.8025pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <MarcoTeorico/imagenes/AGPS.png, id=612, 321.2pt x 214.8025pt>
 >>>>>>> parent of 79de654... Cu
@@ -3119,6 +3147,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 115.
 (ModeloNegocios/modelo.tex (ModeloNegocios/reglas.tex
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 29.
 Package babel Info: Redefining spanish shorthand >>
@@ -3135,12 +3164,16 @@ Package babel Info: Redefining spanish shorthand "?
 =======
 <cdt/uc/rules/BRRule.png, id=692, 890.32625pt x 55.20625pt>
 >>>>>>> parent of 79de654... Cu
+=======
+<cdt/uc/rules/BRRule.png, id=692, 890.32625pt x 55.20625pt>
+>>>>>>> parent of 79de654... Cu
 File: cdt/uc/rules/BRRule.png Graphic file (type png)
 <use cdt/uc/rules/BRRule.png>
 Package pdftex.def Info: cdt/uc/rules/BRRule.png  used on input line 34.
 (pdftex.def)             Requested size: 443.57848pt x 27.50449pt.
 )
 (ModeloNegocios/actores.tex
+<<<<<<< HEAD
 <<<<<<< HEAD
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 2.
@@ -3155,6 +3188,9 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
 <ModeloComportamiento/imagenes/Actores.png, id=685, 504.88625pt x 243.91125pt>
+=======
+<ModeloComportamiento/imagenes/Actores.png, id=696, 337.26pt x 256.96pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <ModeloComportamiento/imagenes/Actores.png, id=696, 337.26pt x 256.96pt>
 >>>>>>> parent of 79de654... Cu
@@ -3180,6 +3216,9 @@ Package babel Info: Redefining spanish shorthand "?
 =======
 (pdftex.def)             Requested size: 266.14978pt x 202.78444pt.
 <cdt/uc/rules/ActorRule.png, id=697, 890.32625pt x 55.20625pt>
+<<<<<<< HEAD
+>>>>>>> parent of 79de654... Cu
+=======
 >>>>>>> parent of 79de654... Cu
 File: cdt/uc/rules/ActorRule.png Graphic file (type png)
 <use cdt/uc/rules/ActorRule.png>
@@ -3359,6 +3398,9 @@ Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 75.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
  [30]) (ModeloNegocios/informacion.tex
 <ModeloNegocios/images/Informacion/DG_Informacion.png, id=779, 1049.9225pt x 81
+<<<<<<< HEAD
+>>>>>>> parent of 79de654... Cu
+=======
 >>>>>>> parent of 79de654... Cu
 9.06pt>
 File: ModeloNegocios/images/Informacion/DG_Informacion.png Graphic file (type p
@@ -3373,6 +3415,7 @@ Overfull \hbox (51.16054pt too wide) in paragraph at lines 9--10
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 15.
 Package babel Info: Redefining spanish shorthand >>
@@ -3386,6 +3429,9 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 15.
 <cdt/uc/rules/classRule.png, id=763, 890.32625pt x 55.20625pt>
+=======
+<cdt/uc/rules/classRule.png, id=780, 890.32625pt x 55.20625pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <cdt/uc/rules/classRule.png, id=780, 890.32625pt x 55.20625pt>
 >>>>>>> parent of 79de654... Cu
@@ -4110,6 +4156,7 @@ Package babel Info: Redefining spanish shorthand "?
 (ModeloComportamiento/comportamiento.tex
 (ModeloComportamiento/modulosSistema.tex
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 3.
 Package babel Info: Redefining spanish shorthand >>
@@ -4124,6 +4171,10 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 3.
 <ModeloComportamiento/imagenes/modulosSistema.png, id=1002, 725.71124pt x 421.5
 75pt>
+=======
+<ModeloComportamiento/imagenes/modulosSistema.png, id=1023, 648.4225pt x 377.41
+pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <ModeloComportamiento/imagenes/modulosSistema.png, id=1023, 648.4225pt x 377.41
 pt>
@@ -4521,6 +4572,7 @@ used on input line 54.
 (ModeloComportamiento/AplicacionMovil/cu1/cu.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+<<<<<<< HEAD
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
 Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 4.
@@ -4677,6 +4729,8 @@ File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 4.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
  [47 <./ModeloComportamiento/imagenes/Gestionar_Vehculos.png (PNG copy)>]
+=======
+>>>>>>> parent of 79de654... Cu
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
 Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 4.
@@ -4707,6 +4761,46 @@ Overfull \hbox (15.2963pt too wide) in paragraph at lines 50--50
 
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
+<<<<<<< HEAD
+=======
+Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 4.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
+<use cdt/theme/headerEscom.jpg>
+Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 4.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [47 <./ModeloComportamiento/imagenes/Gestionar_Vehculos.png (PNG copy)>]
+File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
+<use cdt/theme/headerIpn.jpg>
+Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 4.
+(pdftex.def)             Requested size: 23.60918pt x 35.0pt.
+File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
+<use cdt/theme/logoEscom.jpg>
+Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 4.
+(pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+ [48]
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|[]\OT1/cmbr/bx/n/12 Fecha del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+\OT1/cmbr/bx/n/12 ulti-mo es-ta-
+ []
+
+
+Overfull \hbox (9.75293pt too wide) in paragraph at lines 44--44
+[]|\OT1/cmbr/bx/n/12 Precondiciones:| 
+ []
+
+
+Overfull \hbox (15.2963pt too wide) in paragraph at lines 50--50
+[]|\OT1/cmbr/bx/n/12 Postcondiciones:| 
+ []
+
+File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
+<use cdt/theme/logoIpn.jpg>
+>>>>>>> parent of 79de654... Cu
 Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 64.
 (pdftex.def)             Requested size: 23.60918pt x 35.0pt.
 File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
@@ -4756,6 +4850,9 @@ File: cdt/uc/usecase.png Graphic file (type png)
 Package pdftex.def Info: cdt/uc/usecase.png  used on input line 78.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 )))
+<<<<<<< HEAD
+>>>>>>> parent of 79de654... Cu
+=======
 >>>>>>> parent of 79de654... Cu
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
@@ -4765,6 +4862,7 @@ File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 123.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -4800,6 +4898,9 @@ Package babel Info: Redefining spanish shorthand "?
 [46
 
 ]
+=======
+ [50 <./cdt/uc/actor.png> <./cdt/uc/usecase.png>]
+>>>>>>> parent of 79de654... Cu
 =======
  [50 <./cdt/uc/actor.png> <./cdt/uc/usecase.png>]
 >>>>>>> parent of 79de654... Cu
@@ -4870,6 +4971,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--17
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 17.
 Package babel Info: Redefining spanish shorthand >>
@@ -4910,6 +5012,9 @@ Package babel Info: Redefining spanish shorthand "?
 =======
 [51
 >>>>>>> parent of 79de654... Cu
+=======
+[51
+>>>>>>> parent of 79de654... Cu
 
 (ModeloComportamiento/AplicacionMovil/cu1/iu.tex
 Package babel Info: Redefining spanish shorthand <<
@@ -4935,7 +5040,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <images/iconos/registrar.png, id=1077, 96.36pt x 96.36pt>
+=======
+<images/iconos/registrar.png, id=1112, 96.36pt x 96.36pt>
+>>>>>>> parent of 79de654... Cu
 =======
 <images/iconos/registrar.png, id=1112, 96.36pt x 96.36pt>
 >>>>>>> parent of 79de654... Cu
@@ -4944,7 +5053,11 @@ File: images/iconos/registrar.png Graphic file (type png)
 Package pdftex.def Info: images/iconos/registrar.png  used on input line 12.
 (pdftex.def)             Requested size: 9.99973pt x 10.0pt.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <images/../ModeloComportamiento/AplicacionMovil/cu1/iu1.png, id=1078, 378.41376
+=======
+<images/../ModeloComportamiento/AplicacionMovil/cu1/iu1.png, id=1113, 378.41376
+>>>>>>> parent of 79de654... Cu
 =======
 <images/../ModeloComportamiento/AplicacionMovil/cu1/iu1.png, id=1113, 378.41376
 >>>>>>> parent of 79de654... Cu
@@ -4967,6 +5080,7 @@ File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 21.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 Package Fancyhdr Warning: \headheight is too small (39.0pt): 
@@ -5002,6 +5116,9 @@ Package babel Info: Redefining spanish shorthand "?
 =======
 [52 <./images/iconos/registrar.png>]
 >>>>>>> parent of 79de654... Cu
+=======
+[52 <./images/iconos/registrar.png>]
+>>>>>>> parent of 79de654... Cu
 File: cdt/theme/logoIpn.jpg Graphic file (type jpg)
 <use cdt/theme/logoIpn.jpg>
 Package pdftex.def Info: cdt/theme/logoIpn.jpg  used on input line 21.
@@ -5010,6 +5127,7 @@ File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
 Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 21.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -5070,6 +5188,8 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 8.
 
 =======
+=======
+>>>>>>> parent of 79de654... Cu
  [53 <./images/../ModeloComportamiento/AplicacionMovil/cu1/iu1.png>])) (ModeloI
 nteraccion/mensajes.tex
 >>>>>>> parent of 79de654... Cu
@@ -5085,6 +5205,7 @@ File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 34.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 Package Fancyhdr Warning: \headheight is too small (39.0pt): 
@@ -5138,6 +5259,12 @@ Package babel Info: Redefining spanish shorthand "?
 ]
 <cdt/uc/rules/MsgRule.png, id=1133, 853.1875pt x 86.3225pt>
 >>>>>>> parent of 79de654... Cu
+=======
+[54
+
+]
+<cdt/uc/rules/MsgRule.png, id=1133, 853.1875pt x 86.3225pt>
+>>>>>>> parent of 79de654... Cu
 File: cdt/uc/rules/MsgRule.png Graphic file (type png)
 <use cdt/uc/rules/MsgRule.png>
 Package pdftex.def Info: cdt/uc/rules/MsgRule.png  used on input line 47.
@@ -5150,6 +5277,7 @@ File: cdt/theme/headerEscom.jpg Graphic file (type jpg)
 <use cdt/theme/headerEscom.jpg>
 Package pdftex.def Info: cdt/theme/headerEscom.jpg  used on input line 59.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -5186,6 +5314,9 @@ Package babel Info: Redefining spanish shorthand "?
 =======
  [55 <./cdt/uc/rules/MsgRule.png>]))
 >>>>>>> parent of 79de654... Cu
+=======
+ [55 <./cdt/uc/rules/MsgRule.png>]))
+>>>>>>> parent of 79de654... Cu
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
 <use cdt/theme/headerIpn.jpg>
 Package pdftex.def Info: cdt/theme/headerIpn.jpg  used on input line 128.
@@ -5194,6 +5325,7 @@ File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 128.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -5296,6 +5428,11 @@ Package babel Info: Redefining spanish shorthand "?
 
 ] [58]
 >>>>>>> parent of 79de654... Cu
+=======
+ [56] [57
+
+] [58]
+>>>>>>> parent of 79de654... Cu
 Cap\'{\i }tulo 10.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 129.
@@ -5328,6 +5465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 12.
 Package babel Info: Redefining spanish shorthand >>
@@ -5356,6 +5494,9 @@ Package babel Info: Redefining spanish shorthand "?
 =======
 [59
 >>>>>>> parent of 79de654... Cu
+=======
+[59
+>>>>>>> parent of 79de654... Cu
 
 ]))
 File: cdt/theme/headerIpn.jpg Graphic file (type jpg)
@@ -5366,6 +5507,7 @@ File: cdt/theme/logoEscom.jpg Graphic file (type jpg)
 <use cdt/theme/logoEscom.jpg>
 Package pdftex.def Info: cdt/theme/logoEscom.jpg  used on input line 178.
 (pdftex.def)             Requested size: 51.33295pt x 35.0pt.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -5402,6 +5544,9 @@ Package babel Info: Redefining spanish shorthand "?
 =======
  [60] (referencias.tex
 >>>>>>> parent of 79de654... Cu
+=======
+ [60] (referencias.tex
+>>>>>>> parent of 79de654... Cu
 LaTeX Font Info:    Try loading font information for OT1+cmtl on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\cmbright\ot1cmtl.fd"
@@ -5420,6 +5565,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 186.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
+<<<<<<< HEAD
 <<<<<<< HEAD
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 188.
@@ -5449,6 +5595,9 @@ Package babel Info: Redefining spanish shorthand "?
 =======
  [61
 >>>>>>> parent of 79de654... Cu
+=======
+ [61
+>>>>>>> parent of 79de654... Cu
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
@@ -5461,7 +5610,11 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `analisis.out' has not changed.
 <<<<<<< HEAD
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: B8D866144DC668E274B68A2004BAB0A4;6198.
+=======
+(rerunfilecheck)             Checksum: 505E59432E2981ADD51F73E21BE40A3E;6109.
+>>>>>>> parent of 79de654... Cu
 =======
 (rerunfilecheck)             Checksum: 505E59432E2981ADD51F73E21BE40A3E;6109.
 >>>>>>> parent of 79de654... Cu
@@ -5476,15 +5629,21 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
 <<<<<<< HEAD
+<<<<<<< HEAD
  11718 strings out of 493308
  168966 string characters out of 3138768
  288793 words of memory out of 3000000
  14582 multiletter control sequences out of 15000+200000
 =======
+=======
+>>>>>>> parent of 79de654... Cu
  11502 strings out of 492946
  168729 string characters out of 3135524
  296102 words of memory out of 3000000
  14712 multiletter control sequences out of 15000+200000
+<<<<<<< HEAD
+>>>>>>> parent of 79de654... Cu
+=======
 >>>>>>> parent of 79de654... Cu
  10888 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -5544,5 +5703,8 @@ PDF statistics:
  1754 PDF objects out of 2073 (max. 8388607)
  332 named destinations out of 1000 (max. 500000)
  870 words of extra memory for PDF output out of 10000 (max. 10000000)
+<<<<<<< HEAD
+>>>>>>> parent of 79de654... Cu
+=======
 >>>>>>> parent of 79de654... Cu
 

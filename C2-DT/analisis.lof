@@ -19,7 +19,11 @@
 \contentsline {figure}{\numberline {8.4}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Sistema Embebido. }}{42}{figure.8.4}
 \addvspace {10\p@ }
 <<<<<<< HEAD
+<<<<<<< HEAD
 \contentsline {figure}{\numberline {9.1}{\ignorespaces IU1 Consultar pacientes}}{49}{figure.9.1}
+=======
+\contentsline {figure}{\numberline {9.1}{\ignorespaces IU1 Consultar pacientes}}{53}{figure.9.1}% 
+>>>>>>> parent of 79de654... Cu
 =======
 \contentsline {figure}{\numberline {9.1}{\ignorespaces IU1 Consultar pacientes}}{53}{figure.9.1}% 
 >>>>>>> parent of 79de654... Cu
