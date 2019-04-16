@@ -1,3 +1,9 @@
+*.DS_Store
+*.pdf
+*.log
+*.aux
+*.out
+*.toc
 .DS_Store
 .pdf
 .log
