@@ -1,0 +1,89 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Planteamiento del problema}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Soluci\363n propuesta}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Justificaci\363n}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Alcance}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Objetivos}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.5.1}{Objetivo general}{section.1.5}% 7
+\BOOKMARK [2][-]{subsection.1.5.2}{Objetivos espec\355ficos}{section.1.5}% 8
+\BOOKMARK [1][-]{section.1.6}{Estado del arte}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.6.1}{introducci\363n}{section.1.6}% 10
+\BOOKMARK [2][-]{subsection.1.6.2}{SOSmart}{section.1.6}% 11
+\BOOKMARK [2][-]{subsection.1.6.3}{GAT}{section.1.6}% 12
+\BOOKMARK [0][-]{chapter.2}{Marco Te\363rico}{}% 13
+\BOOKMARK [1][-]{section.2.1}{General}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.2}{Sensores de Smartphone}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{Aceler\363metro}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{GPS}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.3}{A-GPS \(GPS Asistido\)}{section.2.2}% 18
+\BOOKMARK [1][-]{section.2.3}{Sensores Internos}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{CAN - BUS \(Controller Area network\)}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.2}{SISTEMA AIRBAG SRS}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.3}{Sensor de accidente}{section.2.3}% 22
+\BOOKMARK [2][-]{subsection.2.3.4}{Sensores de Presi\363n}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.5}{Sensor de seguridad safing}{section.2.3}% 24
+\BOOKMARK [0][-]{chapter.3}{An\341lisis}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Requerimientos del sistema}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{An\341lisis de componentes del sistema}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.2.1}{Sensor de temperatura}{section.3.2}% 28
+\BOOKMARK [-1][-]{part.1}{I Dise\361o de la Estructura del Sistema}{}% 29
+\BOOKMARK [0][-]{chapter.4}{Metodolog\355a}{part.1}% 30
+\BOOKMARK [0][-]{chapter.5}{An\341lisis de Factibilidad}{part.1}% 31
+\BOOKMARK [1][-]{section.5.1}{An\341lisis de Factibilidad}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.1.1}{Factibilidad T\351cnica}{section.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.1.2}{Factibilidad Econ\363mica}{section.5.1}% 34
+\BOOKMARK [0][-]{chapter.6}{Arquitectura del Sistema}{part.1}% 35
+\BOOKMARK [1][-]{section.6.1}{Arquitectura f\355sica del sistema}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.2}{Arquitectura l\363gica del sistema}{chapter.6}% 37
+\BOOKMARK [0][-]{chapter.7}{Modelo de Negocio}{part.1}% 38
+\BOOKMARK [1][-]{section.7.1}{Reglas de negocio}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.2}{Actores del sistema}{chapter.7}% 40
+\BOOKMARK [2][-]{subsection.7.2.1}{Paciente}{section.7.2}% 41
+\BOOKMARK [1][-]{section.7.3}{T\351rminos t\351cnicos}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.4}{T\351rminos del negocio}{chapter.7}% 43
+\BOOKMARK [1][-]{section.7.5}{Modelo de informaci\363n de In-Help}{chapter.7}% 44
+\BOOKMARK [2][-]{subsection.7.5.1}{Descripci\363n general}{section.7.5}% 45
+\BOOKMARK [2][-]{subsection.7.5.2}{Usuario}{section.7.5}% 46
+\BOOKMARK [2][-]{subsection.7.5.3}{Cuenta}{section.7.5}% 47
+\BOOKMARK [2][-]{subsection.7.5.4}{Perfil}{section.7.5}% 48
+\BOOKMARK [2][-]{subsection.7.5.5}{Auto}{section.7.5}% 49
+\BOOKMARK [2][-]{subsection.7.5.6}{Tipo de Auto}{section.7.5}% 50
+\BOOKMARK [2][-]{subsection.7.5.7}{Aseguradora}{section.7.5}% 51
+\BOOKMARK [2][-]{subsection.7.5.8}{Persona}{section.7.5}% 52
+\BOOKMARK [2][-]{subsection.7.5.9}{Direcci\363n}{section.7.5}% 53
+\BOOKMARK [2][-]{subsection.7.5.10}{Contacto}{section.7.5}% 54
+\BOOKMARK [2][-]{subsection.7.5.11}{Tipo de Contacto}{section.7.5}% 55
+\BOOKMARK [2][-]{subsection.7.5.12}{Notificaci\363n}{section.7.5}% 56
+\BOOKMARK [2][-]{subsection.7.5.13}{Tipo de Notificaci\363n}{section.7.5}% 57
+\BOOKMARK [2][-]{subsection.7.5.14}{Eventos}{section.7.5}% 58
+\BOOKMARK [2][-]{subsection.7.5.15}{Seguridad Social}{section.7.5}% 59
+\BOOKMARK [2][-]{subsection.7.5.16}{Informaci\363n m\351dica}{section.7.5}% 60
+\BOOKMARK [2][-]{subsection.7.5.17}{Tipo de Enfermedad}{section.7.5}% 61
+\BOOKMARK [2][-]{subsection.7.5.18}{Ubicacion}{section.7.5}% 62
+\BOOKMARK [2][-]{subsection.7.5.19}{Velocidad}{section.7.5}% 63
+\BOOKMARK [2][-]{subsection.7.5.20}{Giroscopio}{section.7.5}% 64
+\BOOKMARK [2][-]{subsection.7.5.21}{Micr\363fono}{section.7.5}% 65
+\BOOKMARK [2][-]{subsection.7.5.22}{Temperatura}{section.7.5}% 66
+\BOOKMARK [2][-]{subsection.7.5.23}{Camara}{section.7.5}% 67
+\BOOKMARK [0][-]{chapter.8}{Modelo de Comportamiento}{part.1}% 68
+\BOOKMARK [1][-]{section.8.1}{M\363dulos del sistema}{chapter.8}% 69
+\BOOKMARK [1][-]{section.8.2}{Modelo de comportamiento del m\363dulo Aplicaci\363n M\363vil}{chapter.8}% 70
+\BOOKMARK [1][-]{section.8.3}{Modelo de comportamiento del m\363dulo Sistema Externo}{chapter.8}% 71
+\BOOKMARK [1][-]{section.8.4}{Modelo de comportamiento del m\363dulo Sistema Interno}{chapter.8}% 72
+\BOOKMARK [1][-]{section.8.5}{Casos de uso del m\363dulo Aplicaci\363n M\363vil}{chapter.8}% 73
+\BOOKMARK [1][-]{section.8.6}{CU1 Consultar pacientes}{chapter.8}% 74
+\BOOKMARK [2][-]{subsection.8.6.1}{Resumen}{section.8.6}% 75
+\BOOKMARK [2][-]{subsection.8.6.2}{Descripci\363n}{section.8.6}% 76
+\BOOKMARK [2][-]{subsection.8.6.3}{Trayectorias del caso de uso}{section.8.6}% 77
+\BOOKMARK [2][-]{subsection.8.6.4}{Puntos de extensi\363n}{section.8.6}% 78
+\BOOKMARK [0][-]{chapter.9}{Modelo de Interacci\363n con el Usuario}{part.1}% 79
+\BOOKMARK [1][-]{section.9.1}{Entorno de trabajo}{chapter.9}% 80
+\BOOKMARK [1][-]{section.9.2}{Interfaces de usuario}{chapter.9}% 81
+\BOOKMARK [2][-]{subsection.9.2.1}{IU1 Consultar pacientes}{section.9.2}% 82
+\BOOKMARK [1][-]{section.9.3}{Dise\361o de mensajes}{chapter.9}% 83
+\BOOKMARK [2][-]{subsection.9.3.1}{Par\341metros comunes}{section.9.3}% 84
+\BOOKMARK [2][-]{subsection.9.3.2}{Mensajes a trav\351s de la pantalla}{section.9.3}% 85
+\BOOKMARK [-1][-]{part.2}{II Implementaci\363n}{}% 86
+\BOOKMARK [0][-]{chapter.10}{Avances y pruebas}{part.2}% 87
+\BOOKMARK [1][-]{section.10.1}{Sensores de pulso}{chapter.10}% 88
+\BOOKMARK [0][-]{chapter*.38}{Referencias}{part.2}% 89
