@@ -1,13 +1,74 @@
 %========ANÁLISIS DE FACTIBILIDAD
-\section{Análisis de Factibilidad}
+\section{Analisis de Factibilidad}
+\subsection{Introduccion}
+Para el desarrollo de aplicaciones moviles se encuentran diferentes herramientas para llevarlas acabo dentro de las cuales destacan :
+Librerias ,Lenguajes de programacion o Arquitecturas.
+Por lo cual se debe de definir un modelo el cual tenga un nivel alto de interoperabilidad entre los componentes del sitema.
+
+
 %El estudio de factibilidad se encarga de recopilar datos esenciales del proyecto como la infraestructura tecnológica necesaria, la factibilidad técnica y los recursos económicos necesarios para la implementación del trabajo, esto con el fin de orientar la toma de decisiones que impactarán directamente a la etapa de la ejecución.
 
-\subsection{Factibilidad Técnica}
+\subsection{Factibilidad Tecnica}
 %El propósito  de este análisis es recolectar información sobre los recursos de software, hardware, conocimientos, habilidades y experiencias y la posibilidad de hacer uso de ellos en el desarrollo y la implementación del trabajo, además de definir los requerimientos tecnológicos que deben ser adquiridos para el desarrollo con el menor riesgo posible.\\
 %
 %A continuación de describen las tecnologías y requerimientos de software y hardware que fueron implementados para el desarrollo del trabajo.
 
-\subsubsection{Software}
+\paragraph{1.-Tipos de aplicaciones:}
+
+Existen 3 tipos diferentes de aplicaciones movil , los factores en los cuales se basan para clasificarlas dependen de la funcionalidad y la forma en que seran realizadas. Los puntos mas destacables a la hora de una eleccion de aplicacion movil es sin duda la red de internet , ya que las aplicaciones moviles pueden trabajar con red de internet o se pueden ejecutar sin problemas desde el dispositivo sin contar con una red de internet.
+A continuacion se explicara en una breve tabla las ventajas y desventajas que estas tienen:
+\begin{table}[h!]
+\begin{tabular}{|p{2.5cm}|p{5cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Tipos de aplicaciones moviles}&\textbf{Descripción}& \textbf{Ventajas}& \textbf{Desventajas}\\
+\hline
+\hline
+AppsNativas& Una aplicación nativa, se caracteriza por haber sido desarrollada especialmente para un lenguaje de programación.&
+\begin{UClist}
+		\UCli Notificaciones push
+		\UCli Rapidez de navegación
+		\UCli Uso complejo del hardware
+		\UCli Facil Manejo
+		\UCli Diseño y desarrollo Personalizado
+		\UCli No necesitan conexión a internet
+\end{UClist} & \begin{UClist}
+
+\UCli Mayor tiempo de desarrollo
+\UCli Precio mas elevado
+\end{UClist} \\
+\hline
+\hline
+WebApss&Este tipo de aplicaciones se caracterizan por estar desarrolladas en lenguajes de programación propias de la web, como HTML, CSS o Javascript.
+& 	\begin{UClist}
+		\UCli Multiplataformas
+		\UCli Responsive Desing
+	\end{UClist} &
+	\begin{UClist}
+		\UCli No requieren instalación por lo tanto no estaran disponibles en las tiendas de aplicaciones (Play Store , Apple Store).
+		\UCli El diseño es totalmente web , "Responsive Desing" lo adapta a una plataforma movil.
+	\end{UClist} \\
+\hline
+\hline
+WebApps Nativas & Las Webapps Nativas es una combinacion de Webapps y appsnativas las cuales tienen la mayor parte de su estructura realiza en lenguajes de programación de la web , no dejando aun lado la parte nativa del movil. & 
+	\begin{UClist}
+		\UCli Multiplataforma
+		\UCli Herramientas de lenguajes nativos
+	\end{UClist} &
+	\begin{UClist}
+		\UCli Costo Elevado
+	\end{UClist} \\
+\hline
+
+
+
+\end{tabular}
+\caption{Tipos de aplicaciones.}
+\label{DisenoEstructura:TipoApp}
+\end{table}
+
+Para este trabajo terminal se hara uso total de las aplicaciones nativas ya que estas se centran en un solo lenguaje de programación ayudando asi a reducir el tiempo de producción de la aplicación movil considerablemente.
+
+
 %Para identificar las diferentes tecnologías de la información que serán usadas para el desarrollo del trabajo, éstas fueron evaluadas y clasificadas en 3 diferentes aspectos.\\
 %
 %\paragraph{1. Entorno de Desarrollo Integrado.} \textcolor{White}{.} \newline
@@ -34,7 +95,53 @@
 %	\end{center}
 %\end{table}
 
+\paragraph{2. Software :}
+En el mundo del desarrollo para móviles actualmente se dispone de muchas opciones para ello se debe tomar en cuenta los lenguajes y herramientas nativos de cada plataforma.Para ello se hizo un analisis de las herramientas que estan disponibles para la realización de aplicaciones moviles.
 
+\begin{table}[h!]
+\begin{tabular}{|p{3cm}|p{3.5cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Herramienta}&\textbf{Ventajas}& \textbf{Desventajas}& \textbf{Lenguaje Utilizado} & \textbf{Tipo de Herramienta} \\
+Xamarin & 	\begin{UClist}
+				\UCli Basada en lenguaje mas populares
+				\UCli Es universal para las diferentes plataformas
+			\end{UClist} &
+							\begin{UClist}
+								\UCli Mayor tiempo de desarrollo
+							\end{UClist} & C\# , .NET & Multiplataforma compilado a nativo \\
+\hline
+\hline
+AndroiStudio & 	\begin{UClist}
+					\UCli Compilación rapida
+					\UCli Ejecución de aplicación en tiempo real
+					\UCli Ejecución de aplicación directamente desde el movil
+					\UCli Renderizado en tiempo real
+					\UCli Uso de parametros tools
+				\end{UClist} &
+								\begin{UClist}
+									\UCli Los requisitos minimos de hardware son elevados.
+									\UCli Se requiere una computadora de gama alta
+								\end{UClist} & Android & Nativo \\
+\hline
+\hline
+Swift & \begin{UClist}
+			\UCli Proceso de desarrollo rapido.
+			\UCli Escalable al producto y al equipo.
+			\UCli Seguridad y rendimiento.
+			\UCli Disminución de la huella de memoria
+		\end{UClist} & 
+						\begin{UClist}
+							\UCli Lenguaje joven.
+							\UCli Interoperabilidad con herramientas de terceros e IDE.
+							\UCli Falta de soporte para versiones anteriores
+						\end{UClist} & IOS & Nativo \\
+\hline
+
+
+\end{tabular}
+\caption{IDE.}
+\label{DisenoEstructura:IDE}
+\end{table}
 
 \paragraph{2. Sistema Operativo}  \textcolor{White}{.} \newline
 %Puesto que la mayoría de los entornos de desarrollo integrado a usar son multiplataforma, se puede hacer uso de múltiples sistemas operativos para su implementación. En la tabla \ref{disenoEstructura:SO} se muestran las versiones de sistemas operativos que serán evaluados para usar.\\
