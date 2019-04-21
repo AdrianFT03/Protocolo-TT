@@ -1,0 +1,44 @@
+\subsection{IUA-1.1 Iniciar Sesión}
+
+\subsubsection{Objetivo}
+
+% Explicar el objetivo para el que se construyo la interfaz, generalmente es la descripción de la actividad a desarrollar, como Seleccionar grupos para inscribir materias de un alumno, controlar el acceso al sistema mediante la solicitud de un login y password de los usuarios, etc.
+	
+    Esta pantalla permite al usuario poder ingresa su usuario y contraseña en el caso de que el ya se encuentre registrado, esto con la finalidad de tener un mecanismo de seguridad para el inicio de sesión.
+
+\subsubsection{Diseño}
+
+% Presente la figura de la interfaz y explique paso a paso ``a manera de manual de usuario'' como se debe utilizar la interfaz. No olvide detallar en la redacción los datos de entradas y salidas. Explique como utilizar cada botón y control de la pantalla, para que sirven y lo que hacen. Si el Botón lleva a otra pantalla, solo indique la pantalla y explique lo que pasará cuando se cierre dicha pantalla (la explicación sobre el funcionamiento de la otra pantalla estará en su archivo correspondiente).
+
+    En la figura \ref{IUA-1} se muestra la pantalla `` Inicio ", por medio de la cual el usuario podrá acceder al inicio de sesión, esta es la pantalla principal de inicio principal que muestra la aplicación, es por eso que aquí se muestran los botones que permitirán al usuario iniciar sesión o en su defecto registrarse.\\
+    
+    En la figura \ref{IUA-1} se muestra la pantalla `` Iniciar Sesión ", por medio de la cual se muestran los campos que se requieren para que un usuario se autentifique en la aplicación, así mismo se muestra una opción que le permitirá al usuario recuperar contraseña en el caso de lo requiera.
+
+   \IUfig[.4]{../ModeloComportamiento/Autenticacion/CUA1.1/images/IUA1Inicio}{IUA-1}{Inicio}
+   \IUfig[.4]{../ModeloComportamiento/Autenticacion/CUA1.1/images/IUA-1_1Login}{IUA-1.1}{Iniciar Sesión}
+
+\subsubsection{Comandos}
+    \begin{itemize}
+    	
+    	\item Pantalla \cdtIdRef{IUA-1}{Inicio}.
+    	
+    	\begin{itemize}
+    		\item \cdtButton{REGISTRATE GRATIS}: Permite al usuario registrarse en la aplicación, dirige a la pantalla 
+    		\item \cdtButton{INICIAR SESIÓN CON FACEBOOK}: Permite al usuario registrarse con la información de su cuenta de facebook, dirige a la pantalla
+    		\item \cdtButton{INICIAR SESIÓN}: Permite al usuario acceder a la pantalla para el inicio de sesión, dirige a la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}. 
+    	\end{itemize}
+    
+		\item Pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
+		
+		\begin{itemize}
+			\item \cdtButton{INICIAR SESIÓN}:  Permite al usuario acceder a su cuenta, dirige a la pantalla
+			\item \textbf{Aquí te podemos ayudar}: Permite al usuario acceder a las opciones para recuperación de cuenta, dirige a la pantalla 
+			\item \btnRegresar [Regresar]: Permite al usuario salir de la pantalla, dirige a la pantalla \cdtIdRef{IUA-1}{Inicio}. 
+		\end{itemize}
+    \end{itemize}
+
+\subsubsection{Mensajes}
+
+    \begin{description}
+		\item[\cdtIdRef{MSG4}{Datos inválidos}] Se muestra este mensaje de error cuando alguno de los datos marcados como requeridos (con asteriscos rojos) no es proporcionado por el usuario, señalando el dato que hizo falta.
+    \end{description}

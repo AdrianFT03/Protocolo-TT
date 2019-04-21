@@ -1,18 +1,17 @@
 %\DONE{} 
 \section{Diseño de mensajes}
 	En esta sección se describen los mensajes utilizados en el prototipo actual del sistema. Los mensajes se refieren a todos
-	aquellos avisos que el sistema muestra al actor a través de la pantalla debido a diversas
-	razones, por ejemplo: informar acerca de algún fallo en el sistema o para notificar acerca de alguna operación importante sobre la información.
+	aquellos avisos que la aplicación muestra al actor a través de la pantalla debido a diversas
+	razones, por ejemplo: informar acerca de algún fallo en la aplicación o para notificar acerca de alguna operación importante sobre la información.
 
 %===========================================================removiendo los puntos generados
 \subsection{Parámetros comunes}
-    Cuando un mensaje es recurrente se parametrizan sus elementos, por ejemplo los mensajes: ``Aún no existen registros de {\em escuelas} en el sistema.'', ``Aún no existen registros de {\em responsables del programa} en el sistema.'', 
-    ``Aún no existen registros de {\em integrantes de líneas de acción} en el sistema.'', tienen una estructura similar 
+    Cuando un mensaje es recurrente se parametrizan sus elementos, por ejemplo los mensajes: ``Aún no existen registros de {\em vehículos} en la aplicación.'', ``Aún no existen registros de {\em contactos} en la aplicación.'',  tienen una estructura similar 
     por lo que para definir el mensaje se utilizan parámentros, con el objetivo de que el mensaje sea genérico y  
     pueda utilizarse en todos los casos que se considere necesario.\\
     
     Los parámetros también se utilizan cuando la redacción del mensaje tiene datos que son ingresados por el actor o que dependen del resultado de la operación, por ejemplo: 
-    ``La {\em escuela  15DPR2497K} ha sido {\em modificada} exitosamente.''. En este caso la redacción se presenta parametrizada de la forma: ``DETERMINADO ENTIDAD VALOR ha sido OPERACIÓN exitosamente.'' y los 
+    ``El {\em contacto Adrian} ha sido {\em modificado} exitosamente.''. En este caso la redacción se presenta parametrizada de la forma: ``DETERMINADO ENTIDAD VALOR ha sido OPERACIÓN exitosamente.'' y los 
     parámetros se describen de la siguiente forma:
     
     \begin{itemize}
@@ -21,7 +20,7 @@
 	\item OPERACIÓN: Es la acción que el actor solicitó realizar.
     \end{itemize}
 
-    En el ejemplo anterior se hace referencia a VALOR, es decir: {\em 15DPR2497K} es el {\bf valor}  de la entidad {\bf escuela}. Cada mensaje enlista los parámetros 
+    En el ejemplo anterior se hace referencia a VALOR, es decir: {\em Adrian} es el {\bf valor}  de la entidad {\bf Contacto}. Cada mensaje enlista los parámetros 
     que utiliza, sin embargo aquí se definen los más comunes a fin de simplificar la descripción de los mensajes:
 
     \begin{description}
@@ -46,7 +45,6 @@
 %===========================  MSG1 ==================================
 \begin{mensaje}{MSG1}{Operación realizada exitosamente}{Notificación}
     \item[Ubicación:] \msjSuperior
-  %  \item[Estatus:] Terminado
     \item[Objetivo:] Notificar al actor que la acción solicitada fue realizada exitosamente.
     \item[Redacción:] DETERMINADO ENTIDAD VALOR ha sido OPERACIÓN exitosamente.
     \item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
@@ -56,27 +54,66 @@
 	\item OPERACIÓN: Es la acción que el actor solicitó realizar.
     \end{Citemize}
     \item[Ejemplo:] {\em El paciente Carlos Granados} ha sido {\em registrado} exitosamente.
-    \item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
+    \item[Referenciado por:] 
 \end{mensaje}
 
-%%===========================  MSG2 ==================================
-%\begin{mensaje}{MSG2}{Falta dato obligatorio}{Error}
-%	\item[Ubicación:] \msjCampo
-%%	\item[Estatus:] %Terminado
-%	\item[Objetivo:] Notificar al actor la omisión de algún dato obligatorio por ingresar.
-%	\item[Redacción:] Campo obligatorio.
-%	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-%\end{mensaje}
-%
-%%===========================  MSG3 ==================================
-%\begin{mensaje}{MSG3}{Formato de campo incorrecto}{Error}
-%	\item[Ubicación:] \msjCampo.
-%%	\item[Estatus:] %Terminado
-%	\item[Objetivo:] Indicar al actor que el dato ingresado en alguno de los campos del formulario no cumple con el tipo de dato definido en el diccionario de datos.
-%	\item[Redacción:] El dato ingresado es incorrecto, favor de ingresar un dato válido.
-%	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-%\end{mensaje}
-%
+%===========================  MSG2 ==================================
+\begin{mensaje}{MSG2}{Falta dato obligatorio}{Error}
+	\item[Ubicación:] \msjCampo
+	\item[Objetivo:] Notificar al actor la omisión de algún dato obligatorio por ingresar.
+	\item[Redacción:] Faltan datos obligatorios.
+	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
+\end{mensaje}
+
+%===========================  MSG3 ==================================
+\begin{mensaje}{MSG3}{Formato de campo incorrecto}{Error}
+	\item[Ubicación:] \msjCampo.
+	\item[Objetivo:] Indicar al actor que el dato ingresado en alguno de los campos del formulario no cumple con el tipo de dato definido en el diccionario de datos.
+	\item[Redacción:] El dato ingresado es incorrecto, favor de ingresar un dato válido.
+	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
+\end{mensaje}
+
+%===========================  MSG4 ==================================
+\begin{mensaje}{MSG4}{Longitud mínima de un campo}{Error}
+	\item[Ubicación:] \msjCampo.
+	\item[Objetivo:] Indicar al actor que el dato ingresado no cumple con la longitud mínima.
+	\item[Redacción:] DETERMINADO VALOR debe tener mínimo VALOR1 caracteres.
+	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+	\begin{Citemize}
+		\item DETERMINADO ENTIDAD: Es un artículo determinado más el nombre de la entidad sobre la cual se realizó la acción.
+		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+		\item VALOR1: Es el valor mínimo con el que cuenta la entidad.
+	\end{Citemize}
+	\item[Ejemplo:] La contraseña debe tener mínimo 8 caracteres.
+	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
+\end{mensaje}
+
+%===========================  MSG5 ==================================
+\begin{mensaje}{MSG5}{Usuario no registrado}{Error}
+	\item[Ubicación:] \msjCampo.
+	\item[Objetivo:] Indicar al actor que el dato ingresado en alguno de los campos del formulario no cumple con el tipo de dato definido en el diccionario de datos.
+	\item[Redacción:] El usuario que ingreso no se encuentra registrado.
+	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
+\end{mensaje}
+
+
+%===========================  MSG6 ==================================
+\begin{mensaje}{MSG6}{Usuario o contraseña incorrecta}{Error}
+	\item[Ubicación:] \msjCampo.
+	\item[Objetivo:] Indicar al actor que el usuario o contraseña ingresados no es el correcto.
+	\item[Redacción:] Usuario o Contraseña incorrectos.
+	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
+\end{mensaje}
+
+
+%===========================  MSG7 ==================================
+\begin{mensaje}{MSG7}{Cuenta inactiva}{Error}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Indicar al actor que la cuenta con la que desea ingresar se encuentra inactiva.
+	\item[Redacción:] La cuenta se encuentra inactiva, espere 5 minutos para intentar iniciar sesión de nuevo.
+	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
+\end{mensaje}
+
 %%===========================  MSG4 ==================================
 %\begin{mensaje}{MSG4}{Número telefónico previamente registrado}{Error}
 %	\item[Ubicación:] \msjCampo.
