@@ -33,11 +33,11 @@
 	{Restricción}
 	{Controla la operación}
 	\BRitem{Versión}{1.0}
-	%\BRitem{Autor}{}
+	\BRitem{Autor}{Adrian Flores Torres}
 	\BRitem{Estatus}{Terminada}
 	\BRitem{Descripción}{La información que se proporcione en los campos marcados como obligatorios debe ser ingresada para poder continuar con la operación requerida.}
 	\BRitem{Referenciado por}{
-	\cdtIdRef{CUA1.1}{Iniciar sesión}
+	\cdtIdRef{CUA1.1}{Iniciar sesión}, \cdtIdRef{CUA1.2}{Registro de cuenta}
 	}
 	
 \end{BusinessRule}
@@ -47,7 +47,7 @@
 	{Restricción}
 	{Controla la operación}
 	\BRitem{Versión}{1.0}
-	%\BRitem{Autor}{}
+	\BRitem{Autor}{Adrian Flores Torres}
 	\BRitem{Estatus}{Terminada}
 	\BRitem{Descripción}{
 	Para que un correo electrónico se considere válido debe cumplir con la siguiente expresión regular:\\
@@ -56,7 +56,7 @@
 		\)
 	}
 	\BRitem{Referenciado por}{
-		\cdtIdRef{CUA1.1}{Iniciar sesión}
+		\cdtIdRef{CUA1.1}{Iniciar sesión}, \cdtIdRef{CUA1.2}{Registro de cuenta}
 	}
 	
 \end{BusinessRule}
@@ -66,7 +66,7 @@
 	{Restricción}
 	{Controla la operación}
 	\BRitem{Versión}{1.0}
-	%\BRitem{Autor}{}
+	\BRitem{Autor}{Adrian Flores Torres}
 	\BRitem{Estatus}{Terminada}
 	\BRitem{Descripción}{El usuario solo tendrá 3 intentos para poder iniciar sesión, de lo contrario la cuenta se bloqueará por 5 minutos. Cada que el usuario  inicie sesión el contador que controla el número de intentos se reiniciará a 0.}
 	\BRitem{Referenciado por}{
@@ -81,7 +81,7 @@
 	{Restricción}
 	{Controla la operación}
 	\BRitem{Versión}{1.0}
-	%\BRitem{Autor}{}
+	\BRitem{Autor}{Adrian Flores Torres}
 	\BRitem{Estatus}{Terminada}
 	\BRitem{Descripción}{La información que se proporcione en los campos debe cumplir con lo estipulado en el modelo de información.}
 	\BRitem{Referenciado por}{
@@ -89,6 +89,75 @@
 	}
 	
 \end{BusinessRule}
+
+\begin{BusinessRule}{RN5}{Unicidad de Elementos}
+	{Derivación}
+	{Controla la operación}
+	\BRitem{Versión}{1.0}
+	\BRitem{Autor}{Adrian Flores Torres}
+	\BRitem{Estatus}{Edición}
+	\BRitem{Descripción}{Un elemento no se puede duplicar en todo el sistema, ni registrar más de una ocasión. La unicidad se determinará con base en la siguiente lista:
+		\\ 
+		\begin{enumerate}
+			\item Cuenta:
+			\begin{itemize}
+				\item Correo electrónico
+			\end{itemize}
+			
+		\end{enumerate}
+		
+		Las actividades antes mencionadas, son las principales que utilizan esta regla de negocio. 
+	}
+	
+	\BRitem{Referenciado por}{
+		\cdtIdRef{CUA1.2}{Registro de cuenta}
+	
+}
+\end{BusinessRule}
+
+%============================== RN6 =================================
+\begin{BusinessRule}{RN6}{Formato de contraseña}
+	{Restricción}
+	{Controla la operación}
+	\BRitem{Versión}{1.0}
+	\BRitem{Autor}{Adrian Flores Torres}
+	\BRitem{Estatus}{Terminada}
+	\BRitem{Descripción}{Por la seguridad de los usuarios de In-Help, las contraseñas deben cumplir con las siguientes condiciones:
+	\begin{itemize}
+		\item Tener una longitud mínima de 8 caracteres.
+		\item Contar con por lo menos un número.
+	\end{itemize}	
+}
+	\BRitem{Referenciado por}{
+		\cdtIdRef{CUA1.2}{Registro de cuenta}
+	}
+	
+\end{BusinessRule}
+
+
+%============================== RN6 =================================
+\begin{BusinessRule}{RN7}{Fecha de nacimiento válida}
+	{Restricción}
+	{Controla la operación}
+	\BRitem{Versión}{1.0}
+	\BRitem{Autor}{Adrian Flores Torres}
+	\BRitem{Estatus}{Terminada}
+	\BRitem{Descripción}{Una fecha de nacimiento válida deberá cumplir con la siguiente condición:\\
+		\begin{center}
+			$Fecha_{Nacimiento}  < 01/01/2008$
+		\end{center}
+	Donde: 
+	\begin{itemize}
+		\item $Fecha_{Nacimiento} :$ Es la fecha de nacimiento que el usuario esta registrando.
+	\end{itemize}
+	}
+	\BRitem{Referenciado por}{
+		\cdtIdRef{CUA1.2}{Registro de cuenta}
+	}
+	
+\end{BusinessRule}
+
+
 
 
 

@@ -114,6 +114,65 @@
 	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
 \end{mensaje}
 
+
+%===========================  MSG8 ==================================
+\begin{mensaje}{MSG8}{Cerrar sesión}{Error}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Solicitar al usuario la confirmación para el cierre de sesión.
+	\item[Redacción:] ¿Estas seguro que deseas salir? Si sales no podrás recibir ni enviar notificaciones.
+	\item[Referenciado por:] \cdtIdRef{CUA1.1.1}{Cerrar sesión}
+\end{mensaje}
+
+
+%===========================  MSG9==================================
+\begin{mensaje}{MSG9}{Términos y condiciones}{Notificación}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Informar al actor sobre los términos y condiciones de In-Help.
+	\item[Redacción:] 
+	\item[Referenciado por:] \cdtIdRef{CUA1.2}{Registro de cuenta}
+\end{mensaje}
+
+
+%===========================  MSG10 ==================================
+\begin{mensaje}{MSG10}{Política de privacidad}{Notificación}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Informar al actor sobre la Política de privacidad de In-Help
+	\item[Redacción:]
+	\item[Referenciado por:] \cdtIdRef{CUA1.2}{Registro de cuenta}
+\end{mensaje}
+
+
+%===========================  MSG10 ==================================
+\begin{mensaje}{MSG11}{Elemento duplicado}{Notificación}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Informar al actor que la información que desea registrar se encuentra duplicada.
+	\item[Redacción:] El VALOR que deseas registrar no esta disponible.
+	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+	\begin{Citemize}
+		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es el nombre o la clave.
+	\end{Citemize}
+	\item[Ejemplo:] El correo que deseas registrar no esta disponible.
+	\item[Referenciado por:] \cdtIdRef{CUA1.2}{Registro de cuenta}
+\end{mensaje}
+
+%===========================  MSG12 ==================================
+\begin{mensaje}{MSG12}{Contraseña y confirmación de contraseña erróneas}{Notificación}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Informar al actor que la información que desea registrar se encuentra duplicada.
+	\item[Redacción:] La contraseña y confirmación de contraseña no coinciden.
+	\item[Referenciado por:] \cdtIdRef{CUA1.2}{Registro de cuenta}
+\end{mensaje}
+
+%===========================  MSG12 ==================================
+\begin{mensaje}{MSG13}{Estado de la cuenta}{Notificación}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Informar al actor que la cuenta se cuenta registrada.
+	\item[Redacción:] ¡La cuenta se ha registrado con éxito !
+	\item[Referenciado por:] \cdtIdRef{CUA1.2}{Registro de cuenta}
+\end{mensaje}
+
+
+
 %%===========================  MSG4 ==================================
 %\begin{mensaje}{MSG4}{Número telefónico previamente registrado}{Error}
 %	\item[Ubicación:] \msjCampo.
