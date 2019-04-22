@@ -3,10 +3,10 @@
 % ESTA SECCION LA DEBE LLENAR SOLO EL ANALISTA.
 % ID: Asegurese de que el ID del Caso de uso sea único.
 % Nombre: Aseurese de que esté escrito de la forma: VERBO + SUSTANTIVO + ALGO
-\begin{UseCase}{CUA1.1}{Iniciar sesión}
+\begin{UseCase}{CUA1.3}{Recuperar cuenta}
     {
 	% RESUMEN: Asegurese de que el resumen describa : Situación inicial, proceso a grandes rasgos y la condición de término. Por ejemplo: ``Cuando se tenga un alumno nuevo o se detecte que no tiene registro se da de alta mediante este CU proporcionando sus datos: personales, padres o tutores, situación académica actual y de salud. El sistema registra los datos cuando sean válidos y se pueda determinar su situación académica. Al finalizar el alumno podrá ser inscrito a los grupos disponibles''.
-	La aplicación necesita un mecanismo de seguridad para los usuarios ya que en ella se manejan datos personales que pueden considerarse sensibles o privados para el usuario. El presente caso de uso permite al usuario poder iniciar sesión a una determinada cuenta, esto solo si conoce el usuario y contraseña correcto. 
+	La aplicación necesita un mecanismo para la recuperción de contraseñas de cuentas de los usuarios, esto con la finalidad que los usuarios tengan la seguridad que su cuenta podrá ser recuperada en caso de perdida u olvido de su contraseña. El presente caso de uso permite al usuario poder recuperar su contraseña por medio de su usuario o en este caso su correo electrónico que registro cuando creo su cuenta.
     }
     % VERSION: Inicie con la versión 0.1 y contiúe 0.2, 0.3, hasta que sea aceptada por el evaluador será la versión 1.0. si surgen mas cambios continúe con 1.1, etc.
     \UCitem{Versión}{1.0}
@@ -23,10 +23,10 @@
     % 	- Procesamiento en batch: Proceso que puede durar varios minutos sin que el usuario intervena demasiado.
     % 	- Negocio: Operación difícil de describir en una de las categorías anteriores por que es propia del ``negocio''.
     % 	- Reporte: Genera un reporte.
-    \UCitem{Operación}{Login}
+    \UCitem{Operación}{Consulta}
     %Consulta, Altas Bajas y Cambios, Negocio, Reporte, Selección/Asignación de datos, Calculo masivo, etc..
     % PRIORIDAD: Con base en su conocimiento del negocio indique el nivel de importancia y urgencia que tiene este caso de uso como: Alta/Media/Baja.
-    \UCccitem{Prioridad}{Alta}
+    \UCccitem{Prioridad}{Media}
     %%Importancia de este CU con respecto a los demás: Alta/Media/Baja
     % COMPLEJIDAD: Indique el grado de complejidad del Caso de uso en función de: el número de operaciones que realiza, el tamaño y numero de sus trayectorias, presentación de infomración y procesamiento. Califique con Alta/Media/Baja
     \UCccitem{Complejidad}{Media}
@@ -72,23 +72,25 @@
     % HEREDA DE: Indique el Caso de Uso del cual hereda el actual, en caso de que no herede de ningún CU, elimine esta línea.
     \UCitem{Actor(es)}{\cdtRef{Usuario}{Usuario}}
     % PROPOSITO: Escriba una sentencia que defina una situación deseable por el Actor. Este mismo enunciado debe describir el ``Valor Agregado'' que se lleva el actor al ejecutar el Caso de Uso y describe también la ``Condición de Término''.
-    \UCitem{Propósito}{Autenticarse en la aplicación con sus datos de inicio de sesión}
+    \UCitem{Propósito}{Recuperar información de la cuenta de un usuario}
     % ENTRADAS: Liste y referencíe los datos de entrada al sistema durante el CU: Nombre y forma en que se debe proporcionar el dato al Caso de uso: teclado, raton, camara, lector de barras, algun sensor, etc.
     \UCitem{Entradas}{
 	\begin{UClist}
 	    \UCli \cdtRef{Usuario:usuario}{Correo electrónico o nombre de usuario}. \ioEscribir.
-	    \UCli \cdtRef{Usuario:password}{Contraseña}. \ioEscribir.
 	\end{UClist}
     }
     % SALIDAS: Liste y referencíe los datos de salida o resultados del sistema, Especifíque el dispositivo en donde se presentarán las salidas: pantalla, impresora, otro sistema, brazo mecánico, etc. 
     \UCitem{Salidas}{
-	Ninguna
+	\begin{UClist}
+        \UCli \cdtIdRef{MSG17}{Envío de correo}: Se muestra cuando se envía la contraseña.
+    \end{UClist}
     }
     % PRECONDICIÓN: Son sentencias intemporales y afirmativas que declaran lo que DEBE ser siempre verdadero antes de iniciar el escenario en el caso de uso. Las precondiciones no son probadas dentro del caso de uso, son condiciones que se asumen verdaderas. Una precondición puede implicar un escenario de otro Caso de Uso que se ha completado satisfactoriamente, como por ejemplo la ``autenticación'', o más general el ``cajero se identifica y se autentica''. Craig Larman ``Use Case Model: Writing Requirements in Context''. También pueden ser escenarios ajenos al sistema que el Actor debe contemplar durante la operación pero de las que el sistema no es consciente, por ejemplo: ``El alumno debe presentar su credencial vigente'', o ``contar con el expediente físico'' ``El vehículo a asegurar debe estar en buen estado''.
     % Especifique las precondiciones indicando si son internas (escenarios provenientes de otro caso de uso) o externas, referenciando para las internas el CU correspondiente y, en caso de que aplique, la Regla de negocio que se está Reforzando con esta precondición.
     \UCitem{Precondiciones}{
 	\begin{UClist}
-	    \UCli {\bf Interna:} Que el usuario cuente con el usuario y contraseña.
+	    \UCli {\bf Interna:} Que el actor conozca su nombre de usuario.
+        \UCli {\bf Interna:} Que el usuario se encuentre registrado.
 	    \UCli {\bf Interna:} Que la cuenta del usuario se encuentre en estado \textbf{Activa}, como lo indica el \hyperlink{cv:Cuenta}{Modelo del ciclo de vida de una cuenta}.
 	    
 	\end{UClist}
@@ -98,8 +100,7 @@
     % Las postcondiciones en conjunto deben reflejar la condición de término del Caso de Uso y alcanzar el propósito planteado por el actor. También describe los cambios en la información y comportamiento del sistema. Indique los cambios que ocurrirán tanto dentro (Internas) como fuera (Externas) del sistema, referenciando los CU afectados por las Internas.
     \UCitem{Postcondiciones}{
 	\begin{UClist}
-	    \UCli {\bf Interna:} El usuario accederá a su cuenta.
-	    \UCli {\bf Interna:} El contador de inicio de sesión para la cuenta del usuario se registrará en 0.
+	    \UCli {\bf Interna:} Se enviará un correo electrónico con el mensaje \cdtIdRef{MSG15}{Recuperación de contraseña}.
 	\end{UClist}
     }
     %Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
@@ -107,9 +108,7 @@
     	\begin{UClist}
 	    \UCli \cdtIdRef{RN1}{Campos obligatorios}: Verifica que no se omitan los campos obligatorios del formulario.
 	    \UCli \cdtIdRef{RN2}{Formato válido para un correo electrónico}: Verifica que el correo electrónico sea válido.
-	    \UCli \cdtIdRef{RN3}{Numero de intentos para inicio de sesión}: Registra el número de intentos de inicio de sesión.
-	    \UCli \cdtIdRef{RN4}{Información Correcta}: Verifica que la contraseña cumpla con la longitud mínima.
-        \UCli \cdtIdRef{RN8}{Numero de intentos para recuperar contraseña}: Registra el número de intentos para recuperar contraseña.
+	    \UCli \cdtIdRef{RN8}{Numero de intentos para recuperar contraseña}: Registra el número de intentos para recuperar contraseña.
 	\end{UClist}
     }
 	\UCitem{Maquinas de estado}{
@@ -121,16 +120,13 @@
     % Especifique: La descripción del error (condición), el comportamiento del sistema, y la forma en que el usuario se dará cuenta del error.
     \UCitem{Errores}{
 	\begin{UClist}
-	    \UCli El usuario omitió un campo marcado como obligatorio: La aplicación mostrará el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio}
-		\UCli El usuario ingreso una contraseña que no cumple con la longitud establecida: La aplicación mostrará el mensaje \cdtIdRef{MSG4}{Longitud mínima de un campo}.
+	    \UCli El usuario omitió un campo marcado como obligatorio: La aplicación mostrará el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio}.
 		\UCli El usuario ingreso un usuario que no se encuentra registrado:  La aplicación mostrará el mensaje \cdtIdRef{MSG5}{Usuario no registrado}.
-		\UCli El usuario y contraseña no corresponden: La aplicación mostrará el mensaje \cdtIdRef{MSG6}{Usuario o contraseña incorrecta}.
-		\UCli La cuenta del usuario se encuentra \textbf{Inactiva} como lo indica el \hyperlink{cv:Cuenta}{Modelo del ciclo de vida de una cuenta}. La aplicación mostrará el mensaje \cdtIdRef{MSG7}{Cuenta inactiva}.
 	\end{UClist}
     }
 
     % TIPO: Indique si el Caso de Uso es primario o secundario. Los casos de uso son primarios cuando el Actor los puede ejecutar directamente, y secundario cuando este se ejecuta a travéz de una extensión o inclusión de otro caso de uso, en cuyo caso se debe especificar el Caso de Uso relacionado y la trayectoria debe iniciar a partir del paso en el que se extendió o Incluyo el Caso de Uso.
-    \UCitem{Tipo}{Primario}
+    \UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUA1.1}{Iniciar sesión}}
 
     %FUENTE: Especifique la fuente de información principal para la especificación del Caso de Uso: un documento, sistema existente, persona, minuta. Referencie dicho documento, sistema o persona.
 %    \UCitem{Fuente}{
@@ -142,90 +138,64 @@
 
 
  \begin{UCtrayectoria}
-    \UCpaso[\UCactor] Abre la aplicación en el dispositivo.
-    \UCpaso[\UCsist]  Muestra la pantalla \cdtIdRef{IUA-1}{Inicio}.
-    \UCpaso[\UCactor] Toca el botón \cdtButton{INICIAR SESIÓN} de la pantalla \cdtIdRef{IUA-1}{Inicio}.
-    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-    \UCpaso[\UCactor] Ingresa la información del formulario de la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}. \label{cua11:tb} 
-    \UCpaso[\UCactor] Toca el botón \cdtButton{INICIAR SESIÓN} de la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}. \refTray{A}
+    \UCpaso[\UCactor] Toca el liga \textbf{Aquí te podemos ayudar} de la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
+    \UCpaso[\UCsist]  Muestra la pantalla \cdtIdRef{IUA1.3}{Recuperar Cuenta}.
+    \UCpaso[\UCactor] Ingresa la información del formulario de la pantalla \cdtIdRef{IUA1.3}{Recuperar Cuenta}. \label{cua13:tb} 
+    \UCpaso[\UCactor] Toca el botón \cdtButton{ENVIAR} de la pantalla \cdtIdRef{IUA1.3}{Recuperar Cuenta}. \refTray{A}
     \UCpaso[\UCsist] Verifica que los campos obligatorios no se omitan, como lo indica la regla de negocio \cdtIdRef{RN1}{Campos obligatorios}. \refTray{B}
     \UCpaso[\UCsist] Verifica que la información introducida en el campo \textbf{Correo electrónico o nombre de usuario} sea válida como lo indica la regla de negocio \cdtIdRef{RN2}{Formato válido para un correo electrónico}. \refTray{C}
     \UCpaso[\UCsist] Verifica que el usuario se encuentre registrado. \refTray{D}
-    \UCpaso[\UCsist] Verifica que la información introducida en el campo \textbf{Contraseña} cumpla con la longitud mínima, como lo indica la regla de negocio \cdtIdRef{RN4}{Información Correcta}. \refTray{E}
-    \UCpaso[\UCsist] Verifica que la información introducido en el campo \textbf{Contraseña} corresponda a la del usuario ingresado. \refTray{F} \label{cua11:g1} 
-    \UCpaso[\UCsist] Verifica que la cuenta se encuentre en estado \textbf{Activa}, como lo indica el \hyperlink{cv:Cuenta}{Modelo del ciclo de vida de una cuenta}. \refTray{G}
-    \UCpaso[\UCsist] Inicia sesión con el usuario ingresado.
-    \UCpaso[\UCsist] Pone el contador del inicio de sesión del usuario en 0, como lo indica la regla de negocio \cdtIdRef{RN3}{Numero de intentos para inicio de sesión}.
-    \UCpaso[\UCsist] Pone el contador del recuperación de contraseña en 0, como lo indica la regla de negocio \cdtIdRef{RN8}{Numero de intentos para recuperar contraseña}.
-    \UCpaso[\UCsist] Obtiene la información de la cuenta del usuario.
+    \UCpaso[\UCsist] Verifica que se pueda recuperar la contraseña para el usuario, como lo indica la regla de negocio \cdtIdRef{RN8}{Numero de intentos para recuperar contraseña}. \refTray{E}
+    \UCpaso[\UCsist] Obtiene la contraseña registrada a la cuenta del usuario.\label{cua13:g1}
+    \UCpaso[\UCsist] Construye el mensaje \cdtIdRef{MSG15}{Recuperación de contraseña} con los parámetros CONTRASENIA = contraseña de la cuenta del usuario.
+    \UCpaso[\UCsist] Envía un correo electrónico al usuario con el mensaje \cdtIdRef{MSG15}{Recuperación de contraseña}.
+    \UCpaso[\UCsist] Incrementa el contador de intentos para recuperar contraseña en 1.
+    \UCpaso[\UCsist] Muestra el mensae \cdtIdRef{MSG17}{Envío de correo} en la pantalla \cdtIdRef{IUPP1A}{Pantalla Principal}.
+
     \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUPP1A}{Pantalla Principal}.
     
    
  \end{UCtrayectoria}
  
  \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El usuario solicita salir de la pantalla.}
-    \UCpaso[\UCactor] Toca el icono \btnRegresar de la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA-1}{Inicio}. 
+    \UCpaso[\UCactor] Toca el icono \btnRegresar de la pantalla \cdtIdRef{IUA1.3}{Recuperar Cuenta}.
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
  \end{UCtrayectoriaA}
 
- \begin{UCtrayectoriaA}[Fin del caso de uso]{A-1}{El usuario solicita recuperar su cuenta}
-	\UCpaso[\UCactor] Toca el liga \textbf{Aquí te podemos ayudar} de la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.\label{cua11:pe} 
+ \begin{UCtrayectoriaA}[Fin del caso de uso]{A-1}{El usuario solicita salir de la pantalla}
+	\UCpaso[\UCactor] Toca el icono \btnRegresar de la pantalla \cdtIdRef{IUA1.3}{Recuperar Cuenta}.
+    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
 \end{UCtrayectoriaA}
 
  \begin{UCtrayectoriaA}{B}{El usuario omitió un campo marcado como obligatorio.}
- 	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	\UCpaso[] Regresa al paso \ref{cua11:tb} de la trayectoria principal. 
+ 	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUA1.3}{Recuperar Cuenta}.
+	\UCpaso[] Regresa al paso \ref{cua13:tb} de la trayectoria principal. 
 	
 \end{UCtrayectoriaA}
 
 
  \begin{UCtrayectoriaA}{C}{El usuario ingreso un nombre de usuario incorrecto}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	\UCpaso[] Regresa al paso \ref{cua11:tb} de la trayectoria principal. 
-	
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto} en la pantalla \cdtIdRef{IUA1.3}{Recuperar Cuenta}.
+	\UCpaso[] Regresa al paso \ref{cua13:tb} de la trayectoria principal. 
 \end{UCtrayectoriaA}
 
  \begin{UCtrayectoriaA}{D}{El usuario ingreso un nombre de usuario que no se encuentra registrado}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{Usuario no registrado} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	\UCpaso[] Regresa al paso \ref{cua11:tb} de la trayectoria principal. 
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{Usuario no registrado} en la pantalla \cdtIdRef{IUA1.3}{Recuperar Cuenta}.
+	\UCpaso[] Regresa al paso \ref{cua13:tb} de la trayectoria principal. 
 	
 \end{UCtrayectoriaA}
 
- \begin{UCtrayectoriaA}{E}{El usuario ingreso una contraseña que no cumple con la longitud mínima.}
- 	\UCpaso[\UCsist] Construye el mensaje \cdtIdRef{MSG4}{Longitud mínima de un campo} con los parámetros: DETERMINADO ENTIDAD = La , VALOR = contraseña.
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG4}{Longitud mínima de un campo} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	\UCpaso[] Regresa al paso \ref{cua11:tb} de la trayectoria principal. 
-\end{UCtrayectoriaA}
-
- \begin{UCtrayectoriaA}[Fin del caso de uso]{F}{La contraseña ingresada no corresponde a la del usuario ingresado.}
-	
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Usuario o contraseña incorrecta} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	\UCpaso[\UCsist] Incrementa el contador de inicio de sesión en 1 para el usuario ingresado.
-	\UCpaso[\UCsist] Verifica que el numero de inicio de sesión para el usuario sea menor a 3. \refTray{F-1}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{Cuenta inactiva} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	
-\end{UCtrayectoriaA}
-
- \begin{UCtrayectoriaA}{F-1}{El contador de inicio de sesión para el usuario es 3}
-	
-	\UCpaso[\UCsist] Cambia el estado de la cuenta a \textbf{Inactiva}, como lo indica el \hyperlink{cv:Cuenta}{Modelo del ciclo de vida de una cuenta}.
-	
-	\UCpaso[] Regresa al paso \ref{cua11:tb} de la trayectoria principal. 
-	
-	
-\end{UCtrayectoriaA}
-
-
-\begin{UCtrayectoriaA}{G}{La cuenta se encuentra en estado \textbf{Inactiva}, como lo indica el \hyperlink{cv:Cuenta}{Modelo del ciclo de vida de una cuenta}.}
-	\UCpaso[\UCsist] Verifica que hayan no haya transcurrido el tiempo para bloqueo de cuenta.\refTray{G-1}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{Cuenta inactiva} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	\UCpaso[] Regresa al paso \ref{cua11:tb} de la trayectoria principal. 
-	
+ \begin{UCtrayectoriaA}{E}{El usuario excedio el número de intentos para recuperar contraseña}
+    \UCpaso[\UCsist] Bloquea el envió de correos para recuperar contraseña por el tiempo definido en la regla de negocio \cdtIdRef{RN8}{Numero de intentos para recuperar contraseña}.
+    \UCpaso[\UCsist] Verifica que no haya transcurrido el tiempo definido para bloqueo de envio de correos.\refTray{G-1}
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG16}{Número de intentos excedido} en la pantalla \cdtIdRef{IUA1.3}{Recuperar Cuenta}.
+    \UCpaso[] Regresa al paso \ref{cua13:tb} de la trayectoria principal. 
+    
 \end{UCtrayectoriaA}
 
 \begin{UCtrayectoriaA}{G-1}{Transcurrió el tiempo establecido para el bloqueo de cuenta}
-	\UCpaso[\UCsist] Cambia el estado de la cuenta a \textbf{Activa}, como lo indica el \hyperlink{cv:Cuenta}{Modelo del ciclo de vida de una cuenta}.
-	\UCpaso[] Regresa al paso \ref{cua11:g1} de la trayectoria principal. 
+	\UCpaso[\UCsist] Asigna 0 al contador de intentos para recuperar contraseña.
+	\UCpaso[] Regresa al paso \ref{cua13:g1} de la trayectoria principal. 
 	
 \end{UCtrayectoriaA}
 

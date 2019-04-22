@@ -134,8 +134,7 @@
 	
 \end{BusinessRule}
 
-
-%============================== RN6 =================================
+%============================== RN7 =================================
 \begin{BusinessRule}{RN7}{Fecha de nacimiento válida}
 	{Restricción}
 	{Controla la operación}
@@ -156,6 +155,22 @@
 	}
 	
 \end{BusinessRule}
+
+
+%============================== RN8 =================================
+\begin{BusinessRule}{RN8}{Numero de intentos para recuperar contraseña}
+	{Restricción}
+	{Controla la operación}
+	\BRitem{Versión}{1.0}
+	\BRitem{Autor}{Adrian Flores Torres}
+	\BRitem{Estatus}{Terminada}
+	\BRitem{Descripción}{El usuario solo tendrá 3 intentos para poder recuperar su contraseña, de lo contrario no se le permitirá recuperar contraseña durante los próximos 5 minutos. Cada que el usuario  inicie sesión el contador que controla el número de intentos se reiniciará a 0.}
+	\BRitem{Referenciado por}{
+		\cdtIdRef{CUA1.3}{Recuperar cuenta}
+	}
+\end{BusinessRule}
+
+
 
 
 

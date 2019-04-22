@@ -159,7 +159,7 @@
 \begin{mensaje}{MSG12}{Contraseña y confirmación de contraseña erróneas}{Notificación}
 	\item[Ubicación:] \msjEmergente.
 	\item[Objetivo:] Informar al actor que la información que desea registrar se encuentra duplicada.
-	\item[Redacción:] La contraseña y confirmación de contraseña no coinciden.
+	\item[Redacción:] La contraseña y confirmación de contraseña no coinciden o no es válida.
 	\item[Referenciado por:] \cdtIdRef{CUA1.2}{Registro de cuenta}
 \end{mensaje}
 
@@ -171,44 +171,44 @@
 	\item[Referenciado por:] \cdtIdRef{CUA1.2}{Registro de cuenta}
 \end{mensaje}
 
+%===========================  MSG12 ==================================
+\begin{mensaje}{MSG14}{Fecha inválida}{Notificación}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Informar al actor que la fecha que desea ingresar no es válida.
+	\item[Redacción:] La fecha que ingreso no es válida.
+	\item[Referenciado por:] \cdtIdRef{CUA1.2}{Registro de cuenta}
+\end{mensaje}
+
+%===========================  MSG12 ==================================
+\begin{mensaje}{MSG15}{Recuperación de contraseña}{Notificación}
+	\item[Ubicación:] Correo electrónico.
+	\item[Objetivo:] Informar al actor sobre la recuperación de su contraseña.
+	\item[Redacción:] Hemos recibido una petición para recuperar tu contraseña en In-Help.\\
+	Contraseña actual : CONTRASENIA\\
+	Si usted no ha solicitado este correo por favor haga caso omiso a este mensaje.
+	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+	\begin{Citemize}
+		\item CONTRASENIA: Es la contraseña que tiene registrada la cuenta del usuario.
+	\end{Citemize}
+	\item[Ejemplo:] Hemos recibido una petición para recuperar tu contraseña en In-Help.\\
+	Contraseña actual : AdrianF123\\
+	Si usted no ha solicitado este correo por favor haga caso omiso a este mensaje.
+	\item[Referenciado por:] \cdtIdRef{CUA1.3}{Recuperar cuenta}
+\end{mensaje}
+
+%===========================  MSG16 ==================================
+\begin{mensaje}{MSG16}{Número de intentos excedido}{Error}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Indicar al actor que la cuenta que desea recuperar se encuentra bloqueada por un excedente de intentos.
+	\item[Redacción:] No puedes enviar recuperarción de cuenta, intenta en 5 minutos.
+	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
+\end{mensaje}
 
 
-%%===========================  MSG4 ==================================
-%\begin{mensaje}{MSG4}{Número telefónico previamente registrado}{Error}
-%	\item[Ubicación:] \msjCampo.
-%	%	\item[Estatus:] %Terminado
-%	\item[Objetivo:] Indicar al actor que el número telefónico ingresado ya ha sido registrado previamente.
-%	\item[Redacción:] Número telefónico previamente registrado.
-%	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-%\end{mensaje}
-%
-%
-%%===========================  MSG5 ==================================
-%\begin{mensaje}{MSG5}{Fecha de nacimiento inválida}{Error}
-%	\item[Ubicación:] \msjCampo
-%
-%	\item[Objetivo:] Notificar al actor que la fecha que intenta registrar está fuera del rango considerado válido en el sistema.	
-%	
-%	\item[Redacción:] La fecha de nacimiento ingresada debe ser menor o igual a 150 años.
-%	
-%	\item[Referenciado por:] \cdtIdRef{CU2}{Registrar paciente}, \cdtIdRef{CU4}{Editar información del paciente}
-%\end{mensaje}
-%
-%
-%%===========================  MSG6 ==================================
-%\begin{mensaje}{MSG6}{Eliminar Elemento}{Confirmación}
-%	\item[Ubicación:] \msjEmergente.
-%	\item[Objetivo:] Notificar al actor que está a punto de eliminar un elemento y que se necesita su aprobación para ello.
-%	\item[Redacción:] ¿Desea eliminar DETERMINADO ELEMENTO VALOR?
-%	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
-%	\begin{Citemize} 
-%		\item DETERMINADO ELEMENTO: Es el elemento que se requiere eliminar.
-%		\item VALOR: Es el valor asignado al atributo de la entidad, generalmente es la clave o el nombre.
-%		%\item SELECCIÓN: Dependiendo del género en la oración se ocupa, seleccionado(masculino) ó seleccionada(femenino).
-%	\end{Citemize}
-%	\item[Ejemplo:] ¿Desea eliminar {\em al paciente Carlos Granados}?
-%	\item[Referenciado por:] \cdtIdRef{CU5}{Eliminar paciente}
-%
-%\end{mensaje}
-%
-%%===========================  MSG ==================================
+%===========================  MSG16 ==================================
+\begin{mensaje}{MSG17}{Envío de correo}{Notificación}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Indicar al actor que se ha enviado un correo electrónico con su contraseña.
+	\item[Redacción:] Se envío un correo con tu contraseña.
+	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
+\end{mensaje}

@@ -1,0 +1,24 @@
+\subsection{IUA1.3 Recuperar Cuenta}
+
+\subsubsection{Objetivo}
+
+% Explicar el objetivo para el que se construyo la interfaz, generalmente es la descripción de la actividad a desarrollar, como Seleccionar grupos para inscribir materias de un alumno, controlar el acceso al sistema mediante la solicitud de un login y password de los usuarios, etc.
+	
+    Esta pantalla permite al actor poder recuperar su contraseña en caso de que la haya perdido u olvidado.
+
+\subsubsection{Diseño}
+
+% Presente la figura de la interfaz y explique paso a paso ``a manera de manual de usuario'' como se debe utilizar la interfaz. No olvide detallar en la redacción los datos de entradas y salidas. Explique como utilizar cada botón y control de la pantalla, para que sirven y lo que hacen. Si el Botón lleva a otra pantalla, solo indique la pantalla y explique lo que pasará cuando se cierre dicha pantalla (la explicación sobre el funcionamiento de la otra pantalla estará en su archivo correspondiente).
+
+    En la figura \ref{IUA1.3} se muestra la pantalla `` Recuperar Cuenta ", por medio de la cual el usuario podrá ingresar cu correo electrónico el cual corresponde a su nombre de usuario, esto para que la aplicación pueda enviarle por correo electrónico la contraseña que tiene registrada en ese momento.\\
+    
+
+
+   \IUfig[.4]{../ModeloComportamiento/Autenticacion/CUA1.3/images/IUA1_3}{IUA1.3}{Recuperar Cuenta}
+
+\subsubsection{Comandos}
+    \begin{itemize}
+    	\item \cdtButton{ENVIAR}: Permite al usuario enviar un correo con la contraseña del usuario, dirige a la misma pantalla.
+        \item \btnRegresar[Regresar]: Permite al usuario salir de la pantalla, dirige a la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}
+    \end{itemize}
+

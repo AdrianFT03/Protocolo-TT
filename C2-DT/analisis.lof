@@ -1,32 +1,34 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Aceler\IeC {\'o}metro}}{8}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Posici\IeC {\'o}n GPS}}{9}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Multipath}}{10}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Posici\IeC {\'o}n A-GPS}}{12}{figure.2.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Aceler\IeC {\'o}metro}}{8}{figure.2.1}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Posici\IeC {\'o}n GPS}}{9}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Multipath}}{10}{figure.2.3}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Posici\IeC {\'o}n A-GPS}}{12}{figure.2.4}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Modelo del ciclo de vida de una cuenta.}}{33}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Perfiles identificados.}}{35}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Modelo de informaci\IeC {\'o}n In-Help}}{40}{figure.7.3}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Modelo del ciclo de vida de una cuenta.}}{33}{figure.7.1}% 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Perfiles identificados.}}{35}{figure.7.2}% 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Modelo de informaci\IeC {\'o}n In-Help}}{40}{figure.7.3}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces M\IeC {\'o}dulos del sistema.}}{49}{figure.8.1}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Autenticaci\IeC {\'o}n. }}{51}{figure.8.2}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Contactor. }}{52}{figure.8.3}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Notificaciones. }}{53}{figure.8.4}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Datos Personales. }}{54}{figure.8.5}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Datos M\IeC {\'e}dicos. }}{55}{figure.8.6}
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Veh\IeC {\'\i }culos. }}{56}{figure.8.7}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces M\IeC {\'o}dulos del sistema.}}{49}{figure.8.1}% 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Autenticaci\IeC {\'o}n. }}{51}{figure.8.2}% 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Contactor. }}{52}{figure.8.3}% 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Notificaciones. }}{53}{figure.8.4}% 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Datos Personales. }}{54}{figure.8.5}% 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Datos M\IeC {\'e}dicos. }}{55}{figure.8.6}% 
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Veh\IeC {\'\i }culos. }}{56}{figure.8.7}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces MN1 Men\IeC {\'u} home del usuario}}{73}{figure.9.1}
-\contentsline {figure}{\numberline {9.2}{\ignorespaces MN2 Men\IeC {\'u} principal del usuario}}{74}{figure.9.2}
-\contentsline {figure}{\numberline {9.3}{\ignorespaces IUPP1A Pantalla Principal}}{76}{figure.9.3}
-\contentsline {figure}{\numberline {9.4}{\ignorespaces IUA-1 Inicio}}{78}{figure.9.4}
-\contentsline {figure}{\numberline {9.5}{\ignorespaces IUA-1.1 Iniciar Sesi\IeC {\'o}n}}{79}{figure.9.5}
-\contentsline {figure}{\numberline {9.6}{\ignorespaces IUA1.2 Crear Cuenta}}{81}{figure.9.6}
-\contentsline {figure}{\numberline {9.7}{\ignorespaces IUA1.2A Crear Cuenta}}{82}{figure.9.7}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces MN1 Men\IeC {\'u} home del usuario}}{81}{figure.9.1}% 
+\contentsline {figure}{\numberline {9.2}{\ignorespaces MN2 Men\IeC {\'u} principal del usuario}}{82}{figure.9.2}% 
+\contentsline {figure}{\numberline {9.3}{\ignorespaces IUPP1A Pantalla Principal}}{84}{figure.9.3}% 
+\contentsline {figure}{\numberline {9.4}{\ignorespaces IUA-1 Inicio}}{86}{figure.9.4}% 
+\contentsline {figure}{\numberline {9.5}{\ignorespaces IUA-1.1 Iniciar Sesi\IeC {\'o}n}}{87}{figure.9.5}% 
+\contentsline {figure}{\numberline {9.6}{\ignorespaces IUA1.2 Crear Cuenta}}{89}{figure.9.6}% 
+\contentsline {figure}{\numberline {9.7}{\ignorespaces IUA1.2A Crear Cuenta}}{90}{figure.9.7}% 
+\contentsline {figure}{\numberline {9.8}{\ignorespaces IUA1.3 Recuperar Cuenta}}{92}{figure.9.8}% 
+\contentsline {figure}{\numberline {9.9}{\ignorespaces CUA1.4 Cambiar contrase\IeC {\~n}a}}{93}{figure.9.9}% 
 \addvspace {10\p@ }

@@ -139,9 +139,10 @@
     \UCitem{Errores}{
 	\begin{UClist}
 	    \UCli El usuario omitió un campo marcado como obligatorio: La aplicación mostrará el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio}
-		\UCli El usuario ingreso una contraseña que no cumple con la longitud establecida: La aplicación mostrará el mensaje \cdtIdRef{MSG4}{Longitud mínima de un campo}.
+		\UCli El usuario ingreso una contraseña que no cumple con la longitud establecida: La aplicación mostrará el mensaje \cdtIdRef{MSG12}{Contraseña y confirmación de contraseña erróneas}.
 		\UCli El usuario ingreso un usuario que se encuentra registrado:  La aplicación mostrará el mensaje \cdtIdRef{MSG11}{Elemento duplicado}.
 		\UCli La contraseña no corresponde con la confirmación de contraseña: La aplicación mostrará el mensaje \cdtIdRef{MSG12}{Contraseña y confirmación de contraseña erróneas}.
+		\UCli EL usuario ingreso una fecha de nacimiento inválida: La aplicación mostrará el mensaje \cdtIdRef{MSG14}{Fecha inválida}.
 	\end{UClist}
     }
 
@@ -167,19 +168,19 @@
     \UCpaso[\UCsist] Verifica que la información introducida en el campo \textbf{¿Cuál es tu correo electrónico?} sea válida como lo indica la regla de negocio \cdtIdRef{RN2}{Formato válido para un correo electrónico}. \refTray{C}
     \UCpaso[\UCsist] Verifica que el usuario no encuentre registrado como lo indica la regla de negocio \cdtIdRef{RN5}{Unicidad de Elementos}. \refTray{D}
     \UCpaso[\UCsist] Verifica que la información introducida en el campo \textbf{Elige una contraseña} cumpla con lo establecido en la regla de negocio \cdtIdRef{RN6}{Formato de contraseña}. \refTray{E}
-    \UCpaso[\UCsist] Verifica que el campo \textbf{Elige una contraseña} tenga la misma información que el campo \textbf{Confirmar contraseña}.
+    \UCpaso[\UCsist] Verifica que el campo \textbf{Elige una contraseña} tenga la misma información que el campo \textbf{Confirmar contraseña}. \refTray{F}
     \UCpaso[\UCsist] Registra la información de la cuenta para el usuario.
     
     
     \UCpaso[\UCsist]  Obtiene la información establecida en la sección de salidas para la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}.
     \UCpaso[\UCsist]  Construye la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta} con la información obtenida.
     \UCpaso[\UCsist]  Muestra la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}.
-    \UCpaso[\UCactor] Ingresa la información del formulario de la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}.
-    \UCpaso[\UCactor] Presiona el botón \cdtButton{¡LISTO!} de la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}.
-    \UCpaso[\UCsist] Verifica que los campos obligatorios no se omitan, como lo indica la regla de negocio \cdtIdRef{RN1}{Campos obligatorios}. \refTray{B}
-    \UCpaso[\UCsist] Verifica que la fecha de nacimiento sea válida, como lo indica la regla de negocio \cdtIdRef{RN7}{Fecha de nacimiento válida}.
+    \UCpaso[\UCactor] Ingresa la información del formulario de la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}. \label{cua12:tc}
+    \UCpaso[\UCactor] Presiona el botón \cdtButton{¡LISTO!} de la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}. \refTray{G}
+    \UCpaso[\UCsist] Verifica que los campos obligatorios no se omitan, como lo indica la regla de negocio \cdtIdRef{RN1}{Campos obligatorios}. \refTray{H}
+    \UCpaso[\UCsist] Verifica que la fecha de nacimiento sea válida, como lo indica la regla de negocio \cdtIdRef{RN7}{Fecha de nacimiento válida}. \refTray{I}
     \UCpaso[\UCsist] Registra la información del usuario.
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG13}{Estado de la cuenta}. 
+    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG13}{Estado de la cuenta}. \label{cua12:pe} 
  \end{UCtrayectoria}
 
 
@@ -190,72 +191,67 @@
 	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA-1}{Inicio}. 
  \end{UCtrayectoriaA}
 
- \begin{UCtrayectoriaA}[Fin del caso de uso]{A-1}{El usuario solicita recuperar su cuenta}
-	\UCpaso[\UCactor] Toca el liga \textbf{Aquí te podemos ayudar} de la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.\label{cua12:pe} 
-\end{UCtrayectoriaA}
-
  \begin{UCtrayectoriaA}{B}{El usuario omitió un campo marcado como obligatorio.}
- 	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
+ 	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUA1.2}{Crear Cuenta}.
 	\UCpaso[] Regresa al paso \ref{cua12:tb} de la trayectoria principal. 
 	
 \end{UCtrayectoriaA}
 
 
  \begin{UCtrayectoriaA}{C}{El usuario ingreso un nombre de usuario incorrecto}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto} en la pantalla \cdtIdRef{IUA1.2}{Crear Cuenta}.
 	\UCpaso[] Regresa al paso \ref{cua12:tb} de la trayectoria principal. 
 	
 \end{UCtrayectoriaA}
 
- \begin{UCtrayectoriaA}{D}{El usuario ingreso un nombre de usuario que no se encuentra registrado}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG5}{Usuario no registrado} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
+ \begin{UCtrayectoriaA}{D}{El usuario ingreso un nombre de usuario que ya se encuentra registrado}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG11}{Elemento duplicado} en la pantalla \cdtIdRef{IUA1.2}{Crear Cuenta}.
 	\UCpaso[] Regresa al paso \ref{cua12:tb} de la trayectoria principal. 
 	
 \end{UCtrayectoriaA}
 
- \begin{UCtrayectoriaA}{E}{El usuario ingreso una contraseña que no cumple con la longitud mínima.}
- 	\UCpaso[\UCsist] Construye el mensaje \cdtIdRef{MSG4}{Longitud mínima de un campo} con los parámetros: DETERMINADO ENTIDAD = La , VALOR = contraseña.
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG4}{Longitud mínima de un campo} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
+ \begin{UCtrayectoriaA}{E}{El usuario ingreso una contraseña que no cumple con el formato establecido.}
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG12}{Contraseña y confirmación de contraseña erróneas} en la pantalla \cdtIdRef{IUA1.2}{Crear Cuenta}.
 	\UCpaso[] Regresa al paso \ref{cua12:tb} de la trayectoria principal. 
 \end{UCtrayectoriaA}
 
- \begin{UCtrayectoriaA}[Fin del caso de uso]{F}{La contraseña ingresada no corresponde a la del usuario ingresado.}
+ \begin{UCtrayectoriaA}[Fin del caso de uso]{F}{La contraseña ingresada no corresponde con el campo confirmación de contraseña}
 	
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG6}{Usuario o contraseña incorrecta} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	\UCpaso[\UCsist] Incrementa el contador de inicio de sesión en 1 para el usuario ingresado.
-	\UCpaso[\UCsist] Verifica que el numero de inicio de sesión para el usuario sea menor a 3. \refTray{F-1}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{Cuenta inactiva} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG12}{Contraseña y confirmación de contraseña erróneas} en la pantalla \cdtIdRef{IUA1.2}{Crear Cuenta}.
+	\UCpaso[] Regresa al paso \ref{cua12:tb} de la trayectoria principal.
 	
 \end{UCtrayectoriaA}
 
- \begin{UCtrayectoriaA}{F-1}{El contador de inicio de sesión para el usuario es 3}
-	
-	\UCpaso[\UCsist] Cambia el estado de la cuenta a \textbf{Inactiva}, como lo indica el \hyperlink{cv:Cuenta}{Modelo del ciclo de vida de una cuenta}.
-	
-	\UCpaso[] Regresa al paso \ref{cua12:tb} de la trayectoria principal. 
-	
-	
+ \begin{UCtrayectoriaA}{G}{El usuario solicita salir de la pantalla.}
+    \UCpaso[\UCactor] Toca el icono \btnRegresar de la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}.
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA1.2}{Crear Cuenta}. 
+	\UCpaso[] Regresa al paso \ref{cua12:tb} de la trayectoria principal.
+ \end{UCtrayectoriaA}
+
+ \begin{UCtrayectoriaA}{H}{El usuario omitió un campo marcado como obligatorio.}
+ 	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}.
+	\UCpaso[] Regresa al paso \ref{cua12:tc} de la trayectoria principal. 
 \end{UCtrayectoriaA}
 
-
-\begin{UCtrayectoriaA}{G}{La cuenta se encuentra en estado \textbf{Inactiva}, como lo indica el \hyperlink{cv:Cuenta}{Modelo del ciclo de vida de una cuenta}.}
-	\UCpaso[\UCsist] Verifica que hayan no haya transcurrido el tiempo para bloqueo de cuenta.\refTray{G-1}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG7}{Cuenta inactiva} en la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
-	\UCpaso[] Regresa al paso \ref{cua12:tb} de la trayectoria principal. 
-	
-\end{UCtrayectoriaA}
-
-\begin{UCtrayectoriaA}{G-1}{Transcurrió el tiempo establecido para el bloqueo de cuenta}
-	\UCpaso[\UCsist] Cambia el estado de la cuenta a \textbf{Activa}, como lo indica el \hyperlink{cv:Cuenta}{Modelo del ciclo de vida de una cuenta}.
-	\UCpaso[] Regresa al paso \ref{cua12:g1} de la trayectoria principal. 
-	
+ \begin{UCtrayectoriaA}{I}{El actor ingreso una fecha de nacimiento que no es válida.}
+ 	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG14}{Fecha inválida} en la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}.
+	\UCpaso[] Regresa al paso \ref{cua12:tc} de la trayectoria principal. 
 \end{UCtrayectoriaA}
 
 
 \subsection{Puntos de extensión}
 
 \UCExtensionPoint
-{El Usuario desea recuperar su cuenta}
+{El Usuario desea registrar su información médica}
 { Paso \ref{cua12:pe} de la Trayectoria Principal}
-{\cdtIdRef{CUA1.3}{Recuperar cuenta}}
+{\cdtIdRef{CUA1.5}{Rregistrar información médica}}
 
+\UCExtensionPoint
+{El Usuario desea registrar su información del vehículo}
+{ Paso \ref{cua12:pe} de la Trayectoria Principal}
+{\cdtIdRef{CUA1.6}{Rregistrar información del vehículo}}
+
+\UCExtensionPoint
+{El Usuario desea registrar contactos}
+{ Paso \ref{cua12:pe} de la Trayectoria Principal}
+{\cdtIdRef{CUA1.7}{Rregistrar contactos}}
