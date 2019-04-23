@@ -3,10 +3,10 @@
 % ESTA SECCION LA DEBE LLENAR SOLO EL ANALISTA.
 % ID: Asegurese de que el ID del Caso de uso sea único.
 % Nombre: Aseurese de que esté escrito de la forma: VERBO + SUSTANTIVO + ALGO
-\begin{UseCase}{CUA1.5}{Registro información médica}
+\begin{UseCase}{CUA1.6}{Registro información de vehículo}
     {
 	% RESUMEN: Asegurese de que el resumen describa : Situación inicial, proceso a grandes rasgos y la condición de término. Por ejemplo: ``Cuando se tenga un alumno nuevo o se detecte que no tiene registro se da de alta mediante este CU proporcionando sus datos: personales, padres o tutores, situación académica actual y de salud. El sistema registra los datos cuando sean válidos y se pueda determinar su situación académica. Al finalizar el alumno podrá ser inscrito a los grupos disponibles''.
-	La información médica es de gran importancia para la aplicación, ya que en caso de un percanse se enviará esta información como complemento al reporte que es enviado a los contactos que tenga registrado el usuario, el registro de esta infomración es responsabilidad del usuario y esta puede se omitida. El presente caso de uso permite al usuario realizar el registro de la información médica, antes de finalizar el registro de su cuenta.
+	La información del vehículo en el que viaja un usuario es de importancia para la aplicación, ya que en caso de un percanse se enviará esta información como complemento al reporte que es enviado a los contactos que tenga registrado el usuario, estas pueden ser aseguradoras, el registro de esta infomración es responsabilidad del usuario y esta puede se omitida. El presente caso de uso permite al usuario realizar el registro de la información básica del vahiculo, antes de finalizar el registro de su cuenta. Cabe mencionar que la aplicación brinda otros procesos para el regitro de esta información posteriormente, sin embargo es importante que el usuario lo registre de forma rapida al momento de registrarse como usuario en la aplicación.
     }
     % VERSION: Inicie con la versión 0.1 y contiúe 0.2, 0.3, hasta que sea aceptada por el evaluador será la versión 1.0. si surgen mas cambios continúe con 1.1, etc.
     \UCitem{Versión}{1.0}
@@ -76,24 +76,26 @@
     % ENTRADAS: Liste y referencíe los datos de entrada al sistema durante el CU: Nombre y forma en que se debe proporcionar el dato al Caso de uso: teclado, raton, camara, lector de barras, algun sensor, etc.
     \UCitem{Entradas}{
     	\begin{UClist}
-    		\UCli \cdtRef{:}{¿Tienes seguridad médica?}. \ioRadioBoton.
-            \UCli \cdtRef{SeguridadSocial:no_seguridad}{Número de seguridad social}. \ioEscribir.
-            \UCli \cdtRef{:}{¿Conoces tu tipo de sangre?}. \ioRadioBoton.
-            \UCli \cdtRef{InfoMedica:sangre}{Grupo sanguineo}. \ioEscribir.
+            \UCli \cdtRef{Auto:no_placas}{Placas}. \ioEscribir.
+    		\UCli \cdtRef{:}{¿Eres chofer o acompañante?}. \ioSeleccionar.
+            \UCli \cdtRef{:}{¿Quieres darnos mas detalles?}. \ioRadioBoton.
+            \UCli \cdtRef{:}{¿Tienes aseguradora?}. \ioRadioBoton.
+            \UCli \cdtRef{Aseguradora:no_poliza}{No. Póliza vigente}. \ioEscribir.
+            \UCli \cdtRef{Aseguradora:fh_vigencia}{¿Cual es la vigencia de tu póliza?}. \ioCalendario.
     	\end{UClist}
 	
     }
     % SALIDAS: Liste y referencíe los datos de salida o resultados del sistema, Especifíque el dispositivo en donde se presentarán las salidas: pantalla, impresora, otro sistema, brazo mecánico, etc. 
     \UCitem{Salidas}{
 	\begin{UClist}
-		 \UCli \cdtRef{TipoEnfermedad:nb_enfer}{Enfermedad}. \ioObtener.		
+		 \UCli \cdtRef{:}{¿Eres chofer o acompañante?}. \ioObtener.		
 	\end{UClist}
     }
     % PRECONDICIÓN: Son sentencias intemporales y afirmativas que declaran lo que DEBE ser siempre verdadero antes de iniciar el escenario en el caso de uso. Las precondiciones no son probadas dentro del caso de uso, son condiciones que se asumen verdaderas. Una precondición puede implicar un escenario de otro Caso de Uso que se ha completado satisfactoriamente, como por ejemplo la ``autenticación'', o más general el ``cajero se identifica y se autentica''. Craig Larman ``Use Case Model: Writing Requirements in Context''. También pueden ser escenarios ajenos al sistema que el Actor debe contemplar durante la operación pero de las que el sistema no es consciente, por ejemplo: ``El alumno debe presentar su credencial vigente'', o ``contar con el expediente físico'' ``El vehículo a asegurar debe estar en buen estado''.
     % Especifique las precondiciones indicando si son internas (escenarios provenientes de otro caso de uso) o externas, referenciando para las internas el CU correspondiente y, en caso de que aplique, la Regla de negocio que se está Reforzando con esta precondición.
     \UCitem{Precondiciones}{
 	\begin{UClist}
-        \UCli {\bf Interna:} Que exista información en el catálogo \cdtRef{TipoEnfermedad:nb_enfer}{Enfermedad}.
+        \UCli {\bf Interna:} Que exista información en el catálogo \cdtRef{:}{¿Eres chofer o acompañante?}.
     \end{UClist}
     }
     
@@ -101,7 +103,7 @@
     % Las postcondiciones en conjunto deben reflejar la condición de término del Caso de Uso y alcanzar el propósito planteado por el actor. También describe los cambios en la información y comportamiento del sistema. Indique los cambios que ocurrirán tanto dentro (Internas) como fuera (Externas) del sistema, referenciando los CU afectados por las Internas.
     \UCitem{Postcondiciones}{
 	\begin{UClist}
-	    \UCli {\bf Interna:} Se registrará la información médica del usuario.
+	    \UCli {\bf Interna:} Se registrará la información del vehículo del usuario.
 	\end{UClist}
     }
     %Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
@@ -116,13 +118,13 @@
     % ERRORES: Especifique los casos en los que no se podrá terminar satisfactoriamente el Caso de Uso. Contemple todos los catálogos o listas que deben tener almenos un dato para que se puedan seleccionar dentro de las pantallas asociadas al Caso de Uso.
     % Especifique: La descripción del error (condición), el comportamiento del sistema, y la forma en que el usuario se dará cuenta del error.
     \UCitem{Errores}{
-	\begin{UClist} 
+	\begin{UClist}
         \UCli El usuario ingreso un tipo de dato diferente al definido: La aplicación mostrará el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto}
 	\end{UClist}
     }
 
     % TIPO: Indique si el Caso de Uso es primario o secundario. Los casos de uso son primarios cuando el Actor los puede ejecutar directamente, y secundario cuando este se ejecuta a travéz de una extensión o inclusión de otro caso de uso, en cuyo caso se debe especificar el Caso de Uso relacionado y la trayectoria debe iniciar a partir del paso en el que se extendió o Incluyo el Caso de Uso.
-    \UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUA1.2}{Registro de cuenta}}
+    \UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUA1.5}{Registro información médica}}
 
     %FUENTE: Especifique la fuente de información principal para la especificación del Caso de Uso: un documento, sistema existente, persona, minuta. Referencie dicho documento, sistema o persona.
 %    \UCitem{Fuente}{
@@ -134,15 +136,15 @@
 
 
  \begin{UCtrayectoria}
-    \UCpaso[\UCactor] Presiona el botón \cdtButton{¡LISTO!} de la pantalla \cdtIdRef{IUA1.2A}{Crear Cuenta}. \refTray{A}
-    \UCpaso[\UCsist] Obtiene la información del catálogo \cdtRef{TipoEnfermedad:nb_enfer}{Enfermedad}.
-    \UCpaso[\UCsist] Construye la pantalla \cdtIdRef{IUA1.5}{Finalizar Registro}.
-    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA1.5}{Finalizar Registro}.
-    \UCpaso[\UCactor] Ingresa la información del formulario de la pantalla \cdtIdRef{IUA1.5}{Finalizar Registro}. \label{cua15:tb} 
-    \UCpaso[\UCactor] Presiona el botón \cdtButton{SIGUIENTE}. \refTray{B} \label{cua15:pe}
+    \UCpaso[\UCactor] Presiona el botón \cdtButton{SIGUIENTE} de la pantalla \cdtIdRef{IUA1.5}{Finalizar Registro}. \refTray{A}
+    \UCpaso[\UCsist] Obtiene la información del catálogo \cdtRef{:}{¿Eres chofer o acompañante?}.
+    \UCpaso[\UCsist] Construye la pantalla \cdtIdRef{IUA1.5A}{Finalizar Registro}.
+    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA1.5A}{Finalizar Registro}.
+    \UCpaso[\UCactor] Ingresa la información del formulario de la pantalla \cdtIdRef{IUA1.5A}{Finalizar Registro}. \label{cua15:tb} 
+    \UCpaso[\UCactor] Presiona el botón \cdtButton{SIGUIENTE}. \refTray{B} \label{cua16:pe}
     \UCpaso[\UCsist] Verifica que el usuario haya introducido información en el formulario.
     \UCpaso[\UCsist] Verifica que la información introducida sea correcta como lo establece la regla de negocio \cdtIdRef{RN4}{Información Correcta}.
-    \UCpaso[\UCsist] Regsitra la información médica introducida por el usuario.
+    \UCpaso[\UCsist] Regsitra la información del vehículo introducida por el usuario.
 
 
  \end{UCtrayectoria}
@@ -151,20 +153,20 @@
 
  
  \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El usuario solicita salir de la pantalla.}
-    \UCpaso[\UCactor] Toca el icono \btnRegresar de la pantalla \cdtIdRef{IUA1.5}{Finalizar Registro}. 
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA-1.1}{Iniciar Sesión}.
+    \UCpaso[\UCactor] Toca el icono \btnRegresar de la pantalla \cdtIdRef{IUA1.5A}{Finalizar Registro}. 
+	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA1.5}{Finalizar Registro}.
  \end{UCtrayectoriaA}
 
   \begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El usuario solicita omitir el ingreso de esta información.}
 
-    \UCpaso[\UCactor] Toca la liga OMITIR de la pantalla \cdtIdRef{IUA1.5}{Finalizar Registro}.\label{cua15:pe1} 
-    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA1.5A}{Finalizar Registro}.
+    \UCpaso[\UCactor] Toca la liga OMITIR de la pantalla \cdtIdRef{IUA1.5A}{Finalizar Registro}.\label{cua16:pe1} 
+    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUA1.5C}{Finalizar Registro}.
  \end{UCtrayectoriaA}
 
 
  \begin{UCtrayectoriaA}{C}{El usuario ingreso un campo incorrecto}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto} en la pantalla \cdtIdRef{IUA1.5}{Finalizar Registro}
-	\UCpaso[] Regresa al paso \ref{cua15:tb} de la trayectoria principal. 
+	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto} en la pantalla \cdtIdRef{IUA1.5A}{Finalizar Registro}
+	\UCpaso[] Regresa al paso \ref{cua16:tb} de la trayectoria principal. 
 \end{UCtrayectoriaA}
 
 
@@ -174,11 +176,11 @@
 
 
 \UCExtensionPoint
-{El Usuario desea registrar su información del vehículo}
-{ Paso \ref{cua15:pe} de la Trayectoria Principal}
+{El Usuario desea registrar su información de contactos}
+{ Paso \ref{cua16:pe} de la Trayectoria Principal}
 {\cdtIdRef{CUA1.6}{Rregistrar información del vehículo}}
 
 \UCExtensionPoint
-{El Usuario desea registrar su información del vehículo}
-{ Paso \ref{cua15:pe1} de la Trayectoria Principal}
+{El Usuario desea registrar su información de contactos}
+{ Paso \ref{cua16:pe1} de la Trayectoria Principal}
 {\cdtIdRef{CUA1.6}{Rregistrar información del vehículo}}
