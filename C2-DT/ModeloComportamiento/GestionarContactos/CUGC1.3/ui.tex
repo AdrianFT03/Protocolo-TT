@@ -1,0 +1,54 @@
+\subsection{IUA-1.2 Crear Cuenta}
+
+\subsubsection{Objetivo}
+
+% Explicar el objetivo para el que se construyo la interfaz, generalmente es la descripción de la actividad a desarrollar, como Seleccionar grupos para inscribir materias de un alumno, controlar el acceso al sistema mediante la solicitud de un login y password de los usuarios, etc.
+	
+ Esta pantalla permite al actor registrar la información para el registro de alguno de los contactos que tiene disponible la aplicación.
+
+\subsubsection{Diseño}
+
+% Presente la figura de la interfaz y explique paso a paso ``a manera de manual de usuario'' como se debe utilizar la interfaz. No olvide detallar en la redacción los datos de entradas y salidas. Explique como utilizar cada botón y control de la pantalla, para que sirven y lo que hacen. Si el Botón lleva a otra pantalla, solo indique la pantalla y explique lo que pasará cuando se cierre dicha pantalla (la explicación sobre el funcionamiento de la otra pantalla estará en su archivo correspondiente).
+
+    En la figura \ref{IUGC1.3} se muestra la pantalla `` Registrar Contacto ", por medio de la cual se muestra un formulario correspondiente al registro de un contacto de tipo emergencia, mismo que servirá para suc correcto registro.\\
+
+    En la figura \ref{IUGC1.3A} se muestra la pantalla `` Registrar Contacto ", por medio de la cual se muestra un formulario correspondiente al registro de un contacto de tipo aseguradora, mismo que servirá para suc correcto registro.\\
+
+    En la figura \ref{IUGC1.3B} se muestra la pantalla `` Registrar Contacto ", por medio de la cual se muestra un formulario correspondiente al registro de un contacto de tipo familiar, mismo que servirá para suc correcto registro.\\
+    
+
+    \IUfig[.4]{../ModeloComportamiento/GestionarContactos/CUGC1.3/images/IUGC1_3}{IUGC1.3}{Registrar Contacto}
+    \IUfig[.4]{../ModeloComportamiento/GestionarContactos/CUGC1.3/images/IUGC1_3A}{IUGC1.3A}{Registrar Contacto}
+    \IUfig[.4]{../ModeloComportamiento/GestionarContactos/CUGC1.3/images/IUGC1_3B}{IUGC1.3B}{Registrar Contacto}
+   
+
+\subsubsection{Comandos}
+    \begin{itemize}
+    	
+    	\item Pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}
+    	
+    	\begin{itemize}
+    		\item \cdtButton{GUARDAR}: Permite al usuario guardar el contacto, dirige a la pantalla \cdtIdRef{IUGC1}{Gestión de Contactos}.
+            \item \btnEmergencia[Emergencia]: Permite al actor acceder al registro de un contacto de Emergencia, dirige a la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
+            \item \btnAseguradora[Aseguradora]: Permite al actor acceder al registro de un contacto de Aseguradora, dirige a la pantalla \cdtIdRef{IUGC1.3A}{Registrar Contacto}.
+            \item \btnContacto[Familiar]: Permite al actor acceder al registro de un contacto Familiar, dirige a la pantalla \cdtIdRef{IUGC1.3B}{Registrar Contacto}.
+    	\end{itemize}
+    
+		\item Pantalla \cdtIdRef{IUGC1.3A}{Registrar Contacto}
+		
+		\begin{itemize}
+			\item \cdtButton{GUARDAR}: Permite al usuario guardar el contacto, dirige a la pantalla \cdtIdRef{IUGC1}{Gestión de Contactos}.
+            \item \btnEmergencia[Emergencia]: Permite al actor acceder al registro de un contacto de Emergencia, dirige a la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
+            \item \btnAseguradora[Aseguradora]: Permite al actor acceder al registro de un contacto de Aseguradora, dirige a la pantalla \cdtIdRef{IUGC1.3A}{Registrar Contacto}.
+            \item \btnContacto[Familiar]: Permite al actor acceder al registro de un contacto Familiar, dirige a la pantalla \cdtIdRef{IUGC1.3B}{Registrar Contacto}. 
+		\end{itemize}
+
+        \item Pantalla \cdtIdRef{IUGC1.B}{Registrar Contacto}
+        
+        \begin{itemize}
+            \item \cdtButton{GUARDAR}: Permite al usuario guardar el contacto, dirige a la pantalla \cdtIdRef{IUGC1}{Gestión de Contactos}.
+            \item \btnEmergencia[Emergencia]: Permite al actor acceder al registro de un contacto de Emergencia, dirige a la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
+            \item \btnAseguradora[Aseguradora]: Permite al actor acceder al registro de un contacto de Aseguradora, dirige a la pantalla \cdtIdRef{IUGC1.3A}{Registrar Contacto}.
+            \item \btnContacto[Familiar]: Permite al actor acceder al registro de un contacto Familiar, dirige a la pantalla \cdtIdRef{IUGC1.3B}{Registrar Contacto}. 
+        \end{itemize}
+    \end{itemize}
