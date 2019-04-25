@@ -3,10 +3,9 @@
 % ESTA SECCION LA DEBE LLENAR SOLO EL ANALISTA.
 % ID: Asegurese de que el ID del Caso de uso sea único.
 % Nombre: Aseurese de que esté escrito de la forma: VERBO + SUSTANTIVO + ALGO
-\begin{UseCase}{CUGC1.2}{Registrar contacto}
+\begin{UseCase}{CUGC1}{Gestionar contactos registrados}
     {
-	% RESUMEN: Asegurese de que el resumen describa : Situación inicial, proceso a grandes rasgos y la condición de término. Por ejemplo: ``Cuando se tenga un alumno nuevo o se detecte que no tiene registro se da de alta mediante este CU proporcionando sus datos: personales, padres o tutores, situación académica actual y de salud. El sistema registra los datos cuando sean válidos y se pueda determinar su situación académica. Al finalizar el alumno podrá ser inscrito a los grupos disponibles''.
-	El registro de contactos es de suma importancia para un buen uso de la aplicación, los contactos registrados serán a quien sea notificados en caso que el dispositivo en el que se encuentre la aplicación registre un evento de un posible percanse automovilístico.
+	   Los contactos son información escencial para la aplicación ya que los contactos que tenga registrado el usuario serán a los que se podrá notificar en caso de un evento presentado, mismo que pudiera ser un percanse automovilístico. El presente caso de uso permite al actor gestionar las acciones que el usuario puede realizar respecto a los contactos que tiene o desea registrar en la aplicación. 
     }
     % VERSION: Inicie con la versión 0.1 y contiúe 0.2, 0.3, hasta que sea aceptada por el evaluador será la versión 1.0. si surgen mas cambios continúe con 1.1, etc.
     \UCitem{Versión}{1.0}
@@ -23,7 +22,7 @@
     % 	- Procesamiento en batch: Proceso que puede durar varios minutos sin que el usuario intervena demasiado.
     % 	- Negocio: Operación difícil de describir en una de las categorías anteriores por que es propia del ``negocio''.
     % 	- Reporte: Genera un reporte.
-    \UCitem{Operación}{Altas}
+    \UCitem{Operación}{Gestión}
     %Consulta, Altas Bajas y Cambios, Negocio, Reporte, Selección/Asignación de datos, Calculo masivo, etc..
     % PRIORIDAD: Con base en su conocimiento del negocio indique el nivel de importancia y urgencia que tiene este caso de uso como: Alta/Media/Baja.
     \UCccitem{Prioridad}{Alta}
@@ -72,68 +71,29 @@
     % HEREDA DE: Indique el Caso de Uso del cual hereda el actual, en caso de que no herede de ningún CU, elimine esta línea.
     \UCitem{Actor(es)}{\cdtRef{Usuario}{Usuario}}
     % PROPOSITO: Escriba una sentencia que defina una situación deseable por el Actor. Este mismo enunciado debe describir el ``Valor Agregado'' que se lleva el actor al ejecutar el Caso de Uso y describe también la ``Condición de Término''.
-    \UCitem{Propósito}{Proporcionar mecanismo para registro de usuarios}
+    \UCitem{Propósito}{Autenticarse en la aplicación con sus datos de inicio de sesión}
     % ENTRADAS: Liste y referencíe los datos de entrada al sistema durante el CU: Nombre y forma en que se debe proporcionar el dato al Caso de uso: teclado, raton, camara, lector de barras, algun sensor, etc.
     \UCitem{Entradas}{
-    	\begin{UClist}
-    		\UCli Pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
-    		\begin{itemize}
-    			\item \cdtRef{Contacto:nombrec}{Nombre}. \ioEscribir.
-                \item \cdtRef{Contacto:pri_apec}{Primer apellido}. \ioEscribir.
-                \item \cdtRef{Contacto:seg_apec}{Segundo apellido}. \ioEscribir.
-                \item \cdtRef{Contacto:telefonoc}{Número de teléfono}. \ioEscribir.
-                \item \cdtRef{}{¿Tu contacto tiene la App In-Hepl?}. \ioCheckBox.
-    		\end{itemize}
-            \UCli Pantalla \cdtIdRef{IUGC1.3A}{Registrar Contacto}.
-            \begin{itemize}
-                \item \cdtRef{Contacto:nombrec}{Nombre de la aseguradora}. \ioEscribir.
-                \item \cdtRef{Contacto:telefonoc}{Número de teléfono}. \ioEscribir.
-                \item \cdtRef{Aseguradora:no_poliza}{No. de póliza}. \ioEscribir.
-                \item  \cdtRef{Aseguradora:fh_vigencia}{Fecha de vigencia}. \ioCalendario.
-                \item \cdtRef{}{¿Tu contacto tiene la App In-Hepl?}. \ioCheckBox.
-            \end{itemize}
-            \UCli Pantalla \cdtIdRef{IUGC1.3B}{Registrar Contacto}.
-            \begin{itemize}
-                \item \cdtRef{Contacto:nombrec}{Nombre}. \ioEscribir.
-                \item \cdtRef{}{Parentezco}. \ioSeleccionar.
-                \item \cdtRef{Contacto:telefonoc}{Número de teléfono}. \ioEscribir.
-                \item \cdtRef{}{¿Tu contacto tiene la App In-Hepl?}. \ioCheckBox.
-            \end{itemize}
-    	\end{UClist}
-	
+	Ninguna.
     }
     % SALIDAS: Liste y referencíe los datos de salida o resultados del sistema, Especifíque el dispositivo en donde se presentarán las salidas: pantalla, impresora, otro sistema, brazo mecánico, etc. 
     \UCitem{Salidas}{
-	\begin{UClist}
-		\UCli Pantalla \cdtIdRef{IUGC1.3B}{Registrar Contacto}.
-            \begin{itemize}
-                \item \cdtRef{}{Parentezco}. \ioObtener.
-            \end{itemize}
-	\end{UClist}
+	Ninguna.
     }
     % PRECONDICIÓN: Son sentencias intemporales y afirmativas que declaran lo que DEBE ser siempre verdadero antes de iniciar el escenario en el caso de uso. Las precondiciones no son probadas dentro del caso de uso, son condiciones que se asumen verdaderas. Una precondición puede implicar un escenario de otro Caso de Uso que se ha completado satisfactoriamente, como por ejemplo la ``autenticación'', o más general el ``cajero se identifica y se autentica''. Craig Larman ``Use Case Model: Writing Requirements in Context''. También pueden ser escenarios ajenos al sistema que el Actor debe contemplar durante la operación pero de las que el sistema no es consciente, por ejemplo: ``El alumno debe presentar su credencial vigente'', o ``contar con el expediente físico'' ``El vehículo a asegurar debe estar en buen estado''.
     % Especifique las precondiciones indicando si son internas (escenarios provenientes de otro caso de uso) o externas, referenciando para las internas el CU correspondiente y, en caso de que aplique, la Regla de negocio que se está Reforzando con esta precondición.
     \UCitem{Precondiciones}{
-	\begin{UClist}
-	    \UCli {\bf Interna:} Que el usuario no se encuentre registrado.
-	\end{UClist}
+	Ninguna.
     }
     
     % POSTCONDICIONES: Son sentencias expresadas de manera intemporal y afirmativamente que exponen las garantías de exito o lo que DEBE ser verdadero cuando se completa exitosamente el caso de uso, sea a través de su escenario principal o a través de un flujo alternativo. La garantía debe cumplir las necesidades de todos los stakeholders.
     % Las postcondiciones en conjunto deben reflejar la condición de término del Caso de Uso y alcanzar el propósito planteado por el actor. También describe los cambios en la información y comportamiento del sistema. Indique los cambios que ocurrirán tanto dentro (Internas) como fuera (Externas) del sistema, referenciando los CU afectados por las Internas.
     \UCitem{Postcondiciones}{
-	\begin{UClist}
-	    \UCli {\bf Interna:} Se registrará el contacto en el sistema.
-	\end{UClist}
+	Ninguna.
     }
     %Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
     \UCitem{Reglas de negocio}{
-    	\begin{UClist}
-	    \UCli \cdtIdRef{RN1}{Campos obligatorios}: Verifica que no se omitan los campos obligatorios del formulario.
-	    \UCli \cdtIdRef{RN4}{Información Correcta}: Verifica que la contraseña cumpla con la longitud mínima.
-	    \UCli \cdtIdRef{RN5}{Unicidad de Elementos}: Verifica que el usuario no se encuentre registrado en In-Help.
-
-	\end{UClist}
+    	Ninguna.
     }
 	\UCitem{Maquinas de estado}{
 		Ninguna.
@@ -141,15 +101,11 @@
     % ERRORES: Especifique los casos en los que no se podrá terminar satisfactoriamente el Caso de Uso. Contemple todos los catálogos o listas que deben tener almenos un dato para que se puedan seleccionar dentro de las pantallas asociadas al Caso de Uso.
     % Especifique: La descripción del error (condición), el comportamiento del sistema, y la forma en que el usuario se dará cuenta del error.
     \UCitem{Errores}{
-	\begin{UClist}
-	    \UCli El usuario omitió un campo marcado como obligatorio: La aplicación mostrará el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio}
-		\UCli El usuario ingreso un usuario que se encuentra registrado:  La aplicación mostrará el mensaje \cdtIdRef{MSG11}{Elemento duplicado}.
-        \UCli El usuario ingreso un dato incorrecto: La aplicación mostrará el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto}.
-	\end{UClist}
+	Ninguno.
     }
 
     % TIPO: Indique si el Caso de Uso es primario o secundario. Los casos de uso son primarios cuando el Actor los puede ejecutar directamente, y secundario cuando este se ejecuta a travéz de una extensión o inclusión de otro caso de uso, en cuyo caso se debe especificar el Caso de Uso relacionado y la trayectoria debe iniciar a partir del paso en el que se extendió o Incluyo el Caso de Uso.
-    \UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUGC1}{Gestionar contactos}.}
+    \UCitem{Tipo}{Primario}
 
     %FUENTE: Especifique la fuente de información principal para la especificación del Caso de Uso: un documento, sistema existente, persona, minuta. Referencie dicho documento, sistema o persona.
 %    \UCitem{Fuente}{
@@ -161,60 +117,22 @@
 
 
  \begin{UCtrayectoria}
-    \UCpaso[\UCactor] Toca el icono \btnAContacto de la pantalla \cdtIdRef{IUGC1}{Gestión de Contactos}.
+    \UCpaso[\UCactor] Presiona la opción \btnContactos del menú \cdtIdRef{MN1}{Menú home del usuario}.
+    \UCpaso[\UCsist]  Muestra la pantalla \cdtIdRef{IUGC1}{Gestión de Contactos}.
+    \UCpaso[\UCactor] Visualiza las acciones de la pantalla.
+    \UCpaso[\UCactor] Gestiona por medio de los íconos \btnRContacto, \btnAContacto. \label{cugc1:pe}
     
-    \UCpaso[\UCsist]  Muestra la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
-    \UCpaso[\UCactor] Ingresa la información del formulario de la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}. \label{cugc13:tb} 
-    \UCpaso[\UCactor] Toca el botón \cdtButton{GUARDAR} de la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}. \refTray{A} \refTray{B} \refTray{C}
-
-
-    \UCpaso[\UCsist] Verifica que los campos obligatorios no se omitan, como lo indica la regla de negocio \cdtIdRef{RN1}{Campos obligatorios}. \refTray{D}
-    \UCpaso[\UCsist] Verifica que el la información introducida sea correcta, como lo indica la regla de negocio \cdtIdRef{RN4}{Información Correcta}. \refTray{E}
-    \UCpaso[\UCsist] Verifica que el usuario no encuentre registrado como lo indica la regla de negocio \cdtIdRef{RN5}{Unicidad de Elementos}. \refTray{F}
-
-
-
-
-    \UCpaso[\UCsist] Registra la información de la cuenta para el usuario.\label{cugc13:tG}
-    \UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG1}{Operación realizada exitosamente}.
+   
  \end{UCtrayectoria}
 
- \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{El usuario solicita salir de la pantalla.}
-    \UCpaso[\UCactor] Toca el icono \btnRegresar de la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
-	\UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUGC1}{Gestión de Contactos}.
- \end{UCtrayectoriaA}
+\subsection{Puntos de extensión}
 
-  \begin{UCtrayectoriaA}[Fin del caso de uso]{B}{El usuario desea registrar un contacto de aseuradora.}
-    \UCpaso[\UCactor] Toca el icono \btnAseguradora de la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
-    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
-    \UCpaso[\UCsist] Regresa al paso \ref{cugc13:tb} de la trayectoria principal.
- \end{UCtrayectoriaA}
+\UCExtensionPoint
+{El Usuario desea gestionar la infomración de contacto registrados}
+{ Paso \ref{cugc1:pe} de la Trayectoria Principal}
+{\cdtIdRef{CUGC1.1}{Gestionar contactos registrados}}
 
-  \begin{UCtrayectoriaA}[Fin del caso de uso]{C}{El usuario desea registrar un contacto de familiar.}
-    \UCpaso[\UCactor] Toca el icono \btnContacto de la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
-    \UCpaso[\UCsist] Muestra la pantalla \cdtIdRef{IUGC1.3B}{Registrar Contacto}.
-    \UCpaso[\UCsist] Regresa al paso \ref{cugc13:tb} de la trayectoria principal.
- \end{UCtrayectoriaA}
-
-
- \begin{UCtrayectoriaA}{D}{El usuario omitió un campo marcado como obligatorio.}
- 	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG2}{Falta dato obligatorio} en la pantalla \cdtIdRef{IUGC1.3}{Registrar Contacto}.
-	\UCpaso[] Regresa al paso \ref{cugc13:tb} de la trayectoria principal. 
-\end{UCtrayectoriaA}
-
- \begin{UCtrayectoriaA}{E}{El usuario ingreso un dato incorrecto}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG3}{Formato de campo incorrecto}.
-	\UCpaso[] Regresa al paso \ref{cugc13:tb} de la trayectoria principal. 
-	
-\end{UCtrayectoriaA}
-
-
- \begin{UCtrayectoriaA}{F}{El usuario ingreso un contacto que ya se encuentra registrado}
-	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MSG11}{Elemento duplicado}.
-	\UCpaso[] Regresa al paso \ref{cugc13:tb} de la trayectoria principal. 
-\end{UCtrayectoriaA}
-
- 
-
-
- 
+\UCExtensionPoint
+{El Usuario desea registrar un nuevo contacto}
+{ Paso \ref{cugc1:pe} de la Trayectoria Principal}
+{\cdtIdRef{IUGC1.3}{Registrar contacto}}

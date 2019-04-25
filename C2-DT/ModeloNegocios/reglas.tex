@@ -103,6 +103,10 @@
 			\begin{itemize}
 				\item Correo electrónico
 			\end{itemize}
+			\item Contacto
+			\begin{itemize}
+				\item Teléfono
+			\end{itemize}
 			
 		\end{enumerate}
 		
@@ -169,6 +173,30 @@
 		\cdtIdRef{CUA1.3}{Recuperar cuenta}
 	}
 \end{BusinessRule}
+
+%============================== RN9 =================================
+\begin{BusinessRule}{RN9}{Fechas válidas}
+	{Restricción}
+	{Controla la operación}
+	\BRitem{Versión}{1.0}
+	\BRitem{Autor}{Adrian Flores Torres}
+	\BRitem{Estatus}{Terminada}
+	\BRitem{Descripción}{
+		Para que el registro de una fecha sea válida, debe cumplir con las siguientes condiciones:
+	\begin{center}
+	$Fecha_{Registro} >= Fecha_{Actual}$
+	\end{center}
+	Donde :
+	\begin{itemize}
+		\item $Fecha_{Registro}$: Es la fecha que desea registrar el usuario.
+		\item $Fecha_{Actual}$: Es la fecha en la que se desea realizar el regisro.
+	\end{itemize}
+	}
+	\BRitem{Referenciado por}{
+		\cdtIdRef{CUA1.3}{Recuperar cuenta}
+	}
+\end{BusinessRule}
+
 
 
 
