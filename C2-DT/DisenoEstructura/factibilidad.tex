@@ -198,12 +198,44 @@ Mongo DB & No relacional & Consultas ad Hoc , indexación y replicación. &Guard
 \label{disenoEstructura:SGBD}
 \end{table}
 
+\paragraph{6. Notificación de choque} 
+
 De acuerdo a lo establecido como necesario para la gestión y almacenamiento de datos , se llego a la conclusión que MySQL es el SGBD mas optimo para la realización de esta aplicación movil, ya que tiene una mayor velocidad para realizar las operaciones que a esta lleguen. 
 
+\paragraph{6. Notificación de choque} 
+
+Una de las variantes que puede presentar la aplicación es saber por que medio se van a notificar a nuestro cliente , usuarios de emergencia y cuerpos de auxilio que el choque automovilistico ha ocurrido. Por ello se realizo la siguiente tabla en la cual podemos observar las ventajas y desventajas de los tipos de notificaciónes moviles que se pueden utilizar.\\
 
 
+\begin{table}[h!]
+\begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Nombre}& \textbf{Descripción}&\textbf{Ventajas}& \textbf{Desventajas}\\
+Notificación push & Las notificaciones push ayudan a que el usuario tenga acceso rápido y fácil a determinada información. & Es una de las herramientas más potentes de las aplicaciones móviles nativas. Permiten que el propietario de la app pueda ponerse en contacto con el usuario de manera directa e instantánea.& Se necesita conexión a internet para poder hacer envio de datos.\\
+\hline
+\hline
+SMS & El servicio de mensajes cortos por sus siglas en ingles . Son mensajes de texto que se envian atraves de una telefonia movil la cual hace llegar una notificación de mensaje de texto en tu dispositivo movil. Este servicio es particular de las redes GSM pero actualmente esta disponible en la ultima versión de estos 4G & \begin{UClist}
+		\UCli Ahorro en costes y tiempo
+		\UCli Alta Eficacia del mensaje
+		\UCli Envio instantaneo
+		\UCli Posibilidad de consulta
+		\UCli Recepción Movil
+		\UCli No necesitan conexión a internet
+\end{UClist} & La comunicación se hace mas tardada debido a que no es tan fluida la comunicacion , pero , la desventaja que denota  este tipo de servicio es ajena a el uso que se dara dentro de la aplicación. \\
+\hline
+\end{tabular}
+\caption{SMS}
+\label{disenoEstructura:SMS}
+\end{table}
+\paragraph{Utilización de SMS}
+\begin{UClist}
+\UCli Por lo analizado anteriormente se ha decidido utilizar el servicio de mensajeria corto por las ventajas de telefonia que da , ademas de tener un envio inmediato y sin escritura del usuario , hace nula la desventaja que podria ser un problema dentro de la aplicación movil.
+\end{UClist}
 
-\subsubsection{Hardware}
+%%\subsubsection{Hardware}
+
+%Analizando las especificaciones y requisitos de los entornos de desarrollo que fueron elegidos ; El equipo de cómputo con el que se cuenta es apto, por ende la inversión inicial para adquirir nuevos equipos no es necesaria, puesto que cumplen las caracteristicas suficientes para el desarrollo del trabajo
+%--------------------------- In help--------------------
 %Evaluando el equipo de cómputo con el que se cuenta y analizando las especificaciones y requisitos de los entornos de desarrollo elegidos, no es necesario realizar una inversión inicial para la adquisición de nuevos equipos pues las características con las que cuentan, satisfacen los requerimientos necesarios para el desarrollo del trabajo. Sin embargo, para el hardware que será implementado en el sistema embebido, sí es necesario realizar una inversión inicial por el costo unitario de cada uno.\\
 %
 %En la tabla \ref{disenoEstructura:equipos} se describen las especificaciones de los equipos que se tienen y que serán utilizados para el diseño, desarrollo e implementación del trabajo.
