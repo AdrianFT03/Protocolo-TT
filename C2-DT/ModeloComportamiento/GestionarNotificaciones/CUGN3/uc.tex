@@ -1,0 +1,150 @@
+%!TEX encoding = UTF-8 Unicode
+
+% ESTA SECCION LA DEBE LLENAR SOLO EL ANALISTA.
+% ID: Asegurese de que el ID del Caso de uso sea único.
+% Nombre: Aseurese de que esté escrito de la forma: VERBO + SUSTANTIVO + ALGO
+\begin{UseCase}{CUGN3}{Visualizar detalle de información}
+    {
+	  	La información de las notificaciones generadas por eventos son la parte mas importante de la aplicación ya que en ella se visualiza la información que se obtuvo del dispositivo, misma que sirvió para detonar a la misma. El presente caso de uso permite al actor ademas de visualizar la información del dispositivo que se obtuvo a la hora del evento la información del vehículo e información médica del usuario.
+    }
+    % VERSION: Inicie con la versión 0.1 y contiúe 0.2, 0.3, hasta que sea aceptada por el evaluador será la versión 1.0. si surgen mas cambios continúe con 1.1, etc.
+    \UCitem{Versión}{1.0}
+    \UCccsection{Administración de Requerimientos}
+    % AUTOR: Escriba su nombre completo, sin cargo ni puesto.
+    \UCitem{Autor}{Adrian Flores Torres}
+    % EVALUADOR: Escriba el nombre completo de quien revisará, sin cargo ni puesto.
+    \UCccitem{Evaluador}{Adrian Flores Torres}
+    % OPERACION: Describa el tipo de operación al que responde este Caso de Uso:
+    % 	- Registro: Registra información, como dar de alta algo en el sistema
+    % 	- Consulta: Consulta uno o varios registros del sistema.
+    % 	- Eliminar: Elimina uno o mas registros del sistema 
+    % 	- Modificar: Modifica o actualiza un registro en el sistema.
+    % 	- Procesamiento en batch: Proceso que puede durar varios minutos sin que el usuario intervena demasiado.
+    % 	- Negocio: Operación difícil de describir en una de las categorías anteriores por que es propia del ``negocio''.
+    % 	- Reporte: Genera un reporte.
+    \UCitem{Operación}{Consulta}
+    %Consulta, Altas Bajas y Cambios, Negocio, Reporte, Selección/Asignación de datos, Calculo masivo, etc..
+    % PRIORIDAD: Con base en su conocimiento del negocio indique el nivel de importancia y urgencia que tiene este caso de uso como: Alta/Media/Baja.
+    \UCccitem{Prioridad}{Alta}
+    %%Importancia de este CU con respecto a los demás: Alta/Media/Baja
+    % COMPLEJIDAD: Indique el grado de complejidad del Caso de uso en función de: el número de operaciones que realiza, el tamaño y numero de sus trayectorias, presentación de infomración y procesamiento. Califique con Alta/Media/Baja
+    \UCccitem{Complejidad}{Media}
+    %%Alta/Media/Baja
+    % VOLAILIDAD: Califique la volatilidad considerando el nivel de aceptación del presente caso de uso por parte del usuario y el historial de cambios a lo largo de su existencia. Califíquela como: Muy alta/Alta/Media/Baja/Muy baja
+    \UCccitem{Volatilidad}{Muy baja}
+    %Muy alta/Alta/Media/Baja/Muy baja
+    % MADUREZ: Estime el grado en el que tanto el analista como el usuario comprenden y están deacuerdo en que el CU deba implementarse tal y como está descrito actualmente. Valores: Muy alta/Alta/Media/Baja/Muy baja
+    \UCccitem{Madurez}{Muy alta}
+    % Nivel de comprensión y confianza en que el CU está completo y es corecto: Muy alta/Alta/Media/Baja/ Muy baja
+    % STATUS: Coloque el status del CU para asegurarse de que sea tratado adecuadamente por los revisores y analistas:
+    %	- Edición: El analista lo está describiendo o corrigiendo.
+    %	- Terminado: El caso de uso esta completamente descrito o corregido, el Evaluador puede revisarlo y registrar comentarios.
+    %	- Revisado: El Revisor terminó de revisarlo y considera que está listo para entregarse al usuario. El usuario lee el CU y emite su opinión por escrito.
+    %	- Aprobado: El usuario lo ha aprobado para su desarrollo. Los desarrolladores se están basando en esta versión para trabajar.
+    \UCitem{Estatus}{Aprobado}
+    % Edición/Terminado/Evaluado/Aprobado.
+    \UCitem{Fecha del último estatus}{21/Abril/2019}
+
+    
+%% Copie y pegue este bloque tantas veces como revisiones tenga el caso de uso.
+%% Esta sección la debe llenar solo el Revisor
+% %--------------------------------------------------------
+% 	\UCccsection{Revisión Versión XX} % Anote la versión que se revisó.
+% 	% FECHA: Anote la fecha en que se terminó la revisión.
+% 	\UCccitem{Fecha}{Fecha en que se termino la revisión} 
+% 	% EVALUADOR: Coloque el nombre completo de quien realizó la revisión.
+% 	\UCccitem{Evaluador}{Nombre de quien revisó}
+% 	% RESULTADO: Coloque la palabra que mas se apegue al tipo de acción que el analista debe realizar.
+% 	\UCccitem{Resultado}{Corregir, Desechar, Rehacer todo, terminar.}
+% 	% OBSERVACIONES: Liste los cambios que debe realizar el Analista.
+% 	\UCccitem{Observaciones}{
+% 		\begin{UClist}
+% 			% PC: Petición de Cambio, describa el trabajo a realizar, si es posible indique la causa de la PC. Opcionalmente especifique la fecha en que considera razonable que se deba terminar la PC. No olvide que la numeración no se debe reiniciar en una segunda o tercera revisión.
+% 			\RCitem{PC1}{\TODO{Descripción del pendiente}}{Fecha de entrega}
+% 			\RCitem{PC2}{\TODO{Descripción del pendiente}}{Fecha de entrega}
+% 			\RCitem{PC3}{\TODO{Descripción del pendiente}}{Fecha de entrega}
+% 		\end{UClist}		
+% 	}
+% %--------------------------------------------------------
+
+    \UCsection{Atributos}
+    % HEREDA DE: Indique el Caso de Uso del cual hereda el actual, en caso de que no herede de ningún CU, elimine esta línea.
+    \UCitem{Actor(es)}{\cdtRef{Usuario}{Usuario}}
+    % PROPOSITO: Escriba una sentencia que defina una situación deseable por el Actor. Este mismo enunciado debe describir el ``Valor Agregado'' que se lleva el actor al ejecutar el Caso de Uso y describe también la ``Condición de Término''.
+    \UCitem{Propósito}{Consultar la información de una notificación.}
+    % ENTRADAS: Liste y referencíe los datos de entrada al sistema durante el CU: Nombre y forma en que se debe proporcionar el dato al Caso de uso: teclado, raton, camara, lector de barras, algun sensor, etc.
+    \UCitem{Entradas}{
+	\begin{UClist}
+		\UCli \cdtRef{:}{Nombre de la aseguradora}. \ioObtener.
+		\UCli \cdtRef{:}{Número de teléfono}. \ioObtener.
+		\UCli \cdtRef{:}{No.Póliza}. \ioObtener.
+		\UCli \cdtRef{:}{Fecha de vigencia}. \ioObtener.
+		\UCli \cdtRef{:}{GPS}. \ioObtener.
+		\UCli \cdtRef{:}{Velocidad}. \ioObtener.
+		\UCli \cdtRef{:}{Temperatura}. \ioObtener.
+		\UCli \cdtRef{:}{Giroscopio}. \ioObtener.
+		\UCli \cdtRef{:}{Tipo de sangre}. \ioObtener.
+		\UCli \cdtRef{:}{Enfermedad}. \ioObtener.
+\end{UClist}
+	
+    }
+    % SALIDAS: Liste y referencíe los datos de salida o resultados del sistema, Especifíque el dispositivo en donde se presentarán las salidas: pantalla, impresora, otro sistema, brazo mecánico, etc. 
+    \UCitem{Salidas}{
+	\begin{UClist}
+		\UCli \cdtRef{:}{Nombre de la aseguradora}. \ioObtener.
+		\UCli \cdtRef{:}{Número de teléfono}. \ioObtener.
+		\UCli \cdtRef{:}{No.Póliza}. \ioObtener.
+		\UCli \cdtRef{:}{Fecha de vigencia}. \ioObtener.
+		\UCli \cdtRef{:}{GPS}. \ioObtener.
+		\UCli \cdtRef{:}{Velocidad}. \ioObtener.
+		\UCli \cdtRef{:}{Temperatura}. \ioObtener.
+		\UCli \cdtRef{:}{Giroscopio}. \ioObtener.
+		\UCli \cdtRef{:}{Tipo de sangre}. \ioObtener.
+		\UCli \cdtRef{:}{Enfermedad}. \ioObtener.
+		
+	\end{UClist}
+    }
+    % PRECONDICIÓN: Son sentencias intemporales y afirmativas que declaran lo que DEBE ser siempre verdadero antes de iniciar el escenario en el caso de uso. Las precondiciones no son probadas dentro del caso de uso, son condiciones que se asumen verdaderas. Una precondición puede implicar un escenario de otro Caso de Uso que se ha completado satisfactoriamente, como por ejemplo la ``autenticación'', o más general el ``cajero se identifica y se autentica''. Craig Larman ``Use Case Model: Writing Requirements in Context''. También pueden ser escenarios ajenos al sistema que el Actor debe contemplar durante la operación pero de las que el sistema no es consciente, por ejemplo: ``El alumno debe presentar su credencial vigente'', o ``contar con el expediente físico'' ``El vehículo a asegurar debe estar en buen estado''.
+    % Especifique las precondiciones indicando si son internas (escenarios provenientes de otro caso de uso) o externas, referenciando para las internas el CU correspondiente y, en caso de que aplique, la Regla de negocio que se está Reforzando con esta precondición.
+    \UCitem{Precondiciones}{
+	Ninguna.
+    }
+    
+    % POSTCONDICIONES: Son sentencias expresadas de manera intemporal y afirmativamente que exponen las garantías de exito o lo que DEBE ser verdadero cuando se completa exitosamente el caso de uso, sea a través de su escenario principal o a través de un flujo alternativo. La garantía debe cumplir las necesidades de todos los stakeholders.
+    % Las postcondiciones en conjunto deben reflejar la condición de término del Caso de Uso y alcanzar el propósito planteado por el actor. También describe los cambios en la información y comportamiento del sistema. Indique los cambios que ocurrirán tanto dentro (Internas) como fuera (Externas) del sistema, referenciando los CU afectados por las Internas.
+    \UCitem{Postcondiciones}{
+	Ninguna.
+    }
+    %Reglas de negocio: Especifique las reglas de negocio que utiliza este caso de uso
+    \UCitem{Reglas de negocio}{
+    	Ninguna.
+    }
+	\UCitem{Maquinas de estado}{
+		Ninguna.
+	}
+    % ERRORES: Especifique los casos en los que no se podrá terminar satisfactoriamente el Caso de Uso. Contemple todos los catálogos o listas que deben tener almenos un dato para que se puedan seleccionar dentro de las pantallas asociadas al Caso de Uso.
+    % Especifique: La descripción del error (condición), el comportamiento del sistema, y la forma en que el usuario se dará cuenta del error.
+    \UCitem{Errores}{
+	Ninguno.
+    }
+
+    % TIPO: Indique si el Caso de Uso es primario o secundario. Los casos de uso son primarios cuando el Actor los puede ejecutar directamente, y secundario cuando este se ejecuta a travéz de una extensión o inclusión de otro caso de uso, en cuyo caso se debe especificar el Caso de Uso relacionado y la trayectoria debe iniciar a partir del paso en el que se extendió o Incluyo el Caso de Uso.
+    \UCitem{Tipo}{Terciario, extiende del caso de uso \cdtIdRef{CUGN2}{VisualizariInformación de notificación}}
+
+    %FUENTE: Especifique la fuente de información principal para la especificación del Caso de Uso: un documento, sistema existente, persona, minuta. Referencie dicho documento, sistema o persona.
+%    \UCitem{Fuente}{
+%	\begin{UClist}
+%	    \UCli Minuta de la reunión \cdtIdRef{M-17RT}{Reunión de trabajo}.
+%	\end{UClist}
+%    }
+\end{UseCase}
+
+
+ \begin{UCtrayectoria}
+    \UCpaso[\UCactor]  Toca el icono \btnDetalles de la pantalla \cdtIdRef{IUGN2}{Información de Notificación}.
+  	\UCpaso[\UCsist]Obtiene la información establecida en la sección de salidas del presente caso de uso.
+    \UCpaso[\UCsist] Muestra la pantalla  \cdtIdRef{IUGN3}{Información General}.
+    \UCpaso[\UCactor] Visualiza la información de la pantalla. 
+    \UCpaso[\UCactor] Presiona el icono \btnRegresar. 
+	\UCpaso[\UCsist]  Muestra la pantalla \cdtIdRef{IUGN2}{Información de Notificación}.
+ \end{UCtrayectoria}

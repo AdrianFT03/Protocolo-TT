@@ -212,3 +212,35 @@
 	\item[Redacción:] Se envío un correo con tu contraseña.
 	\item[Referenciado por:] \cdtIdRef{CUA1.1}{Iniciar sesión}
 \end{mensaje}
+
+%===========================  MSG18 ==================================
+\begin{mensaje}{MSG18}{Información contacto}{Notificación}
+	\item[Ubicación:] \msjEmergente.
+	\item[Objetivo:] Indicar al actor que se ha enviado un correo electrónico con su contraseña.
+	\item[Redacción:] Es es mi PARENTESCO \\
+	Su número de teléfono es TELEFONO.
+	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+	\begin{Citemize}
+		\item PARENTESCO: Es el parentesco que registro el usuario para el contacto.
+		\item TELEFONO: Es el número de teléfono que tiene registrado el contacto del usuario.
+	\end{Citemize}
+	\item[Ejemplo:] Es es mi Hermano \\
+	Su número de teléfono es 5513978246.
+	\item[Referenciado por:] 
+\end{mensaje}
+
+%============================== MSG14 =================================
+\begin{mensaje}{MSG19}{Eliminar elemento}{Confirmación}
+	\item[Ubicación:] \msjEmergente.
+	\item[Estatus:] Terminado
+	\item[Objetivo:] Notificar al actor que está a punto de eliminar un elemento y que se necesita su aprobación para ello.
+	\item[Redacción:] ¿Desea eliminar ARTICULO + ELEMENTO + SELECCIÓN?
+	\item[Parámetros:] El mensaje se muestra con base en los siguientes parámetros:
+	\begin{Citemize} 
+		\item ARTICULO: Es la parte de la oración que se ocupa de expresar el género (masculino/femenino).
+		\item ELEMENTO: Es el elemento que se requiere eliminar.
+		\item SELECCIÓN: Dependiendo del género en la oración se ocupa, seleccionado(masculino) o seleccionada(femenino).
+	\end{Citemize}
+	\item[Ejemplo:] ¿Desea eliminar el contacto seleccionado?
+	\item[Referenciado por:] 
+\end{mensaje}
