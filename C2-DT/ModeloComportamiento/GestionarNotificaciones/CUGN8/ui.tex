@@ -1,0 +1,24 @@
+\subsection{IUGN8 Configurar Notificación}
+
+\subsubsection{Objetivo}
+
+% Explicar el objetivo para el que se construyo la interfaz, generalmente es la descripción de la actividad a desarrollar, como Seleccionar grupos para inscribir materias de un alumno, controlar el acceso al sistema mediante la solicitud de un login y password de los usuarios, etc.
+	
+    Esta pantalla permite al actor establecer que información se enviará a un contacto en especifico en caso que se registre un evento en In-Help. 
+
+\subsubsection{Diseño}
+
+% Presente la figura de la interfaz y explique paso a paso ``a manera de manual de usuario'' como se debe utilizar la interfaz. No olvide detallar en la redacción los datos de entradas y salidas. Explique como utilizar cada botón y control de la pantalla, para que sirven y lo que hacen. Si el Botón lleva a otra pantalla, solo indique la pantalla y explique lo que pasará cuando se cierre dicha pantalla (la explicación sobre el funcionamiento de la otra pantalla estará en su archivo correspondiente).
+
+    En la figura \ref{IUGN8} se muestra la pantalla `` Configurar Notificación ", en la cual se muestran 4 botones, los cuales servirán para que el actor determine si será o no será enviada la información en el caso de una notificación. Los botones estarán en verde en el caso de que la información sea publica y en rojo en el caso que el usuario determine no compartirla. En un inicio toda la información será pública.\\
+
+   \IUfig[.4]{../ModeloComportamiento/GestionarNotificaciones/CUGN8/images/IUGN8}{IUGN8}{Configurar Notificación}
+\subsubsection{Comandos}
+    \begin{itemize}
+    	\item \btnRegresar[Regresar]: Permite al actor salir de la pantalla, dirige a la pantalla \cdtIdRef{IUGN6}{Configurar Notificación}.
+    	\item \btnICoche[Información Coche]: Permite al actor avtivar/desactivar el envió de información de coche, dirige a la misma pantalla.
+    	\item \btnIPersonal[Información Personal]: Permite al actor avtivar/desactivar el envió de información personal, dirige a la misma pantalla.
+    	\item \btnIMedica[Información Médica]: Permite al actor avtivar/desactivar el envió de información médica, dirige a la misma pantalla.
+    	\item \btnIDispositivo[Información Dispositivo]: Permite al actor avtivar/desactivar el envió de información de dispositivo, dirige a la misma pantalla.
+    \end{itemize}
+

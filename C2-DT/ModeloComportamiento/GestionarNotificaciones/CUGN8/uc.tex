@@ -3,9 +3,9 @@
 % ESTA SECCION LA DEBE LLENAR SOLO EL ANALISTA.
 % ID: Asegurese de que el ID del Caso de uso sea único.
 % Nombre: Aseurese de que esté escrito de la forma: VERBO + SUSTANTIVO + ALGO
-\begin{UseCase}{CUGN5}{Configurar notificaciones}
+\begin{UseCase}{CUGN6}{Gestionar configuracion de notificación}
     {
-	   La configuración de notificaciones permite al usuario poder definir que información y a que contactos se enviará la información que el usuario tiene registrada. El presente caso de uso permite al usuario visualizar los vehículos con los que cuenta registrados para poder configurar las notificaciones que se enviarán en caso del registro de un evento.
+	   La configuración de notificaciones permite al usuario poder definir que información y a que contactos se enviará la información que el usuario tiene registrada. El presente caso de uso permite al usuario visualizar los contactos que tiene registrados para poder configurar las notificaciones que se enviarán en caso del registro de un evento.
     }
     % VERSION: Inicie con la versión 0.1 y contiúe 0.2, 0.3, hasta que sea aceptada por el evaluador será la versión 1.0. si surgen mas cambios continúe con 1.1, etc.
     \UCitem{Versión}{1.0}
@@ -76,20 +76,21 @@
     \UCitem{Entradas}{
 	\begin{UClist}
 		\UCli \cdtRef{:}{Placas}. \ioObtener.
+		\UCli \cdtRef{:}{Contacto}. \ioObtener.
 	\end{UClist}
     }
     % SALIDAS: Liste y referencíe los datos de salida o resultados del sistema, Especifíque el dispositivo en donde se presentarán las salidas: pantalla, impresora, otro sistema, brazo mecánico, etc. 
     \UCitem{Salidas}{
 		\begin{UClist}
 			\UCli \cdtRef{:}{Placas}. \ioObtener.
-			
+			\UCli \cdtRef{:}{Contacto}. \ioObtener.
 		\end{UClist}
     }
     % PRECONDICIÓN: Son sentencias intemporales y afirmativas que declaran lo que DEBE ser siempre verdadero antes de iniciar el escenario en el caso de uso. Las precondiciones no son probadas dentro del caso de uso, son condiciones que se asumen verdaderas. Una precondición puede implicar un escenario de otro Caso de Uso que se ha completado satisfactoriamente, como por ejemplo la ``autenticación'', o más general el ``cajero se identifica y se autentica''. Craig Larman ``Use Case Model: Writing Requirements in Context''. También pueden ser escenarios ajenos al sistema que el Actor debe contemplar durante la operación pero de las que el sistema no es consciente, por ejemplo: ``El alumno debe presentar su credencial vigente'', o ``contar con el expediente físico'' ``El vehículo a asegurar debe estar en buen estado''.
     % Especifique las precondiciones indicando si son internas (escenarios provenientes de otro caso de uso) o externas, referenciando para las internas el CU correspondiente y, en caso de que aplique, la Regla de negocio que se está Reforzando con esta precondición.
     \UCitem{Precondiciones}{
 		\begin{UClist}
-		\UCli {\bf Interna:} Que el usuario tenga vehículos registrados.
+		\UCli {\bf Interna:} Que el usuario tenga contactos registrados.
 	\end{UClist}
     }
     
@@ -114,7 +115,7 @@
     }
 
     % TIPO: Indique si el Caso de Uso es primario o secundario. Los casos de uso son primarios cuando el Actor los puede ejecutar directamente, y secundario cuando este se ejecuta a travéz de una extensión o inclusión de otro caso de uso, en cuyo caso se debe especificar el Caso de Uso relacionado y la trayectoria debe iniciar a partir del paso en el que se extendió o Incluyo el Caso de Uso.
-    \UCitem{Tipo}{Primario}
+    \UCitem{Tipo}{Secundario, extiende del caso de uso \cdtIdRef{CUGN5}{Configurar notificaciones}.}
 
     %FUENTE: Especifique la fuente de información principal para la especificación del Caso de Uso: un documento, sistema existente, persona, minuta. Referencie dicho documento, sistema o persona.
 %    \UCitem{Fuente}{
@@ -126,17 +127,18 @@
 
 
  \begin{UCtrayectoria}
-    \UCpaso[\UCactor] Presiona la opción \textbf{Configurar Notificaciones} del menú \cdtIdRef{MN2}{Menú principal del usuario}
-    \UCpaso[\UCsist] Obtiene  la información de la pantalla \cdtIdRef{IUGN5}{Configurar Notificaciones}, la cual se establece en la sección de salidas del presente caso de uso. \refTray{A}
+    \UCpaso[\UCactor] Toca el icono \btnDetalle de la pantalla \cdtIdRef{IUGN5}{Configurar Notificaciones}.
+    \UCpaso[\UCsist] Obtiene  la información de la pantalla \cdtIdRef{IUGN6}{Configurar Notificación}, la cual se establece en la sección de salidas del presente caso de uso. \refTray{A}
     \UCpaso[\UCsist] Construye la pantalla con la información obtenida en el paso anterior.
-    \UCpaso[\UCsist]  Muestra la pantalla \cdtIdRef{IUGN5}{Configurar Notificaciones}.
+    \UCpaso[\UCsist]  Muestra la pantalla \cdtIdRef{IUGN6}{Configurar Notificación}.
     \UCpaso[\UCactor] Visualiza las información de la pantalla.
-    \UCpaso[\UCactor] Gestiona por medio del icono \btnDetalle. \label{cugn5:pe}
+    \UCpaso[\UCactor] Gestiona por medio del icono \btnOn, \btnGestionar. \label{cugn6:pe}
     
    
  \end{UCtrayectoria}
 
  \begin{UCtrayectoriaA}[Fin del caso de uso]{A}{No existen vehículos registrados en la aplicación.}
+ 	\UCpaso[\UCsist] Construye el mensaje \cdtIdRef{MS20}{Sin información} con el parámetro ELEMENTO = contactos.
 	\UCpaso[\UCsist] Muestra el mensaje \cdtIdRef{MS20}{Sin información}.
 \end{UCtrayectoriaA}
 
@@ -145,7 +147,12 @@
 \subsection{Puntos de extensión}
 
 \UCExtensionPoint
-{El actor configurar las notificaciones de un vehículo}
-{ Paso \ref{cugn5:pe} de la Trayectoria Principal}
-{\cdtIdRef{CUGN6}{Configurar notificación}}
+{El actor solicita configurar la información de las notificaciones.}
+{ Paso \ref{cugn6:pe} de la Trayectoria Principal}
+{\cdtIdRef{CUGN8}{Configurar información de notificación}}
+
+\UCExtensionPoint
+{El actor solicita activar un contacto.}
+{ Paso \ref{cugn6:pe} de la Trayectoria Principal}
+{\cdtIdRef{CUGN7}{Activar contacto}}
 
