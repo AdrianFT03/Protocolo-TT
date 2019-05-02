@@ -198,8 +198,6 @@ Mongo DB & No relacional & Consultas ad Hoc , indexación y replicación. &Guard
 \label{disenoEstructura:SGBD}
 \end{table}
 
-\paragraph{6. Notificación de choque} 
-
 De acuerdo a lo establecido como necesario para la gestión y almacenamiento de datos , se llego a la conclusión que MySQL es el SGBD mas optimo para la realización de esta aplicación movil, ya que tiene una mayor velocidad para realizar las operaciones que a esta lleguen. 
 
 \paragraph{6. Notificación de choque} 
@@ -211,6 +209,8 @@ Una de las variantes que puede presentar la aplicación es saber por que medio s
 \begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
 \hline
 \textbf{Nombre}& \textbf{Descripción}&\textbf{Ventajas}& \textbf{Desventajas}\\
+\hline
+\hline
 Notificación push & Las notificaciones push ayudan a que el usuario tenga acceso rápido y fácil a determinada información. & Es una de las herramientas más potentes de las aplicaciones móviles nativas. Permiten que el propietario de la app pueda ponerse en contacto con el usuario de manera directa e instantánea.& Se necesita conexión a internet para poder hacer envio de datos.\\
 \hline
 \hline
@@ -231,6 +231,36 @@ SMS & El servicio de mensajes cortos por sus siglas en ingles . Son mensajes de 
 \begin{UClist}
 \UCli Por lo analizado anteriormente se ha decidido utilizar el servicio de mensajeria corto por las ventajas de telefonia que da , ademas de tener un envio inmediato y sin escritura del usuario , hace nula la desventaja que podria ser un problema dentro de la aplicación movil.
 \end{UClist}
+
+\paragraph{7. Sistema Operativo Movíl} 
+
+Un punto importante que destacar dentro de las aplicaciones moviles es saber hacia que sistema operativo movil esta ira diseñada , por ello se dio a la tarea de realizar el siguiente analisis detallado en un tabla como se muestra acontinuación.
+\begin{table}[h!]
+\begin{tabular}{|p{2cm}|p{6cm}|p{6cm}|}
+\hline
+\textbf{Nombre}&\textbf{Descripción}&\textbf{Req.Minimos}\\
+\hline
+\hline
+IOS & IOS es el sistema operativo movil propio de la marca creado por Steve Jobs, Apple®. & Debido a ser un software con constante actualización los requerimientos minimos serian los siguientes: \begin{UClist}
+				\UCli Procesador: A7 doble nucleo a 1.3 GHz ó superior.
+				\UCli RAM: 2GB ó superior
+				\UCli Sistema Operativo: Android 7 Nougat ó superior
+				\end{UClist} \\
+\hline
+\hline
+Android & Android es el sistema operativo movil mas utilizado , debido a su gran iteroperabilidad con los smarthphone , hace a este el de mayor competencia dentro de el mercado. & Este sistema operativo es menos cambiante debido a que solo hace actualizaciones especificas dentro de su rama.Para ello los requerimientos minimos son los siguientes : 
+\begin{UClist}
+				\UCli Procesador: Snapdragon 425 de cuatro núcleos (1.4GHz) ó superior.
+				\UCli RAM: 2GB ó superior.
+				\UCli Sistema Operativo: Android 7 Nougat ó superior
+				\end{UClist} \\
+\hline
+\end{tabular}
+\caption{Sistema Operativo Movil}
+\label{disenoEstructura:SOMovil}
+\end{table}
+
+Despues del analisis realizado de los dos sistemas operativos mas competentes dentro del mercado se ha llegadoa  la decisión que se utilizara android con sus requerimientos minimos que se especifican en la tabla \ref{disenoEstructura:SOMovil} debido a que es un sistema operativo con actualizaciones mas especificas en sus dispositivos moviles.
 
 \subsubsection{Hardware}
 
@@ -298,115 +328,161 @@ Como resultado del análísis de factibilidad tecnica hecho previamente , se ha 
 %%==============================================ECONÓMICA==================================================
 %\newpage
 \subsection{Factibilidad Económica}
-%El análisis de la factibilidad económica determina si los recursos económicos y financieros  son suficientes para llevar a cabo las actividades o procesos, además permite conocer los costos estimados para el desarrollo del trabajo.\\
-%
-%Para determinar la factibilidad económica del presente trabajo terminal se realizó un análisis describiendo los gastos totales, los cuales fueron clasificados en las siguientes categorías:
-%
-%\begin{enumerate}
-%	\item Gastos tecnológicos
-%	\item Gastos por servicios
-%\end{enumerate}
-%
-%Debido a este proyecto tiene fines académicos, en los gastos descritos no se consideran sueldos.
-%
 
-\paragraph{1. Gastos tecnológicos} \textcolor{White}{.} \newline
-%En esta sección se consideran todos los gastos relacionados con el software y hardware implementado en el desarrollo del proyecto. Todas las cantidades descritas están consideradas en pesos mexicanos.\\
-%
-%En la tabla \ref{disenoEstructura:gastosDepreciacion} se describen los gastos del equipo que fue utilizado pero que no se realizó una inversión inicial pues ya se contaba con él. Para estos equipos se consideró únicamente el gasto de la depreciación durante los meses de trabajo. El porcentaje de depreciación anual que se consideró para todos los equipos fue del 20\% y el tiempo de trabajo en meses estimado para este trabajo terminal fue de 9.
-%
-%\begin{table}[htbp]
-%	\begin{center}
-%		\begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|p{3cm}|}
-%			\hline
-%			%			\rowcolor{colorSecundario}
-%			%			\color{green}
-%			\thead{Equipo}&\thead{Precio de compra\\(\$)}&\thead{Depreciación mensual\\(\$)}&\thead{Depreciación total\\(\$)} \\
-%			\hline
-%			\hline
-%			Sony VAIO Pro SVP132A1CU &15,000.00 &250.00&2,250.00 \\
-%			\hline
-%			Asus VivoBook S510U & 24,000.00&400.00&3,600.00 \\
-%			\hline
-%			Smartphone Motorola G3 &3,000.00 &50.00&450.00\\
-%			\hline
-%			Smartphone Xiaomi Mi A2 & 5,000.00&83.33&750.00\\
-%			\hline
-%			\hline
-%			TOTAL & &&7,050.00\\
-%			\hline
-%		\end{tabular}
-%		\caption{Gastos tecnológicos por depreciación}
-%		\label{disenoEstructura:gastosDepreciacion}
-%	\end{center}
-%\end{table}
-%
-%En la tabla \ref{disenoEstructura:gastosHardware} se describen los gastos relacionados con la compra del equipo de hardware específico para el desarrollo del sistema embebido.
-%
-%\begin{table}[htbp]
-%	\begin{center}
-%		\begin{tabular}{|c|p{4cm}|p{3cm}|p{3cm}|}
-%			\hline
-%			%			\rowcolor{colorSecundario}
-%			%			\color{green}
-%			\thead{Cantidad}&\thead{Recurso}&\thead{Precio unitario\\(\$)}&\thead{Subtotal\\(\$)} \\
-%			\hline
-%			\hline
-%			1 &Microcontrolador dsPIC30F4013&143.39&143.39\\
-%			\hline
-%			1 & Módulo GSM&1,072.00&1,072.00 \\
-%			\hline
-%			1 &SIM telefónico para módulo GSM&0.00&0.00\\
-%			\hline
-%			1 &Sensor de temperatura MAX30205&30.57&30.57\\
-%			\hline
-%			1 &Sensor de pulso&477.46&477.46\\
-%			\hline
-%			1 &Programador para microcontrolador&300.00&300.00\\
-%			\hline
-%			1 &Módulo FT232&100.00&100.00\\
-%			\hline
-%			\hline
-%			TOTAL & &&2,123.42\\
-%			\hline
-%		\end{tabular}
-%		\caption{Gastos tecnológicos por hardware}
-%		\label{disenoEstructura:gastosHardware}
-%	\end{center}
-%\end{table}
+El análisis de la factibilidad económica determina si los recursos económicos y financieros son suficientes para llevar a cabo la aplicación movil con todas las actividades y/o procesos que esta incluya , ademas que este análisis tambien permite estimar los costos para el desarrollo del trabajo.
+
+Para poder determinar la factibilidad económica de la presente aplicación movil hay que analizar los gastos totales que esta tendrá , los cuales se clasificarán de la siguiente manera:
+
+\begin{enumerate}
+	\item Recursos Humanos
+	\item Gastos tecnológicos
+	\item Gastos por servicios
+\end{enumerate}
+
+\paragraph{1. Recursos Humanos}
+
+Tomando como base un sueldo promedio para un ingeniero en sistemas computacionales recien egresado mensual de \$ 20,000.00 Pesos Mexicanos . Para las actividades a realizar dentro de In-Help . Se consideran 2 estudiantes egresados de ingenieria en sistemas computacionales por un tiempo de desarrollo de 8 meses.
+
+\begin{table}[h!]
+\begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Cantidad}& \textbf{Cargo}&\textbf{Costo Por mes}& \textbf{Costo Total}\\
+\hline
+\hline
+2 & Ing.Sistemas Computacionales & \$ 20,000.00 & \$ 320,000.00 \\
+\hline
+\end{tabular}
+\caption{Recursos Humanos}
+\label{disenoEstructura:RH}
+\end{table}
 
 
-\paragraph{2. Gastos por servicios} \textcolor{White}{.} \newline
-%El desarrollo del trabajo implica gastos para los servicios con los que funcionarán los recursos de hardware y software mencionados anteriormente. El gasto estimado por los servicios a utilizar se describe en la tabla \ref{disenoEstructura:gastosServicios}.\\
-%
-%
-%\begin{table}[htbp]
-%	\begin{center}
-%		\begin{tabular}{|p{4cm}|p{3cm}|p{3cm}|}
-%			\hline
-%			%			\rowcolor{colorSecundario}
-%			%			\color{green}
-%			\thead{Servicio}&\thead{Gasto mensual\\(\$)}&\thead{Gasto total\\(\$)}\\
-%			\hline
-%			\hline
-%			Internet &150.00 &1,350.00 \\
-%			\hline
-%			Luz eléctrica &135.00 &1,215.00 \\
-%			\hline
-%			SIM telefónica &50.00 &450.00\\
-%			\hline
-%			\hline
-%			TOTAL & &3,015\\
-%			\hline
-%		\end{tabular}
-%		\caption{Gastos por servicios}
-%		\label{disenoEstructura:gastosServicios}
-%	\end{center}
-%\end{table}
+\paragraph{2. Gastos tecnológicos} 
 
-\paragraph{Gastos totales} \textcolor{White}{.} \newline
-%Para obtener el monto total de los gastos para el proyecto, se sumaron los gastos mencionados anteriormente, como se muestra en la tabla \ref{disenoEstructura:gastosTotales}, por lo tanto el costo total estimado del proyecto es: \$9,176  pesos mexicanos.
-%
+En esta sección se consideran todos los gastos relacionados con el software y hardware implementado en el desarrollo del proyecto. Todas las cantidades descritas están consideradas en pesos mexicanos.\\
+
+Debido a como se especifico en el apartado de factibilidad tecnica el hardware inicial a utilizar ya se poseé por ende se enfocara el analisis de gastos tecnologicos a el hardware y software que no se poseén y son primordiales para el desarrollo de la aplicación.
+
+\paragraph{Hardware} 
+
+\begin{table}[h!]
+\begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Cantidad}& \textbf{Descripción}&\textbf{Costo Por mes}& \textbf{Costo Total}\\
+\hline
+\hline
+1 & Tarjeta Programable Arduino MEGA & \$ 250.00 pesos & \$ 250.00 pesos\\
+\hline
+\hline
+1 & Freematics OBD-II UART Adapter V2 & \$ 720.00 pesos & \$ 720.00 pesos\\
+\hline
+\end{tabular}
+\caption{Recurso Tecnologico Hardware}
+\label{disenoEstructura:RecTecHW}
+\end{table}
+
+\paragraph{Software} 
+\begin{table}[h!]
+\begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Cantidad}& \textbf{Descripción}&\textbf{Costo Por mes}& \textbf{Costo Total}\\
+\hline
+\hline
+2 Licencias & AndroidStudio & Gratuito & Gratuito \\
+\hline
+\hline
+2 Licencias & ArduinoIDE & Gratuito & Gratuito \\
+\hline
+\hline
+2 Licencias & JAVA & Gratuito & Gratuito \\
+\hline
+\hline
+2 Licencias & LaTex & Gratuito & Gratuito \\
+\hline
+\hline
+2 Licencias & Balsamiq & Gratuito & Gratuito \\
+\hline
+\hline
+2 Licencias & MySQL & Gratuito & Gratuito \\
+\hline
+\end{tabular}
+\caption{Recurso Tecnologico Software}
+\label{disenoEstructura:RecTecSF}
+\end{table}
+
+Costo de recursos materiales para el desarrollo del proyecto In-Help.\\
+\begin{table}[h!]
+\begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Cantidad}& \textbf{Descripción}&\textbf{Costo Por mes}& \textbf{Costo Total}\\
+\hline
+\hline
+2 & Papel Blanco A4 500 Hojas & \$ 80.00 & \$ 160.00 pesos \\
+\hline
+\hline
+1 & Paquete de 12 Boligrafos & \$ 39.00 & \$ 39.00  pesos\\
+\hline
+\end{tabular}
+\caption{Recurso Material}
+\label{disenoEstructura:RecMaterial}
+\end{table}
+\newpage
+\paragraph{3. Gastos por servicios} 
+El desarrollo del trabajo implica gastos para los servicios con los que funcionarán los recursos de hardware y software mencionados anteriormente. Para ello se realizo el siguiente análisis el cual se mostrará en la siguiente tabla:
+\paragraph{Insumos necesarios para el desarrollo del proyecto} 
+\begin{table}[h!]
+\begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Cantidad}& \textbf{Descripción}&\textbf{Costo Por mes}& \textbf{Costo Total}\\
+\hline
+\hline
+1 & Impresora HP Laser Jet Pro M15w & \$ 1,298.00 & \$ 1,298.00  pesos\\
+\hline
+\hline
+8 Meses & Luz & \$ 100.00 & \$ 800.00  pesos\\
+\hline
+\hline
+8 Meses & Internet Infinitum 20 MB & \$ 490.00 & \$ 3,920.00  pesos\\
+\hline
+\hline
+8 & Recargas de datos moviles Telcel & \$ 100.00 & \$ 800.00  pesos\\
+\hline
+\hline
+1 & SIM Telcel & Gratis & Gratis \\
+\hline
+\end{tabular}
+\caption{Recursos Servicios}
+\label{disenoEstructura:RecServ}
+\end{table}
+
+%Total 327 ,987 pesos
+
+
+
+\newpage
+\paragraph{Gastos totales} 
+Para obtener el monto total de los gastos para el proyecto, se sumaron los gastos mencionados anteriormente, como se muestra en la tabla \ref{disenoEstructura:TotalGast}, por lo tanto el costo total estimado del proyecto es: \$327,987.00  pesos mexicanos.\\
+
+\begin{table}[h!]
+\begin{tabular}{|p{12cm}|p{5cm}|}
+\hline
+\textbf{Concepto}& \textbf{Gasto}\\
+\hline
+\hline
+Recursos Humanos & \$ 320,000.00 pesos\\
+\hline
+\hline
+Gastos Tecnológicos & \$ 1,169.00 pesos\\ 
+\hline
+\hline
+Gastos Servicios & \$ 6,818.00 pesos \\
+\hline
+\end{tabular}
+\caption{Total Gastos}
+\label{disenoEstructura:TotalGast}
+\end{table}
+
+El costo total involucra el costo de desarrollo para un prototipo , esto no comprende un costo para una produción de producto final.\\
 %\begin{table}[htbp]
 %	\begin{center}
 %		\begin{tabular}{|p{4cm}|p{4cm}|}
