@@ -232,86 +232,69 @@ SMS & El servicio de mensajes cortos por sus siglas en ingles . Son mensajes de 
 \UCli Por lo analizado anteriormente se ha decidido utilizar el servicio de mensajeria corto por las ventajas de telefonia que da , ademas de tener un envio inmediato y sin escritura del usuario , hace nula la desventaja que podria ser un problema dentro de la aplicación movil.
 \end{UClist}
 
-%%\subsubsection{Hardware}
+\subsubsection{Hardware}
 
-%Analizando las especificaciones y requisitos de los entornos de desarrollo que fueron elegidos ; El equipo de cómputo con el que se cuenta es apto, por ende la inversión inicial para adquirir nuevos equipos no es necesaria, puesto que cumplen las caracteristicas suficientes para el desarrollo del trabajo
+Analizando las especificaciones y requisitos de los entornos de desarrollo que fueron elegidos ; El equipo de cómputo con el que se cuenta es apto, por ende la inversión inicial para adquirir nuevos equipos no es necesaria, puesto que cumplen las caracteristicas suficientes para el desarrollo del trabajo.\\
 %--------------------------- In help--------------------
-%Evaluando el equipo de cómputo con el que se cuenta y analizando las especificaciones y requisitos de los entornos de desarrollo elegidos, no es necesario realizar una inversión inicial para la adquisición de nuevos equipos pues las características con las que cuentan, satisfacen los requerimientos necesarios para el desarrollo del trabajo. Sin embargo, para el hardware que será implementado en el sistema embebido, sí es necesario realizar una inversión inicial por el costo unitario de cada uno.\\
-%
-%En la tabla \ref{disenoEstructura:equipos} se describen las especificaciones de los equipos que se tienen y que serán utilizados para el diseño, desarrollo e implementación del trabajo.
-%
-%\begin{table}[htbp]
-%	\begin{center}
-%		\begin{tabular}{|c|p{5cm}|p{7cm}|}
-%			\hline
-%			%			\rowcolor{colorSecundario}
-%			%			\color{green}
-%			Cantidad&Equipo&Características\\
-%			\hline
-%			\hline
-%			1 & Sony VAIO Pro SVP132A1CU & \begin{UClist}
-%				\UCli Procesador: Intel® Core i5-4200U CPU $@$ 1.60 GHz x 4
-%				\UCli RAM: 8GB
-%				\UCli Sistema Operativo: Windows 10 64-bit / Zorin OS 64bit
-%				\end{UClist} \\
-%			\hline
-%			1 & Asus VivoBook S510U & \begin{UClist}
-%				\UCli Procesador: Intel® Core i7-8550U CPU $@$ 1.80 GHz x 8
-%				\UCli RAM: 8GB
-%				\UCli Sistema Operativo: Windows 10 64-bit / Zorin OS 64bit
-%			\end{UClist}\\
-%			\hline 
-%			1 & Smartphone Motorola G3 & \begin{UClist}
-%				\UCli Procesador: Snapdragon 410
-%				\UCli RAM: 1GB
-%				\UCli Sistema Operativo: Android 6.0 Mashmallow
-%			\end{UClist}\\
-%			\hline
-%			1 & Smartphone Xiaomi Mi A2 &\begin{UClist}
-%				\UCli Procesador: Snapdragon 660
-%				\UCli RAM: 4GB
-%				\UCli Sistema Operativo: Android 8.1 Oreo con Android One
-%			\end{UClist}\\
-%			\hline
-%		\end{tabular}
-%		\caption{Características del equipo disponible}
-%		\label{disenoEstructura:equipos}
-%	\end{center}
-%\end{table}
-%
-%En la tabla \ref{disenoEstructura:recursosHardware} se listan los recursos de hardware que, según el análisis realizado en el capítulo \ref{chp:analisis} es necesario adquirir para el diseño, desarrollo e implementación del trabajo.\\
-%
-%\begin{table}[htbp]
-%	\begin{center}
-%		\begin{tabular}{|c|p{10cm}|}
-%			\hline
-%			%			\rowcolor{colorSecundario}
-%			%			\color{green}
-%			\thead{Cantidad}&\thead{Recurso}\\
-%			\hline
-%			\hline
-%			1 & Microcontrolador dsPIC30F4013 \\
-%			\hline
-%			1 & Módulo GSM \\
-%			\hline
-%			1 & SIM telefónico para módulo GSM\\
-%			\hline
-%			1 & Sensor de temperatura MAX30205\\
-%			\hline
-%			1 & Sensor de pulso\\
-%			\hline
-%			1 & Programador para microcontrolador\\
-%			\hline
-%			1 & Módulo FT232 \\
-%			\hline
-%		\end{tabular}
-%		\caption{Recursos de hardware necesarios}
-%		\label{disenoEstructura:recursosHardware}
-%	\end{center}
-%\end{table}
-%
-%Como resultado del análisis de factibilidad técnica, se determinó que se cuenta con la infraestructura tecnológica necesaria para el desarrollo del trabajo terminal.
-%
+En la tabla \ref{disenoEstructura:equipos} podemos observar las especificaciones de los equipos los cuales se poseén y que serán utilizados diseño , desarrollo e implementación de la aplicación.
+
+\begin{table}[htbp]
+		\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+			\hline
+				Cantidad&Equipo&Caracteristicas\\
+			\hline
+			\hline
+				1 & HP EliteDesk & \begin{UClist}
+				\UCli Procesador: Intel® Core i5-7500U CPU $@$ 3.40 GHz
+				\UCli RAM: 8GB
+				\UCli Sistema Operativo: Windows 10 Pro 64-bit 
+				\end{UClist} \\
+			\hline
+			\hline
+				1 & Dell Optiplex7010  &\begin{UClist}
+				\UCli Procesador: Intel® Core i7-3770U CPU $@$ 3.40 GHz
+				\UCli RAM: 8GB
+				\UCli Sistema Operativo: Windows 10 Pro 64-bit 
+				\end{UClist} \\
+			\hline
+			\hline
+				1 & Moto E4  &\begin{UClist}
+				\UCli Procesador: Snapdragon 425 de cuatro núcleos (1.4GHz) 
+				\UCli RAM: 2GB
+				\UCli Sistema Operativo: Android Nougat
+				\end{UClist} \\
+			\hline
+			\hline
+				1 & Samsung Galaxy M20  &\begin{UClist}
+				\UCli Procesador: Exynos 7904 a 1,8GHz GPU Mali G71 MP2
+				\UCli RAM: 4GB
+				\UCli Sistema Operativo: Android 8.1 Oreo con Samsung Experience 9.5
+				\end{UClist} \\
+			\hline
+				\end{tabular}
+				\caption{EquipoDisponible}
+				\label{disenoEstructura:equipos}
+				\end{table}
+
+Despues de haber realizado el análisis correspondiente a continuacion se listaran los recurss de hardware que serán utilizados y que a su vez es necesario adquirir para el diseño , desarrollo e implementación del trabajo.\\
+
+\begin{table}[htbp]
+		\begin{tabular}{|p{5cm}|p{7cm}|}
+	\hline
+		Cantidad & Recurso \\
+	\hline
+	\hline
+		1&Arduino\\
+	\hline
+	\hline
+		1&OBD-II \\
+	\hline
+				\end{tabular}
+				\caption{Recurso Hardware}
+				\label{disenoEstructura:rechardware}
+				\end{table}
+Como resultado del analísis de factibilidad tecnica hecho previamente , se ha determinado que la infraestructura tecnológica necesaria para el desarrollo de la aplicación es basta.
+
 %%==============================================ECONÓMICA==================================================
 %\newpage
 \subsection{Factibilidad Económica}
