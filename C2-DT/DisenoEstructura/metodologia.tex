@@ -1,16 +1,34 @@
+% !TeX spellcheck = <none>
 %===============METODOLOGÍA==================
-%\section{Metodología}
-%Para la realización del trabajo terminal se seguirá la metodología descrita por el Modelo en V ya que ofrece una visión detallada de los diversos pasos e interacciones relacionados con el proceso de desarrollo y puede considerarse como un flujo de trabajo comúnmente utilizado. \cite{perez2006V} \\
-%
-%En la Figura \ref{fig:IntroduccionMetodologia} se muestran las principales actividades abordadas por el método. Convencionalmente, el lado izquierdo del modelo representa las fases del diseño del sistema, mientras que el lado derecho representa las fases de validación y verificación del sistema. \\
-%
-%\begin{figure}[htbp!]
-%	\centering
-%	\fbox{\includegraphics[width=\textwidth]{DisenoEstructura/imagenes/metodologiaV.png}}
-%	\caption{Fases del Modelo en V.}
-%	\label{fig:IntroduccionMetodologia}
-%\end{figure}
-%
-%El desarrollo se llevará a cabo de la siguiente manera: \\
-%
-%Partiendo de la \textbf{Especificación de requisitos HW/SW}, se pretende definir y documentar los diferentes requerimientos del sistema a implementar, seguido de un diseño global o \textbf{Diseño de alto nivel} que permitirá obtener una visión general del sistema identificando las funciones que deberá cumplir y asignarlas a los diferentes componentes, ya sea de HW o SW. El \textbf{Diseño en detalle} consiste en detallar cada elemento que consituyen los componentes del sistema global, en donde se pretende especificar el diseño del sistema embebido con los componentes a implementar y de la aplicación móvil, seguida de la \textbf{Implementación} de cada uno de ellos, en donde los módulos de SW son desarrollados e integrados con el HW. En el \textbf{Test unitario} se verificará cada módulo de HW y SW de manera individual, en donde se depurará cada uno de ellos hasta obtener el resultado deseado. En la \textbf{Test de integración HW/SW} se acoplan los diferentes módulos del sistema para verificar su funcionamiento en conjunto y finalmente en el \textbf{Test operacional del sistema} se realizarán las últimas pruebas en un escenario real y así validar si los resultados obtenidos cumplen con los requerimientos. \\
+\section{Metodología}
+Para la realización del trabajo terminal se seguirá la metodología descrita por el Modelo en Cascada El modelo de la cascada, a veces llamado ciclo de vida clásico, sugiere un enfoque sistemático y secuencial para el desarrollo del software, que comienza con la especificación de los requerimientos por parte del cliente y avanza a través de planeación, modelado, construcción y despliegue, para concluir con el apoyo del software terminado. \cite{MetodoCascada} \\
+
+En la Figura \ref{fig:IntroduccionMetodologiaC} se muestran las actividades abordadas por el modelo en Cascada.
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=\textwidth]{DisenoEstructura/imagenes/modelo-en-cascada}}
+	\caption{Fases del Modelo en Cascada}
+	\label{fig:IntroduccionMetodologiaC}
+\end{figure}
+\newpage
+
+El desarrollo se llevará a cabo de la siguiente manera: \\
+
+ \begin{itemize}
+ 	\item \textbf{Comunicación}: En este punto definiremos los requerimientos del sistema. (Protocolo)
+ 	\item \textbf{Planeación}: Con base en los requerimientos se estimará y en caso de necesitar modificaciones en alcance se definirán los nuevos requerimientos.
+ 	\item \textbf{Modelado}: Se modelarán los requerimientos viables con base en la estimación.
+ 	\item \textbf{Construcción}: Se desarrollaran los requerimientos definidos y se realizarán pruebas, es qui donde se plantea la implmentación de SCRUM.
+ 	\item \textbf{Despliegue}: Se entrega el desarrollo con pruebas documentación y mejoras. 
+ \end{itemize}
+
+Además del Modelo en Cascada, este trabajo terminal utilizará SCRUM como marco de referencia para el desarrollo de la aplicación, ya que los principios Scrum son congruentes con el manifiesto ágil y se utilizan para guiar actividades de desarrollo dentro de un proceso de análisis que incorpora las siguientes actividades estructurales: requerimientos, análisis, diseño, evolución y entrega \cite{MetodoCascada}. Como se plantea utilizar cascada hasta el punto de \textbf{modelado}, la implementación de SCRUM será viable ya que por su definición solo tendrá que organizar e implementar el desarrollo con este marco de referencia.
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=\textwidth]{DisenoEstructura/imagenes/SCRUM}}
+	\caption{SCRUM}
+	\label{fig:IntroduccionMetodologiaS}
+\end{figure}
+\newpage

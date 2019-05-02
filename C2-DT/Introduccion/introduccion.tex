@@ -35,7 +35,7 @@ La propuesta comprenderá un dispositivo electrónico comunicado con uno o vario
 \section{Alcance}
 
 
-El presente sistema brindara al usuario una aplicación capaz de notificar de manera inmediata a los cuerpos de auxilio sobre cualquier accidente automovilistico que cuente con la aplicación. Dado que México es uno de los paises con mayor indice de colisiones automovilisticas de bajo , mediano y alto grado , en el peor de los casos puede ocasionar la muerte  debido a la tardada notificación de algun choque automovilisitco por ende el valor agregado sera tomar datos de geolocalización pertenecientes al automovil para mostrar al usuario final  y asi poder realizar una ruta de auxilio mas optima, esto comprende un gran grado de dificultad puesto que involucra el uso de sensores airbag y sensores de accidentes. Para ello se utilizara un circuito con tecnologia de arduino para poder obtener la informacion la cual se ira llenando en un servidor local en el cual estaran gestionadas por la herramienta SQL, de misma forma se definira una aplicación movil Android en la cual se visualizara todos los indicadores.
+El presente sistema brindara al usuario una aplicación móvil capaz de notificar de manera inmediata a los contactos que el usuario registre, esto sobre cualquier evento considerado importante que se llegue a registrar en la aplicación. Dado que México es uno de los paises con mayor indice de colisiones automovilisticas de bajo , mediano y alto grado , en el peor de los casos puede ocasionar la muerte  debido a la tardada notificación de algun choque automovilisitco por ende el valor agregado sera tomar datos de geolocalización pertenecientes al dispositivo móvil.
 
 
 \section{Objetivos}
@@ -44,12 +44,15 @@ Analizar y desarrollar una aplicación móvil que alerte de manera automática y
 %Implementar un sistema embebido que permita el monitoreo remoto de signos vitales de frecuencia cardíaca y temperatura corporal usando IoT.
 \subsection{Objetivos específicos}
 \begin{itemize}
-	\item Disminuir el tiempo de notificación a hospitales y/o autoridades por percances automovilísticos
-	\item Temporizador de alerta SOS para percances automovilísticos de bajo grado
-	\item Gestionar contactos de emergencia que recibirán el llamado SOS
-	\item Ubicar el servicio de emergencia mas cercano a la colisión automovilística
-	\item Confirmar la lectura correspondiente a la alerta SOS enviada a los familiares y/o servicios de emergencia.
-	\item Notificar en tiempo real la ubicación donde ocurrió la colisión automovilística.
+	\item Disminuir el tiempo de notificación a contactos de interes del usaurio.
+%	\item Temporizador de alerta SOS para percances automovilísticos de bajo grado
+	\item Gestionar contactos del usuario que recibirán el llamado SOS.
+%	\item Ubicar el servicio de emergencia mas cercano a la colisión automovilística
+%	\item Confirmar la lectura correspondiente a la alerta SOS enviada a los familiares y/o servicios de emergencia.
+	\item Notificar la ubicación donde ocurrió la colisión automovilística.
+	\item Notificar la información médica del usuario.
+	\item Notificar la infomación de vehículo del usaurio.
+	
 \end{itemize}
 %	\begin{itemize}
 %%		\item Realizar la configuración del sensor de pulso y la adquisición de la señal.
