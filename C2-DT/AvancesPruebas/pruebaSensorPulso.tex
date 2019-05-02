@@ -1,15 +1,91 @@
 %=================AVANCES Y PRUEBAS=================
 % SENSORES DE PULSO
 
-\section{Sensores de pulso}
-Para determinar si los sensores de pulso elegidos funcionarían para el cálculo de la frecuencia cardíaca de un paciente, se realizaron pruebas unitarias con el fin de  visualizar la onda de salida entregada por ambos sensores en un osciloscopio y verificar su funcionamiento.\\
+\section{Sensores del dispositivo Móvil Smartphone}
+Para poder realizar las pruebas del dispositivo móvil, se identificaron los sensores con los que cuentan los dispositivos móviles de la sección de equipo adquirido. en este caso se realizaron pruebas con el Acelerómetro, Giroscopio, GPS.\\
+
+Las pruebas que se realizaron se pudieron realizar gracias a las aplicaciones \textbf{Sensor Kinetis}, \textbf{GPS Status} y \textbf{GPS Test}, mismas en su versión de prueba, bajadas desde la \textbf{Play Store} de Google.
 
 Las pruebas realizadas se dividieron en dos fases, las cuales se describen a continuación.
 
 \begin{itemize}
-	\item \textbf{Obtención de señal analógica:} En esta fase se conectaron los sensores de acuerdo a lo especificado en su hoja de datos. La señal de salida de cada sensor fue visualizada en el osciloscopio.
-	\item \textbf{Digitalización de señal obtenida:} En esta fase de las pruebas se realizó el código en lenguaje ensamblador y c para digitalizar cada una de esas señales con el uso del ADC del microcontrolador.
+	\item \textbf{Obtención información en reposo:} Se realizaron mediciones en un ambiente controlado en reposo total.
+	
+	\item \textbf{Obtención de información en un ambiente controlado considerado normal:} Se realizaron pruebas de movimiento considerado normal para un dispositivo.
+	
+	\item \textbf{Obtención de información en un ambiente controlado considerado anormal:}  Se realizaron pruebas de movimiento considerado anormal para un dispositivo.
+	
+	\item \textbf{Obtención de información en un ambiente controlado considerado muy anormal:}  Se realizaron pruebas de movimiento considerado muy anormal para un dispositivo.
 \end{itemize}
+\newpage
+\subsection{Acelerómetro}
+\subsubsection{Reposo}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{AvancesPruebas/imagenes/Acelerometro/1}}
+	\caption{Acelerómetro}
+	\label{fig:A1}
+\end{figure}
+\newpage
+\subsubsection{Normal}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{AvancesPruebas/imagenes/Acelerometro/2}}
+	\caption{Acelerómetro}
+	\label{fig:A2}
+\end{figure}
+\newpage
+\subsubsection{Anormal}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{AvancesPruebas/imagenes/Acelerometro/3}}
+	\caption{Acelerómetro}
+	\label{fig:A3}
+\end{figure}
+\newpage
+\subsubsection{Muy Anormal}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{AvancesPruebas/imagenes/Acelerometro/4}}
+	\caption{Acelerómetro}
+	\label{fig:A4}
+\end{figure}
+
+
+
+\newpage
+\subsection{Giroscopio}
+\subsubsection{Reposo}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{AvancesPruebas/imagenes/Giroscopio/1}}
+	\caption{Giroscopio}
+	\label{fig:G1}
+\end{figure}
+\newpage
+\subsubsection{Normal}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{AvancesPruebas/imagenes/Giroscopio/2}}
+	\caption{Giroscopio}
+	\label{fig:G2}
+\end{figure}
+\newpage
+\subsubsection{Anormal}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{AvancesPruebas/imagenes/Giroscopio/3}}
+	\caption{Giroscopio}
+	\label{fig:G3}
+\end{figure}
+\newpage
+\subsubsection{Muy Anormal}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.6\textwidth]{AvancesPruebas/imagenes/Giroscopio/4}}
+	\caption{Giroscopio}
+	\label{fig:G4}
+\end{figure}
 
 %\subsection{AD8232}
 %El primer sensor que fue probado fue el AD8232, el cual es de tipo ECG y utiliza tres electrodos que se deben colocar en el brazo izquierdo y derecho, y la pierna derecha.\\

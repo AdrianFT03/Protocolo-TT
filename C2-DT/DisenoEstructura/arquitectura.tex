@@ -1,29 +1,29 @@
-%\newpage
+\newpage
 \section{Arquitectura física del sistema}
-%En la figura \ref{fig:DisenoArquiFisica} se muestra la arquitectura física del sistema, la cual abarca el diseño de la aplicación móvil así como el sistema embebido encargado de realizar las mediciones.\\
-%
-%El diagrama está compuesto por dos módulos, los cuales se describen a continuación:
-%\begin{enumerate}
-%	\item \textbf{Aplicación Móvil:} como su nombre lo indica, se refiere a la aplicación móvil que proporcionará un punto de acceso al usuario para la consulta de las mediciones realizadas por los sensores y procesadas por el microcontrolador en el sistema embebido. 
-%	\item \textbf{Sistema Embebido:} abarca todos los componentes que integran el sistema embebido como tal. En este módulo se realizan las mediciones de temperatura corporal y ritmo cardíaco y se obtienen en el microcontrolador para proceder con la valoración y en caso de encontrar valores anormales en algún signo vital, enviar mediante SMS, la notificación al usuario.
-%\end{enumerate}
-%
-%\begin{figure}[htbp!]
-%	\centering
-%	\fbox{\includegraphics[width=0.9\textwidth]{DisenoEstructura/imagenes/arquifisica.png}}
-%	\caption{Arquitectura física del sistema}
-%	\label{fig:DisenoArquiFisica}
-%\end{figure}
-%\clearpage
+En la figura \ref{fig:DisenoArquiFisica} se muestra la arquitectura física del sistema, la cual abarca el diseño de la aplicación móvil así como el sistema embebido encargado de realizar las mediciones.\\
+
+El diagrama está compuesto por dos módulos, los cuales se describen a continuación:
+\begin{enumerate}
+	\item \textbf{Aplicación Móvil:} como su nombre lo indica, se refiere a la aplicación móvil que proporcionará el envio de notificaciones a los usuarios registrados.
+	\item \textbf{Contactos regisytrados:} Abarca como es que el los usuarios podrán visualizar las notificaciones.
+\end{enumerate}
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.9\textwidth]{DisenoEstructura/imagenes/fisi}}
+	\caption{Arquitectura física del sistema}
+	\label{fig:DisenoArquiFisica}
+\end{figure}
+\clearpage
 
 \section{Arquitectura lógica del sistema}
-%Una vez definidos los componentes que serán utilizados, se definió la arquitectura lógica del sistema mostrada en la figura \ref{fig:DisenoArquiLogica}, especificando la forma en que serán comunicados con el microcontrolador.\\
-%
+Una vez definidos los componentes que serán utilizados, se definió la arquitectura lógica del sistema mostrada en la figura \ref{fig:DisenoArquiLogica}, especificando la forma en que serán comunicados con el la aplicación.\\
+
 %La figura de la arquitectura de divide en tres partes, las cuales especifican la forma de comunicación entre el sistema embebido, la red GSM y la aplicación móvil.\\
-%
-%\begin{figure}[htbp!]
-%	\centering
-%	\fbox{\includegraphics[width=\textwidth]{DisenoEstructura/imagenes/arquitectura.png}}
-%	\caption{Arquitectura lógica del sistema}
-%	\label{fig:DisenoArquiLogica}
-%\end{figure}
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=\textwidth]{DisenoEstructura/imagenes/logic}}
+	\caption{Arquitectura lógica del sistema}
+	\label{fig:DisenoArquiLogica}
+\end{figure}
