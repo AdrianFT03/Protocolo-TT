@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">In-Help</string>
+
+
+    <string name="btnRegistro">REGISTRATE GRATIS</string>
+    <string name="btnRegistroFb">REGISTRATE CON FACEBOOK</string>
+    <string name="btnIniciar">INICIAR SESIÓN</string>
+    <string name="btnSiguiente">SIGUIENTE</string>
+    <string name="btnListo">¡LISTO!</string>
+    <string name="btnEnviar">ENVIAR</string>
+    <string name="btnOmitir"><u>Omitir</u></string>
+    <string name="btnSi">Sí</string>
+    <string name="btnNo">No</string>
+    <string name="btnEntendido">Entendido</string>
+
+
+    <string name="Usuario"><b>Correo electrónico o nombre de usuario</b></string>
+    <string name="Contrsenia"><b>Contraseña</b></string>
+    <string name="CorreoElectronico"><b>¿Cuál es tu correo electrónico?</b></string>
+    <string name="RegisContrsenia"><b>Elige una contraseña</b></string>
+    <string name="ConfirContrsenia"><b>Confirma contraseña</b></string>
+    <string name="FechaDeNAcimiento"><b>¿Cuál es tu fecha de nacimiento?</b></string>
+    <string name="Genero"><b>¿Con qué género te sientes identificado?</b></string>
+    <string name="SeguridadMedica"><b>¿Tienes seguridad médica?</b></string>
+    <string name="SeguridadSocial"><b>No. seguridad social</b></string>
+    <string name="TipoDeSangre"><b>¿Cocnoces tu tipo de sangre?</b></string>
+    <string name="GrupoSanguineo"><b>Grupo sanguineo</b></string>
+    <string name="Enfermedad"><b>¿Padeces una enfermedad crónica?</b></string>
+    <string name="EnfermedadTipo"><b>Enfermedad</b></string>
+    <string name="ChoferAcompa"><b>¿Eres chofer o acompañante?</b></string>
+    <string name="AseguradoraPregunta"><b>¿Tines Aseguradora?</b></string>
+    <string name="NoPoliza"><b>No. Póliza vigente</b></string>
+    <string name="VigenciaPoliza"><b>¿Cuál es la vigencia de la póliza?</b></string>
+    <string name="MasDetalles"><b>¿Quieres darnos mas detalles?</b></string>
+    <string name="NPlacas">Placas</string>}
+    <string name="Color">Color</string>
+
+
+    <string name="InputUsuario">Usuario</string>
+    <string name="InputContasenia">Contraseña</string>
+
+
+    <string name="IUA1_1Login">Iniciar Sesión</string>
+    <string name="IUA1_2Registro_de_Cuenta">Crear Cuenta</string>
+    <string name="IUA1_3Recuperar_Cuenta">Recuperar Cuenta</string>
+    <string name="IUA1_4Cambiar_Contraseña">Cambiar Contraseña</string>
+    <string name="IUA1_5Finalizar_Registro">Finalizar Registro</string>
+    <string name="IUA1_6RegistroFinalizado">Registro Finalizado</string>
+    <string name="IUA1_7Registro_de_Contactos">Registro de Contactos</string>
+    <string name="IUGC1Gestionar_Contactos">Gestión de Contactos</string>
+    <string name="IUGV1Gestion_de_Vehiculos">Gestión de Vehículos</string>
+    <string name="IUGCV1_2Registrar_Vehiculos">Registrar Vehículo</string>
+
+
+    <string name="RecuperaContrasenia">¿Tienes problemas para iniciar sesión?</string>
+    <string name="AyudaContrasenia"><b>Aquí te podemos ayudar.</b></string>
+    <string name="FormatoContrasenia">Debete tener al menos 8 caracteres incluyendo un número</string>
+    <string name="TerminosCondiciones">Al crear una cuenta, estás aceptando los <b>Términos y condiocnes de Uso</b> de In-Help</string>
+    <string name="PoliticaPrivacidad">Para obtener más información siblre la manera que In-Help recopila, utiliza, comparte y protege tus datos personales, consulta la <b>Politica de Privacidad</b> de In-Help</string>
+    <string name="AyudaRecuperarContra">Ingresa tu nombre de usuario de In-Help o la dirección de correo que usasste para crear tu cuenta. Te enviaremos un correo con tu contraseña</string>
+    <string name="MasAyuda">¿Todavía necesitas mas ayuda? <b>¡Te podemos ayudar!</b></string>
+    <string name="CondoContrasenia">Lamentamos que tengas que cambiar tu contraseña, esto es por medidas de seguridad.</string>
+    <string name="PreguntasRapidas">Tenemos unas preguntas rapidas para ti.</string>
+    <string name="RegistraContactos">¡Registra Contactos de Emergencia!</string>
+    <string name="ImportanciaRegistrar">Recuerda que este es el paso mas importante, estos contactos servirán para notificarles si desafortundamente tienes un percanse.</string>
+    <string name="Felicidades"><b>¡Felicidades!</b></string>
+    <string name="FelicidadesText">¡Tu registro ha sido finalizado con éxito! Recuerda que podrás actualizar la información accediendo a tu perfil desde el menú principal.</string>
+    <string name="TodoBien">¿Todo bien <b>Adrian</b>?</string>
+    <string name="inicio">Inicio</string>
+    <string name="Contactos">Contactos</string>
+    <string name="Home">Home</string>
+    <string name="Vehiculos">Vehículos</string>
+    <string name="Registrados">Registrados</string>
+    <string name="Agregar">Agregar</string>
+    <string name="ContactosMensaje">¡Recuerda siempre tener actualizados tus contactos!</string>
+    <string name="VehiculosMensahe">¡Recuerda siempre tener actualizados tus vehículos!</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="Placas">
+        <item>329-YFA</item>
+        <item>200-XYC</item>
+        <item>ABC-123</item>
+    </string-array>
+</resources>
