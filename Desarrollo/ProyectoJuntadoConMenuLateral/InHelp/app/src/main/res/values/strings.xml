@@ -1,0 +1,165 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name">In-Help</string>
+    <string name="Correos">alealdhair95@gmail.com</string>
+    <string name="navigator_menuprincipal">Menú Principal</string>
+
+    <string name="Titulo_DatosPerso">Datos Personales</string>
+    <string name="btnRegistro">REGISTRATE GRATIS</string>
+    <string name="btnRegistroFb">REGISTRATE CON FACEBOOK</string>
+    <string name="btnIniciar">INICIAR SESIÓN</string>
+    <string name="btnSiguiente">SIGUIENTE</string>
+    <string name="btnListo">¡LISTO!</string>
+    <string name="btnEnviar">ENVIAR</string>
+    <string name="btnOmitir"><u>Omitir</u></string>
+    <string name="btnSi">Sí</string>
+    <string name="btnNo">No</string>
+    <string name="btnEntendido">Entendido</string>
+
+
+    <string name="Usuario"><b>Correo electrónico o nombre de usuario</b></string>
+    <string name="Contrsenia"><b>Contraseña</b></string>
+    <string name="CorreoElectronico"><b>¿Cuál es tu correo electrónico?</b></string>
+    <string name="RegisContrsenia"><b>Elige una contraseña</b></string>
+    <string name="ConfirContrsenia"><b>Confirma contraseña</b></string>
+    <string name="FechaDeNAcimiento"><b>¿Cuál es tu fecha de nacimiento?</b></string>
+    <string name="Genero"><b>¿Con qué género te sientes identificado?</b></string>
+    <string name="SeguridadMedica"><b>¿Tienes seguridad médica?</b></string>
+    <string name="SeguridadSocial"><b>No. seguridad social</b></string>
+    <string name="TipoDeSangre"><b>¿Cocnoces tu tipo de sangre?</b></string>
+    <string name="GrupoSanguineo"><b>Grupo sanguineo</b></string>
+    <string name="Enfermedad"><b>¿Padeces una enfermedad crónica?</b></string>
+    <string name="EnfermedadTipo"><b>Enfermedad</b></string>
+    <string name="ChoferAcompa"><b>¿Eres chofer o acompañante?</b></string>
+    <string name="AseguradoraPregunta"><b>¿Tines Aseguradora?</b></string>
+    <string name="NoPoliza"><b>No. Póliza vigente</b></string>
+    <string name="VigenciaPoliza"><b>¿Cuál es la vigencia de la póliza?</b></string>
+    <string name="MasDetalles"><b>¿Quieres darnos mas detalles?</b></string>
+    <string name="NPlacas">Placas</string>}
+    <string name="Color">Color</string>
+
+
+    <string name="InputUsuario">Usuario</string>
+    <string name="InputContasenia">Contraseña</string>
+
+
+    <string name="IUA1_1Login">Iniciar Sesión</string>
+    <string name="IUA1_2Registro_de_Cuenta">Crear Cuenta</string>
+    <string name="IUA1_3Recuperar_Cuenta">Recuperar Cuenta</string>
+    <string name="IUA1_4Cambiar_Contraseña">Cambiar Contraseña</string>
+    <string name="IUA1_5Finalizar_Registro">Finalizar Registro</string>
+    <string name="IUA1_6RegistroFinalizado">Registro Finalizado</string>
+    <string name="IUA1_7Registro_de_Contactos">Registro de Contactos</string>
+    <string name="IUGC1Gestionar_Contactos">Gestión de Contactos</string>
+    <string name="IUGV1Gestion_de_Vehiculos">Gestión de Vehículos</string>
+    <string name="IUGCV1_2Registrar_Vehiculos">Registrar Vehículo</string>
+
+
+    <string name="RecuperaContrasenia">¿Tienes problemas para iniciar sesión?</string>
+    <string name="AyudaContrasenia"><b>Aquí te podemos ayudar.</b></string>
+    <string name="FormatoContrasenia">Debete tener al menos 8 caracteres incluyendo un número</string>
+    <string name="TerminosCondiciones">Al crear una cuenta, estás aceptando los <b>Términos y condiocnes de Uso</b> de In-Help</string>
+    <string name="PoliticaPrivacidad">Para obtener más información siblre la manera que In-Help recopila, utiliza, comparte y protege tus datos personales, consulta la <b>Politica de Privacidad</b> de In-Help</string>
+    <string name="AyudaRecuperarContra">Ingresa tu nombre de usuario de In-Help o la dirección de correo que usasste para crear tu cuenta. Te enviaremos un correo con tu contraseña</string>
+    <string name="MasAyuda">¿Todavía necesitas mas ayuda? <b>¡Te podemos ayudar!</b></string>
+    <string name="CondoContrasenia">Lamentamos que tengas que cambiar tu contraseña, esto es por medidas de seguridad.</string>
+    <string name="PreguntasRapidas">Tenemos unas preguntas rapidas para ti.</string>
+    <string name="RegistraContactos">¡Registra Contactos de Emergencia!</string>
+    <string name="ImportanciaRegistrar">Recuerda que este es el paso mas importante, estos contactos servirán para notificarles si desafortundamente tienes un percanse.</string>
+    <string name="Felicidades"><b>¡Felicidades!</b></string>
+    <string name="FelicidadesText">¡Tu registro ha sido finalizado con éxito! Recuerda que podrás actualizar la información accediendo a tu perfil desde el menú principal.</string>
+    <string name="TodoBien">¿Todo bien <b>Adrian</b>?</string>
+    <string name="inicio">Inicio</string>
+    <string name="Contactos">Contactos</string>
+    <string name="Home">Home</string>
+    <string name="Vehiculos">Vehículos</string>
+    <string name="Registrados">Registrados</string>
+    <string name="Agregar">Agregar</string>
+    <string name="ContactosMensaje">¡Recuerda siempre tener actualizados tus contactos!</string>
+    <string name="VehiculosMensahe">¡Recuerda siempre tener actualizados tus vehículos!</string>
+
+    <string name="app_name1">MenuPrincipal</string>
+    <string name="Usuario1">Aldhair Jimenez</string>
+    <string name="Placas">Lys-6061</string>
+    <string name="txt_Notificaciones">¡Notificaciones!</string>
+    <string name="txt_config_not">Configurar Notificaciones</string>
+    <string name="txt_Dat_per">Datos Personales</string>
+    <string name="txt_Cuenta">Cuenta</string>
+    <string name="txt_Datos_Medicos">Datos Medicos</string>
+    <string name="Titulo_GestNot">Gestión de Notificaciones</string>
+    <string name="Fecha_Hora">Fecha y hora</string>
+    <string name="txt_Personales">Personales</string>
+    <string name="txt_Contactos">Contactos</string>
+    <string name="btn_Regresar">Regresar</string>
+    <string name="Titulo_InfoNot">Información de Notificación</string>
+    <string name="txt_TipoDeEvento">Tipo de evento: </string>
+    <string name="txt_FechaEvento">Fecha de evento: </string>
+    <string name="txt_FechaNot">Fecha de Notificación: </string>
+    <string name="txt_Ubicacion">Ubicación: </string>
+    <string name="Gravedad_evento">Alta</string>
+    <string name="UbicacionTR">Nicolas Romero</string>
+    <string name="Titulo_InfGral">Información General</string>
+    <string name="txt_NomAseg">Nombre de la aseguradora: </string>
+    <string name="txt_NumTel">Numero de telefono: </string>
+    <string name="txt_NoPoliza">No.Poliza: </string>
+    <string name="txt_FecVig">Fecha de vigencia</string>
+    <string name="Aseguradora">Bancomer Seguros</string>
+    <string name="TelefonoAsegu">5544559008</string>
+    <string name="NumPoliza">1234567890</string>
+    <string name="txt_GPS">GPS: </string>
+    <string name="txt_Velo">Velocidad: </string>
+    <string name="txt_temp">Temperatura: </string>
+    <string name="txt_Giros">Giroscopio: </string>
+    <string name="Velocidad">30 km/h</string>
+    <string name="Temperatura">33 C</string>
+    <string name="Giroscopio">152:152:120</string>
+    <string name="Titulo_ConfigNot">Configurar Notificaciones</string>
+    <string name="Contacto">Alejandro Jimenez</string>
+    <string name="Contacto2">Rocio De Jesus</string>
+    <string name="Paux1">Cruz Roja</string>
+    <string name="Paux2">Bomberos</string>
+    <string name="Paux3">Ambulancia Particular</string>
+    <string name="Btn_Listo">¡Listo!</string>
+    <string name="Nota_config">Nota:Recuerda que en el aviso de privacidad
+    Encontraras a detalle que informacion es la que estas autorizando</string>
+    <string name="Reg_Contacto">Registrar Contacto</string>
+    <string name="txt_nombre">Nombre : </string>
+    <string name="txt_numtel">Numero de telefono : </string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="txt_Emergencia">Emergencia</string>
+    <string name="txt_Asegura">Aseguradora</string>
+    <string name="txt_person">Familiar</string>
+    <string name="Hint_Nombre">Escribe el nombre</string>
+    <string name="Hint_Tel">Escribe el Telefono</string>
+    <string name="txt_nom_asegu">Nombre de la aseguradora: </string>
+    <string name="txt_No.Poliza">No.Poliza : </string>
+    <string name="Hint_No._Pol">Escribe el No. Poliza</string>
+    <string name="txt_Fecha_vig">Fecha de Vigencia : </string>
+    <string name="hint_Fecha_vig">Fecha de Vigencia </string>
+    <string name="txt_Parentezco">Parentezco : </string>
+    <string name="hint_parentezco">Hermano/a,Padre/Madre,Otro.</string>
+
+
+    <string-array name="Placas">
+        <item>329-YFA</item>
+        <item>200-XYC</item>
+        <item>ABC-123</item>
+    </string-array>
+    <string name="title_activity_menu_lateral">Menu Lateral</string>
+</resources>
