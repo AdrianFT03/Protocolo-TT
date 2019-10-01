@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MSG1">El teléfono debe tener 10 dígitos</string>
+</resources>

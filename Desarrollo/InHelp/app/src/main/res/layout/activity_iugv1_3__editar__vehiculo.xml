@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,50 +13,41 @@
 
         <!-- TextView and other stuff -->
 
+
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".ui.IUA1_5_FinalizarRegistro">
+            tools:context=".ui.IUA1_5A_Finalizar_Registro">
+
 
             <TextView
-                android:id="@+id/textView25"
+                android:id="@+id/textView33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="10dp"
-                android:text="@string/IUA1_5Finalizar_Registro"
+                android:text="@string/IUGCV1_3Editar_Vehiculo"
                 android:textSize="35sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView26"
+                android:id="@+id/textView35"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
-                android:text="@string/PreguntasRapidas"
+                android:text="@string/MasDetalles"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView25" />
-
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginEnd="20dp"
-                android:text="@string/SeguridadMedica"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+                app:layout_constraintTop_toBottomOf="@+id/editText13" />
 
             <RadioGroup
-                android:id="@+id/radioGroup"
+                android:id="@+id/radioGroup4"
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="20dp"
@@ -63,234 +55,173 @@
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView27">
+                app:layout_constraintTop_toBottomOf="@+id/textView35">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
-                    android:layout_width="81dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/btnSi"
-                    android:onClick="RadioSiSeguridad"
-                    />
-
-                <RadioButton
-                    android:id="@+id/radioButton2"
-                    android:layout_width="168dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:checked="false"
-                    android:onClick="RadioNoSeguridad"
-                    android:selectAllOnFocus="false"
-                    android:text="@string/btnNo" />
-            </RadioGroup>
-
-
-            <TextView
-                android:id="@+id/textView28"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
-                android:text="@string/TipoDeSangre"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText15" />
-
-            <RadioGroup
-                android:id="@+id/radioGroup2"
-                android:layout_width="0dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView28">
-
-                <RadioButton
-                    android:id="@+id/radioButton4"
-                    android:layout_width="64dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/btnSi"
-                    android:onClick="RadioSiSangre"/>
-
-                <RadioButton
-                    android:id="@+id/radioButton9"
-                    android:layout_width="64dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:checked="false"
-                    android:onClick="RadioNoSangre"
-                    android:text="@string/btnNo" />
-
-            </RadioGroup>
-
-            <Spinner
-                android:id="@+id/TipoSangre"
-                android:layout_width="0dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView29"
-                android:visibility="gone"/>
-
-            <TextView
-                android:id="@+id/textView29"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="8dp"
-                android:text="@string/GrupoSanguineo"
-                app:layout_constraintBottom_toTopOf="@+id/TipoSangre"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
-                android:visibility="gone"/>
-
-            <RadioGroup
-                android:id="@+id/radioGroup3"
-                android:layout_width="0dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView32">
-
-                <RadioButton
-                    android:id="@+id/radioButton6"
+                    android:id="@+id/radioButton8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/btnSi"
-                    android:onClick="RadioSiEnferme"/>
+                    android:textIsSelectable="true"
+                    android:checked="true"/>
 
                 <RadioButton
-                    android:id="@+id/radioButton7"
+                    android:id="@+id/radioButton3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:checked="false"
-                    android:onClick="RadioNoEnferme"
-                    android:selectAllOnFocus="false"
                     android:text="@string/btnNo" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/textView30"
+                android:id="@+id/textView36"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
-                android:text="@string/EnfermedadTipo"
+                android:text="@string/AseguradoraPregunta"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
-                android:visibility="gone"/>
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView36">
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:selectAllOnFocus="true"
+                    android:text="@string/btnSi"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/btnNo" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/NoPoliza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
 
             <EditText
-                android:id="@+id/editText12"
+                android:id="@+id/editText8"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
-                android:maxLength="20"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:text="258484665444"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView30"
-                android:visibility="gone"/>
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/VigenciaPoliza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText8" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:inputType="date"
+                android:text="20/12/2020"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/button10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
-                android:onClick="GoFinalizarRegistroA"
-                android:text="@string/btnSiguiente"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText12" />
-
-            <TextView
-                android:id="@+id/textView31"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="40dp"
-                android:onClick="GoFinalizarRegistroA"
-                android:text="@string/btnOmitir"
-                android:textSize="10sp"
+                android:layout_marginBottom="50dp"
+                android:onClick="GoVehiculosReg"
+                android:text="@string/btnListo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button9" />
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="74dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView33"
+                app:srcCompat="@mipmap/coche" />
 
             <TextView
-                android:id="@+id/textView32"
+                android:id="@+id/textView53"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
-                android:text="@string/Enfermedad"
+                android:text="@string/NPlacas"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/TipoSangre" />
-
-            <TextView
-                android:id="@+id/textView47"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
-                android:text="@string/SeguridadSocial"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-                android:visibility="gone"
-
-                />
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
             <EditText
-                android:id="@+id/editText15"
+                android:id="@+id/editText13"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
+                android:autoText="false"
                 android:ems="10"
-                android:maxLength="11"
-                android:inputType="number"
+                android:inputType="textPersonName"
+                android:text="329-YFA"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView47"
-                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/textView53" />
 
-                />
 
         </android.support.constraint.ConstraintLayout>
+
 
     </LinearLayout>
 </ScrollView>

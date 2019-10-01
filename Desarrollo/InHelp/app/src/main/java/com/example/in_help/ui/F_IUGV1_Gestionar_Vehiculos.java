@@ -32,7 +32,7 @@ public class F_IUGV1_Gestionar_Vehiculos extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    ImageButton  registro;
+    ImageButton  registro, registrados;
     View vista;
 
     private OnFragmentInteractionListener mListener;
@@ -84,6 +84,15 @@ public class F_IUGV1_Gestionar_Vehiculos extends Fragment {
             }
         });
 
+        registrados = vista.findViewById(R.id.imageButtonVehiculosReg);
+
+        registrados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GoVehiculosRegistrados(v);
+            }
+        });
+
         return vista;
     }
 
@@ -128,9 +137,16 @@ public class F_IUGV1_Gestionar_Vehiculos extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
+   
+
     public void GoRegistroVehiculo(View view){
         Intent GoRegistroVehiculo = new Intent(getContext(), IUGV1_2_Registrar_Vehiculo.class);
         startActivity(GoRegistroVehiculo);
+    }
+
+    public void GoVehiculosRegistrados(View view){
+        Intent GoVehiculosRegistrados = new Intent(getContext(), IUGCV1_1_Vehiculos_Registrados.class);
+        startActivity(GoVehiculosRegistrados);
     }
 
 

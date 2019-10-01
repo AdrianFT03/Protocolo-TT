@@ -15,16 +15,20 @@
 
 
     <string name="Usuario"><b>Correo electrónico o nombre de usuario</b></string>
+    <string name="telefono"><b>¿Cuál es tu número de teléfono?</b></string>
     <string name="Contrsenia"><b>Contraseña</b></string>
     <string name="CorreoElectronico"><b>¿Cuál es tu correo electrónico?</b></string>
     <string name="RegisContrsenia"><b>Elige una contraseña</b></string>
     <string name="ConfirContrsenia"><b>Confirma contraseña</b></string>
+    <string name="Nombre">Nombre</string>
+    <string name="PrimerApp">Primer apellido</string>
+    <string name="SegundoApp">Segundo apellido</string>
     <string name="FechaDeNAcimiento"><b>¿Cuál es tu fecha de nacimiento?</b></string>
     <string name="Genero"><b>¿Con qué género te sientes identificado?</b></string>
     <string name="SeguridadMedica"><b>¿Tienes seguridad médica?</b></string>
     <string name="SeguridadSocial"><b>No. seguridad social</b></string>
-    <string name="TipoDeSangre"><b>¿Cocnoces tu tipo de sangre?</b></string>
-    <string name="GrupoSanguineo"><b>Grupo sanguineo</b></string>
+    <string name="TipoDeSangre"><b>¿Conoces tu tipo de sangre?</b></string>
+    <string name="GrupoSanguineo"><b>Grupo sanguíneo</b></string>
     <string name="Enfermedad"><b>¿Padeces una enfermedad crónica?</b></string>
     <string name="EnfermedadTipo"><b>Enfermedad</b></string>
     <string name="ChoferAcompa"><b>¿Eres chofer o acompañante?</b></string>
@@ -50,6 +54,8 @@
     <string name="IUGC1Gestionar_Contactos">Gestión de Contactos</string>
     <string name="IUGV1Gestion_de_Vehiculos">Gestión de Vehículos</string>
     <string name="IUGCV1_2Registrar_Vehiculos">Registrar Vehículo</string>
+    <string name="IUGCV1_1Vehiculos_Registrados">Vehículos Registrados</string>
+    <string name="IUGCV1_3Editar_Vehiculo">Editar Vehículo</string>
 
 
     <string name="RecuperaContrasenia">¿Tienes problemas para iniciar sesión?</string>
@@ -74,6 +80,11 @@
     <string name="Agregar">Agregar</string>
     <string name="ContactosMensaje">¡Recuerda siempre tener actualizados tus contactos!</string>
     <string name="VehiculosMensahe">¡Recuerda siempre tener actualizados tus vehículos!</string>
+
+
+    <string name="V1_R1">Corsa / 329-YFA</string>
+    <string name="V1_R2">Jetta / 200-Y879</string>
+    <string name="V1_R3">Mazda / Y300-N12</string>
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -18,13 +18,10 @@ public class IUA1_5B_Finalizar_Registro extends AppCompatActivity {
         setupActionBar();
     }
 
-    public void GoRegistroFinalizado(View view){
-        Intent GoRegistroFinalizado = new Intent(this, IUA1_6_Registro_Finalizado.class);
-        startActivity(GoRegistroFinalizado);
-    }
+
 
     public void GoRegistroContactos(View view){
-        Intent GoRegistroContactos = new Intent(this, IUA1_7_Registro_de_Contactos.class);
+        Intent GoRegistroContactos = new Intent(this, IUPP1A_Pantalla_Principal.class);
         startActivity(GoRegistroContactos);
     }
 

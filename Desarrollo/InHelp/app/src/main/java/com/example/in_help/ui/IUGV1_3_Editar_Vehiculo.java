@@ -5,34 +5,30 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.in_help.R;
 
-public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
-
-
+public class IUGV1_3_Editar_Vehiculo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_iugv1_2__registrar__vehiculo);
-
+        setContentView(R.layout.activity_iugv1_3__editar__vehiculo);
         setupActionBar();
     }
 
-    public void GoRegistroVehiculos(View view){
-        Intent GoRegistroVehiculos = new Intent(this, IUPP1A_Pantalla_Principal.class);
-        startActivity(GoRegistroVehiculos);
-        Toast t = Toast.makeText(this,"Vehículo registrado exitosamente", Toast.LENGTH_SHORT);
-        t.show();
-    }
     private void setupActionBar(){
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null)
         {
-            actionBar.setDisplayHomeAsUpEnabled(true);
+            //actionBar.setDisplayHomeAsUpEnabled(true);
+
             actionBar.setTitle("");
         }
+    }
+
+    public void GoVehiculosReg(View view){
+        Intent GoEditar = new Intent(this, IUGCV1_1_Vehiculos_Registrados.class);
+        startActivity(GoEditar);
     }
 }

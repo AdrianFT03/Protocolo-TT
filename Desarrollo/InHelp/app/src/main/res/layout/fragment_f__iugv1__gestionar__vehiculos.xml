@@ -31,7 +31,7 @@
         app:srcCompat="@mipmap/add" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/imageButtonVehiculosReg"
         android:layout_width="126dp"
         android:layout_height="139dp"
         android:layout_marginStart="70dp"
@@ -48,7 +48,7 @@
         android:layout_marginStart="96dp"
         android:text="@string/Registrados"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonVehiculosReg" />
 
     <TextView
         android:id="@+id/textView51"
