@@ -28,5 +28,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(GoRegistro);
     }
 
+    public void GoDatos(View view){
+        Intent GoDatos = new Intent(this, IUDP1_Datos_Personales.class);
+        startActivity(GoDatos);
+    }
+    public void GoDatosCuenta(View view){
+        Intent GoDatosCuenta = new Intent(this, IUDP2_Datos_de_la_Cuenta.class);
+        startActivity(GoDatosCuenta);
+    }
+
+
 
 }

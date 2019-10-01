@@ -20,9 +20,11 @@
     <string name="CorreoElectronico"><b>¿Cuál es tu correo electrónico?</b></string>
     <string name="RegisContrsenia"><b>Elige una contraseña</b></string>
     <string name="ConfirContrsenia"><b>Confirma contraseña</b></string>
-    <string name="Nombre">Nombre</string>
-    <string name="PrimerApp">Primer apellido</string>
-    <string name="SegundoApp">Segundo apellido</string>
+    <string name="Nombre"><b>Nombre :</b></string>
+    <string name="PrimerApp"><b>Primer apellido :</b></string>
+    <string name="SegundoApp"><b>Segundo apellido :</b></string>
+    <string name="fh_nacimiento"><b>Fecha de nacimiento :</b></string>
+    <string name="sexo"><b>Sexo :</b></string>
     <string name="FechaDeNAcimiento"><b>¿Cuál es tu fecha de nacimiento?</b></string>
     <string name="Genero"><b>¿Con qué género te sientes identificado?</b></string>
     <string name="SeguridadMedica"><b>¿Tienes seguridad médica?</b></string>
@@ -36,8 +38,14 @@
     <string name="NoPoliza"><b>No. Póliza vigente</b></string>
     <string name="VigenciaPoliza"><b>¿Cuál es la vigencia de la póliza?</b></string>
     <string name="MasDetalles"><b>¿Quieres darnos mas detalles?</b></string>
-    <string name="NPlacas">Placas</string>}
+    <string name="NPlacas">Placas</string>
     <string name="Color">Color</string>
+    <string name="txt_Correo">Correo electrónico:</string>
+    <string name="txt_SegMed">Seguridad médica:</string>
+    <string name="txt_Tipo_De_Sangre">Tipo de sangre:</string>
+    <string name="txt_Enfermedad_Cronica">Enfermedad crónica:</string>
+    <string name="txt_EditInfo">Editar información</string>
+
 
 
     <string name="InputUsuario">Usuario</string>
@@ -56,7 +64,9 @@
     <string name="IUGCV1_2Registrar_Vehiculos">Registrar Vehículo</string>
     <string name="IUGCV1_1Vehiculos_Registrados">Vehículos Registrados</string>
     <string name="IUGCV1_3Editar_Vehiculo">Editar Vehículo</string>
-
+    <string name="IUDP1_Datos_Personales">Datos Personales</string>
+    <string name="IUDP2_Datos_de_la_cuenta">Datos del Usuario</string>
+    <string name="IUDM1_Datos_de_Medicos">Datos Médicos</string>
 
     <string name="RecuperaContrasenia">¿Tienes problemas para iniciar sesión?</string>
     <string name="AyudaContrasenia"><b>Aquí te podemos ayudar.</b></string>

@@ -6,7 +6,6 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
-import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
@@ -48,5 +47,12 @@ public interface APIServer {
     Call<List<LoginRequest>> ObtenerPass(@Path("tx_login") String tx_login
     );
 
+    @GET("/GetPersona/{id_persona}")
+    Call<List<PersonaRequest>> ObtenerinfoPersona (@Path("id_persona") Integer id_persona
+    );
+
+    @GET("/GetDatosCuenta/{id_usuario}")
+    Call<List<DatosCuentaRequest>> ObtenerinfoDatosCuenta (@Path("id_usuario") Integer id_usuario
+    );
 
 }

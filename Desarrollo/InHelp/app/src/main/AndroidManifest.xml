@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.IUDP2_Datos_de_la_Cuenta"></activity>
+        <activity android:name=".ui.IUDM1_Datos_Medicos"></activity>
+        <activity android:name=".ui.IUDP2_Datos_de_la_Cuenta" />
         <activity android:name=".ui.IUDP1_Datos_Personales" />
         <activity android:name=".ui.IUGV1_3_Editar_Vehiculo" />
         <activity android:name=".ui.IUGCV1_1_Vehiculos_Registrados" />
