@@ -55,4 +55,16 @@ public interface APIServer {
     Call<List<DatosCuentaRequest>> ObtenerinfoDatosCuenta (@Path("id_usuario") Integer id_usuario
     );
 
+    @GET("/GetNSS/{id_usuario}")
+    Call<List<NSSRequest>> ObtenerNSS (@Path("id_usuario") Integer id_usuario
+    );
+
+    @GET("/GetSangreTipo/{id_usuario}")
+    Call<List<TipoSangreRequest>> ObtenerTipoDeSangre (@Path("id_usuario") Integer id_usuario
+    );
+
+    @GET("/GetEnfermedadCronica/{id_usuario}")
+    Call<List<EnfermedadCronicaRequest>> ObtenerEnfermedadCronica (@Path("id_usuario") Integer id_usuario
+    );
+
 }
