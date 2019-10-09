@@ -47,7 +47,6 @@
     <string name="txt_EditInfo">Editar información</string>
 
 
-
     <string name="InputUsuario">Usuario</string>
     <string name="InputContasenia">Contraseña</string>
 
@@ -67,6 +66,7 @@
     <string name="IUDP1_Datos_Personales">Datos Personales</string>
     <string name="IUDP2_Datos_de_la_cuenta">Datos del Usuario</string>
     <string name="IUDM1_Datos_de_Medicos">Datos Médicos</string>
+    <string name="IUGN5_Configurar_Notificaciones">Configurar Notificaciones</string>
 
     <string name="RecuperaContrasenia">¿Tienes problemas para iniciar sesión?</string>
     <string name="AyudaContrasenia"><b>Aquí te podemos ayudar.</b></string>
@@ -90,6 +90,7 @@
     <string name="Agregar">Agregar</string>
     <string name="ContactosMensaje">¡Recuerda siempre tener actualizados tus contactos!</string>
     <string name="VehiculosMensahe">¡Recuerda siempre tener actualizados tus vehículos!</string>
+    <string name="AvisoConfNot">Nota: Recuerda que en el <b>aviso de privacidad</b> encontrarás a detalle que información es la que estas autorizando</string>
 
 
     <string name="V1_R1">Corsa / 329-YFA</string>

@@ -61,7 +61,7 @@ public class IUA1_1_Login extends AppCompatActivity {
                 }
 
                 if(Password.length()==0){
-                    Email.setError("Campo obligatorio");
+                    Password.setError("Campo obligatorio");
                     info = 0;
                 }else if(Password.length() < 8){
                     Password.setError("La contraseña debe tener al menos 8 caracteres");

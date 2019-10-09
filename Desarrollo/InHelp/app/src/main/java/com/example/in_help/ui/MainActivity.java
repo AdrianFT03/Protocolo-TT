@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void GoDatos(View view){
-        Intent GoDatos = new Intent(this, IUDP1_Datos_Personales.class);
+        Intent GoDatos = new Intent(this, IUGN5_Configurar_Notificaciones.class);
         startActivity(GoDatos);
     }
     public void GoDatosCuenta(View view){

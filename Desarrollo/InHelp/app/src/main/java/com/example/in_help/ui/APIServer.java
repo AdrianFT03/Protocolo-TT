@@ -55,4 +55,17 @@ public interface APIServer {
     Call<List<DatosCuentaRequest>> ObtenerinfoDatosCuenta (@Path("id_usuario") Integer id_usuario
     );
 
+    @GET("/GetVehiculos/{id_usuario}")
+    Call<List<DatosVehiculo_IUGN5>> ObtenerVehiculos (@Path("id_usuario") Integer id_usuario
+    );
+
+    @GET("/GetContactosConf/{id_usuario}&{id_vehiculo}")
+    Call<List<DatosContactos_IUGN6>> ObtenerContactos(@Path("id_usuario") Integer id_usuario,  @Path("id_vehiculo") Integer id_vehiculo);
+
+    @PUT("/UpdateStatusEnvio/{id_estado}&{id_configuracion}")
+    Call<Response> UpdateStatusEnvio(@Path("id_estado") Integer id_estado, @Path("id_configuracion") Integer id_configuracion);
+
+    @GET("/GetPermisosConf/{id_configuracion}")
+    Call<List<DatosPermiso_IGN6A>> ObtenerPermisos(@Path("id_configuracion") Integer id_configuracion);
+
 }
