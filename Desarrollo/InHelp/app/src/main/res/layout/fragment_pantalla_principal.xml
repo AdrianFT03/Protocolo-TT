@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.IUPP1A_Pantalla_Principal">
+    tools:context=".ui.Fragment_PP">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.Fragment_PP">
 
 
 
+            <TextView
+                android:id="@+id/textView4900"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/TodoBien"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+            <ImageView
         android:id="@+id/imageView300"
         android:layout_width="279dp"
         android:layout_height="271dp"
@@ -23,21 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4900"
         app:srcCompat="@mipmap/alarma1" />
 
-    <TextView
-        android:id="@+id/textView4900"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="30dp"
-        android:text="@string/TodoBien"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
+            <ImageView
         android:id="@+id/imageView400"
         android:layout_width="69dp"
         android:layout_height="69dp"
@@ -60,12 +62,11 @@
         app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView400" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@id/ContyenedorPP"></FrameLayout>
 
-
-</android.support.constraint.ConstraintLayout>
-
-
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,17 +1,17 @@
 package com.example.in_help.ui;
 
-class EnfermedadCronicaRequest {
-    public EnfermedadCronicaRequest() {
-        this.tx_nombre = tx_nombre;
+class EditarDatosMedicosRequest {
+    public EditarDatosMedicosRequest() {
+        this.tx_id = tx_id;
         this.id_persona = id_persona;
     }
 
-    public String getTx_nombre() {
-        return tx_nombre;
+    public String getTx_id() {
+        return tx_id;
     }
 
-    public void setTx_nombre(String tx_nombre) {
-        this.tx_nombre = tx_nombre;
+    public void setTx_id(String tx_id) {
+        this.tx_id = tx_id;
     }
 
     public Integer getId_persona() {
@@ -24,12 +24,13 @@ class EnfermedadCronicaRequest {
 
     @Override
     public String toString() {
-        return "EnfermedadCronicaRequest{" +
-                "tx_nombre='" + tx_nombre +
+        return "EditarDatosMedicosRequest{" +
+                "tx_id='" + tx_id +
                 ", id_persona=" + id_persona +
                 '}';
     }
 
-    String tx_nombre;
+    String tx_id;
     Integer id_persona;
+
 }

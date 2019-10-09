@@ -84,7 +84,7 @@ import com.example.in_help.R;
 
         vista = inflater.inflate(R.layout.fragment_f__iupp1_a__pantalla__principal, container, false);
 
-        spinnerPalcas = vista.findViewById(R.id.spinnerplacas);
+        spinnerPalcas = vista.findViewById(R.id.spinnerplacas00);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.Placas,android.R.layout.simple_spinner_dropdown_item);
         spinnerPalcas.setAdapter(adapter);

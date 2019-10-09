@@ -42,5 +42,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(GoDatosMedicos);
     }
 
+    public void GoRegistroVehiculos(View view){
+        Intent GoGVH = new Intent(this, IUGV1_2_Registrar_Vehiculo.class);
+        startActivity(GoGVH);
+    }
+
+
+
+    public void GoDatosLat(View view){
+        Intent GoMP = new Intent(this,Fragment_PP.class);
+        startActivity(GoMP);
+    }
+
+
+
 
 }

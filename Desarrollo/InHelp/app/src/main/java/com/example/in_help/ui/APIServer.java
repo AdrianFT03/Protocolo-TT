@@ -67,4 +67,25 @@ public interface APIServer {
     Call<List<EnfermedadCronicaRequest>> ObtenerEnfermedadCronica (@Path("id_usuario") Integer id_usuario
     );
 
+    @PUT("/UpdateNSS/{tx_id} & {id_persona}")
+    Call<Response> UpdateNSS(@Path("tx_id") String tx_id ,@Path("id_persona") Integer id_persona
+    );
+
+
+    @PUT("/UpdateTipoSangre/{id_tipo_sangre} & {id_persona}")
+    Call<Response> UpdateTipoSangre(@Path("id_tipo_sangre") Integer id_tipo_sangre ,@Path("id_persona") Integer id_persona
+    );
+
+    @PUT("/UpdateEnferCro/{tx_nombre} & {id_persona}")
+    Call<Response> UpdateEnfermedadCronica(@Path("tx_nombre") String tx_nombre ,@Path("id_persona") Integer id_persona
+    );
+
+
+    @POST("/new-Vehicle/{id_usuario}")
+    Call<Response> crearVehiculo(
+            @Body CrearVehiculoRequest crearVehiculoRequest
+    );
+
+
+
 }

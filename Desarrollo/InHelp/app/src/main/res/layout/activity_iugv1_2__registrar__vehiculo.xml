@@ -48,12 +48,14 @@
 
             <RadioGroup
                 android:id="@+id/radioGroup4"
-                android:layout_width="0dp"
-                android:layout_height="80dp"
+                android:layout_width="368dp"
+                android:layout_height="34dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView35">
 
@@ -62,6 +64,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="RadioSiDetalles"
                     android:text="@string/btnSi" />
 
                 <RadioButton
@@ -69,6 +72,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="RadioNoDetalles"
+                    android:selectAllOnFocus="false"
                     android:text="@string/btnNo" />
             </RadioGroup>
 
@@ -82,32 +87,42 @@
                 android:text="@string/AseguradoraPregunta"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup4"
+                android:visibility="gone"
+                />
 
             <RadioGroup
                 android:id="@+id/radioGroup5"
-                android:layout_width="0dp"
-                android:layout_height="80dp"
+                android:layout_width="368dp"
+                android:layout_height="34dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView36">
+                app:layout_constraintTop_toBottomOf="@+id/textView36"
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <RadioButton
                     android:id="@+id/radioButton10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/btnSi" />
+                    android:text="@string/btnSi"
+                    android:onClick="RadioSiAseguradora"
+                    />
 
                 <RadioButton
                     android:id="@+id/radioButton11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/btnNo" />
+                    android:text="@string/btnNo"
+                    android:onClick="RadioNoAseguradora"
+                    android:selectAllOnFocus="false"
+                    />
             </RadioGroup>
 
             <TextView
@@ -120,7 +135,8 @@
                 android:text="@string/NoPoliza"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup5"
+                android:visibility="gone"/>
 
             <EditText
                 android:id="@+id/editText8"
@@ -133,7 +149,8 @@
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+                app:layout_constraintTop_toBottomOf="@+id/textView37"
+                android:visibility="gone"/>
 
             <TextView
                 android:id="@+id/textView38"
@@ -145,7 +162,9 @@
                 android:text="@string/VigenciaPoliza"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText8" />
+                app:layout_constraintTop_toBottomOf="@+id/editText8"
+                android:visibility="gone"
+                />
 
             <EditText
                 android:id="@+id/editText9"
@@ -158,7 +177,9 @@
                 android:inputType="date"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+                app:layout_constraintTop_toBottomOf="@+id/textView38"
+                android:visibility="gone"
+                />
 
             <Button
                 android:id="@+id/button10"

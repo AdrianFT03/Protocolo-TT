@@ -1,8 +1,10 @@
 package com.example.in_help.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -107,7 +109,7 @@ public class IUDM1_Datos_Medicos extends AppCompatActivity {
                     content += enfermedadCronicaRequest.getTx_nombre();
 
                 }
-                NSS.setText(content);
+                Enfermedadcronica.setText(content);
 
                 Log.d(TAG, "Respuesta: "+content);
             }
@@ -118,5 +120,10 @@ public class IUDM1_Datos_Medicos extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void GoEditDatMedicos(View view){
+        Intent GoEditDM = new Intent(this, IUDM2_Editar_Datos_Medicos.class);
+        startActivity(GoEditDM);
     }
 }

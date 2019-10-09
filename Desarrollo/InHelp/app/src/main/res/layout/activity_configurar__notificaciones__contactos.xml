@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Configurar_Notificaciones_Contactos">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Titulo_GN"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/Titulo_GestNot"
+            android:textAlignment="center"
+            android:textCursorDrawable="@android:color/transparent"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <Button
+            android:id="@+id/Btn_Personales"
+            style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="70dp"
+            android:background="@android:color/transparent"
+            android:text="@string/txt_Personales"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/transparent"
+            android:textColorLink="@android:color/transparent"
+            android:textCursorDrawable="@android:color/transparent"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/Btn_Contactos"
+            style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="70dp"
+            android:background="@android:color/transparent"
+            android:text="@string/txt_Contactos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColorHighlight="@android:color/transparent"
+            android:textColorHint="@android:color/transparent"
+            android:textColorLink="@android:color/transparent"
+            android:textCursorDrawable="@android:color/transparent"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="67dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/coche" />
+
+        <ImageView
+            android:id="@+id/imageView300"
+            android:layout_width="67dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@mipmap/coche2" />
+
+        <ImageView
+            android:id="@+id/imageView400"
+            android:layout_width="67dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:srcCompat="@mipmap/coche2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="67dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView300"
+            app:srcCompat="@mipmap/coche" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/Placas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="150dp"
+            android:text="@string/Usuario1"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/Fecha_Hora"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/Placas" />
+
+        <TextView
+            android:id="@+id/Not2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/Usuario1"
+            app:layout_constraintStart_toEndOf="@+id/imageView300"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/Fecha_Hora"
+            app:layout_constraintStart_toEndOf="@+id/imageView300"
+            app:layout_constraintTop_toBottomOf="@+id/Not2" />
+
+        <TextView
+            android:id="@+id/Not3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/Usuario1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/Fecha_Hora"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/Not3" />
+
+        <TextView
+            android:id="@+id/Not4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/Usuario1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView400"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/Fecha_Hora"
+            app:layout_constraintStart_toEndOf="@+id/imageView400"
+            app:layout_constraintTop_toBottomOf="@+id/Not4" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageButton
+            android:id="@+id/Config_Not_1"
+            android:layout_width="67dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="150dp"
+            android:background="@android:color/transparent"
+            android:onClick="InfoGralNot"
+            android:src="@mipmap/puntosicono" />
+
+        <ImageButton
+            android:id="@+id/Config_Not_2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:onClick="InfoGralNot"
+            android:src="@mipmap/puntosicono" />
+
+        <ImageButton
+            android:id="@+id/config_Not_3"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent"
+            android:onClick="InfoGralNot"
+            android:src="@mipmap/puntosicono" />
+
+        <ImageButton
+            android:id="@+id/config_Not_4"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:onClick="InfoGralNot"
+            android:src="@mipmap/puntosicono" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
