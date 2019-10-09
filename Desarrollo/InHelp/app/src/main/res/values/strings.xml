@@ -41,6 +41,7 @@
     <string name="NPlacas">Placas</string>
     <string name="Color">Color</string>
     <string name="txt_Correo">Correo electrónico:</string>
+    <string name="txt_Password">Password: </string>
     <string name="txt_SegMed">Seguridad médica:</string>
     <string name="txt_Tipo_De_Sangre">Tipo de sangre:</string>
     <string name="txt_Enfermedad_Cronica">Enfermedad crónica:</string>

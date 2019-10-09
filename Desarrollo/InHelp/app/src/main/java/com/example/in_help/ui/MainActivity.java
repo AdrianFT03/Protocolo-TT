@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(GoDatosCuenta);
     }
 
+    public void GoDatosMedicos(View view){
+        Intent GoDatosMedicos = new Intent(this, IUDM1_Datos_Medicos.class);
+        startActivity(GoDatosMedicos);
+    }
 
 
 }

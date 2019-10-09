@@ -55,6 +55,7 @@ public interface APIServer {
     Call<List<DatosCuentaRequest>> ObtenerinfoDatosCuenta (@Path("id_usuario") Integer id_usuario
     );
 
+
     @GET("/GetVehiculos/{id_usuario}")
     Call<List<DatosVehiculo_IUGN5>> ObtenerVehiculos (@Path("id_usuario") Integer id_usuario
     );
@@ -67,5 +68,18 @@ public interface APIServer {
 
     @GET("/GetPermisosConf/{id_configuracion}")
     Call<List<DatosPermiso_IGN6A>> ObtenerPermisos(@Path("id_configuracion") Integer id_configuracion);
+
+    @GET("/GetNSS/{id_usuario}")
+    Call<List<NSSRequest>> ObtenerNSS (@Path("id_usuario") Integer id_usuario
+    );
+
+    @GET("/GetSangreTipo/{id_usuario}")
+    Call<List<TipoSangreRequest>> ObtenerTipoDeSangre (@Path("id_usuario") Integer id_usuario
+    );
+
+    @GET("/GetEnfermedadCronica/{id_usuario}")
+    Call<List<EnfermedadCronicaRequest>> ObtenerEnfermedadCronica (@Path("id_usuario") Integer id_usuario
+    );
+
 
 }
