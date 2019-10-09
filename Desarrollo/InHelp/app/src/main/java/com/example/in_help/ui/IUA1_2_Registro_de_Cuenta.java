@@ -110,7 +110,7 @@ public class IUA1_2_Registro_de_Cuenta extends AppCompatActivity {
             public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
                 response.body().getSuccesfull();
                 Log.d(TAG, "onResponse: "+response.body().getSuccesfull());
-                    //Toast.makeText(IUA1_2_Registro_de_Cuenta.this, "Usuario registrado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(IUA1_2_Registro_de_Cuenta.this, "Usuario registrado", Toast.LENGTH_SHORT).show();
 
             }
 

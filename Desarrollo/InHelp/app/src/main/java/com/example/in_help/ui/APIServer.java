@@ -55,6 +55,20 @@ public interface APIServer {
     Call<List<DatosCuentaRequest>> ObtenerinfoDatosCuenta (@Path("id_usuario") Integer id_usuario
     );
 
+
+    @GET("/GetVehiculos/{id_usuario}")
+    Call<List<DatosVehiculo_IUGN5>> ObtenerVehiculos (@Path("id_usuario") Integer id_usuario
+    );
+
+    @GET("/GetContactosConf/{id_usuario}&{id_vehiculo}")
+    Call<List<DatosContactos_IUGN6>> ObtenerContactos(@Path("id_usuario") Integer id_usuario,  @Path("id_vehiculo") Integer id_vehiculo);
+
+    @PUT("/UpdateStatusEnvio/{id_estado}&{id_configuracion}")
+    Call<Response> UpdateStatusEnvio(@Path("id_estado") Integer id_estado, @Path("id_configuracion") Integer id_configuracion);
+
+    @GET("/GetPermisosConf/{id_configuracion}")
+    Call<List<DatosPermiso_IGN6A>> ObtenerPermisos(@Path("id_configuracion") Integer id_configuracion);
+
     @GET("/GetNSS/{id_usuario}")
     Call<List<NSSRequest>> ObtenerNSS (@Path("id_usuario") Integer id_usuario
     );
@@ -67,6 +81,7 @@ public interface APIServer {
     Call<List<EnfermedadCronicaRequest>> ObtenerEnfermedadCronica (@Path("id_usuario") Integer id_usuario
     );
 
+<<<<<<< HEAD
     @PUT("/UpdateNSS/{tx_id} & {id_persona}")
     Call<Response> UpdateNSS(@Path("tx_id") String tx_id ,@Path("id_persona") Integer id_persona
     );
@@ -87,5 +102,7 @@ public interface APIServer {
     );
 
 
+=======
+>>>>>>> ee4af0336d68c11f1a01495c2f5bde0eccc09a2f
 
 }
