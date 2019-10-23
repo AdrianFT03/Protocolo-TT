@@ -84,11 +84,11 @@
     <string name="IUDP1_Datos_Personales">Datos Personales</string>
     <string name="IUDP2_Datos_de_la_cuenta">Datos del Usuario</string>
     <string name="IUDM1_Datos_de_Medicos">Datos Médicos</string>
-<<<<<<< HEAD
+
     <string name="IUDM2_Editar_Datos_Medicos">Editar Datos Médicos</string>
-=======
+
     <string name="IUGN5_Configurar_Notificaciones">Configurar Notificaciones</string>
->>>>>>> ee4af0336d68c11f1a01495c2f5bde0eccc09a2f
+
 
     <string name="RecuperaContrasenia">¿Tienes problemas para iniciar sesión?</string>
     <string name="AyudaContrasenia"><b>Aquí te podemos ayudar.</b></string>
@@ -112,7 +112,7 @@
     <string name="Agregar">Agregar</string>
     <string name="ContactosMensaje">¡Recuerda siempre tener actualizados tus contactos!</string>
     <string name="VehiculosMensahe">¡Recuerda siempre tener actualizados tus vehículos!</string>
-<<<<<<< HEAD
+
     <string name="preg_tienes_Seguridad_Med">¿Tienes seguridad Medica?</string>
     <string name="txt_NSS">Numero de seguridad social</string>
     <string name="preg_Conoces_tu_tipodeS">¿Conoces tu tipo de sangre?</string>
@@ -121,9 +121,8 @@
     <string name="txt_GrupoSan">Grupo sanguineo</string>
     <string name="preg_Padeces">¿Padeces alguna enfermedad cronica?</string>
     <string name="txt_Enfermedad">Enfermedad</string>
-=======
+
     <string name="AvisoConfNot">Nota: Recuerda que en el <b>aviso de privacidad</b> encontrarás a detalle que información es la que estas autorizando</string>
->>>>>>> ee4af0336d68c11f1a01495c2f5bde0eccc09a2f
 
 
     <string name="V1_R1">Corsa / 329-YFA</string>

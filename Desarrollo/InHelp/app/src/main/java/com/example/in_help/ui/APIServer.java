@@ -2,6 +2,7 @@ package com.example.in_help.ui;
 
 
 
+import java.util.Date;
 import java.util.List;
 
 import retrofit2.Call;
@@ -60,6 +61,22 @@ public interface APIServer {
     Call<List<DatosVehiculo_IUGN5>> ObtenerVehiculos (@Path("id_usuario") Integer id_usuario
     );
 
+    @GET("/GetVehiculos2/{id_usuario}")
+    Call<List<DatosVehiculo_IUGV1>> ObtenerVehiculos2 (@Path("id_usuario") Integer id_usuario
+    );
+
+    @GET("/GetVehiculos3/{id_usuario} &{id_vehiculo}")
+    Call<List<DatosVehiculo_IUGV1>> ObtenerVehiculos3 (@Path("id_usuario") Integer id_usuario,@Path("id_vehiculo") Integer id_vehiculo
+    );
+
+    @GET("/GetPoliza/{id_usuario} &{id_vehiculo}")
+    Call<List<DatosPoliza_IUGV1>> ObtenerPoliza (@Path("id_usuario") Integer id_usuario,@Path("id_vehiculo") Integer id_vehiculo
+    );
+
+    @GET("/GetIdSeguro/{nu_poliza} &{fh_vigencia}")
+    Call<List<ObtenIdSeguroRequest>> ObtenerIdSeguro (@Path("nu_poliza") String nu_poliza, @Path("fh_vigencia")String fh_vigencia
+                                          );
+
     @GET("/GetContactosConf/{id_usuario}&{id_vehiculo}")
     Call<List<DatosContactos_IUGN6>> ObtenerContactos(@Path("id_usuario") Integer id_usuario,  @Path("id_vehiculo") Integer id_vehiculo);
 
@@ -81,7 +98,6 @@ public interface APIServer {
     Call<List<EnfermedadCronicaRequest>> ObtenerEnfermedadCronica (@Path("id_usuario") Integer id_usuario
     );
 
-<<<<<<< HEAD
     @PUT("/UpdateNSS/{tx_id} & {id_persona}")
     Call<Response> UpdateNSS(@Path("tx_id") String tx_id ,@Path("id_persona") Integer id_persona
     );
@@ -96,13 +112,23 @@ public interface APIServer {
     );
 
 
-    @POST("/new-Vehicle/{id_usuario}")
+    @POST("/new-Vehicle/")
     Call<Response> crearVehiculo(
             @Body CrearVehiculoRequest crearVehiculoRequest
     );
 
+    @POST("/RegistrarPoliza/")
+    Call<Response> registrarPoliza(
+            @Body RegistrarPolizaRequest registrarPolizaRequest
+    );
 
-=======
->>>>>>> ee4af0336d68c11f1a01495c2f5bde0eccc09a2f
+    @POST("/ActualizarIntermediaVehiculos/")
+    Call<Response> actualizarIntermediaVehiculos(
+            @Body IntermediaVehiculosRequest intermediaVehiculosRequest
+    );
+
+
+
+
 
 }

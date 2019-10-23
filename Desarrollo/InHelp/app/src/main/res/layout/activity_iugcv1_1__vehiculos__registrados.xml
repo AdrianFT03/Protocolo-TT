@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.IUGCV1_1_Vehiculos_Registrados">
+    tools:context="com.example.in_help.ui.IUGCV1_1_Vehiculos_Registrados">
 
     <TextView
         android:id="@+id/textView54"

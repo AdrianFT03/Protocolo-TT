@@ -43,8 +43,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void GoRegistroVehiculos(View view){
-        Intent GoGVH = new Intent(this, IUGV1_2_Registrar_Vehiculo.class);
-        startActivity(GoGVH);
+        Intent GoRegistroVehiculos = new Intent(this, IUGV1_1_Vehiculos_Registrados.class);
+        startActivity(GoRegistroVehiculos);
+    }
+
+    public void GoRegVeh(View view){
+        Intent GoRegVeh = new Intent(this, Prueba_de_Listview.class);
+        startActivity(GoRegVeh);
     }
 
 
@@ -53,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
         Intent GoMP = new Intent(this,Fragment_PP.class);
         startActivity(GoMP);
     }
+
+
+
 
 
 

@@ -4,27 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.in_help.ui.IUGN5_Configurar_Notificaciones">
+    tools:context=".ui.Prueba_de_Listview">
 
     <TextView
-        android:id="@+id/textView87"
+        android:id="@+id/textView287"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
-        android:text="@string/IUGN5_Configurar_Notificaciones"
+        android:text="@string/IUGCV1_1Vehiculos_Registrados"
         android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/IUGN5_listView"
+        android:id="@+id/Prueba_listView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView87">
+        app:layout_constraintTop_toBottomOf="@+id/textView287">
 
     </ListView>
 </android.support.constraint.ConstraintLayout>

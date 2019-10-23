@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.in_help.R;
 
@@ -15,22 +17,22 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class IUGV1_1_Vehiculos_Registrados extends AppCompatActivity {
-
-    public ListView ListaVehiculos ;
+public class Prueba_de_Listview extends AppCompatActivity {
+    public ListView listaDatos;
     ArrayList<Datos_IUGV1> Lista;
+    Button confNot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_iugv1_1__vehiculos__registrados);
+        setContentView(R.layout.activity_prueba_de__listview);
+        listaDatos = (ListView) findViewById(R.id.Prueba_listView);
 
-        ListaVehiculos = (ListView) findViewById(R.id.IUGV1_listView);
-        Lista = new ArrayList<Datos_IUGV1>();
+
         ObtenerVehiculos2(1);
     }
 
-public void ObtenerVehiculos2(Integer id_usuario){
+    public void ObtenerVehiculos2(Integer id_usuario){
 
         APIServer service = Cliente.getAPIServer();
 
@@ -47,9 +49,9 @@ public void ObtenerVehiculos2(Integer id_usuario){
                     // ;
                 }
 
-
+                Lista = new ArrayList<Datos_IUGV1>();
                 List<DatosVehiculo_IUGV1> listaDatosVehiculoIUGV1 = response.body();
-               listaDatosVehiculoIUGV1.size();
+                listaDatosVehiculoIUGV1.size();
                 for (DatosVehiculo_IUGV1 datosBod : listaDatosVehiculoIUGV1){
 
                     Lista.add(new Datos_IUGV1(datosBod.getId_vehiculo(),datosBod.getNu_placas(),R.mipmap.coche,R.mipmap.outline_build_black_48dp,R.mipmap.baseline_clear_black_48dp));
@@ -57,7 +59,7 @@ public void ObtenerVehiculos2(Integer id_usuario){
                 }
                 Prueba_Adaptador_IUGN5 prueba_adaptador_iugn5 = new Prueba_Adaptador_IUGN5(getApplicationContext(),Lista);
 
-                ListaVehiculos.setAdapter(prueba_adaptador_iugn5);
+                listaDatos.setAdapter(prueba_adaptador_iugn5);
 
 
 
@@ -84,5 +86,4 @@ public void ObtenerVehiculos2(Integer id_usuario){
         Intent GoInicio = new Intent(this, IUPP1A_Pantalla_Principal.class);
         startActivity(GoInicio);
     }
-
 }

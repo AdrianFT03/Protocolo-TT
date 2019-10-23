@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.IUDP2_Datos_de_la_Cuenta">
+    tools:context="com.example.in_help.ui.IUDP2_Datos_de_la_Cuenta">
 
     <TextView
         android:id="@+id/textView74"

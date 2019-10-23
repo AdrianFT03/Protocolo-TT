@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Informacion_Notificacion_Personal">
+    tools:context="com.example.in_help.ui.Informacion_Notificacion_Personal">
 
     <TextView
         android:id="@+id/textView2"
