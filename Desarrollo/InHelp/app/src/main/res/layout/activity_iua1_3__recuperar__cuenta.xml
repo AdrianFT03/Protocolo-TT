@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.in_help.ui.IUA1_3_Recuperar_Cuenta"
-    >
+    tools:context=".ui.IUA1_3_Recuperar_Cuenta">
 
     <TextView
         android:id="@+id/textView16"

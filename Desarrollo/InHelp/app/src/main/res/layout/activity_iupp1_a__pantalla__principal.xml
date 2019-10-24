@@ -6,26 +6,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.in_help.ui.IUPP1A_Pantalla_Principal">
+    tools:context=".ui.IUPP1A_Pantalla_Principal">
+
+    <fragment
+        android:id="@+id/MapPP"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
 
 
     <FrameLayout
         android:id="@id/ContyenedorPP"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="59dp"
-         />
+        android:layout_marginBottom="59dp">
+
+    </FrameLayout>
 
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView4900"
+        android:layout_alignBottom="@+id/textView49"
         android:layout_alignParentBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu_navigator"
        />
+
+
 
     </android.support.constraint.ConstraintLayout>
 

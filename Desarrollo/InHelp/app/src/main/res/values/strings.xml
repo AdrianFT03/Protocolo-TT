@@ -1,24 +1,7 @@
 <resources>
     <string name="app_name">In-Help</string>
 
-    <!-- Strings Menu Lateral-->
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-    <string name="navigator_menuprincipal">Menú Principal</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
-
-
-    <!-- Strings Botones-->
     <string name="btnRegistro">REGISTRATE GRATIS</string>
     <string name="btnRegistroFb">REGISTRATE CON FACEBOOK</string>
     <string name="btnIniciar">INICIAR SESIÓN</string>
@@ -58,7 +41,6 @@
     <string name="NPlacas">Placas</string>
     <string name="Color">Color</string>
     <string name="txt_Correo">Correo electrónico:</string>
-    <string name="txt_Password">Password: </string>
     <string name="txt_SegMed">Seguridad médica:</string>
     <string name="txt_Tipo_De_Sangre">Tipo de sangre:</string>
     <string name="txt_Enfermedad_Cronica">Enfermedad crónica:</string>
@@ -84,12 +66,18 @@
     <string name="IUDP1_Datos_Personales">Datos Personales</string>
     <string name="IUDP2_Datos_de_la_cuenta">Datos del Usuario</string>
     <string name="IUDM1_Datos_de_Medicos">Datos Médicos</string>
-
-    <string name="IUDM2_Editar_Datos_Medicos">Editar Datos Médicos</string>
-
     <string name="IUGN5_Configurar_Notificaciones">Configurar Notificaciones</string>
+    <string name="IUGN1_Gestionar_Notiificaciones">Gestionar Notificaciones</string>
+    <string name="IUGN2_Informacion_de_Notificacion">Información de Notificación</string>
+    <string name="IUGC1_3A_Registrar_Contacto">Registrar Contacto</string>
+    <string name="IUGC1_1_Contactos_Registrados">Contactos registrados</string>
+    <string name="IUGC1_2_Editar_contacto">Editar Contacto</string>
 
 
+    <string name="TipoEvento"><b>"Tipo de evento:"</b></string>
+    <string name="FechaEvento"><b>"Fecha de evento:"</b></string>
+    <string name="FechaNotific"><b>"Fecha de notificación:"</b></string>
+    <string name="Ubicacion"><b>"Ubicación:"</b></string>
     <string name="RecuperaContrasenia">¿Tienes problemas para iniciar sesión?</string>
     <string name="AyudaContrasenia"><b>Aquí te podemos ayudar.</b></string>
     <string name="FormatoContrasenia">Debete tener al menos 8 caracteres incluyendo un número</string>
@@ -112,16 +100,6 @@
     <string name="Agregar">Agregar</string>
     <string name="ContactosMensaje">¡Recuerda siempre tener actualizados tus contactos!</string>
     <string name="VehiculosMensahe">¡Recuerda siempre tener actualizados tus vehículos!</string>
-
-    <string name="preg_tienes_Seguridad_Med">¿Tienes seguridad Medica?</string>
-    <string name="txt_NSS">Numero de seguridad social</string>
-    <string name="preg_Conoces_tu_tipodeS">¿Conoces tu tipo de sangre?</string>
-    <string name="Rdb_Si">Si</string>
-    <string name="Rdb_No">No</string>
-    <string name="txt_GrupoSan">Grupo sanguineo</string>
-    <string name="preg_Padeces">¿Padeces alguna enfermedad cronica?</string>
-    <string name="txt_Enfermedad">Enfermedad</string>
-
     <string name="AvisoConfNot">Nota: Recuerda que en el <b>aviso de privacidad</b> encontrarás a detalle que información es la que estas autorizando</string>
 
 
@@ -132,72 +110,12 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!-- Strings Aldhair Menu Lateral-->
-    <string name="app_name1">MenuPrincipal</string>
-    <string name="Usuario1">Aldhair Jimenez</string>
-    <string name="Placas">Lys-6061</string>
-    <string name="txt_Notificaciones">¡Notificaciones!</string>
-    <string name="txt_config_not">Configurar Notificaciones</string>
-    <string name="txt_Dat_per">Datos Personales</string>
-    <string name="txt_Cuenta">Cuenta</string>
-    <string name="txt_Datos_Medicos">Datos Medicos</string>
-    <string name="Titulo_GestNot">Gestión de Notificaciones</string>
-    <string name="Fecha_Hora">Fecha y hora</string>
-    <string name="txt_Personales">Personales</string>
-    <string name="txt_Contactos">Contactos</string>
-    <string name="btn_Regresar">Regresar</string>
-    <string name="Titulo_InfoNot">Información de Notificación</string>
-    <string name="txt_TipoDeEvento">Tipo de evento: </string>
-    <string name="txt_FechaEvento">Fecha de evento: </string>
-    <string name="txt_FechaNot">Fecha de Notificación: </string>
-    <string name="txt_Ubicacion">Ubicación: </string>
-    <string name="Gravedad_evento">Alta</string>
-    <string name="UbicacionTR">Nicolas Romero</string>
-    <string name="Titulo_InfGral">Información General</string>
-    <string name="txt_NomAseg">Nombre de la aseguradora: </string>
-    <string name="txt_NumTel">Numero de telefono: </string>
-    <string name="txt_NoPoliza">No.Poliza: </string>
-    <string name="txt_FecVig">Fecha de vigencia</string>
-    <string name="Aseguradora">Bancomer Seguros</string>
-    <string name="TelefonoAsegu">5544559008</string>
-    <string name="NumPoliza">1234567890</string>
-    <string name="txt_GPS">GPS: </string>
-    <string name="txt_Velo">Velocidad: </string>
-    <string name="txt_temp">Temperatura: </string>
-    <string name="txt_Giros">Giroscopio: </string>
-    <string name="Velocidad">30 km/h</string>
-    <string name="Temperatura">33 C</string>
-    <string name="Giroscopio">152:152:120</string>
-    <string name="Titulo_ConfigNot">Configurar Notificaciones</string>
-    <string name="Titulo_DatosPerso">Cuenta</string>
-    <string name="Contacto">Alejandro Jimenez</string>
-    <string name="Contacto2">Rocio De Jesus</string>
-    <string name="Paux1">Cruz Roja</string>
-    <string name="Paux2">Bomberos</string>
-    <string name="Paux3">Ambulancia Particular</string>
-    <string name="Btn_Listo">¡Listo!</string>
-    <string name="Nota_config">Nota:Recuerda que en el aviso de privacidad
-    Encontraras a detalle que informacion es la que estas autorizando</string>
-    <string name="Reg_Contacto">Registrar Contacto</string>
-    <string name="txt_nombre">Nombre : </string>
-    <string name="txt_numtel">Numero de telefono : </string>
-    <string name="btn_guardar">Guardar</string>
-    <string name="txt_Emergencia">Emergencia</string>
-    <string name="txt_Asegura">Aseguradora</string>
-    <string name="txt_person">Familiar</string>
-    <string name="Hint_Nombre">Escribe el nombre</string>
-    <string name="Hint_Tel">Escribe el Telefono</string>
-    <string name="txt_nom_asegu">Nombre de la aseguradora: </string>
-    <string name="txt_Fecha_vig">Fecha de Vigencia : </string>
-    <string name="hint_Fecha_vig">Fecha de Vigencia </string>
-    <string name="txt_Parentezco">Parentezco : </string>
-    <string name="hint_parentezco">Hermano/a,Padre/Madre,Otro.</string>
-    <string name="title_activity_menu_lateral">Menu Lateral</string>
 
-
+    <string name="title_activity_iugn2__mapa">Map</string>
     <string-array name="Placas">
         <item>329-YFA</item>
         <item>200-XYC</item>
         <item>ABC-123</item>
     </string-array>
+    <string name="title_activity_maps_maps_test">Map</string>
 </resources>

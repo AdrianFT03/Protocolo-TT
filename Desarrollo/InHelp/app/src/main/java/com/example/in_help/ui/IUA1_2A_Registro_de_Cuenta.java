@@ -4,14 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.in_help.R;
@@ -46,9 +43,9 @@ public class IUA1_2A_Registro_de_Cuenta extends AppCompatActivity {
         nombre = (EditText) findViewById(R.id.editText14);
         primerAp = (EditText) findViewById(R.id.editText17);
         segundoAp = (EditText) findViewById(R.id.editText18);
-        dia = (EditText) findViewById(R.id.editText20);
-        mes = (EditText) findViewById(R.id.editText21);
-        anio = (EditText) findViewById(R.id.editText22);
+        dia = (EditText) findViewById(R.id.IUGC1_3editTextDia);
+        mes = (EditText) findViewById(R.id.IUGC1_3editTextMes);
+        anio = (EditText) findViewById(R.id.IUGC1_3editTextaño);
 
 
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.IUGC1_1_Contactos_Registrados">
+
+    <TextView
+        android:id="@+id/IUGC1_1textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/IUGC1_1_Contactos_Registrados"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/IUGC1_1listview"
+        android:layout_width="409dp"
+        android:layout_height="632dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_1textView"
+        tools:layout_editor_absoluteX="1dp" />
+</android.support.constraint.ConstraintLayout>

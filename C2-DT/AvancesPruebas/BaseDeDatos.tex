@@ -15,12 +15,24 @@ Para poder realizar el desarrollo del proyecto se tiene que partir de un modelo 
 	
 	\item \textbf{Generación de tablas de negocio:} Se generaron tablas en la base de datos para cubrir las necesidades especificas de negocio.
 	
+	\item \textbf{Generación de Script:} Se genera el Script de la base de datos con ayuda de la erramienta CASE utilizada.
+	
+	\item \textbf{Ejecución de Script:} Se carga el script de la base de datos en MySQL Workbench.
+	
+	\item \textbf{Insert de catalogos a la base de Datos:} Se insertan por medio de script los catalogos utilizados en la base de datos.
+	
+	\item \textbf{Insert de información a base de Datos:} Se insertan por medio de script información en las entidades primarias.
+	
+	\item \textbf{Consultas a la Base de Datos:} Se crean consultas a la base de datos para corroborar su funcionamiento.
+	
+	
+	
 \end{itemize}
 
 El modelado de la base de datos esta pensando en el negocio especifico para In-Help, haciendo uso de las buenas practicas en el modelado de negocios, esto con la única finalidad de poder tener un crecimiento con la afectación mínima a la BD.
 
 \subsection{Maquetado de la App}
-Para poder realizar el maquetado de interfaces de la aplicación se realizó el análisis correspondiente tomando como base los requerimientos funcionales definidos para el presente trabajo terminal. Una vez realizado el análisis pertinente se definieron los módulos con los que cuenta la aplicación mismos que se muestran en la figura \ref(fig:MaquetadoelaApp).
+Para poder realizar el maquetado de interfaces de la aplicación se realizó el análisis correspondiente tomando como base los requerimientos funcionales definidos para el presente trabajo terminal. Una vez realizado el análisis pertinente se definieron los módulos con los que cuenta la aplicación mismos que se muestran en la figura \ref{fig:MaquetadoelaApp}.
 
 \begin{figure}[htbp!]
 	\centering
@@ -36,7 +48,7 @@ El modelo entidad relación de la aplicación se muestra en la figura \ref{fig:D
 
 \begin{figure}[htbp!]
 	\centering
-	\fbox{\includegraphics[width=0.9\textwidth]{AvancesPruebas/imagenes/DB_InHelp}}
+	\fbox{\includegraphics[width=1.1\textwidth]{AvancesPruebas/imagenes/DB_InHelp}}
 	\caption{Modelo Entidad Relación In-Help}
 	\label{fig:DB_InHelp}
 \end{figure}
@@ -60,7 +72,11 @@ En la figura \ref{fig:BD_Medica} se muestran las tablas correspondientes al mód
 	\caption{Médica}
 	\label{fig:BD_Medica}
 \end{figure}
+
 \subsection{Modelo Entidad Relación In-Help / Contactos}
+
+En la figura \ref{fig:BD_Contactos} se muestran las tablas correspondientes al módulo de gestión de contactos, en este paquete se observa la información correspondiente a los contactos que podrá tener registrado el usuario.
+
 \begin{figure}[htbp!]
 	\centering
 	\fbox{\includegraphics[width=0.7\textwidth]{AvancesPruebas/imagenes/BD_Contactos}}
@@ -68,6 +84,7 @@ En la figura \ref{fig:BD_Medica} se muestran las tablas correspondientes al mód
 	\label{fig:BD_Contactos}
 \end{figure}
 \subsection{Modelo Entidad Relación In-Help / Vehiculos}
+En la figura \ref{fig:BD_Vehiculo} se muestran las tablas correspondientes al módulo de gestión de vehiculos, en este paquete se observa la información correspondiente a los vehiculos que podrá tener registrado el usuario.
 \begin{figure}[htbp!]
 	\centering
 	\fbox{\includegraphics[width=0.9\textwidth]{AvancesPruebas/imagenes/BD_Vehiculo}}
@@ -75,9 +92,11 @@ En la figura \ref{fig:BD_Medica} se muestran las tablas correspondientes al mód
 	\label{fig:BD_Vehiculo}
 \end{figure}
 \subsection{Modelo Entidad Relación In-Help / Notificaciones}
+En la figura \ref{fig:BD_Notificacion} se muestran las tablas correspondientes al módulo de gestión de vehiculos, en este paquete se observa la información correspondiente a los vehiculos que podrá tener registrado el usuario.
 \begin{figure}[htbp!]
 	\centering
 	\fbox{\includegraphics[width=0.9\textwidth]{AvancesPruebas/imagenes/BD_Notificacion}}
 	\caption{Notificación}
 	\label{fig:BD_Notificacion}
 \end{figure}
+

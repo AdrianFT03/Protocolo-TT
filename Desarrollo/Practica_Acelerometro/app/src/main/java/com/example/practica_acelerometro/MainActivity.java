@@ -8,6 +8,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.widget.TextView;
 
 import java.util.List;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         x =  (TextView) findViewById(R.id.x);
         y =  (TextView) findViewById(R.id.y);
         z =  (TextView) findViewById(R.id.z);
+
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT );
 
 
@@ -37,11 +39,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
+
+
+
     protected void onResume() {
         super.onResume();
         SensorManager sm = (SensorManager) getSystemService(SENSOR_SERVICE);
-        List<Sensor> sensors = sm.getSensorList(Sensor.TYPE_ACCELEROMETER);
+        List<Sensor> sensors = sm.getSensorList(Sensor.TYPE_GYROSCOPE);
         if(sensors.size() >0){
+
             sm.registerListener(this,sensors.get(0),SensorManager.SENSOR_DELAY_GAME);
         }
     }
@@ -62,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
+
 
 
         this.x.setText("X = "+sensorEvent.values[SensorManager.DATA_X]);
