@@ -22,14 +22,14 @@ La figura \ref{fig:SecuenciaLogin} se muestra el diagrama de secuencia correspon
 	\item \textbf{/login/:tx login:} Es la ruta para la obtención del password correspondiente al correo electrónico.
 \end{itemize}
 
-\subsubsection{Recuperar Contraseña}
+\subsection{Recuperar Contraseña}
 
 La figura \ref{fig:SecuenciaRecupera} se muestra el diagrama de secuencia correspondiente a la recuperación de cuenta del usuario, mismo que contiene los métodos implementados en la clase JAVA, API e IU.
 
 \begin{figure}[htbp!]
 	\centering
 	\fbox{\includegraphics[width=0.9\textwidth]{AvancesPruebas/imagenes/SecuenciaRecupera}}
-	\caption{Diagrama secuencia Login}
+	\caption{Diagrama secuencia Recuperar Contraseña}
 	\label{fig:SecuenciaRecupera}
 \end{figure}
 
@@ -44,3 +44,26 @@ La figura \ref{fig:SecuenciaRecupera} se muestra el diagrama de secuencia corres
 
 
 \subsection{Registro de Cuenta}
+La figura \ref{fig:SecuenciaCuenta} se muestra el diagrama de secuencia correspondiente al registro de cuenta del usuario, mismo que contiene los métodos implementados en la clase JAVA, API e IU.
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.9\textwidth]{AvancesPruebas/imagenes/SecuenciaCuenta}}
+	\caption{Diagrama secuencia Crear Cuenta}
+	\label{fig:SecuenciaCuenta}
+\end{figure}
+
+\begin{itemize}
+	\item \textbf{siguiente.setOnClickListener:} Es la acción que dispara el usuario, no recibe datos como parámetros, es el disparador.
+	\item \textbf{guardarUsusario():} Este método realiza las validaciones correspondientes a las RN para poder guardar una persona.
+	\item \textbf{/new-person/:} Es la ruta para el registro de una nueva persona en la base de datos.
+	\item \textbf{Listo.setOnClickListener:}  Es la acción que dispara el usuario, no recibe datos como parámetros, es el disparador.
+	\item \textbf{registrarUsuario():} Este método realiza las validaciones correspondientes a las RN para poder guardar un usuario.
+	\item \textbf{/new-user:} Es la ruta para el registro de una nueva cuenta en la base de datos
+	\item \textbf{Siguiente.setOnClickListener:} Es la acción que dispara el usuario, no recibe datos como parámetros, es el disparador.
+	\item \textbf{guardarInfoMédica():} Este método realiza las validaciones correspondientes a las RN para poder guardar la información médica de la persona.
+	\item \textbf{/crearseguridad/:} Esta ruta permite registrar la información médica del usuario.
+	\item \textbf{guardarEnfermedad():} Este método realiza las validaciones correspondientes a las RN para poder guardar la información de enfermedad de la persona.
+	\item \textbf{/crearenfermedad/:} Esta ruta permite registrar la información de enfermedad del usuario.
+\end{itemize}
+
+
