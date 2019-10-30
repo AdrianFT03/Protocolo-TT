@@ -8,16 +8,12 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.os.SystemClock;
-import android.util.Log;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
-    private static final String TAG = "Log";
     private TextView x,y,z;
     private Sensor mAccelerometer;
     private Sensor sensor,giroscopio;
@@ -31,31 +27,33 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         x =  (TextView) findViewById(R.id.x);
         y =  (TextView) findViewById(R.id.y);
         z =  (TextView) findViewById(R.id.z);
-
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT );
+
+
+        //sensor = sm.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
+        //giroscopio = sm.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+        //sm.registerListener(this,giroscopio,SensorManager.SENSOR_DELAY_NORMAL);
+
+
     }
 
-
-
-    @Override
     protected void onResume() {
         super.onResume();
         SensorManager sm = (SensorManager) getSystemService(SENSOR_SERVICE);
         List<Sensor> sensors = sm.getSensorList(Sensor.TYPE_ACCELEROMETER);
         if(sensors.size() >0){
-
             sm.registerListener(this,sensors.get(0),SensorManager.SENSOR_DELAY_GAME);
         }
     }
 
-    @Override
+
     protected void onPause() {
 
         SensorManager mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mSensorManager.unregisterListener(this,mAccelerometer);
         super.onPause();
     }
-    @Override
+
     protected void onStop() {
         SensorManager mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mSensorManager.unregisterListener(this,mAccelerometer);
@@ -66,14 +64,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onSensorChanged(SensorEvent sensorEvent) {
 
 
-
         this.x.setText("X = "+sensorEvent.values[SensorManager.DATA_X]);
-        Float x = sensorEvent.values[SensorManager.DATA_X];
-        //Log.d(TAG, "Valor x :"+x);
-        if(x>10){
-            Toast.makeText(this, "X mayor a 10", Toast.LENGTH_SHORT).show();
-            onStop();
-        }
         this.y.setText("Y = "+sensorEvent.values[SensorManager.DATA_Y]);
         this.z.setText("Z = "+sensorEvent.values[SensorManager.DATA_Z]);
 

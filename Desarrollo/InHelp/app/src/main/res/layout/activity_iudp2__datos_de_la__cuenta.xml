@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.IUDP2_Datos_de_la_Cuenta">
+    tools:context="com.example.in_help.ui.IUDP2_Datos_de_la_Cuenta">
 
     <TextView
         android:id="@+id/textView74"
@@ -58,7 +58,8 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView75" />
+        app:layout_constraintTop_toBottomOf="@+id/textView75"
+        tools:text="@string/txt_Password" />
 
     <TextView
         android:id="@+id/textView78"

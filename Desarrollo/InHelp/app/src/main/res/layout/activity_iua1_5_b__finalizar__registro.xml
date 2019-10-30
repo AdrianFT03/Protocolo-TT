@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.IUA1_5B_Finalizar_Registro">
+    tools:context="com.example.in_help.ui.IUA1_5B_Finalizar_Registro">
 
     <TextView
         android:id="@+id/textView40"

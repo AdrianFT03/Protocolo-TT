@@ -57,7 +57,7 @@ public class IUGN5_Configurar_Notificaciones extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<DatosVehiculo_IUGN5>> call, Response<List<DatosVehiculo_IUGN5>> response) {
                 if(!response.isSuccessful()){
-                    //Toast.makeText(IUGN5_Configurar_Notificaciones.this, "Chido", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(IUGN5_Configurar_Notificaciones.this, "Chido", Toast.LENGTH_SHORT).show();
                     //Pass.setText("Codigo:"+response.code()
                     // ;
                 }

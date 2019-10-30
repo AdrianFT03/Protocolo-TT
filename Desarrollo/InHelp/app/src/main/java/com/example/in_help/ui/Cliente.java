@@ -10,7 +10,7 @@ public class Cliente {
     public Cliente() {
     }
 
-    private static final String url = "http://192.168.100.107:3000";
+    private static final String url = "http://172.20.10.8:3000";
 
     private  static Retrofit getRetroCliente(){
 
