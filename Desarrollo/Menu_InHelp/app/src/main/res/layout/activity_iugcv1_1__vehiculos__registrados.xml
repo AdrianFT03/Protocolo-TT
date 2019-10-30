@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.in_help.ui.IUGCV1_1_Vehiculos_Registrados">
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/IUGCV1_1Vehiculos_Registrados"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView54"
+        app:srcCompat="@mipmap/vehiculo" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@mipmap/vehiculo" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@mipmap/vehiculo" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/V1_R1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/V1_R2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/V1_R3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+    <ImageView
+        android:id="@+id/buttonEditarVehi"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView54"
+        app:srcCompat="@mipmap/gestionar" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEditarVehi"
+        app:srcCompat="@mipmap/gestionar" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@mipmap/gestionar" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView54"
+        app:srcCompat="@mipmap/eliminar" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@mipmap/eliminar" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@mipmap/eliminar" />
+</android.support.constraint.ConstraintLayout>
