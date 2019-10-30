@@ -1,4 +1,4 @@
-package com.example.in_help.ui;
+package com.example.in_help.ui.FragmentosMenuLateral;
 
 import android.content.Context;
 import android.net.Uri;
@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import com.example.in_help.R;
 
 
-public class F_IUGC1_Gestionar_Contactos extends Fragment {
+public class Fragmento3 extends Fragment {
 
 
-    public F_IUGC1_Gestionar_Contactos() {
+    public Fragmento3() {
         // Required empty public constructor
     }
 
@@ -24,8 +24,9 @@ public class F_IUGC1_Gestionar_Contactos extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_f__iugc1__gestionar__contactos, container, false);
+        return inflater.inflate(R.layout.fragment_fragmento3, container, false);
     }
 
 
-}
+    }
+
