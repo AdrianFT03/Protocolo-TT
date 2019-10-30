@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.in_help.Prueba_MenuLateral2;
 import com.example.in_help.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -55,15 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void GoPP(View view){
-        Intent GoPP = new Intent(this, Prueba_MenuLateral2.class);
-        startActivity(GoPP);
+    public void GoDatosLat(View view){
+        Intent GoMP = new Intent(this,Fragment_PP.class);
+        startActivity(GoMP);
     }
 
-    public void GoRegistrarVehiculos(View view){
-        Intent GoRegistrarVehiculos = new Intent(this,IUGV1_3_Editar_Vehiculo.class);
-        startActivity(GoRegistrarVehiculos);
-    }
 
 
 

@@ -27,9 +27,6 @@
         app:menu="@menu/menu_navigator"
        />
 
-
-
-
     </android.support.constraint.ConstraintLayout>
 
 

@@ -200,6 +200,4 @@
         <item>200-XYC</item>
         <item>ABC-123</item>
     </string-array>
-    <string name="title_activity_prueba__menu_lateral">Prueba_MenuLateral</string>
-    <string name="title_activity_prueba__menu_lateral2">Prueba_MenuLateral2</string>
 </resources>
