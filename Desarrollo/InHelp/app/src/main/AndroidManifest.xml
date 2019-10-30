@@ -12,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Prueba_de_Listview"></activity>
+        <activity
+            android:name=".Prueba_MenuLateral2"
+            android:label="@string/title_activity_prueba__menu_lateral2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ui.Prueba_de_Listview" />
         <activity android:name=".ui.IUDM2_Editar_Datos_Medicos" />
         <activity android:name=".ui.IUGN6A_Configurar_Notificacion" />
         <activity android:name=".ui.IUGN6_Configurar_Notificaciones" />
