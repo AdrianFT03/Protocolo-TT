@@ -15,13 +15,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.in_help.ui.IUPP1A_Pantalla_Principal">
+    tools:context=".ui.IUPP1A_Pantalla_Principal">
 
 
 
 
     <ImageView
-        android:id="@+id/imageView300"
+        android:id="@+id/imageView3"
         android:layout_width="279dp"
         android:layout_height="271dp"
         android:layout_marginStart="60dp"
@@ -29,11 +29,11 @@
         android:layout_marginEnd="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4900"
+        app:layout_constraintTop_toBottomOf="@+id/textView49"
         app:srcCompat="@mipmap/alarma1" />
 
     <TextView
-        android:id="@+id/textView4900"
+        android:id="@+id/textView49"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -47,7 +47,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView400"
+        android:id="@+id/imageView4"
         android:layout_width="69dp"
         android:layout_height="69dp"
         android:layout_marginStart="20dp"
@@ -55,11 +55,11 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView300"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@mipmap/coche" />
 
     <Spinner
-        android:id="@+id/spinnerplacas00"
+        android:id="@+id/spinnerplacas"
         android:layout_width="138dp"
         android:layout_height="41dp"
         android:layout_marginStart="20dp"
@@ -68,6 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/imageView400" />
     <FrameLayout
         android:layout_width="match_parent"
@@ -78,6 +79,9 @@
 
 
     </FrameLayout>
+=======
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+>>>>>>> 05c38bf140e58ee858c3177835aab57cbd1ba4d3
 
 
 </android.support.constraint.ConstraintLayout>

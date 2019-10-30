@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.in_help.ui.IUGN5_Configurar_Notificaciones">
+    tools:context=".ui.IUGN5_Configurar_Notificaciones">
 
     <TextView
         android:id="@+id/textView87"

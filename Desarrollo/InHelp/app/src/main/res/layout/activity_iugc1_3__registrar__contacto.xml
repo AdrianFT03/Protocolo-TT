@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/IUGC1_3EditTexNombre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.IUGC1_3_Registrar_Contacto">
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/IUGC1_3A_Registrar_Contacto"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup7" />
+
+    <EditText
+        android:id="@+id/IUGC1_3editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:maxLength="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewNombre"></EditText>
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Número de teléfono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3spinnerParen" />
+
+    <RadioGroup
+        android:id="@+id/IUGC1_3radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewMasDe">
+
+        <RadioButton
+            android:id="@+id/IUGC1_3radioButtonSi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="Sí" />
+
+        <RadioButton
+            android:id="@+id/IUGC1_3radioButtonNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Tipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Primer apellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3editTextNombre" />
+
+
+    <EditText
+        android:id="@+id/IUGC1_3EditTextPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:maxLength="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewPA" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Segundo apellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3EditTextPA"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/IUGC1_3EditTextSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:maxLength="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewSA" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewParente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Parentezco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3EditTextSA" />
+
+    <Spinner
+        android:id="@+id/IUGC1_3spinnerParen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewParente" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewNoPol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="No.Póliza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3radioGroup" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewFechaVig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Fecha de vigencia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3editTextPoli" />
+
+    <EditText
+        android:id="@+id/IUGC1_3editTextDia"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/IUGC1_3editTextMes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewFechaVig"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/IUGC1_3editTextMes"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintEnd_toStartOf="@+id/IUGC1_3editTextaño"
+        app:layout_constraintStart_toEndOf="@+id/IUGC1_3editTextDia"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewFechaVig" />
+
+    <EditText
+        android:id="@+id/IUGC1_3editTextaño"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintStart_toEndOf="@+id/IUGC1_3editTextMes"
+        app:layout_constraintTop_toTopOf="@+id/IUGC1_3editTextMes" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="Día"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3editTextDia" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Mes"
+        app:layout_constraintStart_toEndOf="@+id/IUGC1_3textViewDia"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3editTextMes" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewaño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="Año"
+        app:layout_constraintStart_toEndOf="@+id/IUGC1_3textViewMes"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3editTextaño" />
+
+    <Button
+        android:id="@+id/IUGC1_3button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3editTextMes" />
+
+    <TextView
+        android:id="@+id/IUGC1_3textViewMasDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="¿Quieres darnos mas detalles?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3EditTexTelefono" />
+
+    <EditText
+        android:id="@+id/IUGC1_3EditTexTelefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewTelefono" />
+
+    <EditText
+        android:id="@+id/IUGC1_3editTextPoli"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewNoPol" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC1_3textViewTipo">
+
+        <RadioButton
+            android:id="@+id/IUGC1_3radioButtonF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Familiar" />
+
+        <RadioButton
+            android:id="@+id/IUGC1_3radioButtonE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergencia" />
+
+        <RadioButton
+            android:id="@+id/IUGC1_3radioButtonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aseguradora" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

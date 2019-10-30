@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.in_help.ui.IUGN6A_Configurar_Notificacion">
+    tools:context=".ui.IUGN6A_Configurar_Notificacion">
 
     <TextView
         android:id="@+id/IUGN6AtextView"
@@ -13,7 +13,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
-        android:text="@string/IUGN5_Configurar_Notificaciones"
+        android:text="Otorgar Permisos "
         android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,56 +24,56 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="10dp"
         android:background="#85C76F"
         app:layout_constraintEnd_toStartOf="@+id/IUGN6AimageButton1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IUGN6AtextView"
-        app:srcCompat="@mipmap/vehiculo" />
+        app:srcCompat="@mipmap/baseline_directions_car_black_48" />
 
     <ImageButton
         android:id="@+id/IUGN6AimageButton1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/IUGN6AimageButton"
         app:layout_constraintTop_toBottomOf="@+id/IUGN6AtextView"
-        app:srcCompat="@mipmap/medica" />
-
-    <ImageButton
-        android:id="@+id/IUGN6AimageButton2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/IUGN6AimageButton3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IUGN6AimageButton"
-        app:srcCompat="@mipmap/group" />
+        app:srcCompat="@mipmap/baseline_perm_contact_calendar_black_48" />
 
     <ImageButton
         android:id="@+id/IUGN6AimageButton3"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/IUGN6AimageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/IUGN6AimageButton1"
-        app:srcCompat="@mipmap/home" />
+        app:layout_constraintTop_toBottomOf="@+id/IUGN6Aswitch2"
+        app:srcCompat="@mipmap/baseline_phonelink_ring_black_48" />
+
+    <ImageButton
+        android:id="@+id/IUGN6AimageButton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/IUGN6AimageButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGN6Aswitch1"
+        app:srcCompat="@mipmap/baseline_local_hospital_black_48" />
 
     <TextView
         android:id="@+id/textView90"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="153dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="100dp"
         android:text="@string/AvisoConfNot"
@@ -81,4 +81,77 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IUGN6AimageButton2" />
+
+    <Switch
+        android:id="@+id/IUGN6Aswitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGN6AimageButton" />
+
+    <Switch
+        android:id="@+id/IUGN6Aswitch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGN6AimageButton1" />
+
+    <Switch
+        android:id="@+id/IUGN6Aswitch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGN6AimageButton2" />
+
+    <Switch
+        android:id="@+id/IUGN6Aswitch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGN6AimageButton3" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginBottom="10dp"
+        android:text="Vehículo"
+        app:layout_constraintBottom_toBottomOf="@+id/IUGN6AimageButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="10dp"
+        android:text="Personal"
+        app:layout_constraintBottom_toTopOf="@+id/IUGN6Aswitch2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginBottom="10dp"
+        android:text="Médica"
+        app:layout_constraintBottom_toTopOf="@+id/IUGN6Aswitch3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="10dp"
+        android:text="Dispositivo"
+        app:layout_constraintBottom_toBottomOf="@+id/IUGN6AimageButton3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
