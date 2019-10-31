@@ -18,7 +18,7 @@
     <string name="menu_send">Send</string>
 
 
-    <!-- Strings Botones-->
+
     <string name="btnRegistro">REGISTRATE GRATIS</string>
     <string name="btnRegistroFb">REGISTRATE CON FACEBOOK</string>
     <string name="btnIniciar">INICIAR SESIÓN</string>
@@ -58,7 +58,6 @@
     <string name="NPlacas">Placas</string>
     <string name="Color">Color</string>
     <string name="txt_Correo">Correo electrónico:</string>
-    <string name="txt_Password">Password: </string>
     <string name="txt_SegMed">Seguridad médica:</string>
     <string name="txt_Tipo_De_Sangre">Tipo de sangre:</string>
     <string name="txt_Enfermedad_Cronica">Enfermedad crónica:</string>
@@ -84,12 +83,18 @@
     <string name="IUDP1_Datos_Personales">Datos Personales</string>
     <string name="IUDP2_Datos_de_la_cuenta">Datos del Usuario</string>
     <string name="IUDM1_Datos_de_Medicos">Datos Médicos</string>
-
+    <string name="IUGN5_Configurar_Notificaciones">Configurar Notificaciones</string>
+    <string name="IUGN1_Gestionar_Notiificaciones">Gestionar Notificaciones</string>
+    <string name="IUGN2_Informacion_de_Notificacion">Información de Notificación</string>
+    <string name="IUGC1_3A_Registrar_Contacto">Registrar Contacto</string>
+    <string name="IUGC1_1_Contactos_Registrados">Contactos registrados</string>
+    <string name="IUGC1_2_Editar_contacto">Editar Contacto</string>
     <string name="IUDM2_Editar_Datos_Medicos">Editar Datos Médicos</string>
 
-    <string name="IUGN5_Configurar_Notificaciones">Configurar Notificaciones</string>
-
-
+    <string name="TipoEvento"><b>"Tipo de evento:"</b></string>
+    <string name="FechaEvento"><b>"Fecha de evento:"</b></string>
+    <string name="FechaNotific"><b>"Fecha de notificación:"</b></string>
+    <string name="Ubicacion"><b>"Ubicación:"</b></string>
     <string name="RecuperaContrasenia">¿Tienes problemas para iniciar sesión?</string>
     <string name="AyudaContrasenia"><b>Aquí te podemos ayudar.</b></string>
     <string name="FormatoContrasenia">Debete tener al menos 8 caracteres incluyendo un número</string>
@@ -112,16 +117,6 @@
     <string name="Agregar">Agregar</string>
     <string name="ContactosMensaje">¡Recuerda siempre tener actualizados tus contactos!</string>
     <string name="VehiculosMensahe">¡Recuerda siempre tener actualizados tus vehículos!</string>
-
-    <string name="preg_tienes_Seguridad_Med">¿Tienes seguridad Medica?</string>
-    <string name="txt_NSS">Numero de seguridad social</string>
-    <string name="preg_Conoces_tu_tipodeS">¿Conoces tu tipo de sangre?</string>
-    <string name="Rdb_Si">Si</string>
-    <string name="Rdb_No">No</string>
-    <string name="txt_GrupoSan">Grupo sanguineo</string>
-    <string name="preg_Padeces">¿Padeces alguna enfermedad cronica?</string>
-    <string name="txt_Enfermedad">Enfermedad</string>
-
     <string name="AvisoConfNot">Nota: Recuerda que en el <b>aviso de privacidad</b> encontrarás a detalle que información es la que estas autorizando</string>
 
 
@@ -131,6 +126,19 @@
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="title_activity_iugn2__mapa">Map</string>
+    <string-array name="Placas">
+        <item>329-YFA</item>
+        <item>200-XYC</item>
+        <item>ABC-123</item>
+    </string-array>
+    <string name="title_activity_maps_maps_test">Map</string>
+
+    <string name="title_activity_prueba__menu_lateral">Prueba_MenuLateral</string>
+    <string name="title_activity_prueba__menu_lateral2">Prueba_MenuLateral2</string>
+
 
     <!-- Strings Aldhair Menu Lateral-->
     <string name="app_name1">MenuPrincipal</string>
@@ -194,12 +202,4 @@
     <string name="hint_parentezco">Hermano/a,Padre/Madre,Otro.</string>
     <string name="title_activity_menu_lateral">Menu Lateral</string>
 
-
-    <string-array name="Placas">
-        <item>329-YFA</item>
-        <item>200-XYC</item>
-        <item>ABC-123</item>
-    </string-array>
-    <string name="title_activity_prueba__menu_lateral">Prueba_MenuLateral</string>
-    <string name="title_activity_prueba__menu_lateral2">Prueba_MenuLateral2</string>
 </resources>

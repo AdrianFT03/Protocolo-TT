@@ -1,7 +1,5 @@
 package com.example.in_help.ui;
 
-import java.util.Date;
-
 class RegistrarPolizaRequest {
 
 

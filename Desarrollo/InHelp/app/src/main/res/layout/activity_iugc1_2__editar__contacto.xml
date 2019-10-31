@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.IUGC1_2_Editar_Contacto">
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/IUGC1_2_Editar_contacto"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/IUGC12imageView"
+        android:layout_width="121dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView65"
+        app:srcCompat="@mipmap/contacto" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12imageView" />
+
+    <EditText
+        android:id="@+id/IUGC12editTextNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewNombre" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Primer apellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12editTextNombre" />
+
+    <EditText
+        android:id="@+id/IUGC12editTextPA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewPA" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Segundo apellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12editTextPA" />
+
+    <EditText
+        android:id="@+id/IUGC12editTextSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewSA" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewPare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Parentesco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12editTextSA" />
+
+    <Spinner
+        android:id="@+id/IUGC12spinnerPare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewPare" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Número de teléfono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12spinnerPare" />
+
+    <EditText
+        android:id="@+id/IUGC12editTextNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewNum" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewPreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="¿Quieres darnos más detalles?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12editTextNum" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup6"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewPreg">
+
+        <RadioButton
+            android:id="@+id/IUGC12radioButtonSí"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sí" />
+
+        <RadioButton
+            android:id="@+id/IUGC12radioButtonNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/IUGC12textViewNoPoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="No.Póliza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup6" />
+
+    <EditText
+        android:id="@+id/IUGC12editTextNoPolo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewNoPoli" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewFech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Fecha de vigencia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12editTextNoPolo" />
+
+    <EditText
+        android:id="@+id/IUGC12editTextDia"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewFech" />
+
+    <EditText
+        android:id="@+id/IUGC12editTextMes"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/IUGC12editTextDia"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewFech" />
+
+    <EditText
+        android:id="@+id/IUGC12editTextAnio"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/IUGC12editTextMes"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewFech" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:text="Día"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12editTextDia" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:text="Mes"
+        app:layout_constraintStart_toEndOf="@+id/IUGC12textViewDia"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12editTextMes" />
+
+    <TextView
+        android:id="@+id/IUGC12textViewAnio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="4dp"
+        android:text="Año"
+        app:layout_constraintStart_toEndOf="@+id/IUGC12textViewMes"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12editTextAnio" />
+
+    <Button
+        android:id="@+id/IUGC12button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IUGC12textViewMes" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -61,7 +61,7 @@ public class F_IUGV1_Gestionar_Vehiculos extends Fragment {
 
 
 
-   
+
 
     public void GoRegistroVehiculo(View view){
         Intent GoRegistroVehiculo = new Intent(getContext(), IUGV1_2_Registrar_Vehiculo.class);

@@ -2,7 +2,7 @@ package com.example.in_help.ui;
 
 public class CrearVehiculoRequest {
 
-    public CrearVehiculoRequest(Integer id_vehiculo,Integer id_usuario, String nu_placas, String tx_nombre, String color) {
+    public CrearVehiculoRequest(Integer id_vehiculo, Integer id_usuario, String nu_placas, String tx_nombre, String color) {
         this.id_usuario = id_usuario;
         this.id_vehiculo = id_vehiculo;
         this.nu_placas = nu_placas;

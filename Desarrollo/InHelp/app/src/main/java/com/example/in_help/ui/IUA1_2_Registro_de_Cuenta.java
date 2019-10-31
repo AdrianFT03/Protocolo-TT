@@ -117,7 +117,6 @@ public class IUA1_2_Registro_de_Cuenta extends AppCompatActivity {
             @Override
             public void onFailure(Call<Response> call, Throwable t) {
                 Log.d(TAG, "onFailure: "+t.toString());
-                Toast.makeText(IUA1_2_Registro_de_Cuenta.this, "Algo salio mal, Intenta de Nuevo", Toast.LENGTH_SHORT).show();
                 Toast.makeText(IUA1_2_Registro_de_Cuenta.this, "Algo salio mal, Intenta de Nuevo"+t.toString(), Toast.LENGTH_SHORT).show();
             }
         });

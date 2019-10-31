@@ -6,32 +6,29 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@android:drawable/ic_dialog_email"
-            android:title="@string/txt_Notificaciones" />
+            android:title="¡Notificaciones!" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@android:drawable/ic_menu_manage"
-            android:title="@string/Titulo_ConfigNot" />
+            android:title="Configurar Notificaciones" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@mipmap/person"
-            android:title="@string/Titulo_DatosPerso" />
+            android:icon="@mipmap/contacto"
+            android:title="Datos Personales" />
         <item
             android:id="@+id/nav_tools"
-            android:icon="@mipmap/portafolio"
-            android:title="@string/txt_Cuenta" />
+            android:icon="@mipmap/notificon"
+            android:title="Cuenta" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@mipmap/medica"
+            android:title="Datos Médicos" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@mipmap/home"
+            android:title="Menú principal" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@mipmap/hospital"
-                android:title="@string/txt_Datos_Medicos" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@mipmap/casa"
-                android:title="@string/navigator_menuprincipal" />
-        </menu>
-    </item>
 
 </menu>

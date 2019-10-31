@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="GoRegistroFinalizado1"
-    tools:context="com.example.in_help.ui.IUA1_7_Registro_de_Contactos">
+    tools:context=".ui.IUA1_7_Registro_de_Contactos">
 
     <TextView
         android:id="@+id/textView43"

@@ -13,9 +13,12 @@ import android.os.Bundle;
 
 import android.os.CountDownTimer;
 import android.os.SystemClock;
+<<<<<<< HEAD
 import android.util.Log;
 import android.widget.Button;
 
+=======
+>>>>>>> parent of f7359c6... dic
 import android.widget.TextView;
 
 import java.util.List;
@@ -38,6 +41,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         y =  (TextView) findViewById(R.id.y);
         z =  (TextView) findViewById(R.id.z);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT );
+<<<<<<< HEAD
+=======
+
+
+        //sensor = sm.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
+        //giroscopio = sm.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+        //sm.registerListener(this,giroscopio,SensorManager.SENSOR_DELAY_NORMAL);
+
+
+    }
+>>>>>>> parent of f7359c6... dic
 
 
         //sensor = sm.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
@@ -47,10 +61,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of f7359c6... dic
     protected void onResume() {
         super.onResume();
         SensorManager sm = (SensorManager) getSystemService(SENSOR_SERVICE);
-        List<Sensor> sensors = sm.getSensorList(Sensor.TYPE_ACCELEROMETER);
+        List<Sensor> sensors = sm.getSensorList(Sensor.TYPE_GYROSCOPE);
         if(sensors.size() >0){
             sm.registerListener(this,sensors.get(0),SensorManager.SENSOR_DELAY_GAME);
         }
