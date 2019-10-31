@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/txt_Notificaciones" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/Titulo_ConfigNot" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@mipmap/person"
+            android:title="@string/Titulo_DatosPerso" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@mipmap/portafolio"
+            android:title="@string/txt_Cuenta" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/hospital"
+                android:title="@string/txt_Datos_Medicos" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/casa"
+                android:title="@string/navigator_menuprincipal" />
+        </menu>
+    </item>
+
+</menu>

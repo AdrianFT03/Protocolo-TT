@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.in_help">
 
-    <!--
-         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the 'MyLocation' functionality.
-    -->
+    <uses-feature android:name="android.hardware.bluetooth" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -18,39 +21,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-        -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
         <activity
-            android:name=".ui.MapsActivityMapsTest"
-            android:label="@string/title_activity_maps_maps_test"></activity>
-        <activity android:name=".ui.UbicacionTest" />
-        <activity android:name=".ui.IUGC1_2_Editar_Contacto" />
-        <activity android:name=".ui.IUGC1_1_Contactos_Registrados" />
-        <activity android:name=".ui.IUGC1_3_Registrar_Contacto" />
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-        -->
-        <activity
-            android:name=".ui.IUGN2_Mapa"
-            android:label="@string/title_activity_iugn2__mapa" />
-        <activity android:name=".ui.IUGN2_Informacion_de_Notificacion" />
-        <activity android:name=".ui.IUGN1_Gestionar_Notificaciones" />
+            android:name=".Prueba_MenuLateral2"
+            android:label="@string/title_activity_prueba__menu_lateral2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ui.Prueba_de_Listview" />
+        <activity android:name=".ui.IUDM2_Editar_Datos_Medicos" />
         <activity android:name=".ui.IUGN6A_Configurar_Notificacion" />
         <activity android:name=".ui.IUGN6_Configurar_Notificaciones" />
         <activity android:name=".ui.IUGN5_Configurar_Notificaciones" />
