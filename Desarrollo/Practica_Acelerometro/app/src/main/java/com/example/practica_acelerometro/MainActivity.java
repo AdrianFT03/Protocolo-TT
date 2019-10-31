@@ -2,15 +2,28 @@ package com.example.practica_acelerometro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+
+import android.os.CountDownTimer;
+import android.os.SystemClock;
+<<<<<<< HEAD
+import android.util.Log;
+import android.widget.Button;
+
+=======
+>>>>>>> parent of f7359c6... dic
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
@@ -28,6 +41,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         y =  (TextView) findViewById(R.id.y);
         z =  (TextView) findViewById(R.id.z);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT );
+<<<<<<< HEAD
+=======
+
+
+        //sensor = sm.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
+        //giroscopio = sm.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+        //sm.registerListener(this,giroscopio,SensorManager.SENSOR_DELAY_NORMAL);
+
+
+    }
+>>>>>>> parent of f7359c6... dic
 
 
         //sensor = sm.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
@@ -37,10 +61,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of f7359c6... dic
     protected void onResume() {
         super.onResume();
         SensorManager sm = (SensorManager) getSystemService(SENSOR_SERVICE);
-        List<Sensor> sensors = sm.getSensorList(Sensor.TYPE_ACCELEROMETER);
+        List<Sensor> sensors = sm.getSensorList(Sensor.TYPE_GYROSCOPE);
         if(sensors.size() >0){
             sm.registerListener(this,sensors.get(0),SensorManager.SENSOR_DELAY_GAME);
         }
@@ -79,4 +107,45 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
+
+    public  void  ejemplo(){
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle("Notification Title")
+                .setMessage("Do you really want to delete the file?")
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // TODO: Add positive button action code here
+                    }
+                })
+                .setNegativeButton(android.R.string.no, null)
+                .create();
+        dialog.setOnShowListener(new DialogInterface.OnShowListener() {
+
+            private static final int AUTO_DISMISS_MILLIS = 6000;
+            @Override
+            public void onShow(final DialogInterface dialog) {
+                final Button defaultButton = ((AlertDialog) dialog).getButton(AlertDialog.BUTTON_NEGATIVE);
+                final CharSequence negativeButtonText = defaultButton.getText();
+                new CountDownTimer(AUTO_DISMISS_MILLIS, 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        defaultButton.setText(String.format(
+                                Locale.getDefault(), "%s (%d)",
+                                negativeButtonText,
+                                TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) + 1 //add one so it never displays zero
+                        ));
+                    }
+                    @Override
+                    public void onFinish() {
+                        if (((AlertDialog) dialog).isShowing()) {
+                            dialog.dismiss();
+                        }
+                    }
+                }.start();
+            }
+        });
+        dialog.show();
+    }
+
 }

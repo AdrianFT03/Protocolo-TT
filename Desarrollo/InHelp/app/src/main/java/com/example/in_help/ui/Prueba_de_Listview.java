@@ -1,12 +1,11 @@
 package com.example.in_help.ui;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.in_help.R;
 
@@ -54,7 +53,7 @@ public class Prueba_de_Listview extends AppCompatActivity {
                 listaDatosVehiculoIUGV1.size();
                 for (DatosVehiculo_IUGV1 datosBod : listaDatosVehiculoIUGV1){
 
-                    Lista.add(new Datos_IUGV1(datosBod.getId_vehiculo(),datosBod.getNu_placas(),R.mipmap.coche,R.mipmap.outline_build_black_48dp,R.mipmap.baseline_clear_black_48dp));
+                    Lista.add(new Datos_IUGV1(datosBod.getId_vehiculo(),datosBod.getNu_placas(), R.mipmap.coche, R.mipmap.outline_build_black_48dp, R.mipmap.baseline_clear_black_48dp));
 
                 }
                 Prueba_Adaptador_IUGN5 prueba_adaptador_iugn5 = new Prueba_Adaptador_IUGN5(getApplicationContext(),Lista);

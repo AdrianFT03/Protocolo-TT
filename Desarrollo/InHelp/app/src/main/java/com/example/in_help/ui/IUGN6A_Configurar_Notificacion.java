@@ -1,13 +1,12 @@
 package com.example.in_help.ui;
 
-import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.in_help.R;
@@ -26,8 +25,7 @@ public class IUGN6A_Configurar_Notificacion extends AppCompatActivity {
     ImageButton infoPersonal;
     ImageButton infoMEdica;
     ImageButton infoDispositivo;
-    ImageButton constVerde;
-    ImageButton constRojo;
+    Switch switchinfocoche,switchinfoersonal,switchinfomedica,switchinfodispo;
     ArrayList<DatosPermiso_IGN6A> Lista;
     Integer coche;
     @Override
@@ -36,10 +34,7 @@ public class IUGN6A_Configurar_Notificacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iugn6_a__configurar__notificacion);
 
-        constVerde.setBackgroundColor(0xFF85C76F);
-        constRojo.setBackgroundColor(0xFFAA2D46);
-
-        Datos_IUNG6 objeto = (Datos_IUNG6) getIntent().getExtras().getSerializable("DatosIUGN6");
+        final Datos_IUNG6 objeto = (Datos_IUNG6) getIntent().getExtras().getSerializable("DatosIUGN6");
 
         Toast.makeText(this, "id_configuracion: "+ objeto.getId(), Toast.LENGTH_SHORT).show();
 
@@ -48,23 +43,87 @@ public class IUGN6A_Configurar_Notificacion extends AppCompatActivity {
         infoMEdica = (ImageButton) findViewById(R.id.IUGN6AimageButton2);
         infoDispositivo = (ImageButton) findViewById(R.id.IUGN6AimageButton3);
 
+        switchinfocoche = (Switch) findViewById(R.id.IUGN6Aswitch1);
+        switchinfoersonal = (Switch) findViewById(R.id.IUGN6Aswitch2);
+        switchinfomedica = (Switch) findViewById(R.id.IUGN6Aswitch3);
+        switchinfodispo = (Switch) findViewById(R.id.IUGN6Aswitch4);
+
+
         ObtenerPermisos(objeto.getId());
 
-        
-
-        infoCoche.setOnClickListener(new View.OnClickListener() {
+        switchinfocoche.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if(infoCoche.getBackground() == constVerde.getBackground()){// es verde?
-                    infoCoche.setBackgroundColor(0xFFAA2D46);
-                }else if (infoCoche.getBackground() == constRojo.getBackground()){
+                if(switchinfocoche.isChecked() == true){// esta en verde
                     infoCoche.setBackgroundColor(0xFF85C76F);
+                    ActualizaPermiso(1,1,objeto.getId());
+                }else if(switchinfocoche.isChecked() == false){//esta en rojo
+                    infoCoche.setBackgroundColor(0xFFAA2D46);
+                    ActualizaPermiso(2,1,objeto.getId());
+                }
+            }
+        });
+        switchinfoersonal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(switchinfoersonal.isChecked() == true){// esta en verde
+                    infoPersonal.setBackgroundColor(0xFF85C76F);
+                    ActualizaPermiso(1,2,objeto.getId());
+                }else if(switchinfoersonal.isChecked() == false){//esta en rojo
+                    infoPersonal.setBackgroundColor(0xFFAA2D46);
+                    ActualizaPermiso(2,2,objeto.getId());
+                }
+            }
+        });
+        switchinfomedica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(switchinfomedica.isChecked() == true){// esta en verde
+                    infoMEdica.setBackgroundColor(0xFF85C76F);
+                    ActualizaPermiso(1,3,objeto.getId());
+                }else if(switchinfomedica.isChecked() == false){//esta en rojo
+                    infoMEdica.setBackgroundColor(0xFFAA2D46);
+                    ActualizaPermiso(2,3,objeto.getId());
+                }
+            }
+        });
+
+        switchinfodispo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(switchinfodispo.isChecked() == true){// esta en verde
+                    infoDispositivo.setBackgroundColor(0xFF85C76F);
+                    ActualizaPermiso(1,4,objeto.getId());
+
+                }else if(switchinfodispo.isChecked() == false){//esta en rojo
+                    infoDispositivo.setBackgroundColor(0xFFAA2D46);
+                    ActualizaPermiso(2,4,objeto.getId());
                 }
             }
         });
 
 
+    }
+
+    public void ActualizaPermiso(Integer id_estado, Integer id_permiso, Integer id_configuracion){
+        APIServer service= Cliente.getAPIServer();
+
+        DatosActualiza_IUGN6A datosActualiza_iugn6 = new DatosActualiza_IUGN6A();
+
+
+        Call<com.example.in_help.ui.Response> call = (Call<com.example.in_help.ui.Response>) service.UpdatePermiso(id_estado,id_permiso,id_configuracion);
+
+        call.enqueue(new Callback<com.example.in_help.ui.Response>() {
+            @Override
+            public void onResponse(Call<com.example.in_help.ui.Response> call, Response<com.example.in_help.ui.Response> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<com.example.in_help.ui.Response> call, Throwable t) {
+
+            }
+        });
 
 
 
@@ -96,48 +155,45 @@ public class IUGN6A_Configurar_Notificacion extends AppCompatActivity {
                 if(Lista.get(0).getId_estado() == 1){
                     // Estado Verde Coche
                     infoCoche.setBackgroundColor(0xFF85C76F);
-                    coche = 1;
+                    switchinfocoche.setChecked(true);
 
                 }else if(Lista.get(0).getId_estado() == 2){
                     // Estado Rojo Coche
                     infoCoche.setBackgroundColor(0xFFAA2D46);
-                    coche = 2;
+                    switchinfocoche.setChecked(false);
                 }
 
                 if(Lista.get(1).getId_estado() ==1){
                     //Estado Verde Persona
                     infoPersonal.setBackgroundColor(0xFF85C76F);
+                    switchinfoersonal.setChecked(true);
                 }else if(Lista.get(1).getId_estado() ==2){
                     //Estado Rojo Personal
                     infoPersonal.setBackgroundColor(0xFFAA2D46);
+                    switchinfoersonal.setChecked(false);
                 }
 
                 if(Lista.get(2).getId_estado() == 1){
                     //Estado Verde Médica
                     infoMEdica.setBackgroundColor(0xFF85C76F);
+                    switchinfomedica.setChecked(true);
                 }else if(Lista.get(2).getId_estado() == 2){
                     //Estado Rojo Médica
                     infoMEdica.setBackgroundColor(0xFFAA2D46);
+                    switchinfomedica.setChecked(false);
                 }
 
                 if(Lista.get(3).getId_estado() == 1){
                     //Estado Verde Dispositivo
                     infoDispositivo.setBackgroundColor(0xFF85C76F);
+                    switchinfodispo.setChecked(true);
                 }else if(Lista.get(3).getId_estado() == 2){
                     //Estado Rojo Dispositivo
                     infoDispositivo.setBackgroundColor(0xFFAA2D46);
+                    switchinfodispo.setChecked(false);
                 }
 
-                infoCoche.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if(coche == 1){
-                            infoCoche.setBackgroundColor(0xFFAA2D46);
-                        }else if(coche ==2){
-                            infoCoche.setBackgroundColor(0xFF85C76F);
-                        }
-                    }
-                });
+
 
 
 

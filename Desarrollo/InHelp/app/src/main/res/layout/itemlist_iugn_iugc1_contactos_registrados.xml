@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/IUGC1LimageView"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/baseline_perm_contact_calendar_black_48" />
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/IUGC1LtextView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/IUGC1LimageButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@mipmap/baseline_edit_black_24" />
+
+        <ImageButton
+            android:id="@+id/IUGC1LimageButton2"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@mipmap/baseline_delete_black_24" />
+
+    </LinearLayout>
+
+</LinearLayout>
