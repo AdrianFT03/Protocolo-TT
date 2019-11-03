@@ -63,11 +63,11 @@ public class IUGV1_3_Editar_Vehiculo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iugv1_2__editar__vehiculo_ald);
 
-        // setupActionBar();
+         setupActionBar();
 
-       // final Datos_IUGV1 objeto = (Datos_IUGV1) getIntent().getExtras().getSerializable("DatosAnt");
-        //String id_carro = Integer.toString(objeto.getId());
-        //Toast.makeText(this, "Id_vehiculo:"+objeto.getId(), Toast.LENGTH_SHORT).show();
+       final Datos_IUGV1 objeto = (Datos_IUGV1) getIntent().getExtras().getSerializable("DatosAnt");
+        String id_carro = Integer.toString(objeto.getId());
+        Toast.makeText(this, "Id_vehiculo:"+objeto.getId(), Toast.LENGTH_SHORT).show();
 
         editTextPlacas = (EditText) findViewById(R.id.editText13);
         editTextNoPoliza = (EditText) findViewById(R.id.editText8);
@@ -91,6 +91,8 @@ public class IUGV1_3_Editar_Vehiculo extends AppCompatActivity {
         txt_Mes = (TextView) findViewById(R.id.TextMes);
         txt_Anio = (TextView) findViewById(R.id.TextAnio);
         txt_Fhpoliza = (TextView) findViewById(R.id.textView38);
+        ObtenerVehiculos3(1,objeto.getId());
+        ObtenerPoliza(1,objeto.getId());
 
 
         Btn_Listo = (Button) findViewById(R.id.button10);
@@ -231,8 +233,11 @@ public class IUGV1_3_Editar_Vehiculo extends AppCompatActivity {
                     }
                 }
                 if (info==1){
-                    InsertaPlacas();
-                    registrarPoliza();
+                   // InsertaPlacas();
+                    //registrarPoliza();
+
+                    EditarPlacas(editTextPlacas.getText().toString(),objeto.getId());
+                    EditarPoliza(editTextNoPoliza.getText().toString(),fecha,objeto.getId());
                     GoRegVeh();
                     //ObtenerId_Seguro(editTextNoPoliza.getText().toString(),fecha);
                     //ActualizaIntermediaVehiculos(1,ObtenerId_Seguro(););
@@ -394,6 +399,45 @@ public class IUGV1_3_Editar_Vehiculo extends AppCompatActivity {
             }
         });
     }
+
+    /* Editar DATOS*/
+
+    public void EditarPlacas(String nu_placas, Integer id_vehiculo){
+        APIServer service = Cliente.getAPIServer();
+        UpdatePlacas updatePlacas = new UpdatePlacas();
+        Call<com.example.in_help.ui.Response> call = (Call<com.example.in_help.ui.Response>) service.UpdatePlacas(nu_placas,id_vehiculo);
+        call.enqueue(new Callback<com.example.in_help.ui.Response>() {
+            @Override
+            public void onResponse(Call<com.example.in_help.ui.Response> call, retrofit2.Response<Response> response) {
+                //Toast.makeText(IUDM2_Editar_Datos_Medicos.this, "Bien", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<com.example.in_help.ui.Response> call, Throwable t) {
+                Toast.makeText(IUGV1_3_Editar_Vehiculo.this, "Mal", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
+    public void EditarPoliza(String nu_poliza,String fh_vigencia, Integer id_seguro){
+        APIServer service = Cliente.getAPIServer();
+        UpdatePoliza updatePoliza = new UpdatePoliza();
+        Call<com.example.in_help.ui.Response> call = (Call<com.example.in_help.ui.Response>) service.UpdatePoliza(nu_poliza,fh_vigencia,id_seguro);
+        call.enqueue(new Callback<com.example.in_help.ui.Response>() {
+            @Override
+            public void onResponse(Call<com.example.in_help.ui.Response> call, retrofit2.Response<Response> response) {
+                //Toast.makeText(IUDM2_Editar_Datos_Medicos.this, "Bien", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<com.example.in_help.ui.Response> call, Throwable t) {
+                Toast.makeText(IUGV1_3_Editar_Vehiculo.this, "Mal", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
 
 
     public void GoRegVeh(){

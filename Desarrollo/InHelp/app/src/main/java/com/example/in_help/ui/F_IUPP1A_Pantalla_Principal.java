@@ -133,8 +133,8 @@ import android.hardware.SensorManager;
         mapFragment.getMapAsync(this);
         flag = false;
 
-        llenarPlacas(1);
-        ObtenerInfoPersona(1);
+        //llenarPlacas(1);
+        //ObtenerInfoPersona(1);
 
         Activity a = getActivity();
         if(a != null) a.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

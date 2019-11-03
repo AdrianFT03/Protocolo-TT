@@ -63,9 +63,9 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
 
        // setupActionBar();
 
-        final Datos_IUGV1 objeto = (Datos_IUGV1) getIntent().getExtras().getSerializable("DatosAnt");
-        String id_carro = Integer.toString(objeto.getId());
-        Toast.makeText(this, "Id_vehiculo:"+objeto.getId(), Toast.LENGTH_SHORT).show();
+       // final Datos_IUGV1 objeto = (Datos_IUGV1) getIntent().getExtras().getSerializable("DatosAnt");
+        //String id_carro = Integer.toString(objeto.getId());
+        //Toast.makeText(this, "Id_vehiculo:"+objeto.getId(), Toast.LENGTH_SHORT).show();
 
         editTextPlacas = (EditText) findViewById(R.id.editText13);
         editTextNoPoliza = (EditText) findViewById(R.id.editText8);
@@ -90,8 +90,8 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
         txt_Anio = (TextView) findViewById(R.id.TextAnio);
         txt_Fhpoliza = (TextView) findViewById(R.id.textView38);
 
-        ObtenerVehiculos3(1,objeto.getId());
-        ObtenerPoliza(1,objeto.getId());
+        //ObtenerVehiculos3(1,objeto.getId());
+        //ObtenerPoliza(1,objeto.getId());
 
         Btn_Listo = (Button) findViewById(R.id.button10);
 
@@ -234,7 +234,7 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
                                                  InsertaPlacas();
                                                  registrarPoliza();
                                                  GoRegVeh();
-                                                 //ObtenerId_Seguro(editTextNoPoliza.getText().toString(),fecha);
+                                              //   ObtenerId_Seguro(editTextNoPoliza.getText().toString(),fecha);
                                                  //ActualizaIntermediaVehiculos(1,ObtenerId_Seguro(););
 
                                              }

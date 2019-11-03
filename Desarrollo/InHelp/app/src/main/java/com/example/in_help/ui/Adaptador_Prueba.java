@@ -65,7 +65,7 @@ public class Adaptador_Prueba extends BaseAdapter {
 
                 Datos_IUGV1 objeto = (Datos_IUGV1) getItem(i);
 
-                Intent next =new Intent(view.getContext(), IUGV1_2_Registrar_Vehiculo.class);
+                Intent next =new Intent(view.getContext(), IUGV1_3_Editar_Vehiculo.class);
                 next.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 next.putExtra("DatosAnt",(Serializable)objeto);
                 view.getContext().startActivity(next);

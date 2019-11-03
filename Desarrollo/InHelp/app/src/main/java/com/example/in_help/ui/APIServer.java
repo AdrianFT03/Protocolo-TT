@@ -165,4 +165,12 @@ public interface APIServer {
 
     @GET("/get-infopersona/{id_persona}")
     Call<List<DatosPersona_F_IUPP1A>> ObtenerinfoPersonaPP(@Path("id_persona") Integer id_persona);
+
+    @PUT("/UpdatePlacas/{nu_placas} & {id_vehiculo}")
+    Call<Response> UpdatePlacas(@Path("nu_placas") String nu_placas ,@Path("id_vehiculo") Integer id_vehiculo
+    );
+
+    @PUT("/UpdatePoliza/{nu_poliza} & {fh_vigencia} & {id_seguro}")
+    Call<Response> UpdatePoliza(@Path("nu_poliza") String nu_poliza ,@Path("fh_vigencia") String fh_vigencia,@Path("id_seguro") Integer id_seguro
+    );
 }
