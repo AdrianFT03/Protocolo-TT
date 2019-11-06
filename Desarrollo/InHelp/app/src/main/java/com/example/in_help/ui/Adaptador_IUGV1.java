@@ -48,13 +48,13 @@ public class Adaptador_IUGV1 extends BaseAdapter {
         view = inflater.inflate(R.layout.itemlistview_iugv1_1_vehiculos_registrados, null); //inyecta en el listview
 
         ImageView imagen = (ImageView) view.findViewById(R.id.IUGV1_imageView1);
-        ImageButton imagen1 = (ImageButton) view.findViewById(R.id.IUGV1_imagebutton2);
+
         TextView textView = (TextView) view.findViewById(R.id.IUGV1_textView);
         ImageButton imagen2 = (ImageButton) view.findViewById(R.id.IUGV1_imagebutton1);
 
         textView.setText(ListaVehiculos.get(i).getPlacas().toString()); // se carega info
         imagen.setImageResource(ListaVehiculos.get(i).getImagen2());
-        imagen1.setImageResource(ListaVehiculos.get(i).getImagen1());
+
         imagen2.setImageResource(ListaVehiculos.get(i).getImagen3());
 
         imagen2.setOnClickListener(new View.OnClickListener() {

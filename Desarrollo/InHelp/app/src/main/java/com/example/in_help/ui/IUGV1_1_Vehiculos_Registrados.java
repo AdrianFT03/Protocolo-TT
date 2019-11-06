@@ -25,6 +25,8 @@ public class IUGV1_1_Vehiculos_Registrados extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iugv1_1__vehiculos__registrados);
 
+        setupActionBar();
+
         ListaVehiculos = (ListView) findViewById(R.id.IUGV1_listView);
         Lista = new ArrayList<Datos_IUGV1>();
         ObtenerVehiculos2(1);
@@ -52,7 +54,7 @@ public void ObtenerVehiculos2(Integer id_usuario){
                listaDatosVehiculoIUGV1.size();
                 for (DatosVehiculo_IUGV1 datosBod : listaDatosVehiculoIUGV1){
 
-                    Lista.add(new Datos_IUGV1(datosBod.getId_vehiculo(),datosBod.getNu_placas(), R.mipmap.coche, R.mipmap.outline_build_black_48dp, R.mipmap.baseline_clear_black_48dp));
+                    Lista.add(new Datos_IUGV1(datosBod.getId_vehiculo(),datosBod.getNu_placas(), R.mipmap.coche, R.mipmap.sharp_more_horiz_black_480, R.mipmap.baseline_clear_black_48dp));
 
                 }
                 Prueba_Adaptador_IUGN5 prueba_adaptador_iugn5 = new Prueba_Adaptador_IUGN5(getApplicationContext(),Lista);

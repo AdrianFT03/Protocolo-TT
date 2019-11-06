@@ -116,33 +116,32 @@
 
 \begin{BusinessEntity}{Ubicacion}{Ubicacion} 
 	\Battr{ubicacion}{Nombre}{}{Es el nombre del sensor}{\requerido}
-	
+	\Battr{latitud}{Latitud}{}{Es la latitud donde se encuentra el smartphone}{\requerido}
+	\Battr{longitud}{Longitud}{}{Es la longitud donde se encuentra el smartphone}{\requerido}
 \end{BusinessEntity}
 
 \begin{BusinessEntity}{Velocidad}{Velocidad} 
 	\Battr{Velocidad}{Nombre}{}{Es el nombre del sensor}{\requerido}
+	\Battr{km}{Km/h}{}{Es la velocidad a la que viaja el vehículo}{\requerido}
 	
 \end{BusinessEntity}
 
 \begin{BusinessEntity}{Giroscopio}{Giroscopio} 
 	\Battr{giroscopio}{Nombre}{}{Es el nombre del sensor}{\requerido}
+	\Battr{xgiro}{x}{}{Es el valor x del giroscopio}{\requerido}
+	\Battr{ygiro}{y}{}{Es el valor x del giroscopio}{\requerido}
+	\Battr{zgiro}{z}{}{Es el valor x del giroscopio}{\requerido}
 	
 \end{BusinessEntity}
 
-\begin{BusinessEntity}{Micrófono}{Micrófono} 
-	\Battr{microfono}{Nombre}{}{Es el nombre del sensor}{\requerido}
+\begin{BusinessEntity}{Acelerómetro}{Acelerómetro} 
+	\Battr{acelerometro}{Nombre}{}{Es el nombre del sensor}{\requerido}
+	\Battr{xacele}{x}{}{Es el valor x del acelerómetro}{\requerido}
+	\Battr{yacele}{y}{}{Es el valor y del acelerómetro}{\requerido}
+	\Battr{zacele}{z}{}{Es el valor z del acelerómetro}{\requerido}
 	
 \end{BusinessEntity}
 
-\begin{BusinessEntity}{Temperatura}{Temperatura} 
-	\Battr{temperatura}{Nombre}{}{Es el nombre del sensor}{\requerido}
-	
-\end{BusinessEntity}
-
-\begin{BusinessEntity}{Camara}{Camara} 
-	\Battr{camara}{Nombre}{}{Es el nombre del sensor}{\requerido}
-	
-\end{BusinessEntity}
 
 
 

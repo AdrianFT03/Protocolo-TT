@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.in_help.Prueba_MenuLateral2;
 import com.example.in_help.R;
 
 import java.util.List;
@@ -140,7 +141,7 @@ public class IUA1_1_Login extends AppCompatActivity {
     }
 
     public  void GoInicio(){
-        Intent GoInicio = new Intent(this, IUPP1A_Pantalla_Principal.class);
+        Intent GoInicio = new Intent(this, Prueba_MenuLateral2.class);
         startActivity(GoInicio);
     }
 

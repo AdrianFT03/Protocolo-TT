@@ -11,7 +11,7 @@ router.post('/new-user', (req, res)=>{
     mysqlConnection.query('insert into tcu01_usuario(id_usuario,id_persona,tx_login,tx_password,nu_celular)values(?,?,?,?,?)', 
     [id_usuario,id_persona,tx_login,tx_password,nu_celular],(err, rows, fields) => {
         if(!err){
-            res.json({Status : 'Usuario Guardado'});
+            res.json({id_usuario});
         }else{
             console.log(err);
         }
@@ -61,7 +61,7 @@ router.get('/login/:tx_login',(req, res) =>{ //ruta para obtener passwor usuario
 });
 
 
-/*Actualizar el id persona en un https://www.youtube.com/watch?v=xtCmFEaQENc  usuario*/
+
 
 module.exports = router;
 

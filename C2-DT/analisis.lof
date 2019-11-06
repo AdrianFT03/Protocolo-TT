@@ -47,45 +47,70 @@
 \contentsline {figure}{\numberline {8.6}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Datos M\IeC {\'e}dicos. }}{81}{figure.8.6}
 \contentsline {figure}{\numberline {8.7}{\ignorespaces Diagrama de casos de uso del m\IeC {\'o}dulo Gesti\IeC {\'o}n de Veh\IeC {\'\i }culos. }}{82}{figure.8.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces MN1 Men\IeC {\'u} home del usuario}}{143}{figure.9.1}
-\contentsline {figure}{\numberline {9.2}{\ignorespaces MN2 Men\IeC {\'u} principal del usuario}}{144}{figure.9.2}
-\contentsline {figure}{\numberline {9.3}{\ignorespaces IUPP1A Pantalla Principal}}{146}{figure.9.3}
-\contentsline {figure}{\numberline {9.4}{\ignorespaces IUA-1 Inicio}}{148}{figure.9.4}
-\contentsline {figure}{\numberline {9.5}{\ignorespaces IUA-1.1 Iniciar Sesi\IeC {\'o}n}}{149}{figure.9.5}
-\contentsline {figure}{\numberline {9.6}{\ignorespaces IUA1.2 Crear Cuenta}}{151}{figure.9.6}
-\contentsline {figure}{\numberline {9.7}{\ignorespaces IUA1.2A Crear Cuenta}}{152}{figure.9.7}
-\contentsline {figure}{\numberline {9.8}{\ignorespaces IUA1.3 Recuperar Cuenta}}{154}{figure.9.8}
-\contentsline {figure}{\numberline {9.9}{\ignorespaces CUA1.4 Cambiar contrase\IeC {\~n}a}}{155}{figure.9.9}
-\contentsline {figure}{\numberline {9.10}{\ignorespaces IUA1.5 Finalizar Registro}}{158}{figure.9.10}
-\contentsline {figure}{\numberline {9.11}{\ignorespaces IUA1.5A Finalizar Registro}}{160}{figure.9.11}
-\contentsline {figure}{\numberline {9.12}{\ignorespaces IUA1.5B Finalizar Registro}}{161}{figure.9.12}
-\contentsline {figure}{\numberline {9.13}{\ignorespaces IUA1.5A Finalizar Registro}}{163}{figure.9.13}
-\contentsline {figure}{\numberline {9.14}{\ignorespaces IUA1.5B Finalizar Registro}}{164}{figure.9.14}
-\contentsline {figure}{\numberline {9.15}{\ignorespaces IUA1.5C Finalizar Registro}}{165}{figure.9.15}
-\contentsline {figure}{\numberline {9.16}{\ignorespaces IUA1.6 Registrar Contactos}}{167}{figure.9.16}
-\contentsline {figure}{\numberline {9.17}{\ignorespaces IUA1.7 Registro Finalizado}}{169}{figure.9.17}
-\contentsline {figure}{\numberline {9.18}{\ignorespaces IUGC1 Gesti\IeC {\'o}n de Contactos}}{172}{figure.9.18}
-\contentsline {figure}{\numberline {9.19}{\ignorespaces IUGC1.3 Registrar Contacto}}{174}{figure.9.19}
-\contentsline {figure}{\numberline {9.20}{\ignorespaces IUGC1.3A Registrar Contacto}}{175}{figure.9.20}
-\contentsline {figure}{\numberline {9.21}{\ignorespaces IUGC1.3B Registrar Contacto}}{176}{figure.9.21}
-\contentsline {figure}{\numberline {9.22}{\ignorespaces IUGC1.1 Contactos Registrados}}{178}{figure.9.22}
-\contentsline {figure}{\numberline {9.23}{\ignorespaces IUGC1.1.3 Editar Contacto}}{181}{figure.9.23}
-\contentsline {figure}{\numberline {9.24}{\ignorespaces IUGC1.1.3A Editar Contacto}}{182}{figure.9.24}
-\contentsline {figure}{\numberline {9.25}{\ignorespaces IUGC1.1.3B Editar Contacto}}{183}{figure.9.25}
-\contentsline {figure}{\numberline {9.26}{\ignorespaces IUGN1 Gesti\IeC {\'o}n de Notificaciones}}{185}{figure.9.26}
-\contentsline {figure}{\numberline {9.27}{\ignorespaces IUGN1A Gesti\IeC {\'o}n de Notificaciones}}{186}{figure.9.27}
-\contentsline {figure}{\numberline {9.28}{\ignorespaces IUGN2 Informaci\IeC {\'o}n de Notificaci\IeC {\'o}n}}{188}{figure.9.28}
-\contentsline {figure}{\numberline {9.29}{\ignorespaces IUGN2A Informaci\IeC {\'o}n de Notificaci\IeC {\'o}n}}{189}{figure.9.29}
-\contentsline {figure}{\numberline {9.30}{\ignorespaces IUGN3 Informaci\IeC {\'o}n General}}{190}{figure.9.30}
-\contentsline {figure}{\numberline {9.31}{\ignorespaces IUGN5 Configurar Notificaciones}}{192}{figure.9.31}
-\contentsline {figure}{\numberline {9.32}{\ignorespaces IUGN6 Configurar Notificaci\IeC {\'o}n}}{194}{figure.9.32}
-\contentsline {figure}{\numberline {9.33}{\ignorespaces IUGN8 Configurar Notificaci\IeC {\'o}n}}{197}{figure.9.33}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces MN1 Men\IeC {\'u} home del usuario}}{137}{figure.9.1}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces MN2 Men\IeC {\'u} principal del usuario}}{138}{figure.9.2}
+\contentsline {figure}{\numberline {9.3}{\ignorespaces IUPP1A Pantalla Principal}}{140}{figure.9.3}
+\contentsline {figure}{\numberline {9.4}{\ignorespaces IUA-1 Inicio}}{142}{figure.9.4}
+\contentsline {figure}{\numberline {9.5}{\ignorespaces IUA-1.1 Iniciar Sesi\IeC {\'o}n}}{143}{figure.9.5}
+\contentsline {figure}{\numberline {9.6}{\ignorespaces IUA1.2 Crear Cuenta}}{145}{figure.9.6}
+\contentsline {figure}{\numberline {9.7}{\ignorespaces IUA1.2A Crear Cuenta}}{146}{figure.9.7}
+\contentsline {figure}{\numberline {9.8}{\ignorespaces IUA1.3 Recuperar Cuenta}}{148}{figure.9.8}
+\contentsline {figure}{\numberline {9.9}{\ignorespaces IUA1.5 Finalizar Registro}}{150}{figure.9.9}
+\contentsline {figure}{\numberline {9.10}{\ignorespaces IUA1.7 Registro Finalizado}}{151}{figure.9.10}
+\contentsline {figure}{\numberline {9.11}{\ignorespaces IUGC1 Gesti\IeC {\'o}n de Contactos}}{154}{figure.9.11}
+\contentsline {figure}{\numberline {9.12}{\ignorespaces IUGC1.3 Registrar Contacto}}{156}{figure.9.12}
+\contentsline {figure}{\numberline {9.13}{\ignorespaces IUGC1.3A Registrar Contacto}}{157}{figure.9.13}
+\contentsline {figure}{\numberline {9.14}{\ignorespaces IUGC1.3B Registrar Contacto}}{158}{figure.9.14}
+\contentsline {figure}{\numberline {9.15}{\ignorespaces IUGC1.1 Contactos Registrados}}{161}{figure.9.15}
+\contentsline {figure}{\numberline {9.16}{\ignorespaces IUGC1.1.3 Editar Contacto}}{163}{figure.9.16}
+\contentsline {figure}{\numberline {9.17}{\ignorespaces IUGC1.1.3A Editar Contacto}}{164}{figure.9.17}
+\contentsline {figure}{\numberline {9.18}{\ignorespaces IUGC1.1.3B Editar Contacto}}{165}{figure.9.18}
+\contentsline {figure}{\numberline {9.19}{\ignorespaces IUGN1 Gesti\IeC {\'o}n de Notificaciones}}{167}{figure.9.19}
+\contentsline {figure}{\numberline {9.20}{\ignorespaces IUGN2 Informaci\IeC {\'o}n de Notificaci\IeC {\'o}n}}{169}{figure.9.20}
+\contentsline {figure}{\numberline {9.21}{\ignorespaces IUGN5 Configurar Notificaciones}}{171}{figure.9.21}
+\contentsline {figure}{\numberline {9.22}{\ignorespaces IUGN6 Configurar Notificaci\IeC {\'o}n}}{173}{figure.9.22}
+\contentsline {figure}{\numberline {9.23}{\ignorespaces IUGN8 Configurar Notificaci\IeC {\'o}n}}{175}{figure.9.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Aceler\IeC {\'o}metro}}{211}{figure.10.1}
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Aceler\IeC {\'o}metro}}{212}{figure.10.2}
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Aceler\IeC {\'o}metro}}{213}{figure.10.3}
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Aceler\IeC {\'o}metro}}{214}{figure.10.4}
-\contentsline {figure}{\numberline {10.5}{\ignorespaces Giroscopio}}{215}{figure.10.5}
-\contentsline {figure}{\numberline {10.6}{\ignorespaces Giroscopio}}{216}{figure.10.6}
-\contentsline {figure}{\numberline {10.7}{\ignorespaces Giroscopio}}{217}{figure.10.7}
-\contentsline {figure}{\numberline {10.8}{\ignorespaces Giroscopio}}{218}{figure.10.8}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces M\IeC {\'o}dulos de la aplicaci\IeC {\'o}n}}{189}{figure.10.1}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Modelo Entidad Relaci\IeC {\'o}n In-Help}}{190}{figure.10.2}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces DB Autenticaci\IeC {\'o}n}}{191}{figure.10.3}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces DB M\IeC {\'e}dica}}{192}{figure.10.4}
+\contentsline {figure}{\numberline {10.5}{\ignorespaces DB Contactos}}{193}{figure.10.5}
+\contentsline {figure}{\numberline {10.6}{\ignorespaces DB Veh\IeC {\'\i }culos}}{194}{figure.10.6}
+\contentsline {figure}{\numberline {10.7}{\ignorespaces DB Notificaci\IeC {\'o}n}}{195}{figure.10.7}
+\contentsline {figure}{\numberline {10.8}{\ignorespaces Peticiones}}{196}{figure.10.8}
+\contentsline {figure}{\numberline {10.9}{\ignorespaces Index}}{197}{figure.10.9}
+\contentsline {figure}{\numberline {10.10}{\ignorespaces Rutas}}{197}{figure.10.10}
+\contentsline {figure}{\numberline {10.11}{\ignorespaces Conexi\IeC {\'o}n}}{198}{figure.10.11}
+\contentsline {figure}{\numberline {10.12}{\ignorespaces Diagrama secuencia Login}}{199}{figure.10.12}
+\contentsline {figure}{\numberline {10.13}{\ignorespaces Diagrama secuencia Recuperar Contrase\IeC {\~n}a}}{200}{figure.10.13}
+\contentsline {figure}{\numberline {10.14}{\ignorespaces Diagrama secuencia Crear Cuenta}}{201}{figure.10.14}
+\contentsline {figure}{\numberline {10.15}{\ignorespaces Diagrama secuencia Consulta Datos Personales}}{203}{figure.10.15}
+\contentsline {figure}{\numberline {10.16}{\ignorespaces Diagrama secuencia Consulta Datos de Cuenta}}{204}{figure.10.16}
+\contentsline {figure}{\numberline {10.17}{\ignorespaces Diagrama secuencia Gesti\IeC {\'o}n de Notificaciones}}{205}{figure.10.17}
+\contentsline {figure}{\numberline {10.18}{\ignorespaces Diagrama secuencia Gesti\IeC {\'o}n de Notificaciones}}{205}{figure.10.18}
+\contentsline {figure}{\numberline {10.19}{\ignorespaces Diagrama secuencia de Notificaciones}}{206}{figure.10.19}
+\contentsline {figure}{\numberline {10.20}{\ignorespaces Gr\IeC {\'a}fica Velocidad normal vs Velocidad anormal}}{209}{figure.10.20}
+\contentsline {figure}{\numberline {10.21}{\ignorespaces Gr\IeC {\'a}fica Giroscopio anormal}}{209}{figure.10.21}
+\contentsline {figure}{\numberline {10.22}{\ignorespaces Gr\IeC {\'a}fica Giroscopio normal}}{210}{figure.10.22}
+\contentsline {figure}{\numberline {10.23}{\ignorespaces Gr\IeC {\'a}fica Aceler\IeC {\'o}metro normal}}{210}{figure.10.23}
+\contentsline {figure}{\numberline {10.24}{\ignorespaces Gr\IeC {\'a}fica Aceler\IeC {\'o}metro anormal}}{211}{figure.10.24}
+\contentsline {figure}{\numberline {10.25}{\ignorespaces Gr\IeC {\'a}fica OBD2 normal vs OBD2 anormal}}{211}{figure.10.25}
+\contentsline {figure}{\numberline {10.26}{\ignorespaces Diagrama secuencia Notificaciones Autom\IeC {\'a}ticas}}{212}{figure.10.26}
+\contentsline {figure}{\numberline {10.27}{\ignorespaces Diagrama flujo Notificaciones Autom\IeC {\'a}ticas}}{214}{figure.10.27}
+\contentsline {figure}{\numberline {10.28}{\ignorespaces Disparadores Notificaci\IeC {\'o}n Autom\IeC {\'a}tica}}{214}{figure.10.28}
+\contentsline {figure}{\numberline {10.29}{\ignorespaces Combinaciones Notificaciones Autom\IeC {\'a}ticas}}{215}{figure.10.29}
+\contentsline {figure}{\numberline {10.30}{\ignorespaces Tabla comparativa medici\IeC {\'o}n de velocidades}}{215}{figure.10.30}
+\contentsline {figure}{\numberline {10.31}{\ignorespaces Gr\IeC {\'a}fica comparativa medici\IeC {\'o}n de velocidades}}{216}{figure.10.31}
+\contentsline {figure}{\numberline {10.32}{\ignorespaces Tiempos notificaci\IeC {\'o}n autom\IeC {\'a}tica}}{216}{figure.10.32}
+\contentsline {figure}{\numberline {10.33}{\ignorespaces Tiempos notificaci\IeC {\'o}n manual}}{217}{figure.10.33}
+\contentsline {figure}{\numberline {10.34}{\ignorespaces Flujo SIT Notificaci\IeC {\'o}n Autom\IeC {\'a}ticas/Manuales}}{217}{figure.10.34}
+\contentsline {figure}{\numberline {10.35}{\ignorespaces Log Giroscopio Android}}{218}{figure.10.35}
+\contentsline {figure}{\numberline {10.36}{\ignorespaces Alerta Notificaci\IeC {\'o}n Autom\IeC {\'a}tica}}{219}{figure.10.36}
+\contentsline {figure}{\numberline {10.37}{\ignorespaces Datos de Notificaci\IeC {\'o}n Autom\IeC {\'a}tica}}{219}{figure.10.37}
+\contentsline {figure}{\numberline {10.38}{\ignorespaces Visualizaci\IeC {\'o}n de Notificaci\IeC {\'o}n Autom\IeC {\'a}tica}}{220}{figure.10.38}
+\contentsline {figure}{\numberline {10.39}{\ignorespaces Mensajes Enviado Notificaci\IeC {\'o}n Autom\IeC {\'a}tica}}{220}{figure.10.39}
+\contentsline {figure}{\numberline {10.40}{\ignorespaces Alerta Notificaci\IeC {\'o}n Manual}}{221}{figure.10.40}
+\contentsline {figure}{\numberline {10.41}{\ignorespaces Datos de Notificaci\IeC {\'o}n Manual}}{221}{figure.10.41}
+\contentsline {figure}{\numberline {10.42}{\ignorespaces Visualizaci\IeC {\'o}n de Notificaci\IeC {\'o}n Manual}}{222}{figure.10.42}
+\contentsline {figure}{\numberline {10.43}{\ignorespaces Mensajes Enviado Notificaci\IeC {\'o}n Manual}}{222}{figure.10.43}

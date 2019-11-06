@@ -1,5 +1,6 @@
 package com.example.in_help.ui;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +19,8 @@ public class IUDP2_Datos_de_la_Cuenta extends AppCompatActivity {
 
     public TextView correo , password;
     public String content;
+    public String content1;
+
     private static final String TAG = "Log";
 
 
@@ -25,10 +28,10 @@ public class IUDP2_Datos_de_la_Cuenta extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iudp2__datos_de_la__cuenta);
-
+        setupActionBar();
         correo = (TextView)findViewById(R.id.textView76);
         password = (TextView)findViewById(R.id.textView78);
-        ObtenerDatosCuenta(2);
+        ObtenerDatosCuenta(1);
     }
 
     public void ObtenerDatosCuenta (Integer id_usuario){
@@ -39,15 +42,17 @@ public class IUDP2_Datos_de_la_Cuenta extends AppCompatActivity {
     respuesta.enqueue(new Callback<List<DatosCuentaRequest>>() {
         @Override
         public void onResponse(Call<List<DatosCuentaRequest>> call, Response<List<DatosCuentaRequest>> response) {
-            Toast.makeText(IUDP2_Datos_de_la_Cuenta.this, "BUENOTE", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(IUDP2_Datos_de_la_Cuenta.this, "BUENOTE", Toast.LENGTH_SHORT).show();
             List<DatosCuentaRequest> listPost = response.body();
             content = "";
+            content1 = "";
             for(DatosCuentaRequest datosCuentaRequest: listPost){
-                content +="Correo: "+datosCuentaRequest.getTx_login();
-                content +="Password: "+datosCuentaRequest.getTx_password();
+                content = datosCuentaRequest.getTx_login();
+                content1 = datosCuentaRequest.getTx_password();
 
             }
             correo.setText(content);
+            password.setText(content1);
             Log.d(TAG, "Respuesta: "+content);
         }
 
@@ -57,6 +62,15 @@ public class IUDP2_Datos_de_la_Cuenta extends AppCompatActivity {
         }
     });
 
+    }
+
+    private void setupActionBar(){
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null)
+        {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("");
+        }
     }
 
 

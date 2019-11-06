@@ -76,6 +76,7 @@ La información del dispositivo smartphone que se utilizó para la interpretaci�
 		\item \textbf{Ubicación 1}. Es la ubicación inicial en la que se encuentra el dispositivo, esta ubicación está dada por longitud y latitud, misma que nos proporciona la API de Google.
 		\item \textbf{Tiempo}. Es el tiempo que se tiene de referencia para obtener una nueva ubicación en el dispositivo.Para este caso se tomó la referencia de 2000 ms.
 		\item \textbf{Ubicación 2}. Es la ubicación en la que se encuentra el dispositivo después de haber pasado el periodo de tiempo establecido.
+		\item \textbf{Distancia}. Es la distancia que existe entre la ubicación 1 y la ubicación 2.
 		\item \textbf{Velocidad}. Esta se determina con la distancia que existe entre la Ubicación 1 y Ubicación 2 así mismo con el tiempo que se tardo en actualizar el segundo punto. Para este cálculo se utilizo la formula $V = Distancia/Tiempo$, dando por hecho que se tuvo una aceleración uniforme, la cual es muy aproximada debido al tiempo en que se obtuvo una segunda ubicación.
 	\end{itemize}
 
@@ -125,7 +126,7 @@ La figura \ref{fig:NotificaAutoA} muestra como se comportaría el Acelerómetro 
 La figura \ref{fig:NotificaAutoO} muestra como se comportaría el obd2 que se encuentra conectado en el vehículo, esto en una situación considerada normal vs situaciones anormales (choque automovilístico). 
 \begin{figure}[htbp!]
 	\centering
-	\fbox{\includegraphics[width=1.0\textwidth]{AvancesPruebas/imagenes/GestionNotifica}}
+	\fbox{\includegraphics[width=1.0\textwidth]{AvancesPruebas/imagenes/OBD2vs}}
 	\caption{Gráfica OBD2 normal vs OBD2 anormal}
 	\label{fig:NotificaAutoO}
 \end{figure}
@@ -179,3 +180,40 @@ Para que un contacto registrado por el usuario pueda recibir una notificación a
 	\end{itemize}
 	
 \end{itemize}
+
+\subsubsection{Diagrama flujo Notificaciones Automáticas}
+
+En la figura \ref{fig:DiagramaNA} se aprecia como es que se evalúan y generan las notificaciones automáticas, esto en caso que se haya interpretado un posible coche automovilístico.
+
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=1.0\textwidth]{AvancesPruebas/imagenes/DiagramaAletrta}}
+	\caption{Diagrama flujo Notificaciones Automáticas}
+	\label{fig:DiagramaNA}
+\end{figure}
+
+\subsubsection{Eventos de Notificaciones Automáticas}
+
+Con ayudas de las gráficas obtenidas en la sección \textbf{Información del dispositivo}, se determinó la siguiente tabla, la cual muestra cuando se podrá ser disparada una notificación automática.
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=1.0\textwidth]{AvancesPruebas/imagenes/Disparadores}}
+	\caption{Disparadores Notificación Automática}
+	\label{fig:Disparadores}
+\end{figure}
+
+En un inicio se tomará la gravedad que se muestra en la figura \ref{fig:Disparadores}, esta podrá cambiar dependiendo de los eventos que se presenten en el dispositivo móvil, vehículo. La definición de como es que cambiarán los eventos, se establece en la figura \ref{fig:Combinaciones}.
+
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=1.0\textwidth]{AvancesPruebas/imagenes/Combinaciones}}
+	\caption{Combinaciones Notificaciones Automáticas}
+	\label{fig:Combinaciones}
+\end{figure}
+
+
+
+ 

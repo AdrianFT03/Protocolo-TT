@@ -3,6 +3,7 @@ package com.example.in_help.ui;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -18,6 +19,8 @@ public class IUGV1_Gestionar_Vehiculos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iugv1__gestionar__vehiculos);
+
+        setupActionBar();
 
         MenuP = (BottomNavigationView) findViewById(R.id.MenuP);
 
@@ -56,5 +59,14 @@ public class IUGV1_Gestionar_Vehiculos extends AppCompatActivity {
     private void GoVehiculos1() {
         Intent GoVehiculos1 = new Intent(this, IUGV1_Gestionar_Vehiculos.class);
         startActivity(GoVehiculos1);
+    }
+
+    private void setupActionBar(){
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null)
+        {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("");
+        }
     }
 }

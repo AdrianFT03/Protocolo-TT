@@ -19,6 +19,11 @@ app.use(require('./routes/medica.js'));
 app.use(require('./routes/datosPersonales.js'));
 app.use(require('./routes/datosCuenta.js'));
 app.use(require('./routes/vehiculos.js'));
+app.use(require('./routes/confnotificacion.js'));
+app.use(require('./routes/gestionanotif.js'));
+app.use(require('./routes/contactos.js'));
+app.use(require('./routes/bitacora.js'));
+
 // Starting to server
 
 /*inicializamos el servidor y le ponemos el puerto donde va a escuchar*/

@@ -67,7 +67,7 @@ public class IUGV1_3_Editar_Vehiculo extends AppCompatActivity {
 
        final Datos_IUGV1 objeto = (Datos_IUGV1) getIntent().getExtras().getSerializable("DatosAnt");
         String id_carro = Integer.toString(objeto.getId());
-        Toast.makeText(this, "Id_vehiculo:"+objeto.getId(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Id_vehiculo:"+objeto.getId(), Toast.LENGTH_SHORT).show();
 
         editTextPlacas = (EditText) findViewById(R.id.editText13);
         editTextNoPoliza = (EditText) findViewById(R.id.editText8);
@@ -405,15 +405,15 @@ public class IUGV1_3_Editar_Vehiculo extends AppCompatActivity {
     public void EditarPlacas(String nu_placas, Integer id_vehiculo){
         APIServer service = Cliente.getAPIServer();
         UpdatePlacas updatePlacas = new UpdatePlacas();
-        Call<com.example.in_help.ui.Response> call = (Call<com.example.in_help.ui.Response>) service.UpdatePlacas(nu_placas,id_vehiculo);
-        call.enqueue(new Callback<com.example.in_help.ui.Response>() {
+        Call<Response> call = (Call<Response>) service.UpdatePlacas(nu_placas,id_vehiculo);
+        call.enqueue(new Callback<Response>() {
             @Override
-            public void onResponse(Call<com.example.in_help.ui.Response> call, retrofit2.Response<Response> response) {
+            public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
                 //Toast.makeText(IUDM2_Editar_Datos_Medicos.this, "Bien", Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public void onFailure(Call<com.example.in_help.ui.Response> call, Throwable t) {
+            public void onFailure(Call<Response> call, Throwable t) {
                 Toast.makeText(IUGV1_3_Editar_Vehiculo.this, "Mal", Toast.LENGTH_SHORT).show();
             }
         });
@@ -423,15 +423,15 @@ public class IUGV1_3_Editar_Vehiculo extends AppCompatActivity {
     public void EditarPoliza(String nu_poliza,String fh_vigencia, Integer id_seguro){
         APIServer service = Cliente.getAPIServer();
         UpdatePoliza updatePoliza = new UpdatePoliza();
-        Call<com.example.in_help.ui.Response> call = (Call<com.example.in_help.ui.Response>) service.UpdatePoliza(nu_poliza,fh_vigencia,id_seguro);
-        call.enqueue(new Callback<com.example.in_help.ui.Response>() {
+        Call<Response> call = (Call<Response>) service.UpdatePoliza(nu_poliza,fh_vigencia,id_seguro);
+        call.enqueue(new Callback<Response>() {
             @Override
-            public void onResponse(Call<com.example.in_help.ui.Response> call, retrofit2.Response<Response> response) {
+            public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
                 //Toast.makeText(IUDM2_Editar_Datos_Medicos.this, "Bien", Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public void onFailure(Call<com.example.in_help.ui.Response> call, Throwable t) {
+            public void onFailure(Call<Response> call, Throwable t) {
                 Toast.makeText(IUGV1_3_Editar_Vehiculo.this, "Mal", Toast.LENGTH_SHORT).show();
             }
         });

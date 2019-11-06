@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
@@ -53,6 +54,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static android.content.Context.LOCATION_SERVICE;
+import static android.content.Context.MODE_PRIVATE;
 import static android.content.Context.SENSOR_SERVICE;
 import static android.support.constraint.Constraints.TAG;
 
@@ -133,11 +135,13 @@ import android.hardware.SensorManager;
         mapFragment.getMapAsync(this);
         flag = false;
 
-        //llenarPlacas(1);
-        //ObtenerInfoPersona(1);
+        llenarPlacas(1);
+
 
         Activity a = getActivity();
         if(a != null) a.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        ObtenerInfoPersona(1);
 
 
         spinnerPalcas.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -149,6 +153,7 @@ import android.hardware.SensorManager;
 
                 }else {
                     ObtenerVehiculo(spinnerPalcas.getSelectedItem().toString(),1);
+
                 }
             }
 
@@ -175,7 +180,7 @@ import android.hardware.SensorManager;
 
 
 
-                                SimpleDateFormat sdf = new SimpleDateFormat("yy-mm-dd HH:mm:ss");
+                                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ");
                                 String fecha = sdf.format(new Date());
 
 
@@ -185,7 +190,7 @@ import android.hardware.SensorManager;
                                 Log.d(TAG, "latitud" +latitud);
                                 Log.d(TAG, "latitud" +longitud);
 
-                                CrearNotificacion(1,id_vehiculo,id_bitacora,fecha,latitud,longitud);
+                                CrearNotificacion(1,id_vehiculo,id_bitacora,fecha,latitud,longitud,1);
 
                                 ObtenerNumeros(1,id_vehiculo);
                                 Toast.makeText(getContext(), "Alerta enviada", Toast.LENGTH_SHORT).show();
@@ -247,7 +252,7 @@ import android.hardware.SensorManager;
                 }else {
                     km = ((locationAnterior.distanceTo(location1))*1)/1000;
                     km = (km/0.0005555556);
-                    Toast.makeText(getContext(), km + " Km/h", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(), km + " Km/h", Toast.LENGTH_SHORT).show();
                     Log.d(TAG, "onLocationChanged: " + km +"Km/h");
 
                     //AdminSQLiteOpenHelper adminSQLiteOpenHelper = new AdminSQLiteOpenHelper(getApplicationContext(),"velocidad",null,1);
@@ -436,11 +441,11 @@ import android.hardware.SensorManager;
 
     }
 
-    public void CrearNotificacion(Integer id_usuario, Integer id_vehiculo, Integer id_bitacora,String fh_notificacion, Double latitud,Double longitud) {
+    public void CrearNotificacion(Integer id_usuario, Integer id_vehiculo, Integer id_bitacora,String fh_notificacion, Double latitud,Double longitud,Integer id_tipo) {
 
         APIServer service = Cliente.getAPIServer();
 
-        DatosNotifica_F_IUPPA notificacion = new DatosNotifica_F_IUPPA(id_usuario,2,id_vehiculo,id_bitacora,fh_notificacion,latitud,longitud);
+        DatosNotifica_F_IUPPA notificacion = new DatosNotifica_F_IUPPA(id_usuario,id_tipo,id_vehiculo,id_bitacora,fh_notificacion,latitud,longitud);
 
 
         Call<com.example.in_help.ui.Response> call = (Call<com.example.in_help.ui.Response>) service.crearNotificacion(notificacion);
@@ -585,16 +590,37 @@ import android.hardware.SensorManager;
                     }
 
                     if(datos.getId_permiso() == 3 && datos.getId_estado()==1) {
+                        String tipo="";
+                        if(id_tipo_sangre.equals(1)){
+                            tipo = "A+";
+                        }else if(id_tipo_sangre.equals(1)){
+                            tipo = "O+";
+                        }else if(id_tipo_sangre.equals(2)){
+                            tipo = "B+";
+                        }else if(id_tipo_sangre.equals(3)){
+                            tipo = "AB+";
+                        }else if(id_tipo_sangre.equals(4)){
+                            tipo = "A-";
+                        }else if(id_tipo_sangre.equals(5)){
+                            tipo = "O-";
+                        }else if(id_tipo_sangre.equals(6)){
+                            tipo = "A+";
+                        }else if(id_tipo_sangre.equals(7)){
+                            tipo = "B-";
+                        }else if(id_tipo_sangre.equals(8)){
+                            tipo = "AB-";
+                        }else if(id_tipo_sangre.equals(9)){
+                            tipo = "Indefinido";
+                        }
                         mensaje = "";
-                        mensaje += "Información médica:";
-                        mensaje += "\n";
+
                         mensaje += "Tipo Sangre: ";
-                        mensaje += id_tipo_sangre.toString();
-                        mensaje += "\n";
+                        mensaje += tipo;
+                        mensaje += ", ";
                         mensaje += "SS: ";
-                        mensaje += tx_id;
-                        mensaje += "\n";
-                        mensaje += "Enfermedad: "+tx_enfermedad;
+                        mensaje += tx_id.toString();
+                        mensaje += ", ";
+                        mensaje += "Enfermedad: "+tx_enfermedad.toString();
                         enviarMensajes(numero,mensaje);
 
                     }else if(datos.getId_permiso() == 3 && datos.getId_estado()!=1){
@@ -682,6 +708,7 @@ import android.hardware.SensorManager;
     @Override
     public void onResume() {
         super.onResume();
+
         sm = (SensorManager) getActivity().getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> sensors = sm.getSensorList(Sensor.TYPE_ACCELEROMETER);
         if(sensors.size() >0){
@@ -694,7 +721,22 @@ import android.hardware.SensorManager;
 
             sm1.registerListener(this,sensors1.get(0),SensorManager.SENSOR_DELAY_GAME);
         }
+
+
     }
+
+
+
+        @Override
+        public void onPause() {
+            super.onPause();
+            sm.unregisterListener(this);
+            sm = null;
+            sm1.unregisterListener(this);
+            sm1 = null;
+
+        }
+
 
 
 
@@ -712,17 +754,22 @@ import android.hardware.SensorManager;
 
                 case Sensor.TYPE_GYROSCOPE:
                     Float Gx = sensorEvent.values[SensorManager.DATA_X];
+                    Log.d(TAG, "Giroscopio Gx :"+Gx);
                     Float Gy = sensorEvent.values[SensorManager.DATA_Y];
+                    Log.d(TAG, "Giroscopio Gy :"+Gy);
                     Float Gz = sensorEvent.values[SensorManager.DATA_Z];
+                    Log.d(TAG, "Giroscopio Gz :"+Gz);
 
-                    if(Gx > 10 || Gx < -5){
-                        if(flag == false){
+                    if(Gx > 10 || Gx < -5 && Gy > 10 || Gy <-5 && Gz > 3 || Gz < -3  )
+                    {
+                        if(flag == false)
+                        {
                             flag = true;
-                            NotificaAutomatica();
+                            NotificaAutomatica(1);
+                            Log.d(TAG, "Notificación Giroscopio Gx :"+Gx);
                         }
-
-
                     }
+
 
 
                     break;
@@ -735,7 +782,7 @@ import android.hardware.SensorManager;
 
 
 
-    public void NotificaAutomatica(){
+    public void NotificaAutomatica(final Integer Tipo){
 
             AlertDialog.Builder alerta = new AlertDialog.Builder(getContext());
 
@@ -748,7 +795,7 @@ import android.hardware.SensorManager;
 
 
 
-                            SimpleDateFormat sdf = new SimpleDateFormat("yy-mm-dd HH:mm:ss");
+                            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                             String fecha = sdf.format(new Date());
 
 
@@ -758,7 +805,7 @@ import android.hardware.SensorManager;
                             Log.d(TAG, "latitud" +latitud);
                             Log.d(TAG, "latitud" +longitud);
 
-                            CrearNotificacion(1,id_vehiculo,id_bitacora,fecha,latitud,longitud);
+                            CrearNotificacion(1,id_vehiculo,id_bitacora,fecha,latitud,longitud,2);
 
                             ObtenerNumeros(1,id_vehiculo);
                             Toast.makeText(getContext(), "Alerta enviada", Toast.LENGTH_SHORT).show();
@@ -778,7 +825,7 @@ import android.hardware.SensorManager;
 
 
             if(spinnerPalcas.getSelectedItem().toString().equals("Selecciona")){
-                Toast.makeText(getContext(), "Selecciona un Vehículo", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this.getActivity(), "Selecciona un Vehículo", Toast.LENGTH_SHORT).show();
                 flag = false;
             }else {
                 final AlertDialog titulo = alerta.create();
@@ -802,7 +849,7 @@ import android.hardware.SensorManager;
                     public void onDismiss(DialogInterface dialog) {
                         if(flag == true){
                             handler.removeCallbacks(runnable);
-                            SimpleDateFormat sdf = new SimpleDateFormat("yy-mm-dd HH:mm:ss");
+                            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                             String fecha = sdf.format(new Date());
 
 
@@ -812,10 +859,10 @@ import android.hardware.SensorManager;
                             Log.d(TAG, "latitud" +latitud);
                             Log.d(TAG, "latitud" +longitud);
 
-                            CrearNotificacion(1,id_vehiculo,id_bitacora,fecha,latitud,longitud);
+                            CrearNotificacion(1,id_vehiculo,id_bitacora,fecha,latitud,longitud,Tipo);
 
                             ObtenerNumeros(1,id_vehiculo);
-                            Toast.makeText(getContext(), "Alerta enviada", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), "Alerta enviada", Toast.LENGTH_SHORT).show();
                             flag=false;
                         }else{
 

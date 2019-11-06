@@ -16,25 +16,13 @@
     tools:context=".ui.IUDM1_Datos_Medicos">
 
     <TextView
-        android:id="@+id/textView79"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/IUDM1_Datos_de_Medicos"
-        android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView80"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:text="@string/txt_SegMed"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
@@ -42,10 +30,10 @@
         android:id="@+id/textView81"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView80"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
     <TextView
@@ -56,16 +44,17 @@
         android:layout_marginTop="8dp"
         android:text="@string/txt_Tipo_De_Sangre"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView80" />
+        app:layout_constraintTop_toBottomOf="@+id/textView80"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/textView83"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView82"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView81" />
 
     <TextView
@@ -76,34 +65,23 @@
         android:layout_marginTop="8dp"
         android:text="@string/txt_Enfermedad_Cronica"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+        app:layout_constraintTop_toBottomOf="@+id/textView82"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/textView85"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView84"
-        app:layout_constraintTop_toBottomOf="@+id/textView83" />
-
-    <TextView
-        android:id="@+id/textView86"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/txt_EditInfo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toBottomOf="@+id/textView83" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="73dp"
-        android:layout_height="81dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
@@ -112,7 +90,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView84"
-        app:srcCompat="@mipmap/gestionar" />
+        app:srcCompat="@mipmap/baseline_edit_black_24" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Datos Médicos"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
     </LinearLayout>
 </ScrollView>

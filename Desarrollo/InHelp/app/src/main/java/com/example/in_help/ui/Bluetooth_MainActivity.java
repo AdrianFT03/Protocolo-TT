@@ -10,15 +10,13 @@ import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
-import android.support.v7.app.AppCompatActivity;
-
-
-
 
 import com.example.in_help.R;
 
@@ -31,6 +29,8 @@ public class Bluetooth_MainActivity extends AppCompatActivity implements Adapter
     public ArrayList<BluetoothDevice> mBTDevices = new ArrayList<>();
     public AdaptadorListaDeDispositivos mAdaptadorListaDispositivos;
     ListView DispositivosEncontrados;
+
+
 
     // Create a BroadcastReceiver for ACTION_FOUND. Enceder/Apagar
     private final BroadcastReceiver mBroadcastReceiver1 = new BroadcastReceiver() {
@@ -100,7 +100,7 @@ public class Bluetooth_MainActivity extends AppCompatActivity implements Adapter
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
                 mBTDevices.add(device);
                 Log.d(TAG, "onReceive: "+device.getName() + ": "+ device.getAddress());
-                mAdaptadorListaDispositivos = new AdaptadorListaDeDispositivos(context,R.layout.vista_dipositivos_bt,mBTDevices);
+                mAdaptadorListaDispositivos = new AdaptadorListaDeDispositivos(context, R.layout.vista_dipositivos_bt,mBTDevices);
                 DispositivosEncontrados.setAdapter(mAdaptadorListaDispositivos);
             }
         }
@@ -152,10 +152,10 @@ public class Bluetooth_MainActivity extends AppCompatActivity implements Adapter
         Log.d(TAG, "onDestroy: called");
         super.onDestroy();
 
-        unregisterReceiver(mBroadcastReceiver1);
-        unregisterReceiver(mBroadcastReceiver2);
-        unregisterReceiver(mBroadcastReceiver3);
-        unregisterReceiver(mBroadcastReceiver4);
+        //unregisterReceiver(mBroadcastReceiver1);
+        //unregisterReceiver(mBroadcastReceiver2);
+        //unregisterReceiver(mBroadcastReceiver3);
+        //unregisterReceiver(mBroadcastReceiver4);
     }
 
     @Override
@@ -170,6 +170,8 @@ public class Bluetooth_MainActivity extends AppCompatActivity implements Adapter
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_BOND_STATE_CHANGED);
         registerReceiver(mBroadcastReceiver4,filter);
         DispositivosEncontrados.setOnItemClickListener(Bluetooth_MainActivity.this);
+
+        setupActionBar();
 
         btnONOFF.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -268,6 +270,15 @@ public class Bluetooth_MainActivity extends AppCompatActivity implements Adapter
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
+    }
+
+    private void setupActionBar(){
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null)
+        {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("");
+        }
     }
 }
 

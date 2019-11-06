@@ -48,13 +48,13 @@ public class Adaptador_Prueba extends BaseAdapter {
 
         ImageView imagen1 = (ImageView) view.findViewById(R.id.IUGV1_imageView1);
         ImageButton imagen2 = (ImageButton) view.findViewById(R.id.IUGV1_imagebutton1);
-        ImageButton imagen3 = (ImageButton) view.findViewById(R.id.IUGV1_imagebutton2);
+
         TextView textView = (TextView) view.findViewById(R.id.IUGV1_textView);
 
         textView.setText(ListaObjetos.get(i).getPlacas().toString());
         imagen1.setImageResource(ListaObjetos.get(i).getImagen1());
         imagen2.setImageResource(ListaObjetos.get(i).getImagen2());
-        imagen3.setImageResource(ListaObjetos.get(i).getImagen3());
+
 
 
 

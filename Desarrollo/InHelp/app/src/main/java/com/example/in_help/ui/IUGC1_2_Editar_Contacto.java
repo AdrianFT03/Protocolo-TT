@@ -1,5 +1,6 @@
 package com.example.in_help.ui;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -60,6 +61,7 @@ public class IUGC1_2_Editar_Contacto extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setupActionBar();
         setContentView(R.layout.activity_iugc1_2__editar__contacto);
 
         Datos_IUGC1 objeto = (Datos_IUGC1) getIntent().getExtras().getSerializable("DatosIUGC1");
@@ -141,16 +143,16 @@ public class IUGC1_2_Editar_Contacto extends AppCompatActivity {
         }else if (objeto.getId_tipo() ==2){ // Aseguradora
 
             imagen.setImageResource(R.mipmap.baseline_business_center_black_48);
-            radioButtonSiInfo.setVisibility(View.VISIBLE) ;
+            radioButtonSiInfo.setVisibility(View.GONE) ;
             radioButtonSiInfo.isChecked();
-            radioButtonNoInfo.setVisibility(View.VISIBLE) ;
+            radioButtonNoInfo.setVisibility(View.GONE) ;
 
             textViewnombre.setVisibility(View.VISIBLE) ;
             textViewprimerapp.setVisibility(View.GONE) ;
             textViewsegapp.setVisibility(View.GONE) ;
             textViewparentezco.setVisibility(View.GONE) ;
             textViewnumero.setVisibility(View.VISIBLE) ;
-            textViewmasinfotex.setVisibility(View.VISIBLE) ;
+            textViewmasinfotex.setVisibility(View.GONE) ;
             textViewnoPoliza.setVisibility(View.VISIBLE) ;
             textViewfechavigenci.setVisibility(View.VISIBLE);
             textViewdia.setVisibility(View.VISIBLE) ;
@@ -170,12 +172,13 @@ public class IUGC1_2_Editar_Contacto extends AppCompatActivity {
 
             button.setVisibility(View.VISIBLE);
 
+
             editTextNombre.setText(objeto.getTx_nombre());
             editTextNumero.setText(objeto.getNu_tel());
             editTextPoliza.setText(objeto.getNu_poliza());
-            editTextDia.setText(objeto.getFh_vigencia().substring(0,1));
-            editTextMes.setText(objeto.getFh_vigencia().substring(3,4));
-            editTextAnio.setText(objeto.getFh_vigencia().substring(6,9));
+            editTextDia.setText(objeto.getFh_vigencia().substring(8,10));
+            editTextMes.setText(objeto.getFh_vigencia().substring(5,7));
+            editTextAnio.setText(objeto.getFh_vigencia().substring(0,4));
 
         }else if(objeto.getId_tipo() ==3){ //Emergencia
 
@@ -209,15 +212,20 @@ public class IUGC1_2_Editar_Contacto extends AppCompatActivity {
 
             button.setVisibility(View.VISIBLE);
 
-            editTextNombre.setText("");
-            editTextPrimerAp.setText("");
-            editTextSegundAp.setText("");
-            editTextNumero.setText("");
-            editTextPoliza.setText("");
-            editTextDia.setText("");
-            editTextMes.setText("");
-            editTextAnio.setText("");
+            editTextNombre.setText(objeto.getTx_nombre());
+            editTextNumero.setText(objeto.getNu_tel());
 
+
+        }
+    }
+
+
+    private void setupActionBar(){
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null)
+        {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("");
         }
     }
 }

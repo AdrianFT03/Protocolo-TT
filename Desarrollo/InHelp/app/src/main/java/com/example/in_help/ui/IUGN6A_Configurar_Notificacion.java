@@ -36,7 +36,7 @@ public class IUGN6A_Configurar_Notificacion extends AppCompatActivity {
 
         final Datos_IUNG6 objeto = (Datos_IUNG6) getIntent().getExtras().getSerializable("DatosIUGN6");
 
-        Toast.makeText(this, "id_configuracion: "+ objeto.getId(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "id_configuracion: "+ objeto.getId(), Toast.LENGTH_SHORT).show();
 
         infoCoche = (ImageButton) findViewById(R.id.IUGN6AimageButton);
         infoPersonal = (ImageButton) findViewById(R.id.IUGN6AimageButton1);
@@ -163,7 +163,7 @@ public class IUGN6A_Configurar_Notificacion extends AppCompatActivity {
                     switchinfocoche.setChecked(false);
                 }
 
-                if(Lista.get(1).getId_estado() ==1){
+                if(Lista.get(1).getId_estado() == 1){
                     //Estado Verde Persona
                     infoPersonal.setBackgroundColor(0xFF85C76F);
                     switchinfoersonal.setChecked(true);

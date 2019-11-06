@@ -2,12 +2,11 @@ package com.example.in_help.ui;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -89,7 +88,7 @@ public class IUGCV1_1_Vehiculos_Registrados extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null)
         {
-            //actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
 
             actionBar.setTitle("");
         }

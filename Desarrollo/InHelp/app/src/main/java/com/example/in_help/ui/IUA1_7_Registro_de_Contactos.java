@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.in_help.Prueba_MenuLateral2;
 import com.example.in_help.R;
 
 public class IUA1_7_Registro_de_Contactos extends AppCompatActivity {
@@ -19,7 +20,7 @@ public class IUA1_7_Registro_de_Contactos extends AppCompatActivity {
     }
 
     public void GoRegistroFinalizado1(View view){
-        Intent GoRegistroFinalizado1 = new Intent(this, IUPP1A_Pantalla_Principal.class);
+        Intent GoRegistroFinalizado1 = new Intent(this, Prueba_MenuLateral2.class);
         startActivity(GoRegistroFinalizado1);
     }
 

@@ -9,7 +9,7 @@
             android:title="¡Notificaciones!" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@android:drawable/ic_menu_manage"
+            android:icon="@mipmap/gestionar"
             android:title="Configurar Notificaciones" />
         <item
             android:id="@+id/nav_slideshow"
@@ -22,7 +22,7 @@
 
         <item
             android:id="@+id/nav_share"
-            android:icon="@mipmap/medica"
+            android:icon="@mipmap/baseline_local_hospital_black_48"
             android:title="Datos Médicos" />
         <item
             android:id="@+id/nav_send"

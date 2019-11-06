@@ -21,15 +21,15 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="139dp"
-        android:layout_height="114dp"
+        android:layout_width="72dp"
+        android:layout_height="61dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView74"
-        app:srcCompat="@mipmap/home" />
+        app:srcCompat="@mipmap/cregistrados" />
 
     <TextView
         android:id="@+id/textView75"
@@ -37,18 +37,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
-        android:text="@string/txt_Correo"
+        android:text="Correo electónico:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/textView76"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView75"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 
     <TextView
@@ -57,16 +58,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="8dp"
+        android:text="Password:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView75" />
+        app:layout_constraintTop_toBottomOf="@+id/textView75"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/textView78"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView77"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView76" />
 </android.support.constraint.ConstraintLayout>

@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.in_help.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -52,8 +53,8 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
     public TextView txt_Fhpoliza;
 
     public Button Btn_Listo;
-
-
+    private Integer id_vehiculo;
+    private Integer id_configuracion;
 
 
     @Override
@@ -61,7 +62,7 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iugv1_2__registrar__vehiculo);
 
-       // setupActionBar();
+       setupActionBar();
 /*
         final Datos_IUGV1 objetoVeh = (Datos_IUGV1) getIntent().getExtras().getSerializable("DatosAnt");
         String id_carro = Integer.toString(objetoVeh.getId());
@@ -241,6 +242,7 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
                                                  InsertaPlacas();
                                                  registrarPoliza();
                                                  GoRegVeh();
+                                                 ObtenerIdVehiculo(1);
                                               //   ObtenerId_Seguro(editTextNoPoliza.getText().toString(),fecha);
                                                  //ActualizaIntermediaVehiculos(1,ObtenerId_Seguro(););
 
@@ -252,91 +254,7 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
 
 
     }
-    /* Metodo Obtencion Placas*/
 
-    public void ObtenerVehiculos3(Integer id_usuario,Integer id_vehiculo){
-        APIServer service = Cliente.getAPIServer();
-
-        final DatosVehiculo_IUGV1 datosVehiculo_iugv1 = new DatosVehiculo_IUGV1();
-        Call<List<DatosVehiculo_IUGV1>> respuesta = service.ObtenerVehiculos3(id_usuario,id_vehiculo);
-        respuesta.enqueue(new Callback<List<DatosVehiculo_IUGV1>>() {
-            @Override
-            public void onResponse(Call<List<DatosVehiculo_IUGV1>> call, retrofit2.Response<List<DatosVehiculo_IUGV1>> response) {
-               //Toast.makeText(IUDM1_Datos_Medicos.this, "BIEN", Toast.LENGTH_SHORT).show();
-                List<DatosVehiculo_IUGV1> listPost = response.body();
-                content = "";
-                for(DatosVehiculo_IUGV1 datosVehiculo_iugv1: listPost){
-                    content += datosVehiculo_iugv1.getNu_placas();
-
-                }
-                editTextPlacas.setText(content);
-
-                Log.d(TAG, "Respuesta: "+content);
-            }
-
-            @Override
-            public void onFailure(Call<List<DatosVehiculo_IUGV1>> call, Throwable t) {
-                //Toast.makeText(IUDM1_Datos_Medicos.this, "MAL", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-    }
-
-    public void ObtenerPoliza(Integer id_usuario,Integer id_vehiculo){
-        APIServer service = Cliente.getAPIServer();
-
-        final DatosPoliza_IUGV1 datosPoliza_iugv1 = new DatosPoliza_IUGV1();
-        Call<List<DatosPoliza_IUGV1>> respuesta = service.ObtenerPoliza(id_usuario,id_vehiculo);
-        respuesta.enqueue(new Callback<List<DatosPoliza_IUGV1>>() {
-            @Override
-            public void onResponse(Call<List<DatosPoliza_IUGV1>> call, retrofit2.Response<List<DatosPoliza_IUGV1>> response) {
-                //Toast.makeText(IUDM1_Datos_Medicos.this, "BIEN", Toast.LENGTH_SHORT).show();
-                List<DatosPoliza_IUGV1> listPost = response.body();
-                content = "";
-                for(DatosPoliza_IUGV1 datosPoliza_iugv1: listPost){
-                    content += datosPoliza_iugv1.getNu_poliza();
-
-                }
-                editTextNoPoliza.setText(content);
-
-                Log.d(TAG, "Respuesta: "+content);
-            }
-
-            @Override
-            public void onFailure(Call<List<DatosPoliza_IUGV1>> call, Throwable t) {
-                //Toast.makeText(IUDM1_Datos_Medicos.this, "MAL", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-    }
-
-    public void ObtenerId_Seguro(String nu_poliza, String fh_vigencia){
-        APIServer service = Cliente.getAPIServer();
-
-        final ObtenIdSeguroRequest obtenIdSeguroRequest = new ObtenIdSeguroRequest();
-        Call<List<ObtenIdSeguroRequest>> respuesta = service.ObtenerIdSeguro(nu_poliza,fh_vigencia);
-        respuesta.enqueue(new Callback<List<ObtenIdSeguroRequest>>() {
-            @Override
-            public void onResponse(Call<List<ObtenIdSeguroRequest>> call, retrofit2.Response<List<ObtenIdSeguroRequest>> response) {
-                //Toast.makeText(IUDM1_Datos_Medicos.this, "BIEN", Toast.LENGTH_SHORT).show();
-                List<ObtenIdSeguroRequest> listPost = response.body();
-                content = "";
-                for(ObtenIdSeguroRequest obtenIdSeguroRequest1: listPost){
-                    content += obtenIdSeguroRequest.getId_seguro();
-
-                }
-                Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Id_Seguro"+obtenIdSeguroRequest.getId_seguro(), Toast.LENGTH_SHORT).show();
-
-                Log.d(TAG, "Respuesta: "+content);
-            }
-
-            @Override
-            public void onFailure(Call<List<ObtenIdSeguroRequest>> call, Throwable t) {
-                //Toast.makeText(IUDM1_Datos_Medicos.this, "MAL", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-    }
 
 
 
@@ -350,12 +268,12 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
             @Override
             public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
 
-                Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Placas Registradas", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Placas Registradas", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onFailure(Call<Response> call, Throwable t) {
-                Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Algo Salio Mal", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Algo Salio Mal", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -372,39 +290,159 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
         call.enqueue(new Callback<Response>() {
             @Override
             public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
-                Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Bien", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Bien", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onFailure(Call<Response> call, Throwable t) {
-                Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Mal"+t, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Mal"+t, Toast.LENGTH_SHORT).show();
 
             }
         });
     }
 
-    public void ActualizaIntermediaVehiculos(Integer id_vehiculo_seguro, Integer id_seguro, Integer id_vehiculo){
+    public void ObtenerIdVehiculo(Integer id_usuario){
         APIServer service = Cliente.getAPIServer();
-        final IntermediaVehiculosRequest actualizaIntermediaVehiculos = new IntermediaVehiculosRequest();
-        Call<Response> call=(Call<Response>) service.actualizarIntermediaVehiculos(actualizaIntermediaVehiculos);
+
+        final Datos_IUGV1_Ultimo datosIdContacto_iua1_7 = new Datos_IUGV1_Ultimo();
+
+        Call<List<Datos_IUGV1_Ultimo>> respuesta = service.ObtenerUltimoVehiculo(id_usuario);
+
+        respuesta.enqueue(new Callback<List<Datos_IUGV1_Ultimo>>() {
+            @Override
+            public void onResponse(Call<List<Datos_IUGV1_Ultimo>> call, retrofit2.Response<List<Datos_IUGV1_Ultimo>> response) {
+                List<Datos_IUGV1_Ultimo> datosIdContacto_iua1_7s = response.body();
+                for (Datos_IUGV1_Ultimo datosBod : datosIdContacto_iua1_7s){
+
+                     id_vehiculo = datosBod.getId_vehiculo();
+
+                }
+                ObtenerContactos(1);
+            }
+
+            @Override
+            public void onFailure(Call<List<Datos_IUGV1_Ultimo>> call, Throwable t) {
+
+            }
+        });
+    }
+
+
+    public void ObtenerContactos(Integer id_usuaio){
+
+        final APIServer service = Cliente.getAPIServer();
+        final DatosContacto_IUGC1_1 datosContacto_iugc1_1 = new DatosContacto_IUGC1_1();
+        Call<List<DatosContacto_IUGC1_1>> respuesta = service.ObtenerContactosU(id_usuaio);
+
+        respuesta.enqueue(new Callback<List<DatosContacto_IUGC1_1>>() {
+            @Override
+            public void onResponse(Call<List<DatosContacto_IUGC1_1>> call, retrofit2.Response<List<DatosContacto_IUGC1_1>> response) {
+
+                List<DatosContacto_IUGC1_1> listaDatosContactos = response.body();
+
+                listaDatosContactos.size();
+
+
+                for (DatosContacto_IUGC1_1 datosBod : listaDatosContactos){
+
+                    Integer id_contacto = datosBod.getId_contacto();
+                    Integer id_tipo = datosBod.getId_tipo();
+                    Llenaric03(1,id_contacto,id_vehiculo,id_tipo);
+
+                    ObtenerIdtic03(1,id_contacto);
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<DatosContacto_IUGC1_1>> call, Throwable t) {
+
+            }
+        });
+
+    }
+
+    public  void ObtenerIdtic03(Integer id_usuario,Integer id_contacto){
+
+        APIServer server = Cliente.getAPIServer();
+
+        DatosLastTic03 datosLastTic03 = new DatosLastTic03();
+
+        Call<List<DatosLastTic03>> respuesta = server.ObtenerIdTic03(id_contacto,id_usuario);
+
+        respuesta.enqueue(new Callback<List<DatosLastTic03>>() {
+            @Override
+            public void onResponse(Call<List<DatosLastTic03>> call, retrofit2.Response<List<DatosLastTic03>> response) {
+                List<DatosLastTic03> datosLastTic03s = response.body();
+                for (DatosLastTic03 datosLastTic031 : datosLastTic03s){
+                    id_configuracion = datosLastTic031.getId_configuracion();
+
+                    Llenartn05(id_configuracion,1,1);
+                    Llenartn05(id_configuracion,1,2);
+                    Llenartn05(id_configuracion,1,3);
+                    Llenartn05(id_configuracion,1,4);
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<List<DatosLastTic03>> call, Throwable t) {
+
+            }
+        });
+
+    }
+
+    public void Llenaric03(Integer id_usuario, final Integer id_contacto, final Integer id_vehiculo, Integer id_tipo){
+
+        APIServer service = Cliente.getAPIServer();
+
+        DatosTIC03 user = new DatosTIC03(id_contacto,id_tipo,id_usuario,id_vehiculo);
+
+        Call<Response> call = (Call<Response>) service.creartic03(user);
+
         call.enqueue(new Callback<Response>() {
             @Override
             public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
-                response.body().getSuccesfull();
-                Log.d(TAG, "onResponse: "+response.body().getSuccesfull());
-                Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Intermedia Actualizada", Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
             public void onFailure(Call<Response> call, Throwable t) {
-                Toast.makeText(IUGV1_2_Registrar_Vehiculo.this, "Algo Salio Mal", Toast.LENGTH_SHORT).show();
+
             }
         });
+
+    }
+
+    public void Llenartn05(Integer id_configuracion,Integer id_estado, Integer id_permiso){
+
+        APIServer service = Cliente.getAPIServer();
+
+        DatosTn05 tn05 = new DatosTn05(id_configuracion,id_estado,id_permiso);
+
+        Call<Response> call = (Call<Response>) service.creartn05(tn05);
+
+        call.enqueue(new Callback<Response>() {
+            @Override
+            public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
+                Log.d(TAG, "onResponse: ok tn05");
+            }
+
+            @Override
+            public void onFailure(Call<Response> call, Throwable t) {
+
+            }
+        });
+
     }
 
 
+
+
     public void GoRegVeh(){
-        Intent GoRegVeh = new Intent(this, Prueba_de_Listview.class);
+        Intent GoRegVeh = new Intent(this, IUGV1_1_Vehiculos_Registrados.class);
         startActivity(GoRegVeh);
         Toast t = Toast.makeText(this,"Vehículo registrado exitosamente", Toast.LENGTH_SHORT);
         t.show();

@@ -2,6 +2,7 @@ package com.example.in_help.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -55,6 +56,8 @@ public class IUDM2_Editar_Datos_Medicos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iudm2_editar_datos_medicos);
+
+        setupActionBar();
 
 
         spinnerprueba = (Spinner) findViewById(R.id.TipoSangre1);
@@ -346,6 +349,15 @@ public class IUDM2_Editar_Datos_Medicos extends AppCompatActivity {
     public void GoDatosMedicos(){
         Intent GoDatosMedicos = new Intent(this, IUDM1_Datos_Medicos.class);
         startActivity(GoDatosMedicos);
+    }
+
+    private void setupActionBar(){
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null)
+        {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("");
+        }
     }
 
 

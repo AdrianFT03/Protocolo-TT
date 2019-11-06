@@ -2,6 +2,7 @@ package com.example.in_help.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -27,6 +28,8 @@ public class IUDM1_Datos_Medicos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iudm1__datos__medicos);
+
+        setupActionBar();
 
         NSS = (TextView)findViewById(R.id.textView81);
         Tiposangre = (TextView)findViewById(R.id.textView83);
@@ -104,7 +107,7 @@ public class IUDM1_Datos_Medicos extends AppCompatActivity {
         respuesta.enqueue(new Callback<List<EnfermedadCronicaRequest>>() {
             @Override
             public void onResponse(Call<List<EnfermedadCronicaRequest>> call, Response<List<EnfermedadCronicaRequest>> response) {
-                Toast.makeText(IUDM1_Datos_Medicos.this, "BIEN", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(IUDM1_Datos_Medicos.this, "BIEN", Toast.LENGTH_SHORT).show();
                 List<EnfermedadCronicaRequest> listPost = response.body();
                 content = "";
                 for(EnfermedadCronicaRequest enfermedadCronicaRequest: listPost){
@@ -127,5 +130,14 @@ public class IUDM1_Datos_Medicos extends AppCompatActivity {
     public void GoEditDatMedicos(View view){
         Intent GoEditDM = new Intent(this, IUDM2_Editar_Datos_Medicos.class);
         startActivity(GoEditDM);
+    }
+
+    private void setupActionBar(){
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null)
+        {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("");
+        }
     }
 }

@@ -1,16 +1,12 @@
 package com.example.in_help.ui;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.example.in_help.R;
 
@@ -45,7 +41,7 @@ public class F_IUGV1_Gestionar_Vehiculos extends Fragment {
             }
         });
 
-        registrados = vista.findViewById(R.id.imageButtonVehiculosReg);
+        registrados = vista.findViewById(R.id.imageButtonContacosre);
 
         registrados.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +65,7 @@ public class F_IUGV1_Gestionar_Vehiculos extends Fragment {
     }
 
     public void GoVehiculosRegistrados(View view){
-        Intent GoVehiculosRegistrados = new Intent(getContext(), Prueba_de_Listview.class);
+        Intent GoVehiculosRegistrados = new Intent(getContext(), IUGV1_1_Vehiculos_Registrados.class);
         startActivity(GoVehiculosRegistrados);
     }
 

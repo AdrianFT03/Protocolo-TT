@@ -19,7 +19,7 @@
 
 
 
-    <string name="btnRegistro">REGISTRATE GRATIS</string>
+    <string name="btnRegistro">REGÍSTRATE GRATIS</string>
     <string name="btnRegistroFb">REGISTRATE CON FACEBOOK</string>
     <string name="btnIniciar">INICIAR SESIÓN</string>
     <string name="btnSiguiente">SIGUIENTE</string>
@@ -81,13 +81,13 @@
     <string name="IUGCV1_1Vehiculos_Registrados">Vehículos Registrados</string>
     <string name="IUGCV1_3Editar_Vehiculo">Editar Vehículo</string>
     <string name="IUDP1_Datos_Personales">Datos Personales</string>
-    <string name="IUDP2_Datos_de_la_cuenta">Datos del Usuario</string>
+    <string name="IUDP2_Datos_de_la_cuenta">Datos del la Cuenta</string>
     <string name="IUDM1_Datos_de_Medicos">Datos Médicos</string>
     <string name="IUGN5_Configurar_Notificaciones">Configurar Notificaciones</string>
     <string name="IUGN1_Gestionar_Notiificaciones">Gestionar Notificaciones</string>
     <string name="IUGN2_Informacion_de_Notificacion">Información de Notificación</string>
     <string name="IUGC1_3A_Registrar_Contacto">Registrar Contacto</string>
-    <string name="IUGC1_1_Contactos_Registrados">Contactos registrados</string>
+    <string name="IUGC1_1_Contactos_Registrados">Contactos Registrados</string>
     <string name="IUGC1_2_Editar_contacto">Editar Contacto</string>
     <string name="IUDM2_Editar_Datos_Medicos">Editar Datos Médicos</string>
 

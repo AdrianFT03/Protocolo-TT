@@ -17,7 +17,7 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".ui.IUGV1_2_Registrar_Vehiculo">
+            tools:context=".ui.IUA1_5A_Finalizar_Registro">
 
 
             <TextView

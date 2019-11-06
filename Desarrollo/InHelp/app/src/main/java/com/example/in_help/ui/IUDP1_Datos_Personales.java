@@ -44,7 +44,7 @@ public class IUDP1_Datos_Personales extends AppCompatActivity {
     sexo = (TextView) findViewById(R.id.textView73);
 
 
-    Obteninfo(2);
+    Obteninfo(1);
     }
 
 
@@ -58,7 +58,7 @@ public class IUDP1_Datos_Personales extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<PersonaRequest>> call, Response<List<PersonaRequest>> response) {
 
-                Toast.makeText(IUDP1_Datos_Personales.this, "Bien", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(IUDP1_Datos_Personales.this, "Bien", Toast.LENGTH_SHORT).show();
                 List<PersonaRequest> listPost = response.body();
                 Stringnombre="";
                 Stringprimer="";

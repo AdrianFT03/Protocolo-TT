@@ -166,6 +166,22 @@ public interface APIServer {
     @GET("/get-infopersona/{id_persona}")
     Call<List<DatosPersona_F_IUPP1A>> ObtenerinfoPersonaPP(@Path("id_persona") Integer id_persona);
 
+    @GET("/GetIdContacto/{id_usuario}")
+    Call<List<DatosIdContacto_IUA1_7>> ObtenerIdContacto(@Path("id_usuario") Integer id_usuario);
+
+    @POST("/newtic03")
+    Call<Response> creartic03(
+            @Body DatosTIC03 datosTIC03
+    );
+
+    @GET("/GetLastTic03/{id_contacto}&&{id_usuario}")
+    Call<List<DatosLastTic03>> ObtenerIdTic03(@Path("id_contacto") Integer id_contacto,@Path("id_usuario") Integer id_usuario);
+
+    @POST("/newtn05")
+    Call<Response> creartn05(
+            @Body DatosTn05 datosTn05
+    );
+
     @PUT("/UpdatePlacas/{nu_placas} & {id_vehiculo}")
     Call<Response> UpdatePlacas(@Path("nu_placas") String nu_placas ,@Path("id_vehiculo") Integer id_vehiculo
     );
@@ -173,4 +189,7 @@ public interface APIServer {
     @PUT("/UpdatePoliza/{nu_poliza} & {fh_vigencia} & {id_seguro}")
     Call<Response> UpdatePoliza(@Path("nu_poliza") String nu_poliza ,@Path("fh_vigencia") String fh_vigencia,@Path("id_seguro") Integer id_seguro
     );
+
+    @GET("/GetUltimoVehiculo/{id_vehiculo}")
+    Call<List<Datos_IUGV1_Ultimo>> ObtenerUltimoVehiculo(@Path("id_vehiculo") Integer id_vehiculo);
 }

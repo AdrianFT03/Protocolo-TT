@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -15,7 +16,11 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.in_help.Prueba_MenuLateral2;
 import com.example.in_help.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -62,6 +67,11 @@ public class IUGC1_3_Registrar_Contacto extends AppCompatActivity {
     public String fecha;
     String sexo;
 
+    public Integer id_contacto;
+    private Integer id_tipo;
+    private Integer id_configuracion;
+    private String TAG="";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +79,8 @@ public class IUGC1_3_Registrar_Contacto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iugc1_3__registrar__contacto);
         setupActionBar();
+
+
 
         spinnerParentezco = (Spinner) findViewById(R.id.IUGC1_3spinnerParen);
 
@@ -476,16 +488,16 @@ public class IUGC1_3_Registrar_Contacto extends AppCompatActivity {
 
                             }else {
                                 if(sexo.equals("Hermano")){
-                                    RegistrarContacto(null,null,1,1,1,editTextNombre.getText().toString(),editTextPrimerAp.getText().toString(),null,editTextNumero.getText().toString(),null,null);//Aseguradora
+                                    RegistrarContacto(null,null,1,1,1,editTextNombre.getText().toString(),editTextPrimerAp.getText().toString(),editTextSegundAp.getText().toString(),editTextNumero.getText().toString(),null,null);//Aseguradora
 
                                 }else if(sexo.equals("Padre")){
-                                    RegistrarContacto(null,null,2,1,1,editTextNombre.getText().toString(),editTextPrimerAp.getText().toString(),null,editTextNumero.getText().toString(),null,null);//Aseguradora
+                                    RegistrarContacto(null,null,2,1,1,editTextNombre.getText().toString(),editTextPrimerAp.getText().toString(),editTextSegundAp.getText().toString(),editTextNumero.getText().toString(),null,null);//Aseguradora
 
                                 }else if(sexo.equals("Madre")){
-                                    RegistrarContacto(null,null,3,1,1,editTextNombre.getText().toString(),editTextPrimerAp.getText().toString(),null,editTextNumero.getText().toString(),null,null);//Aseguradora
+                                    RegistrarContacto(null,null,3,1,1,editTextNombre.getText().toString(),editTextPrimerAp.getText().toString(),editTextSegundAp.getText().toString(),editTextNumero.getText().toString(),null,null);//Aseguradora
 
                                 }else if(sexo.equals("Otro")){
-                                    RegistrarContacto(null,null,4,1,1,editTextNombre.getText().toString(),editTextPrimerAp.getText().toString(),null,editTextNumero.getText().toString(),null,null);//Aseguradora
+                                    RegistrarContacto(null,null,4,1,1,editTextNombre.getText().toString(),editTextPrimerAp.getText().toString(),editTextSegundAp.getText().toString(),editTextNumero.getText().toString(),null,null);//Aseguradora
 
                                 }
                             }
@@ -516,6 +528,7 @@ public class IUGC1_3_Registrar_Contacto extends AppCompatActivity {
             @Override
             public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
                 Toast.makeText(IUGC1_3_Registrar_Contacto.this, "Contacto registrado", Toast.LENGTH_SHORT).show();
+                ObtenerIdContacto(1);
                 Goinicio();
             }
 
@@ -524,6 +537,148 @@ public class IUGC1_3_Registrar_Contacto extends AppCompatActivity {
                 Toast.makeText(IUGC1_3_Registrar_Contacto.this, "Algo paso", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public void ObtenerIdContacto(Integer id_usuario){
+        APIServer service = Cliente.getAPIServer();
+
+        final DatosIdContacto_IUA1_7 datosIdContacto_iua1_7 = new DatosIdContacto_IUA1_7();
+
+        Call<List<DatosIdContacto_IUA1_7>> respuesta = service.ObtenerIdContacto(id_usuario);
+
+        respuesta.enqueue(new Callback<List<DatosIdContacto_IUA1_7>>() {
+            @Override
+            public void onResponse(Call<List<DatosIdContacto_IUA1_7>> call, retrofit2.Response<List<DatosIdContacto_IUA1_7>> response) {
+                List<DatosIdContacto_IUA1_7> datosIdContacto_iua1_7s = response.body();
+                for (DatosIdContacto_IUA1_7 datosBod : datosIdContacto_iua1_7s){
+
+                    id_contacto = datosBod.getId_contacto();
+                    id_tipo = datosBod.getId_tipo();
+
+                }
+                ObtenerVehiculos(1);
+            }
+
+            @Override
+            public void onFailure(Call<List<DatosIdContacto_IUA1_7>> call, Throwable t) {
+
+            }
+        });
+    }
+
+    public void ObtenerVehiculos(final Integer id_usuario){
+
+        APIServer service = Cliente.getAPIServer();
+
+        final DatosVehiculo_IUGN5 datosVehiculoIUGN5 = new DatosVehiculo_IUGN5();
+
+        Call<List<DatosVehiculo_IUGN5>> respuesta = service.ObtenerVehiculos(id_usuario);
+
+        respuesta.enqueue(new Callback<List<DatosVehiculo_IUGN5>>() {
+            @Override
+            public void onResponse(Call<List<DatosVehiculo_IUGN5>> call, retrofit2.Response<List<DatosVehiculo_IUGN5>> response) {
+                if(!response.isSuccessful()){
+                    ObtenerIdContacto(1);
+                }
+
+                List<DatosVehiculo_IUGN5> listaDatosVehiculoIUGN5 = response.body();
+                listaDatosVehiculoIUGN5.size();
+                for (DatosVehiculo_IUGN5 datosBod : listaDatosVehiculoIUGN5){
+
+                    Integer id_vehiculo = datosBod.getId_vehiculo();
+                    Llenaric03(id_usuario,id_contacto,id_vehiculo,id_tipo);
+
+
+                    ObtenerIdtic03(1,id_contacto);
+
+
+
+                }
+
+
+            }
+
+            @Override
+            public void onFailure(Call<List<DatosVehiculo_IUGN5>> call, Throwable t) {
+
+            }
+        });
+    }
+
+    public  void ObtenerIdtic03(Integer id_usuario,Integer id_contacto){
+
+        APIServer server = Cliente.getAPIServer();
+
+        DatosLastTic03 datosLastTic03 = new DatosLastTic03();
+
+        Call<List<DatosLastTic03>> respuesta = server.ObtenerIdTic03(id_contacto,id_usuario);
+
+        respuesta.enqueue(new Callback<List<DatosLastTic03>>() {
+            @Override
+            public void onResponse(Call<List<DatosLastTic03>> call, retrofit2.Response<List<DatosLastTic03>> response) {
+                List<DatosLastTic03> datosLastTic03s = response.body();
+                for (DatosLastTic03 datosLastTic031 : datosLastTic03s){
+                    id_configuracion = datosLastTic031.getId_configuracion();
+
+                    Llenartn05(id_configuracion,1,1);
+                    Llenartn05(id_configuracion,1,2);
+                    Llenartn05(id_configuracion,1,3);
+                    Llenartn05(id_configuracion,1,4);
+
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<List<DatosLastTic03>> call, Throwable t) {
+
+            }
+        });
+
+    }
+
+    public void Llenaric03(Integer id_usuario, final Integer id_contacto, final Integer id_vehiculo, Integer id_tipo){
+
+        APIServer service = Cliente.getAPIServer();
+
+        DatosTIC03 user = new DatosTIC03(id_contacto,id_tipo,id_usuario,id_vehiculo);
+
+        Call<Response> call = (Call<Response>) service.creartic03(user);
+
+        call.enqueue(new Callback<Response>() {
+            @Override
+            public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<Response> call, Throwable t) {
+
+            }
+        });
+
+    }
+
+    public void Llenartn05(Integer id_configuracion,Integer id_estado, Integer id_permiso){
+
+        APIServer service = Cliente.getAPIServer();
+
+        DatosTn05 tn05 = new DatosTn05(id_configuracion,id_estado,id_permiso);
+
+        Call<Response> call = (Call<Response>) service.creartn05(tn05);
+
+        call.enqueue(new Callback<Response>() {
+            @Override
+            public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
+                Log.d(TAG, "onResponse: ok tn05");
+            }
+
+            @Override
+            public void onFailure(Call<Response> call, Throwable t) {
+
+            }
+        });
+
     }
 
     private void setupActionBar(){
@@ -536,7 +691,7 @@ public class IUGC1_3_Registrar_Contacto extends AppCompatActivity {
     }
 
     public  void Goinicio(){
-        Intent GoInicio = new Intent(this, IUPP1A_Pantalla_Principal.class);
+        Intent GoInicio = new Intent(this, Prueba_MenuLateral2.class);
         startActivity(GoInicio);
     }
 
