@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bluetooth_MainActivity">
+
+    <Button
+        android:id="@+id/buttonON_OFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="ON/OFF"
+  />
+
+    <Button
+        android:id="@+id/Discoverability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="BtnEnableDisable_Discoverable"
+        android:text="Descrubimiento"
+       />
+
+    <Button
+        android:id="@+id/FindUnpairDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="BtnDiscover"
+
+        android:text="Discover"
+         />
+
+    <ListView
+        android:layout_below='@id/FindUnpairDevices'
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/DispositivosEncontrados"
+         />
+
+</RelativeLayout>

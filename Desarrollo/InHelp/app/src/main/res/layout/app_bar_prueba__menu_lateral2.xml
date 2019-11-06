@@ -40,7 +40,7 @@
             android:layout_alignParentBottom="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/menu_navigator"
-            />
+            tools:ignore="UnknownId" />
 
     </RelativeLayout>
 

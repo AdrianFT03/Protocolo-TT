@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void GoRegistro(View view){
-        Intent GoRegistro = new Intent(this, Prueba_de_Listview.class);
+        Intent GoRegistro = new Intent(this, IUGV1_2_Registrar_Vehiculo.class);
         startActivity(GoRegistro);
     }
 

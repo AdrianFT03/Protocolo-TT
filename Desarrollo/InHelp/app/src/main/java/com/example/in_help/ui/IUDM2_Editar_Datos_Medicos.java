@@ -201,9 +201,9 @@ public class IUDM2_Editar_Datos_Medicos extends AppCompatActivity {
                 if(info == 1){
 
                     if(siSeguri.isChecked()){
-                        EditaNSS(NoSeguriEditTex.getText().toString(),1);
+                        EditaNSS(NoSeguriEditTex.getText().toString(),1,1);
                     }else if(noSeguri.isChecked()){
-                        EditaNSS("",1);
+                        EditaNSS("",1,1);
 
                     }
                     if(siSangre.isChecked()){
@@ -289,10 +289,10 @@ public class IUDM2_Editar_Datos_Medicos extends AppCompatActivity {
 
    /* Actualizar Datos*/
 
-    public void EditaNSS(String tx_id , Integer id_persona){
+    public void EditaNSS(String tx_id , Integer id_persona, Integer id_seguridad){
         APIServer service = Cliente.getAPIServer();
         EditarDatosMedicosRequest EditarNSS = new EditarDatosMedicosRequest();
-        Call<com.example.in_help.ui.Response> call = (Call<com.example.in_help.ui.Response>) service.UpdateNSS(tx_id,id_persona);
+        Call<com.example.in_help.ui.Response> call = (Call<com.example.in_help.ui.Response>) service.UpdateNSS(tx_id,id_persona,id_seguridad);
         call.enqueue(new Callback<com.example.in_help.ui.Response>() {
             @Override
             public void onResponse(Call<com.example.in_help.ui.Response> call, Response<com.example.in_help.ui.Response> response) {

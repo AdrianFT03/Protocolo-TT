@@ -62,9 +62,16 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
         setContentView(R.layout.activity_iugv1_2__registrar__vehiculo);
 
        // setupActionBar();
+/*
+        final Datos_IUGV1 objetoVeh = (Datos_IUGV1) getIntent().getExtras().getSerializable("DatosAnt");
+        String id_carro = Integer.toString(objetoVeh.getId());
+        final Datos_IUGC1 objetoCont = (Datos_IUGC1) getIntent().getExtras().getSerializable("DatosIUGC1");
+        String id_cont = Integer.toString(objetoCont.getId_contacto());
+        final Datos_IUGC1 objetoTipCont = (Datos_IUGC1) getIntent().getExtras().getSerializable("DatosIUGC1");
+        String id_tipo_cont = Integer.toString(objetoTipCont.getId_tipo());
+*/
 
-       // final Datos_IUGV1 objeto = (Datos_IUGV1) getIntent().getExtras().getSerializable("DatosAnt");
-        //String id_carro = Integer.toString(objeto.getId());
+
         //Toast.makeText(this, "Id_vehiculo:"+objeto.getId(), Toast.LENGTH_SHORT).show();
 
         editTextPlacas = (EditText) findViewById(R.id.editText13);

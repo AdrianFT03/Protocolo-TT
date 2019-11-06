@@ -97,8 +97,8 @@ public interface APIServer {
     Call<List<EnfermedadCronicaRequest>> ObtenerEnfermedadCronica (@Path("id_usuario") Integer id_usuario
     );
 
-    @PUT("/UpdateNSS/{tx_id} & {id_persona}")
-    Call<Response> UpdateNSS(@Path("tx_id") String tx_id ,@Path("id_persona") Integer id_persona
+    @PUT("/UpdateNSS/{tx_id} & {id_persona} & {id_seguridad}")
+    Call<Response> UpdateNSS(@Path("tx_id") String tx_id ,@Path("id_persona") Integer id_persona ,@Path("id_seguridad") Integer id_seguridad
     );
 
     @PUT("/UpdateTipoSangre/{id_tipo_sangre} & {id_persona}")

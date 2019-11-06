@@ -18,7 +18,8 @@ import retrofit2.Response;
 
 public class IUDM1_Datos_Medicos extends AppCompatActivity {
 
-    public TextView NSS,Tiposangre,Enfermedadcronica;
+    public TextView NSS,Tiposangre,Enfermedadcronica ,titulo;
+
     public String content;
     private static final String TAG = "Log";
 
@@ -30,6 +31,7 @@ public class IUDM1_Datos_Medicos extends AppCompatActivity {
         NSS = (TextView)findViewById(R.id.textView81);
         Tiposangre = (TextView)findViewById(R.id.textView83);
         Enfermedadcronica = (TextView)findViewById(R.id.textView85);
+        titulo  = (TextView)findViewById(R.id.textView79);
 
         ObtenerNumeroSeguiradSocial(1);
         ObtenerEnfermedadCronica(1);

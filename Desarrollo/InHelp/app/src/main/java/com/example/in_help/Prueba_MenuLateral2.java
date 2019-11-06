@@ -1,5 +1,6 @@
 package com.example.in_help;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
@@ -13,8 +14,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.in_help.R;
+import com.example.in_help.ui.Bluetooth_MainActivity;
 import com.example.in_help.ui.F_IUGC1_Gestionar_Contactos;
 import com.example.in_help.ui.F_IUGV1_Gestionar_Vehiculos;
 import com.example.in_help.ui.F_IUPP1A_Pantalla_Principal;
@@ -109,6 +112,7 @@ public class Prueba_MenuLateral2 extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            GoBT();
             return true;
         }
 
@@ -152,6 +156,11 @@ public class Prueba_MenuLateral2 extends AppCompatActivity
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setTitle("");
         }
+    }
+
+    public void GoBT(){
+        Intent GoBT = new Intent(this, Bluetooth_MainActivity.class);
+        startActivity(GoBT);
     }
 
 }
