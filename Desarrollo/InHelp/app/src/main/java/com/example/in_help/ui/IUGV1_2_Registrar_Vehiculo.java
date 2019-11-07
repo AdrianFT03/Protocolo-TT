@@ -302,6 +302,7 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
     }
 
     public void ObtenerIdVehiculo(Integer id_usuario){
+
         APIServer service = Cliente.getAPIServer();
 
         final Datos_IUGV1_Ultimo datosIdContacto_iua1_7 = new Datos_IUGV1_Ultimo();
@@ -309,8 +310,10 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
         Call<List<Datos_IUGV1_Ultimo>> respuesta = service.ObtenerUltimoVehiculo(id_usuario);
 
         respuesta.enqueue(new Callback<List<Datos_IUGV1_Ultimo>>() {
+
             @Override
             public void onResponse(Call<List<Datos_IUGV1_Ultimo>> call, retrofit2.Response<List<Datos_IUGV1_Ultimo>> response) {
+
                 List<Datos_IUGV1_Ultimo> datosIdContacto_iua1_7s = response.body();
                 for (Datos_IUGV1_Ultimo datosBod : datosIdContacto_iua1_7s){
 
@@ -326,6 +329,8 @@ public class IUGV1_2_Registrar_Vehiculo extends AppCompatActivity {
             }
         });
     }
+
+
 
 
     public void ObtenerContactos(Integer id_usuaio){
